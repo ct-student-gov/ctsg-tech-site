@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTSG navigation test</title>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header>
+    <p>Cornell Tech Student Government — navigation prototype</p>
+    <nav aria-label="Main navigation">
+      <a href="#/">Home</a>
+      <a href="#/members">Members</a>
+      <a href="#/events">Student Events</a>
+      <a href="#/clubs">Clubs</a>
+      <a href="#/past-members">Past Members</a>
+      <a href="#/by-laws">By-Laws</a>
+    </nav>
+  </header>
+  <main id="content" tabindex="-1"></main>
+  <hr>
+  <section aria-label="Navigation diagnostics">
+    <h2>Navigation test</h2>
+    <dl>
+      <dt>Mode</dt><dd id="mode" role="status"></dd>
+      <dt>Current route</dt><dd><code id="route"></code></dd>
+      <dt>Iframe / standalone URL</dt><dd><code id="child-url"></code></dd>
+      <dt>Parent URL reported by bridge</dt><dd><code id="parent-url">Not connected</code></dd>
+    </dl>
+    <p><a id="direct-link" target="_blank" rel="noopener">Open this page standalone</a></p>
+    <p><a href="#/missing-page">Test an unknown route</a></p>
+    <p>Use your browser’s Back, Forward, and Reload controls to test history.</p>
+  </section>
+  <noscript>JavaScript is required for this navigation prototype.</noscript>
+</body>
+</html>

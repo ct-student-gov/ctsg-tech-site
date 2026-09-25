@@ -1,0 +1,5 @@
+/* Keep the existing member directory readable within the shared site shell. */
+.members { max-width: 75ch; }
+.members article { padding-block: 24px; border-top: 1px solid var(--color-rule); }
+.members article h4 { margin: 0 0 16px; font-size: 21px; }
+.members article img { margin-bottom: 16px; }

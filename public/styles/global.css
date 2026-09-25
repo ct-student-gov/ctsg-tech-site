@@ -1,0 +1,110 @@
+/* Shared design tokens, typography, site shell, and reusable patterns. */
+:root {
+  color-scheme: light dark;
+  --color-paper: light-dark(#fff, #222);
+  --color-ink: light-dark(#222, #fff);
+  --color-rule: light-dark(#222, #a2998b);
+  --color-red: #b31b1b;
+  --color-on-red: #fff;
+  --color-charcoal: #222;
+  --page-gutter: 34px;
+  --layout-gap: 28px;
+  --header-clearance: 104px;
+  --font-editorial: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font: 16px/1.5 var(--font-editorial);
+  overflow-wrap: break-word;
+}
+a { color: inherit; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, h4 { font-weight: 400; line-height: 1.15; }
+h1 { margin: 0; font-size: clamp(38px, 6.2vw, 56px); letter-spacing: -1.5px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+p { margin: 0 0 1rem; }
+figure { margin: 0; }
+.site-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 32px;
+  padding: 16px var(--page-gutter);
+  background: var(--color-red);
+  color: var(--color-on-red);
+  transition: transform 180ms ease;
+}
+.site-header--floating { position: fixed; top: 0; inset-inline: 0; }
+.site-header--hidden:not(:focus-within) { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) {
+  .site-header { transition: none; }
+}
+.site-identity { display: flex; align-items: center; gap: 18px; min-width: 0; }
+.site-seal { flex: none; }
+.site-seal img { width: 56px; height: 56px; }
+.site-name { font-size: 22px; line-height: 1.14; letter-spacing: -.3px; text-decoration: none; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0 22px; margin-left: auto; }
+.site-nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { text-decoration: underline; }
+.site-content { padding: 38px var(--page-gutter); min-height: 50vh; scroll-margin-top: var(--header-clearance); }
+.site-content > h1 { margin-bottom: 24px; }
+.site-content > p { max-width: 65ch; }
+.site-content--home { padding-block: 0; }
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 var(--page-gutter);
+  padding: 24px 0 28px;
+  border-top: 1px solid var(--color-rule);
+}
+.skip-link { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.skip-link:focus { z-index: 11; width: auto; height: auto; clip-path: none; top: 4px; left: 4px; padding: 10px 16px; background: var(--color-paper); }
+.eyebrow { margin: 0; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; line-height: 1.4; }
+.feature-title { margin: 0; font-size: clamp(24px, 2.5vw, 28px); line-height: 1.2; letter-spacing: -.5px; }
+.feature-title a { text-decoration: none; }
+.feature-title a:hover { text-decoration: underline; }
+/* Keep a trailing link arrow with its final word rather than on its own line. */
+.link-ending { white-space: nowrap; }
+.link-arrow { display: inline-block; text-decoration: none; }
+.editorial-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 0;
+  padding: 24px;
+  background: var(--color-red);
+  color: var(--color-on-red);
+  font-size: 14px;
+  text-decoration: none;
+}
+.editorial-tile-title { margin: 0; font-size: clamp(38px, 5vw, 64px); line-height: 1; letter-spacing: -1.5px; }
+.editorial-tile-footer { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid currentColor; padding-top: 14px; }
+.editorial-tile:hover .link-label { text-decoration: underline; }
+@media (max-width: 760px) {
+  :root { --page-gutter: 24px; --layout-gap: 24px; --header-clearance: 140px; }
+  .site-header { gap: 8px; padding-block: 12px; }
+  .site-seal img { width: 48px; height: 48px; }
+  .site-name { font-size: 20px; }
+  .site-nav { width: 100%; justify-content: space-between; gap: 0 18px; margin: 0; }
+}
+@media (max-width: 540px) {
+  :root { --page-gutter: 20px; }
+  .site-identity { gap: 16px; }
+  .site-name { font-size: 19px; }
+  .site-nav { width: 100%; justify-content: space-between; gap: 0 12px; margin: 0; font-size: 15px; }
+  .editorial-tile { padding: 22px; }
+}
+@media (max-width: 360px) {
+  :root { --header-clearance: 184px; }
+}

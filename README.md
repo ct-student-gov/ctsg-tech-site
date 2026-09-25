@@ -2,7 +2,15 @@
 
 This repository will contain the custom CTSG website, hosted outside Cornell’s restricted WordPress environment and embedded at **https://ctsg.tech.cornell.edu/** in a fullscreen iframe.
 
-For now it is an intentionally unstyled, dependency-free HTML/JavaScript prototype for testing navigation, hash URLs, deep links, reloads, and browser history. It is not a content migration or finished redesign.
+The dependency-free HTML/JavaScript site now uses the composed Cornell editorial homepage. It retains hash navigation and the WordPress iframe bridge. Current member biographies are on `#/members`; other destination pages remain placeholders.
+
+## Styling
+
+- `public/styles/global.css`: shared colors, typography, header/footer, and reusable title and tile patterns.
+- `public/styles/home.css`: homepage layout, aligned feature rows, portraits, and square governance tile.
+- `public/styles/members.css`: styles scoped to the existing member directory.
+
+The Student Life image and its title are grouped in one figure for a future event carousel. There is currently one static event; carousel controls and rotation are not implemented.
 
 ## Current site review
 
@@ -15,7 +23,7 @@ Reviewed the public site on September 23, 2026:
 | [Past Members](https://ctsg.tech.cornell.edu/sample-page/past-members/) | ’26 executive board and cohort representative roster | `#/past-members` |
 | [CTSG By-Laws](https://ctsg.tech.cornell.edu/sample-page/ctsg-by-laws/) | By-Laws v4.2, articles, revision history, and table-of-contents links to Google Docs | `#/by-laws` |
 
-The current navigation has CTSG and Student Events at the top, with Past Members and By-Laws under CTSG. The homepage mixes the introduction and member directory into one long page. The prototype separates those sections for navigation testing. `#/clubs` and `#/clubs/example` are proposed/test pages, not a directory found on the reviewed site. No names, photos, or bylaws have been migrated into the prototype.
+The reviewed public site's navigation has CTSG and Student Events at the top, with Past Members and By-Laws under CTSG. Its homepage mixes the introduction and member directory into one long page. The local site separates the homepage and member directory and uses the downloaded member and Club Fair photos. `#/clubs` and `#/clubs/example` remain placeholder/test pages, not a directory found on the reviewed site. By-laws have not been migrated.
 
 ## Run locally
 
@@ -30,7 +38,7 @@ Open **http://localhost:8080/demo/**. The development server exposes two differe
 - `http://localhost:8080` simulates the WordPress parent page.
 - `http://localhost:8081` serves the custom site inside the iframe.
 
-The demo includes a synchronized fullscreen embed, a nested deep link, an iframe-only embed, and a standalone link. The site uses browser-default HTML styling; the only CSS positions the demo/embed iframe over the viewport.
+The demo includes a synchronized fullscreen embed, a nested deep link, an iframe-only embed, and a standalone link. All modes use the same site styles.
 
 ```sh
 npm run check
@@ -52,11 +60,36 @@ Public-page inspection cannot establish whether the WordPress editor preserves s
 
 ## WordPress embed
 
+### Quick test on the existing WordPress testing page
+
+The public [testing page](https://ctsg.tech.cornell.edu/testing/) currently embeds `https://ct-student-gov.github.io/ctsg-tech-site/`. That address serves the rendered README; the actual prototype is at [the public directory](https://ct-student-gov.github.io/ctsg-tech-site/public/). When inspected, the WordPress iframe also had no `ctsg-site` ID and no bridge script.
+
+1. Copy all of [docs/wordpress-bridge-test.html](docs/wordpress-bridge-test.html) into the WordPress HTML editor, **replacing the entire previous test block** on the testing page. It includes the corrected hosted URL ending in `/public/`, the matching iframe ID, a diagnostic label, a one-line script probe, and the externally hosted bridge. Do not also paste the bridge code inline.
+2. Save and open the actual [testing page](https://ctsg.tech.cornell.edu/testing/) outside the editor. The temporary status line is at the bottom of the viewport, above the fullscreen iframe.
+3. Click Clubs. The address should become `https://ctsg.tech.cornell.edu/testing/#/clubs`. Reload, then test Back/Forward.
+
+| Status | Meaning |
+| --- | --- |
+| Parent script has not run | The label appeared but JavaScript has not executed. Inspect the saved HTML for removed scripts and the browser console for blocking/errors; this message alone does not identify the cause. |
+| Parent JavaScript ran | The one-line probe executed. Check the iframe’s own Mode: “parent URL sync connected” confirms the bridge handshake. The currently deployed bridge may leave this probe label unchanged. |
+| Bridge script running, but no iframe… | The iframe needs the matching ID and must precede the script. |
+| Bridge script running; waiting… | Parent JavaScript works; verify the child app and its allowed parent origins. |
+| Iframe detected | A valid message arrived from the iframe. Click a link to complete the test. |
+| URL synchronization active | The iframe requested navigation and the parent updated its hash. Still verify reload and Back/Forward. |
+
+If no label appears, inspect whether WordPress preserved the fragment. Restore the original iframe block to undo the test. The snippet loads the already deployed bridge and does not require a new deployment. Later deployments of the bridge with optional diagnostics can show the additional status messages listed above. Regenerate the snippet with `npm run wordpress:test-snippet`.
+
+On retesting the first inline version, WordPress retained the script tag but inserted `<p>`/`</p>` markup and changed `&&` to `&#038;&#038;` inside the JavaScript. The prototype loaded, but its Mode reported no parent bridge and the probe remained unchanged. The current snippet loads JavaScript from an external file to avoid that content formatting. Its behavior on WordPress still needs verification after replacing the old block.
+
+### Hosted setup
+
 Deploy the contents of `public/` to a static HTTPS host. Replace `https://YOUR-HOST.example/` below with the actual deployed site URL, including a repository subpath if applicable. This placeholder URL is not a deployment. Demo files are for local testing and can be excluded from deployment.
 
 Paste the iframe into the WordPress page’s allowed HTML block:
 
 ```html
+<link rel="preconnect" href="https://YOUR-HOST.example">
+<link rel="dns-prefetch" href="https://YOUR-HOST.example">
 <iframe
   id="ctsg-site"
   title="Cornell Tech Student Government"
@@ -103,14 +136,15 @@ Hash routes require no WordPress or static-host rewrite rules: fragments are not
 
 ## Files
 
-- `public/index.html`, `public/app.js`: unstyled site and child navigation.
+- `public/index.html`, `public/app.js`: homepage/member templates and child navigation.
+- `public/styles/`: shared patterns and page-scoped styles.
 - `public/wordpress-bridge.js`: parent-side URL/history bridge.
 - `public/demo/`: local synchronized and iframe-only examples.
 - `scripts/dev.mjs`: dependency-free local server on ports 8080 and 8081; not a production server.
 - `tests/bridge.test.mjs`: parent protocol tests for deep links, history entries, and rejecting invalid messages; these do not replace browser testing.
 
-Nothing has been deployed or changed on the live WordPress site.
+The diagnostic snippet is prepared locally; it has not been applied to WordPress by this task.
 
 ## Verification status
 
-The five automated parent-bridge tests and JavaScript syntax checks pass. Local browser checks confirmed standalone link navigation and Back/Forward, cross-origin parent deep links, reload persistence, parent hash changes and Back/Forward synchronization, and iframe-only startup with no bridge. The browser automation tool could read the cross-origin iframe but could not click within it, so the embedded-click sequence in the acceptance checklist remains a manual check. Production WordPress behavior has not been tested.
+The automated parent-bridge tests and JavaScript syntax checks pass. Local browser checks confirmed standalone link navigation and Back/Forward, cross-origin parent deep links, reload persistence, parent hash changes and Back/Forward synchronization, and iframe-only startup with no bridge. The browser automation tool could read the cross-origin iframe but could not click within it, so the embedded-click sequence in the acceptance checklist remains a manual check. Production WordPress bridge behavior has not been tested.

@@ -1,0 +1,270 @@
+{
+  "source_site": "https://ctsg.tech.cornell.edu/",
+  "downloaded_on": "2026-09-24",
+  "selection": "Largest image version advertised by each page. Repeated images and smaller responsive variants are deduplicated. Lazy-loading placeholders and font assets are excluded.",
+  "pages_checked": [
+    "https://ctsg.tech.cornell.edu/sample-page/past-members",
+    "https://ctsg.tech.cornell.edu/sample-page/ctsg-by-laws",
+    "https://ctsg.tech.cornell.edu",
+    "https://ctsg.tech.cornell.edu/studentevents",
+    "https://ctsg.tech.cornell.edu/category/uncategorized",
+    "https://ctsg.tech.cornell.edu/2020/09/30/hello-world",
+    "https://ctsg.tech.cornell.edu/824-2",
+    "https://ctsg.tech.cornell.edu/testing"
+  ],
+  "images": [
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2025/09/WhatsApp-Image-2025-09-18-at-6.44.49-PM-e1770263617673.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2025/09/WhatsApp-Image-2025-09-18-at-6.44.49-PM-e1770263617673.jpeg",
+      "bytes": 115207,
+      "content_type": "image/jpeg",
+      "sha256": "178286dcdb6360c6793fedc36a61910e4a6a95f2348acd36b33c0563cb01c260"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/A4EA61C1-54F0-4AB9-A8EB-25464D2ED868_1_201_a-Maxime-Hendryx-Parker.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/A4EA61C1-54F0-4AB9-A8EB-25464D2ED868_1_201_a-Maxime-Hendryx-Parker.jpg",
+      "bytes": 372815,
+      "content_type": "image/jpeg",
+      "sha256": "dc72b0c80e10b8537e47d00626185ad2c59afb70963d95a5708e042dcc0bea4a"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/IMG_7087-Robert-Dornbush.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/IMG_7087-Robert-Dornbush.jpeg",
+      "bytes": 11704,
+      "content_type": "image/jpeg",
+      "sha256": "409786258a4db601652b6179d89f096cdda3feb6af0df4928416616352b2752f"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/IMG_8185-Unser-Jaffry.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/IMG_8185-Unser-Jaffry.jpeg",
+      "bytes": 116577,
+      "content_type": "image/jpeg",
+      "sha256": "63bca094841fb419ca51afe66eb6a89c2e69776736af213bdce645e441be53ad"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/1-DSCF1108-2.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2024/11/1-DSCF1108-2.jpg",
+      "bytes": 274293,
+      "content_type": "image/jpeg",
+      "sha256": "48da55c8e91a6fab24c11211ffb467228ae5c9db45d1f514691925aaffd3ebb3"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/photo-output-Anusha-Ramachandrareddy.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/photo-output-Anusha-Ramachandrareddy.jpeg",
+      "bytes": 217582,
+      "content_type": "image/jpeg",
+      "sha256": "d37452785d7cddf5a11aab9a286e09bf8a0ce57c6f61effade0fc2bd157865be"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/5856FA40-080E-4B4B-B021-99949F1E7B23-Jovian-Wang.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/5856FA40-080E-4B4B-B021-99949F1E7B23-Jovian-Wang.jpeg",
+      "bytes": 238259,
+      "content_type": "image/jpeg",
+      "sha256": "12ed46816c352f48c623aef41b44275ec1ac9ae1a1298d71e795dbcf83437fa1"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/IMG_6177-Kartick-Rajen.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/IMG_6177-Kartick-Rajen.jpeg",
+      "bytes": 251920,
+      "content_type": "image/jpeg",
+      "sha256": "c81b654c68cc035d7434bb440b8f7ba5cbbecb1d0f6296ae8aa5f1db0b008a8b"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/orange-Rachel-Liu.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/orange-Rachel-Liu.jpeg",
+      "bytes": 109652,
+      "content_type": "image/jpeg",
+      "sha256": "76ffe98e1349b5bae4b189876532f14efe91d8cb2a096885dff02c4d49f3b59d"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg",
+      "bytes": 267991,
+      "content_type": "image/jpeg",
+      "sha256": "39caa5672c362ded3baaa642cf939507b4f1918a4f6b37de2d5f22ab4b02371c"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/EricLiu_Photo_4x3-Yun-Chung-Liu.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/EricLiu_Photo_4x3-Yun-Chung-Liu.jpg",
+      "bytes": 53549,
+      "content_type": "image/jpeg",
+      "sha256": "08e6eb8dcc24e0d9ead769254de064beedcfa3b11b600c6403f7875cbdbd87dd"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/02/Screenshot-2026-02-03-184717.png",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/02/Screenshot-2026-02-03-184717.png",
+      "bytes": 454059,
+      "content_type": "image/png",
+      "sha256": "ea5f312cfc6dc19d17e054cc04f4b630d27e90a43c349f1d542a9ebac8e6b357"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2026/09/Colored-Pfp-Aidan-Cuccaro-e1790198510811.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2026/09/Colored-Pfp-Aidan-Cuccaro-e1790198510811.jpg",
+      "bytes": 128059,
+      "content_type": "image/jpeg",
+      "sha256": "4b2da7fd8e769abf0c0216a33442d92497ed7076a2d32f79f8320f63d4734c85"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu"
+      ],
+      "alt_text": "",
+      "file": "2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg",
+      "bytes": 497720,
+      "content_type": "image/jpeg",
+      "sha256": "83d5cd294e1f75c45bef2bce7989112e71dfe56d1e44847bcfb2393364c45bac"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/47-DSCF0965.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/47-DSCF0965.jpg",
+      "bytes": 260178,
+      "content_type": "image/jpeg",
+      "sha256": "472175471af3f02dfb0bdf861b445e1dd222a3b51b9ef7841aa0968cb1e38131"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/21-DSCF1036.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/21-DSCF1036.jpg",
+      "bytes": 344310,
+      "content_type": "image/jpeg",
+      "sha256": "0f4795bf47bca60e0075b9593660260620af77e1b3e3543948089696fc0e6aec"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/26-DSCF1027.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/26-DSCF1027.jpg",
+      "bytes": 289421,
+      "content_type": "image/jpeg",
+      "sha256": "06a42aede359698270a06a9b4db40ffe6745c4f07c283c30e074517d71553b1f"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/49-DSCF0959.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/49-DSCF0959.jpg",
+      "bytes": 316274,
+      "content_type": "image/jpeg",
+      "sha256": "0c9733fbe6794eb48117741876b63ebb8bd850d5425abf7ba6eea4bad17c9f3f"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/28-DSCF1019.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/28-DSCF1019.jpg",
+      "bytes": 280745,
+      "content_type": "image/jpeg",
+      "sha256": "504649c1bedbc70a0b381b3299bb0f2b7dce1baabfa8bdf2bc176efb4e6380d2"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/25-DSCF1028.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/25-DSCF1028.jpg",
+      "bytes": 227149,
+      "content_type": "image/jpeg",
+      "sha256": "f916dbfbf7252c4a3a295c21c158cf06667225aaa9122ca77376bb5b52d61011"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/17-DSCF1045.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/17-DSCF1045.jpg",
+      "bytes": 226422,
+      "content_type": "image/jpeg",
+      "sha256": "2861a427c41373dce63d96dff935cce97c879effc11f02f844c54dd77df66c78"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/34-DSCF1003.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/34-DSCF1003.jpg",
+      "bytes": 208317,
+      "content_type": "image/jpeg",
+      "sha256": "2cd40487a66cd4b55ddb769539431f857b6a59dbc71bbc309c904646abdd973d"
+    },
+    {
+      "source_url": "https://ctsg.tech.cornell.edu/files/2024/11/37-DSCF0996.jpg",
+      "source_pages": [
+        "https://ctsg.tech.cornell.edu/studentevents"
+      ],
+      "alt_text": "",
+      "file": "2024/11/37-DSCF0996.jpg",
+      "bytes": 378699,
+      "content_type": "image/jpeg",
+      "sha256": "67270317ae1c4a7e43bd83a02c1b27ecc551ec7dbbf711dec93e97bf967a82ab"
+    }
+  ]
+}

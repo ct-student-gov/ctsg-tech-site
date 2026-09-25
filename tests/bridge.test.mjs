@@ -8,9 +8,10 @@ const channel = "ctsg-navigation-v1";
 
 // Execute the production bridge with controlled browser events and history.
 // Actual iframe rendering and browser joint history still need browser checks.
-function harness(hash = "#/clubs/example") {
+function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
   const listeners = new Map();
   const messages = [];
+  const status = { textContent: "Parent script has not run." };
   const entries = [new URL(`https://ctsg.tech.cornell.edu/${hash}`)];
   let index = 0;
   const child = { postMessage: (data, origin) => messages.push({ data, origin }) };
@@ -35,10 +36,10 @@ function harness(hash = "#/clubs/example") {
   runInNewContext(source, {
     URL, location, history,
     window: { addEventListener: (name, fn) => listeners.set(name, fn) },
-    document: { getElementById: () => frame },
+    document: { getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame },
   });
   return {
-    entries, location, messages,
+    entries, location, messages, status,
     send(data, overrides = {}) {
       listeners.get("message")({ source: child, origin: "https://site.example", data: { channel, ...data }, ...overrides });
     },
@@ -103,4 +104,22 @@ test("unknown local routes are preserved for the child's not-found page", () => 
   h.send({ type: "navigate", route: "/missing-page" });
   assert.equal(h.location.hash, "#/missing-page");
   assert.equal(h.messages.at(-1).data.route, "/missing-page");
+});
+
+test("diagnostics distinguish script execution, iframe contact, and navigation", () => {
+  const h = harness();
+  assert.match(h.status.textContent, /Bridge script running/);
+  h.send({ type: "ready" });
+  assert.match(h.status.textContent, /Iframe detected/);
+  h.send({ type: "navigate", route: "/clubs" }, { origin: "https://attacker.example" });
+  assert.match(h.status.textContent, /Iframe detected/);
+  h.send({ type: "navigate", route: "/clubs" });
+  assert.equal(h.status.textContent, "URL synchronization active: /clubs");
+});
+
+test("diagnostics identify a missing iframe ID without changing the URL", () => {
+  const h = harness("", { missingFrame: true });
+  assert.match(h.status.textContent, /no iframe with id="ctsg-site"/);
+  assert.equal(h.location.hash, "");
+  assert.equal(h.messages.length, 0);
 });

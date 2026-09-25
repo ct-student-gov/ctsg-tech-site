@@ -1,9 +1,16 @@
 (() => {
   "use strict";
 
+  // Optional visible diagnostic for the WordPress copy/paste test.
+  const status = document.getElementById("ctsg-bridge-status");
+  const report = (text) => { if (status) status.textContent = text; };
+  report("Bridge script running; waiting for iframe communication.");
   // This script MUST execute in the WordPress parent document.
   const frame = document.getElementById("ctsg-site");
-  if (!frame) return;
+  if (!frame) {
+    report('Bridge script running, but no iframe with id="ctsg-site" was found.');
+    return;
+  }
   const childOrigin = new URL(frame.src, location.href).origin;
   const channel = "ctsg-navigation-v1";
   const validRoute = (route) => typeof route === "string" && route.length <= 200
@@ -22,10 +29,12 @@
     if (event.source !== frame.contentWindow || event.origin !== childOrigin
       || !message || message.channel !== channel) return;
     if (message.type === "ready") {
+      report("Iframe detected. Click a link inside it to test URL synchronization.");
       sendState();
     } else if (message.type === "navigate" && validRoute(message.route)) {
       if (location.hash !== `#${message.route}`) history.pushState(null, "", `#${message.route}`);
       sendState();
+      report(`URL synchronization active: ${message.route}`);
     }
   });
 

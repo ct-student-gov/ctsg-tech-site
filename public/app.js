@@ -11,13 +11,40 @@
   let parentOrigin = null;
   let currentRoute = null;
   const content = document.getElementById("content");
+  const header = document.querySelector(".site-header");
+  const headerSpace = document.querySelector(".site-header-space");
+  // Reserve the header's full height even while the fixed overlay is hidden.
+  // Only resizing the header changes this space; scrolling never does.
+  const reserveHeaderSpace = () => {
+    headerSpace.style.height = `${header.offsetHeight}px`;
+  };
+  reserveHeaderSpace();
+  header.classList.add("site-header--floating");
+  new ResizeObserver(reserveHeaderSpace).observe(header);
+  let previousScroll = Math.max(0, window.scrollY);
+
+  window.addEventListener("scroll", () => {
+    // Clamp elastic overscroll and ignore tiny movements to avoid flickering.
+    const maximumScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    const scroll = Math.min(maximumScroll, Math.max(0, window.scrollY));
+    if (scroll <= header.offsetHeight) {
+      header.classList.remove("site-header--hidden");
+    } else if (Math.abs(scroll - previousScroll) >= 6) {
+      header.classList.toggle("site-header--hidden", scroll > previousScroll);
+    } else {
+      return;
+    }
+    previousScroll = scroll;
+  }, { passive: true });
+
+  header.addEventListener("focusin", () => header.classList.remove("site-header--hidden"));
   const validRoute = (route) => typeof route === "string" && route.length <= 200
     && /^\/(?:[a-z0-9-]+(?:\/[a-z0-9-]+)*)?$/.test(route);
   const readRoute = () => validRoute(location.hash.slice(1)) ? location.hash.slice(1) : "/";
 
   const pages = new Map([
-    ["/", ["About CTSG", "Placeholder for CTSG’s mission and introduction."]],
-    ["/members", ["Members", "Placeholder for the executive board and master’s program representatives."]],
+    ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
+    ["/members", ["Your representatives", "The executive board and program representatives."]],
     ["/events", ["Student Events", "Placeholder for student events and Club Fair content."]],
     ["/clubs", ["Clubs", "Placeholder for a future clubs directory; this is a proposed page."]],
     ["/clubs/example", ["Example Club", "Test-only club detail page. This is not an actual student organization."]],
@@ -26,32 +53,39 @@
   ]);
 
   function render(route, focus = false) {
-    const [title, description] = pages.get(route) || ["Page not found", "This route does not have a placeholder page."];
+    const pageRoute = route;
+    const [title, description] = pages.get(pageRoute) || ["Page not found", "This route does not have a placeholder page."];
     const heading = document.createElement("h1");
     heading.textContent = title;
     const paragraph = document.createElement("p");
     paragraph.textContent = description;
-    content.replaceChildren(heading, paragraph);
+    content.classList.toggle("site-content--home", pageRoute === "/");
+    if (pageRoute === "/") {
+      content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
+    } else {
+      content.replaceChildren(heading, paragraph);
+    }
+    if (pageRoute === "/members") {
+      content.append(document.getElementById("members-template").content.cloneNode(true));
+    }
     if (route === "/clubs") {
       const link = document.createElement("a");
       link.href = "#/clubs/example";
       link.textContent = "Example Club";
       content.append(link);
     }
-    document.title = `${title} | CTSG navigation test`;
-    document.getElementById("route").textContent = route;
-    document.getElementById("child-url").textContent = location.href;
-    document.getElementById("direct-link").href = location.href;
-    document.getElementById("mode").textContent = parentOrigin
-      ? "Embedded — parent URL sync connected"
-      : embedded ? "Embedded — no parent bridge connected; navigation stays inside iframe"
-        : "Standalone — URL and history belong to this page";
-    for (const link of document.querySelectorAll("nav a")) {
-      if (link.hash === `#${route}`) link.setAttribute("aria-current", "page");
+    document.title = `${title} | CTSG`;
+    for (const link of document.querySelectorAll(".site-nav a")) {
+      if (link.hash === `#${pageRoute}`) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
     }
     currentRoute = route;
-    if (focus) content.focus();
+    if (focus) {
+      content.focus({ preventScroll: true });
+      window.scrollTo(0, 0);
+    }
+    header.classList.remove("site-header--hidden");
+    previousScroll = Math.max(0, window.scrollY);
   }
 
   function post(message) {
@@ -66,12 +100,18 @@
     parentOrigin = event.origin;
     // The parent owns history in bridge mode. Never add a second child entry.
     history.replaceState(null, "", `#${message.route}`);
-    document.getElementById("parent-url").textContent = typeof message.url === "string" ? message.url : "Connected";
     render(message.route, currentRoute !== message.route);
   });
 
   document.addEventListener("click", (event) => {
     const link = event.target.closest("a");
+    // Keep the skip link inside the current page without changing its hash route.
+    if (link?.classList.contains("skip-link")) {
+      event.preventDefault();
+      content.focus();
+      content.scrollIntoView();
+      return;
+    }
     if (!link || !link.getAttribute("href")?.startsWith("#/") || event.defaultPrevented
       || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey
       || link.target || link.hasAttribute("download")) return;

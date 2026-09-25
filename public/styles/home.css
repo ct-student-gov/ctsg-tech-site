@@ -1,0 +1,46 @@
+/* Homepage composition only. Shared type and tiles live in global.css. */
+.home-banner {
+  --fade-length: clamp(150px, 20vw, 240px);
+  height: calc(clamp(180px, 25vw, 340px) + var(--fade-length));
+  margin-inline: calc(-1 * var(--page-gutter));
+  margin-bottom: -64px;
+  mask-image: linear-gradient(to bottom, #000 calc(100% - var(--fade-length)), transparent 100%);
+}
+.home-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
+.home-intro { display: grid; grid-template-columns: 2fr 1fr; align-items: end; gap: var(--layout-gap); padding: 38px 0 34px; border-bottom: 1px solid var(--color-rule); margin-bottom: var(--layout-gap); }
+.home-intro h1 { line-height: 1.04; }
+.home-intro p { margin: 0 0 3px; max-width: 330px; font-size: 18px; }
+
+/* Match the event image ratio so the adjacent portraits form a square. */
+.home-highlights { display: grid; grid-template-columns: 1.65fr 1fr; column-gap: var(--layout-gap); row-gap: 14px; container-type: inline-size; }
+.home-highlights .feature-title { font-size: min(28px, 2.6cqi); }
+.home-event, .home-people { display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; min-width: 0; }
+.home-event { grid-column: 1; }
+.home-people { grid-column: 2; }
+.home-event-slide { display: grid; grid-row: 2 / span 2; grid-template-rows: subgrid; gap: 14px; min-width: 0; }
+.home-people-content { display: grid; grid-row: 2 / span 2; grid-template-rows: subgrid; gap: 14px; min-width: 0; position: relative; }
+.home-people .feature-title { white-space: nowrap; }
+.home-event-image { display: block; position: relative; aspect-ratio: 1.65; min-width: 0; }
+.home-event-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.home-portraits { display: grid; grid-template-columns: 1fr 1fr; position: relative; min-height: 0; overflow: hidden; }
+.home-portraits img { position: absolute; top: 0; width: 50%; height: 100%; object-fit: cover; object-position: center; }
+.home-portraits img:last-child { left: 50%; }
+
+.home-resources { display: grid; grid-template-columns: 1fr 2fr; gap: var(--layout-gap); align-items: stretch; margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }
+/* Border-box sizing keeps the red tile exactly square, including padding. */
+.home-governance { aspect-ratio: 1; }
+.home-clubs { min-height: 0; background: var(--color-charcoal); box-shadow: inset 0 0 0 1px light-dark(transparent, #a2998b); }
+.home { padding-bottom: 28px; }
+
+@media (max-width: 680px) {
+  .home-intro { grid-template-columns: 1fr; gap: 18px; padding: 32px 0; }
+  .home-intro p { max-width: 100%; font-size: 17px; }
+  .home-highlights { grid-template-columns: 1fr; gap: 30px; }
+  .home-highlights .feature-title { font-size: min(28px, 6.5cqi); }
+  .home-event, .home-people { grid-column: 1; grid-row: auto; grid-template-rows: auto; gap: 14px; }
+  .home-event-slide { grid-row: auto; grid-template-rows: auto; gap: 14px; }
+  .home-people-content { grid-row: auto; grid-template-rows: auto auto; }
+  .home-portraits { aspect-ratio: 1.65; }
+  .home-resources { grid-template-columns: 1fr; }
+  .home-clubs { aspect-ratio: 1; }
+}

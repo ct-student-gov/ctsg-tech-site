@@ -2,7 +2,7 @@
 .site-content--members { padding-block: 0 48px; }
 .members-banner { background: light-dark(#e8e8e8, #383838); }
 .members-banner-placeholder { margin: 0; padding-top: clamp(40px, 6vw, 80px); text-align: center; }
-.members-directory { max-width: 1200px; margin-inline: auto; padding-top: 38px; text-align: center; }
+.members-directory { position: relative; max-width: 1200px; margin-inline: auto; padding-top: 38px; text-align: center; }
 .members-year { margin-top: 40px; }
 .members-year + .members-year { margin-top: 80px; }
 .members-year h2 { margin: 0 0 28px; font-size: clamp(38px, 4.4vw, 46px); }

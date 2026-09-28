@@ -2,12 +2,12 @@
 .site-content--members { padding-block: 0 48px; }
 .members-banner { background: light-dark(#e8e8e8, #383838); }
 .members-banner-placeholder { margin: 0; padding-top: clamp(40px, 6vw, 80px); text-align: center; }
-.members-directory { position: relative; max-width: 1200px; margin-inline: auto; padding-top: 38px; text-align: center; }
+.members-directory { position: relative; max-width: 1200px; margin-inline: auto; padding-top: 22px; text-align: center; }
 .members-year { margin-top: 40px; }
 .members-year + .members-year { margin-top: 80px; }
-.members-year h2 { margin: 0 0 28px; font-size: clamp(38px, 4.4vw, 46px); }
+.members-year h2 { margin: 0 0 var(--layout-gap); padding-bottom: 34px; border-bottom: 1px solid var(--color-rule); font-size: clamp(38px, 6.2vw, 56px); line-height: 1.04; letter-spacing: -1.5px; text-align: left; }
 .members-group + .members-group { margin-top: 48px; }
-.members-group > h3 { margin: 0 0 24px; }
+.members-group > h3 { margin: 0 0 24px; font-size: 13px; line-height: 1.4; letter-spacing: 1px; text-transform: uppercase; text-align: left; }
 .members-gallery {
   --columns: 5;
   display: flex;
@@ -34,10 +34,10 @@
   pointer-events: none;
 }
 .member-card:hover .member-expansion-frame,
-.member-card:has(:is(.member-portrait-button, .member-name-button, .member-role-button):focus-visible) .member-expansion-frame { border-color: var(--color-ink); }
+.member-card:has(:is(.member-portrait-button, .member-name-button, .member-role-button):focus-visible) .member-expansion-frame { border-color: var(--color-rule); }
 .member-expanded .member-expansion-frame {
   background: var(--color-paper);
-  box-shadow: 0 8px 28px #0003;
+  box-shadow: 0 4px 16px #0002;
   pointer-events: auto;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -48,6 +48,7 @@
 .members-gallery p { margin: 0; font-size: 15px; }
 .member-portrait-button { display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
 .member-name-button, .member-role-button { padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+:is(.member-name-button, .member-role-button):is(:hover, :focus-visible) { text-decoration: underline; text-decoration-color: var(--color-red); text-underline-offset: 4px; text-decoration-thickness: 1px; }
 /* The shared outer border is the focus indicator; avoid a second inner outline. */
 :is(.member-portrait-button, .member-name-button, .member-role-button, .member-info):focus { outline: none; }
 .member-identity { position: relative; z-index: 1; display: flow-root; height: 100%; padding-bottom: 12px; background: var(--color-red); color: var(--color-on-red); box-shadow: 0 0 0 calc(var(--frame-inset) / 2) var(--color-red); }

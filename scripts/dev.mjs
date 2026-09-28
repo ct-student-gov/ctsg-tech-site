@@ -2,8 +2,11 @@ import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { resolve, sep, extname } from "node:path";
+import { buildSite } from "./build.mjs";
 
-const root = fileURLToPath(new URL("../public/", import.meta.url));
+const root = fileURLToPath(new URL("../dist/public/", import.meta.url));
+await buildSite();
+let building = null;
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -20,6 +23,17 @@ for (const port of [8080, 8081]) {
   const server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
+      // Rebuild on document reload so local previews use the same images as production.
+      if ((pathname.endsWith("/") || pathname.endsWith(".html")) && !building) {
+        building = buildSite().finally(() => { building = null; });
+      }
+      try {
+        if (building) await building;
+      } catch (error) {
+        console.error(error.message);
+        response.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" }).end(`Image build failed: ${error.message}`);
+        return;
+      }
       const path = resolve(root, `.${pathname.endsWith("/") ? `${pathname}index.html` : pathname}`);
       if (!path.startsWith(root.endsWith(sep) ? root : root + sep)) {
         response.writeHead(403).end("Forbidden");

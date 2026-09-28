@@ -55,11 +55,11 @@ import { peopleData } from "./data/people.js";
   const pages = new Map([
     ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
     ["/members", ["People", "The executive board and program representatives."]],
-    ["/events", ["Student Events", "Placeholder for student events and Club Fair content."]],
+    ["/events", ["Student Events", "Student event details coming soon."]],
     ["/clubs", ["Clubs", "Placeholder for a future clubs directory; this is a proposed page."]],
     ["/clubs/example", ["Example Club", "Test-only club detail page. This is not an actual student organization."]],
     ["/past-members", ["Past Members", "Placeholder for previous CTSG rosters."]],
-    ["/by-laws", ["CTSG By-Laws", "Placeholder for governance documents."]],
+    ["/by-laws", ["Bylaws", "The CTSG by-laws."]],
   ]);
 
   const cardMotion = window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
@@ -330,12 +330,16 @@ import { peopleData } from "./data/people.js";
     paragraph.textContent = description;
     content.classList.toggle("site-content--home", pageRoute === "/");
     content.classList.toggle("site-content--members", pageRoute === "/members");
-    document.getElementById("home-copyright").hidden = pageRoute !== "/";
+    content.classList.toggle("site-content--governance", pageRoute === "/by-laws");
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
       enableHomeCardMotion();
     } else if (pageRoute === "/members") {
       renderPeople();
+    } else if (pageRoute === "/by-laws") {
+      content.replaceChildren(document.getElementById("governance-template").content.cloneNode(true));
+    } else if (pageRoute === "/events") {
+      content.replaceChildren(document.getElementById("events-template").content.cloneNode(true));
     } else {
       content.replaceChildren(heading, paragraph);
     }

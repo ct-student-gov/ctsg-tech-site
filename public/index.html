@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/members.css">
+  <link rel="stylesheet" href="./styles/governance.css">
   <script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
   </div>
   <main id="content" class="site-content" tabindex="-1"></main>
   <footer class="site-footer">
-    <span><span id="home-copyright" hidden>© 2026 </span>Cornell Tech Student Government</span>
+    <span>© 2026 Cornell Tech Student Government</span>
     <a href="https://ctsg.tech.cornell.edu/">ctsg.tech.cornell.edu</a>
   </footer>
   <template id="home-template">
@@ -103,6 +104,21 @@
         <div class="members-years"></div>
       </div>
     </div>
+  </template>
+  <template id="governance-template">
+    <div class="governance">
+      <div class="home-banner governance-banner">
+        <img src="./images/bylaws-banner.webp" width="2048" height="1366" alt="Students collaborating around a table with laptops and whiteboards at Cornell Tech">
+      </div>
+      <div class="governance-content">
+        <h1>Bylaws</h1>
+        <iframe class="governance-document" title="CTSG bylaws (view only)" src="https://drive.google.com/file/d/1xwneLjEeZjxIEYvbnVTjp2b53i5Cdyny/preview"></iframe>
+      </div>
+    </div>
+  </template>
+  <template id="events-template">
+    <h1>Student Events</h1>
+    <p>Student event details coming soon.</p>
   </template>
   <noscript>JavaScript is required to view this site.</noscript>
 </body>

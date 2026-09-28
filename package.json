@@ -5,9 +5,17 @@
   "type": "module",
   "scripts": {
     "wordpress:test-snippet": "node scripts/build-wordpress-test.mjs",
+    "build": "node scripts/build.mjs",
+    "images:check": "node scripts/build.mjs --check",
     "dev": "node scripts/dev.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check public/app.js && node --check public/wordpress-bridge.js && node --check scripts/dev.mjs"
+    "check": "node --check public/app.js && node --check public/wordpress-bridge.js && node --check scripts/dev.mjs && node --check scripts/build.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "devDependencies": {
+    "parse5": "8.0.1",
+    "sharp": "0.35.5"
+  }
 }

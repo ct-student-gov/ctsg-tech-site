@@ -6,7 +6,7 @@
 // Each member section is executive-board or representatives.
 export const peopleData = {
   "banner": {
-    "src": "./images/current-site/2025/09/WhatsApp-Image-2025-09-18-at-6.44.49-PM-e1770263617673.jpeg",
+    "src": "./images/current-site/2025/09/WhatsApp-Image-2025-09-18-at-6.44.49-PM-e1770263617673.webp",
     "alt": "2025–2026 Cornell Tech Student Government group photo"
   },
   "years": [
@@ -18,7 +18,7 @@ export const peopleData = {
           "lastName": "Hendryx-Parker",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2027,
-          "portrait": "./images/members/maxime-hendryx-parker.jpeg",
+          "portrait": "./images/members/maxime-hendryx-parker.webp",
           "role": "Technical President",
           "biography": [
             "Maxime Hendryx-Parker is a Master of Engineering in Computer Science student at Cornell Tech. He earned his B.S. in Computer and Information Technology at Ball State University. He enjoys finding unusual solutions to problems and turning them into practical applications, with interests in entrepreneurship, embedded systems, and home automation. Having attended and volunteered at technology conferences, he values the connections and ideas that come from bringing people with different backgrounds together. At Cornell Tech, he’s excited to collaborate across disciplines, strengthen connections with alumni and industry, and help students feel heard and involved in their community.",
@@ -32,7 +32,7 @@ export const peopleData = {
           "lastName": "Dornbush",
           "program": "Master of Business Administration",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/IMG_7087-Robert-Dornbush.jpeg",
+          "portrait": "./images/current-site/2026/09/IMG_7087-Robert-Dornbush.webp",
           "role": "Professional President",
           "biography": [
             "Throughout Robbie's career, Robbie has been building a brighter future alongside visionary leaders at world class institutions. In the Biden-Harris White House, Robbie served as Chief of Staff to the White House Press Team where he directed diverse stakeholders to communicate the President’s agenda to the world. As Chief of Staff of Accountable Tech, a tech policy nonprofit, Robbie managed a cross-disciplinary group of campaigners and technologists to shape policy at all levels of government in the public interest. At the start of his  career, Robbie designed campaigns on behalf of responsible tech orgs like Mozilla Foundation, Wikipedia, and the Center for Humane Technology to advocate for equitable, impactful change in the tech industry. Now, Robbie is pursuing his MBA through the Cornell SC Johnson College of Business and Cornell Tech to create a brighter future at the intersection of technology, policy, and public affairs.",
@@ -46,7 +46,7 @@ export const peopleData = {
           "lastName": "Jaffry",
           "program": "Master of Business Administration",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/IMG_8185-Unser-Jaffry.jpeg",
+          "portrait": "./images/current-site/2026/09/IMG_8185-Unser-Jaffry.webp",
           "role": "Treasurer",
           "biography": [
             "Unser Jaffry is an MBA candidate at Cornell, with a background spanning healthcare, biotechnology, entrepreneurship, and strategy. Originally from Michigan, he earned his B.S. in Human Biology from Michigan State University, where he also founded the Medical Entrepreneurs Club. Before Cornell, Unser conducted biomedical research at Harvard Medical School and MIT and worked in strategy and operations across clinical research and healthcare innovation.",
@@ -61,7 +61,7 @@ export const peopleData = {
           "lastName": "",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "Student Activities Co-Chair",
           "biography": [],
           "section": "executive-board"
@@ -71,7 +71,7 @@ export const peopleData = {
           "lastName": "Ramachandrareddy",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/photo-output-Anusha-Ramachandrareddy.jpeg",
+          "portrait": "./images/current-site/2026/09/photo-output-Anusha-Ramachandrareddy.webp",
           "role": "Communications Co-Chair",
           "biography": [
             "Anusha is a graduate student pursuing her Master's in Computer Science at Cornell Tech. She gained hands-on experience as an intern at Roboticschools by contributing to Artificial Intelligence, Machine Learning, and Robotics projects.\nShe is skilled in Natural Language Processing, Artificial Intelligence, and Robotics, with a passion for creating innovative, data-driven solutions. She is always excited to collaborate with diverse teams to advance impactful applications.",
@@ -85,7 +85,7 @@ export const peopleData = {
           "lastName": "",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "Communications Co-Chair",
           "biography": [],
           "section": "executive-board"
@@ -95,7 +95,7 @@ export const peopleData = {
           "lastName": "",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "External Affairs Chair",
           "biography": [],
           "section": "executive-board"
@@ -105,7 +105,7 @@ export const peopleData = {
           "lastName": "",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "Diversity and Inclusion Chair",
           "biography": [],
           "section": "executive-board"
@@ -115,7 +115,7 @@ export const peopleData = {
           "lastName": "Wang",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/5856FA40-080E-4B4B-B021-99949F1E7B23-Jovian-Wang.jpeg",
+          "portrait": "./images/current-site/2026/09/5856FA40-080E-4B4B-B021-99949F1E7B23-Jovian-Wang.webp",
           "role": "M.Eng. CS Rep",
           "biography": [
             "Jovian is a Master of Engineering student in Computer Science at Cornell Tech. He earned his undergraduate degrees in Computer Science and Economics at Vanderbilt University, graduating cum laude, and spent two years as a data infrastructure engineer building out large-scale observability systems and integrating AI into various platforms. His experience spans data infrastructure, machine learning, and site reliability, and he is interested in building products that hold up in the real world. He's excited to help make Cornell Tech a place where great engineers become greater founders.",
@@ -129,7 +129,7 @@ export const peopleData = {
           "lastName": "Rajen",
           "program": "Master of Engineering in Electrical and Computer Engineering",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/IMG_6177-Kartick-Rajen.jpeg",
+          "portrait": "./images/current-site/2026/09/IMG_6177-Kartick-Rajen.webp",
           "role": "M.Eng. ECE Rep",
           "biography": [
             "I'm Kartick Rajen, friends call me Karr. My bachelor's degree was in Computer Engineering, structured as a co-op program split between India and Taiwan. I have experience applying quantitative skills across financial engineering, computer vision, edge AI and biomedical research.",
@@ -144,7 +144,7 @@ export const peopleData = {
           "lastName": "Liu",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/09/orange-Rachel-Liu.jpeg",
+          "portrait": "./images/current-site/2026/09/orange-Rachel-Liu.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, optimizing logistics, and am so pumped to be representing the brilliant students that are the ORIE class of 2027.",
@@ -158,7 +158,7 @@ export const peopleData = {
           "lastName": "",
           "program": "Master of Engineering in Data Science and Decision Analytics",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "M.Eng. DSDA Rep",
           "biography": [],
           "section": "representatives"
@@ -168,7 +168,7 @@ export const peopleData = {
           "lastName": "Li",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg",
+          "portrait": "./images/current-site/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.webp",
           "role": "M.S. Connective Media '27 Cohort Rep",
           "biography": [
             "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！💫 My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French 🌍, and I’m passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.🙌",
@@ -181,7 +181,7 @@ export const peopleData = {
           "lastName": "Liu",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2028,
-          "portrait": "./images/current-site/2026/09/EricLiu_Photo_4x3-Yun-Chung-Liu.jpg",
+          "portrait": "./images/current-site/2026/09/EricLiu_Photo_4x3-Yun-Chung-Liu.webp",
           "role": "M.S. Connective Media '28 Cohort Rep",
           "biography": [
             "I'm Yun-Chung (Eric) Liu, and I grew up between Shanghai, Taiwan, and Michigan before studying Computer Science with a minor in Human-Computer Interaction at Washington University in St. Louis. I spent the last three years as a Software Engineer at Morningstar in Chicago, building data delivery systems and dashboards used by thousands of clients.",
@@ -196,7 +196,7 @@ export const peopleData = {
           "lastName": "Jeong",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/02/Screenshot-2026-02-03-184717.png",
+          "portrait": "./images/current-site/2026/02/Screenshot-2026-02-03-184717.webp",
           "role": "M.S. Health Tech '27 Cohort Rep",
           "biography": [
             "I’m Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology – the process of how we use really big microscopes to study really small things.",
@@ -210,7 +210,7 @@ export const peopleData = {
           "lastName": "Cuccaro",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2028,
-          "portrait": "./images/current-site/2026/09/Colored-Pfp-Aidan-Cuccaro-e1790198510811.jpg",
+          "portrait": "./images/current-site/2026/09/Colored-Pfp-Aidan-Cuccaro-e1790198510811.webp",
           "role": "M.S. Health Tech '28 Cohort Rep",
           "biography": [
             "Aidan is a health tech student passionate about applying machine learning to the US healthcare system. He grew up in Corvallis, Oregon, where he also earned his undergraduate degree in Computer Science at Oregon State University. There, he applied his studies to NMR research and designed supplementary instruction for CS students. Outside of class, you can (try to) find him around the city — he refuses to stay still. Whether it's sparring in martial arts, playing piano, or improving his tailoring skills, Aidan believes every hobby is practice for a problem he hasn't run into yet.",
@@ -224,7 +224,7 @@ export const peopleData = {
           "lastName": "Yaulli",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg",
+          "portrait": "./images/current-site/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.webp",
           "role": "M.S. Urban Tech '27 Cohort Rep",
           "biography": [
             "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
@@ -237,7 +237,7 @@ export const peopleData = {
           "lastName": "",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2028,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "M.S. Urban Tech '28 Cohort Rep",
           "biography": [],
           "section": "representatives"
@@ -247,7 +247,7 @@ export const peopleData = {
           "lastName": "",
           "program": "Master of Business Administration",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "MBA Rep",
           "biography": [],
           "section": "representatives"
@@ -257,7 +257,7 @@ export const peopleData = {
           "lastName": "",
           "program": "Master of Laws in Law, Technology, and Entrepreneurship",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.jpg",
+          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
           "role": "LLM Rep",
           "biography": [],
           "section": "representatives"
@@ -273,7 +273,7 @@ export const peopleData = {
           "lastName": "Batra",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/yashika-batra.jpeg",
+          "portrait": "./images/members/2025/yashika-batra.webp",
           "role": "Technical President",
           "biography": [
             "Yashika Batra is a Master of Engineering in Computer Science student at Cornell Tech, with a passion for building robust and trustworthy Artificial Intelligence and Machine Learning systems. She recently earned her Bachelor's degree in Computer Science from Carnegie Mellon University, with a concentration in Machine Learning. Her experience spans projects in deep learning, natural language processing, parameter-efficient fine-tuning of large language models, and agentic AI. She is particularly interested in work that democratizes technology, whether through cost reduction, increased accessibility, or the inclusion of diverse perspectives. She's beyond excited to serve as part of CTSG this year!",
@@ -289,7 +289,7 @@ export const peopleData = {
           "lastName": "Saouma",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2025/jad-saouma.jpg",
+          "portrait": "./images/members/2025/jad-saouma.webp",
           "role": "Professional President",
           "biography": [
             "Jad Saouma is originally from Zahle, Lebanon, and spent five years in Minneapolis, Minnesota. He earned a B.S. in Computer Information Systems from the College of Saint Scholastica, where he captained the men's soccer team, and later worked for two years as a Software Engineer at Digi-Key. Before Cornell, he co-founded reunion.mpls, an event management platform, leading music, customer experience, partnerships, and entertainment. He's excited to scale reunion.mpls and explore all tech related startups.",
@@ -305,7 +305,7 @@ export const peopleData = {
           "lastName": "Jaffry",
           "program": "Master of Business Administration",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/khizar-jaffry.jpg",
+          "portrait": "./images/members/2025/khizar-jaffry.webp",
           "role": "Treasurer",
           "biography": [
             "Khizar Jaffry is an MBA candidate at Cornell Tech and currently serves as Treasurer of the Cornell Tech Student Government (CTSG). In this role, he is focused on making CTSG finances clear, organized, and sustainable so that student initiatives can thrive long after the current board. Khizar completed his first Cornell degree at the Ithaca campus, earning a Master of Health Administration with a focus on data analytics and healthcare management. At Tech, Khizar has been active across the community as a Fund Manager with Big Red Ventures, Chair of the Emerging Markets Institute student group, and Course Assistant in Financial Accounting. Outside of formal responsibilities, Khizar enjoys connecting with peers across different programs and building bridges between disciplines.",
@@ -321,7 +321,7 @@ export const peopleData = {
           "lastName": "Rizka",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2025/anyssa-rizka.jpeg",
+          "portrait": "./images/members/2025/anyssa-rizka.webp",
           "role": "Student Activities Co-Chair",
           "biography": [
             "Anyssa is a seasoned professional with experience in partner management at Google and a major Southeast Asian tech startup. She believes that fostering connections through engaging events and activities is key to a rich community experience. As the Student Activities Co-Chair, her goal is to make sure every gathering is so fun and memorable, students will look back and wish they could relive them.",
@@ -337,7 +337,7 @@ export const peopleData = {
           "lastName": "Beshkin",
           "program": "Master of Business Administration",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/brianna-beshkin.jpg",
+          "portrait": "./images/members/2025/brianna-beshkin.webp",
           "role": "Student Activities Co-Chair",
           "biography": [
             "Brianna is currently an MBA student at Cornell Tech, with experience spanning consulting, data, and tech. She began her career as a data analyst before transitioning into consulting, and most recently worked with early-stage tech startups in product data analytics. There, she designed analytics frameworks, built interactive dashboards, and led product-focused data initiatives, bridging strategy and execution through data-driven insights.",
@@ -353,7 +353,7 @@ export const peopleData = {
           "lastName": "Kandhadai",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2025/anusha-kandhadai.jpg",
+          "portrait": "./images/members/2025/anusha-kandhadai.webp",
           "role": "Communications Co-Chair",
           "biography": [
             "As CTSG’s Communications Chair, Anusha is passionate about connecting the Cornell Tech community and helping prospective students discover what makes it special. She shares the Cornell Tech story through blogs and multiple channels, fostering a strong sense of belonging.",
@@ -369,7 +369,7 @@ export const peopleData = {
           "lastName": "Li",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2025/jully-hujiaojiao-li.png",
+          "portrait": "./images/members/2025/jully-hujiaojiao-li.webp",
           "role": "Communications Co-Chair",
           "biography": [
             "Jully Li, graduated from the University of Toronto with a double major in Biochemistry and Human Biology. After graduation, she worked as a Product Designer at a Toronto-based fintech startup, where she designed AI-powered, user-centered enterprise digital products for major Canadian banks. With a background spanning both design and life sciences, Jully is passionate about integrating technology, aesthetics, and product thinking to drive innovation in the healthcare sector.",
@@ -385,7 +385,7 @@ export const peopleData = {
           "lastName": "Ahmed",
           "program": "Master of Business Administration",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/nadiem-ahmed.jpeg",
+          "portrait": "./images/members/2025/nadiem-ahmed.webp",
           "role": "External Affairs Chair",
           "biography": [
             "Nadiem Ahmed is a Tech MBA candidate at Cornell Tech with a background in mechanical engineering and experience in consulting. Originally from Ethiopia, he grew up in Saudi Arabia and spent the last seven years living in Canada. Nadiem is passionate about solving problems at the intersection of business and technology. At Cornell Tech, Nadiem is excited about exploring New York City's vibrant tech ecosystem and building bridges between industry, alumni, and campus life. In his free time, he enjoys playing and watching sports (football and basketball), reading, photography, and live music.",
@@ -401,7 +401,7 @@ export const peopleData = {
           "lastName": "Rao Ganta",
           "program": "Master of Business Administration",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/sneha-rao-ganta.jpg",
+          "portrait": "./images/members/2025/sneha-rao-ganta.webp",
           "role": "Diversity and Inclusion Chair",
           "biography": [
             "Sneha is a Tech MBA student passionate about making educational spaces equitable for all. She has worked as an engineer at Uber and Goldman Sachs and published research in AI and NLP. As a Google Womentechmakers Ambassador, she has spoken at conferences including SheBuilds, Google IWD, and Anita B.org to advocate for underrepresented communities in tech. She mentors women through the South Asian Women in Tech community and serves as a GHOT25 Ambassador, encouraging more young women to engage with the conference. She hopes to leverage her technical expertise to build inclusive products and solutions that serve everyone.",
@@ -417,7 +417,7 @@ export const peopleData = {
           "lastName": "Li",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg",
+          "portrait": "./images/current-site/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.webp",
           "role": "M.S. Connective Media '27 Cohort Rep",
           "biography": [
             "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！ My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French , and I'm passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.",
@@ -433,7 +433,7 @@ export const peopleData = {
           "lastName": "Rozen",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/royi-rozen.jpg",
+          "portrait": "./images/members/2025/royi-rozen.webp",
           "role": "M.S. Connective Media '26 Cohort Rep",
           "biography": [
             "Hi, I'm Royi Rozen an MS student at Cornell Tech building technologies to improve patient care. My work bridges team leadership, digital health, and AI-driven medical tools - always with the goal of creating real-world impact on patients and physicians in hospitals and beyond.",
@@ -449,7 +449,7 @@ export const peopleData = {
           "lastName": "Jeong",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2026/02/Screenshot-2026-02-03-184717.png",
+          "portrait": "./images/current-site/2026/02/Screenshot-2026-02-03-184717.webp",
           "role": "M.S. Health Tech '27 Cohort Rep",
           "biography": [
             "I'm Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology - the process of how we use really big microscopes to study really small things.",
@@ -466,7 +466,7 @@ export const peopleData = {
           "lastName": "Wang",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/kelly-wang.png",
+          "portrait": "./images/members/2025/kelly-wang.webp",
           "role": "M.S. Health Tech '26 Cohort Rep",
           "biography": [
             "Kelly Wang is a health-tech product builder and grad student at Cornell Tech who can’t resist turning ideas into action. Beyond work she’s the friend who plans spontaneous road trips and sunrise adventures, a water sports lover, and the unqualified tattoo artist who’s somehow left permanent ink on three friends. Kelly believes in romanticizing bold ideas and then doing them",
@@ -482,7 +482,7 @@ export const peopleData = {
           "lastName": "Yaulli",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg",
+          "portrait": "./images/current-site/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.webp",
           "role": "M.S. Urban Tech '27 Cohort Rep",
           "biography": [
             "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
@@ -498,7 +498,7 @@ export const peopleData = {
           "lastName": "Wang",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/zening-wang.jpg",
+          "portrait": "./images/members/2025/zening-wang.webp",
           "role": "M.S. Urban Tech '26 Cohort Rep",
           "biography": [
             "Zening grew up in Nanjing, China, and completed his Bachelor's in Mathematics–Computer Science at UC San Diego. At Cornell Tech, he is excited to explore how AI, computer vision, and data analytics can reshape cities and everyday life, while building connections across the Urban Tech community.",
@@ -514,7 +514,7 @@ export const peopleData = {
           "lastName": "Celik",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/berat-celik.jpg",
+          "portrait": "./images/members/2025/berat-celik.webp",
           "role": "M.Eng. CS Rep",
           "biography": [
             "Berat Celik is a Master of Engineering student in Computer Science at Cornell Tech. Originally from Turkey, he earned his undergraduate degree in Computer Science and Economics at the University of British Columbia as a Karen McKellin International Leader of Tomorrow scholar. He has worked across software engineering, consulting, and entrepreneurship—interning at health tech companies like Commure and Athelas, and co-founding ventures such as ForgeMind, an AI copilot for engineering design, and XFunds, a blockchain-based trading. His work spans from AI-driven healthcare solutions to innovative fintech and design technologies, always with a focus on building scalable products that solve real-world problems. Outside the classroom, Berat enjoys fitness, global networking, and mentoring students, and he is passionate about using technology and entrepreneurship to create large-scale societal impact.",
@@ -530,7 +530,7 @@ export const peopleData = {
           "lastName": "Moreno",
           "program": "Master of Engineering in Electrical and Computer Engineering",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/laura-moreno.jpg",
+          "portrait": "./images/members/2025/laura-moreno.webp",
           "role": "M.Eng. ECE Rep",
           "biography": [
             "Hi! My name is Laura Moreno and I’m in the ECE program. Professionally, my background is in the oil and gas industry where I was an electrical hardware test engineer. My focus right now is in embedded systems, and everything where software and hardware merge. At a more personal glance, I’m always down to grab a drink and have a nice chat. I am an art and pickleball lover who is trying to be a better reader. I hope to one day write my own book and create inclusive platforms through tech in LATAM, especially Colombia.",
@@ -546,7 +546,7 @@ export const peopleData = {
           "lastName": "Konety",
           "program": "Master of Engineering in Data Science and Decision Analytics",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/sarah-madhavan-konety.jpg",
+          "portrait": "./images/members/2025/sarah-madhavan-konety.webp",
           "role": "M.Eng. DSDA Rep",
           "biography": [
             "Sarah Madhavan Konety is from Chennai, India, holding an undergraduate degree in CSE (AI-DA). She is excited to represent the inaugural DSDA cohort at Cornell Tech and is passionate about building data products through machine learning. For Sarah, Cornell Tech is a launchpad — a place to transform curiosity into capability and ambition into real-world outcomes by building with code, while always staying grounded in human connection.",
@@ -562,7 +562,7 @@ export const peopleData = {
           "lastName": "Ko",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/jennifer-ko.jpeg",
+          "portrait": "./images/members/2025/jennifer-ko.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Keun Young (Jennifer) Ko is an MEng student in Operations Research and Information Engineering (ORIE) at Cornell Tech. Prior to Cornell Tech, Jennifer spent four years in the Bay Area working in litigation consulting, primarily on data privacy, antitrust, and healthcare.",
@@ -580,7 +580,7 @@ export const peopleData = {
           "lastName": "Tran",
           "program": "Master of Business Administration",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/nghi-tran.jpg",
+          "portrait": "./images/members/2025/nghi-tran.webp",
           "role": "MBA Rep",
           "biography": [
             "Vietnam-born & raised, Seattle-seasoned, Nghi spent a decade steering through PropTech as a PM. At Cornell Tech, she’s charting new horizons and sparking the energy for classmates to chase their ambitions.",
@@ -596,7 +596,7 @@ export const peopleData = {
           "lastName": "Vivero",
           "program": "Master of Laws in Law, Technology, and Entrepreneurship",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/belen-vivero.jpeg",
+          "portrait": "./images/members/2025/belen-vivero.webp",
           "role": "LLM Rep",
           "biography": [
             "Currently a student in the LLM (Master of Laws) Program at Cornell Tech, Belen is an Ecuadorian lawyer with experience in government and private practice. She has advised the creative industries and worked on investment policy, focusing on innovation and entrepreneurship. Passionate about technology, AI and creativity.",
@@ -612,7 +612,7 @@ export const peopleData = {
           "lastName": "Tai",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2026,
-          "portrait": "./images/members/2025/nathan-tai.png",
+          "portrait": "./images/members/2025/nathan-tai.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Nathan is a Cornell Undergraduate from Philadelphia, PA",
@@ -638,7 +638,7 @@ export const peopleData = {
           "lastName": "Ioffe",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/jacob-ioffe.jpg",
+          "portrait": "./images/members/2024/jacob-ioffe.webp",
           "role": "Technical President",
           "biography": [
             "Jacob is currently a Health Tech student at Cornell Tech and in his second year. Before Cornell Tech, he graduated from Vanderbilt University with a B.S. in Computer Science, with minors in Math and Neuroscience. Jacob’s passion lies at the intersection of computer science and biology, particularly in the transformative power of machine learning to interpret the myriad signals the body produces. This is now Jacob’s second year as Co-President and he is equally passionate about continuing to foster a strong community on campus and supporting all students.",
@@ -654,7 +654,7 @@ export const peopleData = {
           "lastName": "Shinde",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2024/manjeet-shinde.jpg",
+          "portrait": "./images/members/2024/manjeet-shinde.webp",
           "role": "Professional President",
           "biography": [
             "Manjeet is originally from Pune, India, and has lived in Mumbai, Vellore, and Bangalore. Before Cornell, he worked at the intersection of technology and supply chain. Known for his empathy and calm demeanor, Manjeet loves connecting with people from diverse backgrounds and brings a passion for team-driven goals to every project.",
@@ -670,7 +670,7 @@ export const peopleData = {
           "lastName": "Krishna",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2024/aadhya-krishna.png",
+          "portrait": "./images/members/2024/aadhya-krishna.webp",
           "role": "Communications Chair",
           "biography": [
             "Aadhya K is an award-winning design leader focused on empathy-driven experiences that combat bias. She brings expertise in Gen AI, web3, and community-based solutions, and is trained in leading Design Sprints. Aadhya is a Google for Startups mentor, co-founder of AADS Academy, and founding member of SHNORH Studio, driving impactful change at the crossroads of design, business, and technology.",
@@ -686,7 +686,7 @@ export const peopleData = {
           "lastName": "Goyal",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2024/utkarsh-goyal.jpg",
+          "portrait": "./images/members/2024/utkarsh-goyal.webp",
           "role": "Treasurer",
           "biography": [
             "With a background in mathematics and chemical engineering, Utkarsh brings analytical expertise honed through roles in data analysis and pricing strategy. Previously based in Chicago, he’s committed to leveraging data-driven solutions for strategic change. His experience in consulting and cross-functional collaboration makes him a valuable asset to Cornell Tech’s Student Government.",
@@ -702,7 +702,7 @@ export const peopleData = {
           "lastName": "Didwania",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2024/sparsh-didwania.jpg",
+          "portrait": "./images/members/2024/sparsh-didwania.webp",
           "role": "Student Activities Chair",
           "biography": [
             "As the Student Activities Chair, Sparsh is dedicated to enhancing the Cornell Tech experience through engaging events and community-building activities. When not organizing, he enjoys sports and spending time with friends. Sparsh’s goal is to make Cornell Tech a memorable journey for all students.",
@@ -718,7 +718,7 @@ export const peopleData = {
           "lastName": "Surendran",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2024/rishabh-surendran.png",
+          "portrait": "./images/members/2024/rishabh-surendran.webp",
           "role": "External Affairs Chair",
           "biography": [
             "Rishabh has lived in nearly 15 locations, which sparked his passion for diverse perspectives. With a background in data engineering from Goldman Sachs and experience with India’s Principal Scientific Adviser, he’s supported early-stage deep tech startups in climate change and disaster response. He was also part of the core team drafting India’s National Deep Tech Startup Policy.",
@@ -734,7 +734,7 @@ export const peopleData = {
           "lastName": "Tiwari",
           "program": "Master of Business Administration",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/akshita-tiwari.png",
+          "portrait": "./images/members/2024/akshita-tiwari.webp",
           "role": "Diversity and Inclusion Chair",
           "biography": [
             "Currently an MBA student at Cornell, Akshita has 7 years of experience across finance, data, and tech. She began her career in investment banking with SEAbridge Partners in Singapore, focusing on the tech sector, and later transitioned to consulting with BCG in India. Her strategic approach to technology and finance guides her leadership in diversity and inclusion.",
@@ -750,7 +750,7 @@ export const peopleData = {
           "lastName": "Bingenheimer",
           "program": "Master of Laws in Law, Technology, and Entrepreneurship",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/laura-bingenheimer.png",
+          "portrait": "./images/members/2024/laura-bingenheimer.webp",
           "role": "LLM Rep",
           "biography": [],
           "section": "representatives",
@@ -764,7 +764,7 @@ export const peopleData = {
           "lastName": "Yellin",
           "program": "Master of Business Administration",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/navot-yellin.png",
+          "portrait": "./images/members/2024/navot-yellin.webp",
           "role": "MBA Rep",
           "biography": [
             "Originally from Israel, Navot transitioned from UX to Product Management, where he spent seven years helping startups find product-market fit. His goal at Cornell Tech is to leverage his experience to support the MBA community and foster innovation.",
@@ -780,7 +780,7 @@ export const peopleData = {
           "lastName": "Krieger",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/mitchell-mitch-krieger.png",
+          "portrait": "./images/members/2024/mitchell-mitch-krieger.webp",
           "role": "M.Eng. CS Rep",
           "biography": [
             "Mitch is a data scientist with experience in FinTech/Crypto, passionate about building data products through machine learning. With a background in education and theater, he brings a unique perspective to tech. He has also worked on Broadway and holds a strong foundation in experiential learning.",
@@ -796,7 +796,7 @@ export const peopleData = {
           "lastName": "Indap",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/shreeya-indap.png",
+          "portrait": "./images/members/2024/shreeya-indap.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Shreeya, a recent graduate in Computer Science, has industry experience at AWS and Meta. Now pursuing her Master of Engineering in Operations Research and Information Engineering, she aims to empower ORIE students and foster community. Her goal is to showcase how ORIE’s unique skills can set students apart in their careers.",
@@ -812,7 +812,7 @@ export const peopleData = {
           "lastName": "Yu",
           "program": "Master of Engineering in Electrical and Computer Engineering",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/julia-yu.jpg",
+          "portrait": "./images/members/2024/julia-yu.webp",
           "role": "M.Eng. ECE Rep",
           "biography": [
             "Julia, a CS graduate from Smith College, has a keen interest in robotics and engineering. A New Yorker at heart, she’s excited to explore game development and robotics, aiming to create engaging, hands-on experiences.",
@@ -828,7 +828,7 @@ export const peopleData = {
           "lastName": "Kim",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": null,
-          "portrait": "./images/members/2024/jae-kim.png",
+          "portrait": "./images/members/2024/jae-kim.webp",
           "role": "M.S. Health Tech Rep",
           "biography": [
             "Jae is dedicated to fostering growth and engagement in the Health Tech program, building connections within the Cornell Tech community.",
@@ -844,7 +844,7 @@ export const peopleData = {
           "lastName": "Alakhume",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": null,
-          "portrait": "./images/members/2024/aimalohi-alakhume.png",
+          "portrait": "./images/members/2024/aimalohi-alakhume.webp",
           "role": "M.S. Connective Media Rep",
           "biography": [
             "Aimalohi grew up in Lagos, Nigeria, and pursued a Bachelor's in Electrical Engineering at NYU. Interested in sustainability, she combines game design with environmental projects to drive user engagement. Her goals at Cornell Tech are to deepen her knowledge in user-centered design and build immersive, sustainable experiences.",
@@ -860,7 +860,7 @@ export const peopleData = {
           "lastName": "Lal",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": null,
-          "portrait": "./images/members/2024/jaspreet-lal.png",
+          "portrait": "./images/members/2024/jaspreet-lal.webp",
           "role": "M.S. Urban Tech Rep",
           "biography": [
             "Jaspreet is pursuing a Dual Master’s in Applied Information Science and Information Systems, specializing in Urban Tech. She’s also an Open Data Intern with the MTA, where she works to make government data accessible. Jaspreet is passionate about the intersections of tech and urban development.",
@@ -876,7 +876,7 @@ export const peopleData = {
           "lastName": "Wang",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2026,
-          "portrait": "./images/members/2024/kelly-wang.png",
+          "portrait": "./images/members/2024/kelly-wang.webp",
           "role": "M.S. Health Tech '26 Cohort Rep",
           "biography": [
             "Kelly, a Boston University graduate in Computer Engineering, spent time as a digital nomad designing Electronic Health Records (EHR). Her work with healthcare providers ignited her interest in health tech, leading her to Cornell Tech. Kelly enjoys water sports, exploring design, and watching sunsets in her free time."
@@ -891,7 +891,7 @@ export const peopleData = {
           "lastName": "Kim",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2025,
-          "portrait": "./images/members/2024/jacqueline-kim.png",
+          "portrait": "./images/members/2024/jacqueline-kim.webp",
           "role": "M.S. Urban Tech '25 Cohort Rep",
           "biography": [
             "Jackie is the Urban Tech second year representative for the class of 2025. Her work spans from big tech to a small urban analytic startup. At Cornell Tech, she is focused on harnessing data to solve challenges in the intersection of urban and societal topics.",
@@ -917,7 +917,7 @@ export const peopleData = {
           "lastName": "Reimann",
           "program": "Master of Business Administration",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/burke-reimann.jpg",
+          "portrait": "./images/members/2023/burke-reimann.webp",
           "role": "Professional President",
           "biography": [
             "Burke is originally from Chicago, IL, but has lived in Portland, Oregon; Austin, Texas; and Prague, Czech Republic. Prior to Cornell, Burke studied Economics and Statistics. After his undergrad, he started in tech consulting as he moved down to Austin to work in Big Tech. Later, he moved back to Chicago to work in a consulting firm. Burke is passionate about the intersection of music and technology, specifically, how generative engines will change the way the world becomes interactive with music.",
@@ -933,7 +933,7 @@ export const peopleData = {
           "lastName": "Carbonell",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/jan-carbonell.jpg",
+          "portrait": "./images/members/2023/jan-carbonell.webp",
           "role": "Technical President",
           "biography": [
             "Jan is a serial entrepreneur focused on Artificial Intelligence. He founded a nonprofit to increase non-english speaking talent in AI and his latest edtech startup was acquired by another company from YC. During Covid, he was part of the team that built the first low-cost ventilator to get approved for human clinical trials, and in his spare time he enjoys training for triathlons, surfing and traveling.",
@@ -949,7 +949,7 @@ export const peopleData = {
           "lastName": "Ioffe",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/jacob-ioffe.jpg",
+          "portrait": "./images/members/2023/jacob-ioffe.webp",
           "role": "Technical President",
           "biography": [
             "Jacob graduated from Vanderbilt University with a B.S. in Computer Science, and minors in Math and Neuroscience. Positioned at the confluence of health and technology, he seeks practical solutions for intricate healthcare problems. During his time at Vanderbilt, he explored bioinformatics, with an emphasis on natural language processing for autism-related literature and advancements in genomic sequencing. Outside the lab, Jacob collaborated with Nashville’s neurodiverse and physically-limited communities, engineering open-source tools to help those with niche disabilities, but also allow access to others facing similar limitations. One notable project was his work with the Next Steps Vanderbilt program, where he developed an LLM-based communication application. Now, as the health tech representative in Cornell's student government, Jacob's primary goal is to strengthen the health tech program, fostering a closer connection with the Technion and broadening research opportunities for all.",
@@ -965,7 +965,7 @@ export const peopleData = {
           "lastName": "Proothi",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/nandini-proothi.jpg",
+          "portrait": "./images/members/2023/nandini-proothi.webp",
           "role": "Communications Chair",
           "biography": [
             "Nandini graduated with an engineering degree in Information Technology from Manipal, India and previously worked at a fintech as a Data Engineer. Nandini is now interested in exploring the depths of user research and HCI and in the long term, plans on contributing to the accessibility provided to users in the birding space; by conducting more user studies, building better applications, and interfaces for ornithology labs across the 🌎",
@@ -981,7 +981,7 @@ export const peopleData = {
           "lastName": "Mohanakrishnan",
           "program": "Master of Business Administration",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/yashwanth-mohanakrishnan.jpg",
+          "portrait": "./images/members/2023/yashwanth-mohanakrishnan.webp",
           "role": "Treasurer",
           "biography": [
             "Yash is from Chennai, India! Like his name, his professional career is long. He designed and set up one of India’s largest notebook manufacturing factories. He then headed operations and digital sales for an agritech startup before moving to a HR tech company to lead their operations, business operations and product teams. He loves working and storytelling with data! He is passionate about cooking and data-driven and tech-enabled business strategy, in that order.",
@@ -997,7 +997,7 @@ export const peopleData = {
           "lastName": "Wu",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/rowan-wu.jpg",
+          "portrait": "./images/members/2023/rowan-wu.webp",
           "role": "Student Activities Chair",
           "biography": [
             "Rowan is passionate about the application of technology and data science to make cities more equitable. She also loves planning fun events and socials to bring people together! Before coming to Cornell Tech, she worked in consulting advising public sector clients on economic development strategies, and at a civic nonprofit managing public programs. She majored in Urban Studies and Environmental Science at Barnard College, Columbia University. Rowan grew up in the suburbs of Boston but has lived the last 9 years in New York.",
@@ -1013,7 +1013,7 @@ export const peopleData = {
           "lastName": "Gupta",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/priyanshi-gupta.jpg",
+          "portrait": "./images/members/2023/priyanshi-gupta.webp",
           "role": "Diversity and Inclusion Chair",
           "biography": [
             "Priyanshi is a passionate technology enthusiast with a keen interest in creating impactful solutions for people's everyday lives. She holds a bachelor’s degree in Computer Science from India and is passionate for NLP, which has lead to research work and publications before her enrollment at Cornell Tech. Over time, she gained valuable industry experience by collaborating with renowned companies such as SYSTRAN, NVIDIA, and NOKIA, contributing to various NLP projects. During her undergraduate years, Priyanshi embraced an entrepreneurial spirit while actively participating in the early stages of an AI-powered fashion styling startup. Committed to leveraging technology for social good, she also founded and led the tech team at Enactus BVCOE. Her overarching goal is simple: to develop solutions that have a meaningful and positive impact on people's lives.",
@@ -1029,7 +1029,7 @@ export const peopleData = {
           "lastName": "Kiriakos",
           "program": "Master of Laws in Law, Technology, and Entrepreneurship",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/mathieu-kiriakos.jpg",
+          "portrait": "./images/members/2023/mathieu-kiriakos.webp",
           "role": "LLM Rep",
           "biography": [
             "Mathieu has a bachelor's degree, a JD and is originally from Montreal, Canada. He worked in a corporate law firm, where he developed a keen interest in technological innovation and AI regulation.",
@@ -1047,7 +1047,7 @@ export const peopleData = {
           "lastName": "Cohen",
           "program": "Master of Business Administration",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/ezra-cohen.jpg",
+          "portrait": "./images/members/2023/ezra-cohen.webp",
           "role": "MBA Rep",
           "biography": [
             "Ezra is originally from Brazil but moved to the South of France at the young age of 8. Ezra attended NYU Stern undergrad, where he studied abroad in Shanghai and London. After graduating, Ezra worked at Mastercard for 3 years as a Product Manager, then decided to join Cornell Tech to pursue his passion for video games and how new technologies can help in the creation of interactive and exciting new games!",
@@ -1063,7 +1063,7 @@ export const peopleData = {
           "lastName": "Jones",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/hannah-jones.jpg",
+          "portrait": "./images/members/2023/hannah-jones.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Hannah is a Chemical Engineer with an interest in applying ORIE to process improvement and manufacturing. She looks forward to planning social events and getting to know more students! Hannah previously worked as a product developer in the food industry and drug manufacturing in pharmaceuticals. Hannah recently graduated from Cornell and is originally from the Washington, DC area.",
@@ -1079,7 +1079,7 @@ export const peopleData = {
           "lastName": "Corliss",
           "program": "Master of Engineering in Electrical and Computer Engineering",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/tyler-corliss.jpg",
+          "portrait": "./images/members/2023/tyler-corliss.webp",
           "role": "M.Eng. ECE Rep",
           "biography": [
             "Tyler is an Electrical Engineering and Computer Engineering Meng student who graduated from Berkeley in Spring 2023 in EECS. He looks forward to planning social events between the schools, and great parties. He is training to compete again in swim meets.",
@@ -1095,7 +1095,7 @@ export const peopleData = {
           "lastName": "Oliver",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2024,
-          "portrait": "./images/members/2022/deanna-oliver-dee.jpg",
+          "portrait": "./images/members/2022/deanna-oliver-dee.webp",
           "role": "M.S. Health Tech '24 Cohort Rep",
           "biography": [
             "Hey, I’m Dee! I hold a B.S. in Global Public Health-Sociology and a Master’s in Public Health from New York University. Currently, I’m pursuing a Dual Master's of Science in Applied Information Science and Information Systems at Cornell Tech, specializing in Health Tech. Alongside my academic pursuits, I work full-time as a Senior Analyst in Data and Analytics and I’m the founder of an early-stage health tech venture. My passion lies at the intersection of health and innovation; ultimately, I seek to leverage my background in public health, entrepreneurship, and data to empower underserved communities and improve healthcare delivery.",
@@ -1112,7 +1112,7 @@ export const peopleData = {
           "lastName": "Rajkumar",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/haran-rajkumar.jpg",
+          "portrait": "./images/members/2023/haran-rajkumar.webp",
           "role": "M.Eng. CS Rep",
           "biography": [],
           "section": "representatives",
@@ -1125,7 +1125,7 @@ export const peopleData = {
           "lastName": "Wang",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/siyan-wang.jpg",
+          "portrait": "./images/members/2023/siyan-wang.webp",
           "role": "M.S. Connective Media '25 Cohort Rep",
           "biography": [
             "Siyan graduated from Haverford with a bachelors in Mathematics in 2018. She then worked in Silicon Valley as a data and product analyst first and moved back to China to become a content writer afterwards. As the connective media representative this year, Siyan hopes to organize more social events to bond Cornell Tech students and the overall NYC community tightly and let people have fun! In her free time, Siyan is an active sports enthusiast and running her own podcast on women’s sports.",
@@ -1141,7 +1141,7 @@ export const peopleData = {
           "lastName": "Kim",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2025,
-          "portrait": "./images/members/2023/jacqueline-kim.jpg",
+          "portrait": "./images/members/2023/jacqueline-kim.webp",
           "role": "M.S. Urban Tech '25 Cohort Rep",
           "biography": [
             "Jackie holds a bachelors in data science from the University of California, Berkeley and has a penchant for cities, their evolution, and the ways that they bring people together. Before starting at Cornell Tech, she worked for a French urban analytic startup while living in Amsterdam, the Netherlands, then in tech consulting as a data engineer. In her free time, she enjoys practicing new languages, dinner parties, and curling up with a nice book (ask her about what she’s reading!).",
@@ -1157,7 +1157,7 @@ export const peopleData = {
           "lastName": "Bogdanov",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/olena-bogdanov.jpg",
+          "portrait": "./images/members/2023/olena-bogdanov.webp",
           "role": "M.S. Urban Tech '24 Cohort Rep",
           "biography": [
             "Olena Bogdanov graduated with a degree in Data Science, with a concentration on geography and environmental science. Prior to joining Cornell Tech, Olena worked as a data scientist and focused on research, specifically the strategic operations management of municipalities looking to leverage smart tech.",
@@ -1173,7 +1173,7 @@ export const peopleData = {
           "lastName": "Kanumuru",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2024,
-          "portrait": "./images/members/2023/vikranth-kanumuru.jpg",
+          "portrait": "./images/members/2023/vikranth-kanumuru.webp",
           "role": "M.S. Connective Media '24 Cohort Rep",
           "biography": [
             "Vikranth is originally from Kuwait but moved to India ever since 6th grade. Vikranth holds a bachelor degree in CS from VIT. He worked in Australia on sharks and drones and later on in different domains of supply chain and edtech before deciding to move to Cornell tech to pursue his interest in building products",
@@ -1195,7 +1195,7 @@ export const peopleData = {
           "lastName": "Choie",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/michael-choie.png",
+          "portrait": "./images/members/2022/michael-choie.webp",
           "role": "Professional President",
           "biography": [
             "Q. If you could only eat one meal for the rest of your life, what would it be? Instant noodles - I’m a sucker for Samyang Buldak (super spicy noodles). I’m convinced that the most delicious meal you could ever have is instant noodles during a late night work session.",
@@ -1212,7 +1212,7 @@ export const peopleData = {
           "lastName": "",
           "program": null,
           "graduationYear": null,
-          "portrait": "./images/members/2022/daria.jpg",
+          "portrait": "./images/members/2022/daria.webp",
           "role": "Technical President",
           "biography": [
             "Q. What is a motto you follow? “If you change nothing, nothing will change.” It helps put the complaints/ whines into perspective, if you see something that is not good enough for you, go and do something about it.",
@@ -1229,7 +1229,7 @@ export const peopleData = {
           "lastName": "Chandra",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/purushottam-chandra.jpg",
+          "portrait": "./images/members/2022/purushottam-chandra.webp",
           "role": "Treasurer",
           "biography": [
             "Q. If you were to choose another major, what would it be and why? Public Policy or Political Sciences. Maybe because I’m a strong centralist and believe that balance is the key to solving major issues. 🤪",
@@ -1246,7 +1246,7 @@ export const peopleData = {
           "lastName": "Li",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/jonathan-li.png",
+          "portrait": "./images/members/2022/jonathan-li.webp",
           "role": "Student Activities Chair",
           "biography": [
             "Q. What is your favorite reality TV show? “The tribe has spoken.” - Survivor",
@@ -1263,7 +1263,7 @@ export const peopleData = {
           "lastName": "Saha",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/saurabh-saha.jpg",
+          "portrait": "./images/members/2022/saurabh-saha.webp",
           "role": "External Affairs Chair",
           "biography": [
             "Q. What is a motto you follow? Focus more on process and less on result.",
@@ -1280,7 +1280,7 @@ export const peopleData = {
           "lastName": "Pandit",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/sharwari-pandit.jpg",
+          "portrait": "./images/members/2022/sharwari-pandit.webp",
           "role": "Diversity and Inclusion Chair",
           "biography": [
             "Q. What do you take everywhere with you? A book! In my backpack, on my phone, sometimes just in my hand. You’ll never catch me without one :)",
@@ -1297,7 +1297,7 @@ export const peopleData = {
           "lastName": "Metlitzky",
           "program": "Master of Engineering in Operations Research and Information Engineering",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/holly-metlitzky.jpg",
+          "portrait": "./images/members/2022/holly-metlitzky.webp",
           "role": "M.Eng. ORIE Rep",
           "biography": [
             "Q. If you were to choose another major, what would it be and why? I would have majored in musical theater and become a Broadway star. I have always loved to dance, sing and act despite my limited talent.",
@@ -1314,7 +1314,7 @@ export const peopleData = {
           "lastName": "Everly",
           "program": "Master of Engineering in Electrical and Computer Engineering",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/jacob-everly.png",
+          "portrait": "./images/members/2022/jacob-everly.webp",
           "role": "M.Eng. ECE Rep",
           "biography": [
             "Q. What is one of your favorite hobbies? Cooking for friends and family!",
@@ -1331,7 +1331,7 @@ export const peopleData = {
           "lastName": "Ravi",
           "program": "Master of Engineering in Computer Science",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/roshan-ravi.jpg",
+          "portrait": "./images/members/2022/roshan-ravi.webp",
           "role": "M.Eng. CS Rep",
           "biography": [
             "Q. If you could live anywhere, where would it be? “Home is where you park it” – I absolutely love traveling and would love to RV full-time at some point.",
@@ -1348,7 +1348,7 @@ export const peopleData = {
           "lastName": "Majety",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/akash-majety.png",
+          "portrait": "./images/members/2022/akash-majety.webp",
           "role": "M.S. Health Tech '23 Cohort Rep",
           "biography": [
             "Q. If you could live anywhere, where would it be? I’m a Bond fan, so, Matera, Italy",
@@ -1365,7 +1365,7 @@ export const peopleData = {
           "lastName": "Oliver",
           "program": "Dual M.S. in Health Tech",
           "graduationYear": 2024,
-          "portrait": "./images/members/2022/deanna-oliver-dee.jpg",
+          "portrait": "./images/members/2022/deanna-oliver-dee.webp",
           "role": "M.S. Health Tech '24 Cohort Rep",
           "biography": [
             "Q. What are your hobbies? I’m a movie buff and spend quite a bit of time at the theater. I also enjoy painting, indoor skydiving, cake decorating, and building things.",
@@ -1382,7 +1382,7 @@ export const peopleData = {
           "lastName": "Ertay",
           "program": "Dual M.S. in Connective Media",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/eylul-ertay.jpg",
+          "portrait": "./images/members/2022/eylul-ertay.webp",
           "role": "M.S. Connective Media '23 Cohort Rep",
           "biography": [
             "Q. What book/movie/show can you watch over and over again without getting bored? Hitchhiker's Guide to the Galaxy! (the books, not the movie – although the movie is also pretty good)",
@@ -1399,7 +1399,7 @@ export const peopleData = {
           "lastName": "Dumas",
           "program": "Dual M.S. in Urban Tech",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/max-dumas.jpg",
+          "portrait": "./images/members/2022/max-dumas.webp",
           "role": "M.S. Urban Tech '23 Cohort Rep",
           "biography": [
             "Q. If you could live anywhere, where would it be? I spent some time this past summer in the Scottish Highlands. It was a transcendental experience and I want to spend some time just living in a cabin up there at some point. I like sheep.",
@@ -1416,7 +1416,7 @@ export const peopleData = {
           "lastName": "Bershad",
           "program": "Master of Business Administration",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/tyler-bershad.png",
+          "portrait": "./images/members/2022/tyler-bershad.webp",
           "role": "MBA Rep",
           "biography": [
             "Q. Favorite thing you’ve built? Bluetooth potato launcher",
@@ -1433,7 +1433,7 @@ export const peopleData = {
           "lastName": "Monturiol",
           "program": "Master of Laws in Law, Technology, and Entrepreneurship",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/valeria-monturiol.jpg",
+          "portrait": "./images/members/2022/valeria-monturiol.webp",
           "role": "LLM Rep",
           "biography": [
             "Q. What book/movie/show can you watch over and over again without getting bored? Harry Potter books (except Chamber of Secrets).",
@@ -1450,7 +1450,7 @@ export const peopleData = {
           "lastName": "Barnoin",
           "program": "Master of Science in Matter Design Computation",
           "graduationYear": 2023,
-          "portrait": "./images/members/2022/julia-barnoin.jpg",
+          "portrait": "./images/members/2022/julia-barnoin.webp",
           "role": "M.S. Matter Design Computation Rep",
           "biography": [
             "Q. What’s your favorite thing to do? I cannot decide between building things or sailing!",

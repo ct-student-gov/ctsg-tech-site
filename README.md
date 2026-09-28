@@ -2,13 +2,31 @@
 
 This repository will contain the custom CTSG website, hosted outside Cornell’s restricted WordPress environment and embedded at **https://ctsg.tech.cornell.edu/** in a fullscreen iframe.
 
-The dependency-free HTML/JavaScript site now uses the composed Cornell editorial homepage. It retains hash navigation and the WordPress iframe bridge. The year-based People gallery is on `#/members`; other destination pages remain placeholders.
+The HTML/JavaScript site uses the composed Cornell editorial homepage. It retains hash navigation and the WordPress iframe bridge. The browser runtime has no dependencies; the build uses Sharp to prepare WebP images. The year-based People gallery is on `#/members`.
 
 ## Updating People
 
 Edit `public/data/people.js` to maintain the gallery. Add an entry to `years` with a numeric `startYear` and a `members` array; the page automatically shows the newest year first and labels it, for example, `2026–2027`. Keep previous entries to retain the archive. Each person has `firstName`, `lastName`, `program`, `graduationYear`, and a `portrait` path relative to `public/`. Set each person’s `section` to `executive-board` or `representatives` to place them in the corresponding gallery within their year. Each portrait area uses Cornell red behind the picture, name, and role, extending halfway into the gap to its border. Expanded details use the page background. Borders follow each profile’s own height. Unfilled positions appear as TBD cards with their role. Click a member’s portrait or name to expand an integrated profile: their program, known graduation year, biography, and fun fact wrap beside the portrait and its labels, then continue across the full card width below. On narrow screens, the details stack below the portrait for readability. A border fades in and out on hover over 0.125 seconds. One animated box surrounds the picture, name, position, and details; the red area, portrait, name, and position slide together to the right side as the box expands and return to their gallery positions as it shrinks. Move the mouse off the expanded card, click outside it, or press Escape to dismiss it. Reduced-motion preferences disable the animation. TBD entries and past members without biographies have no detail box. The 2025–2026 roster comes from https://ctsg.tech.cornell.edu/sample-page/past-members/, supplemented with biographies and portraits from the September 2025 and February 2026 homepage revisions. The 2024–2025 roster comes from the November 2024 revision. Recovered portraits are stored locally under `public/images/members/` (or reuse existing local images); each imported profile retains its source revision and portrait URL. Nathan Tai’s September 2025 ORIE role is dated to distinguish it from the later representative. Missing portraits use `public/images/members/no-image.svg`, and missing biographies stay empty.
 
 Full degree titles and graduation years appear together. For the existing rosters, one-year programs use the roster’s ending year; two-year programs use supplied graduation years or first-/second-year cohort labels. Keep years `null` (displayed as “Year TBD”) when the program or cohort is unknown. When adding a roster, supply the appropriate graduation years in the data. Set `banner.src` to the group photo path and update `banner.alt` to replace the placeholder. No page markup changes are needed to add years or people.
+
+## Adding photos (including future years)
+
+1. Put the original photo in `public/images/`, using year folders where useful, such as `public/images/members/2030/jane-doe.jpg`.
+2. Reference that original file with a literal path in the HTML, CSS, or `public/data/people.js`, such as `"./images/members/2030/jane-doe.jpg"`. Download externally hosted photos into this directory first. Do not construct image filenames dynamically in JavaScript.
+3. Run `npm run dev` to preview, or `npm run build` to prepare publishing files. The build scans every subfolder, so future years require no build configuration changes.
+
+The build preserves originals in `public/` and writes the site to **`dist/public/`**. It converts raster photos to WebP at quality 82, fits them within 2048 × 2048 without enlarging small images, applies EXIF orientation, and strips metadata from newly encoded files. Existing WebP files within the size limit are copied without re-encoding. SVGs stay SVGs. HTML, CSS, and JavaScript image references are updated in the generated output, including People portraits and the group banner. Original external source citations are retained.
+
+Use unique photo names: `jane-doe.jpg` and `jane-doe.webp` in the same folder would collide and stop the build. Broken image paths, invalid images, unconverted raster files, and external photos in rendered HTML/CSS/People fields also fail validation. Use literal image paths so the build can inspect them; third-party iframe content is outside this site's image pipeline.
+
+`npm run images:check` validates an existing `dist/public/` output. Do not edit or commit `dist/`; it is generated. Only publish built output, never the original `public/` folder.
+
+### Enabling the publishing gate on GitHub Pages
+
+`.github/workflows/pages.yml` runs syntax checks, tests, the image build, and final image validation. Pull requests only validate; pushes to `main` and manual runs on `main` publish the validated artifact after every check passes. The artifact preserves the current `/public/` URL, including the WordPress embed and social preview image paths. Its root links/redirects to `/public/`.
+
+**After the workflow and build files are committed and pushed, set Settings → Pages → Build and deployment → Source to GitHub Actions**, then run the workflow if needed. A Pages configuration that publishes directly from a branch bypasses the image checks; merely adding the workflow does not change that setting. See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ## Styling
 
@@ -33,11 +51,14 @@ The reviewed public site's navigation has CTSG and Student Events at the top, wi
 
 ## Run locally
 
-Requires Node.js 20 or newer. There are no dependencies to install or build step.
+Requires Node.js 20.9 or newer (Node.js 22 is used in CI). Install the locked build dependencies once:
 
 ```sh
+npm ci
 npm run dev
 ```
+
+The development server builds the site at startup and on each document reload, and serves `dist/public/`. Reload after editing source files or adding photos. A failed image build displays an error instead of a successful preview.
 
 Open **http://localhost:8080/demo/**. The development server exposes two different origins:
 
@@ -89,7 +110,7 @@ On retesting the first inline version, WordPress retained the script tag but ins
 
 ### Hosted setup
 
-Deploy the contents of `public/` to a static HTTPS host. Replace `https://YOUR-HOST.example/` below with the actual deployed site URL, including a repository subpath if applicable. This placeholder URL is not a deployment. Demo files are for local testing and can be excluded from deployment.
+Run `npm run build` and `npm run images:check`, then deploy the contents of `dist/public/` to a static HTTPS host. The supplied GitHub Pages workflow instead uploads `dist/` to retain the existing `/public/` URL. Replace `https://YOUR-HOST.example/` below with the actual deployed site URL, including a repository subpath if applicable. This placeholder URL is not a deployment. Demo files are for local testing and can be excluded from deployment.
 
 Paste the iframe into the WordPress page’s allowed HTML block:
 
@@ -146,7 +167,10 @@ Hash routes require no WordPress or static-host rewrite rules: fragments are not
 - `public/styles/`: shared patterns and page-scoped styles.
 - `public/wordpress-bridge.js`: parent-side URL/history bridge.
 - `public/demo/`: local synchronized and iframe-only examples.
-- `scripts/dev.mjs`: dependency-free local server on ports 8080 and 8081; not a production server.
+- `scripts/build.mjs`: image conversion, reference updates, and published-image validation.
+- `scripts/dev.mjs`: local server for the built site on ports 8080 and 8081; not a production server.
+- `.github/workflows/pages.yml`: validate changes and publish only a passing build once Pages is configured to use Actions.
+- `tests/images.test.mjs`: conversion, sizing, reference, and validation tests.
 - `tests/bridge.test.mjs`: parent protocol tests for deep links, history entries, and rejecting invalid messages; these do not replace browser testing.
 
 The diagnostic snippet is prepared locally; it has not been applied to WordPress by this task.

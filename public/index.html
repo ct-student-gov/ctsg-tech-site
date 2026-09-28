@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="./styles/members.css">
   <link rel="stylesheet" href="./styles/governance.css">
+  <link rel="stylesheet" href="./styles/events.css">
   <script type="module" src="./app.js"></script>
 </head>
 <body>
@@ -117,8 +118,43 @@
     </div>
   </template>
   <template id="events-template">
-    <h1>Student Events</h1>
-    <p>Student event details coming soon.</p>
+    <div class="events">
+      <div class="home-banner events-banner">
+        <p class="events-banner-placeholder">Events photo coming soon</p>
+      </div>
+      <div class="events-content">
+        <h1>Student Events</h1>
+        <section class="events-calendar" aria-labelledby="events-calendar-heading">
+          <h2 id="events-calendar-heading">Calendar</h2>
+          <div class="events-calendar-placeholder">
+            <p>Monthly calendar coming soon.</p>
+          </div>
+        </section>
+        <section class="events-projects" aria-labelledby="events-projects-heading">
+          <h2 id="events-projects-heading">Projects</h2>
+          <!-- Add new projects at the top, keeping the list newest first. -->
+          <ol class="events-project-list" role="list">
+            <li>
+              <article>
+                <h3>
+                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="cornelloween-2026-details" aria-labelledby="cornelloween-2026-title">
+                    <span class="event-card-title" id="cornelloween-2026-title">Cornelloween 2026</span>
+                    <span class="event-card-action">View details <span aria-hidden="true">+</span></span>
+                  </button>
+                </h3>
+                <dialog class="event-details" id="cornelloween-2026-details" aria-labelledby="cornelloween-2026-details-title">
+                  <form method="dialog" class="event-details-close">
+                    <button type="submit" autofocus>Close</button>
+                  </form>
+                  <h2 id="cornelloween-2026-details-title">Cornelloween 2026</h2>
+                  <p>Details coming soon.</p>
+                </dialog>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
   </template>
   <noscript>JavaScript is required to view this site.</noscript>
 </body>

@@ -27,9 +27,10 @@ test("future year photos become WebP, references follow them, and originals stay
   await writeFile(join(source, "index.html"), `<template><img src="./${photo}" srcset="./images/members/2030/new%20person.JPG 1x, ./images/members/2030/new%20person.JPG 2x"></template><picture><source type="image/jpeg" srcset="./images/members/2030/new%20person.JPG 1x"></picture>`);
   await writeFile(join(source, "styles/photo.css"), '.photo { background: url(../images/members/2030/new%20person.JPG?v=1#photo); }');
   await writeFile(join(source, "data/people.js"), `export const peopleData = { banner: { src: "./${photo}" }, years: [{ startYear: 2030, members: [{ portrait: "./${photo}", portraitSource: "https://example.org/original.jpg" }] }] };`);
+  await writeFile(join(source, "images/members/2030/sources.json"), JSON.stringify({ file: "new person.JPG", source: "https://example.org/original.jpg" }));
   const result = await buildSite({ source, output });
   assert.equal(result.converted, 1);
-  assert.deepEqual(await readdir(join(output, "images/members/2030")), ["new person.webp"]);
+  assert.deepEqual((await readdir(join(output, "images/members/2030"))).sort(), ["new person.webp", "sources.json"]);
   assert.deepEqual(await readFile(join(source, photo)), original);
   const metadata = await sharp(join(output, "images/members/2030/new person.webp")).metadata();
   assert.equal(metadata.format, "webp");
@@ -40,6 +41,7 @@ test("future year photos become WebP, references follow them, and originals stay
   const data = await readFile(join(output, "data/people.js"), "utf8");
   assert.match(data, /portrait: "\.\/images\/members\/2030\/new person\.webp"/);
   assert.match(data, /portraitSource: "https:\/\/example.org\/original.jpg"/);
+  assert.deepEqual(JSON.parse(await readFile(join(output, "images/members/2030/sources.json"), "utf8")), { file: "new person.webp", source: "https://example.org/original.jpg" });
 });
 
 test("small transparent PNGs retain alpha and are not enlarged; SVG and WebP stay unchanged", async t => {
@@ -87,6 +89,7 @@ test("missing local images and external rendered photos block the build", async 
 test("final output validation catches leftover originals and disguised non-WebP bytes", async t => {
   const { source, output } = await fixture(t);
   await buildSite({ source, output });
+  await mkdir(join(output, "images"), { recursive: true });
   await pixels().png().toFile(join(output, "images/forgotten.png"));
   await assert.rejects(checkImages(output), /Unconverted image/);
   await rm(join(output, "images/forgotten.png"));

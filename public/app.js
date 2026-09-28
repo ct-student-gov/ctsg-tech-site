@@ -320,8 +320,22 @@ import { peopleData } from "./data/people.js";
     content.replaceChildren(fragment);
   }
 
+  function enableEventDetails() {
+    for (const button of content.querySelectorAll(".event-card")) {
+      const dialog = document.getElementById(button.getAttribute("aria-controls"));
+      button.addEventListener("click", () => dialog.showModal());
+      dialog.addEventListener("click", (event) => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right
+          || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+      });
+    }
+  }
+
   function render(route, focus = false) {
     activePersonDetails?.dismiss();
+    content.querySelectorAll(".event-details[open]").forEach(dialog => dialog.close());
     const pageRoute = route;
     const [title, description] = pages.get(pageRoute) || ["Page not found", "This route does not have a placeholder page."];
     const heading = document.createElement("h1");
@@ -331,6 +345,7 @@ import { peopleData } from "./data/people.js";
     content.classList.toggle("site-content--home", pageRoute === "/");
     content.classList.toggle("site-content--members", pageRoute === "/members");
     content.classList.toggle("site-content--governance", pageRoute === "/by-laws");
+    content.classList.toggle("site-content--events", pageRoute === "/events");
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
       enableHomeCardMotion();
@@ -340,6 +355,7 @@ import { peopleData } from "./data/people.js";
       content.replaceChildren(document.getElementById("governance-template").content.cloneNode(true));
     } else if (pageRoute === "/events") {
       content.replaceChildren(document.getElementById("events-template").content.cloneNode(true));
+      enableEventDetails();
     } else {
       content.replaceChildren(heading, paragraph);
     }

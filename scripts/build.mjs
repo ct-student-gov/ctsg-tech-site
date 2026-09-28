@@ -23,10 +23,10 @@ async function filesIn(root, directory = "") {
   return files.sort();
 }
 
-// JS/JSON image paths are consumed by the document, not relative to the script.
+// JS image paths are consumed by the document, not relative to the script.
 function imageLocation(value, file) {
   if (!imageUrl.test(value)) return null;
-  const base = /\.(js|json)$/.test(file) ? siteBase : new URL(file, siteBase);
+  const base = file.endsWith(".js") ? siteBase : new URL(file, siteBase);
   const url = new URL(value, base);
   if (url.origin !== siteBase.origin || !url.pathname.startsWith(siteBase.pathname)) {
     return { external: true, url };
@@ -46,14 +46,16 @@ function rewriteReferences(source, file, outputs) {
   // Quoted HTML attributes, JS strings, JSON fields, and CSS URLs.
   let result = source.replace(/(["'`])([^"'`\r\n]*)\1/g, (match, quote, value) => {
     // A srcset value may contain multiple URLs and width/density descriptors.
-    if (/\.(?:jpe?g|png|webp|avif)\s+\d+[wx](?:\s*,|\s*$)/i.test(value)) {
-      value = value.split(",").map(item => item.replace(/^(\s*)(\S+)(\s+\d+[wx]\s*)$/, (_, space, url, size) => `${space}${rewrite(url)}${size}`)).join(",");
+    const candidates = value.split(",");
+    const candidatePattern = /^(\s*)(.*?\.(?:jpe?g|png|gif|webp|avif|svg)(?:[?#]\S*)?)(\s+\d+(?:\.\d+)?[wx])?(\s*)$/i;
+    if ((candidates.length > 1 || /\s+\d+(?:\.\d+)?[wx]$/.test(value)) && candidates.every(item => candidatePattern.test(item))) {
+      value = candidates.map(item => item.replace(candidatePattern, (_, space, url, size = "", trailing) => `${space}${rewrite(url)}${size}${trailing}`)).join(",");
     } else {
       value = rewrite(value);
     }
     return `${quote}${value}${quote}`;
   });
-  if (file.endsWith(".css")) {
+  if (/\.(css|html)$/.test(file)) {
     result = result.replace(/url\(\s*([^\s"')]+)\s*\)/gi, (_, value) => `url(${rewrite(value)})`);
   }
   // A <source type="image/jpeg"> must describe its converted srcset.
@@ -126,7 +128,7 @@ export async function checkImages(root) {
 }
 
 export async function buildSite({ source = join(project, "public"), output = join(project, "dist/public") } = {}) {
-  if (resolve(output) === resolve(source) || resolve(source).startsWith(resolve(output) + "/")) throw new Error("Build output must not overwrite the source directory");
+  if (resolve(output) === resolve(source) || resolve(source).startsWith(resolve(output) + "/") || resolve(output).startsWith(resolve(source) + "/")) throw new Error("Build output must be separate from the source directory");
   const names = await filesIn(source);
   const outputs = new Map();
   const owners = new Map();
@@ -137,6 +139,7 @@ export async function buildSite({ source = join(project, "public"), output = joi
     outputs.set(name, target);
   }
   await rm(output, { recursive: true, force: true });
+  await mkdir(output, { recursive: true });
   let converted = 0;
   for (const [name, target] of outputs) {
     const input = join(source, name);

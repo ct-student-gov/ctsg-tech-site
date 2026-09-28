@@ -6,3 +6,9 @@
 - Add pages with plain, unstyled HTML unless the user explicitly requests styling. Do not add CSS, themes, decorative layouts, or visual polish by default.
 - Keep changes small and easy to review. Do only the implementation and focused verification needed for the requested change.
 - Explain what changed concisely. Avoid turning a small request into a large workflow or a long list of follow-up tasks.
+
+# Site images
+
+- Add original photos under `public/images/`, including subfolders for future years. Use literal local image paths in HTML, CSS, and People data so the build can rewrite them to WebP.
+- Preserve SVGs as vectors. Keep external photo URLs only as source citations; download photos that the site displays.
+- Run `npm run build` and `npm run images:check` after image changes. Never hand-edit generated `dist/` files or publish raw `public/` assets; publishing must use the validated build output.

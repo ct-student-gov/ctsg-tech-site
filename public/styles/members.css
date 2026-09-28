@@ -20,7 +20,7 @@
   list-style: none;
 }
 .members-gallery li { --frame-inset: 9.6px; /* 40% of the 24px portrait gap. */ position: relative; flex: 0 0 calc((100% - (var(--columns) - 1) * 24px) / var(--columns)); min-width: 0; }
-.members-gallery li.member-card { z-index: 0; }
+.members-gallery li.member-card { z-index: 0; cursor: pointer; }
 .members-gallery li.member-expanded { z-index: 2; }
 .member-expansion-frame {
   position: absolute;
@@ -31,7 +31,7 @@
   height: calc(100% + 2 * var(--frame-inset));
   border: 1px solid transparent;
   transition: border-color 0.125s ease-in-out;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .member-card:hover .member-expansion-frame,
 .member-card:has(:is(.member-portrait-button, .member-name-button, .member-role-button):focus-visible) .member-expansion-frame { border-color: var(--color-rule); }
@@ -54,6 +54,7 @@
 .member-identity { position: relative; z-index: 1; display: flow-root; height: 100%; padding-bottom: 12px; background: var(--color-red); color: var(--color-on-red); box-shadow: 0 0 0 calc(var(--frame-inset) / 2) var(--color-red); }
 .member-identity > :is(h4, p) { padding-inline: 8px; }
 .member-info {
+  cursor: auto;
   position: absolute;
   top: 0;
   left: 0;

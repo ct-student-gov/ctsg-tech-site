@@ -215,7 +215,7 @@ import { peopleData } from "./data/people.js";
       }
       activePersonDetails?.dismiss();
       activePersonDetails = { card, dismiss };
-      activeTrigger = event.currentTarget;
+      activeTrigger = triggers.find(trigger => trigger.contains(event.target)) ?? button;
       expanded = true;
       triggers.forEach(trigger => trigger.setAttribute("aria-expanded", "true"));
       panel.hidden = false;
@@ -234,7 +234,11 @@ import { peopleData } from "./data/people.js";
       animateHeight(inner.offsetHeight, () => {});
       if (event.detail === 0) panel.focus({ preventScroll: true });
     };
-    triggers.forEach(trigger => trigger.addEventListener("click", toggleDetails));
+    card.addEventListener("click", event => {
+      // Keep the open biography selectable without closing the profile.
+      if (panel.contains(event.target)) return;
+      toggleDetails(event);
+    });
   }
 
   const memberRoleOrder = [

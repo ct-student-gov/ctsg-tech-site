@@ -57,14 +57,18 @@ export const peopleData = {
           "portraitSource": "https://drive.google.com/open?id=1uAs3jifZhmOUJyVL7kl3Pv62Br3KnWGd"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
-          "program": null,
-          "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
-          "role": "Student Activities Co-Chair",
-          "biography": [],
-          "section": "executive-board"
+          "firstName": "Nihar",
+          "lastName": "Degaonkar",
+          "program": "Master of Engineering in Operations Research and Information Engineering",
+          "graduationYear": 2027,
+          "portrait": "./images/members/2026/nihar-degaonkar.jpeg",
+          "role": "Student Activities Chair",
+          "biography": [
+            "I'm Nihar, a M. Eng ORIE student from Houston, Texas. I attained a B.S. in Statistics from Texas A&M University and worked for two years as an associate in SAP Data & Analytics at EY. I'm excited to pursue opportunities in automotive product strategy with a focus on safety, sustainability, and preserving the freedom found in the open road.",
+            "Fun Fact: my left pinky is double-jointed."
+          ],
+          "section": "executive-board",
+          "portraitSource": "https://drive.google.com/open?id=1CT4RwS5bv43RFx-tG_zV-gbsI83F_no6"
         },
         {
           "firstName": "Anusha",
@@ -81,34 +85,48 @@ export const peopleData = {
           "portraitSource": "https://drive.google.com/open?id=1REBfOVN7NZFvjaSwppqZaamPsXceGgWm"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
-          "program": null,
-          "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
+          "firstName": "Sid",
+          "lastName": "Darak",
+          "program": "Dual M.S. in Health Tech",
+          "graduationYear": 2027,
+          "portrait": "./images/members/2026/sid-darak.jpg",
           "role": "Communications Co-Chair",
-          "biography": [],
-          "section": "executive-board"
+          "biography": [
+            "Sid Darak is from Mumbai and is an M.S. Health Tech '27 student at Cornell Tech, with past work in financial infrastructure and pharmaceutical consulting before landing at Cornell Tech for Health Tech.",
+            "Fun Fact: His favorite way to explore NYC is on a bike, preferably with a food stop at the end."
+          ],
+          "section": "executive-board",
+          "portraitSource": "https://drive.google.com/open?id=1qzGbk9o9bnR3uRH_GYjWLGyrTuO29IiR"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
-          "program": null,
+          "firstName": "Lexie",
+          "lastName": "Ma",
+          "program": "Master of Science in Design Technology",
           "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
+          "portrait": "./images/members/2026/lexie-ma.png",
           "role": "External Affairs Chair",
-          "biography": [],
-          "section": "executive-board"
+          "biography": [
+            "Lexie Ma is an M.S. in Design Technology student at Cornell University with experience across marketing, strategy, and product-related work. She’s especially interested in emerging AI products and how new technologies can be turned into experiences that people actually want to use.",
+            "Fun Fact: Her personality changes a lot depending on the day — she enjoys both meditation and electronic music, loves staying home, but has also traveled as far as the Arctic."
+          ],
+          "section": "executive-board",
+          "portraitSource": "https://drive.google.com/open?id=1c_iLiIZWLwUxkVfLZy2T12eA5KNqmK_1"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
-          "program": null,
-          "graduationYear": null,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
+          "firstName": "Humna",
+          "lastName": "Sultan",
+          "program": "Master of Engineering in Data Science and Decision Analytics",
+          "graduationYear": 2027,
+          "portrait": "./images/members/2026/humna-sultan.jpeg",
           "role": "Diversity and Inclusion Chair",
-          "biography": [],
-          "section": "executive-board"
+          "biography": [
+            "My name is Humna and I'm a current Data Science & Decision Analytics student at Cornell Tech, focusing on the intersection between human behavior, machine learning, and data analytics! I've worked on research projects extending from evaluating social movements, developing satellite image processing systems with NASA, programming machine learning algorithms for drone telemetry data, and more!",
+            "I've served as President of Women in Computer Science at my undergraduate institution, as well as a peer mentor and advocate for incoming first-generation students. I'm highly involved in Girls Who Code and Rewriting The Code - diversity has always been something that I'm passionate about, and I'm excited to bring my perspectives to CTSG!",
+            "I plan to work with the student body to foster diversity through open discussion, transparency, and initiatives that allow individuals to connect with one another. I look forward to outreach within NYC that will connect our campus with the greater community!",
+            "Fun Fact: I have a cat named Coco who loves to eat watermelon!"
+          ],
+          "section": "executive-board",
+          "portraitSource": "https://drive.google.com/open?id=1wTL1Dw9cZe0ai3-WlYGWO5oUnVDN8aSa"
         },
         {
           "firstName": "Jovian",
@@ -154,14 +172,18 @@ export const peopleData = {
           "portraitSource": "https://drive.google.com/open?id=1KbvUe5KZSvZNxAMt0vNK0kfehOwF0b6p"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
+          "firstName": "Alex",
+          "lastName": "Bao",
           "program": "Master of Engineering in Data Science and Decision Analytics",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
+          "portrait": "./images/members/2026/alex-bao.jpg",
           "role": "M.Eng. DSDA Rep",
-          "biography": [],
-          "section": "representatives"
+          "biography": [
+            "I’m Alex Bao, a business graduate from NYU with a strong passion for startups and cross-border trading. My background centers on exploring international trade dynamics, optimizing cross-border logistics, and building scalable business models in emerging markets. Having worked on several global ventures, I’m always eager to exchange ideas, share market insights, and collaborate with like-minded founders and trade professionals.",
+            "Fun Fact: I once applied for a commercial orbital spaceflight and actually made it to the shortlist."
+          ],
+          "section": "representatives",
+          "portraitSource": "https://drive.google.com/open?id=1V129sbyFBwYxWEUkpxw9IDcU_lKzVQIn"
         },
         {
           "firstName": "Lillian",

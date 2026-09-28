@@ -1,3 +1,5 @@
+import { peopleData } from "./data/people.js";
+
 (() => {
   "use strict";
 
@@ -38,13 +40,21 @@
   }, { passive: true });
 
   header.addEventListener("focusin", () => header.classList.remove("site-header--hidden"));
+  let activePersonDetails = null;
+  window.addEventListener("resize", () => activePersonDetails?.dismiss());
+  document.addEventListener("click", event => {
+    if (activePersonDetails && !activePersonDetails.card.contains(event.target)) activePersonDetails.dismiss();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") activePersonDetails?.dismiss();
+  });
   const validRoute = (route) => typeof route === "string" && route.length <= 200
     && /^\/(?:[a-z0-9-]+(?:\/[a-z0-9-]+)*)?$/.test(route);
   const readRoute = () => validRoute(location.hash.slice(1)) ? location.hash.slice(1) : "/";
 
   const pages = new Map([
     ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
-    ["/members", ["Your representatives", "The executive board and program representatives."]],
+    ["/members", ["People", "The executive board and program representatives."]],
     ["/events", ["Student Events", "Placeholder for student events and Club Fair content."]],
     ["/clubs", ["Clubs", "Placeholder for a future clubs directory; this is a proposed page."]],
     ["/clubs/example", ["Example Club", "Test-only club detail page. This is not an actual student organization."]],
@@ -52,7 +62,266 @@
     ["/by-laws", ["CTSG By-Laws", "Placeholder for governance documents."]],
   ]);
 
+  const cardMotion = window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
+
+  function enableHomeCardMotion() {
+    for (const card of content.querySelectorAll(".home-event-image, .home-portraits, .home-resources .editorial-tile")) {
+      const reset = () => {
+        card.classList.remove("home-card-active");
+        card.style.removeProperty("--card-rotate-x");
+        card.style.removeProperty("--card-rotate-y");
+      };
+      card.addEventListener("pointermove", (event) => {
+        if (!cardMotion.matches || event.pointerType === "touch") {
+          reset();
+          return;
+        }
+        const bounds = card.getBoundingClientRect();
+        const x = Math.max(-1, Math.min(1, (event.clientX - bounds.left) / bounds.width * 2 - 1));
+        const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top) / bounds.height * 2 - 1));
+        card.style.setProperty("--card-rotate-x", `${-y * 1.5}deg`);
+        card.style.setProperty("--card-rotate-y", `${x * 1.5}deg`);
+        card.classList.add("home-card-active");
+      });
+      card.addEventListener("pointerleave", reset);
+      card.addEventListener("pointercancel", reset);
+    }
+  }
+
+  function addPersonDetails(card, portrait, person, id) {
+    const name = `${person.firstName} ${person.lastName}`.trim();
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "member-portrait-button";
+    button.setAttribute("aria-label", `More about ${name}`);
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", id);
+    portrait.replaceWith(button);
+    button.append(portrait);
+    const nameButton = document.createElement("button");
+    nameButton.type = "button";
+    nameButton.className = "member-name-button";
+    nameButton.textContent = name;
+    nameButton.setAttribute("aria-expanded", "false");
+    nameButton.setAttribute("aria-controls", id);
+    card.querySelector("h4").replaceChildren(nameButton);
+    const roleButton = document.createElement("button");
+    roleButton.type = "button";
+    roleButton.className = "member-role-button";
+    roleButton.textContent = person.role;
+    roleButton.setAttribute("aria-expanded", "false");
+    roleButton.setAttribute("aria-controls", id);
+    card.querySelector(".member-identity > p").replaceChildren(roleButton);
+    const triggers = [button, nameButton, roleButton];
+    let activeTrigger = button;
+
+    // One animated surface surrounds the original card and its extra details.
+    const frame = document.createElement("div");
+    frame.className = "member-expansion-frame";
+    frame.setAttribute("aria-hidden", "true");
+    card.prepend(frame);
+    card.classList.add("member-card");
+
+    const panel = document.createElement("div");
+    panel.id = id;
+    panel.className = "member-info";
+    panel.tabIndex = -1;
+    panel.hidden = true;
+    panel.setAttribute("role", "region");
+    panel.setAttribute("aria-labelledby", `${id}-name`);
+    card.querySelector("h4").id = `${id}-name`;
+    const inner = document.createElement("div");
+    inner.className = "member-info-content";
+    const program = document.createElement("p");
+    program.textContent = `${person.program ?? "Program TBD"} · ${person.graduationYear ?? "Year TBD"}`;
+    if (program.textContent) inner.append(program);
+    for (const text of person.biography?.length ? person.biography : ["More information coming soon."]) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      inner.append(paragraph);
+    }
+    panel.append(inner);
+    card.append(panel);
+    let expanded = false;
+    let animation = null;
+    let frameAnimation = null;
+    const identity = card.querySelector(".member-identity");
+    const identityElements = [identity];
+    let identityAnimations = [];
+    const animateHeight = (height, finished) => {
+      const from = panel.getBoundingClientRect().height;
+      const fromClip = getComputedStyle(panel).clipPath;
+      const frameBounds = frame.getBoundingClientRect();
+      const frameInset = parseFloat(getComputedStyle(frame).getPropertyValue("--frame-inset"));
+      const cardBounds = card.getBoundingClientRect();
+      const identityTransforms = identityElements.map(element => getComputedStyle(element).transform);
+      animation?.cancel();
+      frameAnimation?.cancel();
+      identityAnimations.forEach(animation => animation.cancel());
+      panel.style.height = `${height}px`;
+      const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 260;
+      const timing = { duration, easing: "cubic-bezier(.2, .7, .2, 1)" };
+      const panelLeft = parseFloat(panel.style.left);
+      const identityTarget = `translateX(${expanded ? Math.max(0, panelLeft + panel.offsetWidth - cardBounds.width) : 0}px)`;
+      identityAnimations = identityElements.map((element, index) => {
+        element.style.transform = identityTarget;
+        return element.animate([
+          { transform: identityTransforms[index] },
+          { transform: identityTarget },
+        ], timing);
+      });
+      const closedClip = `inset(0 ${Math.max(0, panel.offsetWidth + panelLeft - card.offsetWidth)}px 100% ${Math.max(0, -panelLeft)}px)`;
+      const targetClip = expanded ? "inset(0 0 0 0)" : closedClip;
+      panel.style.clipPath = targetClip;
+      const frameTarget = {
+        height: `${Math.max(card.offsetHeight, height) + 2 * frameInset}px`,
+        width: `${(expanded ? Math.max(card.offsetWidth, panelLeft + panel.offsetWidth) - Math.min(0, panelLeft) : card.offsetWidth) + 2 * frameInset}px`,
+        left: `${(expanded ? Math.min(0, panelLeft) : 0) - frameInset}px`,
+      };
+      Object.assign(frame.style, frameTarget);
+      frameAnimation = frame.animate([
+        { height: `${frameBounds.height}px`, width: `${frameBounds.width}px`, left: `${frameBounds.left - cardBounds.left}px` },
+        frameTarget,
+      ], timing);
+      animation = panel.animate([
+        { height: `${from}px`, clipPath: from === 0 ? closedClip : fromClip },
+        { height: `${height}px`, clipPath: targetClip },
+      ], timing);
+      animation.finished.then(finished, () => {});
+    };
+    const dismiss = () => {
+      if (!expanded) return;
+      expanded = false;
+      triggers.forEach(trigger => trigger.setAttribute("aria-expanded", "false"));
+      if (panel.contains(document.activeElement)) activeTrigger.focus({ preventScroll: true });
+      panel.inert = true;
+      if (activePersonDetails?.card === card) activePersonDetails = null;
+      animateHeight(0, () => {
+        panel.hidden = true;
+        frame.removeAttribute("style");
+        card.classList.remove("member-expanded");
+      });
+    };
+    card.addEventListener("pointerleave", event => {
+      if (event.pointerType === "mouse") dismiss();
+    });
+    card.addEventListener("focusout", event => {
+      if (!card.contains(event.relatedTarget)) dismiss();
+    });
+    const toggleDetails = event => {
+      if (expanded) {
+        dismiss();
+        return;
+      }
+      activePersonDetails?.dismiss();
+      activePersonDetails = { card, dismiss };
+      activeTrigger = event.currentTarget;
+      expanded = true;
+      triggers.forEach(trigger => trigger.setAttribute("aria-expanded", "true"));
+      panel.hidden = false;
+      panel.inert = false;
+      card.classList.add("member-expanded");
+      const anchor = card.getBoundingClientRect();
+      const viewportWidth = document.documentElement.clientWidth;
+      const detailWidth = Math.min(480, viewportWidth - 48);
+      // Keep the expanding profile inside the page and reserve its portrait area.
+      const stackedLeft = Math.max(24, Math.min(anchor.left + (anchor.width - detailWidth) / 2, viewportWidth - detailWidth - 24));
+      panel.style.width = `${detailWidth}px`;
+      panel.style.left = `${stackedLeft - anchor.left}px`;
+      panel.style.setProperty("--identity-width", `${anchor.width}px`);
+      panel.style.setProperty("--identity-height", `${identity.offsetHeight}px`);
+      panel.classList.toggle("member-info--stacked", detailWidth - anchor.width - 28 < 180);
+      animateHeight(inner.offsetHeight, () => {});
+      if (event.detail === 0) panel.focus({ preventScroll: true });
+    };
+    triggers.forEach(trigger => trigger.addEventListener("click", toggleDetails));
+  }
+
+  const memberRoleOrder = [
+    "Technical President",
+    "Professional President",
+    "Treasurer",
+    "Student Activities",
+    "Communications",
+    "External Affairs",
+    "Diversity and Inclusion",
+    "M.Eng. CS",
+    "M.Eng. ECE",
+    "M.Eng. ORIE",
+    "M.Eng. DSDA",
+    "M.S. Connective Media",
+    "M.S. Health Tech",
+    "M.S. Urban Tech",
+    "M.S. Matter Design Computation",
+    "MBA",
+    "LLM",
+  ];
+  function memberRoleRank(person) {
+    const index = memberRoleOrder.findIndex(role => person.role.startsWith(role));
+    return index < 0 ? memberRoleOrder.length : index;
+  }
+
+  function renderPeople() {
+    const fragment = document.getElementById("members-template").content.cloneNode(true);
+    if (peopleData.banner.src) {
+      const photo = document.createElement("img");
+      photo.src = peopleData.banner.src;
+      photo.alt = peopleData.banner.alt;
+      fragment.querySelector(".members-banner").replaceChildren(photo);
+    }
+    const years = fragment.querySelector(".members-years");
+    for (const year of [...peopleData.years].sort((a, b) => b.startYear - a.startYear)) {
+      const section = document.createElement("section");
+      section.className = "members-year";
+      const heading = document.createElement("h2");
+      heading.id = `members-${year.startYear}`;
+      heading.textContent = `${year.startYear}–${year.startYear + 1}`;
+      section.setAttribute("aria-labelledby", heading.id);
+      section.append(heading);
+      for (const [key, label] of [["executive-board", "Executive Board"], ["representatives", "Representatives"]]) {
+        const members = year.members.filter(person => person.section === key).sort((a, b) =>
+          memberRoleRank(a) - memberRoleRank(b)
+          || (key === "representatives" ? (a.graduationYear ?? Infinity) - (b.graduationYear ?? Infinity) : 0));
+        if (!members.length) continue;
+        const group = document.createElement("section");
+        group.className = "members-group";
+        const groupHeading = document.createElement("h3");
+        groupHeading.id = `members-${year.startYear}-${key}`;
+        groupHeading.textContent = label;
+        group.setAttribute("aria-labelledby", groupHeading.id);
+        const gallery = document.createElement("ul");
+        gallery.className = "members-gallery";
+        for (const [index, person] of members.entries()) {
+          const card = document.createElement("li");
+          const name = `${person.firstName} ${person.lastName}`.trim();
+          const portrait = document.createElement("img");
+          portrait.src = person.portrait;
+          portrait.alt = name === "TBD" ? "" : name;
+          portrait.width = 280;
+          portrait.height = 280;
+          portrait.loading = "lazy";
+          portrait.decoding = "async";
+          const title = document.createElement("h4");
+          title.textContent = name;
+          const details = document.createElement("p");
+          details.textContent = person.role;
+          const identity = document.createElement("div");
+          identity.className = "member-identity";
+          identity.append(portrait, title, details);
+          card.append(identity);
+          if (name !== "TBD" && person.biography?.length) addPersonDetails(card, portrait, person, `person-${year.startYear}-${key}-${index}`);
+          gallery.append(card);
+        }
+        group.append(groupHeading, gallery);
+        section.append(group);
+      }
+      years.append(section);
+    }
+    content.replaceChildren(fragment);
+  }
+
   function render(route, focus = false) {
+    activePersonDetails?.dismiss();
     const pageRoute = route;
     const [title, description] = pages.get(pageRoute) || ["Page not found", "This route does not have a placeholder page."];
     const heading = document.createElement("h1");
@@ -60,13 +329,15 @@
     const paragraph = document.createElement("p");
     paragraph.textContent = description;
     content.classList.toggle("site-content--home", pageRoute === "/");
+    content.classList.toggle("site-content--members", pageRoute === "/members");
+    document.getElementById("home-copyright").hidden = pageRoute !== "/";
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
+      enableHomeCardMotion();
+    } else if (pageRoute === "/members") {
+      renderPeople();
     } else {
       content.replaceChildren(heading, paragraph);
-    }
-    if (pageRoute === "/members") {
-      content.append(document.getElementById("members-template").content.cloneNode(true));
     }
     if (route === "/clubs") {
       const link = document.createElement("a");

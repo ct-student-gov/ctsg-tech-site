@@ -1,0 +1,211 @@
+{
+  "checkedRevisionCount": 102,
+  "checkedRevisionIds": [
+    355,
+    387,
+    531,
+    532,
+    534,
+    535,
+    538,
+    539,
+    540,
+    541,
+    542,
+    544,
+    545,
+    547,
+    548,
+    549,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    674,
+    675,
+    676,
+    677,
+    680,
+    681,
+    682,
+    683,
+    685,
+    686,
+    687,
+    688,
+    698,
+    700,
+    705,
+    706,
+    707,
+    710,
+    712,
+    713,
+    715,
+    717,
+    755,
+    757,
+    758,
+    761,
+    763,
+    764,
+    765,
+    767,
+    768,
+    769,
+    770,
+    772,
+    773,
+    775,
+    776,
+    778,
+    781,
+    782,
+    783,
+    784,
+    785,
+    787,
+    788,
+    789,
+    790,
+    791,
+    792,
+    793,
+    794,
+    795,
+    796,
+    797,
+    798,
+    799,
+    800,
+    801,
+    802,
+    803,
+    804,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    863,
+    865,
+    874
+  ],
+  "earliestRevision": "Mar 23, 2023 @ 13:08",
+  "latestRevision": "Sep 23, 2026 @ 21:23",
+  "findings": [
+    {
+      "name": "Laura Bingenheimer",
+      "academicYear": "2024–2025",
+      "portraitSource": "https://sites.coecis.cornell.edu/ctsg/files/2024/11/Bingenheimer_Laura_0520_WEB-1-Laura-Bingenheimer.png",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=531",
+      "biography": null,
+      "note": "The text following this portrait repeats Akshita Tiwari’s profile; it is not a reliable Laura biography."
+    },
+    {
+      "name": "Jacqueline Kim",
+      "academicYear": "2024–2025",
+      "biography": [
+        "Jackie is the Urban Tech second year representative for the class of 2025. Her work spans from big tech to a small urban analytic startup. At Cornell Tech, she is focused on harnessing data to solve challenges in the intersection of urban and societal topics.",
+        "Hobbies: I bake scones (almost) every Sunday and have an interest in the art and tech space."
+      ],
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=641"
+    }
+  ],
+  "unconfirmedNameAndRoleChanges": [
+    {
+      "nameAndRole": "Ali Raisi - LL.M. '25 Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Jiajia Chen - MBA '25 Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Sammi Pei - CS Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Daniel Zou - ORIE Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Steven Zhu - ECE Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Tristan Bennet - Health Tech Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Roshan Amin - Connective Media Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Abby Lund - Urban Tech Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Andrew Chen - Health Tech Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Siena Pocha - Urban Tech Program Representative",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Sofia Castiglioni - Communications Chair",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Ishan Kankaria - Treasurer",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Yash Malhotra - Social and Student Activities Chair",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Soumya Bamba - External Relations Chair",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    },
+    {
+      "nameAndRole": "Parvez Ahammad - D&I Chair",
+      "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?revision=681",
+      "sourceRevisionDate": "2025-09-17"
+    }
+  ],
+  "unconfirmedChangesNote": "Revision 681 briefly replaces names and roles without updating the corresponding biographies or portraits. Revision 682 replaces these names again about an hour later. Retained as source data; not assigned to an academic-year roster without corroboration.",
+  "missingData": [
+    "No Thomas Knoepffler profile or portrait found.",
+    "No reliable biography for Laura Bingenheimer found.",
+    "The earliest autosaves contain Events content; no complete pre-2024–2025 roster recovered."
+  ]
+}

@@ -2,13 +2,19 @@
 
 This repository will contain the custom CTSG website, hosted outside Cornell’s restricted WordPress environment and embedded at **https://ctsg.tech.cornell.edu/** in a fullscreen iframe.
 
-The dependency-free HTML/JavaScript site now uses the composed Cornell editorial homepage. It retains hash navigation and the WordPress iframe bridge. Current member biographies are on `#/members`; other destination pages remain placeholders.
+The dependency-free HTML/JavaScript site now uses the composed Cornell editorial homepage. It retains hash navigation and the WordPress iframe bridge. The year-based People gallery is on `#/members`; other destination pages remain placeholders.
+
+## Updating People
+
+Edit `public/data/people.js` to maintain the gallery. Add an entry to `years` with a numeric `startYear` and a `members` array; the page automatically shows the newest year first and labels it, for example, `2026–2027`. Keep previous entries to retain the archive. Each person has `firstName`, `lastName`, `program`, `graduationYear`, and a `portrait` path relative to `public/`. Set each person’s `section` to `executive-board` or `representatives` to place them in the corresponding gallery within their year. Each portrait area uses Cornell red behind the picture, name, and role, extending halfway into the gap to its border. Expanded details use the page background. Borders follow each profile’s own height. Unfilled positions appear as TBD cards with their role. Click a member’s portrait or name to expand an integrated profile: their program, known graduation year, biography, and fun fact wrap beside the portrait and its labels, then continue across the full card width below. On narrow screens, the details stack below the portrait for readability. A border fades in and out on hover over 0.125 seconds. One animated box surrounds the picture, name, position, and details; the red area, portrait, name, and position slide together to the right side as the box expands and return to their gallery positions as it shrinks. Move the mouse off the expanded card, click outside it, or press Escape to dismiss it. Reduced-motion preferences disable the animation. TBD entries and past members without biographies have no detail box. The 2025–2026 roster comes from https://ctsg.tech.cornell.edu/sample-page/past-members/, supplemented with biographies and portraits from the September 2025 and February 2026 homepage revisions. The 2024–2025 roster comes from the November 2024 revision. Recovered portraits are stored locally under `public/images/members/` (or reuse existing local images); each imported profile retains its source revision and portrait URL. Nathan Tai’s September 2025 ORIE role is dated to distinguish it from the later representative. Missing portraits use `public/images/members/no-image.svg`, and missing biographies stay empty.
+
+Full degree titles and graduation years appear together. For the existing rosters, one-year programs use the roster’s ending year; two-year programs use supplied graduation years or first-/second-year cohort labels. Keep years `null` (displayed as “Year TBD”) when the program or cohort is unknown. When adding a roster, supply the appropriate graduation years in the data. Set `banner.src` to the group photo path and update `banner.alt` to replace the placeholder. No page markup changes are needed to add years or people.
 
 ## Styling
 
 - `public/styles/global.css`: shared colors, typography, header/footer, and reusable title and tile patterns.
 - `public/styles/home.css`: homepage layout, aligned feature rows, portraits, and square governance tile.
-- `public/styles/members.css`: styles scoped to the existing member directory.
+- `public/styles/members.css`: centered, responsive People gallery with up to five columns.
 
 The Student Life image and its title are grouped in one figure for a future event carousel. There is currently one static event; carousel controls and rotation are not implemented.
 

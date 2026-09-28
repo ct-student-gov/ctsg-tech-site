@@ -1,0 +1,39 @@
+{
+  "pageId": 317,
+  "checkedRevisionCount": 24,
+  "checkedRevisionIds": [
+    321,
+    333,
+    334,
+    360,
+    361,
+    364,
+    368,
+    370,
+    371,
+    373,
+    374,
+    380,
+    385,
+    359,
+    386,
+    392,
+    513,
+    625,
+    628,
+    736,
+    737,
+    738,
+    743,
+    751
+  ],
+  "earliestRevisionDate": "Sep 30, 2020 @ 22:41",
+  "latestRevisionDate": "Jan 30, 2026 @ 00:08",
+  "findings": [
+    "2022–2023 roster previously imported from revision 333.",
+    "2023–2024 roster recovered from revision 392, with earlier Jan Carbonell profile in revision 364.",
+    "Haran Rajkumar has a portrait but empty biography fields.",
+    "Later revisions convert this page into a student events gallery."
+  ],
+  "profileData": "2023-2024-profiles.json"
+}

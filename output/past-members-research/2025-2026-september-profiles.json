@@ -1,0 +1,194 @@
+{
+  "source": "https://sites.coecis.cornell.edu/ctsg/wp-admin/revision.php?from=355&to=706",
+  "revisionDate": "2025-09-19",
+  "academicYear": "2025–2026",
+  "notes": [
+    "Earlier snapshot; role assignments differ from later versions. Preserve source dates when matching profiles."
+  ],
+  "profiles": [
+    {
+      "module": 3,
+      "biographyHtml": [
+        "Yashika Batra is a Master of Engineering in Computer Science student at Cornell Tech, with a passion for building robust and trustworthy Artificial Intelligence and Machine Learning systems. She recently earned her Bachelor's degree in Computer Science from Carnegie Mellon University, with a concentration in Machine Learning. Her experience spans projects in deep learning, natural language processing, parameter-efficient fine-tuning of large language models, and agentic AI. She is particularly interested in work that democratizes technology, whether through cost reduction, increased accessibility, or the inclusion of diverse perspectives. She's beyond excited to serve as part of CTSG this year!",
+        "<strong>Fun Fact:</strong> Outside of her academic and technical pursuits, she enjoys playing the guitar, baking, and reading."
+      ],
+      "imageReference": "691 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-18-at-10.57.46-PM-e1770266645996.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-18-at-10.57.46-PM-e1770266645996.jpeg",
+      "nameAndRole": "Yashika Batra - Technical Co-President"
+    },
+    {
+      "module": 4,
+      "biographyHtml": [
+        "Jad Saouma is originally from Zahle, Lebanon, and spent five years in Minneapolis, Minnesota. He earned a B.S. in Computer Information Systems from the College of Saint Scholastica, where he captained the men's soccer team, and later worked for two years as a Software Engineer at Digi-Key. Before Cornell, he co-founded reunion.mpls, an event management platform, leading music, customer experience, partnerships, and entertainment. He's excited to scale reunion.mpls and explore all tech related startups.",
+        "<strong>Fun Fact:</strong> he's completed a half-Ironman, is a big soccer fan, and DJs his own events."
+      ],
+      "imageReference": "666 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/Jads-Jad-Saouma-e1770266760776.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/Jads-Jad-Saouma-e1770266760776.jpg",
+      "nameAndRole": "Jad Saouma - Professional Co-President"
+    },
+    {
+      "module": 5,
+      "biographyHtml": [
+        "As CTSG's Communications Chair, Anusha is passionate about connecting the Cornell Tech community and helping prospective students discover what makes it special. She shares the Cornell Tech story through blogs and multiple channels, fostering a strong sense of belonging. Outside of school, she leads and mentors in the Salesforce community, hosts tech meetups.",
+        "<strong>Fun Fact:</strong> I’ve watched <em data-start=\"182\" data-end=\"203\">The Big Bang Theory</em> so many times I can quote Sheldon in my sleep, binge-read comedy books, and proudly serve as pun club regular and president of my book club."
+      ],
+      "imageReference": "703 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/ann-1-e1759183715625.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/ann-1-e1759183715625.jpg",
+      "nameAndRole": "Anusha Kandhadai - Communications Chair"
+    },
+    {
+      "module": 6,
+      "biographyHtml": [
+        "With a background in mathematics and chemical engineering, Utkarsh brings analytical expertise honed through roles in data analysis and pricing strategy. Previously based in Chicago, he’s committed to leveraging data-driven solutions for strategic change. His experience in consulting and cross-functional collaboration makes him a valuable asset to Cornell Tech’s Student Government.",
+        "<strong>Hobbies:</strong> Games (Pickleball, Cricket, Catan, Sequence, Rock Climbing, Bouldering), Watching Shows and Movies"
+      ],
+      "imageReference": "662 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/HEADSHOT-w-dark-Blue-Tie-Khizar-Jaffry-e1770264254674.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/HEADSHOT-w-dark-Blue-Tie-Khizar-Jaffry-e1770264254674.jpg",
+      "nameAndRole": "Khizar Jaffry - Treasurer"
+    },
+    {
+      "module": 7,
+      "biographyHtml": [
+        "Anyssa is a seasoned professional with experience in partner management at Google and a major Southeast Asian tech startup. She believes that fostering connections through engaging events and activities is key to a rich community experience. As the Student Activities Co-Chair, her goal is to make sure every gathering is so fun and memorable, students will look back and wish they could relive them.",
+        "<strong>Fun Fact</strong>: I once helped launch an online grocery service in Indonesia. If that's not fun enough, I also freedive, create contents, karaoke, and organize fun events wherever I go."
+      ],
+      "imageReference": "695 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-18-at-10.57.46-PM-1.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-18-at-10.57.46-PM-1.jpeg",
+      "nameAndRole": "Anyssa Rizka - Student Activities Co-Chair"
+    },
+    {
+      "module": 8,
+      "biographyHtml": [
+        "Nadiem Ahmed is a Tech MBA candidate at Cornell Tech with a background in mechanical engineering and experience in consulting. Originally from Ethiopia, he grew up in Saudi Arabia and spent the last seven years living in Canada. Nadiem is passionate about solving problems at the intersection of business and technology. At Cornell Tech, Nadiem is excited about exploring New York City's vibrant tech ecosystem and building bridges between industry, alumni, and campus life. In his free time, he enjoys playing and watching sports (football and basketball), reading, photography, and live music.",
+        "<strong>Fun Fact:</strong> I'm an elite fantasy premier league player (best finish was top 0.1% of 10M+ players)"
+      ],
+      "imageReference": "663 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_2266-Nadiem-Ahmed-e1770266963774.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_2266-Nadiem-Ahmed-e1770266963774.jpeg",
+      "nameAndRole": "Nadiem Ahmed - External Affairs Chair"
+    },
+    {
+      "module": 9,
+      "biographyHtml": [
+        "Sneha is a Tech MBA student passionate about making educational spaces equitable for all. She has worked as an engineer at Uber and Goldman Sachs and published research in AI and NLP. As a Google Womentechmakers Ambassador, she has spoken at conferences including SheBuilds, Google IWD, and Anita B.org to advocate for underrepresented communities in tech. She mentors women through the South Asian Women in Tech community and serves as a GHOT25 Ambassador, encouraging more young women to engage with the conference. She hopes to leverage her technical expertise to build inclusive products and solutions that serve everyone.",
+        "<strong>Fun Fact:</strong> I create social media content about the tech industry and life as an MBA student, helping others break into these spaces more easily!"
+      ],
+      "imageReference": "673 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_8165_-_Sneha_Rao_Ganta.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_8165_-_Sneha_Rao_Ganta.jpg",
+      "nameAndRole": "Sneha Rao Ganta - Diversity and Inclusion Chair"
+    },
+    {
+      "module": 10,
+      "biographyHtml": [
+        "Currently a student in the LLM (Master of Laws) Program at Cornell Tech, Belen is an Ecuadorian lawyer with experience in government and private practice. She has advised the creative industries and worked on investment policy, focusing on innovation and entrepreneurship. Passionate about technology, AI and creativity.",
+        "<strong>Fun Fact</strong>: She loves to paint or discover new coffee shops in her free time."
+      ],
+      "imageReference": "696 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-14-at-3.43.24-PM-Maria-Belen-Vivero-1-e1770267000327.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/WhatsApp-Image-2025-09-14-at-3.43.24-PM-Maria-Belen-Vivero-1-e1770267000327.jpeg",
+      "nameAndRole": "Belen Vivero - LLM Student Representative"
+    },
+    {
+      "module": 12,
+      "nameAndRole": "Zening Wang - Urban Tech 26' Representative"
+    },
+    {
+      "module": 13,
+      "biographyHtml": [
+        "Vietnam-born &amp; raised, Seattle-seasoned, Nghi spent a decade steering through PropTech as a PM. At Cornell Tech, she’s charting new horizons and sparking the energy for classmates to chase their ambitions.",
+        "<strong>Fun Fact:</strong> Can take you and up to seven (un)lucky friends on a white-water rafting adventure!"
+      ],
+      "imageReference": "664 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_2609-Nghi-Tran-e1770267306117.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_2609-Nghi-Tran-e1770267306117.jpg",
+      "nameAndRole": "Nghi Tran - MBA Representative"
+    },
+    {
+      "module": 14,
+      "biographyHtml": [
+        "Berat Celik is a Master of Engineering student in Computer Science at Cornell Tech. Originally from Turkey, he earned his undergraduate degree in Computer Science and Economics at the University of British Columbia as a Karen McKellin International Leader of Tomorrow scholar. He has worked across software engineering, consulting, and entrepreneurship—interning at health tech companies like Commure and Athelas, and co-founding ventures such as ForgeMind, an AI copilot for engineering design, and XFunds, a blockchain-based trading. His work spans from AI-driven healthcare solutions to innovative fintech and design technologies, always with a focus on building scalable products that solve real-world problems. Outside the classroom, Berat enjoys fitness, global networking, and mentoring students, and he is passionate about using technology and entrepreneurship to create large-scale societal impact.",
+        "<strong>Fun Fact:</strong> Nearly dropped out of undergrad in 1st year, because school felt unnecessary while building a startup, yet here he is back in school for a master’s"
+      ],
+      "imageReference": "699 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/0087-Berat-Celik-e1770267048804.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/0087-Berat-Celik-e1770267048804.jpg",
+      "nameAndRole": "Berat Celik - CS Representative"
+    },
+    {
+      "module": 15,
+      "biographyHtml": [
+        "Nathan is a Cornell Undergraduate from Philadelphia, PA",
+        "<strong>Fun Fact</strong>: Enjoys singing and cooking (simultaneously)"
+      ],
+      "imageReference": "668 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/Nathan-Tai-Official-Headshot-Nathan-Tai.png)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/Nathan-Tai-Official-Headshot-Nathan-Tai.png",
+      "nameAndRole": "Nathan Tai - ORIE Representative"
+    },
+    {
+      "module": 16,
+      "biographyHtml": [
+        "Kelly Wang is a health-tech product builder and grad student at Cornell Tech who can’t resist turning ideas into action. Beyond work she’s the friend who plans spontaneous road trips and sunrise adventures, a water sports lover, and the unqualified tattoo artist who’s somehow left permanent ink on three friends. Kelly believes in romanticizing bold ideas and then doing them",
+        "<strong>Fun Fact: </strong><span style=\"font-size: 0.875rem;\">One more foster cat and I’ll officially qualify as a serial cat foster.</span>"
+      ],
+      "imageReference": "667 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/kelly-profile-Kelly-Wang-e1770267169857.png)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/kelly-profile-Kelly-Wang-e1770267169857.png",
+      "nameAndRole": "Kelly Wang - Health Tech Representative"
+    },
+    {
+      "module": 17,
+      "biographyHtml": [
+        "Jully Li, graduated from the University of Toronto with a double major in Biochemistry and Human Biology. After graduation, she worked as a Product Designer at a Toronto-based fintech startup, where she designed AI-powered, user-centered enterprise digital products for major Canadian banks. With a background spanning both design and life sciences, Jully is passionate about integrating technology, aesthetics, and product thinking to drive innovation in the healthcare sector.",
+        "<strong>Fun Fact:</strong> When choosing my undergraduate major, I was torn between Life Sciences and Fashion Design. In the end, I became a product designer (somewhere in between the highly analytic and the deeply creative)."
+      ],
+      "imageReference": "669 ()",
+      "imageUrl": null,
+      "nameAndRole": "Jully Li - Health Tech Representative"
+    },
+    {
+      "module": 18,
+      "biographyHtml": [
+        "Hi, I'm Royi Rozen an MS student at Cornell Tech building technologies to improve patient care. My work bridges team leadership, digital health, and AI-driven medical tools - always with the goal of creating real-world impact on patients and physicians in hospitals and beyond.",
+        "<strong> Fun Fact:</strong> I know how to juggle - and once even did it on the Esplanade in San Francisco, and earned 20 bucks."
+      ],
+      "imageReference": "670 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/RoyiRozen-Royi-Rozen-e1770267139918.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/RoyiRozen-Royi-Rozen-e1770267139918.jpg",
+      "nameAndRole": "Royi Rozen - Connective Media Representative"
+    },
+    {
+      "module": 19,
+      "biographyHtml": [
+        "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
+        "<strong>Fun Fact:</strong> I love trying new creative pursuits - this past year I've dove into contemporary dance, rug making and pottery!"
+      ],
+      "imageReference": "665 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/IMG_3711-Gabriela-Yaulli-Herrera.jpeg",
+      "nameAndRole": "Gabriela Yaulli - Urban Tech Representative"
+    },
+    {
+      "module": 20,
+      "biographyHtml": [
+        "Hi! My name is Laura Moreno and I’m in the ECE program. Professionally, my background is in the oil and gas industry where I was an electrical hardware test engineer. My focus right now is in embedded systems, and everything where software and hardware merge. At a more personal glance, I’m always down to grab a drink and have a nice chat. I am an art and pickleball lover who is trying to be a better reader. I hope to one day write my own book and create inclusive platforms through tech in LATAM, especially Colombia.",
+        "<strong>Fun Fact:</strong> I’ve never watched any Harry Potter movie"
+      ],
+      "imageReference": "672 ()",
+      "imageUrl": null,
+      "nameAndRole": "Laura Moreno - ECE Representative"
+    },
+    {
+      "module": 21,
+      "biographyHtml": [
+        "Sarah Madhavan Konety is from Chennai, India, holding an undergraduate degree in CSE (AI-DA). She is excited to represent the inaugural DSDA cohort at Cornell Tech and is passionate about building data products through machine learning. For Sarah, Cornell Tech is a launchpad — a place to transform curiosity into capability and ambition into real-world outcomes by building with code, while always staying grounded in human connection.",
+        "<strong>Fun Fact:</strong> Sarah is an avid trekker, combining a passion for nature and adventure. Sarah finds inspiration in the island’s serene energy — a perfect balance of city pulse and natural calm — fueling her creativity both in tech and in the kitchen"
+      ],
+      "imageReference": "704 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/sarah-Sarah-Madhavan-K-e1770267203862.jpg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/sarah-Sarah-Madhavan-K-e1770267203862.jpg",
+      "nameAndRole": "Sarah Madhavan Konety - DSDA Representative"
+    },
+    {
+      "module": 22,
+      "biographyHtml": [
+        "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！ My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French , and I'm passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.",
+        "<strong>Fun Fact:</strong> I can wake up at whatever time I want without an alarm！ I love reading detective novels and guessing who the culprit is before the reveal."
+      ],
+      "imageReference": "661 (https://sites.coecis.cornell.edu/ctsg/files/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg)",
+      "imageUrl": "https://sites.coecis.cornell.edu/ctsg/files/2025/09/c34ee930b7647d8f9d5081d3e948cf05-Xintong-Li.jpeg",
+      "nameAndRole": "Lillian Li - Connective Media Representative"
+    }
+  ]
+}

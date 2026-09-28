@@ -1,5 +1,80 @@
-/* Keep the existing member directory readable within the shared site shell. */
-.members { max-width: 75ch; }
-.members article { padding-block: 24px; border-top: 1px solid var(--color-rule); }
-.members article h4 { margin: 0 0 16px; font-size: 21px; }
-.members article img { margin-bottom: 16px; }
+/* Year-based People gallery within the shared site shell. */
+.site-content--members { padding-block: 0 48px; }
+.members-banner { background: light-dark(#e8e8e8, #383838); }
+.members-banner-placeholder { margin: 0; padding-top: clamp(40px, 6vw, 80px); text-align: center; }
+.members-directory { max-width: 1200px; margin-inline: auto; padding-top: 38px; text-align: center; }
+.members-year { margin-top: 40px; }
+.members-year + .members-year { margin-top: 80px; }
+.members-year h2 { margin: 0 0 28px; font-size: clamp(38px, 4.4vw, 46px); }
+.members-group + .members-group { margin-top: 48px; }
+.members-group > h3 { margin: 0 0 24px; }
+.members-gallery {
+  --columns: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 36px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.members-gallery li { --frame-inset: 9.6px; /* 40% of the 24px portrait gap. */ position: relative; flex: 0 0 calc((100% - (var(--columns) - 1) * 24px) / var(--columns)); min-width: 0; }
+.members-gallery li.member-card { z-index: 0; }
+.members-gallery li.member-expanded { z-index: 2; }
+.member-expansion-frame {
+  position: absolute;
+  z-index: -1;
+  top: calc(-1 * var(--frame-inset));
+  left: calc(-1 * var(--frame-inset));
+  width: calc(100% + 2 * var(--frame-inset));
+  height: calc(100% + 2 * var(--frame-inset));
+  border: 1px solid transparent;
+  transition: border-color 0.125s ease-in-out;
+  pointer-events: none;
+}
+.member-card:hover .member-expansion-frame,
+.member-card:has(:is(.member-portrait-button, .member-name-button, .member-role-button):focus-visible) .member-expansion-frame { border-color: var(--color-ink); }
+.member-expanded .member-expansion-frame {
+  background: var(--color-paper);
+  box-shadow: 0 8px 28px #0003;
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .member-expansion-frame { transition: none; }
+}
+.members-gallery img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.members-gallery h4 { margin: 14px 0 6px; font-size: 21px; }
+.members-gallery p { margin: 0; font-size: 15px; }
+.member-portrait-button { display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.member-name-button, .member-role-button { padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+/* The shared outer border is the focus indicator; avoid a second inner outline. */
+:is(.member-portrait-button, .member-name-button, .member-role-button, .member-info):focus { outline: none; }
+.member-identity { position: relative; z-index: 1; display: flow-root; height: 100%; padding-bottom: 12px; background: var(--color-red); color: var(--color-on-red); box-shadow: 0 0 0 calc(var(--frame-inset) / 2) var(--color-red); }
+.member-identity > :is(h4, p) { padding-inline: 8px; }
+.member-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  color: var(--color-ink);
+  text-align: left;
+}
+.member-info-content { display: flow-root; padding: 0 0 8px 8px; }
+/* Reserve the space occupied by the animated portrait and its two labels. */
+.member-info-content::before {
+  content: "";
+  float: right;
+  width: calc(var(--identity-width) + 20px);
+  height: calc(var(--identity-height) + 12px);
+}
+.member-info--stacked .member-info-content::before { float: none; display: block; width: 100%; }
+.member-info p { margin: 0 0 12px; font-size: 16px; line-height: 1.4; }
+.member-info p:last-child { margin-bottom: 0; }
+@media (max-width: 1100px) { .members-gallery { --columns: 4; } }
+@media (max-width: 850px) { .members-gallery { --columns: 3; } }
+@media (max-width: 600px) { .members-gallery { --columns: 2; } }
+@media (max-width: 360px) { .members-gallery { --columns: 1; } }

@@ -7,6 +7,11 @@
   mask-image: linear-gradient(to bottom, #000 calc(100% - var(--fade-length)), transparent 100%);
 }
 .home-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
+.site-content:not(.site-content--home) .home-banner {
+  --fade-length: clamp(75px, 10vw, 120px);
+  height: calc(clamp(90px, 12.5vw, 170px) + var(--fade-length));
+  margin-bottom: -32px;
+}
 .home-intro { display: grid; grid-template-columns: 2fr 1fr; align-items: end; gap: var(--layout-gap); padding: 38px 0 34px; border-bottom: 1px solid var(--color-rule); margin-bottom: var(--layout-gap); }
 .home-intro h1 { line-height: 1.04; }
 .home-intro p { margin: 0 0 3px; max-width: 330px; font-size: 18px; }
@@ -31,6 +36,16 @@
 .home-governance { aspect-ratio: 1; }
 .home-clubs { min-height: 0; background: var(--color-charcoal); box-shadow: inset 0 0 0 1px light-dark(transparent, #a2998b); }
 .home { padding-bottom: 28px; }
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home :is(.home-event-image, .home-portraits, .editorial-tile) {
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1);
+    transition: transform 180ms ease-out;
+  }
+  .home .home-card-active {
+    transform: perspective(1200px) rotateX(var(--card-rotate-x, 0deg)) rotateY(var(--card-rotate-y, 0deg)) scale(1.025);
+  }
+}
 
 @media (max-width: 680px) {
   .home-intro { grid-template-columns: 1fr; gap: 18px; padding: 32px 0; }

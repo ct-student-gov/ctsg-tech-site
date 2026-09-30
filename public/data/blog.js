@@ -2,6 +2,44 @@
 export const blogData = {
   "posts": [
     {
+      "id": "3eb0b1bd679180c3b9e2d07a7d15549b",
+      "title": "Sunset ds 2026 (1)",
+      "date": "2026-05-21",
+      "action": "Read post",
+      "images": [
+        {
+          "src": "./images/blog/notion/2026/3eb0b1bd679180c3b9e2d07a7d15549b-dc16d25b72a01270.webp",
+          "width": 1832,
+          "height": 2048,
+          "alt": "Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
+          "credit": "Poster: CTSG.",
+          "caption": ""
+        }
+      ],
+      "body": [
+        {
+          "type": "paragraph",
+          "richText": [
+            {
+              "text": "With graduation approaching, Sunset Sendoff gave the Class of 2026 an evening to celebrate together at Somewhere Nowhere in Manhattan. The May 2 celebration ran from 6–10 PM, with a program spread across two floors: a live jazz ensemble on Floor 39 and a high-energy DJ set on Floor 38."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "richText": [
+            {
+              "text": "Students could choose their pace for the evening, from jazz and conversation to the dance floor. A taco station, dessert bar, and photo booth rounded out the program. It was a sendoff built around spending time with the people who had shared the Cornell Tech experience, before the class headed into its next chapter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "richText": []
+        }
+      ]
+    },
+    {
       "id": "3eb0b1bd679180cc9e00cc6e49b20499",
       "title": "Sunset Sendoff 2026",
       "date": "2026-05-02",

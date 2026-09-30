@@ -1,4 +1,4 @@
-import { DEPARTMENT_SOURCES, TECH_ACADEMIC_URL, departmentEventEligible, loadSource, windowFor } from "./sources.mjs";
+import { DEPARTMENT_SOURCES, STUDENT_SOURCES, TECH_ACADEMIC_URL, departmentEventEligible, loadSource, loadStudentSource, windowFor } from "./sources.mjs";
 
 export const SOURCES = [
   ...DEPARTMENT_SOURCES,
@@ -11,28 +11,33 @@ const TTL = 15 * 60 * 1000;
 // Storage has the small get/put interface of Workers KV. The local preview
 // supplies an in-memory implementation. Never store a token in these records.
 export async function calendarData(env = {}, storage, { now = new Date(), fetcher = fetch, forceRefresh = false } = {}) {
-  const results = await Promise.all(SOURCES.map(async source => {
+  const configured = [...SOURCES, ...STUDENT_SOURCES.filter(source => env[source.secret])];
+  const results = await Promise.all(configured.map(async source => {
     const key = `calendar-v1:${source.id}`;
     const saved = await storage.get(key, "json");
     if (source.id === "clubs" && !env.NOTION_TOKEN) return { ...source, state: "unconfigured", updatedAt: null, events: [] };
     if (!forceRefresh && saved && +now - Date.parse(saved.updatedAt) < TTL) return { ...source, ...saved, state: "current" };
     try {
-      const data = { ...await loadSource(source.id, env, fetcher, now), updatedAt: now.toISOString() };
+      const data = { ...await (source.secret ? loadStudentSource(source, env, fetcher, now) : loadSource(source.id, env, fetcher, now)), updatedAt: now.toISOString() };
       await storage.put(key, JSON.stringify(data));
       return { ...source, ...data, state: "current" };
     } catch (error) {
       console.warn(`Calendar source ${source.id}: ${error.message}`);
       // Avoid continuing to publish club events indefinitely after approval
-      // access is lost. Other public sources retain their last known data.
-      const usable = saved && (source.id !== "clubs" || +now - Date.parse(saved.updatedAt) < 60 * 60 * 1000);
+      // access is lost. The same bound applies to student subscriptions.
+      // Other public sources retain their last known data.
+      const usable = saved && (!(source.id === "clubs" || source.secret) || +now - Date.parse(saved.updatedAt) < 60 * 60 * 1000);
       return { ...source, ...(usable ? saved : { events: [], updatedAt: null }), state: saved ? "stale" : "unavailable", error: error.message };
     }
   }));
   const window = windowFor(now);
   // Apply the audience rule to cached data too, including outage fallbacks.
-  const events = results.flatMap(source => source.events.filter(event => !DEPARTMENT_SOURCES.some(department => department.id === source.id) || departmentEventEligible(event)))
+  const events = results.flatMap(source => source.events.filter(event => !DEPARTMENT_SOURCES.some(department => department.id === event.source) || departmentEventEligible(event)))
     .filter(event => Date.parse(event.end) >= Date.parse(window.start) && Date.parse(event.start) < Date.parse(window.end));
-  return { generatedAt: now.toISOString(), window, timeZone: "America/New_York", sources: results.map(({ events, ...source }) => source), events: events.sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title)) };
+  // Both exports use the same department/UID identity. The student export
+  // supplies updates without adding a second copy of an existing event.
+  const unique = [...new Map(events.map(event => [event.id, event])).values()];
+  return { generatedAt: now.toISOString(), window, timeZone: "America/New_York", sources: results.map(({ events, secret, department, ...source }) => source), events: unique.sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title)) };
 }
 
 export function memoryStorage() {

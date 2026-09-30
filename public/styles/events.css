@@ -47,6 +47,7 @@
 .student-calendar .calendar-grid .calendar-event { padding: 4px 6px; margin-bottom: 4px; }
 .student-calendar .calendar-grid .calendar-event:last-child { margin-bottom: 0; }
 .student-calendar .calendar-event--academic { border-left-color: light-dark(#70675c, #b5aea3); background: light-dark(#f2f0ed, #30302c); }
+.student-calendar .calendar-event--break { border-left-color: light-dark(#386b91, #91bddd); background: light-dark(#e9f2fa, #253746); }
 .student-calendar .calendar-event--clubs { border-left-color: light-dark(#286558, #87beae); background: light-dark(#edf4f1, #263730); }
 .calendar-event-time { display: block; margin-bottom: 3px; font-size: 12px; }
 .calendar-event:hover { text-decoration: underline; }

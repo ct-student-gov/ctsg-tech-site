@@ -11,6 +11,13 @@ export const DEPARTMENT_SOURCES = [
   { id: "inclusion-belonging", name: "Inclusion & Belonging", url: INCLUSION_URL },
   { id: "career-management", name: "Career Management", url: CAREERS_URL },
 ];
+// Personalized exports belong in Worker secrets, never in public source URLs.
+export const STUDENT_SOURCES = DEPARTMENT_SOURCES.map(source => ({
+  id: `${source.id}-students`, name: `${source.name} student subscription`,
+  url: source.url, department: source.id,
+  secret: `CAMPUSGROUPS_${source.id.replace(/-/g, "_").toUpperCase()}_URL`,
+}));
+const DEPARTMENT_ACRONYMS = { "student-affairs": "CTSAA", "inclusion-belonging": "CTDEI", "career-management": "CTCAREERS" };
 export const ACADEMIC_URL = "https://registrar.cornell.edu/calendars-exams/academic-calendar";
 export const TECH_ACADEMIC_URL = "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/";
 export const NOTION_SOURCE = "3e90b1bd-6791-8091-bca0-000bcfad61a1";
@@ -60,7 +67,8 @@ export function parseICS(text, window = windowFor(), source = "student-affairs")
     const id = `${source}:${event.uid}${recurrenceId ? `:${recurrenceId}` : ""}`;
     if (!event.summary || seen.has(id) || Date.parse(endValue) < Date.parse(window.start) || Date.parse(startValue) >= Date.parse(window.end)) return;
     seen.add(id);
-    events.push({ id, source, category: "School events", title: event.summary.trim(), start: startValue, end: endValue, allDay: start.isDate, description: event.description || "", location: /sign in to download/i.test(event.location || "") ? "See event page for location" : (event.location || "").trim(), url: safeUrl(component.getFirstPropertyValue("url")) });
+    const categories = name => component.getAllProperties("categories").filter(p => p.getParameter("x-cg-category") === name).flatMap(p => p.getValues()).map(String);
+    events.push({ id, source, category: "School events", title: event.summary.trim(), start: startValue, end: endValue, allDay: start.isDate, description: event.description || "", location: /sign in to download/i.test(event.location || "") ? "See event page for location" : (event.location || "").trim(), url: safeUrl(component.getFirstPropertyValue("url")), audienceTags: categories("event_tags"), departmentAcronyms: categories("club_acronym") });
   };
   for (const component of components) {
     const event = new ICAL.Event(component);
@@ -84,6 +92,11 @@ export function parseICS(text, window = windowFor(), source = "student-affairs")
 // speaker's degree or a mention of a program as an attendance restriction.
 export function departmentEventEligible(event) {
   const title = event.title || "";
+  if (/\b(?:cancelled|canceled|postponed)\b/i.test(title)) return false;
+  if (/\b(?:members|staff|faculty|invite|invitation)[\s-]+only\b/i.test(title)) return false;
+  const tags = event.audienceTags || [];
+  if (!tags.some(tag => /^(?:all (?:master[’']?s )?students|all programs)$/i.test(tag.trim()))
+    && tags.some(tag => /technical programs|JCT\s*MBA|\bMBA\b|\bM\.?Eng\b|\bLL\.?M\b|\bPh\.?D\b|doctoral|undergraduate|design tech|Jacobs students|new grad|internship/i.test(tag))) return false;
   const text = `${title}\n${event.description || ""}`.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
   const program = "(?:JCT\\s+MBA|MBA|M\\.?Eng\\.?|LL\\.?M\\.?|Ph\\.?D\\.?|doctoral|undergraduate)";
   if (new RegExp(`^\\s*${program}(?:\\s|:|[-–—])`, "i").test(title)) return false;
@@ -91,6 +104,45 @@ export function departmentEventEligible(event) {
   if (new RegExp(`\\b${program}\\s+(?:students|candidates)\\s+(?:only|are invited)\\b`, "i").test(text)) return false;
   return !/\b(?:members|staff|faculty|invite|invitation)[\s-]+only(?=\s*(?:[.,;!?]|$)|\s+(?:event|meeting|session|workshop|audience|attendance|registration|gathering|reception|dinner|lunch|retreat)\b)/i.test(text)
     && !/\b(?:admissions|prospective student|research seminar|dissertation defense)\b/i.test(title);
+}
+
+export async function loadStudentSource(source, env, fetcher = fetch, now = new Date()) {
+  // Catch every error here: network/parser errors can contain the secret URL.
+  let stage = "configuration";
+  try {
+    let url = new URL(env[source.secret]);
+    if (url.origin !== "https://cornelltech.campusgroups.com" || url.pathname !== "/ics" || url.searchParams.get("type") !== "group" || !url.searchParams.get("uid") || !url.searchParams.get("eid")) throw new Error();
+    stage = "download";
+    let response;
+    for (let attempt = 0; attempt < 4; attempt++) {
+      response = await fetcher(url.href, { redirect: "manual", signal: AbortSignal.timeout(15000), headers: { "User-Agent": "CTSG-Calendar/1.0", Accept: "text/calendar" } });
+      if (![301, 302, 303, 307, 308].includes(response.status)) break;
+      stage = "redirect";
+      const next = new URL(response.headers.get("Location"), url);
+      if (next.origin !== "https://cornelltech.campusgroups.com" || next.username || next.password) throw new Error();
+      url = next;
+    }
+    if (!response.ok) throw new Error(`Source returned HTTP ${response.status}`);
+    stage = "calendar parsing";
+    const events = parseICS(await response.text(), windowFor(now), source.department)
+      .filter(event => event.departmentAcronyms.length === 1 && event.departmentAcronyms[0] === DEPARTMENT_ACRONYMS[source.department])
+      .filter(departmentEventEligible)
+      // Career subscriptions require a positive broad-audience designation.
+      .filter(event => source.department !== "career-management" || event.audienceTags.some(tag => /^(?:all (?:master[’']?s )?students|all programs)$/i.test(tag.trim())))
+      .flatMap(event => {
+        let registration;
+        try { registration = new URL(event.url); } catch { return []; }
+        const id = registration.searchParams.get("id");
+        if (registration.origin !== "https://cornelltech.campusgroups.com" || !/^\d+$/.test(id || "")) return [];
+        // Publish listing details only, not private descriptions, joining links,
+        // contacts, or locations copied from a student's subscription.
+        return [{ ...event, description: "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.", location: "See event page for location", url: `https://cornelltech.campusgroups.com/rsvp?id=${id}` }];
+      });
+    return { events };
+  } catch (error) {
+    const detail = /^Source returned HTTP \d{3}$/.test(error.message) ? error.message : stage;
+    throw new Error(`Student subscription could not be refreshed (${detail})`);
+  }
 }
 
 const textContent = node => node.nodeName === "#text" ? node.value : (node.childNodes || []).map(textContent).join("");

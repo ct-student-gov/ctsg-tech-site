@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T15:54:09.883Z",
+  "generatedAt": "2026-09-30T16:30:16.860Z",
   "window": {
-    "start": "2026-07-02T15:54:09.883Z",
-    "end": "2027-11-04T15:54:09.883Z"
+    "start": "2026-07-02T16:30:16.860Z",
+    "end": "2027-11-04T16:30:16.860Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -10,21 +10,21 @@
       "id": "student-affairs",
       "name": "Student Affairs",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "updatedAt": "2026-09-30T16:30:16.860Z",
       "state": "current"
     },
     {
       "id": "inclusion-belonging",
       "name": "Inclusion & Belonging",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
-      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "updatedAt": "2026-09-30T16:30:16.860Z",
       "state": "current"
     },
     {
       "id": "career-management",
       "name": "Career Management",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
-      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "updatedAt": "2026-09-30T16:30:16.860Z",
       "state": "current"
     },
     {
@@ -39,30 +39,18 @@
       "name": "Cornell academic dates",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
-      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "updatedAt": "2026-09-30T16:30:16.860Z",
       "state": "current"
     },
     {
       "id": "tech-academic",
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
-      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "updatedAt": "2026-09-30T16:30:16.860Z",
       "state": "current"
     }
   ],
   "events": [
-    {
-      "id": "student-affairs:2a51e853b858a4489be8e1803aa39f006242026_5:30:01_PM@campusgroups.com",
-      "source": "student-affairs",
-      "category": "School events",
-      "title": "Studio Walk-In Office Hour",
-      "start": "2026-07-17T16:00:00.000Z",
-      "end": "2026-07-17T17:00:00.000Z",
-      "allDay": false,
-      "description": "Studio is the heart of the Cornell Tech experience. At roughly a quarter of your coursework, it's where you'll take on real problems for real companies, build products, and learn what it takes to launch a venture in a fast-moving, entrepreneurial environment. A little prep over the summer will help you start strong in the fall.\n\nTo get you ready, we're hosting a Studio Summer Office Hour on July 17 from 12:00pm-12:50pm in Tata 141. Stop by with your questions about what Studio is and how to make the most of it.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132916",
-      "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132916"
-    },
     {
       "id": "tech-academic:fall:2026:New-student pre-enrollment:1",
       "source": "tech-academic",
@@ -157,7 +145,11 @@
       "allDay": false,
       "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132977",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132977"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132977",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTDEI"
+      ]
     },
     {
       "id": "student-affairs:3b41e55d9328451b47bfc66eb14aea09922026_3:13:54_PM@campusgroups.com",
@@ -169,7 +161,11 @@
       "allDay": false,
       "description": "There is amazing art throughout Roosevelt Island, including in the Bloomberg Center! Because some of these pieces are located in faculty/staff-only spaces, we’re offering an exclusive tour led by Jane Swanson, Director, Government & Community Relations at Cornell Tech, to explore and learn more about these works.\n\nWe are offering this tour two times, this one is the 3:30 PM start. \n\nSpace is limited, and registration is required.\n\nAlso, check out the attachment below from the Roosevelt Island Visual Art Association about more art you can find around Roosevelt Island. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132988",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132988"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132988",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "student-affairs:bcc2ab7bdd6fd40afbdba17c2b8ad1f1982026_9:50:26_PM@campusgroups.com",
@@ -181,7 +177,11 @@
       "allDay": false,
       "description": "There is amazing art throughout Roosevelt Island, including in the Bloomberg Center! Because some of these pieces are located in faculty/staff-only spaces, we’re offering an exclusive tour led by Jane Swanson, Director, Government & Community Relations at Cornell Tech, to explore and learn more about these works.\n\nWe are offering this tour two times, this one is the 4:00 PM start. \n\nSpace is limited, and registration is required.\n\nAlso, check out the attachment below from the Roosevelt Island Visual Art Association about more art you can find around Roosevelt Island. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132994",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132994"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132994",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "tech-academic:fall:2026:Maker Day:1",
@@ -265,7 +265,11 @@
       "allDay": false,
       "description": "Feeling a little homesick? Experienced something amazing in NYC? Learned something incredible that you want to share? Take a few minutes to write a postcard to a family member or friend!\n\nStudents will have the opportunity to write a postcard to friends and family, either internationally or domestically. \n\nInternational postcards (with stamps) will be limited to 2 per person. Stamps are limited. Please come early!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133047",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133047"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133047",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTDEI"
+      ]
     },
     {
       "id": "tech-academic:fall:2026:Maker Day:2",
@@ -313,7 +317,11 @@
       "allDay": false,
       "description": "This presentation for international students provides an overview of possible options for working long-term in the U.S. after graduation including becoming a permanent resident (green card holder), if you desire. Working with the law firm of Miller Mayer, we offer the presentation every fall and spring semester. Check out International Services' Visas After Graduation page: https://international.globallearning.cornell.edu/maintaining-your-status/visas-after-graduation.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133009",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
@@ -325,7 +333,11 @@
       "allDay": false,
       "description": "Take a break from your studies and give back to our amazing Roosevelt Island Community. There will be opportunities for students to garden, organize, and support seniors! Click the link to RSVP and view the list of community partners that need your help. Following the event, we will gather again to enjoy pizza together!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132997",
       "location": "Tata 141, 2 W Loop Rd, New York, New York 10044, United States",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
@@ -337,7 +349,11 @@
       "allDay": false,
       "description": "Stop by the Bloomberg Masters' Studio for snacks, apple cider, and pumpkin decorating! Submit your pumpkin into a category to be judged by a panel of VIP faculty judges! \n\nAll category winners will receive a spooky prize!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132998",
       "location": "Bloomberg Masters' Studio, 2 W Loop Rd, New York, New York 10044, United States",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
@@ -385,7 +401,11 @@
       "allDay": false,
       "description": " 🍂Gratitude Tree: hang a leaf representing something you’re grateful for\n 🧘Self-care Station: treat your mind and take a break\n 🫖Communi-Tea Lounge: get cozy with a cup of autumnal tea\n 💌Appreciation Cards: express gratitude to a member of the Cornell Tech community\n🍴 Meal Kit Prep: join CulinArt to put together Thanksgiving meal kits that will be donated for the holidays\n🦃 Friendsgiving: make a festive craft and take part in a PIE GIVEAWAY (first come first serve) at 1:00 PM\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132999",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "academic:2026–2027:Thanksgiving Break/No classes",
@@ -409,7 +429,11 @@
       "allDay": false,
       "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
       "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001"
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ]
     },
     {
       "id": "tech-academic:fall:2026:Maker Day:4",

@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import ICAL from "ical.js";
-import { parseICS, parseAcademic, parseTechAcademic, ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, departmentEventEligible, notionEvent, loadNotion } from "../calendar/sources.mjs";
+import { parseICS, parseAcademic, parseTechAcademic, ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, STUDENT_SOURCES, loadStudentSource, departmentEventEligible, notionEvent, loadNotion } from "../calendar/sources.mjs";
 import worker, { CalendarProcessor } from "../calendar/worker.mjs";
 import { calendarData, memoryStorage, toICS } from "../calendar/service.mjs";
 import { dateKey, lastDay, eventsOnDay, eventFilter, calendarRange } from "../public/calendar.js";
@@ -70,6 +70,99 @@ test("official department imports exclude explicit narrow audiences", () => {
     { title: "Bloomberg Center Art Tour", description: "Some art is in faculty/staff-only spaces, so we are offering a tour for students." },
     { title: "Town hall" },
   ]) assert.equal(departmentEventEligible(event), true, event.title);
+});
+
+const studentSource = STUDENT_SOURCES.find(s => s.department === "career-management");
+const privateURL = "https://cornelltech.campusgroups.com/ics?uid=secret-token&type=group&eid=department";
+const studentEnv = { [studentSource.secret]: privateURL };
+const studentEvent = (uid, title, tags = ["All Master's Students"], acronym = "CTCAREERS") => [
+  `UID:${uid}`, `SUMMARY:${title}`, "DTSTART:20261007T170000Z", "DURATION:PT1H",
+  `CATEGORIES;X-CG-CATEGORY=club_acronym:${acronym}`,
+  ...tags.map(tag => `CATEGORIES;X-CG-CATEGORY=event_tags:${tag}`),
+  "DESCRIPTION:Private joining link https://meeting.example/private-join",
+  "LOCATION:Private room", "URL:https://cornelltech.campusgroups.com/rsvp?id=123&private=hidden",
+];
+
+test("student exports enforce department and audience eligibility and minimize published fields", async () => {
+  const input = ics(
+    studentEvent("all", "Campus career workshop"),
+    studentEvent("technical", "Technical career fair", ["Technical Programs"]),
+    studentEvent("mba", "Summer social", ["JCTMBA'27"]),
+    studentEvent("unknown", "Unclassified career session", []),
+    studentEvent("club", "Club workshop", ["All Master's Students"], "CHESS"),
+    studentEvent("invite", "Bloomberg INVITATION ONLY"),
+    studentEvent("cancelled", "(POSTPONED) Career workshop"),
+  );
+  const { events } = await loadStudentSource(studentSource, studentEnv, async () => new Response(input), new Date("2026-09-30"));
+  assert.deepEqual(events.map(e => e.id), ["career-management:all"]);
+  assert.equal(events[0].url, "https://cornelltech.campusgroups.com/rsvp?id=123");
+  assert.doesNotMatch(JSON.stringify(events), /private-join|Private room|private=|secret-token/);
+  const parsed = parseICS(input, window);
+  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Summer social")), false);
+  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Technical career fair")), false);
+});
+
+test("student exports reject wrong hosts, redirects, and redact fetch or parser errors", async () => {
+  let calls = 0;
+  const fetcher = async () => { calls++; throw new Error(`Failure at ${privateURL}`); };
+  await assert.rejects(loadStudentSource(studentSource, { [studentSource.secret]: privateURL.replace("cornelltech.campusgroups.com", "example.com") }, fetcher), /^Error: Student subscription could not be refreshed \(configuration\)$/);
+  assert.equal(calls, 0);
+  await assert.rejects(loadStudentSource(studentSource, studentEnv, fetcher), /^Error: Student subscription could not be refreshed \(download\)$/);
+  await assert.rejects(loadStudentSource(studentSource, studentEnv, async (url, options) => {
+    assert.equal(options.redirect, "manual");
+    return new Response(`Not a calendar ${privateURL}`);
+  }), /^Error: Student subscription could not be refreshed \(calendar parsing\)$/);
+});
+
+test("student exports follow same-site redirects without forwarding credentials to other hosts", async () => {
+  const calls = [];
+  const result = await loadStudentSource(studentSource, studentEnv, async url => {
+    calls.push(url);
+    return calls.length === 1 ? new Response(null, { status: 302, headers: { Location: "/ics?canonical=1" } }) : new Response(ics(studentEvent("redirected", "Career workshop")));
+  }, new Date("2026-09-30"));
+  assert.equal(result.events.length, 1);
+  assert.equal(calls[1], "https://cornelltech.campusgroups.com/ics?canonical=1");
+  let blockedCalls = 0;
+  await assert.rejects(loadStudentSource(studentSource, studentEnv, async () => {
+    blockedCalls++;
+    return new Response(null, { status: 302, headers: { Location: "https://example.com/?secret-token" } });
+  }), /^Error: Student subscription could not be refreshed \(redirect\)$/);
+  assert.equal(blockedCalls, 1);
+});
+
+test("student and public exports deduplicate identities, while secrets stay out of output and storage", async () => {
+  const storage = memoryStorage();
+  const now = new Date("2026-09-30T12:00:00Z");
+  const input = ics(studentEvent("same", "Career workshop"));
+  const fetcher = async url => {
+    if (url === ACADEMIC_URL) return new Response(academicHTML);
+    if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    return new Response([privateURL, CAREERS_URL].includes(url) ? input : ics());
+  };
+  const data = await calendarData(studentEnv, storage, { now, fetcher });
+  assert.equal(data.events.filter(e => e.id === "career-management:same").length, 1);
+  assert.equal(data.sources.find(s => s.id === studentSource.id).state, "current");
+  for (const output of [JSON.stringify(data), toICS(data), JSON.stringify(await storage.get(`calendar-v1:${studentSource.id}`))]) assert.doesNotMatch(output, /secret-token|private-join|Private room|private=hidden/);
+  const disabled = await calendarData({}, storage, { now, fetcher });
+  assert.ok(!disabled.sources.some(s => s.id === studentSource.id));
+});
+
+test("student subscription cache expires on loss of access and clears after a valid empty export", async () => {
+  const storage = memoryStorage();
+  const key = `calendar-v1:${studentSource.id}`;
+  const events = (await loadStudentSource(studentSource, studentEnv, async () => new Response(ics(studentEvent("one", "Career workshop"))), new Date("2026-09-30"))).events;
+  await storage.put(key, JSON.stringify({ updatedAt: "2026-09-30T12:00:00Z", events }));
+  const offline = async () => { throw new Error("Unavailable"); };
+  const recent = await calendarData(studentEnv, storage, { now: new Date("2026-09-30T12:30:00Z"), fetcher: offline });
+  assert.equal(recent.events.length, 1);
+  const expired = await calendarData(studentEnv, storage, { now: new Date("2026-09-30T13:01:00Z"), fetcher: offline });
+  assert.equal(expired.events.length, 0);
+  assert.doesNotMatch(JSON.stringify(expired), /secret-token/);
+  const disabled = await calendarData({}, storage, { now: new Date("2026-09-30T12:01:00Z"), fetcher: offline });
+  assert.equal(disabled.events.length, 0);
+  const cleared = await calendarData(studentEnv, storage, { now: new Date("2026-09-30T12:30:00Z"), fetcher: async url => { if (url === privateURL) return new Response(ics()); throw new Error("Unavailable"); } });
+  assert.equal(cleared.events.length, 0);
+  assert.deepEqual((await storage.get(key)).events, []);
 });
 
 test("additional department keeps separate IDs and filtered cache during outages", async () => {

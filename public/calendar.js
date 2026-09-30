@@ -91,6 +91,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
 
   function eventButton(event) {
     const button = node("button", undefined, `calendar-event calendar-event--${event.source === "tech-academic" ? "academic" : event.source}`);
+    if (eventFilter(event) === "academic" && /\b(?:break|holiday|no classes)\b/i.test(event.title)) button.classList.add("calendar-event--break");
     button.type = "button";
     const time = event.allDay ? "All day" : timeFormat.format(new Date(event.start));
     const text = node("span", undefined, "calendar-event-text");

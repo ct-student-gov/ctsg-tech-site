@@ -1,5 +1,5 @@
 import { peopleData } from "./data/people.js";
-import { mountCalendar } from "./calendar.js?v=official-sources-2";
+import { mountCalendar } from "./calendar.js?v=break-colors-1";
 
 (() => {
   "use strict";

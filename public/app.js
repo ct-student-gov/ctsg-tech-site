@@ -1,4 +1,5 @@
 import { peopleData } from "./data/people.js";
+import { mountCalendar } from "./calendar.js";
 
 (() => {
   "use strict";
@@ -12,6 +13,7 @@ import { peopleData } from "./data/people.js";
   const embedded = window.parent !== window;
   let parentOrigin = null;
   let currentRoute = null;
+  let disposeCalendar = () => {};
   const content = document.getElementById("content");
   const header = document.querySelector(".site-header");
   const headerSpace = document.querySelector(".site-header-space");
@@ -55,7 +57,7 @@ import { peopleData } from "./data/people.js";
   const pages = new Map([
     ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
     ["/members", ["People", "The executive board and program representatives."]],
-    ["/events", ["Student Events", "Student event details coming soon."]],
+    ["/events", ["Event Calendar", "Student event details coming soon."]],
     ["/clubs", ["Clubs", "Placeholder for a future clubs directory; this is a proposed page."]],
     ["/clubs/example", ["Example Club", "Test-only club detail page. This is not an actual student organization."]],
     ["/past-members", ["Past Members", "Placeholder for previous CTSG rosters."]],
@@ -64,10 +66,10 @@ import { peopleData } from "./data/people.js";
 
   const cardMotion = window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
 
-  function enableHomeCardMotion() {
-    for (const card of content.querySelectorAll(".home-event-image, .home-portraits, .home-resources .editorial-tile")) {
+  function enableCardMotion() {
+    for (const card of content.querySelectorAll(".home-event-image, .home-portraits, .event-card")) {
       const reset = () => {
-        card.classList.remove("home-card-active");
+        card.classList.remove("card-motion-active");
         card.style.removeProperty("--card-rotate-x");
         card.style.removeProperty("--card-rotate-y");
       };
@@ -81,7 +83,7 @@ import { peopleData } from "./data/people.js";
         const y = Math.max(-1, Math.min(1, (event.clientY - bounds.top) / bounds.height * 2 - 1));
         card.style.setProperty("--card-rotate-x", `${-y * 1.5}deg`);
         card.style.setProperty("--card-rotate-y", `${x * 1.5}deg`);
-        card.classList.add("home-card-active");
+        card.classList.add("card-motion-active");
       });
       card.addEventListener("pointerleave", reset);
       card.addEventListener("pointercancel", reset);
@@ -324,10 +326,94 @@ import { peopleData } from "./data/people.js";
     content.replaceChildren(fragment);
   }
 
+  function enableProjectToggle() {
+    const list = content.querySelector("#home-project-list");
+    const button = content.querySelector(".home-projects-toggle");
+    if (list.children.length <= 3) return;
+    list.setAttribute("data-collapsed", "");
+    button.hidden = false;
+    button.addEventListener("click", () => {
+      const collapsed = list.toggleAttribute("data-collapsed");
+      button.setAttribute("aria-expanded", String(!collapsed));
+      button.textContent = collapsed ? "Show more" : "Show less";
+    });
+  }
+
   function enableEventDetails() {
     for (const button of content.querySelectorAll(".event-card")) {
       const dialog = document.getElementById(button.getAttribute("aria-controls"));
-      button.addEventListener("click", () => dialog.showModal());
+      const gallery = dialog.querySelector(".event-gallery");
+      const slides = gallery ? [...gallery.querySelectorAll("figure")] : [];
+      let resetGallery = () => {};
+      if (slides.length > 1) {
+        let activeIndex = 0;
+        let loopSlides = [];
+        const controls = document.createElement("div");
+        controls.className = "event-gallery-controls";
+        const previous = document.createElement("button");
+        previous.type = "button";
+        previous.textContent = "←";
+        previous.setAttribute("aria-label", "Previous image");
+        const next = document.createElement("button");
+        next.type = "button";
+        next.textContent = "→";
+        next.setAttribute("aria-label", "Next image");
+        const position = document.createElement("span");
+        position.className = "eyebrow event-gallery-position";
+        position.setAttribute("aria-live", "polite");
+        position.setAttribute("aria-atomic", "true");
+        controls.append(previous, next);
+        const frame = document.createElement("div");
+        frame.className = "event-gallery-frame";
+        gallery.before(frame);
+        frame.append(gallery, controls);
+        const wrapIndex = index => ((index % slides.length) + slides.length) % slides.length;
+        const currentIndex = () => wrapIndex(activeIndex + Math.round(gallery.scrollLeft / (gallery.clientWidth || 1)) - 1);
+        const updateGallery = () => {
+          const width = gallery.clientWidth;
+          if (!width) return;
+          const index = currentIndex();
+          position.textContent = `${index + 1} / ${slides.length}`;
+          const visibleSlide = Math.max(0, Math.min(loopSlides.length - 1, Math.round(gallery.scrollLeft / width)));
+          const caption = loopSlides[visibleSlide].querySelector("figcaption");
+          if (position.parentElement !== caption) caption.append(position);
+        };
+        const moveTo = index => {
+          activeIndex = wrapIndex(index);
+          // Only one neighbouring image is reachable in either direction.
+          loopSlides = [-1, 0, 1].map(offset => {
+            const clone = slides[wrapIndex(activeIndex + offset)].cloneNode(true);
+            if (offset) clone.setAttribute("aria-hidden", "true");
+            clone.querySelector("img").loading = "eager";
+            return clone;
+          });
+          gallery.replaceChildren(...loopSlides);
+          gallery.scrollTo({ left: gallery.clientWidth, behavior: "instant" });
+          updateGallery();
+        };
+        previous.addEventListener("click", () => moveTo(currentIndex() - 1));
+        next.addEventListener("click", () => moveTo(currentIndex() + 1));
+        // The browser owns the trackpad gesture. No wheel packets become queued swipes.
+        gallery.addEventListener("scroll", updateGallery, { passive: true });
+        gallery.addEventListener("scrollend", () => {
+          if (!dialog.open || !gallery.clientWidth) return;
+          const page = Math.round(gallery.scrollLeft / gallery.clientWidth);
+          // Refill neighbours only after scrolling has stopped, preserving the visible image.
+          if (page !== 1) moveTo(currentIndex());
+        });
+        gallery.addEventListener("keydown", event => {
+          const target = { ArrowLeft: currentIndex() - 1, ArrowRight: currentIndex() + 1, Home: 0, End: slides.length - 1 }[event.key];
+          if (target === undefined) return;
+          event.preventDefault();
+          moveTo(target);
+        });
+        resetGallery = () => moveTo(0);
+      }
+      button.addEventListener("click", () => {
+        dialog.showModal();
+        dialog.scrollTop = 0;
+        resetGallery();
+      });
       dialog.addEventListener("click", (event) => {
         if (event.target !== dialog) return;
         const bounds = dialog.getBoundingClientRect();
@@ -350,16 +436,21 @@ import { peopleData } from "./data/people.js";
     content.classList.toggle("site-content--members", pageRoute === "/members");
     content.classList.toggle("site-content--governance", pageRoute === "/by-laws");
     content.classList.toggle("site-content--events", pageRoute === "/events");
+    disposeCalendar();
+    disposeCalendar = () => {};
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
-      enableHomeCardMotion();
+      disposeCalendar = mountCalendar(content.querySelector(".home-calendar .student-calendar"), { rolling: true });
+      enableProjectToggle();
+      enableEventDetails();
+      enableCardMotion();
     } else if (pageRoute === "/members") {
       renderPeople();
     } else if (pageRoute === "/by-laws") {
       content.replaceChildren(document.getElementById("governance-template").content.cloneNode(true));
     } else if (pageRoute === "/events") {
       content.replaceChildren(document.getElementById("events-template").content.cloneNode(true));
-      enableEventDetails();
+      disposeCalendar = mountCalendar(content.querySelector(".student-calendar"));
     } else {
       content.replaceChildren(heading, paragraph);
     }

@@ -265,13 +265,15 @@ export const peopleData = {
           "section": "representatives"
         },
         {
-          "firstName": "TBD",
-          "lastName": "",
+          "firstName": "Katie",
+          "lastName": "Graves",
           "program": "Master of Business Administration",
           "graduationYear": 2027,
-          "portrait": "./images/current-site/2024/11/1-DSCF1108-2.webp",
+          "portrait": "./images/members/2026/katie-graves.png",
           "role": "MBA Rep",
-          "biography": [],
+          "biography": [
+            "Katie Graves is a two-time Big Red. She earned her undergraduate degree at Cornell before spending a decade in television, including eight years at Amazon MGM Studios. Most recently, she served as VP of Current Series and Development, where she built the tentpole and franchise division behind The Boys and Gen V. She is an Emmy-nominated producer and a member of the Television Academy. As a one-year MBA candidate at Cornell Tech, Katie is passionate about building community and championing evolutionary programming that embraces a rapidly shifting, disruptive world. She is driven to deliver results through strategy at the intersection of media, luxury, technology, and AI."
+          ],
           "section": "representatives"
         },
         {

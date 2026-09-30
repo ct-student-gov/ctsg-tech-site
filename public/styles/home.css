@@ -30,21 +30,33 @@
 .home-portraits img { position: absolute; top: 0; width: 50%; height: 100%; object-fit: cover; object-position: center; }
 .home-portraits img:last-child { left: 50%; }
 
-.home-resources { display: grid; grid-template-columns: 1fr 2fr; gap: var(--layout-gap); align-items: stretch; margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }
-/* Border-box sizing keeps the red tile exactly square, including padding. */
-.home-governance { aspect-ratio: 1; }
-.home-clubs { min-height: 0; background: var(--color-charcoal); box-shadow: inset 0 0 0 1px light-dark(transparent, #a2998b); }
+.home-calendar { margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }
+.home-calendar > .eyebrow { margin-bottom: 14px; }
+.home-calendar .calendar-controls { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.home-calendar .calendar-month { margin: 0; font-size: 24px; text-align: left; }
+.home-calendar-arrows { display: flex; flex: none; gap: 4px; }
+.home-calendar-arrows button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; cursor: pointer; }
+.home-calendar-arrows button:hover:not(:disabled) { color: var(--color-red); }
+.home-calendar .calendar-display { overflow-anchor: none; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.home-calendar .calendar-display::-webkit-scrollbar { display: none; }
+.home-calendar-track { display: flex; gap: var(--calendar-day-gap); width: max-content; }
+.home-calendar-day { display: flex; flex-direction: column; flex: 0 0 var(--calendar-day-width); width: var(--calendar-day-width); container-type: inline-size; padding: 4px; border: 1px solid var(--color-rule); scroll-snap-align: start; }
+.home-calendar-day h4 { margin: 0; padding: 6px; border-bottom: 1px solid var(--color-rule); font-size: clamp(11px, 7.2cqi, 16px); line-height: 1.5; }
+.home-calendar-day h4 .calendar-day { margin: 0; white-space: nowrap; }
+.home-calendar-day-body { height: 180px; overflow-y: auto; padding: 6px; }
+.home-calendar-day--today { background: var(--color-red); color: var(--color-on-red); }
+.home-calendar-day--today .calendar-day[aria-current] { padding: 0; }
+.home-calendar .home-calendar-day--today .calendar-event { background: transparent; color: inherit; border-left-color: currentColor; }
+.home-calendar-day--today .calendar-event:focus-visible { outline-color: var(--color-on-red); }
+.home-calendar-link { margin-top: 14px; text-align: left; }
+.home .events-projects { margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }
+.home .events-projects > .eyebrow { margin-bottom: 14px; }
+.home .events-project-list[data-collapsed] > li:nth-child(n + 4) { display: none; }
+.home-projects-toggle { display: block; margin: 14px 0 0 auto; min-height: 44px; padding: 8px 0 8px 16px; border: 0; background: transparent; color: var(--color-red); font: inherit; cursor: pointer; }
+.home-projects-toggle[hidden] { display: none; }
+.home-projects-toggle:hover { text-decoration: underline; text-underline-offset: 4px; }
+.home-projects-toggle:focus-visible { outline: 2px solid var(--color-red); outline-offset: 4px; }
 .home { padding-bottom: 28px; }
-
-@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .home :is(.home-event-image, .home-portraits, .editorial-tile) {
-    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1);
-    transition: transform 180ms ease-out;
-  }
-  .home .home-card-active {
-    transform: perspective(1200px) rotateX(var(--card-rotate-x, 0deg)) rotateY(var(--card-rotate-y, 0deg)) scale(1.025);
-  }
-}
 
 @media (max-width: 680px) {
   .home-intro { grid-template-columns: 1fr; gap: 18px; padding: 32px 0; }
@@ -55,6 +67,4 @@
   .home-event-slide { grid-row: auto; grid-template-rows: auto; gap: 14px; }
   .home-people-content { grid-row: auto; grid-template-rows: auto auto; }
   .home-portraits { aspect-ratio: 1.65; }
-  .home-resources { grid-template-columns: 1fr; }
-  .home-clubs { aspect-ratio: 1; }
 }

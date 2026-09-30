@@ -2,3 +2,7 @@
 .firecrawl/
 node_modules/
 dist/
+.env
+.env.*
+.dev.vars*
+.wrangler/

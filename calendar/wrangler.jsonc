@@ -1,0 +1,19 @@
+{
+  "name": "ctsg-calendar",
+  "account_id": "bc913813b1125232b51bb639e7cd2dea",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-28",
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [{ "name": "CALENDAR_PROCESSOR", "class_name": "CalendarProcessor" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["CalendarProcessor"] }],
+  "triggers": { "crons": ["17 */6 * * *"] },
+  "kv_namespaces": [
+    { "binding": "CALENDAR_CACHE", "id": "446c4c8211354cf9b2a9935b59f8a875" }
+  ],
+  "observability": { "enabled": true },
+  "vars": {
+    "NOTION_DATA_SOURCE_ID": "3e90b1bd-6791-8091-bca0-000bcfad61a1"
+  }
+}

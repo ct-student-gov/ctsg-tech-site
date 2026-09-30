@@ -1,0 +1,747 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CTSG//Student Events//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cornell Tech Student Events
+BEGIN:VEVENT
+UID:student-affairs:2a51e853b858a4489be8e1803aa39f006242026_5:30:01_PM@camp
+ usgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20260717T160000Z
+DTEND:20260717T170000Z
+SUMMARY:Studio Walk-In Office Hour
+DESCRIPTION:Studio is the heart of the Cornell Tech experience. At roughly 
+ a quarter of your coursework\, it's where you'll take on real problems for
+  real companies\, build products\, and learn what it takes to launch a ven
+ ture in a fast-moving\, entrepreneurial environment. A little prep over th
+ e summer will help you start strong in the fall.\n\nTo get you ready\, we'
+ re hosting a Studio Summer Office Hour on July 17 from 12:00pm-12:50pm in 
+ Tata 141. Stop by with your questions about what Studio is and how to make
+  the most of it.\n\n---\nEvent Details: https://cornelltech.campusgroups.c
+ om/rsvp?id=2132916
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132916
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:a28e9d0a4af3cefd16688fcb9d3b49997152026_5:33:20_PM@camp
+ usgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20260804T203000Z
+DTEND:20260804T220000Z
+SUMMARY:(Nearly) End of Summer Celebration
+DESCRIPTION:JCT MBA Students are invited to celebrate the (nearly) end of t
+ he summer semester! Join us for refreshments and light bites. \n\nCornell 
+ Tech Event Policy\n- If you register for an event\, please attend and arri
+ ve on time. Sign up = Show up\n- If your plans change\, cancel your regist
+ ration as soon as possible—ideally at least 48 hours in advance. This op
+ ens spots for your peers and helps us manage resources.\n---\nEvent Detail
+ s: https://cornelltech.campusgroups.com/rsvp?id=2132928
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132928
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Add/Drop begins for Graduate/Profession
+ al/Cornell Tech@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20260817T130000Z
+SUMMARY:Fall 2026: Add/Drop begins for Graduate/Professional/Cornell Tech
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Fall term begins: First-year writing se
+ minar\, project session full\, regular\, and 7 week 1 session instruction 
+ begins@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:Fall 2026: Fall term begins: First-year writing seminar\, project s
+ ession full\, regular\, and 7 week 1 session instruction begins
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
+ its in 7 week 1 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:Fall 2026: Last day to add classes and change credits in 7 week 1 s
+ ession
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Labor Day/Holiday/No classes@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Labor Day/Holiday/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
+ its in first-year writing seminar and regular session@ctsg.tech.cornell.ed
+ u
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Fall 2026: Last day to add classes and change credits in first-year
+  writing seminar and regular session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to drop classes in 7 week 1 se
+ ssion@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Fall 2026: Last day to drop classes in 7 week 1 session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:3b41e55d9328451b47bfc66eb14aea09922026_3:13:54_PM@campu
+ sgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20260924T193000Z
+DTEND:20260924T200000Z
+SUMMARY:Bloomberg Center Art Tour (3:30 PM Start)
+DESCRIPTION:There is amazing art throughout Roosevelt Island\, including in
+  the Bloomberg Center! Because some of these pieces are located in faculty
+ /staff-only spaces\, we’re offering an exclusive tour led by Jane Swanso
+ n\, Director\, Government & Community Relations at Cornell Tech\, to explo
+ re and learn more about these works.\n\nWe are offering this tour two time
+ s\, this one is the 3:30 PM start. \n\nSpace is limited\, and registration
+  is required.\n\nAlso\, check out the attachment below from the Roosevelt 
+ Island Visual Art Association about more art you can find around Roosevelt
+  Island. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?i
+ d=2132988
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132988
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:bcc2ab7bdd6fd40afbdba17c2b8ad1f1982026_9:50:26_PM@campu
+ sgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20260924T200000Z
+DTEND:20260924T203000Z
+SUMMARY:Bloomberg Center Art Tour (4:00 PM Start)
+DESCRIPTION:There is amazing art throughout Roosevelt Island\, including in
+  the Bloomberg Center! Because some of these pieces are located in faculty
+ /staff-only spaces\, we’re offering an exclusive tour led by Jane Swanso
+ n\, Director\, Government & Community Relations at Cornell Tech\, to explo
+ re and learn more about these works.\n\nWe are offering this tour two time
+ s\, this one is the 4:00 PM start. \n\nSpace is limited\, and registration
+  is required.\n\nAlso\, check out the attachment below from the Roosevelt 
+ Island Visual Art Association about more art you can find around Roosevelt
+  Island. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?i
+ d=2132994
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132994
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
+ its in project session full session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Fall 2026: Last day to add classes and change credits in project se
+ ssion full session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall Break/No classes@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261014
+SUMMARY:Fall Break/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: 7 week 1 session final exams@ctsg.tech.
+ cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261023
+SUMMARY:Fall 2026: 7 week 1 session final exams
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to change grading basis and dr
+ op classes in first-year writing seminar\, project session full\, and regu
+ lar session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Fall 2026: Last day to change grading basis and drop classes in fir
+ st-year writing seminar\, project session full\, and regular session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
+ its in 7 week 2 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Fall 2026: Last day to add classes and change credits in 7 week 2 s
+ ession
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@camp
+ usgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261022T190000Z
+DTEND:20261022T200000Z
+SUMMARY:Visas After Graduation with Miller Mayer
+DESCRIPTION:This presentation for international students provides an overvi
+ ew of possible options for working long-term in the U.S. after graduation 
+ including becoming a permanent resident (green card holder)\, if you desir
+ e. Working with the law firm of Miller Mayer\, we offer the presentation e
+ very fall and spring semester. Check out International Services' Visas Aft
+ er Graduation page: https://international.globallearning.cornell.edu/maint
+ aining-your-status/visas-after-graduation.\n---\nEvent Details: https://co
+ rnelltech.campusgroups.com/rsvp?id=2133009
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2133009
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@cam
+ pusgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261023T193000Z
+DTEND:20261023T220000Z
+SUMMARY:Student Volunteer Day
+DESCRIPTION:Take a break from your studies and give back to our amazing Roo
+ sevelt Island Community. There will be opportunities for students to garde
+ n\, organize\, and support seniors! Click the link to RSVP and view the li
+ st of community partners that need your help. Following the event\, we wil
+ l gather again to enjoy pizza together!\n---\nEvent Details: https://corne
+ lltech.campusgroups.com/rsvp?id=2132997
+LOCATION:Tata 141\, 2 W Loop Rd\, New York\, New York 10044\, United States
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132997
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@cam
+ pusgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261028T160000Z
+DTEND:20261028T180000Z
+SUMMARY:Pumpkin Decorating Contest!
+DESCRIPTION:Stop by the Bloomberg Masters' Studio for snacks\, apple cider\
+ , and pumpkin decorating! Submit your pumpkin into a category to be judged
+  by a panel of VIP faculty judges! \n\nAll category winners will receive a
+  spooky prize!\n---\nEvent Details: https://cornelltech.campusgroups.com/r
+ svp?id=2132998
+LOCATION:Bloomberg Masters' Studio\, 2 W Loop Rd\, New York\, New York 1004
+ 4\, United States
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132998
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Profes
+ sional/Cornell Tech@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261110T123000Z
+DTEND:20261113T045900Z
+SUMMARY:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Te
+ ch
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day to change grading basis and dr
+ op classes in 7 week 2 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261112T045900Z
+SUMMARY:Fall 2026: Last day to change grading basis and drop classes in 7 w
+ eek 2 session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@cam
+ pusgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261118T160000Z
+DTEND:20261118T190000Z
+SUMMARY:Gratitude Day
+DESCRIPTION: 🍂Gratitude Tree: hang a leaf representing something you’r
+ e grateful for\n 🧘Self-care Station: treat your mind and take a break\n
+  🫖Communi-Tea Lounge: get cozy with a cup of autumnal tea\n 💌Appreci
+ ation Cards: express gratitude to a member of the Cornell Tech community\n
+ 🍴 Meal Kit Prep: join CulinArt to put together Thanksgiving meal kits t
+ hat will be donated for the holidays\n🦃 Friendsgiving: make a festive c
+ raft and take part in a PIE GIVEAWAY (first come first serve) at 1:00 PM\n
+ ---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132999
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2132999
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Thanksgiving Break/No classes@ctsg.tech.cornell.ed
+ u
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261130
+SUMMARY:Thanksgiving Break/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:student-affairs:9cd14cf60c89290ea08f96af97ed873b9102026_12:30:25_PM@cam
+ pusgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20261128T170000Z
+DTEND:20261128T200000Z
+SUMMARY:Frozen Apple Hockey Game
+DESCRIPTION:Get discounted student tickets for the 2026 Frozen Apple Hockey
+  Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is t
+ aking place on Saturday\, November 28 at 12pm! \n\nReserve with this link 
+ to sit in a designated Cornell Tech seating area at discounted rates. Be s
+ ure to make the reservation with your Cornell NetID.\n\n*Advertised on beh
+ alf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not 
+ have ownership over this event.\n---\nEvent Details: https://cornelltech.c
+ ampusgroups.com/rsvp?id=2133001
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2133001
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Last day of instruction for classes in 
+ first-year writing seminar\, project session full\, and regular session@ct
+ sg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Fall 2026: Last day of instruction for classes in first-year writin
+ g seminar\, project session full\, and regular session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Study days@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261211
+SUMMARY:Fall 2026: Study days
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Fall 2026: Final exams@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261220
+SUMMARY:Fall 2026: Final exams
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:New Years Day/Holiday/No classes@ctsg.tech.cornell
+ .edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:New Years Day/Holiday/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Martin Luther King\, Jr. Holiday/No Classes@ctsg.t
+ ech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Martin Luther King\, Jr. Holiday/No Classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Add/Drop begins for Graduate/Professi
+ onal/ Cornell Tech@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART:20270119T140000Z
+SUMMARY:Spring 2027: Add/Drop begins for Graduate/Professional/ Cornell Tec
+ h
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Spring term begins: First-year writin
+ g seminar\, project session full\, regular\, and 7 week 1 session instruct
+ ion begins@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Spring 2027: Spring term begins: First-year writing seminar\, proje
+ ct session full\, regular\, and 7 week 1 session instruction begins
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
+ edits in 7 week 1 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:Spring 2027: Last day to add classes and change credits in 7 week 1
+  session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
+ edits in first year writting and regular session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Spring 2027: Last day to add classes and change credits in first ye
+ ar writting and regular session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:February Break/No classes@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270217
+SUMMARY:February Break/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
+ drop class in 7 week 1 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:Spring 2027: Last day to change grading basis and drop class in 7 w
+ eek 1 session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
+ edits in project session full session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:Spring 2027: Last day to add classes and change credits in project 
+ session full session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: 7 week 1 session final exams@ctsg.tec
+ h.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270325
+SUMMARY:Spring 2027: 7 week 1 session final exams
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
+ drop classes in first-year writing seminar\, project session full\, and re
+ gular session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Spring 2027: Last day to change grading basis and drop classes in f
+ irst-year writing seminar\, project session full\, and regular session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to change credits and add cl
+ asses in 7 week 2 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:Spring 2027: Last day to change credits and add classes in 7 week 2
+  session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring Break/No classes@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270405
+SUMMARY:Spring Break/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
+ drop classes in 7 week 2 session@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Spring 2027: Last day to change grading basis and drop classes in 7
+  week 2 session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Last day of instruction for classes i
+ n first year writing\, project session full\, regular and 7 week 2 session
+ @ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Spring 2027: Last day of instruction for classes in first year writ
+ ing\, project session full\, regular and 7 week 2 session
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Study days@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270515
+SUMMARY:Spring 2027: Study days
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Spring 2027: Final exams@ctsg.tech.cornell.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270523
+SUMMARY:Spring 2027: Final exams
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Memorial Day/ Holiday/No classes@ctsg.tech.cornell
+ .edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:Memorial Day/ Holiday/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Juneteenth/Holiday/No Classes@ctsg.tech.cornell.ed
+ u
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:Juneteenth/Holiday/No Classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:academic:2026–2027:Observation of July 4th/No classes@ctsg.tech.corne
+ ll.edu
+DTSTAMP:20260929T171138Z
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270706
+SUMMARY:Observation of July 4th/No classes
+DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
+ ing windows are filtered to Graduate/Professional/Cornell Tech. Course-ses
+ sion and program-specific dates may differ\; exam periods are not individu
+ al course exam appointments.
+LOCATION:
+CATEGORIES:Academic dates
+URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
+END:VEVENT
+END:VCALENDAR

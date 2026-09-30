@@ -1,0 +1,65 @@
+# Student calendar
+
+The Events page combines these sources in the site's own week/month/list calendar:
+
+| Source | Publication rule |
+| --- | --- |
+| [Cornell Tech Student Affairs](https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics) | Public CampusGroups ICS feed; automatically included. This is the Student Affairs group, not a guarantee of every Cornell Tech event. |
+| [CTSG Events database](https://www.notion.so/3e90b1bd6791809ab7c9de0490a60c95) | Only records with `Approval status` exactly `Approved`; blank/pending/rejected/archived/cancelled records are excluded. |
+| [Cornell Registrar](https://registrar.cornell.edu/calendars-exams/academic-calendar) | Holidays, breaks, full Fall/Spring instruction dates, study periods, full/7-week exam windows, course add/drop/credit/grading-basis deadlines, and enrollment opening windows explicitly labeled Graduate/Professional/Cornell Tech. Undergraduate-only openings, administrative grade deadlines, and unrelated summer/winter course deadlines are excluded. |
+
+The service reads the registrar's HTML because a reliable official academic ICS endpoint has not been verified. This adapter can need repair if the registrar changes its markup. The `events.cornell.edu/search/events.ics?search=key%2BCornell%2Bdates` candidate returned unrelated events and a May 10, 2027 instruction-end date that conflicted with the registrar's May 11 date when checked on September 28, 2026; it is not used.
+
+Academic dates use the permanent Registrar URL above, not a year-specific URL or the separate Tech term table. The importer reads the academic year from the page heading each time and handles the January year boundary automatically. Published enrollment opening and deadline times are preserved in New York time; full-day breaks/exam ranges remain all-day. Individual course exams and program-specific exceptions still need to be checked with the program. There are no manually entered production event dates. Subscription IDs include the academic year and event title rather than the date, so date corrections update an existing event.
+
+The deployed Cloudflare Worker has a recurring trigger every six hours, with no end date. It refreshes persistent data even without website visitors or an open laptop. Website/feed requests also refresh data once it is 15 minutes old. Failed fetches or invalid calendar markup retain the last valid public-source cache and mark the scheduled invocation as failed. Hosting must remain active, and a source layout change may require a parser update.
+
+## Current state
+
+The recurring Worker was deployed on September 30, 2026 to the user's selected personal Cloudflare account (`bc913813b1125232b51bb639e7cd2dea`) on **Workers Free ($0)**. Its service is [calendar JSON](https://ctsg-calendar.mh2682.workers.dev/api/calendar), and its permanent subscription is [calendar ICS](https://ctsg-calendar.mh2682.workers.dev/api/calendar.ics). Cloudflare confirms the `17 */6 * * *` schedule (00:17, 06:17, 12:17, and 18:17 UTC) and the persistent `CALENDAR_CACHE` binding. Workers Logs are enabled for refresh failures.
+
+The edge Worker forwards requests and scheduled refreshes to a single SQLite-backed `CalendarProcessor` Durable Object. Live source parsing exceeded the ordinary free Worker's 10-ms CPU allowance, so it runs inside the Durable Object's [30-second CPU allowance](https://developers.cloudflare.com/durable-objects/platform/limits/) instead. The object retains the existing KV cache, serializes simultaneous requests to avoid duplicate refreshes, and exposes its force-refresh route only through the internal binding. The website and subscription URLs are unchanged.
+
+**Website builds point to this service, and the GitHub Pages workflow publishes only validated build output. No Notion schema has been changed.** Running `npm run dev` still serves a local API at `http://localhost:8081/api/calendar`, while the configured frontend uses the hosted service. Notion stays unconfigured until its property and secret are supplied. The connected Notion tool in a chat does not give the website a permanent API credential.
+
+A static build uses the hosted endpoint in `public/calendar-config.js`, with `public/data/calendar.json` as its outage fallback. Snapshot freshness remains in the JSON metadata; the page omits the update-status blurb. `npm run calendar:sync` manually refreshes this fallback plus its downloadable ICS. It deliberately saves only public sources, so withdrawn Notion approvals cannot survive indefinitely in a static file. Builds do not refresh the snapshot or deploy the service.
+
+## One-time Notion setup
+
+A local, unconnected form mock is available at `public/event-submission.html`, linked from Events. It is based on the existing Notion form's title, club name, 100-word description, date/time, and image questions. It adds location, organizer wording for non-club events, submission type, an official link required for external opportunities, and reviewer-only contact details/notes; images become optional. Club, CTSG, student-organized, and external recommendations all lead to a pending-review preview. Nothing is sent or saved, and the mock has not changed the live Notion form or the service's category mapping.
+
+The Calendars menu has separate **Clubs** and **CTSG** options for events in the same Notion database. An optional `Event type` Select property with `Clubs` and `CTSG` options explicitly determines the category. When that property is absent or blank, `Club Name` equal to `CTSG` or `Cornell Tech Student Government` (case-insensitive) identifies a CTSG event; other records appear under Clubs. Both categories use the same approval rules. This property has not been added to Notion automatically.
+
+1. In the existing Events database, add a **Status** or **Select** property named `Approval status`, with `Pending`, `Approved`, and `Rejected` options. Leave submissions pending or blank; do not expose approval as a form question. Create an approval-queue view and an approved calendar view in the same database. There is no need to move or copy approved events to another table.
+2. Keep `Event Title`, `Date`, `Description`, and `Club Name`. `Date` should include start/end times for timed events. Optional supported properties are `Location` (text), `RSVP/details URL` (URL), and `Event status` (Select/Status, with `Cancelled`). Image files, internal page URLs, and other properties are not published.
+3. Make this form the event proposal step: organizers submit once when requesting CTSG approval/support; reviewers approve the same record. Update the form's current wording, which says to submit *after* approval. The approval field must remain reviewer-controlled; organizers can request corrections, or edit through a permission arrangement that does not let them approve themselves.
+4. Create an internal Notion connection with read-content access and grant it access to the Events database. Use a CTSG-managed workspace/admin arrangement with successor access. Put its token in the service secret `NOTION_TOKEN`, never in `public/` or source control. The default data source is `3e90b1bd-6791-8091-bca0-000bcfad61a1`; `NOTION_DATA_SOURCE_ID` can override it.
+
+## Hosting and officer handoff
+
+`calendar/worker.mjs` is a Cloudflare Workers adapter. `calendar/service.mjs` also works with another server that provides Fetch APIs and persistent storage with async `get(key, "json")` / `put(key, JSONstring)` methods.
+
+The deployed account and KV namespace are recorded in `calendar/wrangler.jsonc`; the file contains identifiers, not credentials. To redeploy the existing service, run `npx wrangler@4.143.1 deploy --config calendar/wrangler.jsonc` after the checks below. Authentication is local to the administrator's machine; the running Worker and cron do not depend on that machine or its login token.
+
+Before annual handoff, an existing verified Super Administrator can use **Manage account → Members → Invite** to add the incoming officer's own Cloudflare login with **Super Administrator - All Privileges**. Have the successor accept and verify access to this Worker, its KV namespace, and these source files before the outgoing officer leaves. Keep the existing account and `mh2682.workers.dev` subdomain to preserve subscriptions. [Cloudflare member-management instructions](https://developers.cloudflare.com/fundamentals/manage-members/manage/). No other officers have been invited by this setup.
+
+Keep the Workers plan on Free; the current [free allowances](https://developers.cloudflare.com/workers/platform/pricing/) are 100,000 Worker requests/day, 10 ms CPU/invocation, 100,000 KV reads/day, 1,000 KV writes/day, and 1 GB storage. These are provider limits, not a promise of unchanged pricing forever.
+
+The processor also uses the [Durable Objects free allowance](https://developers.cloudflare.com/durable-objects/platform/pricing/): 100,000 requests and 13,000 GB-seconds per day. The SQLite class migration in both Wrangler configs is required for free-plan eligibility; do not replace it with the legacy KV-backed Durable Object class type. Calendar records themselves remain in the separate Workers KV namespace. No paid plan or payment information was added.
+
+For a fresh account or replacement deployment:
+
+1. Copy `calendar/wrangler.example.jsonc` to `calendar/wrangler.jsonc` and replace its placeholder KV namespace ID after creating a namespace bound as `CALENDAR_CACHE`.
+2. Add the `NOTION_TOKEN` secret using Wrangler's secret command with `--config calendar/wrangler.jsonc`. Do not place it in the config file. Set the data-source variable if the database changes.
+3. Deploy that config when ready; its six-hour recurring trigger is included. Verify the trigger is registered and `/api/calendar` reports the public sources `current`, with an `academicYear` read from the Registrar page. If Notion is configured, verify a known approved test event appears while an unapproved one does not; withdraw approval and verify it disappears after refresh.
+4. Set `calendarEndpoint` in `public/calendar-config.js` to the permanent HTTPS service URL ending in `/api/calendar`. Build and publish the website through its normal process. Use the service's `/api/calendar.ics` URL for calendar subscriptions.
+
+A server-side recurring trigger refreshes source data every six hours; requests also refresh data after 15 minutes. Open website calendars refresh every 15 minutes. Calendar apps determine their own subscription refresh intervals. Successful refreshes replace each source's records, so edits, cancellations, and removed approvals propagate. Stable source IDs prevent ordinary time changes from making duplicate subscribed events. Events duplicated across different sources are not automatically merged.
+
+The persistent cache keeps public-source events during outages, with stale status recorded in the JSON metadata. Notion cache is retained for at most one hour during an outage, then club events are withheld until the source recovers. A successful empty response clears the corresponding cache. Keep the service, domain, credentials, and access instructions under CTSG ownership; verify the source status and academic-year coverage during annual officer handoff. This reduces routine entry work but cannot guarantee an external feed will exist forever.
+
+## Checks
+
+Run `npm run check`, `npm test`, and `npm run build`. `npm run calendar:sync` verifies live public-source parsing and refreshes the saved data; it exits unsuccessfully if either public source could not refresh. The calendar uses New York time, preserves all-day dates with exclusive end dates, and expands recurring ICS events and exceptions within its 90-day-back/400-day-ahead display window. That window does not imply each source publishes that far ahead.
+
+Deployment verification on September 30, 2026: the production JSON and ICS endpoints returned 46 events (37 academic, 9 Student Affairs), both public sources reported `current`, and the Registrar year was `2026–2027`. Cloudflare measured a fresh import at 1 ms in the edge Worker and 23 ms in the Durable Object, both within their respective free-plan limits. Public `/refresh` requests were rejected. The native local scheduled handler completed successfully, and the production six-hour cron registration was verified through Cloudflare's API; its first scheduled production invocation has not yet been observed. All 32 tests, syntax checks, the website build, and built-image validation passed.

@@ -49,7 +49,7 @@
   <main id="content" class="site-content" tabindex="-1"></main>
   <footer class="site-footer">
     <span>© 2026 Cornell Tech Student Government</span>
-    <a href="https://ctsg.tech.cornell.edu/">ctsg.tech.cornell.edu</a>
+    <a href="mailto:ctsg@cornell.edu">ctsg@cornell.edu</a>
   </footer>
   <template id="home-template">
     <div class="home">
@@ -68,7 +68,7 @@
             <a class="home-event-image" href="#/events" aria-labelledby="home-event-title">
               <img src="./images/current-site/2024/11/21-DSCF1036.webp" width="1920" height="1280" alt="Students performing music at the Cornell Tech Club Fair">
             </a>
-            <figcaption><h3 class="feature-title" id="home-event-title"><a href="#/events">Coming together at <span class="link-ending">Club Fair <span class="link-arrow" aria-hidden="true">↗</span></span></a></h3></figcaption>
+            <figcaption><h3 class="feature-title" id="home-event-title"><a href="#/events">Coming together at <span class="link-ending">Club Fair <span class="link-arrow" aria-hidden="true">↗&#xfe0e;</span></span></a></h3></figcaption>
           </figure>
         </section>
         <section class="home-people" aria-labelledby="representatives-heading">
@@ -78,22 +78,169 @@
             <img src="./images/members/maxime-hendryx-parker.webp" width="768" height="1024" alt="Maxime Hendryx-Parker">
             <img src="./images/current-site/2026/09/IMG_7087-Robert-Dornbush.webp" width="280" height="280" alt="Robbie Dornbush">
           </a>
-          <h3 class="feature-title" id="home-people-title"><a href="#/members">Meet your <span class="link-ending">representatives <span class="link-arrow" aria-hidden="true">↗</span></span></a></h3>
+          <h3 class="feature-title" id="home-people-title"><a href="#/members">Meet your <span class="link-ending">representatives <span class="link-arrow" aria-hidden="true">↗&#xfe0e;</span></span></a></h3>
           </div>
         </section>
       </div>
-      <div class="home-resources">
-        <a class="editorial-tile home-governance" href="#/by-laws">
-          <span>Student government</span>
-          <h2 class="editorial-tile-title">How<br>we work.</h2>
-          <span class="editorial-tile-footer"><span class="link-label">The CTSG by-laws</span><span class="link-arrow" aria-hidden="true">↗</span></span>
-        </a>
-        <a class="editorial-tile home-clubs" href="https://cornelltech.campusgroups.com/club_signup">
-          <span>Our community</span>
-          <h2 class="editorial-tile-title">Find your people.</h2>
-          <span class="editorial-tile-footer"><span class="link-label">Explore student clubs</span><span class="link-arrow" aria-hidden="true">↗</span></span>
-        </a>
-      </div>
+      <section class="home-calendar" aria-labelledby="home-calendar-heading">
+        <h2 class="eyebrow" id="home-calendar-heading">Events</h2>
+        <div class="student-calendar">
+          <div class="calendar-controls home-calendar-controls">
+            <h3 class="calendar-month" aria-live="polite"></h3>
+            <div class="home-calendar-arrows">
+              <button type="button" data-direction="-1" aria-label="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg></button>
+              <button type="button" data-direction="1" aria-label="Next view"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6"/></svg></button>
+              <button type="button" data-reset aria-label="Back to today" title="Back to today"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 10h16"/><rect x="10" y="13" width="4" height="4" fill="currentColor" stroke="none"/></svg></button>
+            </div>
+          </div>
+          <div class="calendar-display" tabindex="0" role="region" aria-label="Event calendar"></div>
+          <p class="calendar-status" role="status">Loading events…</p>
+          <p class="feature-title home-calendar-link"><a href="#/events">View full <span class="link-ending">calendar <span class="link-arrow" aria-hidden="true">↗&#xfe0e;</span></span></a></p>
+          <dialog class="calendar-dialog" aria-labelledby="calendar-event-title">
+            <button type="button" class="calendar-dialog-close">Close</button>
+            <div class="calendar-dialog-body"></div>
+          </dialog>
+        </div>
+      </section>
+        <section class="events-projects" aria-labelledby="home-projects-heading">
+          <h2 class="eyebrow" id="home-projects-heading">Projects</h2>
+          <!-- Add new projects at the top, keeping the list newest first. -->
+          <ol class="events-project-list" id="home-project-list" role="list">
+            <li>
+              <article>
+                <h3>
+                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="sunset-sendoff-2026-details" aria-labelledby="sunset-sendoff-2026-title">
+                    <img class="event-card-image" src="images/events/2026/sunset-sendoff/poster.jpg" alt="" width="3355" height="3750" loading="lazy">
+                    <span class="event-card-title" id="sunset-sendoff-2026-title">Sunset Sendoff 2026</span>
+                    <time class="event-card-date" datetime="2026-05-02">May 2, 2026</time>
+                    <span class="event-card-action">View event <span aria-hidden="true">+</span></span>
+                  </button>
+                </h3>
+                <dialog class="event-details" id="sunset-sendoff-2026-details" aria-labelledby="sunset-sendoff-2026-details-title">
+                  <form method="dialog" class="event-details-close">
+                    <button type="submit" aria-label="Close" autofocus><span aria-hidden="true">×</span></button>
+                  </form>
+                  <div class="event-gallery" tabindex="0" role="region" aria-label="Sunset Sendoff 2026 images">
+                    <figure>
+                      <img src="images/events/2026/sunset-sendoff/poster.jpg" alt="Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere." width="3355" height="3750" loading="lazy">
+                      <figcaption><span>Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.</span><span class="event-photo-credit">Poster: CTSG.</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="event-details-body">
+                  <h2 id="sunset-sendoff-2026-details-title">Sunset Sendoff 2026</h2>
+                  <p class="eyebrow"><time datetime="2026-05-02">May 2, 2026</time></p>
+                  <p>With graduation approaching, Sunset Sendoff gave the Class of 2026 an evening to celebrate together at Somewhere Nowhere in Manhattan. The May 2 celebration ran from 6–10 PM, with a program spread across two floors: a live jazz ensemble on Floor 39 and a high-energy DJ set on Floor 38.</p>
+                  <p>Students could choose their pace for the evening, from jazz and conversation to the dance floor. A taco station, dessert bar, and photo booth rounded out the program. It was a sendoff built around spending time with the people who had shared the Cornell Tech experience, before the class headed into its next chapter.</p>
+                  </div>
+                </dialog>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>
+                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="big-red-gala-2026-details" aria-labelledby="big-red-gala-2026-title">
+                    <img class="event-card-image" src="images/events/2026/big-red-gala/group-portrait.jpg" alt="" width="6240" height="4160" loading="lazy">
+                    <span class="event-card-title" id="big-red-gala-2026-title">Big Red Gala 2026</span>
+                    <time class="event-card-date" datetime="2026-02-07">February 7, 2026</time>
+                    <span class="event-card-action">View photos <span aria-hidden="true">+</span></span>
+                  </button>
+                </h3>
+                <dialog class="event-details" id="big-red-gala-2026-details" aria-labelledby="big-red-gala-2026-details-title">
+                  <form method="dialog" class="event-details-close">
+                    <button type="submit" aria-label="Close" autofocus><span aria-hidden="true">×</span></button>
+                  </form>
+                  <div class="event-gallery" tabindex="0" role="region" aria-label="Big Red Gala 2026 images">
+                    <figure>
+                      <img src="images/events/2026/big-red-gala/group-portrait.jpg" alt="Four guests pose together in formal attire at the Big Red Gala." width="6240" height="4160" loading="lazy">
+                      <figcaption><span>Four guests pose together in formal attire at the Big Red Gala.</span><span class="event-photo-credit">Photo: Opalina (@opalinakhanna).</span></figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/events/2026/big-red-gala/portrait.jpg" alt="Two smiling guests pose in front of red curtains at the gala." width="6000" height="4000" loading="lazy">
+                      <figcaption><span>Two smiling guests pose in front of red curtains at the gala.</span><span class="event-photo-credit">Photo: Abe (@abe.baali).</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="event-details-body">
+                  <h2 id="big-red-gala-2026-details-title">Big Red Gala 2026</h2>
+                  <p class="eyebrow"><time datetime="2026-02-07">February 7, 2026</time></p>
+                  <p>Spring semester began with a reason to dress up. The Big Red Gala was CTSG’s first party of spring 2026, and all 270 tickets sold out. The February 7 celebration brought Cornell Tech students together with 40 students from PACT for a formal night out.</p>
+                  <p>The evening’s program centered on music and dancing, with a DJ booked for the entire event and a photo booth for pictures with friends. Student photographers captured the occasion too, including the portraits in this gallery. After the winter break, the gala offered a shared start to the semester beyond classes and studio work.</p>
+                  </div>
+                </dialog>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>
+                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="cornelloween-2025-details" aria-labelledby="cornelloween-2025-title">
+                    <img class="event-card-image" src="images/events/2025/cornelloween/celebration.jpg" alt="" width="3240" height="2160" loading="lazy">
+                    <span class="event-card-title" id="cornelloween-2025-title">Cornelloween 2025</span>
+                    <time class="event-card-date" datetime="2025-10-30">October 30, 2025</time>
+                    <span class="event-card-action">View photos <span aria-hidden="true">+</span></span>
+                  </button>
+                </h3>
+                <dialog class="event-details" id="cornelloween-2025-details" aria-labelledby="cornelloween-2025-details-title">
+                  <form method="dialog" class="event-details-close">
+                    <button type="submit" aria-label="Close" autofocus><span aria-hidden="true">×</span></button>
+                  </form>
+                  <div class="event-gallery" tabindex="0" role="region" aria-label="Cornelloween 2025 images">
+                    <figure>
+                      <img src="images/events/2025/cornelloween/celebration.jpg" alt="Costumed students gather beneath hanging skeletons and a disco ball." width="3240" height="2160" loading="lazy">
+                      <figcaption><span>Costumed students gather beneath hanging skeletons and a disco ball.</span><span class="event-photo-credit">Source: CTSG event archive.</span></figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/events/2025/cornelloween/colorful-costumes.jpg" alt="Four friends smile in coordinated costumes with colorful fuzzy hats." width="2160" height="3240" loading="lazy">
+                      <figcaption><span>Four friends smile in coordinated costumes with colorful fuzzy hats.</span><span class="event-photo-credit">Source: CTSG event archive.</span></figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/events/2025/cornelloween/costume-portrait.jpg" alt="Four guests pose together in Halloween costumes." width="2160" height="3240" loading="lazy">
+                      <figcaption><span>Four guests pose together in Halloween costumes.</span><span class="event-photo-credit">Source: CTSG event archive.</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="event-details-body">
+                  <h2 id="cornelloween-2025-details-title">Cornelloween 2025</h2>
+                  <p class="eyebrow"><time datetime="2025-10-30">October 30, 2025</time></p>
+                  <p>Halloween arrived a night early for Cornell Tech at The DL rooftop on October 30. Cornelloween put students’ costumes at the center of the celebration, with a fashion show on the evening’s schedule and a costume contest inviting guests to vote for their favorites.</p>
+                  <p>Doors opened at 8:30 PM, with the fashion show scheduled for 10 and more dancing from 11:30. The music program combined a Cornelloween playlist with a closing set from CTSG’s own DJ, while a photo backdrop gave friends a place to capture their outfits together. From coordinated group costumes to individual creations, the night made room for a different kind of student creativity.</p>
+                  </div>
+                </dialog>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>
+                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="club-fair-2025-details" aria-labelledby="club-fair-2025-title">
+                    <img class="event-card-image" src="images/events/2025/club-fair/campus-group.jpg" alt="" width="4288" height="2848" loading="lazy">
+                    <span class="event-card-title" id="club-fair-2025-title">Club Fair 2025</span>
+                    <time class="event-card-date" datetime="2025-09-18">September 18, 2025</time>
+                    <span class="event-card-action">View photos <span aria-hidden="true">+</span></span>
+                  </button>
+                </h3>
+                <dialog class="event-details" id="club-fair-2025-details" aria-labelledby="club-fair-2025-details-title">
+                  <form method="dialog" class="event-details-close">
+                    <button type="submit" aria-label="Close" autofocus><span aria-hidden="true">×</span></button>
+                  </form>
+                  <div class="event-gallery" tabindex="0" role="region" aria-label="Club Fair 2025 images">
+                    <figure>
+                      <img src="images/events/2025/club-fair/campus-group.jpg" alt="Seven students smile together outside the Bloomberg Center." width="4288" height="2848" loading="lazy">
+                      <figcaption><span>Seven students smile together outside the Bloomberg Center.</span><span class="event-photo-credit">Photo: Nghi T.</span></figcaption>
+                    </figure>
+                    <figure>
+                      <img src="images/events/2025/club-fair/future-founders-club.jpg" alt="Two smiling students hold Future Founders Club signs outside on campus." width="4288" height="2848" loading="lazy">
+                      <figcaption><span>Two smiling students hold Future Founders Club signs outside on campus.</span><span class="event-photo-credit">Photo: Nghi T.</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="event-details-body">
+                  <h2 id="club-fair-2025-details-title">Club Fair 2025</h2>
+                  <p class="eyebrow"><time datetime="2025-09-18">September 18, 2025</time></p>
+                  <p>The fall Club Fair was a starting point for finding a community at Cornell Tech. On September 18, students met the people behind campus club ideas, learned what they hoped to organize, and explored ways to get involved. The outdoor fair ran from 4:30–5:30 PM, with time set aside in the Product Studio schedule so students in the class could attend.</p>
+                  <p>The lineup spanned professional interests, shared hobbies, and community life. Future Founders Club and Women in Tech appeared alongside groups focused on cooking, chess, board games, and community service. For students bringing a new club idea to campus, the fair was also an opportunity to meet potential members and connect with others building similar communities.</p>
+                  </div>
+                </dialog>
+              </article>
+            </li>
+          </ol>
+          <button class="home-projects-toggle" type="button" aria-expanded="false" aria-controls="home-project-list" hidden>Show more</button>
+        </section>
     </div>
   </template>
   <template id="members-template">
@@ -120,39 +267,61 @@
   <template id="events-template">
     <div class="events">
       <div class="home-banner events-banner">
-        <p class="events-banner-placeholder">Events photo coming soon</p>
+        <img src="images/events/2025/cornelloween/celebration.jpg" width="3240" height="2160" alt="Cornell Tech students celebrate Cornelloween beneath a disco ball and Halloween decorations.">
       </div>
       <div class="events-content">
-        <h1>Student Events</h1>
-        <section class="events-calendar" aria-labelledby="events-calendar-heading">
-          <h2 id="events-calendar-heading">Calendar</h2>
-          <div class="events-calendar-placeholder">
-            <p>Monthly calendar coming soon.</p>
+        <h1>Event Calendar</h1>
+        <section class="events-calendar" aria-label="Student event calendar">
+          <div class="student-calendar">
+            <div class="calendar-controls">
+              <details class="calendar-menu calendar-subscription-menu">
+                <summary>Add to calendar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></summary>
+                <div class="calendar-menu-panel calendar-subscription-panel">
+                  <a data-calendar-provider="google" target="_blank" rel="noopener noreferrer">Google Calendar</a>
+                  <a data-calendar-provider="apple">Apple Calendar</a>
+                  <a data-calendar-provider="outlook" target="_blank" rel="noopener noreferrer">Outlook</a>
+                  <button type="button" data-calendar-copy>Copy calendar link</button>
+                  <a class="calendar-download" href="./data/calendar.ics" download="ctsg-events.ics">Download .ics</a>
+                  <label class="calendar-feed-field" hidden>Calendar link<input type="text" class="calendar-feed-url" readonly></label>
+                  <p class="calendar-copy-status" role="status"></p>
+                </div>
+              </details>
+              <div class="calendar-navigation">
+                <button type="button" data-direction="-1" aria-label="Previous month"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <h3 class="calendar-month" aria-live="polite"></h3>
+                <button type="button" data-direction="1" aria-label="Next month"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+              </div>
+              <div class="calendar-display-actions">
+                <details class="calendar-menu calendar-filter-menu">
+                  <summary aria-label="Filter calendars" title="Filter calendars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6 7v6l-4 2v-8Z"/></svg></summary>
+                  <fieldset class="calendar-menu-panel calendar-filters">
+                    <legend>Calendars</legend>
+                    <label><input type="checkbox" name="calendar-source" value="student-affairs" checked> Student Affairs</label>
+                    <label><input type="checkbox" name="calendar-source" value="clubs" checked> Clubs</label>
+                    <label><input type="checkbox" name="calendar-source" value="ctsg" checked> CTSG</label>
+                    <label><input type="checkbox" name="calendar-source" value="academic" checked> Academic dates</label>
+                  </fieldset>
+                </details>
+                <details class="calendar-menu calendar-sort-menu">
+                  <summary aria-label="Calendar view" title="Calendar view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M4 12h7M4 18h4M18 5v14m-3-3 3 3 3-3"/></svg></summary>
+                  <fieldset class="calendar-menu-panel calendar-views">
+                    <legend>Calendar view</legend>
+                    <label><input type="radio" name="calendar-view" value="week"> Week</label>
+                    <label><input type="radio" name="calendar-view" value="month" checked> Month</label>
+                    <label><input type="radio" name="calendar-view" value="list"> List</label>
+                  </fieldset>
+                </details>
+              </div>
+            </div>
+            <div class="calendar-display"></div>
+            <p class="calendar-status" role="status" hidden></p>
+            <dialog class="calendar-dialog" aria-labelledby="calendar-event-title">
+              <button type="button" class="calendar-dialog-close">Close</button>
+              <div class="calendar-dialog-body"></div>
+            </dialog>
           </div>
         </section>
-        <section class="events-projects" aria-labelledby="events-projects-heading">
-          <h2 id="events-projects-heading">Projects</h2>
-          <!-- Add new projects at the top, keeping the list newest first. -->
-          <ol class="events-project-list" role="list">
-            <li>
-              <article>
-                <h3>
-                  <button class="event-card" type="button" aria-haspopup="dialog" aria-controls="cornelloween-2026-details" aria-labelledby="cornelloween-2026-title">
-                    <span class="event-card-title" id="cornelloween-2026-title">Cornelloween 2026</span>
-                    <span class="event-card-action">View details <span aria-hidden="true">+</span></span>
-                  </button>
-                </h3>
-                <dialog class="event-details" id="cornelloween-2026-details" aria-labelledby="cornelloween-2026-details-title">
-                  <form method="dialog" class="event-details-close">
-                    <button type="submit" autofocus>Close</button>
-                  </form>
-                  <h2 id="cornelloween-2026-details-title">Cornelloween 2026</h2>
-                  <p>Details coming soon.</p>
-                </dialog>
-              </article>
-            </li>
-          </ol>
-        </section>
+
       </div>
     </div>
   </template>

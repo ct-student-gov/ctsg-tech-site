@@ -1,0 +1,18 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "ctsg-calendar",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-28",
+  "durable_objects": {
+    "bindings": [{ "name": "CALENDAR_PROCESSOR", "class_name": "CalendarProcessor" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["CalendarProcessor"] }],
+  // Repeat every six hours in UTC, including when nobody visits the website.
+  "triggers": { "crons": ["17 */6 * * *"] },
+  "kv_namespaces": [
+    { "binding": "CALENDAR_CACHE", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
+  ],
+  "vars": {
+    "NOTION_DATA_SOURCE_ID": "3e90b1bd-6791-8091-bca0-000bcfad61a1"
+  }
+}

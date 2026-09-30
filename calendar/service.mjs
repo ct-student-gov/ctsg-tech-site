@@ -1,0 +1,73 @@
+import { loadSource, windowFor } from "./sources.mjs";
+
+export const SOURCES = [
+  { id: "student-affairs", name: "Student Affairs", url: "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics" },
+  { id: "clubs", name: "Club and CTSG events", url: "" },
+  { id: "academic", name: "Cornell academic dates", url: "https://registrar.cornell.edu/calendars-exams/academic-calendar" },
+];
+const TTL = 15 * 60 * 1000;
+
+// Storage has the small get/put interface of Workers KV. The local preview
+// supplies an in-memory implementation. Never store a token in these records.
+export async function calendarData(env = {}, storage, { now = new Date(), fetcher = fetch, forceRefresh = false } = {}) {
+  const results = await Promise.all(SOURCES.map(async source => {
+    const key = `calendar-v1:${source.id}`;
+    const saved = await storage.get(key, "json");
+    if (source.id === "clubs" && !env.NOTION_TOKEN) return { ...source, state: "unconfigured", updatedAt: null, events: [] };
+    if (!forceRefresh && saved && +now - Date.parse(saved.updatedAt) < TTL) return { ...source, ...saved, state: "current" };
+    try {
+      const data = { ...await loadSource(source.id, env, fetcher, now), updatedAt: now.toISOString() };
+      await storage.put(key, JSON.stringify(data));
+      return { ...source, ...data, state: "current" };
+    } catch (error) {
+      console.warn(`Calendar source ${source.id}: ${error.message}`);
+      // Avoid continuing to publish club events indefinitely after approval
+      // access is lost. Other public sources retain their last known data.
+      const usable = saved && (source.id !== "clubs" || +now - Date.parse(saved.updatedAt) < 60 * 60 * 1000);
+      return { ...source, ...(usable ? saved : { events: [], updatedAt: null }), state: saved ? "stale" : "unavailable" };
+    }
+  }));
+  const window = windowFor(now);
+  const events = results.flatMap(source => source.events).filter(event => Date.parse(event.end) >= Date.parse(window.start) && Date.parse(event.start) < Date.parse(window.end));
+  return { generatedAt: now.toISOString(), window, timeZone: "America/New_York", sources: results.map(({ events, ...source }) => source), events: events.sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title)) };
+}
+
+export function memoryStorage() {
+  const values = new Map();
+  return { async get(key) { return values.has(key) ? JSON.parse(values.get(key)) : null; }, async put(key, value) { values.set(key, value); } };
+}
+
+export function toICS(data) {
+  const escape = value => String(value || "").replace(/\\/g, "\\\\").replace(/\r?\n/g, "\\n").replace(/;/g, "\\;").replace(/,/g, "\\,");
+  const date = value => value.replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//CTSG//Student Events//EN", "CALSCALE:GREGORIAN", "X-WR-CALNAME:Cornell Tech Student Events"];
+  for (const event of data.events) {
+    lines.push("BEGIN:VEVENT", `UID:${escape(event.id)}@ctsg.tech.cornell.edu`, `DTSTAMP:${date(data.generatedAt)}`, `DTSTART${event.allDay ? ";VALUE=DATE" : ""}:${date(event.start)}`);
+    if (event.end > event.start) lines.push(`DTEND${event.allDay ? ";VALUE=DATE" : ""}:${date(event.end)}`);
+    lines.push(`SUMMARY:${escape(event.title)}`, `DESCRIPTION:${escape(event.description)}`, `LOCATION:${escape(event.location)}`, `CATEGORIES:${escape(event.category)}`);
+    if (event.url) lines.push(`URL:${event.url.replace(/[\r\n]/g, "")}`);
+    lines.push("END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  // RFC 5545 folding counts UTF-8 octets, not JavaScript characters.
+  return lines.map(line => {
+    let result = "", length = 0;
+    for (const character of line) {
+      const codePoint = character.codePointAt(0);
+      const size = codePoint <= 0x7f ? 1 : codePoint <= 0x7ff ? 2 : codePoint <= 0xffff ? 3 : 4;
+      if (length + size > 75) { result += "\r\n "; length = 1; }
+      result += character; length += size;
+    }
+    return result;
+  }).join("\r\n") + "\r\n";
+}
+
+export async function calendarResponse(request, env, storage) {
+  const path = new URL(request.url).pathname;
+  const headers = { "Access-Control-Allow-Origin": "*", "Cache-Control": "public, max-age=60" };
+  if (request.method !== "GET") return new Response("Method not allowed", { status: 405, headers: { ...headers, Allow: "GET" } });
+  if (!["/api/calendar", "/api/calendar.ics"].includes(path)) return new Response("Not found", { status: 404, headers });
+  const data = await calendarData(env, storage);
+  if (path.endsWith(".ics")) return new Response(toICS(data), { headers: { ...headers, "Content-Type": "text/calendar; charset=utf-8" } });
+  return Response.json(data, { headers });
+}

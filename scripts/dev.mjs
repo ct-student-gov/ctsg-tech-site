@@ -3,14 +3,18 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { resolve, sep, extname } from "node:path";
 import { buildSite } from "./build.mjs";
+import { calendarResponse, memoryStorage } from "../calendar/service.mjs";
 
 const root = fileURLToPath(new URL("../dist/public/", import.meta.url));
 await buildSite();
 let building = null;
+const calendarStorage = memoryStorage();
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".css": "text/css; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
+  ".ics": "text/calendar; charset=utf-8",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".png": "image/png",
@@ -23,6 +27,11 @@ for (const port of [8080, 8081]) {
   const server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
+      if (pathname === "/api/calendar" || pathname === "/api/calendar.ics") {
+        const result = await calendarResponse(new Request(`http://localhost:${port}${request.url}`, { method: request.method }), process.env, calendarStorage);
+        response.writeHead(result.status, Object.fromEntries(result.headers)).end(await result.text());
+        return;
+      }
       // Rebuild on document reload so local previews use the same images as production.
       if ((pathname.endsWith("/") || pathname.endsWith(".html")) && !building) {
         building = buildSite().finally(() => { building = null; });

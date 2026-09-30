@@ -8,12 +8,14 @@
     "build": "node scripts/build.mjs",
     "calendar:sync": "node scripts/sync-calendar.mjs",
     "people:sync": "node scripts/sync-people.mjs",
+    "blog:sync": "node scripts/sync-blog.mjs",
+    "blog:check": "node --check blog/notion.mjs && node --check scripts/sync-blog.mjs && node --check public/blog.js && node --test tests/blog.test.mjs",
     "people:check": "node --check people/notion.mjs && node --check scripts/sync-people.mjs && node --test tests/people.test.mjs",
     "calendar:check": "node scripts/check-calendar.mjs",
     "images:check": "node scripts/build.mjs --check",
     "dev": "node scripts/dev.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check public/app.js && node --check public/calendar.js && node --check public/event-submission.js && node --check calendar/sources.mjs && node --check calendar/service.mjs && node --check calendar/worker.mjs && node --check calendar/tech-events.mjs && node --check calendar/coverage.mjs && node --check calendar/merge.mjs && node --check scripts/check-calendar.mjs && node --check scripts/sync-calendar.mjs && node --check public/wordpress-bridge.js && node --check scripts/dev.mjs && node --check scripts/build.mjs && node --check calendar/archive.mjs && node --check calendar/repository.mjs && node --check calendar/static-worker.mjs && node --check people/notion.mjs && node --check scripts/sync-people.mjs && node --check scripts/sync-repository.mjs && node --check sync-webhook/worker.mjs",
+    "check": "node --check public/app.js && node --check public/calendar.js && node --check public/event-submission.js && node --check calendar/sources.mjs && node --check calendar/service.mjs && node --check calendar/worker.mjs && node --check calendar/tech-events.mjs && node --check calendar/coverage.mjs && node --check calendar/merge.mjs && node --check scripts/check-calendar.mjs && node --check scripts/sync-calendar.mjs && node --check public/wordpress-bridge.js && node --check scripts/dev.mjs && node --check scripts/build.mjs && node --check calendar/archive.mjs && node --check calendar/repository.mjs && node --check calendar/static-worker.mjs && node --check people/notion.mjs && node --check scripts/sync-people.mjs && node --check scripts/sync-repository.mjs && node --check blog/notion.mjs && node --check scripts/sync-blog.mjs && node --check public/blog.js && node --check sync-webhook/worker.mjs",
     "data:sync": "node scripts/sync-repository.mjs"
   },
   "engines": {

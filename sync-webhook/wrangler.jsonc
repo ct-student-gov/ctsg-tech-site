@@ -6,5 +6,5 @@
   "workers_dev": true,
   "observability": { "enabled": false }
   // Secrets: GITHUB_DISPATCH_TOKEN, NOTION_CALENDAR_WEBHOOK_SECRET,
-  // NOTION_PEOPLE_WEBHOOK_SECRET. Public snapshots and archives live in Git.
+  // NOTION_PEOPLE_WEBHOOK_SECRET, NOTION_BLOG_WEBHOOK_SECRET. Public snapshots and archives live in Git.
 }

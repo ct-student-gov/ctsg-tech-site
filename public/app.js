@@ -1,4 +1,6 @@
 import { peopleData } from "./data/people.js";
+import { blogData } from "./data/blog.js";
+import { renderBlog } from "./blog.js";
 import { mountCalendar } from "./calendar.js?v=break-colors-1";
 
 (() => {
@@ -440,6 +442,7 @@ import { mountCalendar } from "./calendar.js?v=break-colors-1";
     disposeCalendar = () => {};
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
+      renderBlog(content.querySelector("#home-project-list"), blogData);
       disposeCalendar = mountCalendar(content.querySelector(".home-calendar .student-calendar"), { rolling: true });
       enableProjectToggle();
       enableEventDetails();

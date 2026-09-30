@@ -14,6 +14,9 @@ Live notification checks passed: [Calendar](https://github.com/ct-student-gov/ct
 | --- | --- |
 | `/notion/calendar` | `NOTION_CALENDAR_WEBHOOK_SECRET` |
 | `/notion/people` | `NOTION_PEOPLE_WEBHOOK_SECRET` |
+| `/notion/blog` (prepared; not activated) | `NOTION_BLOG_WEBHOOK_SECRET` |
+
+Blog has an independent read-only connection and signature secret. Its prepared route sends `source: blog` so only Blog is refreshed. The daily workflow imports Blog independently of notifications. See [Blog setup](blog.md).
 
 Also set `GITHUB_DISPATCH_TOKEN` to a fine-grained GitHub token restricted to this repository with **Contents: read and write**. GitHub requires that permission for [repository dispatch](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-dispatch-event). Track its expiry and replace the Cloudflare secret before it expires. The relay itself only calls the fixed repository's dispatch endpoint.
 

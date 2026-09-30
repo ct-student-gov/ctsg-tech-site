@@ -48,6 +48,12 @@ jobs:
             echo 'SYNC=true' >> "$GITHUB_ENV"
             echo 'SYNC_FULL=true' >> "$GITHUB_ENV"
           fi
+          if [ -n "$NOTION_BLOG_TOKEN" ] && [ ! -f data-sync/blog.json ]; then
+            echo 'SYNC=true' >> "$GITHUB_ENV"
+            echo 'SYNC_FULL=true' >> "$GITHUB_ENV"
+          fi
+        env:
+          NOTION_BLOG_TOKEN: ${{ secrets.NOTION_BLOG_TOKEN }}
       - uses: actions/setup-node@v6
         with:
           node-version: 22
@@ -62,6 +68,7 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PEOPLE_TOKEN: ${{ secrets.NOTION_PEOPLE_TOKEN }}
+          NOTION_BLOG_TOKEN: ${{ secrets.NOTION_BLOG_TOKEN }}
           CAMPUSGROUPS_STUDENT_AFFAIRS_URL: ${{ secrets.CAMPUSGROUPS_STUDENT_AFFAIRS_URL }}
           CAMPUSGROUPS_CAREER_MANAGEMENT_URL: ${{ secrets.CAMPUSGROUPS_CAREER_MANAGEMENT_URL }}
           CAMPUSGROUPS_INCLUSION_BELONGING_URL: ${{ secrets.CAMPUSGROUPS_INCLUSION_BELONGING_URL }}
@@ -83,7 +90,8 @@ jobs:
           elif [ "$SKIPPED" = 'true' ]; then
             echo 'publish=false' >> "$GITHUB_OUTPUT"
           else
-            git add -- public/data/people.js public/data/calendar.json public/data/calendar.ics public/images/members/ data-sync/
+            git add -- public/data/ public/images/members/ data-sync/
+            if [ -d public/images/blog ]; then git add -- public/images/blog/; fi
             if git diff --cached --quiet -- public/; then
               echo 'publish=false' >> "$GITHUB_OUTPUT"
             else

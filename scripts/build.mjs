@@ -104,7 +104,7 @@ function validateRenderedReferences(source, file, files) {
     for (const match of source.matchAll(/url\(\s*(["']?)(.*?)\1\s*\)/gi)) {
       if (imageUrl.test(match[2]) || /^data:image\//i.test(match[2])) check(match[2]);
     }
-  } else if (file === "data/people.js") {
+  } else if (["data/people.js", "data/blog.js"].includes(file)) {
     // Check fields actually rendered as images; retain portraitSource citations verbatim.
     for (const match of source.matchAll(/(?:["']?(?:portrait|src)["']?)\s*:\s*(["'])(.*?)\1/g)) {
       if (match[2]) check(match[2]);

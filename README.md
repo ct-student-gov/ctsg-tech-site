@@ -65,6 +65,8 @@ Open **http://localhost:8080/demo/**. The development server exposes two differe
 - `http://localhost:8080` simulates the WordPress parent page.
 - `http://localhost:8081` serves the custom site inside the iframe.
 
+The localhost preview reads the latest published People, calendar, and Blog files automatically when requested, caching each snapshot for five minutes to limit static hosting requests. Reload the page to refresh People and Blog; the calendar also refreshes while open. New photos missing locally are served from the published site. This does not call Notion, trigger sync workflows, or alter local source files. If the published site is unavailable, the preview falls back to the built local copy. Code and styling continue to come from this checkout.
+
 The demo includes a synchronized fullscreen embed, a nested deep link, an iframe-only embed, and a standalone link. All modes use the same site styles.
 
 ```sh

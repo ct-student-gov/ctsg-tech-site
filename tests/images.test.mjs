@@ -106,3 +106,13 @@ test("rebuilding removes generated files for deleted source photos", async t => 
   await buildSite({ source, output });
   await assert.rejects(readFile(join(output, "images/deleted.webp")), { code: "ENOENT" });
 });
+
+test("Blog snapshot image paths are converted and external displayed photos fail validation", async t => {
+  const { source, output } = await fixture(t);
+  await pixels().png().toFile(join(source, "images/blog.png"));
+  await writeFile(join(source, "data/blog.js"), 'export const blogData = { posts: [{ images: [{ src: "./images/blog.png" }] }] };');
+  await buildSite({ source, output });
+  assert.match(await readFile(join(output, "data/blog.js"), "utf8"), /blog.webp/);
+  await writeFile(join(source, "data/blog.js"), 'export const blogData = { posts: [{ images: [{ src: "https://example.org/photo.webp" }] }] };');
+  await assert.rejects(buildSite({ source, output }), /download external photos/);
+});

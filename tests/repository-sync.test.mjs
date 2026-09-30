@@ -216,3 +216,31 @@ test("a queued main build replaces its old checkout with the latest committed sn
   assert.equal(await git("rev-parse", "HEAD"), latest);
   assert.equal(await readFile(join(root, "public/data/people.js"), "utf8"), "newer synced people\n");
 });
+
+test("combined batches refresh both Notion sources and retain every valid historical page hint", async t => {
+  const secondId = "253104cd-477e-809d-8dc4-ff2d96ae3090";
+  const state = await fixture(t, { trigger: "repository_dispatch", payload: {
+    source: "both", page_ids: [pageId, secondId, pageId, "../../secret", null],
+  } });
+  await syncRepository(state);
+  assert.deepEqual(state.calls.map(([name]) => name), ["calendar", "people"]);
+  for (const [, options] of state.calls) assert.deepEqual(options.changedPageIds, [pageId, secondId]);
+  assert.equal(state.calls[0][1].notionOnly, true);
+  await assert.rejects(syncRepository({ ...state, env: { ...state.env, NOTION_PEOPLE_TOKEN: "" } }), /NOTION_PEOPLE_TOKEN/);
+});
+
+test("Blog joins scheduled syncs when configured and receives its own or mixed notification hints", async t => {
+  for (const payload of [null, { source: "blog", page_id: pageId }, { source: "multiple", sources: ["blog", "people"], page_ids: [pageId] }]) {
+    const state = await fixture(t, { trigger: payload ? "repository_dispatch" : "schedule", payload: payload || {} });
+    state.env.NOTION_BLOG_TOKEN = "test-blog-token";
+    state.blog = async options => { state.calls.push(["blog", options]); return { postCount: 4, downloadedPhotos: 0 }; };
+    await syncRepository(state);
+    assert.deepEqual(state.calls.map(([name]) => name), payload?.source === "blog" ? ["blog"] : payload ? ["people", "blog"] : ["calendar", "people", "blog"]);
+    if (payload) assert.deepEqual(state.calls.at(-1)[1].changedPageIds, [pageId]);
+    if (payload) await assert.rejects(syncRepository({ ...state, env: { ...state.env, NOTION_BLOG_TOKEN: "" } }), /NOTION_BLOG_TOKEN/);
+  }
+  const state = await fixture(t);
+  await mkdir(join(state.root, "data-sync")); await writeFile(join(state.root, "data-sync/blog.json"), "{}");
+  await assert.rejects(syncRepository(state), /NOTION_BLOG_TOKEN/);
+  assert.equal(state.calls.length, 0);
+});

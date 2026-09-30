@@ -5,6 +5,7 @@ const MAX_RECENT_EVENTS = 512;
 const CONNECTIONS = {
   "/notion/calendar": { source: "calendar", secret: "NOTION_CALENDAR_WEBHOOK_SECRET" },
   "/notion/people": { source: "people", secret: "NOTION_PEOPLE_WEBHOOK_SECRET" },
+  "/notion/blog": { source: "blog", secret: "NOTION_BLOG_WEBHOOK_SECRET" },
 };
 const EVENTS = new Set([
   "page.created", "page.properties_updated", "page.content_updated",

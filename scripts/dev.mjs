@@ -5,15 +5,17 @@ import { resolve, sep, extname } from "node:path";
 import { buildSite } from "./build.mjs";
 import { calendarResponse, memoryStorage } from "../calendar/service.mjs";
 import { CalendarArchive } from "../calendar/archive.mjs";
+import { createPublishedPreview } from "./preview-data.mjs";
 
 const root = fileURLToPath(new URL("../dist/public/", import.meta.url));
 await buildSite();
 let building = null;
 const calendarStorage = memoryStorage();
 const calendarArchive = new CalendarArchive();
-// Preview the saved repository data. Opt into live source imports only when
-// developing the importer; credentials are never required for normal previews.
+// Preview published People/calendar/Blog data, with built local data as fallback.
+// Opt into upstream imports only when developing the calendar importer.
 const localCalendarSources = process.env.CALENDAR_LOCAL_SOURCES === "1";
+const readPublished = createPublishedPreview();
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -32,6 +34,15 @@ for (const port of [8080, 8081]) {
   const server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
+      // Keep local code and styles while reading the published static data.
+      // New content-addressed photos can be served before a local Git update.
+      if (!pathname.startsWith("/images/") && !(localCalendarSources && pathname.startsWith("/api/calendar"))) {
+        const published = await readPublished(pathname);
+        if (published) {
+          response.writeHead(published.status, Object.fromEntries(published.headers)).end(Buffer.from(await published.arrayBuffer()));
+          return;
+        }
+      }
       if (pathname === "/api/calendar" || pathname === "/api/calendar.ics") {
         const result = localCalendarSources
           ? await calendarResponse(new Request(`http://localhost:${port}${request.url}`, { method: request.method }), process.env, calendarStorage, { archive: calendarArchive })
@@ -60,7 +71,18 @@ for (const port of [8080, 8081]) {
         response.writeHead(403).end("Forbidden");
         return;
       }
-      const body = await readFile(path);
+      let body;
+      try { body = await readFile(path); }
+      catch (error) {
+        if (error.code === "ENOENT") {
+          const published = await readPublished(pathname);
+          if (published) {
+            response.writeHead(published.status, Object.fromEntries(published.headers)).end(Buffer.from(await published.arrayBuffer()));
+            return;
+          }
+        }
+        throw error;
+      }
       response.writeHead(200, {
         "Content-Type": types[extname(path)] || "application/octet-stream",
         "Cache-Control": "no-store",

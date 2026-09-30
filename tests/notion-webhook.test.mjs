@@ -6,6 +6,7 @@ import { createWebhookHandler } from "../sync-webhook/worker.mjs";
 const env = {
   NOTION_CALENDAR_WEBHOOK_SECRET: "calendar-test-verification-token",
   NOTION_PEOPLE_WEBHOOK_SECRET: "people-test-verification-token",
+  NOTION_BLOG_WEBHOOK_SECRET: "blog-test-verification-token",
   GITHUB_DISPATCH_TOKEN: "github-test-token",
 };
 const event = {
@@ -17,7 +18,7 @@ const event = {
   data: { privateValue: "Never forwarded" },
 };
 function request({ source = "calendar", value = event, body = JSON.stringify(value), secret, signature } = {}) {
-  const signingSecret = secret ?? env[source === "people" ? "NOTION_PEOPLE_WEBHOOK_SECRET" : "NOTION_CALENDAR_WEBHOOK_SECRET"];
+  const signingSecret = secret ?? env[`NOTION_${source.toUpperCase()}_WEBHOOK_SECRET`];
   return new Request(`https://relay.example/notion/${source}`, {
     method: "POST", body,
     headers: { "x-notion-signature": signature ?? `sha256=${createHmac("sha256", signingSecret).update(body).digest("hex")}` },
@@ -138,4 +139,14 @@ test("routes, methods, configuration and actual streamed body sizes are bounded"
   assert.equal((await handler(request(), {})).status, 503);
   assert.equal((await handler(request({ body: "x".repeat(65537) }), env)).status, 413);
   assert.equal((await handler(request(), { ...env, GITHUB_DISPATCH_TOKEN: "" })).status, 503);
+});
+
+test("Blog uses an independent signature and dispatches only Blog routing hints", async () => {
+  const calls = [];
+  const handler = createWebhookHandler({ fetcher: async (...args) => { calls.push(args); return new Response(null, { status: 204 }); } });
+  assert.equal((await handler(request({ source: "blog", secret: env.NOTION_PEOPLE_WEBHOOK_SECRET }), env)).status, 401);
+  assert.equal((await handler(request({ source: "blog" }), env)).status, 202);
+  assert.equal(calls.length, 1);
+  assert.equal(JSON.parse(calls[0][1].body).client_payload.source, "blog");
+  assert.doesNotMatch(calls[0][1].body, /private|Never forwarded|test-token/);
 });

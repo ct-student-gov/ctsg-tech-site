@@ -7,21 +7,6 @@ export const peopleData = {
   },
   "years": [
     {
-      "startYear": 2028,
-      "members": [
-        {
-          "firstName": "test",
-          "lastName": "",
-          "program": null,
-          "graduationYear": null,
-          "role": "Professional President",
-          "section": "executive-board",
-          "biography": [],
-          "portrait": "./images/members/notion/2027/3eb0b1bd6791801e8302e1d8b4809d39-eefcf63e72f67f61.webp"
-        }
-      ]
-    },
-    {
       "startYear": 2026,
       "members": [
         {

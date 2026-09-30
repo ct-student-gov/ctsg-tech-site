@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T21:26:04.604Z",
+  "generatedAt": "2026-09-30T21:33:12.770Z",
   "window": {
-    "start": "2026-07-02T21:26:04.604Z",
-    "end": "2027-11-04T21:26:04.604Z"
+    "start": "2026-07-02T21:33:12.770Z",
+    "end": "2027-11-04T21:33:12.770Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 9,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
         "upcomingCount": 5,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 2,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -89,16 +89,16 @@
         "issues": []
       },
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -130,17 +130,17 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -151,17 +151,17 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 35,
         "upcomingCount": 35,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 35,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
         "upcomingCount": 3,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -217,16 +217,16 @@
       "fetchedCount": 14,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -239,16 +239,16 @@
       "fetchedCount": 23,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-02T21:33:12.770Z",
+        "end": "2027-11-04T21:33:12.770Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-09-30T21:33:12.770Z",
       "coverage": {
         "version": 1,
         "eventCount": 11,
         "upcomingCount": 11,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 11,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -1332,7 +1332,7 @@
       "start": "2026-11-28T17:00:00.000Z",
       "end": "2026-11-28T20:00:00.000Z",
       "allDay": false,
-      "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
+      "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nTo reserve discount tickets in the Cornell Tech section of seats:\n- Use the Register link on this page\n- Access using your netID email\n- To select tickets, don't use the seating chart. Instead select \"Other Categories\" - \"Cornell Tech - Section 227\"\n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
       "location": "See event page for location",
       "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
       "audienceTags": [],

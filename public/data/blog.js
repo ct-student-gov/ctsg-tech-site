@@ -3,13 +3,13 @@ export const blogData = {
   "posts": [
     {
       "id": "3eb0b1bd679180cc9e00cc6e49b20499",
-      "title": "Sundset Sendoff 2026",
+      "title": "Sunset Sendoff 2026",
       "date": "2026-05-02",
       "action": "View event",
       "images": [
         {
           "src": "./images/blog/notion/2026/3eb0b1bd679180cc9e00cc6e49b20499-dc16d25b72a01270.webp",
-          "alt": "SSunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
+          "alt": "Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
           "width": 1832,
           "height": 2048,
           "caption": "Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
@@ -21,7 +21,7 @@ export const blogData = {
           "type": "paragraph",
           "richText": [
             {
-              "text": "Weith graduation approaching, Sunset Sendoff gave the Class of 2026 an evening to celebrate together at Somewhere Nowhere in Manhattan. The May 2 celebration ran from 6–10 PM, with a program spread across two floors: a live jazz ensemble on Floor 39 and a high-energy DJ set on Floor 38."
+              "text": "With graduation approaching, Sunset Sendoff gave the Class of 2026 an evening to celebrate together at Somewhere Nowhere in Manhattan. The May 2 celebration ran from 6–10 PM, with a program spread across two floors: a live jazz ensemble on Floor 39 and a high-energy DJ set on Floor 38."
             }
           ]
         },

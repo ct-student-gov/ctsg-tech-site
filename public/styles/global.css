@@ -82,24 +82,8 @@ figure { margin: 0; }
 /* Keep a trailing link arrow with its final word rather than on its own line. */
 .link-ending { white-space: nowrap; }
 .link-arrow { display: inline-block; vertical-align: .1em; text-decoration: none; font-variant-emoji: text; }
-.editorial-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-  min-width: 0;
-  padding: 24px;
-  background: var(--color-red);
-  color: var(--color-on-red);
-  font-size: 14px;
-  text-decoration: none;
-}
-.editorial-tile-title { margin: 0; font-size: clamp(38px, 5vw, 64px); line-height: 1; letter-spacing: -1.5px; }
-.editorial-tile-footer { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid currentColor; padding-top: 14px; }
-.editorial-tile:hover .link-label { text-decoration: underline; }
-
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .home :is(.home-event-image, .home-portraits, .editorial-tile), .event-card {
+  .home :is(.home-event-image, .home-portraits), .event-card {
     transform: perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1);
     transition: transform 180ms ease-out;
   }
@@ -119,7 +103,6 @@ figure { margin: 0; }
   .site-identity { gap: 16px; }
   .site-name { font-size: 19px; }
   .site-nav { width: 100%; justify-content: space-between; gap: 0 12px; margin: 0; font-size: 15px; }
-  .editorial-tile { padding: 22px; }
 }
 @media (max-width: 360px) {
   :root { --header-clearance: 184px; }

@@ -62,9 +62,6 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
     ["/members", ["People", "The executive board and program representatives."]],
     ["/events", ["Event Calendar", "Student event details coming soon."]],
-    ["/clubs", ["Clubs", "Placeholder for a future clubs directory; this is a proposed page."]],
-    ["/clubs/example", ["Example Club", "Test-only club detail page. This is not an actual student organization."]],
-    ["/past-members", ["Past Members", "Placeholder for previous CTSG rosters."]],
     ["/by-laws", ["Bylaws", "The CTSG by-laws."]],
   ]);
 
@@ -458,12 +455,6 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       disposeCalendar = mountCalendar(content.querySelector(".student-calendar"));
     } else {
       content.replaceChildren(heading, paragraph);
-    }
-    if (route === "/clubs") {
-      const link = document.createElement("a");
-      link.href = "#/clubs/example";
-      link.textContent = "Example Club";
-      content.append(link);
     }
     document.title = `${title} | CTSG`;
     for (const link of document.querySelectorAll(".site-nav a")) {

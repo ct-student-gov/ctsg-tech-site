@@ -14,7 +14,6 @@
 .calendar-navigation button:hover:not(:disabled) { background: light-dark(#f2f0ed, #30302c); border-color: var(--color-rule); }
 .calendar-controls button:disabled { opacity: .35; cursor: default; }
 .calendar-controls svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.calendar-controls .calendar-chevron { width: 16px; height: 16px; }
 .calendar-menu { position: relative; width: max-content; }
 .calendar-display-actions { display: flex; justify-self: end; gap: 8px; }
 .calendar-display-actions .calendar-menu summary { justify-content: center; width: 44px; padding: 9px; }

@@ -7,7 +7,7 @@ export const peopleData = {
   },
   "years": [
     {
-      "startYear": 2027,
+      "startYear": 2028,
       "members": [
         {
           "firstName": "test",

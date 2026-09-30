@@ -782,7 +782,7 @@
           "start": "2026-11-28T17:00:00.000Z",
           "end": "2026-11-28T20:00:00.000Z",
           "allDay": false,
-          "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nTo reserve discount tickets in the Cornell Tech section of seats:\n- Use the Register link on this page\n- Access using your netID email\n- To select tickets, don't use the seating chart. Instead select \"Other Categories\" - \"Cornell Tech - Section 227\"\n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
+          "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
           "audienceTags": [],
@@ -857,17 +857,17 @@
       ],
       "fetchedCount": 9,
       "window": {
-        "start": "2026-07-02T21:33:12.770Z",
-        "end": "2027-11-04T21:33:12.770Z"
+        "start": "2026-07-02T21:35:09.074Z",
+        "end": "2027-11-04T21:35:09.074Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:33:12.770Z",
+      "updatedAt": "2026-09-30T21:35:09.074Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
         "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "comparedThrough": "2027-11-04T21:33:12.770Z",
         "warnings": []
       }
     },

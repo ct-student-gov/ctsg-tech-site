@@ -10,7 +10,7 @@ import { syncBlog } from "../scripts/sync-blog.mjs";
 const id = "12345678-abcd-1234-abcd-123456789abc";
 const rich = value => [{ plain_text: value, text: { content: value } }];
 const paragraph = value => ({ type: "paragraph", paragraph: { rich_text: rich(value) } });
-const schema = { properties: Object.fromEntries(Object.entries({ Name: "title", Publish: "checkbox", Date: "date", Images: "files", "Image Alt Text": "rich_text" }).map(([name, type]) => [name, { type }])) };
+const schema = { properties: Object.fromEntries(Object.entries({ Name: "title", Publish: "checkbox", Date: "date", Images: "files", "Image Alt Text": "rich_text", "Image Credits": "rich_text" }).map(([name, type]) => [name, { type }])) };
 const page = (properties = {}, extra = {}) => ({ id, last_edited_time: "2026-09-30T12:00:00Z", properties: {
   Name: { title: rich("Existing post") }, Publish: { checkbox: true }, Date: { date: { start: "2026-05-02" } },
   Images: { files: [1, 2, 3, 4, 5].map(n => ({ external: { url: `https://photos.example/${n}.png?temporary-secret` } })) },
@@ -135,17 +135,17 @@ test("failed APIs and later image downloads leave the public snapshot and saved 
   assert.deepEqual(await readFile(join(f.root, "data/blog.js")), snapshot);
 });
 
-test("backported photo captions and credits survive a changed attachment host for identical bytes", async t => {
+test("backported captions survive a changed attachment host while credits come from Notion", async t => {
   const f = await fixture(t);
   await syncBlog(f);
   const saved = JSON.parse(await readFile(f.statePath, "utf8"));
   for (const photo of saved.posts[id.replaceAll("-", "")].photos) Object.assign(photo.image, { alt: "Original description", caption: "Original caption", credit: "Photo: CTSG." });
   await writeFile(f.statePath, JSON.stringify(saved));
-  f.state.pages = [page({ Images: { files: [{ external: { url: "https://photos.example/new-host-path.png" } }] }, "Image Alt Text": { rich_text: rich("Notion description") } })];
+  f.state.pages = [page({ Images: { files: [{ external: { url: "https://photos.example/new-host-path.png" } }] }, "Image Alt Text": { rich_text: rich("Notion description") }, "Image Credits": { rich_text: rich("Photo: New credit.") } })];
   const result = await syncBlog(f);
   assert.equal(result.downloadedPhotos, 1);
   assert.equal(result.data.posts[0].images[0].caption, "Original caption");
-  assert.equal(result.data.posts[0].images[0].credit, "Photo: CTSG.");
+  assert.equal(result.data.posts[0].images[0].credit, "Photo: New credit.");
   assert.equal(result.data.posts[0].images[0].alt, "Notion description");
 });
 

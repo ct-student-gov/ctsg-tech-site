@@ -2,7 +2,7 @@
 
 The homepage’s Projects section is now labelled Blog. Its existing card layout, article dialogs, photo galleries, and Show more control are retained. The four existing posts and all eight photos are preserved in `public/data/blog.js`.
 
-Sunset Sendoff 2026, Big Red Gala 2026, Cornelloween 2025, and Club Fair 2025 were backported into Notion with their original dates, article text, all eight photos, and Publish checked. The initial connector export saved verified page versions and local photo identities in `data-sync/blog.json`; the website snapshot also retains the original image descriptions, captions, and credits. Future API syncs preserve those photo labels for unchanged image bytes.
+Sunset Sendoff 2026, Big Red Gala 2026, Cornelloween 2025, and Club Fair 2025 were backported into Notion with their original dates, article text, all eight photos, and Publish checked. Their existing photo credits were copied into Notion’s Image Credits field in Images order. The website snapshots are copies; Notion controls image descriptions and credits on each sync.
 
 Edit posts in [Notion Blog](https://app.notion.com/p/3eb0b1bd6791803780fff4a1b6834210), data source `3eb0b1bd-6791-80dd-87c6-000bc89419fd`:
 
@@ -11,6 +11,7 @@ Edit posts in [Notion Blog](https://app.notion.com/p/3eb0b1bd6791803780fff4a1b68
 - **Date** is required and sorts posts newest first.
 - **Images** accepts multiple photos, in gallery order. The first photo is the card’s header image; all photos appear in the article gallery. There is no importer limit on the number of photos. Images can also be empty for a text post.
 - **Image Alt Text** holds one description per line, in the same order as Images. Each image needs a nonempty description. This Notion field controls the visible gallery description and accessibility alt text on both the header image and gallery; the saved website data is only a copy. Photo credits stay separate. Missing or mismatched descriptions retain the last published post with a warning.
+- **Image Credits** holds one credit per line, in the same order as Images. Credits appear below the gallery descriptions. Leave the field empty to show no credits, or leave an individual line blank for an uncredited image. A mismatched line count retains the last published post with a warning.
 - The page body is the article. Paragraphs, headings, flat lists, quotes, code, dividers, inline formatting, and web/email links are supported. Put photos in Images. Embedded child pages/databases are excluded; unsupported or nested text blocks produce a warning and retain the last published article.
 
 The importer follows the People system: a read-only Notion connection, a repository snapshot, local images, page-version/body caching, hashed attachment identities, and signed change notifications. An unchanged run queries metadata without rereading articles or downloading photos. Incomplete new posts are skipped; incomplete edits retain the last published post. API, pagination, schema, and image-download failures preserve the previous snapshot. Blog shares the existing rate-limit cooldown.

@@ -65,12 +65,12 @@ export async function syncBlog({
         const dimensions = await sharp(bytes).metadata();
         const path = `images/blog/notion/${post.date.slice(0, 4)}/${post.id}-${digest(bytes).slice(0, 16)}.${extension}`;
         downloads.push({ path, bytes });
-        // Preserve backported captions/credits when Notion changes the stable
+        // Preserve backported captions when Notion changes the stable
         // attachment host but the image bytes remain the same.
         const samePhoto = cachedPosts[post.id]?.photos?.find(photo => photo.image?.src?.endsWith(`-${digest(bytes).slice(0, 16)}.${extension}`))?.image;
         image = { ...(samePhoto || {}), src: `./${path}`, width: dimensions.width, height: dimensions.height };
       }
-      image = { ...image, alt: photo.alt };
+      image = { ...image, alt: photo.alt, credit: photo.credit };
       images.push({ ...image, caption: image.caption || "", credit: image.credit || "" });
       photos.push({ identity, image });
     }

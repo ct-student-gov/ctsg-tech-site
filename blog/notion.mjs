@@ -25,11 +25,14 @@ export function publicPost(page) {
     throw new PostValidationError(`${title || page.id}: needs Name and a valid Date`);
   }
   const altText = text(p["Image Alt Text"]?.rich_text).split(/\r?\n/).map(value => value.trim()).filter(Boolean);
+  const creditsText = text(p["Image Credits"]?.rich_text);
+  const credits = creditsText.trim() ? creditsText.split(/\r?\n/).map(value => value.trim()) : [];
   const files = p.Images?.files || [];
   if (altText.length !== files.length) throw new PostValidationError(`${title}: Image Alt Text needs one description per image, in Images order`);
+  if (credits.length && credits.length !== files.length) throw new PostValidationError(`${title}: Image Credits needs one line per image, in Images order`);
   const photos = files.map((file, index) => {
     const url = file.file?.url || file.external?.url;
-    try { if (new URL(url).protocol === "https:") return { url, alt: altText[index] }; } catch {}
+    try { if (new URL(url).protocol === "https:") return { url, alt: altText[index], credit: credits[index] || "" }; } catch {}
     throw new PostValidationError(`${title}: Images must have downloadable HTTPS URLs`);
   });
   return { id: page.id.replaceAll("-", "").toLowerCase(), title, date, photos,
@@ -83,7 +86,7 @@ export async function loadBlog(env, {
     return rows;
   }
   const schema = await request(`data_sources/${dataSource}`);
-  for (const [name, type] of Object.entries({ Name: "title", Publish: "checkbox", Date: "date", Images: "files", "Image Alt Text": "rich_text" })) {
+  for (const [name, type] of Object.entries({ Name: "title", Publish: "checkbox", Date: "date", Images: "files", "Image Alt Text": "rich_text", "Image Credits": "rich_text" })) {
     if (schema.properties?.[name]?.type !== type) throw new Error(`Blog needs ${name} (${type})`);
   }
   const pages = await list(`data_sources/${dataSource}/query`, { filter: { property: "Publish", checkbox: { equals: true } } });

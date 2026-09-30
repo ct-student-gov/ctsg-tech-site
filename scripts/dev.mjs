@@ -4,11 +4,16 @@ import { fileURLToPath } from "node:url";
 import { resolve, sep, extname } from "node:path";
 import { buildSite } from "./build.mjs";
 import { calendarResponse, memoryStorage } from "../calendar/service.mjs";
+import { CalendarArchive } from "../calendar/archive.mjs";
 
 const root = fileURLToPath(new URL("../dist/public/", import.meta.url));
 await buildSite();
 let building = null;
 const calendarStorage = memoryStorage();
+const calendarArchive = new CalendarArchive();
+// Preview the saved repository data. Opt into live source imports only when
+// developing the importer; credentials are never required for normal previews.
+const localCalendarSources = process.env.CALENDAR_LOCAL_SOURCES === "1";
 const types = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -28,8 +33,15 @@ for (const port of [8080, 8081]) {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
       if (pathname === "/api/calendar" || pathname === "/api/calendar.ics") {
-        const result = await calendarResponse(new Request(`http://localhost:${port}${request.url}`, { method: request.method }), process.env, calendarStorage);
-        response.writeHead(result.status, Object.fromEntries(result.headers)).end(await result.text());
+        const result = localCalendarSources
+          ? await calendarResponse(new Request(`http://localhost:${port}${request.url}`, { method: request.method }), process.env, calendarStorage, { archive: calendarArchive })
+          : new Response(await readFile(resolve(root, pathname.endsWith(".ics") ? "data/calendar.ics" : "data/calendar.json")), { headers: { "Content-Type": pathname.endsWith(".ics") ? "text/calendar; charset=utf-8" : "application/json" } });
+        response.writeHead(result.status, {
+          "Content-Type": result.headers.get("Content-Type") || "text/plain; charset=utf-8",
+          "Access-Control-Allow-Origin": "*",
+          "Cache-Control": "no-store",
+          ...(result.headers.has("Allow") ? { Allow: result.headers.get("Allow") } : {}),
+        }).end(await result.text());
         return;
       }
       // Rebuild on document reload so local previews use the same images as production.

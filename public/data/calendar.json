@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-30T16:30:16.860Z",
+  "generatedAt": "2026-09-30T21:26:04.604Z",
   "window": {
-    "start": "2026-07-02T16:30:16.860Z",
-    "end": "2027-11-04T16:30:16.860Z"
+    "start": "2026-07-02T21:26:04.604Z",
+    "end": "2027-11-04T21:26:04.604Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -10,47 +10,277 @@
       "id": "student-affairs",
       "name": "Student Affairs",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "updatedAt": "2026-09-30T16:30:16.860Z",
-      "state": "current"
+      "fetchedCount": 9,
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 7
     },
     {
       "id": "inclusion-belonging",
       "name": "Inclusion & Belonging",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
-      "updatedAt": "2026-09-30T16:30:16.860Z",
-      "state": "current"
+      "fetchedCount": 2,
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 1
     },
     {
       "id": "career-management",
       "name": "Career Management",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
-      "updatedAt": "2026-09-30T16:30:16.860Z",
-      "state": "current"
+      "fetchedCount": 0,
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 12
+    },
+    {
+      "id": "tech-events",
+      "name": "Cornell Tech events",
+      "url": "https://tech.cornell.edu/events/",
+      "fetchedCount": 65,
+      "excludedCount": 63,
+      "failedCount": 0,
+      "warnings": [],
+      "diagnostics": {
+        "fetchedCount": 65,
+        "excludedCount": 63,
+        "importedCount": 2,
+        "pagesFetched": 1,
+        "failedCount": 0,
+        "issues": []
+      },
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 0
     },
     {
       "id": "clubs",
-      "name": "Club and CTSG events",
+      "name": "Club events",
       "url": "",
-      "state": "unconfigured",
-      "updatedAt": null
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 0
+    },
+    {
+      "id": "community",
+      "name": "Community events",
+      "url": "",
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 0
+    },
+    {
+      "id": "ctsg",
+      "name": "CTSG events",
+      "url": "",
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 0
     },
     {
       "id": "academic",
       "name": "Cornell academic dates",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
-      "updatedAt": "2026-09-30T16:30:16.860Z",
-      "state": "current"
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 35,
+        "upcomingCount": 35,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 7
     },
     {
       "id": "tech-academic",
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
-      "updatedAt": "2026-09-30T16:30:16.860Z",
-      "state": "current"
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "excludedCount": 0,
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 2
+    },
+    {
+      "id": "student-affairs-students",
+      "name": "Student Affairs student subscription",
+      "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
+      "fetchedCount": 14,
+      "excludedCount": 1,
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 7
+    },
+    {
+      "id": "career-management-students",
+      "name": "Career Management student subscription",
+      "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
+      "fetchedCount": 23,
+      "excludedCount": 0,
+      "window": {
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
+      },
+      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "coverage": {
+        "version": 1,
+        "eventCount": 11,
+        "upcomingCount": 11,
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
+        "warnings": []
+      },
+      "state": "current",
+      "archivedCount": 12
     }
   ],
   "events": [
+    {
+      "id": "student-affairs:2a51e853b858a4489be8e1803aa39f006242026_5:30:01_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Studio Walk-In Office Hour",
+      "start": "2026-07-17T16:00:00.000Z",
+      "end": "2026-07-17T17:00:00.000Z",
+      "allDay": false,
+      "description": "Studio is the heart of the Cornell Tech experience. At roughly a quarter of your coursework, it's where you'll take on real problems for real companies, build products, and learn what it takes to launch a venture in a fast-moving, entrepreneurial environment. A little prep over the summer will help you start strong in the fall.\n\nTo get you ready, we're hosting a Studio Summer Office Hour on July 17 from 12:00pm-12:50pm in Tata 141. Stop by with your questions about what Studio is and how to make the most of it.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132916",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132916",
+      "audienceTags": [
+        "JCTMBA'27"
+      ],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
     {
       "id": "tech-academic:fall:2026:New-student pre-enrollment:1",
       "source": "tech-academic",
@@ -62,6 +292,106 @@
       "description": "Pre-enrollment for new admits (opens at 9:00am on 7/22 and closes at 4:00pm on 7/23)",
       "location": "",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
+      "id": "student-affairs:816cc9aed162b7486f102563476f8099782026_7:26:40_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Paint & Sip",
+      "start": "2026-07-24T15:15:00.000Z",
+      "end": "2026-07-24T17:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132923",
+      "audienceTags": [
+        "JCTMBA'27"
+      ],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "student-affairs:54bf62e612acd786ab9b7b7d38f0d427782026_7:32:48_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Cornell Tech Student Government (CTSG) Information Session",
+      "start": "2026-07-29T21:00:00.000Z",
+      "end": "2026-07-29T21:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132924",
+      "audienceTags": [
+        "JCTMBA'27"
+      ],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "student-affairs:a28e9d0a4af3cefd16688fcb9d3b49997152026_5:33:20_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "(Nearly) End of Summer Celebration",
+      "start": "2026-08-04T20:30:00.000Z",
+      "end": "2026-08-04T22:00:00.000Z",
+      "allDay": false,
+      "description": "JCT MBA Students are invited to celebrate the (nearly) end of the summer semester! Join us for refreshments and light bites. \n\nCornell Tech Event Policy\n- If you register for an event, please attend and arrive on time. Sign up = Show up\n- If your plans change, cancel your registration as soon as possible—ideally at least 48 hours in advance. This opens spots for your peers and helps us manage resources.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132928",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132928",
+      "audienceTags": [
+        "JCTMBA'27"
+      ],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "student-affairs:b4ad41974b9ca0bdbed3a75cc22bef55782026_7:36:45_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Round Robin Summer Event",
+      "start": "2026-08-05T15:00:00.000Z",
+      "end": "2026-08-05T16:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132925",
+      "audienceTags": [
+        "JCTMBA'27"
+      ],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "academic:2026–2027:Fall 2026: Add/Drop begins for Graduate/Professional/Cornell Tech",
@@ -100,6 +430,31 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "career-management:c13502b51f010b0bb37faa64570c1b8f7282026_1:06:41_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Virtual Beyond Technical Skills: Professional Standards That Accelerate Career Success",
+      "start": "2026-09-03T22:00:00.000Z",
+      "end": "2026-09-03T23:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132936",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
       "id": "academic:2026–2027:Labor Day/Holiday/No classes",
       "source": "academic",
       "category": "Academic dates",
@@ -124,6 +479,31 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "career-management:a74f728ab48675b41f1ebed64909cd1a9142026_2:03:20_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "The Future is Semi LIVE I Industry, Up Close",
+      "start": "2026-09-15T22:30:00.000Z",
+      "end": "2026-09-16T00:15:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133007",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
       "id": "academic:2026–2027:Fall 2026: Last day to drop classes in 7 week 1 session",
       "source": "academic",
       "category": "Academic dates",
@@ -134,6 +514,56 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "career-management:d5f95f90e2e995f68844996886bc8e92982026_3:10:09_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Ellison Scholars programme at the University of Oxford- Info Session - for those interested in PhD",
+      "start": "2026-09-21T20:00:00.000Z",
+      "end": "2026-09-21T21:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132993",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:18cad1d423cc05c13b3874beadd338b79112026_1:12:44_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "UNGA/Climate Week New York Conversations and Networking hosted by GE Vernova",
+      "start": "2026-09-22T19:30:00.000Z",
+      "end": "2026-09-22T22:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133004",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
     },
     {
       "id": "inclusion-belonging:6386e582ea61cd9b57300516fb7672f48262026_10:12:47_AM@campusgroups.com",
@@ -152,6 +582,106 @@
       ]
     },
     {
+      "id": "career-management:744c8c394535b582428c41883ddd18939102026_1:53:22_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Ericsson China 2027 Campus Recruitment | Online Information Session",
+      "start": "2026-09-24T00:00:00.000Z",
+      "end": "2026-09-24T01:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133002",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:b6cf0970047525f4bf9ac5c1814fab019162026_11:54:12_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "FASPE Design & Technology Virtual Information Session",
+      "start": "2026-09-24T15:00:00.000Z",
+      "end": "2026-09-24T16:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133013",
+      "audienceTags": [
+        "Design Tech"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:d3f1f59e20246a196358b3208d471ac4912026_9:37:06_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Summer Ethical Leadership Fellowship  in Design, Technology, Architecture, Computer/Data Science - Virtual Info Session",
+      "start": "2026-09-24T15:00:00.000Z",
+      "end": "2026-09-24T16:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132986",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:0b486b5e463bf6c9542af43d134529889162026_2:30:17_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Moderna-Early Career Information Session [Session 1]",
+      "start": "2026-09-24T16:00:00.000Z",
+      "end": "2026-09-24T17:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133014",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
       "id": "student-affairs:3b41e55d9328451b47bfc66eb14aea09922026_3:13:54_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -165,7 +695,14 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "student-affairs:bcc2ab7bdd6fd40afbdba17c2b8ad1f1982026_9:50:26_PM@campusgroups.com",
@@ -181,7 +718,39 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "career-management:efa42722770a1852e790051d3d0fc1849182026_1:44:58_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Job Search Strategy for International Students",
+      "start": "2026-09-24T20:00:00.000Z",
+      "end": "2026-09-24T21:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133033",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
     },
     {
       "id": "tech-academic:fall:2026:Maker Day:1",
@@ -206,6 +775,181 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "career-management:94f5607a4a9ae7470550441681b970428282026_11:10:55_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Jane Street: Strategy & Product [Virtual Series] - INTERNSHIPS",
+      "start": "2026-09-28T16:30:00.000Z",
+      "end": "2026-09-28T17:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132978",
+      "audienceTags": [
+        "Internship - First Year Jacobs Students Eligible"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:18b02fe157f01d05755e9e53e871072f9142026_1:22:29_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "OneStream Developer Day New York City",
+      "start": "2026-09-29T12:00:00.000Z",
+      "end": "2026-09-29T21:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133006",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "career-management:7702c4c7535ec9a2da497a7a26a6cd628202026_1:51:42_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Port Authority of NY & NJ Engineering & Architecture Associates Program Info Session",
+      "start": "2026-09-29T16:00:00.000Z",
+      "end": "2026-09-29T17:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132974",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true,
+      "sourceIds": [
+        "career-management"
+      ],
+      "sourceCategories": {
+        "career-management": "School events"
+      }
+    },
+    {
+      "id": "tech-events:field-conditions-incubating-media-arts-in-nyc",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "Field Conditions: Incubating Media Arts in NYC",
+      "start": "2026-09-30T23:00:00.000Z",
+      "end": "2026-10-01T00:30:00.000Z",
+      "allDay": false,
+      "description": "New York’s art / design / technology field is held together by a coalition between practices and cultural institutions that shape what gets made, who gets supported, and what survives. This panel brings together NEW INC at the New Museum, Rhizome, and Onassis ONX, New York City institutions that have an ongoing commitment to Art, Design and Technology. The conversation will look at how each organization identifies and supports practitioners, where funding and institutional models are heading, and what is actually emerging in practice right now. For anyone working across computational design, interaction, immersive media, and creative technology, it offers a direct view of the infrastructure behind the work and of what it takes to build a practice in this city.",
+      "location": "Gensler Family AAP NYC Center, Tata Innovation Center, Cornell Tech 11 East Loop Road, 4th Floor New York, NY 10044",
+      "url": "https://tech.cornell.edu/events/field-conditions-incubating-media-arts-in-nyc/",
+      "audienceTags": [
+        "Alumni",
+        "Faculty",
+        "International Students",
+        "Master's Students",
+        "PhDs",
+        "Postdocs",
+        "Prospective Students",
+        "Public",
+        "Roosevelt Island Community"
+      ]
+    },
+    {
+      "id": "career-management:42c9846facdfe26cf943d78bcaa8d3b79182026_2:02:27_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+      "start": "2026-10-07T17:00:00.000Z",
+      "end": "2026-10-07T18:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133035",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "career-management:7a23fd6c6185a525fc56aecdc26e5a6b9292026_2:15:52_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "QuantumBlack, AI by McKinsey - Virtual Info Session",
+      "start": "2026-10-07T17:30:00.000Z",
+      "end": "2026-10-07T18:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133048",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "career-management:cebf0c6a48a369913fddee1ad7d29a698192026_3:19:52_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Future Forward: A Roche-Genentech Early Career Info Session",
+      "start": "2026-10-08T15:30:00.000Z",
+      "end": "2026-10-08T22:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132971",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "tech-events:revolutionizing-healthcare-with-ai-powered-devices",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "Revolutionizing Healthcare With AI-Powered Devices",
+      "start": "2026-10-08T16:00:00.000Z",
+      "end": "2026-10-08T18:00:00.000Z",
+      "allDay": false,
+      "description": "You are invited to join the Weill Cornell Medicine community for a showcase of digital health innovations and technologies. This event is part of #AIWeekNY, a community-led festival organized by Pulse NYC that celebrates innovation across the AI ecosystem. The following innovators and their AI-enabled technologies will be featured: EmulatRx An agentic AI platform that uses real-world patient data to support clinical trial design. Presented by Weishen Pan, PhD, Research Associate, Department of Population Health Sciences, Weill Cornell Medicine WAV AI An AI-based tool that analyzes sounds to detect fistula stenosis. Presented by Bobak Mosadegh, PhD, Associate Professor of Biomedical Engineering in Radiology and Director, Dalio Institute of Cardiovascular Imaging, Weill Cornell Medicine Postpartum Depression Risk Prediction An Epic-integrated clinical decision support tool that analyzes electronic health record data to identify pregnant patients at elevated risk for postpartum depression. Presented by Yiye Zhang, PhD, MS, Associate Professor of Population Health Sciences, Weill Cornell Medicine Corneal Confocal Microscopy for Neurodegenerative Disease Detection A noninvasive approach that uses corneal confocal microscopy to detect changes in the cornea’s small nerve fibers. Quantitative imaging and predictive analysis may offer an accessible biomarker for detecting and monitoring neurodegeneration. Presented by Rayaz A. Malik, MBChB, PhD, FRCP, Professor of Medicine, Weill Cornell Medicine–Qatar We look forward to seeing you there!",
+      "location": "1300 York Ave, New York, NY",
+      "url": "https://tech.cornell.edu/events/revolutionizing-healthcare-with-ai-powered-devices/",
+      "audienceTags": [
+        "Alumni",
+        "Faculty",
+        "International Students",
+        "Master's Students",
+        "PhDs",
+        "Postdocs"
+      ]
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 1 session",
@@ -272,6 +1016,25 @@
       ]
     },
     {
+      "id": "career-management:27c354348b43470b1800325f8e5539669152026_10:11:50_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Cornell University STEM Virtual Career Fair - registration opens on Sept 15",
+      "start": "2026-10-15T17:00:00.000Z",
+      "end": "2026-10-15T21:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133010",
+      "audienceTags": [
+        "Technical Programs"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
       "id": "tech-academic:fall:2026:Maker Day:2",
       "source": "tech-academic",
       "category": "Academic dates",
@@ -282,6 +1045,25 @@
       "description": "Maker Day",
       "location": "",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
+      "id": "career-management:65726f6cf185a7439301f3a584d410a79292026_10:16:31_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Climate Advocacy Symposium @ Cornell University -  Fri, Oct 16 - Sat, 17",
+      "start": "2026-10-16T20:30:00.000Z",
+      "end": "2026-10-17T21:30:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133046",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
@@ -321,7 +1103,14 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
@@ -337,7 +1126,52 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "career-management:2682831ddbafc61f3035c208e524521b9152026_11:41:12_AM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "XRP LEDGER HACKATHON",
+      "start": "2026-10-24T12:30:00.000Z",
+      "end": "2026-10-25T01:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133011",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "career-management:e0529352334ee93fcb19b5759c765dea9152026_1:12:28_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Tesla x Interstride | Supercharging Your Resume",
+      "start": "2026-10-27T15:00:00.000Z",
+      "end": "2026-10-27T16:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133012",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
     },
     {
       "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
@@ -353,7 +1187,14 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
@@ -392,6 +1233,44 @@
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
     },
     {
+      "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+      "start": "2026-11-16T18:00:00.000Z",
+      "end": "2026-11-16T19:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133036",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Job Search Strategy for International Students",
+      "start": "2026-11-17T21:00:00.000Z",
+      "end": "2026-11-17T22:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133037",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
       "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -405,7 +1284,33 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Top 10 Mistakes Made by International Students in Their Job and Internship Search",
+      "start": "2026-11-19T19:00:00.000Z",
+      "end": "2026-11-19T20:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133038",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
     },
     {
       "id": "academic:2026–2027:Thanksgiving Break/No classes",
@@ -433,7 +1338,33 @@
       "audienceTags": [],
       "departmentAcronyms": [
         "CTSAA"
-      ]
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
+      "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
+      "source": "career-management",
+      "category": "School events",
+      "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+      "start": "2026-12-02T18:00:00.000Z",
+      "end": "2026-12-02T19:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133039",
+      "audienceTags": [
+        "All Master's Students"
+      ],
+      "departmentAcronyms": [
+        "CTCAREERS"
+      ],
+      "detailsRedacted": true
     },
     {
       "id": "tech-academic:fall:2026:Maker Day:4",
@@ -470,6 +1401,23 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "student-affairs:612104fd39a702e83e5cecdb865b10b99102026_12:29:22_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stress Less for Success: Hot Chocolate!",
+      "start": "2026-12-07T18:00:00.000Z",
+      "end": "2026-12-07T20:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133000",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": true
     },
     {
       "id": "academic:2026–2027:Fall 2026: Study days",
@@ -759,5 +1707,6 @@
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     }
-  ]
+  ],
+  "storage": "repository"
 }

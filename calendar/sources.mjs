@@ -21,6 +21,11 @@ const DEPARTMENT_ACRONYMS = { "student-affairs": "CTSAA", "inclusion-belonging":
 export const ACADEMIC_URL = "https://registrar.cornell.edu/calendars-exams/academic-calendar";
 export const TECH_ACADEMIC_URL = "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/";
 export const NOTION_SOURCE = "3e90b1bd-6791-8091-bca0-000bcfad61a1";
+export const NOTION_SOURCES = [
+  { id: "clubs", name: "Club events", dataSource: NOTION_SOURCE, setting: "NOTION_DATA_SOURCE_ID" },
+  { id: "community", name: "Community events", dataSource: "0f87b6db-eb03-4aad-a000-c01ac1429e2d", setting: "NOTION_COMMUNITY_DATA_SOURCE_ID" },
+  { id: "ctsg", name: "CTSG events", dataSource: "d1c3e93b-0500-48ac-b0e1-8ae59a15ef6d", setting: "NOTION_CTSG_DATA_SOURCE_ID" },
+];
 export const ZONE = "America/New_York";
 const DAY = 86400000;
 const wallTimeFormats = new Map();
@@ -87,23 +92,27 @@ export function parseICS(text, window = windowFor(), source = "student-affairs")
   return events;
 }
 
-// These general student-service feeds are an allowlist, not a campus-wide
-// event search. Exclude explicit audience restrictions without treating a
-// speaker's degree or a mention of a program as an attendance restriction.
+// Official department feeds can contain events for any subset of current
+// students. Preserve program/audience tags instead of requiring every event
+// to be open to all students; exclude explicit private or prospective-only
+// audiences without treating a program name as an attendance restriction.
 export function departmentEventEligible(event) {
   const title = event.title || "";
   if (/\b(?:cancelled|canceled|postponed)\b/i.test(title)) return false;
-  if (/\b(?:members|staff|faculty|invite|invitation)[\s-]+only\b/i.test(title)) return false;
   const tags = event.audienceTags || [];
-  if (!tags.some(tag => /^(?:all (?:master[’']?s )?students|all programs)$/i.test(tag.trim()))
-    && tags.some(tag => /technical programs|JCT\s*MBA|\bMBA\b|\bM\.?Eng\b|\bLL\.?M\b|\bPh\.?D\b|doctoral|undergraduate|design tech|Jacobs students|new grad|internship/i.test(tag))) return false;
   const text = `${title}\n${event.description || ""}`.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-  const program = "(?:JCT\\s+MBA|MBA|M\\.?Eng\\.?|LL\\.?M\\.?|Ph\\.?D\\.?|doctoral|undergraduate)";
-  if (new RegExp(`^\\s*${program}(?:\\s|:|[-–—])`, "i").test(title)) return false;
-  if (new RegExp(`\\b(?:for|restricted to|limited to|exclusively for)\\s+(?:the\\s+)?${program}\\s+(?:students|candidates)\\b`, "i").test(text)) return false;
-  if (new RegExp(`\\b${program}\\s+(?:students|candidates)\\s+(?:only|are invited)\\b`, "i").test(text)) return false;
-  return !/\b(?:members|staff|faculty|invite|invitation)[\s-]+only(?=\s*(?:[.,;!?]|$)|\s+(?:event|meeting|session|workshop|audience|attendance|registration|gathering|reception|dinner|lunch|retreat)\b)/i.test(text)
-    && !/\b(?:admissions|prospective student|research seminar|dissertation defense)\b/i.test(title);
+  const privateAudience = /\b(?:members|staff|faculty|invite|invitation)[\s-]+only(?=\s*(?:[.,;:!?)]|$)|\s+(?:event|meeting|session|workshop|audience|attendance|registration|gathering|reception|dinner|lunch|retreat)\b)/i;
+  if (/\b(?:members|staff|faculty|invite|invitation)[\s-]+only\b/i.test(title)
+    || privateAudience.test(text) || tags.some(tag => privateAudience.test(tag.trim()))) return false;
+  const prospectiveAudience = "(?:prospective(?:[\\s-]+(?:graduate|undergraduate))?[\\s-]+students?|applicants)";
+  if (new RegExp(`\\b${prospectiveAudience}[\\s-]+only\\b|\\b(?:restricted to|limited to|exclusively for|only for)\\s+(?:the\\s+)?${prospectiveAudience}\\b`, "i").test(text)) return false;
+  const currentStudentOrPublic = tags.some(tag => !/\b(?:prospective|applicants?)\b/i.test(tag)
+    && /\b(?:students?|public|all programs|technical programs|JCT\s*MBA|MBA|M\.?Eng|LL\.?M|Ph\.?D|Jacobs|Design Tech)\b/i.test(tag));
+  if (!currentStudentOrPublic && tags.some(tag => new RegExp(`^${prospectiveAudience}(?:[\\s-]+only)?$`, "i").test(tag.trim()))) return false;
+  // Admissions ambassadors can be current students. Only exclude explicit
+  // prospective invitations or admissions information/open-house titles.
+  return !new RegExp(`\\b(?:session|event|workshop|open house)\\s+(?:is\\s+)?for\\s+${prospectiveAudience}\\b`, "i").test(text)
+    && !/\b(?:admissions|prospective[\s-]+students?)\s+(?:(?:information|info)\s+session|open house)\b/i.test(title);
 }
 
 export async function loadStudentSource(source, env, fetcher = fetch, now = new Date()) {
@@ -124,11 +133,10 @@ export async function loadStudentSource(source, env, fetcher = fetch, now = new 
     }
     if (!response.ok) throw new Error(`Source returned HTTP ${response.status}`);
     stage = "calendar parsing";
-    const events = parseICS(await response.text(), windowFor(now), source.department)
-      .filter(event => event.departmentAcronyms.length === 1 && event.departmentAcronyms[0] === DEPARTMENT_ACRONYMS[source.department])
+    const parsed = parseICS(await response.text(), windowFor(now), source.department);
+    const events = parsed
+      .filter(event => event.departmentAcronyms.includes(DEPARTMENT_ACRONYMS[source.department]))
       .filter(departmentEventEligible)
-      // Career subscriptions require a positive broad-audience designation.
-      .filter(event => source.department !== "career-management" || event.audienceTags.some(tag => /^(?:all (?:master[’']?s )?students|all programs)$/i.test(tag.trim())))
       .flatMap(event => {
         let registration;
         try { registration = new URL(event.url); } catch { return []; }
@@ -136,9 +144,9 @@ export async function loadStudentSource(source, env, fetcher = fetch, now = new 
         if (registration.origin !== "https://cornelltech.campusgroups.com" || !/^\d+$/.test(id || "")) return [];
         // Publish listing details only, not private descriptions, joining links,
         // contacts, or locations copied from a student's subscription.
-        return [{ ...event, description: "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.", location: "See event page for location", url: `https://cornelltech.campusgroups.com/rsvp?id=${id}` }];
+        return [{ ...event, description: "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.", location: "See event page for location", url: `https://cornelltech.campusgroups.com/rsvp?id=${id}`, detailsRedacted: true }];
       });
-    return { events };
+    return { events, fetchedCount: parsed.length, excludedCount: parsed.length - events.length };
   } catch (error) {
     const detail = /^Source returned HTTP \d{3}$/.test(error.message) ? error.message : stage;
     throw new Error(`Student subscription could not be refreshed (${detail})`);
@@ -302,10 +310,10 @@ function academicEvents(heading, rows) {
 }
 
 const richText = property => (property?.title || property?.rich_text || []).map(t => t.plain_text ?? t.text?.content ?? "").join("");
-export function notionEvent(page) {
+export function notionEvent(page, source = NOTION_SOURCES[0]) {
   const p = page.properties || {};
   const approval = p["Approval status"];
-  if ((approval?.status?.name ?? approval?.select?.name) !== "Approved" || page.archived || page.in_trash || page.is_archived) return null;
+  if ((approval?.status?.name ?? approval?.select?.name) !== "Published" || page.archived || page.in_trash || page.is_archived) return null;
   if ((p["Event status"]?.select?.name ?? p["Event status"]?.status?.name) === "Cancelled") return null;
   const title = richText(p["Event Title"]).trim();
   const date = p.Date?.date;
@@ -314,10 +322,8 @@ export function notionEvent(page) {
   const start = allDay ? date.start : wallTime(date.start, date.time_zone || ZONE);
   const end = allDay ? addDay(date.end || date.start) : date.end ? wallTime(date.end, date.time_zone || ZONE) : start;
   if (end < start) return null;
-  const organizer = richText(p["Club Name"]).trim();
-  const eventType = p["Event type"]?.select?.name;
-  const isCTSG = eventType === "CTSG" || (!eventType && /^(CTSG|Cornell Tech Student Government)$/i.test(organizer));
-  return { id: `notion:${page.id}`, source: "clubs", category: isCTSG ? "CTSG events" : "Club events", title, start, end, allDay, description: richText(p.Description), location: richText(p.Location), organizer, url: safeUrl(p["RSVP/details URL"]?.url) };
+  const organizer = richText(p["Club Name"] || p["Organization Name"]).trim() || (source.id === "ctsg" ? "CTSG" : "");
+  return { id: `notion:${page.id}`, source: source.id, category: source.name, title, start, end, allDay, description: richText(p.Description), location: richText(p.Location), organizer, url: safeUrl(p["Registration Form Link"]?.url ?? p["RSVP/details URL"]?.url) };
 }
 
 async function get(url, options = {}, fetcher = fetch) {
@@ -326,9 +332,9 @@ async function get(url, options = {}, fetcher = fetch) {
   return response;
 }
 
-export async function loadNotion(env, fetcher = fetch) {
+export async function loadNotion(env, fetcher = fetch, source = NOTION_SOURCES[0]) {
   if (!env.NOTION_TOKEN) throw new Error("Notion connection is not configured");
-  const base = `https://api.notion.com/v1/data_sources/${env.NOTION_DATA_SOURCE_ID || NOTION_SOURCE}`;
+  const base = `https://api.notion.com/v1/data_sources/${env[source.setting] || source.dataSource}`;
   const headers = { Authorization: `Bearer ${env.NOTION_TOKEN}`, "Notion-Version": "2025-09-03", "Content-Type": "application/json" };
   const schema = await (await get(base, { headers }, fetcher)).json();
   const type = schema.properties?.["Approval status"]?.type;
@@ -336,10 +342,10 @@ export async function loadNotion(env, fetcher = fetch) {
   const events = [];
   let cursor;
   do {
-    const body = { page_size: 100, filter: { property: "Approval status", [type]: { equals: "Approved" } }, ...(cursor ? { start_cursor: cursor } : {}) };
+    const body = { page_size: 100, filter: { property: "Approval status", [type]: { equals: "Published" } }, ...(cursor ? { start_cursor: cursor } : {}) };
     const result = await (await get(`${base}/query`, { headers, method: "POST", body: JSON.stringify(body) }, fetcher)).json();
     if (!Array.isArray(result.results) || result.request_status?.type === "incomplete") throw new Error("Incomplete Notion response");
-    events.push(...result.results.map(notionEvent).filter(Boolean));
+    events.push(...result.results.map(page => notionEvent(page, source)).filter(Boolean));
     cursor = result.has_more ? result.next_cursor : null;
     if (result.has_more && !cursor) throw new Error("Missing Notion pagination cursor");
   } while (cursor);
@@ -348,9 +354,13 @@ export async function loadNotion(env, fetcher = fetch) {
 
 export async function loadSource(id, env = {}, fetcher = fetch, now = new Date()) {
   const department = DEPARTMENT_SOURCES.find(source => source.id === id);
-  if (department) return { events: parseICS(await (await get(department.url, {}, fetcher)).text(), windowFor(now), id) };
+  if (department) {
+    const events = parseICS(await (await get(department.url, {}, fetcher)).text(), windowFor(now), id);
+    return { events, fetchedCount: events.length };
+  }
   if (id === "academic") return parseAcademicResponse(await get(ACADEMIC_URL, {}, fetcher));
   if (id === "tech-academic") return parseTechAcademic(await (await get(TECH_ACADEMIC_URL, { redirect: "follow", headers: { "User-Agent": "CTSG-Calendar/1.0", Accept: "text/html,application/json" } }, fetcher)).text());
-  if (id === "clubs") return loadNotion(env, fetcher);
+  const notion = NOTION_SOURCES.find(source => source.id === id);
+  if (notion) return loadNotion(env, fetcher, notion);
   throw new Error("Unknown calendar source");
 }

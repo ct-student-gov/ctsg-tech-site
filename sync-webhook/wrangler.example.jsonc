@@ -1,0 +1,9 @@
+{
+  "name": "ctsg-notion-sync",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-28",
+  "workers_dev": true,
+  "observability": { "enabled": false }
+  // Secrets: GITHUB_DISPATCH_TOKEN, NOTION_CALENDAR_WEBHOOK_SECRET,
+  // NOTION_PEOPLE_WEBHOOK_SECRET. No storage bindings or scheduled triggers.
+}

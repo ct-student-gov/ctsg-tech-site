@@ -5,19 +5,49 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      sync:
+        description: Refresh the saved Notion and calendar data
+        type: boolean
+        default: true
+  schedule:
+    - cron: '43 0 * * *'
+  repository_dispatch:
+    types: [notion-updated]
 
 permissions:
   contents: read
 
+# Serialize site builds and sync commits. Reconciliation reads current Notion
+# state, so coalescing queued notifications cannot lose ordinary content edits.
 concurrency:
   group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      SYNC: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'repository_dispatch' || (github.event_name == 'workflow_dispatch' && inputs.sync)) }}
+    outputs:
+      publish: ${{ steps.changes.outputs.publish }}
     steps:
       - uses: actions/checkout@v6
+      - name: Use latest repository data for queued main builds
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
+      - name: Require a complete first import before publication
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          if [ ! -f data-sync/calendar.json ] || [ ! -f data-sync/people.json ]; then
+            echo 'SYNC=true' >> "$GITHUB_ENV"
+            echo 'SYNC_FULL=true' >> "$GITHUB_ENV"
+          fi
       - uses: actions/setup-node@v6
         with:
           node-version: 22
@@ -25,15 +55,63 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
+      - name: Refresh saved website data
+        id: sync
+        if: env.SYNC == 'true'
+        run: npm run data:sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PEOPLE_TOKEN: ${{ secrets.NOTION_PEOPLE_TOKEN }}
+          CAMPUSGROUPS_STUDENT_AFFAIRS_URL: ${{ secrets.CAMPUSGROUPS_STUDENT_AFFAIRS_URL }}
+          CAMPUSGROUPS_CAREER_MANAGEMENT_URL: ${{ secrets.CAMPUSGROUPS_CAREER_MANAGEMENT_URL }}
+          CAMPUSGROUPS_INCLUSION_BELONGING_URL: ${{ secrets.CAMPUSGROUPS_INCLUSION_BELONGING_URL }}
+      - name: Save shared quota cooldown
+        if: failure() && steps.sync.outputs.rate_limited == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data-sync/backoff.json
+          git diff --cached --quiet || git commit -m "Defer Notion sync until the next UTC day"
+          git push origin HEAD:main
+      - name: Check for changes
+        id: changes
+        env:
+          SKIPPED: ${{ steps.sync.outputs.skipped }}
+        run: |
+          if [ "$SYNC" != 'true' ]; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+          elif [ "$SKIPPED" = 'true' ]; then
+            echo 'publish=false' >> "$GITHUB_OUTPUT"
+          else
+            git add -- public/data/people.js public/data/calendar.json public/data/calendar.ics public/images/members/ data-sync/
+            if git diff --cached --quiet -- public/; then
+              echo 'publish=false' >> "$GITHUB_OUTPUT"
+            else
+              echo 'publish=true' >> "$GITHUB_OUTPUT"
+            fi
+          fi
       - run: npm run build
+        if: steps.changes.outputs.publish == 'true'
       - run: npm run images:check
+        if: steps.changes.outputs.publish == 'true'
+      - name: Commit validated data changes
+        if: env.SYNC == 'true' && steps.sync.outputs.skipped != 'true'
+        run: |
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Sync published website data"
+            git push origin HEAD:main
+          fi
+      # Bot pushes do not trigger another workflow: deploy this exact validated
+      # artifact in the same run instead of relying on a second push trigger.
       - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: steps.changes.outputs.publish == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
 
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: needs.build.outputs.publish == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:

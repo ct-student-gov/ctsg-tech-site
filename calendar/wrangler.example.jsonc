@@ -1,18 +1,21 @@
 {
   "$schema": "../node_modules/wrangler/config-schema.json",
   "name": "ctsg-calendar",
-  "main": "worker.mjs",
+  "main": "static-worker.mjs",
   "compatibility_date": "2026-09-28",
   "durable_objects": {
     "bindings": [{ "name": "CALENDAR_PROCESSOR", "class_name": "CalendarProcessor" }]
   },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["CalendarProcessor"] }],
-  // Repeat every six hours in UTC, including when nobody visits the website.
-  "triggers": { "crons": ["17 */6 * * *"] },
+  // Source refreshes now run in GitHub Actions. Preserve existing bindings during migration.
+  "triggers": { "crons": [] },
   "kv_namespaces": [
     { "binding": "CALENDAR_CACHE", "id": "REPLACE_WITH_KV_NAMESPACE_ID" }
   ],
   "vars": {
-    "NOTION_DATA_SOURCE_ID": "3e90b1bd-6791-8091-bca0-000bcfad61a1"
+    "CALENDAR_SNAPSHOT_BASE_URL": "https://ct-student-gov.github.io/ctsg-tech-site/public/data/",
+    "NOTION_DATA_SOURCE_ID": "3e90b1bd-6791-8091-bca0-000bcfad61a1",
+    "NOTION_COMMUNITY_DATA_SOURCE_ID": "0f87b6db-eb03-4aad-a000-c01ac1429e2d",
+    "NOTION_CTSG_DATA_SOURCE_ID": "d1c3e93b-0500-48ac-b0e1-8ae59a15ef6d"
   }
 }

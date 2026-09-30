@@ -2,14 +2,16 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import ICAL from "ical.js";
-import { parseICS, parseAcademic, parseTechAcademic, ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, STUDENT_SOURCES, loadStudentSource, departmentEventEligible, notionEvent, loadNotion } from "../calendar/sources.mjs";
+import { parseICS, parseAcademic, parseTechAcademic, ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, NOTION_SOURCES, STUDENT_SOURCES, loadStudentSource, departmentEventEligible, notionEvent, loadNotion } from "../calendar/sources.mjs";
 import worker, { CalendarProcessor } from "../calendar/worker.mjs";
-import { calendarData, memoryStorage, toICS } from "../calendar/service.mjs";
+import { SOURCES, calendarData, memoryStorage, toICS } from "../calendar/service.mjs";
 import { dateKey, lastDay, eventsOnDay, eventFilter, calendarRange } from "../public/calendar.js";
 
 const window = { start: "2026-01-01", end: "2028-01-01" };
+const techEventsAPI = "https://tech.cornell.edu/wp-json/crn/filter/events?per_page=100&paged=1&offset=0";
+const emptyTechEvents = () => Response.json({ html: "", count: 0, total: 0, totalPages: 0 });
 const ics = (...events) => ["BEGIN:VCALENDAR", "VERSION:2.0", ...events.flatMap(lines => ["BEGIN:VEVENT", ...lines, "END:VEVENT"]), "END:VCALENDAR", ""].join("\r\n");
-const page = (approval = "Approved", date = { start: "2026-10-10", end: "2026-10-13" }) => ({ id: "club-event", properties: {
+const page = (approval = "Published", date = { start: "2026-10-10", end: "2026-10-13" }) => ({ id: "club-event", properties: {
   "Approval status": { status: { name: approval } },
   "Event Title": { title: [{ plain_text: "Club picnic" }] },
   Date: { date },
@@ -42,7 +44,7 @@ test("ICS applies recurrence moves, exclusions, and cancellations", () => {
 });
 
 test("Notion publication requires explicit approval and excludes private fields", () => {
-  for (const status of ["Pending", "Rejected", "", "approved"]) assert.equal(notionEvent(page(status)), null);
+  for (const status of ["Pending", "Rejected", "", "published", "Approved"]) assert.equal(notionEvent(page(status)), null);
   assert.equal(notionEvent({ ...page(), archived: true }), null);
   const cancelled = page(); cancelled.properties["Event status"] = { select: { name: "Cancelled" } };
   assert.equal(notionEvent(cancelled), null);
@@ -50,19 +52,36 @@ test("Notion publication requires explicit approval and excludes private fields"
   assert.equal(approved.end, "2026-10-14");
   assert.equal(approved.url, "");
   assert.ok(!JSON.stringify(approved).includes("do not publish"));
-  assert.equal(notionEvent(page("Approved", { start: "2026-11-18T12:00:00", time_zone: "America/New_York" })).start, "2026-11-18T17:00:00.000Z");
+  assert.equal(notionEvent(page("Published", { start: "2026-11-18T12:00:00", time_zone: "America/New_York" })).start, "2026-11-18T17:00:00.000Z");
 });
 
-test("official department imports exclude explicit narrow audiences", () => {
+test("official department imports keep student audiences and exclude explicit private or prospective events", () => {
+  for (const event of [
+    { title: "Planning lunch", description: "Invitation-only meeting." },
+    { title: "Planning lunch", audienceTags: ["Faculty only"] },
+    { title: "Staff-only: term planning" },
+    { title: "Admissions information session" },
+    { title: "Prospective student open house" },
+    { title: "Meet the program team", description: "This session is for prospective students." },
+    { title: "Campus visit", audienceTags: ["Prospective Students"] },
+    { title: "Campus visit", description: "Limited to prospective graduate students." },
+    { title: "Campus visit", description: "Prospective students only.", audienceTags: ["Prospective Students", "Public"] },
+    { title: "Cancelled: campus picnic" },
+    { title: "Workshop (POSTPONED)" },
+  ]) assert.equal(departmentEventEligible(event), false, event.title);
   for (const event of [
     { title: "JCT MBA NYC Excursion: Mets Game" },
     { title: "(Nearly) End of Summer Celebration", description: "JCT MBA Students are invited to celebrate." },
     { title: "Meet the program team", description: "This session is for PhD students." },
-    { title: "Planning lunch", description: "Invitation-only meeting." },
-    { title: "Admissions Student Ambassador Program" },
     { title: "Research seminar: Specialized methods" },
-  ]) assert.equal(departmentEventEligible(event), false, event.title);
-  for (const event of [
+    { title: "Dissertation defense: Computing systems" },
+    { title: "Admissions Student Ambassador Program", description: "Current students can become ambassadors." },
+    { title: "Student panel", description: "Current students will answer questions from prospective students." },
+    { title: "Campus research showcase", audienceTags: ["Prospective Students", "Master's Students", "Public"] },
+    { title: "Campus research showcase", audienceTags: ["Prospective Students", "Public"] },
+    { title: "Campus research showcase", audienceTags: ["Prospective Students", "Master's Students"] },
+    { title: "Campus research showcase", audienceTags: ["Faculty", "Staff", "Master's Students"] },
+    { title: "Internship recruiting", audienceTags: ["Technical Programs", "Internship", "New Grad"] },
     { title: "Bagels and Belonging", description: "Meet the Inclusion and Belonging team at the Masters Studio." },
     { title: "Send a Post Card!", description: "Students can write to friends and family." },
     { title: "Visas After Graduation", description: "Learn about options for international students." },
@@ -83,23 +102,28 @@ const studentEvent = (uid, title, tags = ["All Master's Students"], acronym = "C
   "LOCATION:Private room", "URL:https://cornelltech.campusgroups.com/rsvp?id=123&private=hidden",
 ];
 
-test("student exports enforce department and audience eligibility and minimize published fields", async () => {
+test("student exports keep program audiences and department cohosts while minimizing published fields", async () => {
   const input = ics(
     studentEvent("all", "Campus career workshop"),
     studentEvent("technical", "Technical career fair", ["Technical Programs"]),
     studentEvent("mba", "Summer social", ["JCTMBA'27"]),
     studentEvent("unknown", "Unclassified career session", []),
+    studentEvent("cohost", "Joint recruiting session", ["Internship"], "CHESS,CTCAREERS"),
     studentEvent("club", "Club workshop", ["All Master's Students"], "CHESS"),
     studentEvent("invite", "Bloomberg INVITATION ONLY"),
     studentEvent("cancelled", "(POSTPONED) Career workshop"),
   );
-  const { events } = await loadStudentSource(studentSource, studentEnv, async () => new Response(input), new Date("2026-09-30"));
-  assert.deepEqual(events.map(e => e.id), ["career-management:all"]);
+  const { events, fetchedCount, excludedCount } = await loadStudentSource(studentSource, studentEnv, async () => new Response(input), new Date("2026-09-30"));
+  assert.deepEqual(events.map(e => e.id), ["all", "technical", "mba", "unknown", "cohost"].map(id => `career-management:${id}`));
+  assert.equal(fetchedCount, 8);
+  assert.equal(excludedCount, 3);
   assert.equal(events[0].url, "https://cornelltech.campusgroups.com/rsvp?id=123");
+  assert.ok(events.every(event => event.detailsRedacted));
+  assert.deepEqual(events.find(event => event.id === "career-management:technical").audienceTags, ["Technical Programs"]);
   assert.doesNotMatch(JSON.stringify(events), /private-join|Private room|private=|secret-token/);
   const parsed = parseICS(input, window);
-  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Summer social")), false);
-  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Technical career fair")), false);
+  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Summer social")), true);
+  assert.equal(departmentEventEligible(parsed.find(e => e.title === "Technical career fair")), true);
 });
 
 test("student exports reject wrong hosts, redirects, and redact fetch or parser errors", async () => {
@@ -134,13 +158,16 @@ test("student and public exports deduplicate identities, while secrets stay out 
   const storage = memoryStorage();
   const now = new Date("2026-09-30T12:00:00Z");
   const input = ics(studentEvent("same", "Career workshop"));
+  const publicInput = input.replace("Private joining link https://meeting.example/private-join", "Public workshop information").replace("Private room", "Public venue").replace("&private=hidden", "");
   const fetcher = async url => {
     if (url === ACADEMIC_URL) return new Response(academicHTML);
     if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
-    return new Response([privateURL, CAREERS_URL].includes(url) ? input : ics());
+    if (url === techEventsAPI) return emptyTechEvents();
+    return new Response(url === privateURL ? input : url === CAREERS_URL ? publicInput : ics());
   };
   const data = await calendarData(studentEnv, storage, { now, fetcher });
   assert.equal(data.events.filter(e => e.id === "career-management:same").length, 1);
+  assert.equal(data.events.find(e => e.id === "career-management:same").description, "Public workshop information");
   assert.equal(data.sources.find(s => s.id === studentSource.id).state, "current");
   for (const output of [JSON.stringify(data), toICS(data), JSON.stringify(await storage.get(`calendar-v1:${studentSource.id}`))]) assert.doesNotMatch(output, /secret-token|private-join|Private room|private=hidden/);
   const disabled = await calendarData({}, storage, { now, fetcher });
@@ -165,40 +192,70 @@ test("student subscription cache expires on loss of access and clears after a va
   assert.deepEqual((await storage.get(key)).events, []);
 });
 
+test("legacy sanitized student caches cannot overwrite verified public descriptions", async () => {
+  const storage = memoryStorage();
+  const now = new Date("2026-09-30T12:00:00Z");
+  for (const source of SOURCES) await storage.put(`calendar-v1:${source.id}`, JSON.stringify({ updatedAt: now.toISOString(), events: [] }));
+  const event = { id: "career-management:legacy", source: "career-management", category: "School events", title: "Workshop", start: "2026-10-01T12:00:00Z", end: "2026-10-01T13:00:00Z", description: "Verified public description", location: "Public venue" };
+  await storage.put("calendar-v1:career-management", JSON.stringify({ updatedAt: now.toISOString(), events: [event] }));
+  await storage.put(`calendar-v1:${studentSource.id}`, JSON.stringify({ updatedAt: now.toISOString(), events: [{ ...event, description: "See official event page", location: "See event page" }] }));
+  const data = await calendarData(studentEnv, storage, { now, fetcher: async () => { throw new Error("Unexpected fetch of fresh cache"); } });
+  assert.equal(data.events.length, 1);
+  assert.equal(data.events[0].description, event.description);
+  assert.equal(data.events[0].location, event.location);
+});
+
 test("additional department keeps separate IDs and filtered cache during outages", async () => {
   const input = ics(["UID:community", "SUMMARY:Bagels and Belonging", "DTSTART:20261001T130000Z", "DURATION:PT1H"]);
   const event = parseICS(input, window, "inclusion-belonging")[0];
   assert.equal(event.source, "inclusion-belonging");
-  assert.equal(eventFilter(event), "inclusion-belonging");
+  assert.equal(eventFilter(event), "student-affairs");
   assert.notEqual(event.id, parseICS(input, window)[0].id);
   const storage = memoryStorage();
-  await storage.put("calendar-v1:inclusion-belonging", JSON.stringify({ updatedAt: "2026-09-29T12:00:00Z", events: [event, { ...event, id: "restricted", title: "MBA welcome session" }] }));
+  await storage.put("calendar-v1:inclusion-belonging", JSON.stringify({ updatedAt: "2026-09-29T12:00:00Z", events: [event, { ...event, id: "program", title: "MBA welcome session" }, { ...event, id: "restricted", title: "Staff-only planning session" }] }));
   const data = await calendarData({}, storage, { now: new Date("2026-09-30T12:00:00Z"), fetcher: async () => { throw new Error("Source outage"); } });
-  assert.deepEqual(data.events.map(e => e.id), [event.id]);
+  assert.deepEqual(data.events.map(e => e.id), [event.id, "program"]);
   assert.equal(data.sources.find(s => s.id === "inclusion-belonging").state, "stale");
 });
 
-test("club and CTSG events filter independently without bypassing approval", () => {
-  const club = page();
-  club.properties["Club Name"] = { rich_text: [{ plain_text: "Chess Club" }] };
-  const ctsg = page();
-  ctsg.properties["Event type"] = { select: { name: "CTSG" } };
-  const events = [notionEvent(club), notionEvent(ctsg)];
-  assert.equal(events[1].category, "CTSG events");
-  assert.deepEqual(events.filter(e => new Set(["clubs"]).has(eventFilter(e))), [events[0]]);
-  assert.deepEqual(events.filter(e => new Set(["ctsg"]).has(eventFilter(e))), [events[1]]);
-  assert.equal(eventFilter({ source: "student-affairs", category: "School events" }), "student-affairs");
-  for (const name of ["CTSG", " cornell tech student government "]) {
-    const event = page(); event.properties["Club Name"] = { rich_text: [{ plain_text: name }] };
-    assert.equal(eventFilter(notionEvent(event)), "ctsg");
-    event.properties["Event type"] = { select: { name: "Clubs" } };
-    assert.equal(eventFilter(notionEvent(event)), "clubs");
+test("Notion tables determine categories without event tags or organizer heuristics", () => {
+  for (const source of NOTION_SOURCES) {
+    const record = page();
+    record.properties["Club Name"] = { rich_text: [{ plain_text: "CTSG" }] };
+    record.properties["Event type"] = { select: { name: "External" } };
+    record.properties["Registration Form Link"] = { url: "https://example.org/register" };
+    const event = notionEvent(record, source);
+    assert.equal(event.category, source.name);
+    assert.equal(eventFilter(event), source.id);
+    assert.equal(event.url, "https://example.org/register");
+    for (const status of ["Pending", "Rejected", ""]) {
+      record.properties["Approval status"] = { select: { name: status } };
+      assert.equal(notionEvent(record, source), null);
+    }
   }
-  ctsg.properties["Approval status"].status.name = "Pending";
-  assert.equal(notionEvent(ctsg), null);
+  const community = page();
+  community.properties["Organization Name"] = { rich_text: [{ plain_text: "Local organizers" }] };
+  assert.equal(notionEvent(community, NOTION_SOURCES[1]).organizer, "Local organizers");
+  assert.equal(notionEvent(page(), NOTION_SOURCES[2]).organizer, "CTSG");
 });
 
-test("Notion queries all approved pages and fails on incomplete pagination", async () => {
+test("each Notion table queries its own source with the approval filter", async () => {
+  for (const source of NOTION_SOURCES) {
+    const urls = [];
+    const { events } = await loadNotion({ NOTION_TOKEN: "test" }, async (url, options) => {
+      urls.push(url);
+      assert.equal(options.headers.Authorization, "Bearer test");
+      if (!url.endsWith("/query")) return Response.json({ properties: { "Approval status": { type: "select" } } });
+      assert.deepEqual(JSON.parse(options.body).filter, { property: "Approval status", select: { equals: "Published" } });
+      return Response.json({ results: [page(), page("Pending")], has_more: false });
+    }, source);
+    assert.deepEqual(urls, [`https://api.notion.com/v1/data_sources/${source.dataSource}`, `https://api.notion.com/v1/data_sources/${source.dataSource}/query`]);
+    assert.equal(events.length, 1);
+    assert.equal(events[0].source, source.id);
+  }
+});
+
+test("Notion queries all published pages and fails on incomplete pagination", async () => {
   const calls = [];
   const fetcher = async (url, options) => {
     if (!url.endsWith("/query")) return Response.json({ properties: { "Approval status": { type: "status" } } });
@@ -207,7 +264,7 @@ test("Notion queries all approved pages and fails on incomplete pagination", asy
   };
   const data = await loadNotion({ NOTION_TOKEN: "test" }, fetcher);
   assert.equal(data.events.length, 2);
-  assert.deepEqual(calls[0].filter, { property: "Approval status", status: { equals: "Approved" } });
+  assert.deepEqual(calls[0].filter, { property: "Approval status", status: { equals: "Published" } });
   assert.equal(calls[1].start_cursor, "cursor");
   await assert.rejects(loadNotion({ NOTION_TOKEN: "test" }, async url => Response.json(url.endsWith("/query") ? { results: [], has_more: true } : { properties: { "Approval status": { type: "select" } } })), /cursor/);
   await assert.rejects(loadNotion({ NOTION_TOKEN: "test" }, async () => Response.json({ properties: {} })), /Approval status/);
@@ -308,19 +365,22 @@ test("scheduled refresh updates persistent JSON and ICS without any visitor requ
     fetched.push(url);
     if (url === ACADEMIC_URL) return new Response(html);
     if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    if (url === techEventsAPI) return emptyTechEvents();
     if ([STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL].includes(url)) return new Response(ics());
     throw new Error(`Unexpected source ${url}`);
   });
   const env = { CALENDAR_CACHE: storage };
   const processor = new CalendarProcessor({}, env);
   env.CALENDAR_PROCESSOR = { idFromName: name => name, get: () => processor };
-  const trigger = { scheduledTime: Date.parse("2026-09-29T12:00:00Z") };
+  // Keep the edited enrollment event in the future; ended events now freeze
+  // in the archive instead of being routinely refreshed.
+  const trigger = { scheduledTime: Date.parse("2026-08-01T12:00:00Z") };
   await worker.scheduled(trigger, env);
   assert.equal((await storage.get("calendar-v1:academic")).academicYear, "2026–2027");
-  assert.deepEqual(new Set(fetched), new Set([ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL]));
+  assert.deepEqual(new Set(fetched), new Set([ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, techEventsAPI]));
   html = academicHTML.replace("Aug 17", "Aug 18");
   await worker.scheduled(trigger, env);
-  assert.equal(fetched.length, 10); // Scheduled refresh bypasses even a fresh cache, including empty Career feeds.
+  assert.equal(fetched.length, 12); // Scheduled refresh bypasses even a fresh cache, including empty feeds.
   const refreshed = await calendarData(env, storage, { now: new Date(trigger.scheduledTime) });
   const exported = new ICAL.Component(ICAL.parse(toICS(refreshed))).getAllSubcomponents("vevent");
   const enrollment = exported.find(c => /Fall.*Add\/Drop/.test(c.getFirstPropertyValue("summary")));
@@ -345,19 +405,42 @@ test("public Worker cannot expose the internal force-refresh route", async () =>
   assert.equal(calls, 2);
 });
 
+test("scheduled refresh reports a suspicious empty source while removing its events", async t => {
+  const storage = memoryStorage();
+  const now = new Date("2026-09-30T12:00:00Z");
+  await storage.put("calendar-v1:student-affairs", JSON.stringify({
+    updatedAt: "2026-09-30T11:00:00Z", coverage: { version: 1, warnings: [] },
+    events: [{ id: "missing", source: "student-affairs", title: "Workshop", start: "2026-10-01T12:00:00Z", end: "2026-10-01T13:00:00Z" }],
+  }));
+  t.mock.method(globalThis, "fetch", async url => {
+    if (url === ACADEMIC_URL) return new Response(academicHTML);
+    if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    if (url === techEventsAPI) return emptyTechEvents();
+    return new Response(ics());
+  });
+  const processor = new CalendarProcessor({}, { CALENDAR_CACHE: storage });
+  const response = await processor.fetch(new Request("https://calendar.internal/refresh", { method: "POST", body: now.toISOString() }));
+  assert.equal(response.status, 502);
+  assert.match(await response.text(), /Student Affairs/);
+  const saved = await storage.get("calendar-v1:student-affairs");
+  assert.deepEqual(saved.events, []);
+  assert.equal(saved.coverage.warnings[0].code, "sudden-empty");
+});
+
 test("simultaneous calendar requests share one refresh through the processor", async t => {
   let calls = 0;
   t.mock.method(globalThis, "fetch", async url => {
     calls++;
     if (url === ACADEMIC_URL) return new Response(academicHTML);
     if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    if (url === techEventsAPI) return emptyTechEvents();
     if ([STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL].includes(url)) return new Response(ics());
     throw new Error(`Unexpected source ${url}`);
   });
   const processor = new CalendarProcessor({}, { CALENDAR_CACHE: memoryStorage() });
   const responses = await Promise.all(["/api/calendar", "/api/calendar.ics"].map(path => processor.fetch(new Request(`https://calendar.example${path}`))));
   assert.deepEqual(responses.map(response => response.status), [200, 200]);
-  assert.equal(calls, 5);
+  assert.equal(calls, 6);
 });
 
 test("source outages preserve public cache but expire club approvals after one hour", async () => {
@@ -404,8 +487,14 @@ test("week ranges include both months across year and DST boundaries", () => {
   const dstWeek = calendarRange(new Date("2026-11-01T00:00:00Z"), "week");
   assert.equal(dstWeek.end.toISOString(), "2026-11-08T00:00:00.000Z");
   const month = calendarRange(new Date("2027-01-01T00:00:00Z"), "month");
-  assert.equal(month.start.toISOString(), "2027-01-01T00:00:00.000Z");
-  assert.equal(month.end.toISOString(), "2027-02-01T00:00:00.000Z");
+  assert.equal(month.start.toISOString(), "2026-12-27T00:00:00.000Z");
+  assert.equal(month.end.toISOString(), "2027-02-07T00:00:00.000Z");
+  const list = calendarRange(new Date("2027-01-01T00:00:00Z"), "list");
+  assert.equal(list.start.toISOString(), "2027-01-01T00:00:00.000Z");
+  assert.equal(list.end.toISOString(), "2027-02-01T00:00:00.000Z");
+  const alignedMonth = calendarRange(new Date("2026-02-01T00:00:00Z"), "month");
+  assert.equal(alignedMonth.start.toISOString(), "2026-02-01T00:00:00.000Z");
+  assert.equal(alignedMonth.end.toISOString(), "2026-03-01T00:00:00.000Z");
 });
 
 test("ICS export round-trips Unicode, escaped text and all-day ranges", () => {
@@ -417,7 +506,7 @@ test("ICS export round-trips Unicode, escaped text and all-day ranges", () => {
   assert.equal(result.description, event.description);
   assert.equal(result.endDate.toString(), "2026-10-14");
   assert.equal(result.startDate.isDate, true);
-  const instant = notionEvent(page("Approved", { start: "2026-10-01T12:00:00-04:00" }));
+  const instant = notionEvent(page("Published", { start: "2026-10-01T12:00:00-04:00" }));
   assert.ok(!toICS({ generatedAt: "2026-09-28T12:00:00.000Z", events: [instant] }).includes("DTEND"));
 });
 

@@ -1,10 +1,12 @@
 import { calendarData, calendarResponse } from "./service.mjs";
+import { CalendarArchive } from "./archive.mjs";
 
 // SQLite-backed Durable Objects are available on Workers Free and have a
 // 30-second CPU budget. Parsing belongs here, not in the 10-ms edge Worker.
 export class CalendarProcessor {
   constructor(state, env) {
     this.env = env;
+    this.archive = new CalendarArchive(state.storage);
     this.pending = Promise.resolve();
   }
 
@@ -20,13 +22,16 @@ export class CalendarProcessor {
     const env = this.env;
     if (!env.CALENDAR_CACHE) throw new Error("Calendar storage is not configured");
     if (request.method !== "POST" || new URL(request.url).pathname !== "/refresh") {
-      return calendarResponse(request, env, env.CALENDAR_CACHE);
+      return calendarResponse(request, env, env.CALENDAR_CACHE, { archive: this.archive });
     }
-    const data = await calendarData(env, env.CALENDAR_CACHE, { now: new Date(await request.text()), forceRefresh: true });
-    const failed = data.sources.filter(source => ["stale", "unavailable"].includes(source.state));
+    const data = await calendarData(env, env.CALENDAR_CACHE, { now: new Date(await request.text()), forceRefresh: true, archive: this.archive });
+    const failed = data.sources.filter(source => ["stale", "unavailable"].includes(source.state) || source.coverage?.warnings?.length);
     // calendarData retains valid cached events; fail the scheduled invocation
     // visibly so a source outage never masquerades as a successful refresh.
-    if (failed.length) return new Response(`Calendar refresh failed: ${failed.map(source => source.name).join(", ")}`, { status: 502 });
+    if (failed.length) {
+      for (const source of failed) console.warn(`Calendar attention needed: ${source.name}; ${source.error || source.coverage?.warnings.map(warning => warning.message).join("; ")}`);
+      return new Response(`Calendar refresh needs attention: ${failed.map(source => source.name).join(", ")}`, { status: 502 });
+    }
     return new Response("Calendar refreshed");
   }
 }

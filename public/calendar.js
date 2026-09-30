@@ -15,7 +15,18 @@ export function lastDay(event) {
   return event.allDay ? new Date(Date.parse(event.end) - DAY).toISOString().slice(0, 10) : dateKey(new Date(Date.parse(event.end) - 1).toISOString());
 }
 export const eventsOnDay = (events, day) => events.filter(event => dateKey(event.start) <= day && lastDay(event) >= day);
-export const eventFilter = event => event.source === "tech-academic" ? "academic" : event.source === "clubs" && event.category === "CTSG events" ? "ctsg" : event.source;
+export function eventFilter(event) {
+  if (event.source === "career-management" || event.sourceIds?.includes("career-management")) return "career-management";
+  if (["student-affairs", "inclusion-belonging", "tech-events"].includes(event.source)) return "student-affairs";
+  return event.source === "tech-academic" ? "academic" : event.source === "clubs" && event.category === "CTSG events" ? "ctsg" : event.source;
+}
+export function matchesCalendarSource(event, enabled) {
+  const groups = new Set((event.sourceIds || [event.source]).map(source => eventFilter({ ...event, source, sourceIds: [], category: event.sourceCategories?.[source] || event.category })));
+  // Career cohosts belong to the Career group instead of Student Affairs.
+  if (groups.has("career-management")) groups.delete("student-affairs");
+  return [...groups].some(group => enabled.has(group));
+}
+const eventLabel = event => ({ "student-affairs": "Student Affairs", "career-management": "Career Management" })[eventFilter(event)] || event.category;
 const node = (tag, text, className) => {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -25,8 +36,13 @@ const node = (tag, text, className) => {
 const rangeFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 export function calendarRange(anchor, view) {
   const month = new Date(Date.UTC(anchor.getUTCFullYear(), anchor.getUTCMonth(), 1));
-  const start = view === "rolling" ? new Date(+anchor) : view === "week" ? new Date(+anchor - anchor.getUTCDay() * DAY) : month;
-  const end = view === "week" || view === "rolling" ? new Date(+start + 7 * DAY) : new Date(Date.UTC(month.getUTCFullYear(), month.getUTCMonth() + 1, 1));
+  let start = view === "rolling" ? new Date(+anchor) : view === "week" ? new Date(+anchor - anchor.getUTCDay() * DAY) : month;
+  let end = view === "week" || view === "rolling" ? new Date(+start + 7 * DAY) : new Date(Date.UTC(month.getUTCFullYear(), month.getUTCMonth() + 1, 1));
+  if (view === "month") {
+    // Include the adjacent-month days drawn in the first and last grid rows.
+    start = new Date(+start - start.getUTCDay() * DAY);
+    end = new Date(+end + (7 - end.getUTCDay()) % 7 * DAY);
+  }
   return { start, end };
 }
 
@@ -77,8 +93,9 @@ export function mountCalendar(root, { rolling = false } = {}) {
     let when = fullDate.format(new Date(startDay + "T00:00:00Z"));
     if (endDay !== startDay) when += ` – ${fullDate.format(new Date(endDay + "T00:00:00Z"))}`;
     when += event.allDay ? " · All day" : ` · ${timeFormat.format(new Date(event.start))}${event.end !== event.start ? `–${timeFormat.format(new Date(event.end))}` : ""} (New York time)`;
-    detail.replaceChildren(title, node("p", when), node("p", event.category));
-    if (event.organizer) detail.append(node("p", event.organizer));
+    detail.replaceChildren(title, node("p", when), node("p", eventLabel(event)));
+    if (event.organizer && eventFilter(event) !== "ctsg") detail.append(node("p", event.organizer));
+    if (event.audienceTags?.length) detail.append(node("p", `Audience: ${event.audienceTags.join(", ")}`));
     if (event.location) detail.append(node("p", event.location));
     if (event.description) detail.append(node("p", event.description, "calendar-description"));
     if (/^https?:\/\//i.test(event.url || "")) {
@@ -90,14 +107,15 @@ export function mountCalendar(root, { rolling = false } = {}) {
   }
 
   function eventButton(event) {
-    const button = node("button", undefined, `calendar-event calendar-event--${event.source === "tech-academic" ? "academic" : event.source}`);
+    const group = eventFilter(event);
+    const button = node("button", undefined, `calendar-event calendar-event--${group === "ctsg" ? "clubs" : group}`);
     if (eventFilter(event) === "academic" && /\b(?:break|holiday|no classes)\b/i.test(event.title)) button.classList.add("calendar-event--break");
     button.type = "button";
     const time = event.allDay ? "All day" : timeFormat.format(new Date(event.start));
     const text = node("span", undefined, "calendar-event-text");
     text.append(node("span", time, "calendar-event-time"), document.createTextNode(" "), node("span", event.title));
     button.append(text);
-    button.setAttribute("aria-label", `${time}: ${event.title}, ${event.category}`);
+    button.setAttribute("aria-label", `${time}: ${event.title}, ${eventLabel(event)}`);
     button.addEventListener("click", () => showEvent(event));
     return button;
   }
@@ -229,17 +247,18 @@ export function mountCalendar(root, { rolling = false } = {}) {
     const enabled = new Set([...root.querySelectorAll("input[name=calendar-source]:checked")].map(input => input.value));
     const firstDay = start.toISOString().slice(0, 10);
     const afterLastDay = end.toISOString().slice(0, 10);
-    const events = (data?.events ?? []).filter(event => (rolling || enabled.has(eventFilter(event))) && dateKey(event.start) < afterLastDay && lastDay(event) >= firstDay);
+    const events = (data?.events ?? []).filter(event => (rolling || matchesCalendarSource(event, enabled)) && dateKey(event.start) < afterLastDay && lastDay(event) >= firstDay);
     if (data) {
-      controls.querySelector("[data-direction='-1']").disabled = firstDay <= dateKey(data.window.start);
-      controls.querySelector("[data-direction='1']").disabled = afterLastDay >= dateKey(data.window.end);
+      const navigationRange = currentView === "month" ? calendarRange(anchor, "list") : { start, end };
+      controls.querySelector("[data-direction='-1']").disabled = navigationRange.start.toISOString().slice(0, 10) <= dateKey(data.window.start);
+      controls.querySelector("[data-direction='1']").disabled = navigationRange.end.toISOString().slice(0, 10) >= dateKey(data.window.end);
     }
     if (currentView === "list") {
       if (!events.length) display.append(node("p", "No events listed for this month and selection."));
       const list = node("ul", undefined, "calendar-agenda");
       for (const event of events) {
         const item = node("li");
-        item.append(node("span", fullDate.format(new Date(dateKey(event.start) + "T00:00:00Z")), "calendar-agenda-date"), eventButton(event), node("span", event.category, "calendar-agenda-source"));
+        item.append(node("span", fullDate.format(new Date(dateKey(event.start) + "T00:00:00Z")), "calendar-agenda-date"), eventButton(event), node("span", eventLabel(event), "calendar-agenda-source"));
         list.append(item);
       }
       display.append(list);
@@ -316,13 +335,14 @@ export function mountCalendar(root, { rolling = false } = {}) {
     render();
   });
   const local = ["localhost", "127.0.0.1"].includes(location.hostname);
-  const endpoint = local ? "/api/calendar" : calendarEndpoint;
+  // Both previews and production read the built repository snapshot.
+  const endpoint = calendarEndpoint;
   const subscriptionMenu = root.querySelector(".calendar-subscription-menu");
   if (subscriptionMenu) {
-    const feed = endpoint ? new URL(endpoint.replace(/\/$/, "") + ".ics", location.href) : new URL("./data/calendar.ics", import.meta.url);
+    const feed = new URL("./data/calendar.ics", import.meta.url);
     // Calendar providers fetch feeds from their servers, so localhost cannot be
     // used for subscriptions. Keep the local feed for direct downloads only.
-    const subscriptionFeed = ["localhost", "127.0.0.1", "[::1]"].includes(feed.hostname) ? publishedCalendarFeed : feed.href;
+    const subscriptionFeed = publishedCalendarFeed;
     const webcal = subscriptionFeed.replace(/^https?:/, "webcal:");
     const providers = {
       google: `https://www.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`,
@@ -357,7 +377,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
       let savedCopy = !endpoint;
       if (endpoint) {
         try {
-          response = await fetch(endpoint, { signal: abort.signal });
+          response = await fetch(endpoint, { signal: abort.signal, ...(local ? { cache: "no-store" } : {}) });
           if (!response.ok) throw new Error("Calendar service unavailable");
         } catch (error) { if (abort.signal.aborted) return; savedCopy = true; }
       }

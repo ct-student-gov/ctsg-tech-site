@@ -6,8 +6,10 @@ test("preview reads published snapshots and shares a five-minute cache across re
   let time = 0, value = "original", calls = 0;
   const read = createPublishedPreview({ now: () => time, fetcher: async (url, options) => {
     calls++;
-    assert.equal(url.href, "https://ct-student-gov.github.io/ctsg-tech-site/public/data/calendar.json");
+    assert.equal(url.origin + url.pathname, "https://ct-student-gov.github.io/ctsg-tech-site/public/data/calendar.json");
+    assert.equal(url.searchParams.get("preview"), String(time));
     assert.equal(options.headers, undefined);
+    assert.equal(options.cache, "no-store");
     return new Response(value);
   } });
   const initial = await read("/data/calendar.json");
@@ -78,4 +80,21 @@ test("Blog preview shares the snapshot cache and serves new published WebP and S
     assert.equal(response.headers.get("content-type"), extension === "svg" ? "image/svg+xml" : "image/webp");
     assert.equal(requests.at(-1), `https://ct-student-gov.github.io/ctsg-tech-site/public${path}`);
   }
+});
+
+test("reloading local preview immediately checks current Blog data despite an unexpired snapshot cache", async () => {
+  let time = 1, value = "old description";
+  const requests = [];
+  const read = createPublishedPreview({now:() => time, fetcher:async (url, options) => {
+    requests.push(url.href);
+    assert.equal(options.cache, "no-store");
+    return new Response(value);
+  }});
+  assert.equal(await (await read("/data/blog.js")).text(), "old description");
+  value = "edited Notion description"; time = 2;
+  assert.equal(await (await read("/data/blog.js")).text(), "old description");
+  read.refresh();
+  assert.equal(await (await read("/data/blog.js")).text(), "edited Notion description");
+  assert.equal(requests.length, 2);
+  assert.notEqual(requests[0], requests[1]);
 });

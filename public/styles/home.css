@@ -47,6 +47,7 @@
 .home-calendar-day--today { background: var(--color-red); color: var(--color-on-red); }
 .home-calendar-day--today .calendar-day[aria-current] { padding: 0; }
 .home-calendar .home-calendar-day--today .calendar-event { background: transparent; color: inherit; border-left-color: currentColor; }
+.home-calendar .home-calendar-day--today :is(.calendar-event--academic, .calendar-event--clubs, .calendar-event--career-management) { background: var(--calendar-event-fill); color: var(--color-ink); border-left-color: var(--calendar-event-color); }
 .home-calendar-day--today .calendar-event:focus-visible { outline-color: var(--color-on-red); }
 .home-calendar-link { margin-top: 14px; text-align: left; }
 .home .events-projects { margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }

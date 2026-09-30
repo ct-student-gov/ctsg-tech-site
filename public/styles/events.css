@@ -33,22 +33,25 @@
 .calendar-grid { width: 100%; min-width: 700px; table-layout: fixed; border-collapse: collapse; }
 .calendar-grid th { padding: 10px; text-align: left; font-weight: normal; }
 .calendar-grid td { padding: 0; border: 1px solid var(--color-rule); vertical-align: top; }
-.calendar-cell { display: flex; flex-direction: column; height: 138px; padding: 6px; }
-.calendar-grid--week .calendar-cell { height: 322px; }
+.calendar-cell { display: flex; flex-direction: column; height: 150.282px; padding: 6px; }
+.calendar-grid--week .calendar-cell { height: 350.658px; }
 .calendar-cell > .calendar-day { flex: none; align-self: flex-start; margin-bottom: 4px; }
 .calendar-cell-events { min-height: 0; overflow-y: auto; }
 .calendar-grid .calendar-event-text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
+.calendar-grid--week .calendar-event-text { -webkit-line-clamp: 4; }
 .calendar-grid .calendar-event-time { display: inline; margin: 0 4px 0 0; }
 .calendar-day { display: inline-block; margin-bottom: 8px; }
 .calendar-day[aria-current] { padding: 0 6px; background: var(--color-red); color: var(--color-on-red); }
 .calendar-outside-month { background: light-dark(#f4f3f1, #2b2b2b); }
 .calendar-outside-month .calendar-day { opacity: .55; }
-.student-calendar .calendar-event { display: block; width: 100%; padding: 7px 8px; margin: 0 0 6px; border: 0; border-left: 3px solid var(--color-red); text-align: left; font-size: 14px; line-height: 1.35; cursor: pointer; background: light-dark(#f6eded, #392b2b); }
+.student-calendar .calendar-event { --calendar-event-color: var(--color-red); --calendar-event-fill: light-dark(#f6eded, #392b2b); display: block; width: 100%; padding: 7px 8px; margin: 0 0 6px; border: 0; border-left: 3px solid var(--calendar-event-color); text-align: left; font-size: 14px; line-height: 1.35; cursor: pointer; background: var(--calendar-event-fill); }
 .student-calendar .calendar-grid .calendar-event { padding: 4px 6px; margin-bottom: 4px; }
 .student-calendar .calendar-grid .calendar-event:last-child { margin-bottom: 0; }
-.student-calendar .calendar-event--academic { border-left-color: light-dark(#70675c, #b5aea3); background: light-dark(#f2f0ed, #30302c); }
-.student-calendar .calendar-event--break { border-left-color: light-dark(#386b91, #91bddd); background: light-dark(#e9f2fa, #253746); }
-.student-calendar .calendar-event--clubs { border-left-color: light-dark(#286558, #87beae); background: light-dark(#edf4f1, #263730); }
+/* Solid background pairs follow the Cornell red tints' lightness and saturation. */
+.student-calendar .calendar-event--academic { --calendar-event-color: #666666; --calendar-event-fill: light-dark(#f2f2f2, #323232); }
+.student-calendar .calendar-event--break { --calendar-event-color: #386b91; --calendar-event-fill: light-dark(#edf2f6, #2b3339); }
+.student-calendar .calendar-event--clubs { --calendar-event-color: #286558; --calendar-event-fill: light-dark(#edf6f4, #2b3936); }
+.student-calendar .calendar-event--career-management { --calendar-event-color: #7655a3; --calendar-event-fill: light-dark(#f1edf6, #312b39); }
 .calendar-event-time { display: block; margin-bottom: 3px; font-size: 12px; }
 .calendar-event:hover { text-decoration: underline; }
 .student-calendar :is(button, summary, input, a):focus-visible { outline: 2px solid var(--color-red); outline-offset: 3px; }

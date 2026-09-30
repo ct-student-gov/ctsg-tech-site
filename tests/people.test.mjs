@@ -243,3 +243,51 @@ test("failed daily reconciliation preserves committed data and metadata for the 
   assert.equal(await readFile(join(root, "data/people.js"), "utf8"), previous);
   assert.equal(await readFile(statePath, "utf8"), metadata);
 });
+
+test("an incomplete newcomer is skipped with field warnings while valid profile edits publish", async t => {
+  const { source, sync } = await incrementalFixture(t);
+  await sync();
+  const testId = "abcdefab-abcd-1234-abcd-123456789abc";
+  const draft = page({ Name: { title: rich("test") }, Role: { select: null }, Photo: { files: [] } }, { id: testId });
+  source.bio = "Edited biography";
+  source.pages = [draft, page({}, { last_edited_time: "2026-09-30T14:00:00Z" })];
+  const result = await sync();
+  assert.equal(result.profileCount, 1);
+  assert.deepEqual(result.data.years[0].members[0].biography, [source.bio]);
+  assert.match(result.warnings[0], /test: needs Role, exactly one Photo; skipped/);
+  assert.equal(result.state.profiles[testId.replaceAll("-", "")], undefined);
+  source.pages[0] = page({ Name: { title: rich("test") } }, { id: testId });
+  const corrected = await sync();
+  assert.equal(corrected.profileCount, 2);
+  assert.deepEqual(corrected.warnings, []);
+});
+
+test("temporarily incomplete existing profiles retain their full published version and recover or withdraw", async t => {
+  const { source, sync } = await incrementalFixture(t);
+  const original = await sync();
+  source.pages = [page({ Role: { select: null }, Photo: { files: [] }, "Academic Year": { multi_select: [{ name: "2027–28" }] } }, { last_edited_time: "2026-09-30T14:00:00Z" })];
+  const invalid = await sync();
+  assert.deepEqual(invalid.data, original.data);
+  assert.deepEqual(invalid.state, original.state);
+  assert.equal(invalid.changed, false);
+  assert.match(invalid.warnings[0], /kept last published profile/);
+  source.bio = "Corrected bio";
+  source.pages = [page({}, { last_edited_time: "2026-09-30T14:00:00Z" })];
+  assert.deepEqual((await sync()).data.years[0].members[0].biography, [source.bio]);
+  source.pages = [page({ Publish: { checkbox: false }, Role: { select: null }, Photo: { files: [] } })];
+  const withdrawn = await sync();
+  assert.equal(withdrawn.profileCount, 0);
+  assert.deepEqual(withdrawn.data.years, []);
+  assert.deepEqual(withdrawn.state.profiles, {});
+});
+
+test("invalid bio structure is isolated but Notion API failures still abort safely", async () => {
+  const invalidProfiles = [];
+  const fetcher = async url => url.endsWith("/query") ? list([page()]) : url.includes("/blocks/")
+    ? list([block("heading_2", "Website Bio"), block("bulleted_list_item", "Not a paragraph")]) : Response.json(schema);
+  assert.deepEqual(await loadPeople({ NOTION_PEOPLE_TOKEN: "test" }, { fetcher, sleep: async () => {}, invalidProfiles }), []);
+  assert.match(invalidProfiles[0].message, /plain paragraphs/);
+  for (const status of [429, 503]) await assert.rejects(loadPeople({ NOTION_PEOPLE_TOKEN: "test" }, {
+    sleep: async () => {}, fetcher: async url => url.includes("/blocks/") ? new Response(null, { status }) : fetcher(url),
+  }), new RegExp(`HTTP ${status}`));
+});

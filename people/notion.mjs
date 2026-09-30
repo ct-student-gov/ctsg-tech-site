@@ -3,17 +3,23 @@ const text = parts => (parts || []).map(part => part.plain_text ?? part.text?.co
 const sections = { "Executive Board": "executive-board", Representatives: "representatives" };
 const uuid = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/i;
 
+export class ProfileValidationError extends Error {}
+
 export function publicProfile(page) {
   const p = page.properties || {};
   if (p.Publish?.checkbox !== true || page.archived || page.in_trash) return null;
   const name = text(p.Name?.title).trim();
   const role = p.Role?.select?.name;
   const section = sections[p.Section?.select?.name];
+  const photos = p.Photo?.files || [];
+  const missing = [!name && "Name", !role && "Role", !section && "Section",
+    !p["Academic Year"]?.multi_select?.length && "Academic Year", photos.length !== 1 && "exactly one Photo"].filter(Boolean);
+  if (missing.length) throw new ProfileValidationError(`${name || page.id}: needs ${missing.join(", ")}`);
   const years = (p["Academic Year"]?.multi_select || []).map(option => {
     const match = /^(\d{4})[–-](\d{2}|\d{4})$/.exec(option.name);
     const start = Number(match?.[1]);
     const end = Number(match?.[2]);
-    if (!match || (end !== start + 1 && end !== (start + 1) % 100)) throw new Error(`${name}: invalid Academic Year`);
+    if (!match || (end !== start + 1 && end !== (start + 1) % 100)) throw new ProfileValidationError(`${name}: invalid Academic Year`);
     return start;
   });
   if (!uuid.test(page.id) || !name || !role || !section || !years.length) {
@@ -21,13 +27,13 @@ export function publicProfile(page) {
   }
   const graduationYear = p["Graduation Year"]?.number ?? null;
   if (graduationYear !== null && (!Number.isInteger(graduationYear) || graduationYear < 1900 || graduationYear > 2200)) {
-    throw new Error(`${name}: invalid Graduation Year`);
+    throw new ProfileValidationError(`${name}: invalid Graduation Year`);
   }
-  const photos = p.Photo?.files || [];
-  if (photos.length !== 1) throw new Error(`${name}: published profiles need exactly one Photo`);
   const photo = photos[0];
   const photoUrl = photo.file?.url || photo.external?.url;
-  if (!photoUrl || new URL(photoUrl).protocol !== "https:") throw new Error(`${name}: Photo has no downloadable HTTPS URL`);
+  let validPhotoUrl = false;
+  try { validPhotoUrl = new URL(photoUrl).protocol === "https:"; } catch {}
+  if (!validPhotoUrl) throw new ProfileValidationError(`${name}: Photo has no downloadable HTTPS URL`);
   const split = name.indexOf(" ");
   return {
     id: page.id.replaceAll("-", "").toLowerCase(), years: [...new Set(years)], photoUrl,
@@ -55,9 +61,9 @@ export function websiteBio(blocks) {
     if (!active) continue;
     if (["child_database", "child_page"].includes(block.type)) break;
     if (block.type !== "paragraph") {
-      throw new Error("Website Bio must contain plain paragraphs; move other blocks outside that section");
+      throw new ProfileValidationError("Website Bio must contain plain paragraphs; move other blocks outside that section");
     }
-    if (block.has_children) throw new Error("Website Bio paragraphs must not contain nested blocks");
+    if (block.has_children) throw new ProfileValidationError("Website Bio paragraphs must not contain nested blocks");
     const value = text(block.paragraph?.rich_text).trim();
     if (value) paragraphs.push(value);
   }
@@ -69,6 +75,7 @@ export async function loadPeople(env, {
   sleep = ms => new Promise(resolve => setTimeout(resolve, ms)),
   cachedProfiles = {},
   changedPageIds = [],
+  invalidProfiles = [],
 } = {}) {
   const token = env.NOTION_PEOPLE_TOKEN;
   if (!token) throw new Error("Set NOTION_PEOPLE_TOKEN to the read-only Team Directory connection token");
@@ -110,10 +117,19 @@ export async function loadPeople(env, {
   const profiles = [], seen = new Set();
   const changed = new Set(changedPageIds.map(id => id.replaceAll("-", "").toLowerCase()));
   for (const page of pages) {
-    const profile = publicProfile(page);
+    if (page.properties?.Publish?.checkbox !== true || page.archived || page.in_trash) continue;
+    if (!uuid.test(page.id)) throw new Error("Invalid profile ID in Notion response");
+    const profileId = page.id.replaceAll("-", "").toLowerCase();
+    if (seen.has(profileId)) throw new Error("Duplicate profile in Notion response");
+    seen.add(profileId);
+    let profile;
+    try { profile = publicProfile(page); }
+    catch (error) {
+      if (!(error instanceof ProfileValidationError)) throw error;
+      invalidProfiles.push({ id: profileId, message: error.message });
+      continue;
+    }
     if (!profile) continue;
-    if (seen.has(profile.id)) throw new Error("Duplicate profile in Notion response");
-    seen.add(profile.id);
     profile.lastEditedTime = typeof page.last_edited_time === "string" ? page.last_edited_time : null;
     const cached = cachedProfiles[profile.id];
     try {
@@ -121,7 +137,11 @@ export async function loadPeople(env, {
       profile.member.biography = unchanged && Array.isArray(cached?.biography) && cached.biography.every(value => typeof value === "string")
         ? [...cached.biography]
         : websiteBio(await list(`blocks/${page.id}/children`));
-    } catch (error) { throw new Error(`${profile.member.firstName} ${profile.member.lastName}: ${error.message}`); }
+    } catch (error) {
+      if (!(error instanceof ProfileValidationError)) throw error;
+      invalidProfiles.push({ id: profileId, message: `${profile.member.firstName} ${profile.member.lastName}: ${error.message}` });
+      continue;
+    }
     profiles.push(profile);
   }
   return profiles;

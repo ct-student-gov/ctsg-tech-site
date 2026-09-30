@@ -34,6 +34,8 @@ for (const port of [8080, 8081]) {
   const server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
+      // A document reload is an explicit request for current published data.
+      if (pathname.endsWith("/") || pathname.endsWith(".html")) readPublished.refresh();
       // Keep local code and styles while reading the published static data.
       // New content-addressed photos can be served before a local Git update.
       if (!pathname.startsWith("/images/") && !(localCalendarSources && pathname.startsWith("/api/calendar"))) {

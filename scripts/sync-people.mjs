@@ -39,7 +39,7 @@ async function cachedPortrait(root, profile, cached, identity) {
   }
 }
 
-async function preparePeople(profiles, { root, fetcher, cachedProfiles = {} }) {
+async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, invalidProfiles = [] }) {
   const previous = await readSnapshot(root);
   const years = new Map();
   // Keep the existing order of equal-rank members; the page continues to sort
@@ -48,6 +48,20 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {} }) {
     [`${year.startYear}:${`${member.firstName} ${member.lastName}`.trim()}`, index])));
   const photos = [];
   const nextProfiles = {};
+  const warnings = [];
+  for (const invalid of invalidProfiles) {
+    const cached = cachedProfiles[invalid.id];
+    let retained = false;
+    if (cached?.portrait) for (const year of previous.years) {
+      const members = year.members.filter(member => member.portrait === cached.portrait);
+      if (!members.length) continue;
+      if (!years.has(year.startYear)) years.set(year.startYear, []);
+      years.get(year.startYear).push(...members);
+      nextProfiles[invalid.id] = cached;
+      retained = true;
+    }
+    warnings.push(`${invalid.message}; ${retained ? "kept last published profile" : "skipped incomplete profile"}.`);
+  }
   for (const profile of profiles) {
     const identity = photoIdentity(profile.photoUrl);
     let portrait = await cachedPortrait(root, profile, cachedProfiles[profile.id], identity);
@@ -87,7 +101,7 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {} }) {
       members: members.sort((a, b) => (oldOrder.get(`${startYear}:${name(a)}`) ?? Infinity) - (oldOrder.get(`${startYear}:${name(b)}`) ?? Infinity) || name(a).localeCompare(name(b))),
     })),
   };
-  return { data, photos, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
+  return { data, photos, warnings, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
 }
 
 function snapshotSource(data) {
@@ -139,16 +153,18 @@ export async function syncPeople({
     throw new Error("People sync state has an unexpected format");
   }
   const cachedProfiles = previousState?.dataSource === dataSource ? previousState.profiles : {};
-  const profiles = await loadPeople(env, { fetcher, sleep, cachedProfiles, changedPageIds });
-  const prepared = await preparePeople(profiles, { root, fetcher, cachedProfiles });
+  const invalidProfiles = [];
+  const profiles = await loadPeople(env, { fetcher, sleep, cachedProfiles, changedPageIds, invalidProfiles });
+  const prepared = await preparePeople(profiles, { root, fetcher, cachedProfiles, invalidProfiles });
   const state = { version: 1, dataSource, profiles: prepared.profiles };
   const changed = await publishPrepared(prepared, root, statePath, state);
-  return { data: prepared.data, state, profileCount: profiles.length, downloadedPhotos: prepared.photos.length, changed };
+  return { data: prepared.data, state, profileCount: Object.keys(prepared.profiles).length, downloadedPhotos: prepared.photos.length, changed, warnings: prepared.warnings };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const result = await syncPeople();
+    for (const warning of result.warnings) console.warn(warning);
     console.log(`Synced ${result.profileCount} published profiles across ${result.data.years.length} academic years; ${result.downloadedPhotos} portrait downloads${result.changed ? "." : "; no changes."}`);
   } catch (error) {
     console.error(error.message);

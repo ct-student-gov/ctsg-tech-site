@@ -1,7 +1,9 @@
 import { peopleData } from "./data/people.js";
-import { blogData } from "./data/blog.js";
-import { renderBlog } from "./blog.js";
+import { renderBlog } from "./blog.js?v=notion-descriptions-1";
 import { mountCalendar } from "./calendar.js?v=break-colors-1";
+// Blog edits are published independently of app code. Each page load reads
+// the current snapshot instead of reusing the browser/static-host module cache.
+const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
 
 (() => {
   "use strict";

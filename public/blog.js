@@ -63,7 +63,7 @@ export function renderBlog(list, data) {
       gallery.setAttribute("role", "region"); gallery.setAttribute("aria-label", `${post.title} images`);
       for (const image of post.images) {
         const figure = element("figure"), caption = element("figcaption");
-        caption.append(element("span", null, image.caption || ""));
+        caption.append(element("span", null, image.alt || ""));
         if (image.credit) caption.append(element("span", "event-photo-credit", image.credit));
         figure.append(imageNode(image), caption); gallery.append(figure);
       }

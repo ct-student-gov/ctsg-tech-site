@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-29T17:11:38.368Z",
+  "generatedAt": "2026-09-30T15:54:09.883Z",
   "window": {
-    "start": "2026-07-01T17:11:38.368Z",
-    "end": "2027-11-03T17:11:38.368Z"
+    "start": "2026-07-02T15:54:09.883Z",
+    "end": "2027-11-04T15:54:09.883Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -10,7 +10,21 @@
       "id": "student-affairs",
       "name": "Student Affairs",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "updatedAt": "2026-09-29T17:11:38.368Z",
+      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "state": "current"
+    },
+    {
+      "id": "inclusion-belonging",
+      "name": "Inclusion & Belonging",
+      "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
+      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "state": "current"
+    },
+    {
+      "id": "career-management",
+      "name": "Career Management",
+      "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
+      "updatedAt": "2026-09-30T15:54:09.883Z",
       "state": "current"
     },
     {
@@ -25,7 +39,14 @@
       "name": "Cornell academic dates",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
-      "updatedAt": "2026-09-29T17:11:38.368Z",
+      "updatedAt": "2026-09-30T15:54:09.883Z",
+      "state": "current"
+    },
+    {
+      "id": "tech-academic",
+      "name": "Cornell Tech academic dates",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
+      "updatedAt": "2026-09-30T15:54:09.883Z",
       "state": "current"
     }
   ],
@@ -43,16 +64,16 @@
       "url": "https://cornelltech.campusgroups.com/rsvp?id=2132916"
     },
     {
-      "id": "student-affairs:a28e9d0a4af3cefd16688fcb9d3b49997152026_5:33:20_PM@campusgroups.com",
-      "source": "student-affairs",
-      "category": "School events",
-      "title": "(Nearly) End of Summer Celebration",
-      "start": "2026-08-04T20:30:00.000Z",
-      "end": "2026-08-04T22:00:00.000Z",
+      "id": "tech-academic:fall:2026:New-student pre-enrollment:1",
+      "source": "tech-academic",
+      "category": "Academic dates",
+      "title": "Cornell Tech: New-student pre-enrollment",
+      "start": "2026-07-22T13:00:00.000Z",
+      "end": "2026-07-23T20:00:00.000Z",
       "allDay": false,
-      "description": "JCT MBA Students are invited to celebrate the (nearly) end of the summer semester! Join us for refreshments and light bites. \n\nCornell Tech Event Policy\n- If you register for an event, please attend and arrive on time. Sign up = Show up\n- If your plans change, cancel your registration as soon as possible—ideally at least 48 hours in advance. This opens spots for your peers and helps us manage resources.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132928",
-      "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132928"
+      "description": "Pre-enrollment for new admits (opens at 9:00am on 7/22 and closes at 4:00pm on 7/23)",
+      "location": "",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
     },
     {
       "id": "academic:2026–2027:Fall 2026: Add/Drop begins for Graduate/Professional/Cornell Tech",
@@ -127,6 +148,18 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "inclusion-belonging:6386e582ea61cd9b57300516fb7672f48262026_10:12:47_AM@campusgroups.com",
+      "source": "inclusion-belonging",
+      "category": "School events",
+      "title": "Bagels and Belonging",
+      "start": "2026-09-23T13:30:00.000Z",
+      "end": "2026-09-23T14:30:00.000Z",
+      "allDay": false,
+      "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132977",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2132977"
+    },
+    {
       "id": "student-affairs:3b41e55d9328451b47bfc66eb14aea09922026_3:13:54_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -151,12 +184,36 @@
       "url": "https://cornelltech.campusgroups.com/rsvp?id=2132994"
     },
     {
+      "id": "tech-academic:fall:2026:Maker Day:1",
+      "source": "tech-academic",
+      "category": "Academic dates",
+      "title": "Cornell Tech: Maker Day",
+      "start": "2026-09-25",
+      "end": "2026-09-26",
+      "allDay": true,
+      "description": "Maker Day",
+      "location": "",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
       "id": "academic:2026–2027:Fall 2026: Last day to add classes and change credits in project session full session",
       "source": "academic",
       "category": "Academic dates",
       "title": "Fall 2026: Last day to add classes and change credits in project session full session",
       "start": "2026-09-25",
       "end": "2026-09-26",
+      "allDay": true,
+      "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+      "location": "",
+      "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 1 session",
+      "source": "academic",
+      "category": "Academic dates",
+      "title": "Fall 2026: Last day of instruction for classes in 7 week 1 session",
+      "start": "2026-10-09",
+      "end": "2026-10-10",
       "allDay": true,
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
@@ -175,6 +232,18 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "academic:2026–2027:Fall 2026: 7 week 2 session instruction begins",
+      "source": "academic",
+      "category": "Academic dates",
+      "title": "Fall 2026: 7 week 2 session instruction begins",
+      "start": "2026-10-14",
+      "end": "2026-10-15",
+      "allDay": true,
+      "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+      "location": "",
+      "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
       "id": "academic:2026–2027:Fall 2026: 7 week 1 session final exams",
       "source": "academic",
       "category": "Academic dates",
@@ -185,6 +254,30 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "inclusion-belonging:32a1b88fa74aa9725951a21c49a4eec69292026_12:32:21_PM@campusgroups.com",
+      "source": "inclusion-belonging",
+      "category": "School events",
+      "title": "Send a Post Card!",
+      "start": "2026-10-15T14:00:00.000Z",
+      "end": "2026-10-15T16:00:00.000Z",
+      "allDay": false,
+      "description": "Feeling a little homesick? Experienced something amazing in NYC? Learned something incredible that you want to share? Take a few minutes to write a postcard to a family member or friend!\n\nStudents will have the opportunity to write a postcard to friends and family, either internationally or domestically. \n\nInternational postcards (with stamps) will be limited to 2 per person. Stamps are limited. Please come early!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133047",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133047"
+    },
+    {
+      "id": "tech-academic:fall:2026:Maker Day:2",
+      "source": "tech-academic",
+      "category": "Academic dates",
+      "title": "Cornell Tech: Maker Day",
+      "start": "2026-10-16",
+      "end": "2026-10-17",
+      "allDay": true,
+      "description": "Maker Day",
+      "location": "",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
@@ -271,6 +364,18 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "tech-academic:fall:2026:Maker Day:3",
+      "source": "tech-academic",
+      "category": "Academic dates",
+      "title": "Cornell Tech: Maker Day",
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "allDay": true,
+      "description": "Maker Day",
+      "location": "",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
       "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -305,6 +410,30 @@
       "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
       "location": "See event page for location",
       "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001"
+    },
+    {
+      "id": "tech-academic:fall:2026:Maker Day:4",
+      "source": "tech-academic",
+      "category": "Academic dates",
+      "title": "Cornell Tech: Maker Day",
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "allDay": true,
+      "description": "Maker Day",
+      "location": "",
+      "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
+      "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 2 session",
+      "source": "academic",
+      "category": "Academic dates",
+      "title": "Fall 2026: Last day of instruction for classes in 7 week 2 session",
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "allDay": true,
+      "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+      "location": "",
+      "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in first-year writing seminar, project session full, and regular session",
@@ -451,12 +580,36 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "academic:2026–2027:Spring 2027: Last day of instruction for classes in 7 week 1 session",
+      "source": "academic",
+      "category": "Academic dates",
+      "title": "Spring 2027: Last day of instruction for classes in 7 week 1 session",
+      "start": "2027-03-16",
+      "end": "2027-03-17",
+      "allDay": true,
+      "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+      "location": "",
+      "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
       "id": "academic:2026–2027:Spring 2027: 7 week 1 session final exams",
       "source": "academic",
       "category": "Academic dates",
       "title": "Spring 2027: 7 week 1 session final exams",
       "start": "2027-03-17",
       "end": "2027-03-25",
+      "allDay": true,
+      "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+      "location": "",
+      "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "academic:2026–2027:Spring 2027: 7 week 2 session instruction begins",
+      "source": "academic",
+      "category": "Academic dates",
+      "title": "Spring 2027: 7 week 2 session instruction begins",
+      "start": "2027-03-17",
+      "end": "2027-03-18",
       "allDay": true,
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",

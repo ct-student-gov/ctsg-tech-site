@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import ICAL from "ical.js";
-import { parseICS, parseAcademic, ACADEMIC_URL, STUDENT_AFFAIRS_URL, notionEvent, loadNotion } from "../calendar/sources.mjs";
+import { parseICS, parseAcademic, parseTechAcademic, ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL, departmentEventEligible, notionEvent, loadNotion } from "../calendar/sources.mjs";
 import worker, { CalendarProcessor } from "../calendar/worker.mjs";
 import { calendarData, memoryStorage, toICS } from "../calendar/service.mjs";
 import { dateKey, lastDay, eventsOnDay, eventFilter, calendarRange } from "../public/calendar.js";
@@ -53,6 +53,38 @@ test("Notion publication requires explicit approval and excludes private fields"
   assert.equal(notionEvent(page("Approved", { start: "2026-11-18T12:00:00", time_zone: "America/New_York" })).start, "2026-11-18T17:00:00.000Z");
 });
 
+test("official department imports exclude explicit narrow audiences", () => {
+  for (const event of [
+    { title: "JCT MBA NYC Excursion: Mets Game" },
+    { title: "(Nearly) End of Summer Celebration", description: "JCT MBA Students are invited to celebrate." },
+    { title: "Meet the program team", description: "This session is for PhD students." },
+    { title: "Planning lunch", description: "Invitation-only meeting." },
+    { title: "Admissions Student Ambassador Program" },
+    { title: "Research seminar: Specialized methods" },
+  ]) assert.equal(departmentEventEligible(event), false, event.title);
+  for (const event of [
+    { title: "Bagels and Belonging", description: "Meet the Inclusion and Belonging team at the Masters Studio." },
+    { title: "Send a Post Card!", description: "Students can write to friends and family." },
+    { title: "Visas After Graduation", description: "Learn about options for international students." },
+    { title: "Career workshop", description: "Open to all students. Our speaker earned an MBA." },
+    { title: "Bloomberg Center Art Tour", description: "Some art is in faculty/staff-only spaces, so we are offering a tour for students." },
+    { title: "Town hall" },
+  ]) assert.equal(departmentEventEligible(event), true, event.title);
+});
+
+test("additional department keeps separate IDs and filtered cache during outages", async () => {
+  const input = ics(["UID:community", "SUMMARY:Bagels and Belonging", "DTSTART:20261001T130000Z", "DURATION:PT1H"]);
+  const event = parseICS(input, window, "inclusion-belonging")[0];
+  assert.equal(event.source, "inclusion-belonging");
+  assert.equal(eventFilter(event), "inclusion-belonging");
+  assert.notEqual(event.id, parseICS(input, window)[0].id);
+  const storage = memoryStorage();
+  await storage.put("calendar-v1:inclusion-belonging", JSON.stringify({ updatedAt: "2026-09-29T12:00:00Z", events: [event, { ...event, id: "restricted", title: "MBA welcome session" }] }));
+  const data = await calendarData({}, storage, { now: new Date("2026-09-30T12:00:00Z"), fetcher: async () => { throw new Error("Source outage"); } });
+  assert.deepEqual(data.events.map(e => e.id), [event.id]);
+  assert.equal(data.sources.find(s => s.id === "inclusion-belonging").state, "stale");
+});
+
 test("club and CTSG events filter independently without bypassing approval", () => {
   const club = page();
   club.properties["Club Name"] = { rich_text: [{ plain_text: "Chess Club" }] };
@@ -89,6 +121,40 @@ test("Notion queries all approved pages and fails on incomplete pagination", asy
 });
 
 const academicHTML = readFileSync(new URL("./fixtures/registrar-academic.html", import.meta.url), "utf8");
+const techAcademicHTML = readFileSync(new URL("./fixtures/tech-academic.html", import.meta.url), "utf8");
+
+test("Tech calendar supplements Maker Days and new-admit enrollment without duplicating Registrar dates", () => {
+  const events = parseTechAcademic(techAcademicHTML).events;
+  assert.equal(events.length, 5);
+  assert.deepEqual(events.filter(e => /Maker Day/.test(e.title)).map(e => [e.start, e.end]), [
+    ["2026-09-25", "2026-09-26"], ["2026-10-16", "2026-10-17"],
+    ["2026-11-13", "2026-11-14"], ["2026-12-04", "2026-12-05"],
+  ]);
+  const enrollment = events.find(e => /pre-enrollment/.test(e.title));
+  assert.equal(enrollment.start, "2026-07-22T13:00:00.000Z");
+  assert.equal(enrollment.end, "2026-07-23T20:00:00.000Z");
+  assert.equal(enrollment.allDay, false);
+  assert.ok(events.every(e => e.url === TECH_ACADEMIC_URL && eventFilter(e) === "academic"));
+  assert.ok(events.every(e => !/Break|Final exams|Spring 2027/.test(e.title)));
+});
+
+test("Tech dates follow semester headings across years and retain IDs after a date correction", () => {
+  const future = parseTechAcademic(techAcademicHTML.replace(/2026/g, "2030")).events;
+  assert.ok(future.every(e => e.start.startsWith("2030")));
+  const original = parseTechAcademic(techAcademicHTML).events;
+  const moved = parseTechAcademic(techAcademicHTML.replace("October 16", "October 17")).events;
+  assert.deepEqual(moved.map(e => e.id), original.map(e => e.id));
+  assert.equal(moved.find(e => e.start === "2026-10-17").end, "2026-10-18");
+  const spring = parseTechAcademic(techAcademicHTML + '<h2>SPRING 2027</h2><table><tr><td>Friday, February 12</td><td>Maker Day</td></tr></table>').events;
+  assert.equal(spring.at(-1).start, "2027-02-12");
+});
+
+test("malformed Tech calendar dates and missing enrollment times fail closed", () => {
+  assert.throws(() => parseTechAcademic("<h1>Maintenance</h1>"), /term table/);
+  assert.throws(() => parseTechAcademic(techAcademicHTML.replace("October 16", "October 32")));
+  assert.throws(() => parseTechAcademic(techAcademicHTML.replace("October 16", "TBD")), /format/);
+  assert.throws(() => parseTechAcademic(techAcademicHTML.replace("9:00am", "TBD")), /times/);
+});
 
 test("Registrar imports exams and Tech enrollment while excluding undergraduate openings", () => {
   const { events, academicYear } = parseAcademic(academicHTML);
@@ -99,6 +165,9 @@ test("Registrar imports exams and Tech enrollment while excluding undergraduate 
   ]);
   assert.ok(events.some(e => /Last day to add.*7 week 1/.test(e.title)));
   assert.ok(events.some(e => /Last day to change grading basis.*regular/.test(e.title)));
+  assert.ok(events.some(e => /Last day of instruction.*7 week 1/.test(e.title) && e.start === "2026-10-09"));
+  assert.ok(events.some(e => /7 week 2 session instruction begins/.test(e.title) && e.start === "2026-10-14"));
+  assert.ok(events.some(e => /Last day of instruction.*7 week 2/.test(e.title) && e.start === "2026-12-04"));
   assert.ok(events.every(e => !/Seniors|Juniors|Sophomores|begins for First-Years|grade deadline|internal transfer/.test(e.title)));
   assert.ok(events.every(e => e.url === ACADEMIC_URL));
   assert.equal(events.find(e => e.title === "Spring Break/No classes").end, "2027-04-05");
@@ -145,7 +214,8 @@ test("scheduled refresh updates persistent JSON and ICS without any visitor requ
   t.mock.method(globalThis, "fetch", async url => {
     fetched.push(url);
     if (url === ACADEMIC_URL) return new Response(html);
-    if (url === STUDENT_AFFAIRS_URL) return new Response(ics());
+    if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    if ([STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL].includes(url)) return new Response(ics());
     throw new Error(`Unexpected source ${url}`);
   });
   const env = { CALENDAR_CACHE: storage };
@@ -154,10 +224,10 @@ test("scheduled refresh updates persistent JSON and ICS without any visitor requ
   const trigger = { scheduledTime: Date.parse("2026-09-29T12:00:00Z") };
   await worker.scheduled(trigger, env);
   assert.equal((await storage.get("calendar-v1:academic")).academicYear, "2026–2027");
-  assert.deepEqual(new Set(fetched), new Set([ACADEMIC_URL, STUDENT_AFFAIRS_URL]));
+  assert.deepEqual(new Set(fetched), new Set([ACADEMIC_URL, TECH_ACADEMIC_URL, STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL]));
   html = academicHTML.replace("Aug 17", "Aug 18");
   await worker.scheduled(trigger, env);
-  assert.equal(fetched.length, 4); // Scheduled refresh bypasses even a fresh cache.
+  assert.equal(fetched.length, 10); // Scheduled refresh bypasses even a fresh cache, including empty Career feeds.
   const refreshed = await calendarData(env, storage, { now: new Date(trigger.scheduledTime) });
   const exported = new ICAL.Component(ICAL.parse(toICS(refreshed))).getAllSubcomponents("vevent");
   const enrollment = exported.find(c => /Fall.*Add\/Drop/.test(c.getFirstPropertyValue("summary")));
@@ -187,13 +257,14 @@ test("simultaneous calendar requests share one refresh through the processor", a
   t.mock.method(globalThis, "fetch", async url => {
     calls++;
     if (url === ACADEMIC_URL) return new Response(academicHTML);
-    if (url === STUDENT_AFFAIRS_URL) return new Response(ics());
+    if (url === TECH_ACADEMIC_URL) return new Response(techAcademicHTML);
+    if ([STUDENT_AFFAIRS_URL, INCLUSION_URL, CAREERS_URL].includes(url)) return new Response(ics());
     throw new Error(`Unexpected source ${url}`);
   });
   const processor = new CalendarProcessor({}, { CALENDAR_CACHE: memoryStorage() });
   const responses = await Promise.all(["/api/calendar", "/api/calendar.ics"].map(path => processor.fetch(new Request(`https://calendar.example${path}`))));
   assert.deepEqual(responses.map(response => response.status), [200, 200]);
-  assert.equal(calls, 2);
+  assert.equal(calls, 5);
 });
 
 test("source outages preserve public cache but expire club approvals after one hour", async () => {

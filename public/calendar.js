@@ -15,7 +15,7 @@ export function lastDay(event) {
   return event.allDay ? new Date(Date.parse(event.end) - DAY).toISOString().slice(0, 10) : dateKey(new Date(Date.parse(event.end) - 1).toISOString());
 }
 export const eventsOnDay = (events, day) => events.filter(event => dateKey(event.start) <= day && lastDay(event) >= day);
-export const eventFilter = event => event.source === "clubs" && event.category === "CTSG events" ? "ctsg" : event.source;
+export const eventFilter = event => event.source === "tech-academic" ? "academic" : event.source === "clubs" && event.category === "CTSG events" ? "ctsg" : event.source;
 const node = (tag, text, className) => {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -82,7 +82,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
     if (event.location) detail.append(node("p", event.location));
     if (event.description) detail.append(node("p", event.description, "calendar-description"));
     if (/^https?:\/\//i.test(event.url || "")) {
-      const link = node("a", event.source === "academic" ? "View official academic calendar" : "Event details and registration");
+      const link = node("a", eventFilter(event) === "academic" ? "View official academic calendar" : "Event details and registration");
       link.href = event.url; link.target = "_blank"; link.rel = "noopener noreferrer";
       detail.append(link);
     }
@@ -90,7 +90,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
   }
 
   function eventButton(event) {
-    const button = node("button", undefined, `calendar-event calendar-event--${event.source}`);
+    const button = node("button", undefined, `calendar-event calendar-event--${event.source === "tech-academic" ? "academic" : event.source}`);
     button.type = "button";
     const time = event.allDay ? "All day" : timeFormat.format(new Date(event.start));
     const text = node("span", undefined, "calendar-event-text");
@@ -315,7 +315,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
     render();
   });
   const local = ["localhost", "127.0.0.1"].includes(location.hostname);
-  const endpoint = calendarEndpoint || (local ? "/api/calendar" : "");
+  const endpoint = local ? "/api/calendar" : calendarEndpoint;
   const subscriptionMenu = root.querySelector(".calendar-subscription-menu");
   if (subscriptionMenu) {
     const feed = endpoint ? new URL(endpoint.replace(/\/$/, "") + ".ics", location.href) : new URL("./data/calendar.ics", import.meta.url);

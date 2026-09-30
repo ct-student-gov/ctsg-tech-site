@@ -1,9 +1,10 @@
-import { loadSource, windowFor } from "./sources.mjs";
+import { DEPARTMENT_SOURCES, TECH_ACADEMIC_URL, departmentEventEligible, loadSource, windowFor } from "./sources.mjs";
 
 export const SOURCES = [
-  { id: "student-affairs", name: "Student Affairs", url: "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics" },
+  ...DEPARTMENT_SOURCES,
   { id: "clubs", name: "Club and CTSG events", url: "" },
   { id: "academic", name: "Cornell academic dates", url: "https://registrar.cornell.edu/calendars-exams/academic-calendar" },
+  { id: "tech-academic", name: "Cornell Tech academic dates", url: TECH_ACADEMIC_URL },
 ];
 const TTL = 15 * 60 * 1000;
 
@@ -24,11 +25,13 @@ export async function calendarData(env = {}, storage, { now = new Date(), fetche
       // Avoid continuing to publish club events indefinitely after approval
       // access is lost. Other public sources retain their last known data.
       const usable = saved && (source.id !== "clubs" || +now - Date.parse(saved.updatedAt) < 60 * 60 * 1000);
-      return { ...source, ...(usable ? saved : { events: [], updatedAt: null }), state: saved ? "stale" : "unavailable" };
+      return { ...source, ...(usable ? saved : { events: [], updatedAt: null }), state: saved ? "stale" : "unavailable", error: error.message };
     }
   }));
   const window = windowFor(now);
-  const events = results.flatMap(source => source.events).filter(event => Date.parse(event.end) >= Date.parse(window.start) && Date.parse(event.start) < Date.parse(window.end));
+  // Apply the audience rule to cached data too, including outage fallbacks.
+  const events = results.flatMap(source => source.events.filter(event => !DEPARTMENT_SOURCES.some(department => department.id === source.id) || departmentEventEligible(event)))
+    .filter(event => Date.parse(event.end) >= Date.parse(window.start) && Date.parse(event.start) < Date.parse(window.end));
   return { generatedAt: now.toISOString(), window, timeZone: "America/New_York", sources: results.map(({ events, ...source }) => source), events: events.sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title)) };
 }
 

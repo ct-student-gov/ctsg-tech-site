@@ -1,6 +1,6 @@
 # Repository-backed website data
 
-Initial live imports are verified: 91 published profiles and 87 calendar events, with all 11 connected calendar sources current and no coverage warnings. The read-only People connection and GitHub Actions secret `NOTION_PEOPLE_TOKEN` are configured. Credential migration, workflow activation, webhook subscriptions, Worker cutover and website publication must be verified during activation. Existing production services keep their previous behavior until cutover is completed.
+Activated on September 30, 2026: all four required GitHub Actions secrets are configured, the daily workflow is on main, and GitHub Pages serves 91 profiles and 87 calendar events. Two full cloud imports succeeded. The existing calendar JSON/ICS endpoint now serves these saved files, and its old polling cron is removed. Both Notion notification subscriptions are verified and active; the daily schedule works independently.
 
 Notion is the editing source. The repository is persistent storage. The website serves saved public data and local WebP photos; visitors never trigger a Notion import. The existing calendar subscription URL remains available through a small compatibility Worker that fetches the published static ICS. Its old storage bindings remain untouched during migration, but the new handler does not use them and its six-hour cron is removed.
 
@@ -19,6 +19,8 @@ Any import or build error leaves the deployed site intact. A Notion HTTP 429 sto
 Published snapshots keep their timestamp when their contents have not changed. The scheduled sync workflow, rather than snapshot age, establishes whether the latest check succeeded. The optional calendar health workflow checks public structure/coverage; it cannot prove that every source event exists or that a sync recently ran. GitHub may disable public-repository schedules after 60 days without repository activity, so verify the schedule at officer handoff, particularly during long quiet periods.
 
 ## Activation order
+
+These steps describe recovery or setup in another deployment. The repository secrets, initial import, Pages publication and calendar Worker cutover below are complete for the current deployment.
 
 1. Configure the remaining repository Actions secrets `NOTION_TOKEN`, `CAMPUSGROUPS_STUDENT_AFFAIRS_URL`, and `CAMPUSGROUPS_CAREER_MANAGEMENT_URL`. The optional `CAMPUSGROUPS_INCLUSION_BELONGING_URL` is supported. Reuse the existing approved read-only Calendar connection and existing student export URLs. The read-only People connection scoped to Team Directory and its `NOTION_PEOPLE_TOKEN` secret are already configured. Credentials stay in secrets, never in committed files. Their presence is checked so a missed credential cannot silently reduce the published data.
 2. Ensure Actions may write repository contents and the normal validated Pages workflow may publish. A branch rule requiring reviews for every bot commit needs an explicitly approved exception or a different update branch; no branch protection is changed here.

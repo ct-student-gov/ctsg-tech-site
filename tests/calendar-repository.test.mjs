@@ -260,6 +260,7 @@ test("static calendar endpoint serves repo files without Notion, KV, or Durable 
   });
   t.mock.method(globalThis, "fetch", async (url, options) => {
     requests.push({ url: url.href, options });
+    assert.equal(options.redirect, "manual", "Workers support manual redirects; unexpected upstream redirects must fail closed");
     return new Response(options.method === "HEAD" ? null : "saved snapshot");
   });
   for (const [path, file] of [["/api/calendar", "calendar.json"], ["/api/calendar.ics", "calendar.ics"]]) {

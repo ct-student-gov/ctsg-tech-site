@@ -16,11 +16,14 @@ export default {
     } catch { return new Response("Snapshot hosting is not configured", { status: 503, headers }); }
     try {
       const upstream = await fetch(target, {
-        method: request.method, signal: AbortSignal.timeout(15000), redirect: "error",
+        method: request.method, signal: AbortSignal.timeout(15000), redirect: "manual",
         cf: { cacheTtl: 300, cacheEverything: true },
       });
-      if (!upstream.ok) throw new Error("Snapshot unavailable");
+      if (!upstream.ok) throw new Error(`Snapshot HTTP ${upstream.status}`);
       return new Response(upstream.body, { headers: { ...headers, "Content-Type": path.endsWith(".ics") ? "text/calendar; charset=utf-8" : "application/json; charset=utf-8", "Cache-Control": "public, max-age=300" } });
-    } catch { return new Response("Calendar snapshot unavailable", { status: 503, headers }); }
+    } catch (error) {
+      console.error("Calendar snapshot fetch failed", error instanceof Error ? error.message : "Unknown error");
+      return new Response("Calendar snapshot unavailable", { status: 503, headers });
+    }
   },
 };

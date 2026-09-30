@@ -32,7 +32,7 @@ test("signed notifications dispatch only public routing hints to the fixed repos
   for (const [index, [url, options]] of calls.entries()) {
     assert.equal(url, "https://api.github.com/repos/ct-student-gov/ctsg-tech-site/dispatches");
     assert.equal(options.headers.Authorization, `Bearer ${env.GITHUB_DISPATCH_TOKEN}`);
-    assert.equal(options.redirect, "error");
+    assert.equal(options.redirect, "manual");
     assert.deepEqual(JSON.parse(options.body), {
       event_type: "notion-updated",
       client_payload: {
@@ -99,7 +99,7 @@ test("concurrent delivery retries share one dispatch and successful duplicates a
 });
 
 test("GitHub rejection or network failures stay retryable and leak no response details", async () => {
-  for (const outcome of [403, 429, 500, 200, "network"]) {
+  for (const outcome of [302, 403, 429, 500, 200, "network"]) {
     let calls = 0;
     const handler = createWebhookHandler({ fetcher: async () => {
       calls++;

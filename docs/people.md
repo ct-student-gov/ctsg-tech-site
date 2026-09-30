@@ -1,6 +1,6 @@
 # People from Notion
 
-The local snapshot contains all 91 published profiles imported through the Notion API on September 30, including Swar and the generic representative roles. The two unpublished TBD cards are excluded. All existing biographies matched the source; Swar’s supplied biography and photo are included. The read-only **CTSG People** connection is configured for Team Directory, and its token is saved as the GitHub Actions secret `NOTION_PEOPLE_TOKEN`. **Unattended sync and production activation remain pending**: the workflow, webhooks, Worker cutover and website publication still need activation. See [repository sync](repository-sync.md).
+The published snapshot contains all 91 published profiles imported through the Notion API on September 30, including Swar and the generic representative roles. The two unpublished TBD cards are excluded. All existing biographies matched the source; Swar’s supplied biography and photo are included. The read-only **CTSG People** connection is configured for Team Directory, and its token is saved as the GitHub Actions secret `NOTION_PEOPLE_TOKEN`. GitHub Pages publication and the daily sync workflow are active. See [repository sync](repository-sync.md) for deployment and notification status.
 
 The initial local export used the existing Notion connector. The first API import subsequently fetched all 91 biographies and photos and populated verified photo identities. An immediate unchanged repeat used two metadata requests, fetched no biographies or photos, and changed no files.
 

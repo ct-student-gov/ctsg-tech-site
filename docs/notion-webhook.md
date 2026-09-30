@@ -4,6 +4,10 @@
 
 The daily GitHub schedule runs independently of this relay. It reconciles missed content changes; notification payloads are hints, not a complete list of changes. Historical deletion recovery has the [archive limitation documented here](repository-sync.md). Notion events can be delayed, aggregated or out of order. See [Notion event delivery](https://developers.notion.com/reference/webhooks-events-delivery).
 
+Both subscriptions were activated on September 30, 2026 at `https://ctsg-notion-sync.mh2682.workers.dev/notion/calendar` and `/notion/people`. The GitHub credential is restricted to `ct-student-gov/ctsg-tech-site`, with Contents read/write and required Metadata read access. It expires **September 30, 2027**; replace `GITHUB_DISPATCH_TOKEN` before then. Daily GitHub syncs do not depend on that token.
+
+Live notification checks passed: [Calendar](https://github.com/ct-student-gov/ctsg-tech-site/actions/runs/36781176635) retained all 87 events and [People](https://github.com/ct-student-gov/ctsg-tech-site/actions/runs/36781210293) retained all 91 profiles with zero portrait downloads. Both skipped the site build because public content was unchanged. Temporary verification forwarding, callback secrets and the tunnel were removed; both relay routes reject unsigned requests.
+
 ## Routes and secrets
 
 | Route | Cloudflare secret containing that subscription's verification token |
@@ -19,19 +23,20 @@ These are Worker secrets, never Wrangler `vars`, committed files, chat messages,
 
 The workflow must be on the repository's default branch before GitHub can dispatch it. Deploy the relay using `sync-webhook/wrangler.jsonc`, then configure one subscription in each read-only Notion connection. Deployment and subscription setup are separate from merely adding these files to Git.
 
-Notion initially delivers an **unsigned** `verification_token`. The public relay deliberately rejects unsigned requests. Capture that first token privately during setup:
+Notion delivers a `verification_token` during setup. It may include a signature and extra metadata. The production relay deliberately rejects verification payloads. Capture the token privately at the **final webhook URL**: changing an unverified URL regenerated the token during live activation, invalidating the one already captured.
 
 1. Start a temporary local HTTP receiver behind an HTTPS tunnel under your control. Use an unpredictable path, accept only the setup POST at that path, write only its `verification_token` into a local file with mode `0600` in a private directory, and return an empty success response. Do not use a public webhook inspection service or log the request body.
-2. In the connection's Webhooks tab, create an **unverified** subscription pointing to that temporary receiver. Choose the page events listed below. Notion sends the token once; its verification dialog also has a resend action.
-3. Import the captured file into the appropriate Worker secret using standard input, for example:
+2. With explicit approval for the temporary setup, deploy a short-lived wrapper on the relay's final URLs. For verification requests only, it forwards just `{verification_token}` to the private receiver using temporary callback secrets. It must not log request bodies or expose captured tokens. All ordinary requests continue through the authenticated relay. Remove this wrapper and the temporary callback secrets immediately after verification.
+3. In the connection's Webhooks tab, create an **unverified** subscription pointing to the final `/notion/calendar` or `/notion/people` route. Choose the page events listed below. Notion sends the token once; its verification dialog also has a resend action. Keep the URL unchanged throughout verification.
+4. Import the newly captured file into the appropriate Worker secret using standard input, for example:
 
    ```sh
    npx wrangler secret put NOTION_CALENDAR_WEBHOOK_SECRET --config sync-webhook/wrangler.jsonc < /private/path/calendar-verification-token
    ```
 
-4. While the subscription is still **unverified**, change its URL to the deployed Worker's `/notion/calendar` or `/notion/people` route. Copy the captured token directly into Notion's verification form and verify. A webhook URL can be edited before verification; after verification, changing it requires a new subscription. This setup sequence follows [Notion's webhook verification procedure](https://developers.notion.com/reference/webhooks).
-5. Stop the temporary receiver/tunnel and remove its token file after the Worker secret and Notion subscription are configured. Repeat for the other connection, using a separate token.
-6. Edit a published record in each database, confirm the corresponding GitHub sync run and updated file, then confirm that an unchanged daily run does not rebuild the site. Test unpublishing a record as well.
+5. Copy the captured token directly into Notion's verification form and verify. After verification, changing the URL requires a new subscription. See [Notion's webhook verification procedure](https://developers.notion.com/reference/webhooks).
+6. Restore the normal relay, delete temporary callback secrets, stop the receiver/tunnel and remove local token files. Repeat for the other connection, using a separate token.
+7. Use temporary unpublished records to verify both connections start successful GitHub sync runs, then remove those records. Confirm an unchanged reconciliation skips the site build. Publication filtering and withdrawal are also covered by importer tests.
 
 Subscribe to `page.created`, `page.properties_updated`, `page.content_updated`, `page.moved`, `page.deleted`, and `page.undeleted`. Body edits are needed for People biographies. The relay also accepts `data_source.schema_updated`, `data_source.moved`, `data_source.deleted`, `data_source.undeleted`, `database.moved`, `database.deleted`, and `database.undeleted` if selected. Comments and lock/unlock activity are ignored. Avoid also subscribing to data-source content notifications: the page events already cover those changes.
 

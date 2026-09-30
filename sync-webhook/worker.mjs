@@ -129,7 +129,7 @@ export function createWebhookHandler({ fetcher = fetch, now = Date.now } = {}) {
               },
               body: JSON.stringify(payload),
               signal: AbortSignal.timeout(8000),
-              redirect: "error",
+              redirect: "manual",
             });
             // A dispatch is only accepted when GitHub returns its documented 204.
             // Never expose GitHub's response body or credentials to the caller.

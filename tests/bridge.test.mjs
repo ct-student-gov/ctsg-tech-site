@@ -43,8 +43,19 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
     },
     replaceState(_state, _unused, url) { entries[index] = new URL(url, location.href); },
   };
+  const makeStyle = () => {
+    const values = new Map([["margin", "8px"], ["overflow", "auto"]]);
+    const priorities = new Map();
+    return {
+      setProperty(name, value, priority = "") { values.set(name, value); priorities.set(name, priority); },
+      getPropertyValue: name => values.get(name) || "",
+      getPropertyPriority: name => priorities.get(name) || "",
+    };
+  };
   const document = {
     title: "WordPress page title",
+    documentElement: { style: makeStyle() },
+    body: { style: makeStyle() },
     getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame,
     createElement: () => makeIcon(),
     querySelectorAll: () => icons.filter(icon => icon.rel.split(" ").includes("icon")),
@@ -84,6 +95,21 @@ test("uses the iframe site's local favicon in the parent tab and preserves touch
   assert.equal(h.icons.length, 2);
   assert.equal(h.icons.find(icon => icon.rel === "apple-touch-icon").href, "https://ctsg.tech.cornell.edu/touch-icon.png");
   assert.equal(h.document.title, "WordPress page title");
+  assert.equal(h.location.hash, "#/members");
+  assert.equal(h.entries.length, 1);
+});
+
+test("locks the outer page's scrolling through inline styles without style tags", () => {
+  const h = harness("#/members");
+  for (const root of [h.document.documentElement, h.document.body]) {
+    assert.equal(root.style.getPropertyValue("margin"), "0");
+    assert.equal(root.style.getPropertyPriority("margin"), "important");
+    assert.equal(root.style.getPropertyValue("height"), "100%");
+    assert.equal(root.style.getPropertyValue("overflow"), "hidden");
+    assert.equal(root.style.getPropertyPriority("overflow"), "important");
+    assert.equal(root.style.getPropertyValue("overscroll-behavior-y"), "none");
+    assert.equal(root.style.getPropertyValue("background-color"), "");
+  }
   assert.equal(h.location.hash, "#/members");
   assert.equal(h.entries.length, 1);
 });
@@ -189,4 +215,6 @@ test("diagnostics identify a missing iframe ID without changing the URL", () => 
   assert.equal(h.messages.length, 0);
   assert.equal(h.icons.length, 3);
   assert.equal(h.icons[0].href, "https://ctsg.tech.cornell.edu/old-icon.png");
+  assert.equal(h.document.documentElement.style.getPropertyValue("overflow"), "auto");
+  assert.equal(h.document.body.style.getPropertyValue("overflow"), "auto");
 });

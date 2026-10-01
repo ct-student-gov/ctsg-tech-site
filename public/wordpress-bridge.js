@@ -11,6 +11,13 @@
     report('Bridge script running, but no iframe with id="ctsg-site" was found.');
     return;
   }
+  // Keep the fullscreen embed's WordPress page from scrolling behind the iframe.
+  for (const root of [document.documentElement, document.body]) {
+    root.style.setProperty("margin", "0", "important");
+    root.style.setProperty("height", "100%");
+    root.style.setProperty("overflow", "hidden", "important");
+    root.style.setProperty("overscroll-behavior-y", "none");
+  }
   const childOrigin = new URL(frame.src, location.href).origin;
   const favicon = document.createElement("link");
   favicon.rel = "icon";

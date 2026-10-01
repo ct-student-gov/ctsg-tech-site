@@ -252,7 +252,7 @@ export const peopleData = {
           "firstName": "Swar",
           "lastName": "Sahgal",
           "program": "Master of Science in Design Technology",
-          "graduationYear": 2028,
+          "graduationYear": 2027,
           "role": "M.S. Design Tech Representative",
           "section": "representatives",
           "biography": [

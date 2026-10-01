@@ -2263,6 +2263,33 @@
         "location": "",
         "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
       }
+    },
+    "calendar-archive-v1:tech-events:tech-events%3Afield-conditions-incubating-media-arts-in-nyc": {
+      "source": "tech-events",
+      "archivedAt": "2026-10-01T02:55:41.925Z",
+      "event": {
+        "id": "tech-events:field-conditions-incubating-media-arts-in-nyc",
+        "source": "tech-events",
+        "category": "Cornell Tech events",
+        "title": "Field Conditions: Incubating Media Arts in NYC",
+        "start": "2026-09-30T23:00:00.000Z",
+        "end": "2026-10-01T00:30:00.000Z",
+        "allDay": false,
+        "description": "New York’s art / design / technology field is held together by a coalition between practices and cultural institutions that shape what gets made, who gets supported, and what survives. This panel brings together NEW INC at the New Museum, Rhizome, and Onassis ONX, New York City institutions that have an ongoing commitment to Art, Design and Technology. The conversation will look at how each organization identifies and supports practitioners, where funding and institutional models are heading, and what is actually emerging in practice right now. For anyone working across computational design, interaction, immersive media, and creative technology, it offers a direct view of the infrastructure behind the work and of what it takes to build a practice in this city.",
+        "location": "Gensler Family AAP NYC Center, Tata Innovation Center, Cornell Tech 11 East Loop Road, 4th Floor New York, NY 10044",
+        "url": "https://tech.cornell.edu/events/field-conditions-incubating-media-arts-in-nyc/",
+        "audienceTags": [
+          "Alumni",
+          "Faculty",
+          "International Students",
+          "Master's Students",
+          "PhDs",
+          "Postdocs",
+          "Prospective Students",
+          "Public",
+          "Roosevelt Island Community"
+        ]
+      }
     }
   },
   "notion": {

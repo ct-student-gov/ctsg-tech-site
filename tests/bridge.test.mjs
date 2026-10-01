@@ -8,12 +8,13 @@ const channel = "ctsg-navigation-v1";
 
 // Execute the production bridge with controlled browser events and history.
 // Actual iframe rendering and browser joint history still need browser checks.
-function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
+function harness(hash = "#/clubs/example", { missingFrame = false, darkMode = false } = {}) {
   const listeners = new Map();
   const messages = [];
   const status = { textContent: "Parent script has not run." };
   const icons = [];
   const makeIcon = (attributes = {}) => ({
+    tagName: "LINK",
     ...attributes,
     remove() { icons.splice(icons.indexOf(this), 1); },
   });
@@ -22,11 +23,24 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
     makeIcon({ rel: "shortcut icon", href: "https://ctsg.tech.cornell.edu/old-icon.ico" }),
     makeIcon({ rel: "apple-touch-icon", href: "https://ctsg.tech.cornell.edu/touch-icon.png" }),
   );
+  const themeColors = [];
+  const makeMeta = (attributes = {}) => ({
+    tagName: "META",
+    ...attributes,
+    remove() { themeColors.splice(themeColors.indexOf(this), 1); },
+  });
+  themeColors.push(makeMeta({ name: "theme-color", content: "#fff" }));
+  const preferenceListeners = new Map();
+  const colorPreference = {
+    matches: darkMode,
+    addEventListener: (name, fn) => preferenceListeners.set(name, fn),
+  };
   const entries = [new URL(`https://ctsg.tech.cornell.edu/${hash}`)];
   let index = 0;
   const child = { postMessage: (data, origin) => messages.push({ data, origin }) };
   const frame = {
     src: "https://site.example/ctsg/",
+    style: { backgroundColor: "white" },
     contentWindow: child,
     addEventListener: (name, fn) => listeners.set(`frame:${name}`, fn),
   };
@@ -45,17 +59,27 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
   };
   const document = {
     title: "WordPress page title",
+    documentElement: { style: {} },
+    body: { style: {} },
     getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame,
-    createElement: () => makeIcon(),
-    querySelectorAll: () => icons.filter(icon => icon.rel.split(" ").includes("icon")),
-    head: { append: icon => icons.push(icon) },
+    createElement: (tag) => tag === "meta" ? makeMeta() : makeIcon(),
+    querySelectorAll: (selector) => selector === 'meta[name="theme-color"]'
+      ? [...themeColors] : icons.filter(icon => icon.rel.split(" ").includes("icon")),
+    head: { append: element => (element.tagName === "META" ? themeColors : icons).push(element) },
   };
   runInNewContext(source, {
     URL, location, history, document,
-    window: { addEventListener: (name, fn) => listeners.set(name, fn) },
+    window: {
+      addEventListener: (name, fn) => listeners.set(name, fn),
+      matchMedia: () => colorPreference,
+    },
   });
   return {
-    entries, location, messages, status, document, icons,
+    entries, location, messages, status, document, icons, frame, themeColors,
+    setDarkMode(dark) {
+      colorPreference.matches = dark;
+      preferenceListeners.get("change")();
+    },
     send(data, overrides = {}) {
       listeners.get("message")({ source: child, origin: "https://site.example", data: { channel, ...data }, ...overrides });
     },
@@ -86,6 +110,27 @@ test("uses the iframe site's local favicon in the parent tab and preserves touch
   assert.equal(h.document.title, "WordPress page title");
   assert.equal(h.location.hash, "#/members");
   assert.equal(h.entries.length, 1);
+});
+
+test("parent edge backgrounds and browser theme follow light and dark appearance", () => {
+  for (const darkMode of [false, true]) {
+    const h = harness("#/members", { darkMode });
+    const checkAppearance = (dark) => {
+      for (const element of [h.document.documentElement, h.document.body, h.frame]) {
+        assert.equal(element.style.backgroundColor, dark ? "#222" : "#fff");
+        assert.equal(element.style.colorScheme, dark ? "dark" : "light");
+      }
+      assert.equal(h.themeColors.length, 1);
+      assert.equal(h.themeColors[0].content, dark ? "#222" : "#fff");
+      assert.equal(h.location.hash, "#/members");
+      assert.equal(h.entries.length, 1);
+    };
+    checkAppearance(darkMode);
+    h.setDarkMode(!darkMode);
+    checkAppearance(!darkMode);
+    h.setDarkMode(darkMode);
+    checkAppearance(darkMode);
+  }
 });
 
 test("clicks add one parent entry; repeated clicks and history restoration add none", () => {
@@ -189,4 +234,6 @@ test("diagnostics identify a missing iframe ID without changing the URL", () => 
   assert.equal(h.messages.length, 0);
   assert.equal(h.icons.length, 3);
   assert.equal(h.icons[0].href, "https://ctsg.tech.cornell.edu/old-icon.png");
+  assert.equal(h.themeColors[0].content, "#fff");
+  assert.equal(h.document.documentElement.style.backgroundColor, undefined);
 });

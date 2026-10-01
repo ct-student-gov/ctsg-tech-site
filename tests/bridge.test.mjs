@@ -12,6 +12,16 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
   const listeners = new Map();
   const messages = [];
   const status = { textContent: "Parent script has not run." };
+  const icons = [];
+  const makeIcon = (attributes = {}) => ({
+    ...attributes,
+    remove() { icons.splice(icons.indexOf(this), 1); },
+  });
+  icons.push(
+    makeIcon({ rel: "icon", href: "https://ctsg.tech.cornell.edu/old-icon.png" }),
+    makeIcon({ rel: "shortcut icon", href: "https://ctsg.tech.cornell.edu/old-icon.ico" }),
+    makeIcon({ rel: "apple-touch-icon", href: "https://ctsg.tech.cornell.edu/touch-icon.png" }),
+  );
   const entries = [new URL(`https://ctsg.tech.cornell.edu/${hash}`)];
   let index = 0;
   const child = { postMessage: (data, origin) => messages.push({ data, origin }) };
@@ -36,13 +46,16 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
   const document = {
     title: "WordPress page title",
     getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame,
+    createElement: () => makeIcon(),
+    querySelectorAll: () => icons.filter(icon => icon.rel.split(" ").includes("icon")),
+    head: { append: icon => icons.push(icon) },
   };
   runInNewContext(source, {
     URL, location, history, document,
     window: { addEventListener: (name, fn) => listeners.set(name, fn) },
   });
   return {
-    entries, location, messages, status, document,
+    entries, location, messages, status, document, icons,
     send(data, overrides = {}) {
       listeners.get("message")({ source: child, origin: "https://site.example", data: { channel, ...data }, ...overrides });
     },
@@ -59,6 +72,19 @@ test("initial parent deep link wins, including after an iframe reload", () => {
   h.send({ type: "ready" });
   h.fire("frame:load");
   assert.equal(h.messages.at(-1).data.route, "/clubs/example");
+  assert.equal(h.entries.length, 1);
+});
+
+test("uses the iframe site's local favicon in the parent tab and preserves touch icons", () => {
+  const h = harness("#/members");
+  const favicon = h.icons.find(icon => icon.rel === "icon");
+  assert.equal(favicon.href, "https://site.example/ctsg/images/favicon.webp");
+  assert.equal(favicon.type, "image/webp");
+  assert.equal(favicon.sizes, "96x96");
+  assert.equal(h.icons.length, 2);
+  assert.equal(h.icons.find(icon => icon.rel === "apple-touch-icon").href, "https://ctsg.tech.cornell.edu/touch-icon.png");
+  assert.equal(h.document.title, "WordPress page title");
+  assert.equal(h.location.hash, "#/members");
   assert.equal(h.entries.length, 1);
 });
 
@@ -161,4 +187,6 @@ test("diagnostics identify a missing iframe ID without changing the URL", () => 
   assert.match(h.status.textContent, /no iframe with id="ctsg-site"/);
   assert.equal(h.location.hash, "");
   assert.equal(h.messages.length, 0);
+  assert.equal(h.icons.length, 3);
+  assert.equal(h.icons[0].href, "https://ctsg.tech.cornell.edu/old-icon.png");
 });

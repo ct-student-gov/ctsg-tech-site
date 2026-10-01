@@ -12,6 +12,13 @@
     return;
   }
   const childOrigin = new URL(frame.src, location.href).origin;
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/webp";
+  favicon.sizes = "96x96";
+  favicon.href = new URL("./images/favicon.webp", frame.src).href;
+  document.querySelectorAll('link[rel~="icon"]').forEach(icon => icon.remove());
+  document.head.append(favicon);
   const channel = "ctsg-navigation-v1";
   const validRoute = (route) => typeof route === "string" && route.length <= 200
     && /^\/(?:[a-z0-9-]+(?:\/[a-z0-9-]+)*)?$/.test(route);

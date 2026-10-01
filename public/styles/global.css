@@ -14,6 +14,9 @@
 }
 
 * { box-sizing: border-box; }
+/* Keep iframe edge gestures from bouncing into the WordPress page behind it. */
+html.site-embedded,
+html.site-embedded body { overscroll-behavior-y: none; }
 body {
   display: flex;
   flex-direction: column;

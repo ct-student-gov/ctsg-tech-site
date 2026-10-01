@@ -15,6 +15,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     "http://127.0.0.1:8080",
   ]);
   const embedded = window.parent !== window;
+  document.documentElement.classList.toggle("site-embedded", embedded);
   let parentOrigin = null;
   let currentRoute = null;
   let disposeCalendar = () => {};

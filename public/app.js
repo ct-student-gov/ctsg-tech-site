@@ -26,6 +26,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
   let parentOrigin = null;
   let currentRoute = null;
   let disposeCalendar = () => {};
+  let disposePeople = () => {};
   const content = document.getElementById("content");
   const header = document.querySelector(".site-header");
   const headerSpace = document.querySelector(".site-header-space");
@@ -276,6 +277,23 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     return index < 0 ? memberRoleOrder.length : index;
   }
 
+  function fitPeopleNames() {
+    for (const title of content.querySelectorAll(".members-gallery h4")) {
+      title.style.removeProperty("font-size");
+      const style = getComputedStyle(title);
+      const available = title.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+      if (available <= 0) continue;
+      // Measure the rendered lines after normal wrapping has used every break.
+      const range = document.createRange();
+      range.selectNodeContents(title.querySelector("button") || title);
+      const widestLine = Math.max(0, ...Array.from(range.getClientRects(), rect => rect.width));
+      if (widestLine > available) {
+        const size = parseFloat(style.fontSize) * available / widestLine;
+        title.style.fontSize = `${Math.floor(size * 100) / 100}px`;
+      }
+    }
+  }
+
   function renderPeople() {
     const fragment = document.getElementById("members-template").content.cloneNode(true);
     if (peopleData.banner.src) {
@@ -333,6 +351,18 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       years.append(section);
     }
     content.replaceChildren(fragment);
+    const directory = content.querySelector(".members-directory");
+    let previousWidth = 0;
+    const observer = new ResizeObserver(([entry]) => {
+      if (entry.contentRect.width === previousWidth) return;
+      previousWidth = entry.contentRect.width;
+      fitPeopleNames();
+    });
+    observer.observe(directory);
+    document.fonts.ready.then(() => {
+      if (directory.isConnected) fitPeopleNames();
+    });
+    disposePeople = () => observer.disconnect();
   }
 
   function enableProjectToggle() {
@@ -443,6 +473,8 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     content.classList.toggle("site-content--events", pageRoute === "/events");
     disposeCalendar();
     disposeCalendar = () => {};
+    disposePeople();
+    disposePeople = () => {};
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
       renderBlog(content.querySelector("#home-project-list"), blogData);

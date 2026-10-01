@@ -15,7 +15,7 @@
 .home-intro h1 { line-height: 1.04; }
 .home-intro p { margin: 0 0 3px; max-width: 330px; font-size: 18px; }
 
-/* Match the event image ratio so the adjacent portraits form a square. */
+/* Keep the event and representatives images aligned. */
 .home-highlights { display: grid; grid-template-columns: 1.65fr 1fr; column-gap: var(--layout-gap); row-gap: 14px; container-type: inline-size; }
 .home-highlights .feature-title { font-size: min(28px, 2.6cqi); }
 .home-event, .home-people { display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; min-width: 0; }
@@ -26,9 +26,8 @@
 .home-people .feature-title { white-space: nowrap; }
 .home-event-image { display: block; position: relative; aspect-ratio: 1.65; min-width: 0; }
 .home-event-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.home-portraits { display: grid; grid-template-columns: 1fr 1fr; position: relative; min-height: 0; overflow: hidden; }
-.home-portraits img { position: absolute; top: 0; width: 50%; height: 100%; object-fit: cover; object-position: center; }
-.home-portraits img:last-child { left: 50%; }
+.home-portraits { display: block; position: relative; min-height: 0; overflow: hidden; }
+.home-portraits img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 .home-calendar { margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--color-rule); }
 .home-calendar > .eyebrow { margin-bottom: 14px; }

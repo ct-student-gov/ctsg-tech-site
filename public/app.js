@@ -15,7 +15,6 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     "http://127.0.0.1:8080",
   ]);
   const embedded = window.parent !== window;
-  document.documentElement.classList.toggle("site-embedded", embedded);
   let parentOrigin = null;
   let currentRoute = null;
   let disposeCalendar = () => {};
@@ -458,7 +457,6 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       content.replaceChildren(heading, paragraph);
     }
     document.title = `${title} | CTSG`;
-    if (parentOrigin) post({ type: "title", route: pageRoute, title: document.title });
     for (const link of document.querySelectorAll(".site-nav a")) {
       if (link.hash === `#${pageRoute}`) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");

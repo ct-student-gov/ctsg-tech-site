@@ -11,22 +11,15 @@
     report('Bridge script running, but no iframe with id="ctsg-site" was found.');
     return;
   }
-  const loadingCover = document.getElementById("ctsg-loading");
-  // Keep the fullscreen embed's WordPress page from scrolling behind the iframe.
-  for (const root of [document.documentElement, document.body]) {
-    root.style.setProperty("margin", "0", "important");
-    root.style.setProperty("height", "100%");
-    root.style.setProperty("overflow", "hidden", "important");
-    root.style.setProperty("overscroll-behavior-y", "none");
+  // Remove the cover from earlier WordPress embed snippets.
+  document.getElementById("ctsg-loading")?.remove();
+  const background = "linear-gradient(to bottom, #b31b1b 0%, #b31b1b 50%, #222222 50%, #222222 100%)";
+  for (const element of [document.documentElement, document.body, frame]) {
+    element.style.background = background;
+    element.style.backgroundSize = "100% 100dvh";
+    element.style.backgroundAttachment = "fixed";
   }
   const childOrigin = new URL(frame.src, location.href).origin;
-  const favicon = document.createElement("link");
-  favicon.rel = "icon";
-  favicon.type = "image/webp";
-  favicon.sizes = "96x96";
-  favicon.href = new URL("./images/favicon.webp", frame.src).href;
-  document.querySelectorAll('link[rel~="icon"]').forEach(icon => icon.remove());
-  document.head.append(favicon);
   const channel = "ctsg-navigation-v1";
   const validRoute = (route) => typeof route === "string" && route.length <= 200
     && /^\/(?:[a-z0-9-]+(?:\/[a-z0-9-]+)*)?$/.test(route);
@@ -50,11 +43,6 @@
       if (location.hash !== `#${message.route}`) history.pushState(null, "", `#${message.route}`);
       sendState();
       report(`URL synchronization active: ${message.route}`);
-    } else if (message.type === "title" && validRoute(message.route)
-      && message.route === readRoute() && typeof message.title === "string"
-      && message.title.trim() && message.title.length <= 300) {
-      document.title = message.title;
-      loadingCover?.remove();
     }
   });
 

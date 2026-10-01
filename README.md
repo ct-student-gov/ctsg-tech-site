@@ -13,6 +13,8 @@ Notion is the editing source for People, Blog, and approved calendar events. Git
 
 The daily workflow runs at 00:43 UTC and also accepts manual syncs and signed Notion notifications. Unchanged imports skip publication. Failed imports or builds preserve the deployed site. Keep `data-sync/` state: it contains import caches and calendar history that may no longer exist upstream.
 
+The first daily run of each UTC month also commits `data-sync/keepalive.txt` using the built-in `GITHUB_TOKEN`. This keeps public-repository schedules active during long periods without content changes or human edits. The keepalive runs before imports, needs no additional secret, and does not itself trigger a build or deployment.
+
 ## Run locally
 
 Requires Node.js 20.9 or newer; CI uses Node.js 22.

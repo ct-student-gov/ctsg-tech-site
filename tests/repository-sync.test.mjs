@@ -172,6 +172,37 @@ async function gitFixture(t) {
   return { root, git, run, output };
 }
 
+test("scheduled keepalive commits only its monthly marker, skips repeats, and does not publish", async t => {
+  const { root, git, run, output } = await gitFixture(t);
+  const step = await workflowStep("Keep scheduled workflows active");
+  assert.match(step.block, /if: github\.ref == 'refs\/heads\/main' && github\.event_name == 'schedule'/);
+  const workflow = await readFile(workflowPath, "utf8");
+  assert.ok(workflow.indexOf("name: Keep scheduled workflows active") < workflow.indexOf("name: Require a complete first import"));
+  const month = (await exec("date", ["-u", "+%Y-%m"])).stdout.trim();
+
+  await run(step.script);
+  const first = await git("rev-parse", "HEAD");
+  assert.equal(await git("diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD"), "data-sync/keepalive.txt");
+  assert.equal(await readFile(join(root, "data-sync/keepalive.txt"), "utf8"), `${month}\n`);
+  assert.equal(first, await git("rev-parse", "origin/main"));
+  await run((await workflowStep("Check for changes")).script);
+  assert.equal(await readFile(output, "utf8"), "publish=false\n");
+  await run(step.script);
+  assert.equal(await git("rev-parse", "HEAD"), first);
+
+  // A later month needs a new keepalive even if all public content is unchanged.
+  await writeFile(join(root, "data-sync/keepalive.txt"), "2000-01\n");
+  await git("add", "data-sync/keepalive.txt");
+  await git("commit", "-m", "Fixture from an earlier month");
+  const older = await git("rev-parse", "HEAD");
+  await writeFile(join(root, "public/data/people.js"), "uncommitted public edit\n");
+  await run(step.script);
+  assert.equal(await git("rev-parse", "HEAD^"), older);
+  assert.equal(await git("diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD"), "data-sync/keepalive.txt");
+  assert.equal(await git("show", "HEAD:public/data/people.js"), "original people");
+  assert.equal(await git("rev-parse", "HEAD"), await git("rev-parse", "origin/main"));
+});
+
 test("workflow failure handling commits only the quota marker, leaving partially prepared public files out of Git", async t => {
   const { root, git, run } = await gitFixture(t);
   await writeFile(join(root, "public/data/calendar.json"), "partially refreshed calendar\n");

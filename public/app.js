@@ -1,4 +1,5 @@
 import { peopleData } from "./data/people.js";
+import { trackPageView } from "./analytics.js";
 import { renderBlog } from "./blog.js?v=notion-descriptions-1";
 import { mountCalendar } from "./calendar.js?v=break-colors-1";
 // Blog edits are published independently of app code. Each page load reads
@@ -457,6 +458,8 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       content.replaceChildren(heading, paragraph);
     }
     document.title = `${title} | CTSG`;
+    // Wait for the parent's initial route so embedded deep links count once.
+    if (!embedded || parentOrigin) trackPageView(pageRoute, document.title);
     for (const link of document.querySelectorAll(".site-nav a")) {
       if (link.hash === `#${pageRoute}`) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");

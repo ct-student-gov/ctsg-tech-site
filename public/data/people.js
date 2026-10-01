@@ -1224,7 +1224,7 @@ export const peopleData = {
           "lastName": "Barnoin",
           "program": "Master of Science in Matter Design Computation",
           "graduationYear": 2023,
-          "role": "M.S. Matter Design Computation Representative",
+          "role": "M.S. Design Tech Representative",
           "section": "representatives",
           "biography": [
             "Q. What’s your favorite thing to do? I cannot decide between building things or sailing!",

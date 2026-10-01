@@ -253,7 +253,7 @@ export const peopleData = {
           "lastName": "Sahgal",
           "program": "Master of Science in Design Technology",
           "graduationYear": 2028,
-          "role": "DT Representative",
+          "role": "M.S. Design Tech Representative",
           "section": "representatives",
           "biography": [
             "Hi everyone, I'm Swar, a designer from Singapore. I earned my bachelor's degree in Industrial Design from the School of the Art Institute of Chicago, with a focus in digital fabrication and footwear development. Since graduating, I've spent four years leading product at two startups in Miami: a fashion-tech restoration marketplace and Miami's premier padel and wellness club, while also launching my own independent footwear venture, where I managed a global supply chain spanning Europe and Asia.",

@@ -8,10 +8,11 @@ const channel = "ctsg-navigation-v1";
 
 // Execute the production bridge with controlled browser events and history.
 // Actual iframe rendering and browser joint history still need browser checks.
-function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
+function harness(hash = "#/clubs/example", { missingFrame = false, loadingCover = true } = {}) {
   const listeners = new Map();
   const messages = [];
   const status = { textContent: "Parent script has not run." };
+  const cover = { removed: false, remove() { this.removed = true; } };
   const icons = [];
   const makeIcon = (attributes = {}) => ({
     ...attributes,
@@ -56,7 +57,12 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
     title: "WordPress page title",
     documentElement: { style: makeStyle() },
     body: { style: makeStyle() },
-    getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame,
+    getElementById: (id) => {
+      if (id === "ctsg-bridge-status") return status;
+      if (id === "ctsg-loading") return loadingCover ? cover : null;
+      if (id === "ctsg-site") return missingFrame ? null : frame;
+      return null;
+    },
     createElement: () => makeIcon(),
     querySelectorAll: () => icons.filter(icon => icon.rel.split(" ").includes("icon")),
     head: { append: icon => icons.push(icon) },
@@ -66,7 +72,7 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
     window: { addEventListener: (name, fn) => listeners.set(name, fn) },
   });
   return {
-    entries, location, messages, status, document, icons,
+    entries, location, messages, status, document, icons, cover,
     send(data, overrides = {}) {
       listeners.get("message")({ source: child, origin: "https://site.example", data: { channel, ...data }, ...overrides });
     },
@@ -112,6 +118,29 @@ test("locks the outer page's scrolling through inline styles without style tags"
   }
   assert.equal(h.location.hash, "#/members");
   assert.equal(h.entries.length, 1);
+});
+
+test("keeps the loading cover until the current page has rendered in the trusted iframe", () => {
+  const h = harness("#/members");
+  const title = { type: "title", route: "/members", title: "People | CTSG" };
+  assert.equal(h.cover.removed, false);
+  h.send({ type: "ready" });
+  h.fire("frame:load");
+  h.send(title, { origin: "https://attacker.example" });
+  h.send(title, { source: {} });
+  h.send({ ...title, channel: "other" });
+  h.send({ ...title, route: "/events" });
+  h.send({ ...title, title: "" });
+  assert.equal(h.cover.removed, false);
+  h.send(title);
+  assert.equal(h.cover.removed, true);
+  assert.equal(h.entries.length, 1);
+});
+
+test("title synchronization still works for embeds without a loading cover", () => {
+  const h = harness("#/members", { loadingCover: false });
+  h.send({ type: "title", route: "/members", title: "People | CTSG" });
+  assert.equal(h.document.title, "People | CTSG");
 });
 
 test("clicks add one parent entry; repeated clicks and history restoration add none", () => {

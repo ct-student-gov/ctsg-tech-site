@@ -11,6 +11,7 @@
     report('Bridge script running, but no iframe with id="ctsg-site" was found.');
     return;
   }
+  const loadingCover = document.getElementById("ctsg-loading");
   // Keep the fullscreen embed's WordPress page from scrolling behind the iframe.
   for (const root of [document.documentElement, document.body]) {
     root.style.setProperty("margin", "0", "important");
@@ -53,6 +54,7 @@
       && message.route === readRoute() && typeof message.title === "string"
       && message.title.trim() && message.title.length <= 300) {
       document.title = message.title;
+      loadingCover?.remove();
     }
   });
 

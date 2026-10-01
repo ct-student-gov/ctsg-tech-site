@@ -1,6 +1,6 @@
 # Blog from Notion
 
-The homepage’s Projects section is now labelled Blog. Its existing card layout, article dialogs, photo galleries, and Show more control are retained. The four existing posts and all eight photos are preserved in `public/data/blog.js`.
+The homepage's Blog section reads `public/data/blog.js`. Cards use the same “View post” action and open article dialogs with image galleries; Show more reveals additional posts.
 
 Sunset Sendoff 2026, Big Red Gala 2026, Cornelloween 2025, and Club Fair 2025 were backported into Notion with their original dates, article text, all eight photos, and Publish checked. Their existing photo credits were copied into Notion’s Image Credits field in Images order. The website snapshots are copies; Notion controls image descriptions and credits on each sync.
 
@@ -16,7 +16,7 @@ Edit posts in [Notion Blog](https://app.notion.com/p/3eb0b1bd6791803780fff4a1b68
 
 The importer follows the People system: a read-only Notion connection, a repository snapshot, local images, page-version/body caching, hashed attachment identities, and signed change notifications. An unchanged run queries metadata without rereading articles or downloading photos. Incomplete new posts are skipped; incomplete edits retain the last published post. API, pagination, schema, and image-download failures preserve the previous snapshot. Blog shares the existing rate-limit cooldown.
 
-`npm run blog:sync` uses `NOTION_BLOG_TOKEN`. `NOTION_BLOG_DATA_SOURCE_ID` can override the source for another deployment. `npm run blog:check` runs focused tests. Builds and previews use the snapshot without credentials. Synced photos live under `public/images/blog/notion/<year>/`; SVGs remain vectors and raster photos become WebP, at most 2048 pixels.
+`npm run blog:sync` uses `NOTION_BLOG_TOKEN`. `NOTION_BLOG_DATA_SOURCE_ID` can override the source for another deployment. `npm run blog:check` runs focused tests. Builds and previews use the snapshot without credentials. New photos are saved under `public/images/blog/notion/<year>/`; matching cached People or Blog images reuse the existing local file. SVGs remain vectors and raster photos become WebP, at most 2048 pixels.
 
 ## Activation status
 

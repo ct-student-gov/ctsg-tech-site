@@ -4,6 +4,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { loadPeople, PEOPLE_DATA_SOURCE_ID } from "../people/notion.mjs";
+import { createImageCache, imageDigest, readCachedImage } from "./image-cache.mjs";
 
 const publicRoot = fileURLToPath(new URL("../public/", import.meta.url));
 const dataPrefix = "export const peopleData = ";
@@ -24,19 +25,9 @@ function photoIdentity(photoUrl) {
   return createHash("sha256").update(url.href).digest("hex");
 }
 
-async function cachedPortrait(root, profile, cached, identity) {
+async function cachedPortrait(root, cached, identity) {
   if (cached?.photoIdentity !== identity || typeof cached.portrait !== "string") return null;
-  const pattern = new RegExp(`^\\./images/members/notion/\\d{4}/${profile.id}-([a-f0-9]{16})\\.webp$`);
-  const match = pattern.exec(cached.portrait);
-  if (!match) return null;
-  try {
-    const bytes = await readFile(join(root, cached.portrait));
-    if (createHash("sha256").update(bytes).digest("hex").slice(0, 16) !== match[1]) return null;
-    return cached.portrait;
-  } catch (error) {
-    if (error.code !== "ENOENT") throw error;
-    return null;
-  }
+  return (await readCachedImage(root, cached.portrait))?.path || null;
 }
 
 async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, invalidProfiles = [] }) {
@@ -47,6 +38,8 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
   const oldOrder = new Map(previous.years.flatMap(year => year.members.map((member, index) =>
     [`${year.startYear}:${`${member.firstName} ${member.lastName}`.trim()}`, index])));
   const photos = [];
+  const imageCache = createImageCache(root);
+  let downloadedPhotos = 0;
   const nextProfiles = {};
   const warnings = [];
   for (const invalid of invalidProfiles) {
@@ -64,10 +57,11 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
   }
   for (const profile of profiles) {
     const identity = photoIdentity(profile.photoUrl);
-    let portrait = await cachedPortrait(root, profile, cachedProfiles[profile.id], identity);
+    let portrait = await cachedPortrait(root, cachedProfiles[profile.id], identity);
     if (!portrait) {
       const response = await fetcher(profile.photoUrl, { signal: AbortSignal.timeout(30000) });
       if (!response.ok) throw new Error(`${profile.member.firstName}: portrait download failed (HTTP ${response.status})`);
+      downloadedPhotos++;
       // Do not send Notion credentials to the image host or save its expiring URL.
       const source = Buffer.from(await response.arrayBuffer());
       const metadata = await sharp(source).metadata();
@@ -77,10 +71,13 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
         : await sharp(source).rotate().resize({ width: 2048, height: 2048, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
       // Content-addressed names leave the old snapshot's images valid if a later
       // download fails, and prevent stale browser caches after a portrait edit.
-      const digest = createHash("sha256").update(bytes).digest("hex").slice(0, 16);
-      const path = `images/members/notion/${Math.min(...profile.years)}/${profile.id}-${digest}.webp`;
-      photos.push({ path, bytes });
-      portrait = `./${path}`;
+      portrait = await imageCache.find(bytes);
+      if (!portrait) {
+        const path = `images/members/notion/${Math.min(...profile.years)}/${profile.id}-${imageDigest(bytes).slice(0, 16)}.webp`;
+        photos.push({ path, bytes });
+        portrait = `./${path}`;
+        imageCache.remember(portrait, bytes);
+      }
     }
     nextProfiles[profile.id] = {
       lastEditedTime: profile.lastEditedTime || null,
@@ -101,7 +98,7 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
       members: members.sort((a, b) => (oldOrder.get(`${startYear}:${name(a)}`) ?? Infinity) - (oldOrder.get(`${startYear}:${name(b)}`) ?? Infinity) || name(a).localeCompare(name(b))),
     })),
   };
-  return { data, photos, warnings, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
+  return { data, photos, downloadedPhotos, warnings, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
 }
 
 function snapshotSource(data) {
@@ -158,7 +155,7 @@ export async function syncPeople({
   const prepared = await preparePeople(profiles, { root, fetcher, cachedProfiles, invalidProfiles });
   const state = { version: 1, dataSource, profiles: prepared.profiles };
   const changed = await publishPrepared(prepared, root, statePath, state);
-  return { data: prepared.data, state, profileCount: Object.keys(prepared.profiles).length, downloadedPhotos: prepared.photos.length, changed, warnings: prepared.warnings };
+  return { data: prepared.data, state, profileCount: Object.keys(prepared.profiles).length, downloadedPhotos: prepared.downloadedPhotos, changed, warnings: prepared.warnings };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

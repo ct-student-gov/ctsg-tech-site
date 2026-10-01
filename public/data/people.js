@@ -180,7 +180,7 @@ export const peopleData = {
             "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！💫 My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French 🌍, and I’m passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.🙌",
             "Fun Fact: I can wake up at whatever time I want without an alarm！ I love reading detective novels and guessing who the culprit is before the reveal🤔."
           ],
-          "portrait": "./images/members/notion/2026/3eb0b1bd679181c8b8ecfb299b63be78-543d82cf933af859.webp"
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791811982e1d0826c3ade9d-543d82cf933af859.webp"
         },
         {
           "firstName": "Yun-Chung",
@@ -208,7 +208,7 @@ export const peopleData = {
             "Excited to support our cohort’s vision for integrating technology into clinical and biomedical advancements.",
             "Fun Fact: My sister and I like cooking two things together: Asian hotpot and spaghetti."
           ],
-          "portrait": "./images/members/notion/2026/3e30b1bd679180dd8ed7e509efc83df2-822d300f57099019.webp"
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791818ba066c9242b931a50-822d300f57099019.webp"
         },
         {
           "firstName": "Aidan",
@@ -234,7 +234,7 @@ export const peopleData = {
             "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
             "Fun Fact: I love trying new creative pursuits – this past year I’ve dove into contemporary dance, rug making and pottery!"
           ],
-          "portrait": "./images/members/notion/2026/3ea0b1bd679180a5a277de18877c4ce7-e9d6d6eebb276512.webp"
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791813c8fd6fa5238dc4d58-e9d6d6eebb276512.webp"
         },
         {
           "firstName": "Katie",
@@ -940,7 +940,7 @@ export const peopleData = {
             "In my role as Health Tech Program Representative, I want to create a tight-knit community within the program and foster a safe and inclusive space where students can voice their concerns, opinions, and ideas. I hope to drive positive change and have a meaningful impact not only within my program but the broader health tech field as well!",
             "Fun Fact: I learned how to flyboard in Dubai! My favorite food is Peanut Butter Cap’n Crunch."
           ],
-          "portrait": "./images/members/notion/2023/3eb0b1bd6791816ab3a2c9cb3469e110-6764f330df6ef176.webp"
+          "portrait": "./images/members/notion/2022/3eb0b1bd6791817ab98ed20142286705-6764f330df6ef176.webp"
         },
         {
           "firstName": "Haran",

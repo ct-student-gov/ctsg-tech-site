@@ -81,19 +81,19 @@ export function mountCalendar(root, { rolling = false } = {}) {
     menus.filter(menu => !menu.contains(event.target)).forEach(menu => { menu.open = false; });
   }, { signal: abort.signal });
   const dialog = root.querySelector("dialog");
+  const eventTitle = dialog.querySelector(".calendar-dialog-title");
   const detail = dialog.querySelector(".calendar-dialog-body");
   dialog.querySelector("button").addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
 
   function showEvent(event) {
-    const title = node("h3", event.title);
-    title.id = "calendar-event-title";
+    eventTitle.textContent = event.title;
     const startDay = dateKey(event.start);
     const endDay = lastDay(event);
     let when = fullDate.format(new Date(startDay + "T00:00:00Z"));
     if (endDay !== startDay) when += ` – ${fullDate.format(new Date(endDay + "T00:00:00Z"))}`;
     when += event.allDay ? " · All day" : ` · ${timeFormat.format(new Date(event.start))}${event.end !== event.start ? `–${timeFormat.format(new Date(event.end))}` : ""} (New York time)`;
-    detail.replaceChildren(title, node("p", when), node("p", eventLabel(event)));
+    detail.replaceChildren(node("p", when), node("p", eventLabel(event)));
     if (event.organizer && eventFilter(event) !== "ctsg") detail.append(node("p", event.organizer));
     if (event.audienceTags?.length) detail.append(node("p", `Audience: ${event.audienceTags.join(", ")}`));
     if (event.location) detail.append(node("p", event.location));
@@ -233,21 +233,19 @@ export function mountCalendar(root, { rolling = false } = {}) {
     viewInputs.forEach(input => { input.checked = input.value === currentView; });
     const { start, end } = calendarRange(anchor, currentView);
     const month = new Date(Date.UTC(anchor.getUTCFullYear(), anchor.getUTCMonth(), 1));
-    const isWeek = currentView === "week" || rolling;
+    const isWeek = currentView === "week";
     heading.textContent = isWeek ? rangeFormat.formatRange(start, new Date(+end - DAY)) : monthFormat.format(month);
-    if (!rolling) {
-      root.querySelector(".calendar-sort-menu summary").setAttribute("aria-label", `Calendar view: ${currentView[0].toUpperCase() + currentView.slice(1)}`);
-      const previous = controls.querySelector("[data-direction='-1']");
-      const next = controls.querySelector("[data-direction='1']");
-      previous.setAttribute("aria-label", isWeek ? "Previous week" : "Previous month");
-      next.setAttribute("aria-label", isWeek ? "Next week" : "Next month");
-    }
+    root.querySelector(".calendar-sort-menu summary").setAttribute("aria-label", `Calendar view: ${currentView[0].toUpperCase() + currentView.slice(1)}`);
+    const previous = controls.querySelector("[data-direction='-1']");
+    const next = controls.querySelector("[data-direction='1']");
+    previous.setAttribute("aria-label", isWeek ? "Previous week" : "Previous month");
+    next.setAttribute("aria-label", isWeek ? "Next week" : "Next month");
     display.replaceChildren();
-    if (!data && !rolling) return;
+    if (!data) return;
     const enabled = new Set([...root.querySelectorAll("input[name=calendar-source]:checked")].map(input => input.value));
     const firstDay = start.toISOString().slice(0, 10);
     const afterLastDay = end.toISOString().slice(0, 10);
-    const events = (data?.events ?? []).filter(event => (rolling || matchesCalendarSource(event, enabled)) && dateKey(event.start) < afterLastDay && lastDay(event) >= firstDay);
+    const events = data.events.filter(event => matchesCalendarSource(event, enabled) && dateKey(event.start) < afterLastDay && lastDay(event) >= firstDay);
     if (data) {
       const navigationRange = currentView === "month" ? calendarRange(anchor, "list") : { start, end };
       controls.querySelector("[data-direction='-1']").disabled = navigationRange.start.toISOString().slice(0, 10) <= dateKey(data.window.start);
@@ -268,7 +266,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
       const head = node("thead"), headings = node("tr");
       const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       for (let day = 0; day < 7; day++) {
-        const cell = node("th", weekdays[(day + (rolling ? start.getUTCDay() : 0)) % 7]); cell.scope = "col"; headings.append(cell);
+        const cell = node("th", weekdays[day]); cell.scope = "col"; headings.append(cell);
       }
       head.append(headings); table.append(head);
       const body = node("tbody");
@@ -281,7 +279,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
           const dateString = date.toISOString().slice(0, 10);
           const cell = node("td");
           if (!isWeek && date.getUTCMonth() !== month.getUTCMonth()) cell.className = "calendar-outside-month";
-          const number = node("time", rolling ? date.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }) : String(date.getUTCDate()), "calendar-day");
+          const number = node("time", String(date.getUTCDate()), "calendar-day");
           number.dateTime = dateString;
           number.setAttribute("aria-label", fullDate.format(date));
           if (dateString === today) number.setAttribute("aria-current", "date");
@@ -291,7 +289,6 @@ export function mountCalendar(root, { rolling = false } = {}) {
           cell.append(content);
           const dayEvents = eventsOnDay(events, dateString);
           for (const event of dayEvents) eventList.append(eventButton(event));
-          if (rolling && data && !dayEvents.length) eventList.append(node("span", "No events", "calendar-event-time"));
           row.append(cell);
         }
         body.append(row);
@@ -335,8 +332,6 @@ export function mountCalendar(root, { rolling = false } = {}) {
     render();
   });
   const local = ["localhost", "127.0.0.1"].includes(location.hostname);
-  // Both previews and production read the built repository snapshot.
-  const endpoint = calendarEndpoint;
   const subscriptionMenu = root.querySelector(".calendar-subscription-menu");
   if (subscriptionMenu) {
     const feed = new URL("./data/calendar.ics", import.meta.url);
@@ -373,15 +368,7 @@ export function mountCalendar(root, { rolling = false } = {}) {
     if (loading || disposed) return;
     loading = true;
     try {
-      let response;
-      let savedCopy = !endpoint;
-      if (endpoint) {
-        try {
-          response = await fetch(endpoint, { signal: abort.signal, ...(local ? { cache: "no-store" } : {}) });
-          if (!response.ok) throw new Error("Calendar service unavailable");
-        } catch (error) { if (abort.signal.aborted) return; savedCopy = true; }
-      }
-      if (savedCopy) response = await fetch(new URL("./data/calendar.json", import.meta.url), { signal: abort.signal });
+      const response = await fetch(calendarEndpoint, { signal: abort.signal, ...(local ? { cache: "no-store" } : {}) });
       if (!response.ok) throw new Error("Calendar unavailable");
       const next = await response.json();
       if (!Array.isArray(next.events) || !Array.isArray(next.sources) || !next.window) throw new Error("Invalid calendar data");

@@ -91,6 +91,7 @@ test("sync saves local WebP photos, caches unchanged bodies/photos, and a body h
   const first = await syncBlog(f);
   assert.equal(first.postCount, 1);
   assert.equal(first.downloadedPhotos, 5);
+  assert.equal(new Set(first.data.posts[0].images.map(image => image.src)).size, 1);
   for (const photo of first.data.posts[0].images) {
     assert.equal((await sharp(join(f.root, photo.src)).metadata()).format, "webp");
   }
@@ -109,10 +110,20 @@ test("sync saves local WebP photos, caches unchanged bodies/photos, and a body h
 
 test("incomplete edits retain existing posts, new incomplete posts skip, and withdrawal removes posts", async t => {
   const f = await fixture(t);
-  await syncBlog(f);
+  const first = await syncBlog(f);
+  first.data.posts[0].action = "View photos";
+  for (const image of first.data.posts[0].images) image.caption = "Legacy caption";
+  for (const photo of first.state.posts[id.replaceAll("-", "")].photos) photo.image.caption = "Legacy caption";
+  await writeFile(join(f.root, "data/blog.js"), `export const blogData = ${JSON.stringify(first.data)};\n`);
+  await writeFile(f.statePath, JSON.stringify(first.state));
   f.state.pages = [page({ Date: { date: null } }), page({ Name: { title: [] } }, { id: "22345678-abcd-1234-abcd-123456789abc" })];
   const invalid = await syncBlog(f);
   assert.equal(invalid.postCount, 1);
+  assert.equal(invalid.data.posts[0].action, undefined);
+  assert.equal(invalid.data.posts[0].images[0].caption, undefined);
+  assert.equal(invalid.state.posts[id.replaceAll("-", "")].photos[0].image.caption, undefined);
+  assert.equal(invalid.data.posts[0].images[0].alt, "Photo description 1");
+  assert.deepEqual(invalid.data.posts[0].body, first.data.posts[0].body);
   assert.match(invalid.warnings[0], /kept last published/);
   assert.match(invalid.warnings[1], /skipped incomplete/);
   f.state.pages = [];
@@ -135,18 +146,43 @@ test("failed APIs and later image downloads leave the public snapshot and saved 
   assert.deepEqual(await readFile(join(f.root, "data/blog.js")), snapshot);
 });
 
-test("backported captions survive a changed attachment host while credits come from Notion", async t => {
+test("legacy presentation fields are removed while descriptions and credits come from Notion", async t => {
   const f = await fixture(t);
-  await syncBlog(f);
+  const first = await syncBlog(f);
   const saved = JSON.parse(await readFile(f.statePath, "utf8"));
   for (const photo of saved.posts[id.replaceAll("-", "")].photos) Object.assign(photo.image, { alt: "Original description", caption: "Original caption", credit: "Photo: CTSG." });
   await writeFile(f.statePath, JSON.stringify(saved));
+  first.data.posts[0].action = "View photos";
+  for (const image of first.data.posts[0].images) image.caption = "Original caption";
+  await writeFile(join(f.root, "data/blog.js"), `export const blogData = ${JSON.stringify(first.data)};\n`);
   f.state.pages = [page({ Images: { files: [{ external: { url: "https://photos.example/new-host-path.png" } }] }, "Image Alt Text": { rich_text: rich("Notion description") }, "Image Credits": { rich_text: rich("Photo: New credit.") } })];
   const result = await syncBlog(f);
   assert.equal(result.downloadedPhotos, 1);
-  assert.equal(result.data.posts[0].images[0].caption, "Original caption");
+  assert.equal(result.data.posts[0].action, undefined);
+  assert.equal(result.data.posts[0].images[0].caption, undefined);
+  assert.equal(result.data.posts[0].images[0].src, first.data.posts[0].images[0].src);
   assert.equal(result.data.posts[0].images[0].credit, "Photo: New credit.");
   assert.equal(result.data.posts[0].images[0].alt, "Notion description");
+  assert.deepEqual(result.state.posts[id.replaceAll("-", "")].photos[0].image, result.data.posts[0].images[0]);
+  assert.doesNotMatch(await readFile(f.statePath, "utf8"), /caption/);
+  assert.doesNotMatch(await readFile(join(f.root, "data/blog.js"), "utf8"), /"action"|"caption"/);
+});
+
+test("matching images across posts reuse one file and remain cached after an unchanged sync", async t => {
+  const f = await fixture(t);
+  const first = await syncBlog(f);
+  const shared = first.data.posts[0].images[0].src;
+  const otherId = "22345678-abcd-1234-abcd-123456789abc";
+  f.state.pages.push(page({ Date: { date: { start: "2025-10-30" } } }, { id: otherId }));
+  const second = await syncBlog(f);
+  assert.equal(second.postCount, 2);
+  assert.equal(second.downloadedPhotos, 5);
+  assert.deepEqual([...new Set(second.data.posts.flatMap(post => post.images.map(image => image.src)))], [shared]);
+  f.calls.length = 0;
+  const third = await syncBlog(f);
+  assert.equal(third.downloadedPhotos, 0);
+  assert.equal(third.changed, false);
+  assert.equal(f.calls.length, 2);
 });
 
 test("Notion alt-text edits update every image without downloading unchanged photos", async t => {

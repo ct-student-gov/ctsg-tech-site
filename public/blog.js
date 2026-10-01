@@ -49,13 +49,13 @@ export function renderBlog(list, data) {
     button.setAttribute("aria-labelledby", `${id}-title`);
     if (post.images.length) button.append(imageNode(post.images[0], "event-card-image"));
     const title = element("span", "event-card-title", post.title); title.id = `${id}-title`;
-    const action = element("span", "event-card-action", post.action || "Read post");
+    const action = element("span", "event-card-action", "View post");
     const plus = element("span", null, "+"); plus.setAttribute("aria-hidden", "true"); action.append(plus);
     button.append(title, time("event-card-date"), action); heading.append(button);
     const dialog = element("dialog", "event-details"); dialog.id = `${id}-details`;
     dialog.setAttribute("aria-labelledby", `${id}-details-title`);
     const closeForm = element("form", "event-details-close"); closeForm.method = "dialog";
-    const close = element("button"); close.type = "submit"; close.autofocus = true; close.setAttribute("aria-label", "Close");
+    const close = element("button", "dialog-close-button"); close.type = "submit"; close.autofocus = true; close.setAttribute("aria-label", "Close");
     const cross = element("span", null, "×"); cross.setAttribute("aria-hidden", "true"); close.append(cross);
     closeForm.append(close); dialog.append(closeForm);
     if (post.images.length) {

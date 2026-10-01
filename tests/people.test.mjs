@@ -1,11 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, writeFile, rm } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, readdir, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import sharp from "sharp";
 import { loadPeople, publicProfile, websiteBio } from "../people/notion.mjs";
 import { writePeople, readSnapshot, syncPeople } from "../scripts/sync-people.mjs";
+import { imageDigest } from "../scripts/image-cache.mjs";
 
 const id = "12345678-abcd-1234-abcd-123456789abc";
 const rich = value => [{ type: "text", text: { content: value }, plain_text: value }];
@@ -138,6 +139,8 @@ test("portraits become local WebP; banner, order and paragraphs survive, withdra
   const member = data.years[0].members[0];
   assert.deepEqual(member.biography, ["Paragraph one", "Fun fact"]);
   assert.match(member.portrait, /^\.\/images\/members\/notion\/2026\/[a-f0-9-]+\.webp$/);
+  assert.equal(data.years[0].members[1].portrait, member.portrait);
+  assert.equal((await readdir(join(root, "images/members/notion/2026"))).length, 1);
   assert.equal((await sharp(await readFile(join(root, member.portrait))).metadata()).format, "webp");
   assert.deepEqual(await readSnapshot(root), data);
   assert.doesNotMatch(await readFile(join(root, "data/people.js"), "utf8"), /temporary-secret|private|Withdrawn|https:/);
@@ -191,6 +194,60 @@ test("daily metadata checks reuse biographies and local portraits across signed 
   assert.equal(requests.filter(url => url.includes("/blocks/")).length, 0);
   assert.equal(await readFile(join(root, "data/people.js"), "utf8"), snapshotBefore);
   assert.equal(await readFile(statePath, "utf8"), stateBefore);
+});
+
+test("shared portraits stay cached across profile IDs and after the original profile withdraws", async t => {
+  const { root, statePath, requests, source, sync } = await incrementalFixture(t);
+  const secondId = "abcdefab-abcd-1234-abcd-123456789abc";
+  const second = page({ Name: { title: rich("Alice New") }, Photo: { files: [{ file: { url: "https://images.example/alice.png" } }] } }, { id: secondId });
+  source.pages.push(second);
+  const initial = await sync();
+  assert.equal(initial.downloadedPhotos, 2);
+  const portrait = initial.data.years[0].members[0].portrait;
+  assert.ok(initial.data.years[0].members.every(member => member.portrait === portrait));
+  assert.equal((await readdir(join(root, "images/members/notion/2026"))).length, 1);
+  const snapshot = await readFile(join(root, "data/people.js"), "utf8");
+  const metadata = await readFile(statePath, "utf8");
+  requests.length = 0;
+  const unchanged = await sync();
+  assert.equal(unchanged.changed, false);
+  assert.equal(unchanged.downloadedPhotos, 0);
+  assert.equal(requests.filter(url => url.startsWith("https://images.example/")).length, 0);
+  assert.equal(await readFile(join(root, "data/people.js"), "utf8"), snapshot);
+  assert.equal(await readFile(statePath, "utf8"), metadata);
+  source.pages = [second];
+  const remaining = await sync();
+  assert.equal(remaining.downloadedPhotos, 0);
+  assert.equal(remaining.data.years[0].members[0].portrait, portrait);
+  assert.equal(remaining.state.profiles[id.replaceAll("-", "")], undefined);
+});
+
+test("shared portrait caches verify the filename's content hash before reusing the file", async t => {
+  const { root, source, sync } = await incrementalFixture(t);
+  source.pages.push(page({ Name: { title: rich("Alice New") } }, { id: "abcdefab-abcd-1234-abcd-123456789abc" }));
+  const initial = await sync();
+  const portrait = initial.data.years[0].members[0].portrait;
+  await writeFile(join(root, portrait), "corrupt cached image");
+  const repaired = await sync();
+  assert.equal(repaired.downloadedPhotos, 2);
+  assert.ok(repaired.data.years[0].members.every(member => member.portrait === portrait));
+  assert.equal((await sharp(await readFile(join(root, portrait))).metadata()).format, "webp");
+  assert.equal((await readdir(join(root, "images/members/notion/2026"))).length, 1);
+});
+
+test("portraits reuse identical published Blog images without creating another file", async t => {
+  const { root, source, sync } = await incrementalFixture(t);
+  const bytes = await sharp(source.photo).rotate().resize({ width: 2048, height: 2048, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+  const path = `./images/blog/notion/2026/abcdefababcd1234abcd123456789abc-${imageDigest(bytes).slice(0, 16)}.webp`;
+  await mkdir(join(root, "images/blog/notion/2026"), { recursive: true });
+  await writeFile(join(root, path), bytes);
+  const initial = await sync();
+  assert.equal(initial.downloadedPhotos, 1);
+  assert.equal(initial.data.years[0].members[0].portrait, path);
+  await assert.rejects(readdir(join(root, "images/members")), { code: "ENOENT" });
+  const unchanged = await sync();
+  assert.equal(unchanged.downloadedPhotos, 0);
+  assert.equal(unchanged.changed, false);
 });
 
 test("bio changes fetch only biography; webhook IDs force a refresh even with the same page timestamp", async t => {

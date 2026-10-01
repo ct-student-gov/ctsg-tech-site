@@ -116,3 +116,36 @@ test("Blog snapshot image paths are converted and external displayed photos fail
   await writeFile(join(source, "data/blog.js"), 'export const blogData = { posts: [{ images: [{ src: "https://example.org/photo.webp" }] }] };');
   await assert.rejects(buildSite({ source, output }), /download external photos/);
 });
+
+test("identical published photos share one file across HTML, CSS, and data while originals stay intact", async t => {
+  const { source, output } = await fixture(t);
+  await mkdir(join(source, "images/events"));
+  await mkdir(join(source, "images/blog"));
+  const original = join(source, "images/events/banner.jpg");
+  await pixels().jpeg().toFile(original);
+  const bytes = await readFile(original);
+  await sharp(original).rotate().resize({ width: 2048, height: 2048, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toFile(join(source, "images/blog/photo.webp"));
+  await writeFile(join(source, "index.html"), '<img src="./images/events/banner.jpg" srcset="./images/events/banner.jpg 1x, ./images/blog/photo.webp 2x"><meta property="og:image" content="https://ct-student-gov.github.io/ctsg-tech-site/public/images/events/banner.jpg">');
+  await writeFile(join(source, "styles/photo.css"), '.banner { background: url(../images/events/banner.jpg?v=1#crop); }');
+  await writeFile(join(source, "data/people.js"), 'export const peopleData = { banner: { src: "./images/events/banner.jpg" } };');
+  const result = await buildSite({ source, output });
+  assert.equal(result.deduplicated, 1);
+  await assert.rejects(readFile(join(output, "images/events/banner.webp")), { code: "ENOENT" });
+  assert.deepEqual(await readFile(original), bytes);
+  const html = await readFile(join(output, "index.html"), "utf8");
+  assert.doesNotMatch(html, /images\/events/);
+  assert.match(html, /srcset="\.\/images\/blog\/photo\.webp 1x, \.\/images\/blog\/photo\.webp 2x"/);
+  assert.match(html, /https:\/\/ct-student-gov\.github\.io\/ctsg-tech-site\/public\/images\/blog\/photo\.webp/);
+  assert.match(await readFile(join(output, "styles/photo.css"), "utf8"), /\.\.\/images\/blog\/photo\.webp\?v=1#crop/);
+  assert.match(await readFile(join(output, "data/people.js"), "utf8"), /\.\/images\/blog\/photo\.webp/);
+});
+
+test("embed demos are kept for development and excluded from publication", async t => {
+  const { source, output } = await fixture(t);
+  await mkdir(join(source, "demo"));
+  await writeFile(join(source, "demo/index.html"), '<h1>Local embed tests</h1>');
+  await buildSite({ source, output });
+  await assert.rejects(readFile(join(output, "demo/index.html")), { code: "ENOENT" });
+  await buildSite({ source, output, includeDemos: true });
+  assert.match(await readFile(join(output, "demo/index.html"), "utf8"), /Local embed tests/);
+});

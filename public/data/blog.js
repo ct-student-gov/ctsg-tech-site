@@ -5,14 +5,12 @@ export const blogData = {
       "id": "3eb0b1bd679180cc9e00cc6e49b20499",
       "title": "Sunset Sendoff 2026",
       "date": "2026-05-02",
-      "action": "View event",
       "images": [
         {
           "src": "./images/blog/notion/2026/3eb0b1bd679180cc9e00cc6e49b20499-dc16d25b72a01270.webp",
           "alt": "Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
           "width": 1832,
           "height": 2048,
-          "caption": "Sunset Sendoff poster for the Class of 2026, May 2, 6–10 PM at Somewhere Nowhere.",
           "credit": "Poster: CTSG."
         }
       ],
@@ -43,14 +41,12 @@ export const blogData = {
       "id": "3eb0b1bd679180178850c8782f10cf93",
       "title": "Big Red Gala 2026",
       "date": "2026-02-07",
-      "action": "View photos",
       "images": [
         {
           "src": "./images/blog/notion/2026/3eb0b1bd679180178850c8782f10cf93-d68ead5c63926b74.webp",
           "alt": "Four guests pose together in formal attire at the Big Red Gala.",
           "width": 2048,
           "height": 1365,
-          "caption": "Four guests pose together in formal attire at the Big Red Gala.",
           "credit": "Photo: Opalina (@opalinakhanna)."
         },
         {
@@ -58,7 +54,6 @@ export const blogData = {
           "alt": "Two smiling guests pose in front of red curtains at the gala.",
           "width": 2048,
           "height": 1365,
-          "caption": "Two smiling guests pose in front of red curtains at the gala.",
           "credit": "Photo: Abe (@abe.baali)."
         }
       ],
@@ -85,14 +80,12 @@ export const blogData = {
       "id": "3eb0b1bd6791806c8087f488ef0bcc92",
       "title": "Cornelloween 2025",
       "date": "2025-10-30",
-      "action": "View photos",
       "images": [
         {
           "src": "./images/blog/notion/2025/3eb0b1bd6791806c8087f488ef0bcc92-14eafabfb5b5d689.webp",
           "alt": "Costumed students gather beneath hanging skeletons and a disco ball.",
           "width": 2048,
           "height": 1365,
-          "caption": "Costumed students gather beneath hanging skeletons and a disco ball.",
           "credit": "Source: CTSG event archive."
         },
         {
@@ -100,7 +93,6 @@ export const blogData = {
           "alt": "Four friends smile in coordinated costumes with colorful fuzzy hats.",
           "width": 1365,
           "height": 2048,
-          "caption": "Four friends smile in coordinated costumes with colorful fuzzy hats.",
           "credit": "Source: CTSG event archive."
         },
         {
@@ -108,7 +100,6 @@ export const blogData = {
           "alt": "Four guests pose together in Halloween costumes.",
           "width": 1365,
           "height": 2048,
-          "caption": "Four guests pose together in Halloween costumes.",
           "credit": "Source: CTSG event archive."
         }
       ],
@@ -135,14 +126,12 @@ export const blogData = {
       "id": "3eb0b1bd679180f9a2d7c5fcf4728ab3",
       "title": "Club Fair 2025",
       "date": "2025-09-18",
-      "action": "View photos",
       "images": [
         {
           "src": "./images/blog/notion/2025/3eb0b1bd679180f9a2d7c5fcf4728ab3-b4478b9a091c60db.webp",
           "alt": "Seven students smile together outside the Bloomberg Center.",
           "width": 2048,
           "height": 1360,
-          "caption": "Seven students smile together outside the Bloomberg Center.",
           "credit": "Photo: Nghi T."
         },
         {
@@ -150,7 +139,6 @@ export const blogData = {
           "alt": "Two smiling students hold Future Founders Club signs outside on campus.",
           "width": 2048,
           "height": 1360,
-          "caption": "Two smiling students hold Future Founders Club signs outside on campus.",
           "credit": "Photo: Nghi T."
         }
       ],

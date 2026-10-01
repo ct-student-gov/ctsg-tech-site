@@ -67,10 +67,10 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
   const readRoute = () => validRoute(location.hash.slice(1)) ? location.hash.slice(1) : "/";
 
   const pages = new Map([
-    ["/", ["About CTSG", "We are the Cornell Tech Student Government. We aim to serve Cornell Tech by giving master’s students a voice, representing student opinions, and maintaining tradition to enrich the overall quality of student life. We give student interest groups funding, put on events, and serve as the liaison between you and CT administration."]],
-    ["/members", ["People", "The executive board and program representatives."]],
-    ["/events", ["Event Calendar", "Student event details coming soon."]],
-    ["/by-laws", ["Bylaws", "The CTSG by-laws."]],
+    ["/", "About CTSG"],
+    ["/members", "People"],
+    ["/events", "Event Calendar"],
+    ["/by-laws", "Bylaws"],
   ]);
 
   const cardMotion = window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
@@ -436,11 +436,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     activePersonDetails?.dismiss();
     content.querySelectorAll(".event-details[open]").forEach(dialog => dialog.close());
     const pageRoute = route;
-    const [title, description] = pages.get(pageRoute) || ["Page not found", "This route does not have a placeholder page."];
-    const heading = document.createElement("h1");
-    heading.textContent = title;
-    const paragraph = document.createElement("p");
-    paragraph.textContent = description;
+    const title = pages.get(pageRoute) || "Page not found";
     content.classList.toggle("site-content--home", pageRoute === "/");
     content.classList.toggle("site-content--members", pageRoute === "/members");
     content.classList.toggle("site-content--governance", pageRoute === "/by-laws");
@@ -462,6 +458,10 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       content.replaceChildren(document.getElementById("events-template").content.cloneNode(true));
       disposeCalendar = mountCalendar(content.querySelector(".student-calendar"));
     } else {
+      const heading = document.createElement("h1");
+      heading.textContent = title;
+      const paragraph = document.createElement("p");
+      paragraph.textContent = "This route does not have a placeholder page.";
       content.replaceChildren(heading, paragraph);
     }
     document.title = `${title} | CTSG`;

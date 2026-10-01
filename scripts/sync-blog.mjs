@@ -1,13 +1,13 @@
-import { createHash } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { BLOG_DATA_SOURCE_ID, loadBlog } from "../blog/notion.mjs";
+import { createImageCache, imageDigest, readCachedImage } from "./image-cache.mjs";
 
 const publicRoot = fileURLToPath(new URL("../public/", import.meta.url));
 const prefix = "export const blogData = ";
-const digest = bytes => createHash("sha256").update(bytes).digest("hex");
+const publicImage = ({ src, alt, width, height, credit = "" }) => ({ src, alt, width, height, credit });
 
 export async function readBlogSnapshot(root = publicRoot) {
   const source = await readFile(join(root, "data/blog.js"), "utf8");
@@ -18,13 +18,8 @@ export async function readBlogSnapshot(root = publicRoot) {
   return data;
 }
 
-async function cachedPhoto(root, postId, cached) {
-  const match = new RegExp(`^\\./images/blog/notion/\\d{4}/${postId}-([a-f0-9]{16})\\.(webp|svg)$`).exec(cached?.image?.src || "");
-  if (!match) return null;
-  try {
-    const bytes = await readFile(join(root, cached.image.src));
-    return digest(bytes).slice(0, 16) === match[1] ? cached.image : null;
-  } catch (error) { if (error.code !== "ENOENT") throw error; return null; }
+async function cachedPhoto(root, cached) {
+  return await readCachedImage(root, cached?.image?.src, { allowSvg: true }) ? cached.image : null;
 }
 
 export async function syncBlog({
@@ -40,46 +35,53 @@ export async function syncBlog({
   const invalidPosts = [];
   const imported = await loadBlog(env, { fetcher, sleep, cachedPosts, changedPageIds, invalidPosts });
   const posts = [], nextPosts = {}, downloads = [], warnings = [];
+  const imageCache = createImageCache(root);
+  let downloadedPhotos = 0;
   for (const invalid of invalidPosts) {
     const old = cachedPosts[invalid.id] && previous.posts.find(post => post.id === invalid.id);
-    if (old) { posts.push(old); nextPosts[invalid.id] = cachedPosts[invalid.id]; }
+    if (old) {
+      posts.push(old);
+      const cached = cachedPosts[invalid.id];
+      nextPosts[invalid.id] = { ...cached, photos: (cached.photos || []).map(photo => ({ ...photo, image: publicImage(photo.image) })) };
+    }
     warnings.push(`${invalid.message}; ${old ? "kept last published post" : "skipped incomplete post"}.`);
   }
   for (const post of imported) {
     const images = [], photos = [];
     for (const photo of post.photos) {
       const url = new URL(photo.url); url.search = ""; url.hash = "";
-      const identity = digest(url.href);
+      const identity = imageDigest(url.href);
       const cached = cachedPosts[post.id]?.photos?.find(photo => photo.identity === identity);
-      let image = await cachedPhoto(root, post.id, cached);
+      let image = await cachedPhoto(root, cached);
       if (!image) {
         // Attachment hosts receive no Notion API credentials.
         const response = await fetcher(photo.url, { signal: AbortSignal.timeout(30000) });
         if (!response.ok) throw new Error(`Blog image download failed (HTTP ${response.status})`);
         const source = Buffer.from(await response.arrayBuffer());
+        downloadedPhotos++;
         const metadata = await sharp(source).metadata();
         if (!["svg", "webp", "jpeg", "png", "avif", "heif", "tiff", "gif"].includes(metadata.format)) throw new Error("Blog Images must contain supported images");
         const extension = metadata.format === "svg" ? "svg" : "webp";
         const bytes = extension === "svg" || (metadata.format === "webp" && metadata.width <= 2048 && metadata.height <= 2048)
           ? source : await sharp(source).rotate().resize({ width: 2048, height: 2048, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
         const dimensions = await sharp(bytes).metadata();
-        const path = `images/blog/notion/${post.date.slice(0, 4)}/${post.id}-${digest(bytes).slice(0, 16)}.${extension}`;
-        downloads.push({ path, bytes });
-        // Preserve backported captions when Notion changes the stable
-        // attachment host but the image bytes remain the same.
-        const samePhoto = cachedPosts[post.id]?.photos?.find(photo => photo.image?.src?.endsWith(`-${digest(bytes).slice(0, 16)}.${extension}`))?.image;
-        image = { ...(samePhoto || {}), src: `./${path}`, width: dimensions.width, height: dimensions.height };
+        let path = await imageCache.find(bytes);
+        if (!path) {
+          path = `./images/blog/notion/${post.date.slice(0, 4)}/${post.id}-${imageDigest(bytes).slice(0, 16)}.${extension}`;
+          downloads.push({ path, bytes });
+          imageCache.remember(path, bytes);
+        }
+        image = { src: path, width: dimensions.width, height: dimensions.height };
       }
-      image = { ...image, alt: photo.alt, credit: photo.credit };
-      images.push({ ...image, caption: image.caption || "", credit: image.credit || "" });
+      image = publicImage({ ...image, alt: photo.alt, credit: photo.credit });
+      images.push(image);
       photos.push({ identity, image });
     }
-    const previousPost = previous.posts.find(value => value.id === post.id);
-    posts.push({ id: post.id, title: post.title, date: post.date, action: previousPost?.action || "Read post", images, body: post.body });
+    posts.push({ id: post.id, title: post.title, date: post.date, images, body: post.body });
     nextPosts[post.id] = { lastEditedTime: post.lastEditedTime, body: post.body, photos };
   }
   posts.sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title) || a.id.localeCompare(b.id));
-  const data = { posts };
+  const data = { posts: posts.map(({ id, title, date, images, body }) => ({ id, title, date, images: images.map(publicImage), body })) };
   const state = { version: 1, dataSource, posts: Object.fromEntries(Object.entries(nextPosts).sort(([a], [b]) => a.localeCompare(b))) };
   // Prepare everything before replacing the saved data. A failed download or
   // API request leaves the previous snapshot and state intact.
@@ -100,7 +102,7 @@ export async function syncBlog({
     changed.push(path);
   }
   for (const path of changed) await rename(`${path}.tmp`, path);
-  return { data, state, postCount: posts.length, downloadedPhotos: downloads.length, changed: changed.length > 0 || downloads.length > 0, warnings };
+  return { data, state, postCount: posts.length, downloadedPhotos, changed: changed.length > 0 || downloads.length > 0, warnings };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

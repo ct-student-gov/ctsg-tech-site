@@ -8,7 +8,7 @@ import { CalendarArchive } from "../calendar/archive.mjs";
 import { createPublishedPreview } from "./preview-data.mjs";
 
 const root = fileURLToPath(new URL("../dist/public/", import.meta.url));
-await buildSite();
+await buildSite({ includeDemos: true });
 let building = null;
 const calendarStorage = memoryStorage();
 const calendarArchive = new CalendarArchive();
@@ -59,7 +59,7 @@ for (const port of [8080, 8081]) {
       }
       // Rebuild on document reload so local previews use the same images as production.
       if ((pathname.endsWith("/") || pathname.endsWith(".html")) && !building) {
-        building = buildSite().finally(() => { building = null; });
+        building = buildSite({ includeDemos: true }).finally(() => { building = null; });
       }
       try {
         if (building) await building;

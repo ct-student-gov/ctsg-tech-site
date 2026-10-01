@@ -1,6 +1,7 @@
 import { copyFile, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, extname, join, posix, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 import sharp from "sharp";
 import { parse } from "parse5";
 
@@ -41,7 +42,15 @@ function rewriteReferences(source, file, outputs) {
     const target = outputs.get(location.name);
     if (!target) throw new Error(`${file}: missing local image ${value}`);
     if (target === location.name) return value;
-    return value.replace(/\.[^./?#]+(?=[?#]|$)/, ".webp");
+    if (target === location.name.replace(/\.[^.]+$/, ".webp")) return value.replace(/\.[^./?#]+(?=[?#]|$)/, ".webp");
+    const url = new URL(target.split("/").map(encodeURIComponent).join("/"), siteBase);
+    const suffix = location.url.search + location.url.hash;
+    if (/^https?:\/\//.test(value)) return url.href + suffix;
+    if (value.startsWith("//")) return `//${url.host}${url.pathname}${suffix}`;
+    if (value.startsWith("/")) return url.pathname + suffix;
+    const base = file.endsWith(".js") ? "" : posix.dirname(file);
+    const path = posix.relative(base, target).split("/").map(part => part === ".." ? part : encodeURIComponent(part)).join("/");
+    return `${value.startsWith("./") && !path.startsWith("../") ? "./" : ""}${path}${suffix}`;
   };
   // Quoted HTML attributes, JS strings, JSON fields, and CSS URLs.
   let result = source.replace(/(["'`])([^"'`\r\n]*)\1/g, (match, quote, value) => {
@@ -127,9 +136,9 @@ export async function checkImages(root) {
   }
 }
 
-export async function buildSite({ source = join(project, "public"), output = join(project, "dist/public") } = {}) {
+export async function buildSite({ source = join(project, "public"), output = join(project, "dist/public"), includeDemos = false } = {}) {
   if (resolve(output) === resolve(source) || resolve(source).startsWith(resolve(output) + "/") || resolve(output).startsWith(resolve(source) + "/")) throw new Error("Build output must be separate from the source directory");
-  const names = await filesIn(source);
+  const names = (await filesIn(source)).filter(name => includeDemos || !name.startsWith("demo/"));
   const outputs = new Map();
   const owners = new Map();
   for (const name of names) {
@@ -140,27 +149,42 @@ export async function buildSite({ source = join(project, "public"), output = joi
   }
   await rm(output, { recursive: true, force: true });
   await mkdir(output, { recursive: true });
-  let converted = 0;
+  let converted = 0, deduplicated = 0;
+  const imageHashes = new Map();
+  // Resolve image aliases before rewriting page/data paths. Originals stay in
+  // public/, while byte-identical published photos share one output file.
   for (const [name, target] of outputs) {
+    if (!raster.test(name)) continue;
+    const input = join(source, name);
+    const metadata = await sharp(input).metadata();
+    const unchanged = metadata.format === "webp" && metadata.width <= maxDimension && (metadata.pageHeight ?? metadata.height) <= maxDimension;
+    const bytes = unchanged ? await readFile(input)
+      : await sharp(input, { animated: true }).rotate().resize({ width: maxDimension, height: maxDimension, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+    if (!unchanged) converted++;
+    const hash = createHash("sha256").update(bytes).digest("hex");
+    if (imageHashes.has(hash)) {
+      outputs.set(name, imageHashes.get(hash));
+      deduplicated++;
+      continue;
+    }
+    imageHashes.set(hash, target);
+    const destination = join(output, target);
+    await mkdir(dirname(destination), { recursive: true });
+    await writeFile(destination, bytes);
+  }
+  for (const [name, target] of outputs) {
+    if (raster.test(name)) continue;
     const input = join(source, name);
     const destination = join(output, target);
     await mkdir(dirname(destination), { recursive: true });
-    if (raster.test(name)) {
-      const metadata = await sharp(input).metadata();
-      if (metadata.format === "webp" && metadata.width <= maxDimension && (metadata.pageHeight ?? metadata.height) <= maxDimension) {
-        await copyFile(input, destination);
-      } else {
-        await sharp(input, { animated: true }).rotate().resize({ width: maxDimension, height: maxDimension, fit: "inside", withoutEnlargement: true }).webp({ quality: 82 }).toFile(destination);
-        converted++;
-      }
-    } else if (textExtensions.has(extname(name))) {
+    if (textExtensions.has(extname(name))) {
       await writeFile(destination, rewriteReferences(await readFile(input, "utf8"), name, outputs));
     } else {
       await copyFile(input, destination);
     }
   }
   await checkImages(output);
-  return { converted, files: names.length };
+  return { converted, deduplicated, files: names.length - deduplicated };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

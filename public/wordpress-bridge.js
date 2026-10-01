@@ -35,6 +35,10 @@
       if (location.hash !== `#${message.route}`) history.pushState(null, "", `#${message.route}`);
       sendState();
       report(`URL synchronization active: ${message.route}`);
+    } else if (message.type === "title" && validRoute(message.route)
+      && message.route === readRoute() && typeof message.title === "string"
+      && message.title.trim() && message.title.length <= 300) {
+      document.title = message.title;
     }
   });
 

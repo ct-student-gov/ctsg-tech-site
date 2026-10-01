@@ -457,6 +457,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
       content.replaceChildren(heading, paragraph);
     }
     document.title = `${title} | CTSG`;
+    if (parentOrigin) post({ type: "title", route: pageRoute, title: document.title });
     for (const link of document.querySelectorAll(".site-nav a")) {
       if (link.hash === `#${pageRoute}`) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");

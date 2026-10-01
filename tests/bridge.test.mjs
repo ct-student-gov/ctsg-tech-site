@@ -33,13 +33,16 @@ function harness(hash = "#/clubs/example", { missingFrame = false } = {}) {
     },
     replaceState(_state, _unused, url) { entries[index] = new URL(url, location.href); },
   };
+  const document = {
+    title: "WordPress page title",
+    getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame,
+  };
   runInNewContext(source, {
-    URL, location, history,
+    URL, location, history, document,
     window: { addEventListener: (name, fn) => listeners.set(name, fn) },
-    document: { getElementById: (id) => id === "ctsg-bridge-status" ? status : missingFrame ? null : frame },
   });
   return {
-    entries, location, messages, status,
+    entries, location, messages, status, document,
     send(data, overrides = {}) {
       listeners.get("message")({ source: child, origin: "https://site.example", data: { channel, ...data }, ...overrides });
     },
@@ -73,6 +76,42 @@ test("clicks add one parent entry; repeated clicks and history restoration add n
   assert.equal(h.messages.at(-1).data.route, "/clubs");
   h.fire("hashchange");
   assert.equal(h.entries.length, 3);
+});
+
+test("child titles follow deep links, navigation, Back/Forward, and reloads without adding history", () => {
+  const h = harness("#/members");
+  const replyWithTitle = (title) => h.send({ type: "title", route: h.messages.at(-1).data.route, title });
+  replyWithTitle("People | CTSG");
+  assert.equal(h.document.title, "People | CTSG");
+  h.send({ type: "navigate", route: "/events" });
+  replyWithTitle("Event Calendar | CTSG");
+  assert.equal(h.document.title, "Event Calendar | CTSG");
+  h.back();
+  replyWithTitle("People | CTSG");
+  assert.equal(h.document.title, "People | CTSG");
+  h.forward();
+  replyWithTitle("Event Calendar | CTSG");
+  assert.equal(h.document.title, "Event Calendar | CTSG");
+  h.fire("frame:load");
+  replyWithTitle("Event Calendar | CTSG");
+  assert.equal(h.document.title, "Event Calendar | CTSG");
+  assert.equal(h.entries.length, 2);
+});
+
+test("rejects untrusted, malformed, and stale title messages", () => {
+  const h = harness("#/members");
+  const titleMessage = { type: "title", route: "/members", title: "People | CTSG" };
+  h.send(titleMessage, { origin: "https://attacker.example" });
+  h.send(titleMessage, { source: {} });
+  h.send({ ...titleMessage, channel: "other" });
+  h.send({ ...titleMessage, route: "/events" });
+  h.send({ ...titleMessage, route: {} });
+  for (const title of [undefined, null, {}, 1, "", "   ", "a".repeat(301)]) {
+    h.send({ ...titleMessage, title });
+  }
+  assert.equal(h.document.title, "WordPress page title");
+  assert.equal(h.entries.length, 1);
+  assert.equal(h.messages.length, 1);
 });
 
 test("rejects wrong origin, wrong source, malformed messages, and unsafe routes", () => {

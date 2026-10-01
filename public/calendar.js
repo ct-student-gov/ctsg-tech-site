@@ -345,9 +345,9 @@ export function mountCalendar(root, { rolling = false } = {}) {
     const subscriptionFeed = publishedCalendarFeed;
     const webcal = subscriptionFeed.replace(/^https?:/, "webcal:");
     const providers = {
-      google: `https://www.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`,
+      google: `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(subscriptionFeed)}`,
       apple: webcal,
-      outlook: `https://outlook.office.com/owa?path=/calendar/action/compose&rru=addsubscription&url=${encodeURIComponent(webcal)}&name=${encodeURIComponent("Cornell Tech Events")}`,
+      outlook: `https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(subscriptionFeed)}&name=${encodeURIComponent("Cornell Tech Events")}`,
     };
     for (const link of subscriptionMenu.querySelectorAll("[data-calendar-provider]")) {
       link.href = providers[link.dataset.calendarProvider];

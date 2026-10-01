@@ -19,23 +19,6 @@
   favicon.href = new URL("./images/favicon.webp", frame.src).href;
   document.querySelectorAll('link[rel~="icon"]').forEach(icon => icon.remove());
   document.head.append(favicon);
-  // Safari paints its edge areas from the outer page, not the iframe's body.
-  const colorPreference = window.matchMedia("(prefers-color-scheme: dark)");
-  const themeColor = document.createElement("meta");
-  themeColor.name = "theme-color";
-  document.querySelectorAll('meta[name="theme-color"]').forEach(meta => meta.remove());
-  document.head.append(themeColor);
-  function syncAppearance() {
-    const scheme = colorPreference.matches ? "dark" : "light";
-    const background = colorPreference.matches ? "#222" : "#fff";
-    for (const element of [document.documentElement, document.body, frame]) {
-      element.style.colorScheme = scheme;
-      element.style.backgroundColor = background;
-    }
-    themeColor.content = background;
-  }
-  syncAppearance();
-  colorPreference.addEventListener("change", syncAppearance);
   const channel = "ctsg-navigation-v1";
   const validRoute = (route) => typeof route === "string" && route.length <= 200
     && /^\/(?:[a-z0-9-]+(?:\/[a-z0-9-]+)*)?$/.test(route);

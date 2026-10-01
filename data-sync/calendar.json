@@ -782,7 +782,7 @@
           "start": "2026-11-28T17:00:00.000Z",
           "end": "2026-11-28T20:00:00.000Z",
           "allDay": false,
-          "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
+          "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nTo reserve discount tickets in the Cornell Tech section of seats:\n- Use the Register link on this page\n- Access using your netID email\n- To select tickets, don't use the seating chart. Instead select \"Other Categories\" - \"Cornell Tech - Section 227\"\n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
           "audienceTags": [],
@@ -857,17 +857,17 @@
       ],
       "fetchedCount": 9,
       "window": {
-        "start": "2026-07-02T21:35:09.074Z",
-        "end": "2027-11-04T21:35:09.074Z"
+        "start": "2026-07-03T06:33:02.367Z",
+        "end": "2027-11-05T06:33:02.367Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:35:09.074Z",
+      "updatedAt": "2026-10-01T06:33:02.367Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
         "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-04T21:33:12.770Z",
+        "comparedThrough": "2027-11-04T21:35:09.074Z",
         "warnings": []
       }
     },
@@ -1049,29 +1049,6 @@
     "tech-events": {
       "events": [
         {
-          "id": "tech-events:field-conditions-incubating-media-arts-in-nyc",
-          "source": "tech-events",
-          "category": "Cornell Tech events",
-          "title": "Field Conditions: Incubating Media Arts in NYC",
-          "start": "2026-09-30T23:00:00.000Z",
-          "end": "2026-10-01T00:30:00.000Z",
-          "allDay": false,
-          "description": "New York’s art / design / technology field is held together by a coalition between practices and cultural institutions that shape what gets made, who gets supported, and what survives. This panel brings together NEW INC at the New Museum, Rhizome, and Onassis ONX, New York City institutions that have an ongoing commitment to Art, Design and Technology. The conversation will look at how each organization identifies and supports practitioners, where funding and institutional models are heading, and what is actually emerging in practice right now. For anyone working across computational design, interaction, immersive media, and creative technology, it offers a direct view of the infrastructure behind the work and of what it takes to build a practice in this city.",
-          "location": "Gensler Family AAP NYC Center, Tata Innovation Center, Cornell Tech 11 East Loop Road, 4th Floor New York, NY 10044",
-          "url": "https://tech.cornell.edu/events/field-conditions-incubating-media-arts-in-nyc/",
-          "audienceTags": [
-            "Alumni",
-            "Faculty",
-            "International Students",
-            "Master's Students",
-            "PhDs",
-            "Postdocs",
-            "Prospective Students",
-            "Public",
-            "Roosevelt Island Community"
-          ]
-        },
-        {
           "id": "tech-events:revolutionizing-healthcare-with-ai-powered-devices",
           "source": "tech-events",
           "category": "Cornell Tech events",
@@ -1092,29 +1069,29 @@
           ]
         }
       ],
-      "fetchedCount": 65,
-      "excludedCount": 63,
+      "fetchedCount": 62,
+      "excludedCount": 61,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 65,
-        "excludedCount": 63,
-        "importedCount": 2,
+        "fetchedCount": 62,
+        "excludedCount": 61,
+        "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-03T06:33:02.367Z",
+        "end": "2027-11-05T06:33:02.367Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-01T06:33:02.367Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     }

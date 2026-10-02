@@ -1069,30 +1069,45 @@
           ]
         }
       ],
-      "fetchedCount": 62,
+      "fetchedCount": 63,
       "excludedCount": 61,
-      "failedCount": 0,
-      "warnings": [],
+      "failedCount": 1,
+      "warnings": [
+        {
+          "code": "unverified-events",
+          "message": "1 Cornell Tech event was omitted because full event details or dates could not be verified. See source diagnostics."
+        }
+      ],
       "diagnostics": {
-        "fetchedCount": 62,
+        "fetchedCount": 63,
         "excludedCount": 61,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 0,
-        "issues": []
+        "failedCount": 1,
+        "issues": [
+          {
+            "url": "https://tech.cornell.edu/events/making-fault-tolerance-easy-so-that-you-dont-have-to-care/",
+            "message": "Cornell Tech organizer URL is outside supported public sources"
+          }
+        ]
       },
       "window": {
-        "start": "2026-07-03T06:33:02.367Z",
-        "end": "2027-11-05T06:33:02.367Z"
+        "start": "2026-07-04T06:12:20.930Z",
+        "end": "2027-11-06T06:12:20.930Z"
       },
-      "updatedAt": "2026-10-01T06:33:02.367Z",
+      "updatedAt": "2026-10-02T06:12:20.930Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
-        "warnings": []
+        "comparedThrough": "2027-11-05T06:33:02.367Z",
+        "warnings": [
+          {
+            "code": "unverified-events",
+            "message": "1 Cornell Tech event was omitted because full event details or dates could not be verified. See source diagnostics."
+          }
+        ]
       }
     }
   },

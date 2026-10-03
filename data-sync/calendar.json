@@ -1069,8 +1069,8 @@
           ]
         }
       ],
-      "fetchedCount": 63,
-      "excludedCount": 61,
+      "fetchedCount": 62,
+      "excludedCount": 60,
       "failedCount": 1,
       "warnings": [
         {
@@ -1079,8 +1079,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 63,
-        "excludedCount": 61,
+        "fetchedCount": 62,
+        "excludedCount": 60,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1092,16 +1092,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-05T05:44:59.818Z",
+        "end": "2027-11-07T05:44:59.818Z"
       },
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-03T05:44:59.818Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-05T06:33:02.367Z",
+        "comparedThrough": "2027-11-06T06:12:20.930Z",
         "warnings": [
           {
             "code": "unverified-events",

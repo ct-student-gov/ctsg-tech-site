@@ -61,6 +61,12 @@ export const peopleData = {
           "role": "Treasurer",
           "section": "executive-board",
           "email": "uj36@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/unserjaffry/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Unser Jaffry is an MBA candidate at Cornell, with a background spanning healthcare, biotechnology, entrepreneurship, and strategy. Originally from Michigan, he earned his B.S. in Human Biology from Michigan State University, where he also founded the Medical Entrepreneurs Club. Before Cornell, Unser conducted biomedical research at Harvard Medical School and MIT and worked in strategy and operations across clinical research and healthcare innovation.",
             "At Cornell, he is especially interested in the intersection of technology, healthcare, and entrepreneurship and is excited to serve as Treasurer of Cornell Tech Student Government, helping support initiatives that strengthen the student experience and bring the Cornell Tech community together.",
@@ -76,6 +82,12 @@ export const peopleData = {
           "role": "Student Activities Chair",
           "section": "executive-board",
           "email": "nd488@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/nihar-degaonkar/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "I'm Nihar, a M. Eng ORIE student from Houston, Texas. I attained a B.S. in Statistics from Texas A&M University and worked for two years as an associate in SAP Data & Analytics at EY. I'm excited to pursue opportunities in automotive product strategy with a focus on safety, sustainability, and preserving the freedom found in the open road.",
             "Fun Fact: my left pinky is double-jointed."
@@ -90,6 +102,12 @@ export const peopleData = {
           "role": "Communications Co-Chair",
           "section": "executive-board",
           "email": "ar2664@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/anusha-r5103/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Anusha is a graduate student pursuing her Master's in Computer Science at Cornell Tech. She gained hands-on experience as an intern at Roboticschools by contributing to Artificial Intelligence, Machine Learning, and Robotics projects.\nShe is skilled in Natural Language Processing, Artificial Intelligence, and Robotics, with a passion for creating innovative, data-driven solutions. She is always excited to collaborate with diverse teams to advance impactful applications.",
             "Fun fact: Most likely to throw a tantrum if she doesn't drink chai(Tea) at least once a day!!"
@@ -138,6 +156,12 @@ export const peopleData = {
           "role": "Diversity and Inclusion Chair",
           "section": "executive-board",
           "email": "hs2345@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/humna-sultan/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "My name is Humna and I'm a current Data Science & Decision Analytics student at Cornell Tech, focusing on the intersection between human behavior, machine learning, and data analytics! I've worked on research projects extending from evaluating social movements, developing satellite image processing systems with NASA, programming machine learning algorithms for drone telemetry data, and more!",
             "I've served as President of Women in Computer Science at my undergraduate institution, as well as a peer mentor and advocate for incoming first-generation students. I'm highly involved in Girls Who Code and Rewriting The Code - diversity has always been something that I'm passionate about, and I'm excited to bring my perspectives to CTSG!",
@@ -154,6 +178,12 @@ export const peopleData = {
           "role": "M.Eng. CS Representative",
           "section": "representatives",
           "email": "jlw457@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/jovianwang/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Jovian is a Master of Engineering student in Computer Science at Cornell Tech. He earned his undergraduate degrees in Computer Science and Economics at Vanderbilt University, graduating cum laude, and spent two years as a data infrastructure engineer building out large-scale observability systems and integrating AI into various platforms. His experience spans data infrastructure, machine learning, and site reliability, and he is interested in building products that hold up in the real world. He's excited to help make Cornell Tech a place where great engineers become greater founders.",
             "Fun Fact: Jovian is an avid snowboarder, a V4 climber, a casual tennis player, and a sci-fi geek."
@@ -168,6 +198,12 @@ export const peopleData = {
           "role": "M.Eng. ECE Representative",
           "section": "representatives",
           "email": "ksr84@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/kartickrajen/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "I'm Kartick Rajen, friends call me Karr. My bachelor's degree was in Computer Engineering, structured as a co-op program split between India and Taiwan. I have experience applying quantitative skills across financial engineering, computer vision, edge AI and biomedical research.",
             "Currently, I’m doing research at Weill Cornell Medicine, working on probabilistic modeling. Excited to bring this varied, cross-domain background to the cohort.",
@@ -183,6 +219,12 @@ export const peopleData = {
           "role": "M.Eng. ORIE Representative",
           "section": "representatives",
           "email": "rl996@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/rachel-liu-2023/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, optimizing logistics, and am so pumped to be representing the brilliant students that are the ORIE class of 2027.",
             "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
@@ -238,6 +280,12 @@ export const peopleData = {
           "role": "M.S. Health Tech Representative",
           "section": "representatives",
           "email": "jj835@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/jiwon-jeong-1713491ab/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "I’m Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology – the process of how we use really big microscopes to study really small things.",
             "Excited to support our cohort’s vision for integrating technology into clinical and biomedical advancements.",
@@ -253,6 +301,12 @@ export const peopleData = {
           "role": "M.S. Health Tech Representative",
           "section": "representatives",
           "email": "ac3362@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/aidan-cuccaro/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Aidan is a health tech student passionate about applying machine learning to the US healthcare system. He grew up in Corvallis, Oregon, where he also earned his undergraduate degree in Computer Science at Oregon State University. There, he applied his studies to NMR research and designed supplementary instruction for CS students. Outside of class, you can (try to) find him around the city — he refuses to stay still. Whether it's sparring in martial arts, playing piano, or improving his tailoring skills, Aidan believes every hobby is practice for a problem he hasn't run into yet.",
             "Fun Fact: He speaks Japanese (N3) and hopes to learn more Mandarin this year. He was also a lion dance performer — as the head."
@@ -267,6 +321,12 @@ export const peopleData = {
           "role": "M.S. Urban Tech Representative",
           "section": "representatives",
           "email": "cgy4@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/gabriela-yaulli-herrera/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
             "Fun Fact: I love trying new creative pursuits – this past year I’ve dove into contemporary dance, rug making and pottery!"
@@ -294,6 +354,12 @@ export const peopleData = {
           "role": "M.S. Design Tech Representative",
           "section": "representatives",
           "email": "ss4479@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/swarsahgal/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Hi everyone, I'm Swar, a designer from Singapore. I earned my bachelor's degree in Industrial Design from the School of the Art Institute of Chicago, with a focus in digital fabrication and footwear development. Since graduating, I've spent four years leading product at two startups in Miami: a fashion-tech restoration marketplace and Miami's premier padel and wellness club, while also launching my own independent footwear venture, where I managed a global supply chain spanning Europe and Asia.",
             "That path has given me more than design sensibility. It's built a multidisciplinary toolkit and made me a stronger communicator across departments. Throughout my academic and professional life, I've become known for my willingness to challenge the status quo for the betterment of my community, whether that's teammates, coworkers, or classmates.",

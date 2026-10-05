@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { loadPeople, PEOPLE_DATA_SOURCE_ID } from "../people/notion.mjs";
 import { createImageCache, imageDigest, readCachedImage } from "./image-cache.mjs";
+import { createFaviconCache } from "./people-favicons.mjs";
 
 const publicRoot = fileURLToPath(new URL("../public/", import.meta.url));
 const dataPrefix = "export const peopleData = ";
@@ -30,7 +31,7 @@ async function cachedPortrait(root, cached, identity) {
   return (await readCachedImage(root, cached.portrait))?.path || null;
 }
 
-async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, invalidProfiles = [] }) {
+async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, cachedFavicons = {}, invalidProfiles = [] }) {
   const previous = await readSnapshot(root);
   const years = new Map();
   // Keep the existing order of equal-rank members; the page continues to sort
@@ -39,6 +40,7 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
     [`${year.startYear}:${`${member.firstName} ${member.lastName}`.trim()}`, index])));
   const photos = [];
   const imageCache = createImageCache(root);
+  const favicons = createFaviconCache({ root, fetcher, cached: cachedFavicons });
   let downloadedPhotos = 0;
   const nextProfiles = {};
   const warnings = [];
@@ -85,9 +87,11 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
       portrait,
       biography: profile.member.biography || [],
     };
+    const member = { ...profile.member, portrait };
+    if (member.links?.length) member.links = await favicons.links(member.links);
     for (const startYear of profile.years) {
       if (!years.has(startYear)) years.set(startYear, []);
-      years.get(startYear).push({ ...profile.member, portrait });
+      years.get(startYear).push(member);
     }
   }
   const name = member => `${member.firstName} ${member.lastName}`.trim();
@@ -98,7 +102,7 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, inv
       members: members.sort((a, b) => (oldOrder.get(`${startYear}:${name(a)}`) ?? Infinity) - (oldOrder.get(`${startYear}:${name(b)}`) ?? Infinity) || name(a).localeCompare(name(b))),
     })),
   };
-  return { data, photos, downloadedPhotos, warnings, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
+  return { data, photos: [...photos, ...favicons.files], favicons: favicons.state, downloadedPhotos, warnings, profiles: Object.fromEntries(Object.entries(nextProfiles).sort(([a], [b]) => a.localeCompare(b))) };
 }
 
 function snapshotSource(data) {
@@ -152,8 +156,8 @@ export async function syncPeople({
   const cachedProfiles = previousState?.dataSource === dataSource ? previousState.profiles : {};
   const invalidProfiles = [];
   const profiles = await loadPeople(env, { fetcher, sleep, cachedProfiles, changedPageIds, invalidProfiles });
-  const prepared = await preparePeople(profiles, { root, fetcher, cachedProfiles, invalidProfiles });
-  const state = { version: 1, dataSource, profiles: prepared.profiles };
+  const prepared = await preparePeople(profiles, { root, fetcher, cachedProfiles, cachedFavicons: previousState?.favicons, invalidProfiles });
+  const state = { version: 1, dataSource, profiles: prepared.profiles, ...(Object.keys(prepared.favicons).length ? { favicons: prepared.favicons } : {}) };
   const changed = await publishPrepared(prepared, root, statePath, state);
   return { data: prepared.data, state, profileCount: Object.keys(prepared.profiles).length, downloadedPhotos: prepared.downloadedPhotos, changed, warnings: prepared.warnings };
 }

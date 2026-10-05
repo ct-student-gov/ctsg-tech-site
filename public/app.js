@@ -93,6 +93,58 @@ function trackPageView(route, title) {
     }
   }
 
+  function personContacts(person) {
+    if (!person.email && !person.links?.length) return null;
+    const footer = document.createElement("div");
+    footer.className = "member-contacts";
+    if (person.links?.length) {
+      const space = document.createElement("div");
+      space.className = "member-links-space";
+      const links = document.createElement("div");
+      links.className = "member-links";
+      const items = person.links.slice(0, 4);
+      links.style.setProperty("--link-columns", items.length);
+      for (const { href, icon } of items) {
+        let url;
+        try { url = new URL(href); } catch { continue; }
+        if (!["https:", "http:"].includes(url.protocol)) continue;
+        const link = document.createElement("a");
+        link.href = url.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        const host = url.hostname.replace(/^www\./, "");
+        link.title = host;
+        link.setAttribute("aria-label", `${person.firstName} ${person.lastName}: ${host}`);
+        const fallback = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        fallback.setAttribute("viewBox", "0 0 24 24");
+        fallback.setAttribute("aria-hidden", "true");
+        fallback.innerHTML = '<path d="M10 13a5 5 0 0 0 7 .1l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7-.1l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+        link.append(fallback);
+        if (typeof icon === "string" && icon.startsWith("./images/")) {
+          const image = document.createElement("img");
+          image.src = icon;
+          image.alt = "";
+          image.width = 24;
+          image.height = 24;
+          image.loading = "lazy";
+          image.addEventListener("error", () => link.replaceChildren(fallback), { once: true });
+          link.replaceChildren(image);
+        }
+        links.append(link);
+      }
+      space.append(links);
+      footer.append(space);
+    }
+    if (person.email) {
+      const email = document.createElement("a");
+      email.className = "member-email";
+      email.href = `mailto:${person.email}`;
+      email.textContent = person.email;
+      footer.append(email);
+    }
+    return footer;
+  }
+
   function addPersonDetails(card, portrait, person, id) {
     const name = `${person.firstName} ${person.lastName}`.trim();
     const button = document.createElement("button");
@@ -145,6 +197,8 @@ function trackPageView(route, title) {
       paragraph.textContent = text;
       inner.append(paragraph);
     }
+    const contacts = personContacts(person);
+    if (contacts) inner.append(contacts);
     panel.append(inner);
     card.append(panel);
     let expanded = false;
@@ -335,7 +389,7 @@ function trackPageView(route, title) {
           identity.className = "member-identity";
           identity.append(portrait, title, details);
           card.append(identity);
-          if (name !== "TBD" && person.biography?.length) addPersonDetails(card, portrait, person, `person-${year.startYear}-${key}-${index}`);
+          if (name !== "TBD" && (person.biography?.length || person.email || person.links?.length)) addPersonDetails(card, portrait, person, `person-${year.startYear}-${key}-${index}`);
           gallery.append(card);
         }
         group.append(groupHeading, gallery);

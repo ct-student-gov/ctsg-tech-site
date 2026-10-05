@@ -61,6 +61,18 @@ test("failed published downloads never replace the local response with an error 
   assert.equal(await read("/data/blog.js"), null);
 });
 
+test("published contact favicons work in previews without allowing arbitrary image paths", async () => {
+  const requests = [];
+  const read = createPublishedPreview({ fetcher: async url => { requests.push(url.href); return new Response("icon"); } });
+  assert.equal(await read("/images/members/favicons/private.webp"), null);
+  const path = "/images/members/favicons/0123456789abcdef-fedcba9876543210.webp";
+  const response = await read(path);
+  assert.equal(await response.text(), "icon");
+  assert.equal(response.headers.get("content-type"), "image/webp");
+  assert.match(response.headers.get("cache-control"), /immutable/);
+  assert.deepEqual(requests, [`https://ct-student-gov.github.io/ctsg-tech-site/public${path}`]);
+});
+
 test("Blog preview shares the snapshot cache and serves new published WebP and SVG photos", async () => {
   const requests = [];
   const read = createPublishedPreview({ fetcher: async url => {

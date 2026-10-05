@@ -115,7 +115,7 @@ function validateRenderedReferences(source, file, files) {
     }
   } else if (["data/people.js", "data/blog.js"].includes(file)) {
     // Check fields actually rendered as images; retain portraitSource citations verbatim.
-    for (const match of source.matchAll(/(?:["']?(?:portrait|src)["']?)\s*:\s*(["'])(.*?)\1/g)) {
+    for (const match of source.matchAll(/(?:["']?(?:portrait|src|icon)["']?)\s*:\s*(["'])(.*?)\1/g)) {
       if (match[2]) check(match[2]);
     }
   }

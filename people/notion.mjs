@@ -5,6 +5,24 @@ const uuid = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$
 
 export class ProfileValidationError extends Error {}
 
+export function publicContacts(properties) {
+  const email = (properties.Email?.email ?? text(properties.Email?.rich_text)).trim();
+  if (email && !/^[^\s@<>?&#%]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email)) {
+    throw new ProfileValidationError("Email must contain one email address");
+  }
+  const links = [];
+  for (const line of text(properties.Links?.rich_text).split(/\r?\n/).map(value => value.trim()).filter(Boolean)) {
+    let url;
+    try { url = new URL(line); } catch {}
+    if (!url || !["https:", "http:"].includes(url.protocol) || url.username || url.password) {
+      throw new ProfileValidationError("Links must contain one complete HTTP(S) URL per line");
+    }
+    if (!links.includes(url.href)) links.push(url.href);
+    if (links.length === 4) break;
+  }
+  return { ...(email ? { email } : {}), ...(links.length ? { links } : {}) };
+}
+
 export function publicProfile(page) {
   const p = page.properties || {};
   if (p.Publish?.checkbox !== true || page.archived || page.in_trash) return null;
@@ -42,6 +60,7 @@ export function publicProfile(page) {
       lastName: split < 0 ? "" : name.slice(split + 1),
       program: text(p.Program?.rich_text).trim() || null,
       graduationYear, role, section,
+      ...publicContacts(p),
     },
   };
 }
@@ -112,6 +131,9 @@ export async function loadPeople(env, {
   const schema = await request(`data_sources/${dataSource}`);
   for (const [name, type] of Object.entries({ Name: "title", Publish: "checkbox", Role: "select", Section: "select", "Academic Year": "multi_select", "Graduation Year": "number", Program: "rich_text", Photo: "files" })) {
     if (schema.properties?.[name]?.type !== type) throw new Error(`Team Directory needs ${name} (${type})`);
+  }
+  for (const [name, types] of Object.entries({ Email: ["rich_text", "email"], Links: ["rich_text"] })) {
+    if (schema.properties?.[name] && !types.includes(schema.properties[name].type)) throw new Error(`Team Directory ${name} has an unsupported property type`);
   }
   const pages = await list(`data_sources/${dataSource}/query`, { filter: { property: "Publish", checkbox: { equals: true } } });
   const profiles = [], seen = new Set();

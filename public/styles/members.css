@@ -76,6 +76,22 @@
 .member-info--stacked .member-info-content::before { float: none; display: block; width: 100%; }
 .member-info p { margin: 0 0 12px; font-size: 16px; line-height: 1.4; }
 .member-info p:last-child { margin-bottom: 0; }
+/* Clear the portrait so contact details always occupy the bottom of the box. */
+.member-contacts { clear: both; display: flex; align-items: flex-end; gap: 12px; padding-top: 16px; }
+.member-links-space { flex: 1; min-width: 0; container: member-links / inline-size; }
+.member-links { display: grid; grid-template-columns: repeat(var(--contact-columns, var(--link-columns)), minmax(0, 28px)); gap: 8px; justify-content: start; }
+.member-links a { display: flex; align-items: center; justify-content: center; min-width: 0; aspect-ratio: 1; line-height: 1; text-decoration: none; }
+.member-links :is(img, svg) { width: min(24px, 100%); height: auto; aspect-ratio: 1; object-fit: contain; }
+.member-email { margin-left: auto; min-width: 0; max-width: 100%; font-size: 14px; text-align: right; overflow-wrap: anywhere; }
+.member-links-space + .member-email { max-width: calc(100% - 44px); }
+.member-contacts a:focus-visible { outline: 2px solid var(--color-red); outline-offset: 3px; }
+/* Switch directly to two columns: never a 3+1 row or a single-column stack. */
+@container member-links (width < 136px) {
+  .member-links:has(a:nth-child(4)) { --contact-columns: 2; }
+}
+@container member-links (width < 100px) {
+  .member-links:has(a:nth-child(3)) { --contact-columns: 2; }
+}
 @media (max-width: 1100px) { .members-gallery { --columns: 4; } }
 @media (max-width: 850px) { .members-gallery { --columns: 3; } }
 @media (max-width: 600px) { .members-gallery { --columns: 2; } }

@@ -10,6 +10,7 @@ const snapshots = new Map([
 ]);
 const portrait = /^\/images\/members\/notion\/\d{4}\/[a-f\d]{32}-[a-f\d]{16}\.webp$/;
 const blogImage = /^\/images\/blog\/notion\/\d{4}\/[a-f\d]{32}-[a-f\d]{16}\.(?:webp|svg)$/;
+const favicon = /^\/images\/members\/favicons\/[a-f\d]{16}-[a-f\d]{16}\.webp$/;
 
 // Development only: read already-published files without importing from Notion
 // or changing the repository. Share requests/cache across both preview ports.
@@ -18,7 +19,7 @@ export function createPublishedPreview({ fetcher = fetch, now = Date.now } = {})
   async function readPublished(pathname) {
     const path = pathname.replace(/^\/api\/calendar(?:\.ics)?$/, value => value.endsWith(".ics") ? "/data/calendar.ics" : "/data/calendar.json");
     const type = snapshots.get(path);
-    if (!type && !portrait.test(path) && !blogImage.test(path)) return null;
+    if (!type && !portrait.test(path) && !blogImage.test(path) && !favicon.test(path)) return null;
     async function download() {
       try {
         const url = new URL(path.slice(1), publishedBase);

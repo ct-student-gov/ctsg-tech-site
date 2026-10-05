@@ -7,6 +7,7 @@ import sharp from "sharp";
 import { loadPeople, publicProfile, websiteBio } from "../people/notion.mjs";
 import { writePeople, readSnapshot, syncPeople } from "../scripts/sync-people.mjs";
 import { imageDigest } from "../scripts/image-cache.mjs";
+import { createFaviconCache } from "../scripts/people-favicons.mjs";
 
 const id = "12345678-abcd-1234-abcd-123456789abc";
 const rich = value => [{ type: "text", text: { content: value }, plain_text: value }];
@@ -18,7 +19,7 @@ const page = (properties = {}, extra = {}) => ({
     "Academic Year": { multi_select: [{ name: "2026–27" }] }, "Graduation Year": { number: 2028 },
     Program: { rich_text: rich("Master of Science in Design Technology") },
     Photo: { files: [{ type: "file", file: { url: "https://images.example/portrait.webp?temporary-secret" } }] },
-    Email: { rich_text: rich("private@example.org") }, Person: { people: [{ id: "private-user" }] },
+    Email: { rich_text: rich("swar@cornell.edu") }, Person: { people: [{ id: "private-user" }] },
     "Work Items": { relation: [{ id: "private-task" }] }, ...properties,
   }, ...extra,
 });
@@ -33,7 +34,26 @@ test("only published, non-archived profiles are eligible; private properties are
   assert.deepEqual(profile.years, [2026]);
   assert.equal(profile.member.graduationYear, 2028);
   assert.equal(profile.member.role, "DT Representative");
+  assert.equal(profile.member.email, "swar@cornell.edu");
   assert.doesNotMatch(JSON.stringify(profile), /private/);
+});
+
+test("contact fields accept Text or Email addresses and four distinct ordered HTTP(S) links", () => {
+  const profile = publicProfile(page({
+    Email: { email: "swar+website@cornell.edu" },
+    Links: { rich_text: rich(" https://linkedin.com/in/person \n\nhttps://github.com/person\r\nhttps://github.com/person\nhttps://example.org\nhttp://example.net\nhttps://fifth.example") },
+  }));
+  assert.equal(profile.member.email, "swar+website@cornell.edu");
+  assert.deepEqual(profile.member.links, ["https://linkedin.com/in/person", "https://github.com/person", "https://example.org/", "http://example.net/"]);
+  const empty = publicProfile(page({ Email: { rich_text: [] }, Links: { rich_text: [] } }));
+  assert.equal(empty.member.email, undefined);
+  assert.equal(empty.member.links, undefined);
+  for (const value of ["javascript:alert(1)", "https://user:password@example.org", "example.org", "mailto:person@example.org"]) {
+    assert.throws(() => publicProfile(page({ Links: { rich_text: rich(value) } })), /Links/);
+  }
+  for (const value of ["not an address", "person@example.org?subject=test", "person@example.org\nBcc:test@example.org"]) {
+    assert.throws(() => publicProfile(page({ Email: { rich_text: rich(value) } })), /Email/);
+  }
 });
 
 test("historical program and graduation year may be blank; future years need no code changes", () => {
@@ -176,6 +196,53 @@ async function incrementalFixture(t) {
   const sync = options => syncPeople({ env: { NOTION_PEOPLE_TOKEN: "test-private-token" }, root, statePath, fetcher, sleep: async () => {}, ...options });
   return { root, statePath, requests, source, sync };
 }
+
+test("contact edits publish with cached bios; one local favicon serves all same-site profiles and later runs", async t => {
+  const { root, requests, source, sync } = await incrementalFixture(t);
+  source.pages = [page({ Links: { rich_text: rich("https://www.linkedin.com/in/swar\nhttps://linkedin.com/in/other") } })];
+  const first = await sync();
+  const links = first.data.years[0].members[0].links;
+  assert.equal(links.length, 2);
+  assert.equal(links[0].icon, links[1].icon);
+  assert.match(links[0].icon, /^\.\/images\/members\/favicons\/[a-f0-9-]+\.webp$/);
+  assert.equal((await sharp(await readFile(join(root, links[0].icon))).metadata()).format, "webp");
+  assert.equal(requests.filter(url => url.startsWith("https://www.google.com/")).length, 1);
+  requests.length = 0;
+  assert.equal((await sync()).changed, false);
+  assert.equal(requests.length, 2);
+  source.pages = [page({ Email: { rich_text: [] }, Links: { rich_text: rich("https://linkedin.com/in/edited") } })];
+  requests.length = 0;
+  const edited = await sync();
+  assert.equal(edited.data.years[0].members[0].email, undefined);
+  assert.equal(edited.data.years[0].members[0].links[0].href, "https://linkedin.com/in/edited");
+  assert.equal(requests.length, 2);
+  await writeFile(join(root, links[0].icon), "corrupt icon");
+  requests.length = 0;
+  await sync();
+  assert.equal(requests.filter(url => url.startsWith("https://www.google.com/")).length, 1);
+  source.pages = [page({ Links: { rich_text: [] } })];
+  assert.equal((await sync()).data.years[0].members[0].links, undefined);
+});
+
+test("failed favicon lookups use a cached fallback, retry later, and do not stop profile sync", async t => {
+  const { root } = await fixture(t);
+  let calls = 0;
+  const fetcher = async () => { calls++; return new Response("unavailable", { status: 503 }); };
+  const first = createFaviconCache({ root, fetcher, now: 1000 });
+  const links = await first.links(["https://example.org/one", "https://www.example.org/two"]);
+  assert.ok(links.every(link => link.icon === null));
+  assert.equal(calls, 1);
+  const second = createFaviconCache({ root, fetcher, cached: first.state, now: 2000 });
+  await second.links(["https://example.org/three"]);
+  assert.equal(calls, 1);
+  const third = createFaviconCache({ root, fetcher, cached: second.state, now: 8 * 86400000 });
+  await third.links(["https://example.org/four"]);
+  assert.equal(calls, 2);
+  const profile = publicProfile(page({ Links: { rich_text: rich("https://example.org") } }));
+  const png = await sharp({ create: { width: 20, height: 20, channels: 3, background: "red" } }).png().toBuffer();
+  const data = await writePeople([profile], { root, fetcher: async url => url.includes("google.com") ? fetcher() : new Response(png) });
+  assert.equal(data.years[0].members[0].links[0].icon, null);
+});
 
 test("daily metadata checks reuse biographies and local portraits across signed URL changes", async t => {
   const { root, statePath, requests, source, sync } = await incrementalFixture(t);

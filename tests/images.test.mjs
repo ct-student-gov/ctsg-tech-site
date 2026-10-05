@@ -84,6 +84,8 @@ test("missing local images and external rendered photos block the build", async 
   await writeFile(join(source, "index.html"), '<img src="https://example.org/logo.svg">');
   await writeFile(join(source, "data/people.js"), 'export const peopleData = { years: [{ members: [{ portrait: "https://example.org/photo.webp" }] }] };');
   await assert.rejects(buildSite({ source, output }), /download external photos/);
+  await writeFile(join(source, "data/people.js"), 'export const peopleData = { years: [{ members: [{ links: [{ href: "https://example.org", icon: "https://example.org/icon.webp" }] }] }] };');
+  await assert.rejects(buildSite({ source, output }), /download external photos/);
 });
 
 test("final output validation catches leftover originals and disguised non-WebP bytes", async t => {

@@ -142,6 +142,12 @@ export const peopleData = {
           "role": "External Affairs Chair",
           "section": "executive-board",
           "email": "hm655@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/lexie-ma-896b7b3b0/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Lexie Ma is an M.S. in Design Technology student at Cornell University with experience across marketing, strategy, and product-related work. She’s especially interested in emerging AI products and how new technologies can be turned into experiences that people actually want to use.",
             "Fun Fact: Her personality changes a lot depending on the day — she enjoys both meditation and electronic music, loves staying home, but has also traveled as far as the Arctic."
@@ -251,6 +257,12 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.S. Connective Media Representative",
           "section": "representatives",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/lillian-li-0688b3319/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！💫 My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French 🌍, and I’m passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.🙌",
             "Fun Fact: I can wake up at whatever time I want without an alarm！ I love reading detective novels and guessing who the culprit is before the reveal🤔."
@@ -265,6 +277,12 @@ export const peopleData = {
           "role": "M.S. Connective Media Representative",
           "section": "representatives",
           "email": "yl4445@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/ericliu-/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "I'm Yun-Chung (Eric) Liu, and I grew up between Shanghai, Taiwan, and Michigan before studying Computer Science with a minor in Human-Computer Interaction at Washington University in St. Louis. I spent the last three years as a Software Engineer at Morningstar in Chicago, building data delivery systems and dashboards used by thousands of clients.",
             "My passion has always sat at the intersection of finance and technology, and I'm excited to keep exploring that with our cohort.",
@@ -341,6 +359,12 @@ export const peopleData = {
           "role": "MBA Representative",
           "section": "representatives",
           "email": "Khg9@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/katherinegraves/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Katie Graves is a two-time Big Red. She earned her undergraduate degree at Cornell before spending a decade in television, including eight years at Amazon MGM Studios. Most recently, she served as VP of Current Series and Development, where she built the tentpole and franchise division behind The Boys and Gen V. She is an Emmy-nominated producer and a member of the Television Academy. As a one-year MBA candidate at Cornell Tech, Katie is passionate about building community and championing evolutionary programming that embraces a rapidly shifting, disruptive world. She is driven to deliver results through strategy at the intersection of media, luxury, technology, and AI."
           ],

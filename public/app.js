@@ -1,17 +1,9 @@
-import { peopleData } from "./data/people.js";
-import { renderBlog } from "./blog.js?v=notion-descriptions-1";
-import { mountCalendar } from "./calendar.js?v=break-colors-1";
-
 // Content must still render when a browser blocks the analytics module.
 function trackPageView(route, title) {
   void import("./analytics.js")
     .then(analytics => analytics.trackPageView(route, title))
     .catch(() => {});
 }
-
-// Blog edits are published independently of app code. Each page load reads
-// the current snapshot instead of reusing the browser/static-host module cache.
-const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
 
 (() => {
   "use strict";
@@ -27,6 +19,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
   let currentRoute = null;
   let disposeCalendar = () => {};
   let disposePeople = () => {};
+  let blogPromise;
   const content = document.getElementById("content");
   const header = document.querySelector(".site-header");
   const headerSpace = document.querySelector(".site-header-space");
@@ -76,8 +69,8 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
 
   const cardMotion = window.matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)");
 
-  function enableCardMotion() {
-    for (const card of content.querySelectorAll(".home-event-image, .home-portraits, .event-card")) {
+  function enableCardMotion(root = content) {
+    for (const card of root.querySelectorAll(".home-event-image, .home-portraits, .event-card")) {
       const reset = () => {
         card.classList.remove("card-motion-active");
         card.style.removeProperty("--card-rotate-x");
@@ -294,7 +287,7 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     }
   }
 
-  function renderPeople() {
+  function renderPeople(peopleData) {
     const fragment = document.getElementById("members-template").content.cloneNode(true);
     if (peopleData.banner.src) {
       const photo = document.createElement("img");
@@ -462,6 +455,46 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     }
   }
 
+  async function loadBlog(list) {
+    try {
+      // Keep one fresh snapshot per page load, without delaying the first screen.
+      const [{ renderBlog }, { blogData }] = await (blogPromise ??= Promise.all([
+        import("./blog.js?v=notion-descriptions-1"),
+        import(`./data/blog.js?updated=${Date.now()}`),
+      ]));
+      if (!list.isConnected) return;
+      renderBlog(list, blogData);
+      enableProjectToggle();
+      enableEventDetails();
+      enableCardMotion(list);
+    } catch {
+      if (!list.isConnected) return;
+      const message = document.createElement("li");
+      message.textContent = "Blog posts could not be loaded. Please reload to try again.";
+      message.setAttribute("role", "status");
+      list.replaceChildren(message);
+    }
+  }
+
+  async function loadCalendar(root, options) {
+    try {
+      const { mountCalendar } = await import("./calendar.js?v=break-colors-1");
+      if (root.isConnected) disposeCalendar = mountCalendar(root, options);
+    } catch {
+      if (root.isConnected) root.querySelector(".calendar-status").textContent = "Events could not be loaded. Please reload to try again.";
+    }
+  }
+
+  async function loadPeople(status) {
+    try {
+      const { peopleData } = await import("./data/people.js");
+      // A slow response must not replace a page the visitor navigated to.
+      if (status.isConnected) renderPeople(peopleData);
+    } catch {
+      if (status.isConnected) status.textContent = "People could not be loaded. Please reload to try again.";
+    }
+  }
+
   function render(route, focus = false) {
     activePersonDetails?.dismiss();
     content.querySelectorAll(".event-details[open]").forEach(dialog => dialog.close());
@@ -477,18 +510,21 @@ const { blogData } = await import(`./data/blog.js?updated=${Date.now()}`);
     disposePeople = () => {};
     if (pageRoute === "/") {
       content.replaceChildren(document.getElementById("home-template").content.cloneNode(true));
-      renderBlog(content.querySelector("#home-project-list"), blogData);
-      disposeCalendar = mountCalendar(content.querySelector(".home-calendar .student-calendar"), { rolling: true });
-      enableProjectToggle();
-      enableEventDetails();
       enableCardMotion();
+      void loadBlog(content.querySelector("#home-project-list"));
+      void loadCalendar(content.querySelector(".home-calendar .student-calendar"), { rolling: true });
     } else if (pageRoute === "/members") {
-      renderPeople();
+      content.replaceChildren(document.getElementById("members-template").content.cloneNode(true));
+      const status = document.createElement("p");
+      status.setAttribute("role", "status");
+      status.textContent = "Loading people…";
+      content.querySelector(".members-years").append(status);
+      void loadPeople(status);
     } else if (pageRoute === "/by-laws") {
       content.replaceChildren(document.getElementById("governance-template").content.cloneNode(true));
     } else if (pageRoute === "/events") {
       content.replaceChildren(document.getElementById("events-template").content.cloneNode(true));
-      disposeCalendar = mountCalendar(content.querySelector(".student-calendar"));
+      void loadCalendar(content.querySelector(".student-calendar"));
     } else {
       const heading = document.createElement("h1");
       heading.textContent = title;

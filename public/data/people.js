@@ -16,6 +16,17 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Technical President",
           "section": "executive-board",
+          "email": "mh2682@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/maximehp/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            },
+            {
+              "href": "https://github.com/maximehp",
+              "icon": "./images/members/favicons/3aeb002460381c6f-e4db0eb439ea71ae.webp"
+            }
+          ],
           "biography": [
             "Maxime Hendryx-Parker is a Master of Engineering in Computer Science student at Cornell Tech. He earned his B.S. in Computer and Information Technology at Ball State University. He enjoys finding unusual solutions to problems and turning them into practical applications, with interests in entrepreneurship, embedded systems, and home automation. Having attended and volunteered at technology conferences, he values the connections and ideas that come from bringing people with different backgrounds together. At Cornell Tech, he’s excited to collaborate across disciplines, strengthen connections with alumni and industry, and help students feel heard and involved in their community.",
             "Fun Fact: He's half French, and he loves baking."
@@ -29,6 +40,13 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Professional President",
           "section": "executive-board",
+          "email": "red257@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/robbie-dornbush-b72792129/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Throughout Robbie's career, Robbie has been building a brighter future alongside visionary leaders at world class institutions. In the Biden-Harris White House, Robbie served as Chief of Staff to the White House Press Team where he directed diverse stakeholders to communicate the President’s agenda to the world. As Chief of Staff of Accountable Tech, a tech policy nonprofit, Robbie managed a cross-disciplinary group of campaigners and technologists to shape policy at all levels of government in the public interest. At the start of his  career, Robbie designed campaigns on behalf of responsible tech orgs like Mozilla Foundation, Wikipedia, and the Center for Humane Technology to advocate for equitable, impactful change in the tech industry. Now, Robbie is pursuing his MBA through the Cornell SC Johnson College of Business and Cornell Tech to create a brighter future at the intersection of technology, policy, and public affairs.",
             "Fun fact: Robbie is a former aspiring child actor who also did standup and sketch comedy in college."
@@ -42,6 +60,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Treasurer",
           "section": "executive-board",
+          "email": "uj36@cornell.edu",
           "biography": [
             "Unser Jaffry is an MBA candidate at Cornell, with a background spanning healthcare, biotechnology, entrepreneurship, and strategy. Originally from Michigan, he earned his B.S. in Human Biology from Michigan State University, where he also founded the Medical Entrepreneurs Club. Before Cornell, Unser conducted biomedical research at Harvard Medical School and MIT and worked in strategy and operations across clinical research and healthcare innovation.",
             "At Cornell, he is especially interested in the intersection of technology, healthcare, and entrepreneurship and is excited to serve as Treasurer of Cornell Tech Student Government, helping support initiatives that strengthen the student experience and bring the Cornell Tech community together.",
@@ -56,6 +75,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Student Activities Chair",
           "section": "executive-board",
+          "email": "nd488@cornell.edu",
           "biography": [
             "I'm Nihar, a M. Eng ORIE student from Houston, Texas. I attained a B.S. in Statistics from Texas A&M University and worked for two years as an associate in SAP Data & Analytics at EY. I'm excited to pursue opportunities in automotive product strategy with a focus on safety, sustainability, and preserving the freedom found in the open road.",
             "Fun Fact: my left pinky is double-jointed."
@@ -69,6 +89,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Communications Co-Chair",
           "section": "executive-board",
+          "email": "ar2664@cornell.edu",
           "biography": [
             "Anusha is a graduate student pursuing her Master's in Computer Science at Cornell Tech. She gained hands-on experience as an intern at Roboticschools by contributing to Artificial Intelligence, Machine Learning, and Robotics projects.\nShe is skilled in Natural Language Processing, Artificial Intelligence, and Robotics, with a passion for creating innovative, data-driven solutions. She is always excited to collaborate with diverse teams to advance impactful applications.",
             "Fun fact: Most likely to throw a tantrum if she doesn't drink chai(Tea) at least once a day!!"
@@ -82,6 +103,13 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Communications Co-Chair",
           "section": "executive-board",
+          "email": "sd2263@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/siddheshdarak/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
           "biography": [
             "Sid Darak is from Mumbai and is an M.S. Health Tech '27 student at Cornell Tech, with past work in financial infrastructure and pharmaceutical consulting before landing at Cornell Tech for Health Tech.",
             "Fun Fact: His favorite way to explore NYC is on a bike, preferably with a food stop at the end."
@@ -95,6 +123,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "External Affairs Chair",
           "section": "executive-board",
+          "email": "hm655@cornell.edu",
           "biography": [
             "Lexie Ma is an M.S. in Design Technology student at Cornell University with experience across marketing, strategy, and product-related work. She’s especially interested in emerging AI products and how new technologies can be turned into experiences that people actually want to use.",
             "Fun Fact: Her personality changes a lot depending on the day — she enjoys both meditation and electronic music, loves staying home, but has also traveled as far as the Arctic."
@@ -108,6 +137,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "Diversity and Inclusion Chair",
           "section": "executive-board",
+          "email": "hs2345@cornell.edu",
           "biography": [
             "My name is Humna and I'm a current Data Science & Decision Analytics student at Cornell Tech, focusing on the intersection between human behavior, machine learning, and data analytics! I've worked on research projects extending from evaluating social movements, developing satellite image processing systems with NASA, programming machine learning algorithms for drone telemetry data, and more!",
             "I've served as President of Women in Computer Science at my undergraduate institution, as well as a peer mentor and advocate for incoming first-generation students. I'm highly involved in Girls Who Code and Rewriting The Code - diversity has always been something that I'm passionate about, and I'm excited to bring my perspectives to CTSG!",
@@ -123,6 +153,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.Eng. CS Representative",
           "section": "representatives",
+          "email": "jlw457@cornell.edu",
           "biography": [
             "Jovian is a Master of Engineering student in Computer Science at Cornell Tech. He earned his undergraduate degrees in Computer Science and Economics at Vanderbilt University, graduating cum laude, and spent two years as a data infrastructure engineer building out large-scale observability systems and integrating AI into various platforms. His experience spans data infrastructure, machine learning, and site reliability, and he is interested in building products that hold up in the real world. He's excited to help make Cornell Tech a place where great engineers become greater founders.",
             "Fun Fact: Jovian is an avid snowboarder, a V4 climber, a casual tennis player, and a sci-fi geek."
@@ -136,6 +167,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.Eng. ECE Representative",
           "section": "representatives",
+          "email": "ksr84@cornell.edu",
           "biography": [
             "I'm Kartick Rajen, friends call me Karr. My bachelor's degree was in Computer Engineering, structured as a co-op program split between India and Taiwan. I have experience applying quantitative skills across financial engineering, computer vision, edge AI and biomedical research.",
             "Currently, I’m doing research at Weill Cornell Medicine, working on probabilistic modeling. Excited to bring this varied, cross-domain background to the cohort.",
@@ -150,6 +182,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.Eng. ORIE Representative",
           "section": "representatives",
+          "email": "rl996@cornell.edu",
           "biography": [
             "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, optimizing logistics, and am so pumped to be representing the brilliant students that are the ORIE class of 2027.",
             "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
@@ -189,6 +222,7 @@ export const peopleData = {
           "graduationYear": 2028,
           "role": "M.S. Connective Media Representative",
           "section": "representatives",
+          "email": "yl4445@cornell.edu",
           "biography": [
             "I'm Yun-Chung (Eric) Liu, and I grew up between Shanghai, Taiwan, and Michigan before studying Computer Science with a minor in Human-Computer Interaction at Washington University in St. Louis. I spent the last three years as a Software Engineer at Morningstar in Chicago, building data delivery systems and dashboards used by thousands of clients.",
             "My passion has always sat at the intersection of finance and technology, and I'm excited to keep exploring that with our cohort.",
@@ -203,6 +237,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.S. Health Tech Representative",
           "section": "representatives",
+          "email": "jj835@cornell.edu",
           "biography": [
             "I’m Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology – the process of how we use really big microscopes to study really small things.",
             "Excited to support our cohort’s vision for integrating technology into clinical and biomedical advancements.",
@@ -217,6 +252,7 @@ export const peopleData = {
           "graduationYear": 2028,
           "role": "M.S. Health Tech Representative",
           "section": "representatives",
+          "email": "ac3362@cornell.edu",
           "biography": [
             "Aidan is a health tech student passionate about applying machine learning to the US healthcare system. He grew up in Corvallis, Oregon, where he also earned his undergraduate degree in Computer Science at Oregon State University. There, he applied his studies to NMR research and designed supplementary instruction for CS students. Outside of class, you can (try to) find him around the city — he refuses to stay still. Whether it's sparring in martial arts, playing piano, or improving his tailoring skills, Aidan believes every hobby is practice for a problem he hasn't run into yet.",
             "Fun Fact: He speaks Japanese (N3) and hopes to learn more Mandarin this year. He was also a lion dance performer — as the head."
@@ -230,6 +266,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.S. Urban Tech Representative",
           "section": "representatives",
+          "email": "cgy4@cornell.edu",
           "biography": [
             "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
             "Fun Fact: I love trying new creative pursuits – this past year I’ve dove into contemporary dance, rug making and pottery!"
@@ -243,6 +280,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "MBA Representative",
           "section": "representatives",
+          "email": "Khg9@cornell.edu",
           "biography": [
             "Katie Graves is a two-time Big Red. She earned her undergraduate degree at Cornell before spending a decade in television, including eight years at Amazon MGM Studios. Most recently, she served as VP of Current Series and Development, where she built the tentpole and franchise division behind The Boys and Gen V. She is an Emmy-nominated producer and a member of the Television Academy. As a one-year MBA candidate at Cornell Tech, Katie is passionate about building community and championing evolutionary programming that embraces a rapidly shifting, disruptive world. She is driven to deliver results through strategy at the intersection of media, luxury, technology, and AI."
           ],
@@ -255,6 +293,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.S. Design Tech Representative",
           "section": "representatives",
+          "email": "ss4479@cornell.edu",
           "biography": [
             "Hi everyone, I'm Swar, a designer from Singapore. I earned my bachelor's degree in Industrial Design from the School of the Art Institute of Chicago, with a focus in digital fabrication and footwear development. Since graduating, I've spent four years leading product at two startups in Miami: a fashion-tech restoration marketplace and Miami's premier padel and wellness club, while also launching my own independent footwear venture, where I managed a global supply chain spanning Europe and Asia.",
             "That path has given me more than design sensibility. It's built a multidisciplinary toolkit and made me a stronger communicator across departments. Throughout my academic and professional life, I've become known for my willingness to challenge the status quo for the betterment of my community, whether that's teammates, coworkers, or classmates.",

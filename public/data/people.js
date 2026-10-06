@@ -257,6 +257,7 @@ export const peopleData = {
           "graduationYear": 2027,
           "role": "M.S. Connective Media Representative",
           "section": "representatives",
+          "email": "xl2266@cornell.edu",
           "links": [
             {
               "href": "https://www.linkedin.com/in/lillian-li-0688b3319/",

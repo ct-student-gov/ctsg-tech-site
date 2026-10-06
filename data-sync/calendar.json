@@ -754,21 +754,37 @@
           "departmentAcronyms": [
             "CTDEI"
           ]
+        },
+        {
+          "id": "inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM@campusgroups.com",
+          "source": "inclusion-belonging",
+          "category": "School events",
+          "title": "Connect & Converse",
+          "start": "2026-10-07T14:00:00.000Z",
+          "end": "2026-10-07T16:00:00.000Z",
+          "allDay": false,
+          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet the Senior Director of DEI, Omari Keeles, in the Bloomberg Center cafe!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133057",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133057",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTDEI"
+          ]
         }
       ],
-      "fetchedCount": 2,
+      "fetchedCount": 4,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     },
@@ -785,6 +801,22 @@
           "description": "Get discounted student tickets for the 2026 Frozen Apple Hockey Game at Madison Square Garden! Cornell Big Red vs. Maine Black Bears is taking place on Saturday, November 28 at 12pm! \n\nTo reserve discount tickets in the Cornell Tech section of seats:\n- Use the Register link on this page\n- Access using your netID email\n- To select tickets, don't use the seating chart. Instead select \"Other Categories\" - \"Cornell Tech - Section 227\"\n\nReserve with this link to sit in a designated Cornell Tech seating area at discounted rates. Be sure to make the reservation with your Cornell NetID.\n\n*Advertised on behalf of Cornell Athletics Ticketing. Cornell Tech Student Affairs does not have ownership over this event.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133001",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ]
+        },
+        {
+          "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Student Leader Training (Option 2)",
+          "start": "2026-10-20T13:00:00.000Z",
+          "end": "2026-10-20T14:00:00.000Z",
+          "allDay": false,
+          "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133059",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -839,6 +871,22 @@
           ]
         },
         {
+          "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Student Leader Training (Option 1)",
+          "start": "2026-10-15T13:00:00.000Z",
+          "end": "2026-10-15T14:00:00.000Z",
+          "allDay": false,
+          "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133058",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ]
+        },
+        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -855,19 +903,19 @@
           ]
         }
       ],
-      "fetchedCount": 9,
+      "fetchedCount": 11,
       "window": {
-        "start": "2026-07-03T06:33:02.367Z",
-        "end": "2027-11-05T06:33:02.367Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-01T06:33:02.367Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-04T21:35:09.074Z",
+        "comparedThrough": "2027-11-05T06:33:02.367Z",
         "warnings": []
       }
     },
@@ -901,6 +949,23 @@
           "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ],
+          "detailsRedacted": true
+        },
+        {
+          "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Student Leader Training (Option 2)",
+          "start": "2026-10-20T13:00:00.000Z",
+          "end": "2026-10-20T14:00:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -959,6 +1024,23 @@
           "detailsRedacted": true
         },
         {
+          "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Student Leader Training (Option 1)",
+          "start": "2026-10-15T13:00:00.000Z",
+          "end": "2026-10-15T14:00:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ],
+          "detailsRedacted": true
+        },
+        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -976,19 +1058,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 14,
+      "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 8,
+        "upcomingCount": 8,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     },
@@ -1069,8 +1151,8 @@
           ]
         }
       ],
-      "fetchedCount": 62,
-      "excludedCount": 60,
+      "fetchedCount": 60,
+      "excludedCount": 58,
       "failedCount": 1,
       "warnings": [
         {
@@ -1079,8 +1161,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 62,
-        "excludedCount": 60,
+        "fetchedCount": 60,
+        "excludedCount": 58,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1092,16 +1174,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-05T05:44:59.818Z",
-        "end": "2027-11-07T05:44:59.818Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
-      "updatedAt": "2026-10-03T05:44:59.818Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-06T06:12:20.930Z",
+        "comparedThrough": "2027-11-07T05:44:59.818Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1862,6 +1944,26 @@
         "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132977",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132977",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3Aa6c3b4cac9a3ace12f38571f964e290a1052026_10%3A13%3A10_AM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-10-06T06:51:26.911Z",
+      "event": {
+        "id": "inclusion-belonging:a6c3b4cac9a3ace12f38571f964e290a1052026_10:13:10_AM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Connect & Converse",
+        "start": "2026-10-05T14:00:00.000Z",
+        "end": "2026-10-05T16:00:00.000Z",
+        "allDay": false,
+        "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133056",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133056",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTDEI"

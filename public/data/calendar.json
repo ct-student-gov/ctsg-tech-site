@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-02T06:12:20.930Z",
+  "generatedAt": "2026-10-06T06:51:26.911Z",
   "window": {
-    "start": "2026-07-04T06:12:20.930Z",
-    "end": "2027-11-06T06:12:20.930Z"
+    "start": "2026-07-08T06:51:26.911Z",
+    "end": "2027-11-10T06:51:26.911Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -10,17 +10,17 @@
       "id": "student-affairs",
       "name": "Student Affairs",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "fetchedCount": 9,
+      "fetchedCount": 11,
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 5,
         "comparedThrough": "2027-11-05T06:33:02.367Z",
         "warnings": []
@@ -32,23 +32,23 @@
       "id": "inclusion-belonging",
       "name": "Inclusion & Belonging",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
-      "fetchedCount": 2,
+      "fetchedCount": 4,
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
+        "eventCount": 2,
+        "upcomingCount": 2,
         "previousUpcomingCount": 1,
         "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 1
+      "archivedCount": 2
     },
     {
       "id": "career-management",
@@ -56,11 +56,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -76,8 +76,8 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 63,
-      "excludedCount": 61,
+      "fetchedCount": 60,
+      "excludedCount": 58,
       "failedCount": 1,
       "warnings": [
         {
@@ -86,8 +86,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 63,
-        "excludedCount": 61,
+        "fetchedCount": 60,
+        "excludedCount": 58,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -99,16 +99,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-05T06:33:02.367Z",
+        "comparedThrough": "2027-11-07T05:44:59.818Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -124,11 +124,11 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -145,11 +145,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -166,11 +166,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -188,11 +188,11 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 35,
@@ -209,11 +209,11 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -229,17 +229,17 @@
       "id": "student-affairs-students",
       "name": "Student Affairs student subscription",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "fetchedCount": 14,
+      "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 6,
         "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
@@ -254,10 +254,10 @@
       "fetchedCount": 23,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-04T06:12:20.930Z",
-        "end": "2027-11-06T06:12:20.930Z"
+        "start": "2026-07-08T06:51:26.911Z",
+        "end": "2027-11-10T06:51:26.911Z"
       },
-      "updatedAt": "2026-10-02T06:12:20.930Z",
+      "updatedAt": "2026-10-06T06:51:26.911Z",
       "coverage": {
         "version": 1,
         "eventCount": 11,
@@ -890,6 +890,38 @@
       ]
     },
     {
+      "id": "inclusion-belonging:a6c3b4cac9a3ace12f38571f964e290a1052026_10:13:10_AM@campusgroups.com",
+      "source": "inclusion-belonging",
+      "category": "School events",
+      "title": "Connect & Converse",
+      "start": "2026-10-05T14:00:00.000Z",
+      "end": "2026-10-05T16:00:00.000Z",
+      "allDay": false,
+      "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133056",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133056",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTDEI"
+      ]
+    },
+    {
+      "id": "inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM@campusgroups.com",
+      "source": "inclusion-belonging",
+      "category": "School events",
+      "title": "Connect & Converse",
+      "start": "2026-10-07T14:00:00.000Z",
+      "end": "2026-10-07T16:00:00.000Z",
+      "allDay": false,
+      "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet the Senior Director of DEI, Omari Keeles, in the Bloomberg Center cafe!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133057",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133057",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTDEI"
+      ]
+    },
+    {
       "id": "career-management:42c9846facdfe26cf943d78bcaa8d3b79182026_2:02:27_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
@@ -1015,6 +1047,29 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Student Leader Training (Option 1)",
+      "start": "2026-10-15T13:00:00.000Z",
+      "end": "2026-10-15T14:00:00.000Z",
+      "allDay": false,
+      "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133058",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
       "id": "inclusion-belonging:32a1b88fa74aa9725951a21c49a4eec69292026_12:32:21_PM@campusgroups.com",
       "source": "inclusion-belonging",
       "category": "School events",
@@ -1091,6 +1146,29 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Student Leader Training (Option 2)",
+      "start": "2026-10-20T13:00:00.000Z",
+      "end": "2026-10-20T14:00:00.000Z",
+      "allDay": false,
+      "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133059",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day to add classes and change credits in 7 week 2 session",

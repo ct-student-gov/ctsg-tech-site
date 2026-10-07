@@ -252,7 +252,7 @@ export const peopleData = {
             }
           ],
           "biography": [
-            "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, optimizing logistics, and am so pumped to be Chief of Staff and representing the brilliant students that are the ORIE class of 2027.",
+            "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, and startups, and am so pumped to be Chief of Staff and representing the brilliant students that are the ORIE class of 2027.",
             "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
           ],
           "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"

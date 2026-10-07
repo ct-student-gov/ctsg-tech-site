@@ -594,6 +594,27 @@
           "detailsRedacted": true
         },
         {
+          "id": "career-management:9d77cab33137398cb33d41c0e6d8fdd69282026_4:12:27_PM@campusgroups.com",
+          "source": "career-management",
+          "category": "School events",
+          "title": "BRTC: Urban Innovation: Strategy, Scale & Impact",
+          "start": "2026-10-22T22:30:00.000Z",
+          "end": "2026-10-23T00:30:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133045",
+          "audienceTags": [
+            "JCTMBA'27",
+            "JCTDual'27",
+            "All Master's Students"
+          ],
+          "departmentAcronyms": [
+            "CTCAREERS"
+          ],
+          "detailsRedacted": true
+        },
+        {
           "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -670,19 +691,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 23,
+      "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-09T06:28:25.298Z",
+        "end": "2027-11-11T06:28:25.298Z"
       },
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-07T06:28:25.298Z",
       "coverage": {
         "version": 1,
-        "eventCount": 11,
-        "upcomingCount": 11,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 12,
+        "upcomingCount": 12,
+        "previousUpcomingCount": 11,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     },
@@ -1151,8 +1172,8 @@
           ]
         }
       ],
-      "fetchedCount": 60,
-      "excludedCount": 58,
+      "fetchedCount": 63,
+      "excludedCount": 61,
       "failedCount": 1,
       "warnings": [
         {
@@ -1161,8 +1182,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 60,
-        "excludedCount": 58,
+        "fetchedCount": 63,
+        "excludedCount": 61,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1174,16 +1195,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-08T06:51:26.911Z",
-        "end": "2027-11-10T06:51:26.911Z"
+        "start": "2026-07-09T06:28:25.298Z",
+        "end": "2027-11-11T06:28:25.298Z"
       },
-      "updatedAt": "2026-10-06T06:51:26.911Z",
+      "updatedAt": "2026-10-07T06:28:25.298Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-07T05:44:59.818Z",
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": [
           {
             "code": "unverified-events",

@@ -6,7 +6,7 @@ X-WR-CALNAME:Cornell Tech Student Events
 BEGIN:VEVENT
 UID:student-affairs:2a51e853b858a4489be8e1803aa39f006242026_5:30:01_PM@camp
  usgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260717T160000Z
 DTEND:20260717T170000Z
 SUMMARY:Studio Walk-In Office Hour
@@ -26,7 +26,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tech-academic:fall:2026:New-student pre-enrollment:1@ctsg.tech.cornell.
  edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260722T130000Z
 DTEND:20260723T200000Z
 SUMMARY:Cornell Tech: New-student pre-enrollment
@@ -39,7 +39,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:816cc9aed162b7486f102563476f8099782026_7:26:40_PM@campu
  sgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260724T151500Z
 DTEND:20260724T170000Z
 SUMMARY:Paint & Sip
@@ -52,7 +52,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:54bf62e612acd786ab9b7b7d38f0d427782026_7:32:48_PM@campu
  sgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260729T210000Z
 DTEND:20260729T213000Z
 SUMMARY:Cornell Tech Student Government (CTSG) Information Session
@@ -65,7 +65,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:a28e9d0a4af3cefd16688fcb9d3b49997152026_5:33:20_PM@camp
  usgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260804T203000Z
 DTEND:20260804T220000Z
 SUMMARY:(Nearly) End of Summer Celebration
@@ -84,7 +84,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:b4ad41974b9ca0bdbed3a75cc22bef55782026_7:36:45_PM@campu
  sgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260805T150000Z
 DTEND:20260805T163000Z
 SUMMARY:Round Robin Summer Event
@@ -97,7 +97,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Add/Drop begins for Graduate/Profession
  al/Cornell Tech@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260817T130000Z
 SUMMARY:Fall 2026: Add/Drop begins for Graduate/Professional/Cornell Tech
 DESCRIPTION:Cornell University Registrar academic calendar. Enrollment open
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Fall term begins: First-year writing se
  minar\, project session full\, regular\, and 7 week 1 session instruction 
  begins@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260825
 SUMMARY:Fall 2026: Fall term begins: First-year writing seminar\, project s
@@ -128,7 +128,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
  its in 7 week 1 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:Fall 2026: Last day to add classes and change credits in 7 week 1 s
@@ -144,7 +144,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:c13502b51f010b0bb37faa64570c1b8f7282026_1:06:41_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260903T220000Z
 DTEND:20260903T230000Z
 SUMMARY:Virtual Beyond Technical Skills: Professional Standards That Accele
@@ -158,7 +158,7 @@ URL:https://cornelltech.campusgroups.com/rsvp?id=2132936
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Labor Day/Holiday/No classes@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260907
 DTEND;VALUE=DATE:20260908
 SUMMARY:Labor Day/Holiday/No classes
@@ -174,7 +174,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
  its in first-year writing seminar and regular session@ctsg.tech.cornell.ed
  u
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260908
 DTEND;VALUE=DATE:20260909
 SUMMARY:Fall 2026: Last day to add classes and change credits in first-year
@@ -190,7 +190,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:a74f728ab48675b41f1ebed64909cd1a9142026_2:03:20_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260915T223000Z
 DTEND:20260916T001500Z
 SUMMARY:The Future is Semi LIVE I Industry\, Up Close
@@ -204,7 +204,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to drop classes in 7 week 1 se
  ssion@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:Fall 2026: Last day to drop classes in 7 week 1 session
@@ -219,7 +219,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:d5f95f90e2e995f68844996886bc8e92982026_3:10:09_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260921T200000Z
 DTEND:20260921T210000Z
 SUMMARY:Ellison Scholars programme at the University of Oxford- Info Sessio
@@ -234,7 +234,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:18cad1d423cc05c13b3874beadd338b79112026_1:12:44_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260922T193000Z
 DTEND:20260922T220000Z
 SUMMARY:UNGA/Climate Week New York Conversations and Networking hosted by G
@@ -249,7 +249,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:inclusion-belonging:6386e582ea61cd9b57300516fb7672f48262026_10:12:47_AM
  @campusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260923T133000Z
 DTEND:20260923T143000Z
 SUMMARY:Bagels and Belonging
@@ -264,7 +264,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:744c8c394535b582428c41883ddd18939102026_1:53:22_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T000000Z
 DTEND:20260924T010000Z
 SUMMARY:Ericsson China 2027 Campus Recruitment | Online Information Session
@@ -278,7 +278,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:b6cf0970047525f4bf9ac5c1814fab019162026_11:54:12_AM@c
  ampusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T150000Z
 DTEND:20260924T160000Z
 SUMMARY:FASPE Design & Technology Virtual Information Session
@@ -291,7 +291,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:d3f1f59e20246a196358b3208d471ac4912026_9:37:06_AM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T150000Z
 DTEND:20260924T160000Z
 SUMMARY:Summer Ethical Leadership Fellowship  in Design\, Technology\, Arch
@@ -306,7 +306,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:0b486b5e463bf6c9542af43d134529889162026_2:30:17_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T160000Z
 DTEND:20260924T170000Z
 SUMMARY:Moderna-Early Career Information Session [Session 1]
@@ -320,7 +320,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:3b41e55d9328451b47bfc66eb14aea09922026_3:13:54_PM@campu
  sgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T193000Z
 DTEND:20260924T200000Z
 SUMMARY:Bloomberg Center Art Tour (3:30 PM Start)
@@ -341,7 +341,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:bcc2ab7bdd6fd40afbdba17c2b8ad1f1982026_9:50:26_PM@campu
  sgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T200000Z
 DTEND:20260924T203000Z
 SUMMARY:Bloomberg Center Art Tour (4:00 PM Start)
@@ -362,7 +362,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:efa42722770a1852e790051d3d0fc1849182026_1:44:58_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260924T200000Z
 DTEND:20260924T210000Z
 SUMMARY:Job Search Strategy for International Students
@@ -375,7 +375,7 @@ URL:https://cornelltech.campusgroups.com/rsvp?id=2133033
 END:VEVENT
 BEGIN:VEVENT
 UID:tech-academic:fall:2026:Maker Day:1@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Cornell Tech: Maker Day
@@ -387,7 +387,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
  its in project session full session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Fall 2026: Last day to add classes and change credits in project se
@@ -403,7 +403,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:94f5607a4a9ae7470550441681b970428282026_11:10:55_AM@c
  ampusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260928T163000Z
 DTEND:20260928T173000Z
 SUMMARY:Jane Street: Strategy & Product [Virtual Series] - INTERNSHIPS
@@ -417,7 +417,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:18b02fe157f01d05755e9e53e871072f9142026_1:22:29_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260929T120000Z
 DTEND:20260929T210000Z
 SUMMARY:OneStream Developer Day New York City
@@ -431,7 +431,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:7702c4c7535ec9a2da497a7a26a6cd628202026_1:51:42_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260929T160000Z
 DTEND:20260929T170000Z
 SUMMARY:Port Authority of NY & NJ Engineering & Architecture Associates Pro
@@ -446,7 +446,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tech-events:field-conditions-incubating-media-arts-in-nyc@ctsg.tech.cor
  nell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20260930T230000Z
 DTEND:20261001T003000Z
 SUMMARY:Field Conditions: Incubating Media Arts in NYC
@@ -472,7 +472,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:inclusion-belonging:a6c3b4cac9a3ace12f38571f964e290a1052026_10:13:10_AM
  @campusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261005T140000Z
 DTEND:20261005T160000Z
 SUMMARY:Connect & Converse
@@ -488,7 +488,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM
  @campusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261007T140000Z
 DTEND:20261007T160000Z
 SUMMARY:Connect & Converse
@@ -503,7 +503,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:42c9846facdfe26cf943d78bcaa8d3b79182026_2:02:27_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261007T170000Z
 DTEND:20261007T180000Z
 SUMMARY:Monthly Training: How to Navigate Interstride to Maximize Your Job 
@@ -518,7 +518,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:7a23fd6c6185a525fc56aecdc26e5a6b9292026_2:15:52_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261007T173000Z
 DTEND:20261007T183000Z
 SUMMARY:QuantumBlack\, AI by McKinsey - Virtual Info Session
@@ -532,7 +532,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:cebf0c6a48a369913fddee1ad7d29a698192026_3:19:52_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261008T153000Z
 DTEND:20261008T223000Z
 SUMMARY:Future Forward: A Roche-Genentech Early Career Info Session
@@ -546,7 +546,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:tech-events:revolutionizing-healthcare-with-ai-powered-devices@ctsg.tec
  h.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261008T160000Z
 DTEND:20261008T180000Z
 SUMMARY:Revolutionizing Healthcare With AI-Powered Devices
@@ -581,7 +581,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day of instruction for classes in 
  7 week 1 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Fall 2026: Last day of instruction for classes in 7 week 1 session
@@ -595,7 +595,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall Break/No classes@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261014
 SUMMARY:Fall Break/No classes
@@ -610,7 +610,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: 7 week 2 session instruction begins@cts
  g.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:Fall 2026: 7 week 2 session instruction begins
@@ -625,7 +625,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: 7 week 1 session final exams@ctsg.tech.
  cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fall 2026: 7 week 1 session final exams
@@ -640,7 +640,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@camp
  usgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261015T130000Z
 DTEND:20261015T140000Z
 SUMMARY:Student Leader Training (Option 1)
@@ -660,7 +660,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:inclusion-belonging:32a1b88fa74aa9725951a21c49a4eec69292026_12:32:21_PM
  @campusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261015T140000Z
 DTEND:20261015T160000Z
 SUMMARY:Send a Post Card!
@@ -678,7 +678,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:27c354348b43470b1800325f8e5539669152026_10:11:50_AM@c
  ampusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261015T170000Z
 DTEND:20261015T210000Z
 SUMMARY:Cornell University STEM Virtual Career Fair - registration opens on
@@ -692,7 +692,7 @@ URL:https://cornelltech.campusgroups.com/rsvp?id=2133010
 END:VEVENT
 BEGIN:VEVENT
 UID:tech-academic:fall:2026:Maker Day:2@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Cornell Tech: Maker Day
@@ -704,7 +704,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:65726f6cf185a7439301f3a584d410a79292026_10:16:31_AM@c
  ampusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261016T203000Z
 DTEND:20261017T213000Z
 SUMMARY:Climate Advocacy Symposium @ Cornell University -  Fri\, Oct 16 - S
@@ -720,7 +720,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to change grading basis and dr
  op classes in first-year writing seminar\, project session full\, and regu
  lar session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Fall 2026: Last day to change grading basis and drop classes in fir
@@ -736,7 +736,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@camp
  usgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261020T130000Z
 DTEND:20261020T140000Z
 SUMMARY:Student Leader Training (Option 2)
@@ -756,7 +756,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to add classes and change cred
  its in 7 week 2 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Fall 2026: Last day to add classes and change credits in 7 week 2 s
@@ -772,7 +772,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@camp
  usgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261022T190000Z
 DTEND:20261022T200000Z
 SUMMARY:Visas After Graduation with Miller Mayer
@@ -789,9 +789,23 @@ CATEGORIES:School events
 URL:https://cornelltech.campusgroups.com/rsvp?id=2133009
 END:VEVENT
 BEGIN:VEVENT
+UID:career-management:9d77cab33137398cb33d41c0e6d8fdd69282026_4:12:27_PM@ca
+ mpusgroups.com@ctsg.tech.cornell.edu
+DTSTAMP:20261007T062825Z
+DTSTART:20261022T223000Z
+DTEND:20261023T003000Z
+SUMMARY:BRTC: Urban Innovation: Strategy\, Scale & Impact
+DESCRIPTION:See the official event page for details\, eligibility\, and reg
+ istration. Cornell sign-in may be required.\n\nAudience: JCTMBA'27\, JCTDu
+ al'27\, All Master's Students
+LOCATION:See event page for location
+CATEGORIES:School events
+URL:https://cornelltech.campusgroups.com/rsvp?id=2133045
+END:VEVENT
+BEGIN:VEVENT
 UID:student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261023T193000Z
 DTEND:20261023T220000Z
 SUMMARY:Student Volunteer Day
@@ -808,7 +822,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:2682831ddbafc61f3035c208e524521b9152026_11:41:12_AM@c
  ampusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261024T123000Z
 DTEND:20261025T010000Z
 SUMMARY:XRP LEDGER HACKATHON
@@ -822,7 +836,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:e0529352334ee93fcb19b5759c765dea9152026_1:12:28_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261027T150000Z
 DTEND:20261027T160000Z
 SUMMARY:Tesla x Interstride | Supercharging Your Resume
@@ -836,7 +850,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261028T160000Z
 DTEND:20261028T180000Z
 SUMMARY:Pumpkin Decorating Contest!
@@ -853,7 +867,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Profes
  sional/Cornell Tech@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261110T123000Z
 DTEND:20261113T045900Z
 SUMMARY:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Te
@@ -869,7 +883,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day to change grading basis and dr
  op classes in 7 week 2 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261112T045900Z
 SUMMARY:Fall 2026: Last day to change grading basis and drop classes in 7 w
  eek 2 session
@@ -883,7 +897,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:tech-academic:fall:2026:Maker Day:3@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Cornell Tech: Maker Day
@@ -895,7 +909,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261116T180000Z
 DTEND:20261116T190000Z
 SUMMARY:Monthly Training: How to Navigate Interstride to Maximize Your Job 
@@ -910,7 +924,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261117T210000Z
 DTEND:20261117T220000Z
 SUMMARY:Job Search Strategy for International Students
@@ -924,7 +938,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261118T160000Z
 DTEND:20261118T190000Z
 SUMMARY:Gratitude Day
@@ -943,7 +957,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261119T190000Z
 DTEND:20261119T200000Z
 SUMMARY:Top 10 Mistakes Made by International Students in Their Job and Int
@@ -958,7 +972,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Thanksgiving Break/No classes@ctsg.tech.cornell.ed
  u
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261130
 SUMMARY:Thanksgiving Break/No classes
@@ -973,7 +987,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:9cd14cf60c89290ea08f96af97ed873b9102026_12:30:25_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261128T170000Z
 DTEND:20261128T200000Z
 SUMMARY:Frozen Apple Hockey Game
@@ -995,7 +1009,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@ca
  mpusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261202T180000Z
 DTEND:20261202T190000Z
 SUMMARY:Monthly Training: How to Navigate Interstride to Maximize Your Job 
@@ -1009,7 +1023,7 @@ URL:https://cornelltech.campusgroups.com/rsvp?id=2133039
 END:VEVENT
 BEGIN:VEVENT
 UID:tech-academic:fall:2026:Maker Day:4@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Cornell Tech: Maker Day
@@ -1021,7 +1035,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day of instruction for classes in 
  7 week 2 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Fall 2026: Last day of instruction for classes in 7 week 2 session
@@ -1037,7 +1051,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Last day of instruction for classes in 
  first-year writing seminar\, project session full\, and regular session@ct
  sg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:Fall 2026: Last day of instruction for classes in first-year writin
@@ -1053,7 +1067,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:student-affairs:612104fd39a702e83e5cecdb865b10b99102026_12:29:22_PM@cam
  pusgroups.com@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20261207T180000Z
 DTEND:20261207T200000Z
 SUMMARY:Stress Less for Success: Hot Chocolate!
@@ -1065,7 +1079,7 @@ URL:https://cornelltech.campusgroups.com/rsvp?id=2133000
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Study days@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261211
 SUMMARY:Fall 2026: Study days
@@ -1079,7 +1093,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Fall 2026: Final exams@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261220
 SUMMARY:Fall 2026: Final exams
@@ -1094,7 +1108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:New Years Day/Holiday/No classes@ctsg.tech.cornell
  .edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:New Years Day/Holiday/No classes
@@ -1109,7 +1123,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Martin Luther King\, Jr. Holiday/No Classes@ctsg.t
  ech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:Martin Luther King\, Jr. Holiday/No Classes
@@ -1124,7 +1138,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Add/Drop begins for Graduate/Professi
  onal/ Cornell Tech@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART:20270119T140000Z
 SUMMARY:Spring 2027: Add/Drop begins for Graduate/Professional/ Cornell Tec
  h
@@ -1140,7 +1154,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Spring term begins: First-year writin
  g seminar\, project session full\, regular\, and 7 week 1 session instruct
  ion begins@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
 SUMMARY:Spring 2027: Spring term begins: First-year writing seminar\, proje
@@ -1156,7 +1170,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
  edits in 7 week 1 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:Spring 2027: Last day to add classes and change credits in 7 week 1
@@ -1172,7 +1186,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
  edits in first year writting and regular session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
 SUMMARY:Spring 2027: Last day to add classes and change credits in first ye
@@ -1187,7 +1201,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:February Break/No classes@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270217
 SUMMARY:February Break/No classes
@@ -1202,7 +1216,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
  drop class in 7 week 1 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270222
 DTEND;VALUE=DATE:20270223
 SUMMARY:Spring 2027: Last day to change grading basis and drop class in 7 w
@@ -1218,7 +1232,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to add classes and change cr
  edits in project session full session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
 SUMMARY:Spring 2027: Last day to add classes and change credits in project 
@@ -1234,7 +1248,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day of instruction for classes i
  n 7 week 1 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270316
 DTEND;VALUE=DATE:20270317
 SUMMARY:Spring 2027: Last day of instruction for classes in 7 week 1 sessio
@@ -1250,7 +1264,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: 7 week 1 session final exams@ctsg.tec
  h.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270325
 SUMMARY:Spring 2027: 7 week 1 session final exams
@@ -1265,7 +1279,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: 7 week 2 session instruction begins@c
  tsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270318
 SUMMARY:Spring 2027: 7 week 2 session instruction begins
@@ -1281,7 +1295,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
  drop classes in first-year writing seminar\, project session full\, and re
  gular session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
 SUMMARY:Spring 2027: Last day to change grading basis and drop classes in f
@@ -1297,7 +1311,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to change credits and add cl
  asses in 7 week 2 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270324
 DTEND;VALUE=DATE:20270325
 SUMMARY:Spring 2027: Last day to change credits and add classes in 7 week 2
@@ -1312,7 +1326,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring Break/No classes@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270405
 SUMMARY:Spring Break/No classes
@@ -1327,7 +1341,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day to change grading basis and 
  drop classes in 7 week 2 session@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270415
 SUMMARY:Spring 2027: Last day to change grading basis and drop classes in 7
@@ -1344,7 +1358,7 @@ BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Last day of instruction for classes i
  n first year writing\, project session full\, regular and 7 week 2 session
  @ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Spring 2027: Last day of instruction for classes in first year writ
@@ -1359,7 +1373,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Study days@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270512
 DTEND;VALUE=DATE:20270515
 SUMMARY:Spring 2027: Study days
@@ -1373,7 +1387,7 @@ URL:https://registrar.cornell.edu/calendars-exams/academic-calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Spring 2027: Final exams@ctsg.tech.cornell.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270523
 SUMMARY:Spring 2027: Final exams
@@ -1388,7 +1402,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Memorial Day/ Holiday/No classes@ctsg.tech.cornell
  .edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
 SUMMARY:Memorial Day/ Holiday/No classes
@@ -1403,7 +1417,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Juneteenth/Holiday/No Classes@ctsg.tech.cornell.ed
  u
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270619
 SUMMARY:Juneteenth/Holiday/No Classes
@@ -1418,7 +1432,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:academic:2026–2027:Observation of July 4th/No classes@ctsg.tech.corne
  ll.edu
-DTSTAMP:20261006T065126Z
+DTSTAMP:20261007T062825Z
 DTSTART;VALUE=DATE:20270705
 DTEND;VALUE=DATE:20270706
 SUMMARY:Observation of July 4th/No classes

@@ -25,6 +25,25 @@ const page = (properties = {}, extra = {}) => ({
 });
 const schema = { properties: Object.fromEntries(Object.entries({ Name: "title", Publish: "checkbox", Role: "select", Section: "select", "Academic Year": "multi_select", "Graduation Year": "number", Program: "rich_text", Photo: "files" }).map(([key, type]) => [key, { type }])) };
 const list = (results, cursor = null) => Response.json({ results, has_more: !!cursor, next_cursor: cursor });
+const multi = (...names) => ({ multi_select: names.map(name => ({ name })) });
+
+test("roles pair with sections in selection order, including reversed order", () => {
+  const roles = multi("M.Eng. ORIE Representative", "Chief of Staff");
+  assert.deepEqual(publicProfile(page({ Role: roles, Section: multi("Representatives", "Executive Board") })).assignments, [
+    { role: "M.Eng. ORIE Representative", section: "representatives" },
+    { role: "Chief of Staff", section: "executive-board" },
+  ]);
+  assert.deepEqual(publicProfile(page({ Role: roles, Section: multi("Executive Board", "Representatives") })).assignments, [
+    { role: "M.Eng. ORIE Representative", section: "executive-board" },
+    { role: "Chief of Staff", section: "representatives" },
+  ]);
+  for (const properties of [
+    { Role: roles, Section: multi("Representatives") },
+    { Role: multi("Chief of Staff"), Section: multi("Executive Board", "Representatives") },
+  ]) assert.throws(() => publicProfile(page(properties)), /same number.*paired in order/);
+  assert.throws(() => publicProfile(page({ Role: multi() })), /needs Role/);
+  assert.throws(() => publicProfile(page({ Section: multi("Unknown") })), /needs Section/);
+});
 
 test("only published, non-archived profiles are eligible; private properties are excluded", () => {
   for (const value of [false, undefined, "true"]) assert.equal(publicProfile(page({ Publish: { checkbox: value } })), null);
@@ -181,7 +200,7 @@ async function incrementalFixture(t) {
   const statePath = join(root, "sync-state/people.json");
   const png = await sharp({ create: { width: 30, height: 50, channels: 3, background: "red" } }).png().toBuffer();
   const requests = [];
-  const source = { pages: [page()], bio: "Public biography", photo: png, failure: null };
+  const source = { pages: [page()], schema, bio: "Public biography", photo: png, failure: null };
   const fetcher = async (url, options) => {
     requests.push(url);
     if (!url.startsWith("https://api.notion.com/")) {
@@ -191,11 +210,75 @@ async function incrementalFixture(t) {
     if (source.failure) return new Response(null, { status: source.failure });
     if (url.endsWith("/query")) return list(source.pages);
     if (url.includes("/blocks/")) return list([block("heading_2", "Website Bio"), block("paragraph", source.bio), block("heading_2", "Work items"), block("paragraph", "Private work notes")]);
-    return Response.json(schema);
+    return Response.json(source.schema);
   };
   const sync = options => syncPeople({ env: { NOTION_PEOPLE_TOKEN: "test-private-token" }, root, statePath, fetcher, sleep: async () => {}, ...options });
   return { root, statePath, requests, source, sync };
 }
+
+test("multi-select sync emits exactly one card per ordered pair per year and retains it on mismatch", async t => {
+  const { source, requests, sync } = await incrementalFixture(t);
+  source.schema = structuredClone(schema);
+  source.schema.properties.Role.type = "multi_select";
+  source.schema.properties.Section.type = "multi_select";
+  const properties = {
+    Role: multi("M.Eng. ORIE Representative", "Chief of Staff"),
+    Section: multi("Representatives", "Executive Board"),
+    "Academic Year": multi("2026–27", "2027–28"),
+  };
+  source.pages = [page(properties)];
+  const initial = await sync();
+  assert.equal(initial.profileCount, 1);
+  for (const year of initial.data.years) {
+    assert.deepEqual(year.members.map(({ role, section }) => ({ role, section })), [
+      { role: "M.Eng. ORIE Representative", section: "representatives" },
+      { role: "Chief of Staff", section: "executive-board" },
+    ]);
+    assert.ok(year.members.every(member => member.profileId === id.replaceAll("-", "")));
+  }
+  assert.equal(initial.downloadedPhotos, 1);
+  assert.equal(requests.filter(url => url.includes("/blocks/")).length, 1);
+  assert.equal((await sync()).changed, false);
+  source.pages = [page({ ...properties, Section: multi("Representatives") })];
+  const invalid = await sync();
+  assert.deepEqual(invalid.data, initial.data);
+  assert.match(invalid.warnings[0], /same number.*kept last published/);
+  source.pages = [page({ ...properties, Section: multi("Executive Board", "Representatives") })];
+  const reordered = await sync();
+  assert.deepEqual(reordered.data.years[0].members.map(member => member.section), ["executive-board", "representatives"]);
+});
+
+test("fallback identifies records by ID even when their portraits are shared", async t => {
+  const { source, sync } = await incrementalFixture(t);
+  const secondId = "abcdefab-abcd-1234-abcd-123456789abc";
+  source.pages = [page(), page({ Role: { select: { name: "Chief of Staff" } }, Section: { select: { name: "Executive Board" } } }, { id: secondId })];
+  const initial = await sync();
+  assert.equal(initial.data.years[0].members[0].portrait, initial.data.years[0].members[1].portrait);
+  source.pages = [page({ Role: multi() }), page({ Role: multi() }, { id: secondId })];
+  assert.deepEqual((await sync()).data, initial.data);
+  // A removed record must not reappear through another record's shared photo.
+  source.pages = [source.pages[0]];
+  const remaining = await sync();
+  assert.equal(remaining.data.years[0].members.length, 1);
+  assert.equal(remaining.data.years[0].members[0].role, "DT Representative");
+});
+
+test("legacy fallback preserves unique portraits but never copies ambiguous shared-photo cards", async t => {
+  const { source, root, sync } = await incrementalFixture(t);
+  const initial = await sync();
+  const legacy = structuredClone(initial.data);
+  delete legacy.years[0].members[0].profileId;
+  await writeFile(join(root, "data/people.js"), `export const peopleData = ${JSON.stringify(legacy)};\n`);
+  source.pages = [page({ Role: multi() })];
+  assert.deepEqual((await sync()).data, legacy);
+  source.pages = [page(), page({}, { id: "abcdefab-abcd-1234-abcd-123456789abc" })];
+  const shared = (await sync()).data;
+  for (const member of shared.years[0].members) delete member.profileId;
+  await writeFile(join(root, "data/people.js"), `export const peopleData = ${JSON.stringify(shared)};\n`);
+  source.pages = source.pages.map(value => ({ ...value, properties: { ...value.properties, Role: multi() } }));
+  await assert.rejects(sync(), /cannot safely identify the legacy profile/);
+  assert.deepEqual(await readSnapshot(root), shared);
+});
 
 test("contact edits publish with cached bios; one local favicon serves all same-site profiles and later runs", async t => {
   const { root, requests, source, sync } = await incrementalFixture(t);

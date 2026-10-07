@@ -47,8 +47,17 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, cac
   for (const invalid of invalidProfiles) {
     const cached = cachedProfiles[invalid.id];
     let retained = false;
+    // Legacy snapshots lack profile IDs. A shared photo cannot identify which
+    // record owns a card, so only migrate unambiguous legacy matches.
+    const uniquePortrait = cached?.portrait && Object.values(cachedProfiles)
+      .filter(profile => profile.portrait === cached.portrait).length === 1;
+    if (cached?.portrait && !uniquePortrait && previous.years.some(year =>
+      year.members.some(member => !member.profileId && member.portrait === cached.portrait))) {
+      throw new Error(`${invalid.message}; cannot safely identify the legacy profile by its shared photo; correct the profile before syncing`);
+    }
     if (cached?.portrait) for (const year of previous.years) {
-      const members = year.members.filter(member => member.portrait === cached.portrait);
+      const members = year.members.filter(member => member.profileId === invalid.id
+        || (!member.profileId && uniquePortrait && member.portrait === cached.portrait));
       if (!members.length) continue;
       if (!years.has(year.startYear)) years.set(year.startYear, []);
       years.get(year.startYear).push(...members);
@@ -87,11 +96,13 @@ async function preparePeople(profiles, { root, fetcher, cachedProfiles = {}, cac
       portrait,
       biography: profile.member.biography || [],
     };
-    const member = { ...profile.member, portrait };
+    const member = { ...profile.member, portrait, profileId: profile.id };
     if (member.links?.length) member.links = await favicons.links(member.links);
     for (const startYear of profile.years) {
       if (!years.has(startYear)) years.set(startYear, []);
-      years.get(startYear).push(member);
+      for (const assignment of profile.assignments ?? [{ role: member.role, section: member.section }]) {
+        years.get(startYear).push({ ...member, ...assignment });
+      }
     }
   }
   const name = member => `${member.firstName} ${member.lastName}`.trim();

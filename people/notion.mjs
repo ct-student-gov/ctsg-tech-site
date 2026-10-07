@@ -1,6 +1,7 @@
 export const PEOPLE_DATA_SOURCE_ID = "140882c6-08ed-4e2a-9bcd-399ae6ba065b";
 const text = parts => (parts || []).map(part => part.plain_text ?? part.text?.content ?? "").join("");
 const sections = { "Executive Board": "executive-board", Representatives: "representatives" };
+const selections = property => property?.multi_select ?? (property?.select ? [property.select] : []);
 const uuid = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/i;
 
 export class ProfileValidationError extends Error {}
@@ -27,12 +28,17 @@ export function publicProfile(page) {
   const p = page.properties || {};
   if (p.Publish?.checkbox !== true || page.archived || page.in_trash) return null;
   const name = text(p.Name?.title).trim();
-  const role = p.Role?.select?.name;
-  const section = sections[p.Section?.select?.name];
+  const roles = selections(p.Role).map(option => option.name);
+  const selectedSections = selections(p.Section).map(option => sections[option.name]);
   const photos = p.Photo?.files || [];
-  const missing = [!name && "Name", !role && "Role", !section && "Section",
+  const missing = [!name && "Name", (!roles.length || roles.some(role => !role)) && "Role",
+    (!selectedSections.length || selectedSections.some(section => !section)) && "Section",
     !p["Academic Year"]?.multi_select?.length && "Academic Year", photos.length !== 1 && "exactly one Photo"].filter(Boolean);
   if (missing.length) throw new ProfileValidationError(`${name || page.id}: needs ${missing.join(", ")}`);
+  if (roles.length !== selectedSections.length) {
+    throw new ProfileValidationError(`${name}: Role and Section need the same number of selections, paired in order`);
+  }
+  const assignments = roles.map((role, index) => ({ role, section: selectedSections[index] }));
   const years = (p["Academic Year"]?.multi_select || []).map(option => {
     const match = /^(\d{4})[–-](\d{2}|\d{4})$/.exec(option.name);
     const start = Number(match?.[1]);
@@ -40,7 +46,7 @@ export function publicProfile(page) {
     if (!match || (end !== start + 1 && end !== (start + 1) % 100)) throw new ProfileValidationError(`${name}: invalid Academic Year`);
     return start;
   });
-  if (!uuid.test(page.id) || !name || !role || !section || !years.length) {
+  if (!uuid.test(page.id) || !years.length) {
     throw new Error(`${name || page.id}: published profiles need Name, Role, Section and Academic Year`);
   }
   const graduationYear = p["Graduation Year"]?.number ?? null;
@@ -55,11 +61,12 @@ export function publicProfile(page) {
   const split = name.indexOf(" ");
   return {
     id: page.id.replaceAll("-", "").toLowerCase(), years: [...new Set(years)], photoUrl,
+    assignments,
     member: {
       firstName: split < 0 ? name : name.slice(0, split),
       lastName: split < 0 ? "" : name.slice(split + 1),
       program: text(p.Program?.rich_text).trim() || null,
-      graduationYear, role, section,
+      graduationYear, ...assignments[0],
       ...publicContacts(p),
     },
   };
@@ -129,8 +136,13 @@ export async function loadPeople(env, {
     return rows;
   }
   const schema = await request(`data_sources/${dataSource}`);
-  for (const [name, type] of Object.entries({ Name: "title", Publish: "checkbox", Role: "select", Section: "select", "Academic Year": "multi_select", "Graduation Year": "number", Program: "rich_text", Photo: "files" })) {
+  for (const [name, type] of Object.entries({ Name: "title", Publish: "checkbox", "Academic Year": "multi_select", "Graduation Year": "number", Program: "rich_text", Photo: "files" })) {
     if (schema.properties?.[name]?.type !== type) throw new Error(`Team Directory needs ${name} (${type})`);
+  }
+  for (const name of ["Role", "Section"]) {
+    if (!["select", "multi_select"].includes(schema.properties?.[name]?.type)) {
+      throw new Error(`Team Directory needs ${name} (select or multi_select)`);
+    }
   }
   for (const [name, types] of Object.entries({ Email: ["rich_text", "email"], Links: ["rich_text"] })) {
     if (schema.properties?.[name] && !types.includes(schema.properties[name].type)) throw new Error(`Team Directory ${name} has an unsupported property type`);

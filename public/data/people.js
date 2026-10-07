@@ -238,6 +238,26 @@ export const peopleData = {
           "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"
         },
         {
+          "firstName": "Rachel",
+          "lastName": "Liu",
+          "program": "Master of Engineering in Operations Research and Information Engineering",
+          "graduationYear": 2027,
+          "role": "Chief of Staff",
+          "section": "executive-board",
+          "email": "rl996@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/rachel-liu-2023/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, optimizing logistics, and am so pumped to be Chief of Staff and representing the brilliant students that are the ORIE class of 2027.",
+            "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
+          ],
+          "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"
+        },
+        {
           "firstName": "Alex",
           "lastName": "Bao",
           "program": "Master of Engineering in Data Science and Decision Analytics",

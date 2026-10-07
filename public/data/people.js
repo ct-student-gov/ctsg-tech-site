@@ -258,6 +258,46 @@ export const peopleData = {
           "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"
         },
         {
+          "firstName": "Rachel",
+          "lastName": "Liu",
+          "program": "Master of Engineering in Operations Research and Information Engineering",
+          "graduationYear": 2027,
+          "role": "M.Eng. ORIE Representative",
+          "section": "representatives",
+          "email": "rl996@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/rachel-liu-2023/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, and startups, and am so pumped to be Chief of Staff and representing the brilliant students that are the ORIE class of 2027.",
+            "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
+          ],
+          "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"
+        },
+        {
+          "firstName": "Rachel",
+          "lastName": "Liu",
+          "program": "Master of Engineering in Operations Research and Information Engineering",
+          "graduationYear": 2027,
+          "role": "Chief of Staff",
+          "section": "executive-board",
+          "email": "rl996@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/rachel-liu-2023/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "Hey y’all! My name is Rachel Liu, I’m originally from San Francisco but earned my B.S in Psychobiology and Human-Computer Interaction from UCLA. I’ve lived in Bushwick, New York for the last 3 years working as a UX Researcher, then PM for Autodesk. I’m passionate about building community, creative technology, and startups, and am so pumped to be Chief of Staff and representing the brilliant students that are the ORIE class of 2027.",
+            "Fun Fact: I’m a SuperMaker at the MakerLAB here on campus, recently returned from my first solo trip across Europe, and need to eat at least one pancake per day."
+          ],
+          "portrait": "./images/members/notion/2026/3e30b1bd679180b0835dd668fd00b5f0-9cbb41aca8458145.webp"
+        },
+        {
           "firstName": "Alex",
           "lastName": "Bao",
           "program": "Master of Engineering in Data Science and Decision Analytics",
@@ -269,6 +309,26 @@ export const peopleData = {
             "Fun Fact: I once applied for a commercial orbital spaceflight and actually made it to the shortlist."
           ],
           "portrait": "./images/members/notion/2026/3eb0b1bd6791815097d8e03b4204c66c-bb594610676788e2.webp"
+        },
+        {
+          "firstName": "Lillian",
+          "lastName": "Li",
+          "program": "Dual M.S. in Connective Media",
+          "graduationYear": 2027,
+          "role": "M.S. Connective Media Representative",
+          "section": "representatives",
+          "email": "xl2266@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/lillian-li-0688b3319/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！💫 My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French 🌍, and I’m passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.🙌",
+            "Fun Fact: I can wake up at whatever time I want without an alarm！ I love reading detective novels and guessing who the culprit is before the reveal🤔."
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791811982e1d0826c3ade9d-543d82cf933af859.webp"
         },
         {
           "firstName": "Lillian",
@@ -333,6 +393,27 @@ export const peopleData = {
           "portrait": "./images/members/notion/2025/3eb0b1bd6791818ba066c9242b931a50-822d300f57099019.webp"
         },
         {
+          "firstName": "Jiwon",
+          "lastName": "Jeong",
+          "program": "Dual M.S. in Health Tech",
+          "graduationYear": 2027,
+          "role": "M.S. Health Tech Representative",
+          "section": "representatives",
+          "email": "jj835@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/jiwon-jeong-1713491ab/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "I’m Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology – the process of how we use really big microscopes to study really small things.",
+            "Excited to support our cohort’s vision for integrating technology into clinical and biomedical advancements.",
+            "Fun Fact: My sister and I like cooking two things together: Asian hotpot and spaghetti."
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791818ba066c9242b931a50-822d300f57099019.webp"
+        },
+        {
           "firstName": "Aidan",
           "lastName": "Cuccaro",
           "program": "Dual M.S. in Health Tech",
@@ -351,6 +432,26 @@ export const peopleData = {
             "Fun Fact: He speaks Japanese (N3) and hopes to learn more Mandarin this year. He was also a lion dance performer — as the head."
           ],
           "portrait": "./images/members/notion/2026/3e30b1bd679180d98f88f562e946d429-fee8cd49d6301883.webp"
+        },
+        {
+          "firstName": "Gabriela",
+          "lastName": "Yaulli",
+          "program": "Dual M.S. in Urban Tech",
+          "graduationYear": 2027,
+          "role": "M.S. Urban Tech Representative",
+          "section": "representatives",
+          "email": "cgy4@cornell.edu",
+          "links": [
+            {
+              "href": "https://www.linkedin.com/in/gabriela-yaulli-herrera/",
+              "icon": "./images/members/favicons/68c1e55b7e754991-d2ef8f7f4a1fcb36.webp"
+            }
+          ],
+          "biography": [
+            "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
+            "Fun Fact: I love trying new creative pursuits – this past year I’ve dove into contemporary dance, rug making and pottery!"
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791813c8fd6fa5238dc4d58-e9d6d6eebb276512.webp"
         },
         {
           "firstName": "Gabriela",
@@ -548,6 +649,19 @@ export const peopleData = {
           "portrait": "./images/members/notion/2025/3eb0b1bd6791811982e1d0826c3ade9d-543d82cf933af859.webp"
         },
         {
+          "firstName": "Lillian",
+          "lastName": "Li",
+          "program": "Dual M.S. in Connective Media",
+          "graduationYear": 2027,
+          "role": "M.S. Connective Media Representative",
+          "section": "representatives",
+          "biography": [
+            "Hey everyone, I am Lillian, and I’m excited to serve as the Student Representative for CM ‘27！ My experience as RUC debate team president, and a member of cross-cultural organizations like Lavender club in Berkeley and FACES Stanford has taught me how to listen, communicate, and bring people together. I also speak English, Mandarin, Japanese, and a little French , and I'm passionate about creating an inclusive space where everyone feels heard. What I love most about our CT community is how incredibly welcoming and supportive it is. It’s full of inspiring people, and I’m eager to contribute to strengthen those bonds even further.",
+            "Fun Fact: I can wake up at whatever time I want without an alarm！ I love reading detective novels and guessing who the culprit is before the reveal."
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791811982e1d0826c3ade9d-543d82cf933af859.webp"
+        },
+        {
           "firstName": "Royi",
           "lastName": "Rozen",
           "program": "Dual M.S. in Connective Media",
@@ -575,6 +689,20 @@ export const peopleData = {
           "portrait": "./images/members/notion/2025/3eb0b1bd6791818ba066c9242b931a50-822d300f57099019.webp"
         },
         {
+          "firstName": "Jiwon",
+          "lastName": "Jeong",
+          "program": "Dual M.S. in Health Tech",
+          "graduationYear": 2027,
+          "role": "M.S. Health Tech Representative",
+          "section": "representatives",
+          "biography": [
+            "I'm Jiwon, an aspiring ML researcher for generative AI and geometric deep learning. My work focuses on protein molecular dynamics and machine learning for biomolecular systems. At UC Berkeley, I was involved in wet-lab research for structural biology - the process of how we use really big microscopes to study really small things.",
+            "Excited to support our cohort's vision for integrating technology into clinical and biomedical advancements.",
+            "Fun Fact: My sister and I like cooking two things together: Asian hotpot and spaghetti."
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791818ba066c9242b931a50-822d300f57099019.webp"
+        },
+        {
           "firstName": "Kelly",
           "lastName": "Wang",
           "program": "Dual M.S. in Health Tech",
@@ -586,6 +714,19 @@ export const peopleData = {
             "Fun Fact: One more foster cat and I’ll officially qualify as a serial cat foster."
           ],
           "portrait": "./images/members/notion/2025/3eb0b1bd6791810dbdf2cbd8ed43e1e6-ddaa333265f14733.webp"
+        },
+        {
+          "firstName": "Gabriela",
+          "lastName": "Yaulli",
+          "program": "Dual M.S. in Urban Tech",
+          "graduationYear": 2027,
+          "role": "M.S. Urban Tech Representative",
+          "section": "representatives",
+          "biography": [
+            "Gabriela is the Urban Tech representative for the class of 2027. She has experience building AI systems with a focus on bridging technical innovation and social impact in urban development. At Cornell Tech, she aims to explore geospatial data analysis and computational methods to tackle urban challenges in emerging markets, as well as learn more about ML safety and ethics.",
+            "Fun Fact: I love trying new creative pursuits - this past year I've dove into contemporary dance, rug making and pottery!"
+          ],
+          "portrait": "./images/members/notion/2025/3eb0b1bd6791813c8fd6fa5238dc4d58-e9d6d6eebb276512.webp"
         },
         {
           "firstName": "Gabriela",
@@ -1093,6 +1234,20 @@ export const peopleData = {
           "portrait": "./images/members/notion/2022/3eb0b1bd6791817ab98ed20142286705-6764f330df6ef176.webp"
         },
         {
+          "firstName": "Deanna",
+          "lastName": "(Dee) Oliver",
+          "program": "Dual M.S. in Health Tech",
+          "graduationYear": 2024,
+          "role": "M.S. Health Tech Representative",
+          "section": "representatives",
+          "biography": [
+            "Hey, I’m Dee! I hold a B.S. in Global Public Health-Sociology and a Master’s in Public Health from New York University. Currently, I’m pursuing a Dual Master's of Science in Applied Information Science and Information Systems at Cornell Tech, specializing in Health Tech. Alongside my academic pursuits, I work full-time as a Senior Analyst in Data and Analytics and I’m the founder of an early-stage health tech venture. My passion lies at the intersection of health and innovation; ultimately, I seek to leverage my background in public health, entrepreneurship, and data to empower underserved communities and improve healthcare delivery.",
+            "In my role as Health Tech Program Representative, I want to create a tight-knit community within the program and foster a safe and inclusive space where students can voice their concerns, opinions, and ideas. I hope to drive positive change and have a meaningful impact not only within my program but the broader health tech field as well!",
+            "Fun Fact: I learned how to flyboard in Dubai! My favorite food is Peanut Butter Cap’n Crunch."
+          ],
+          "portrait": "./images/members/notion/2022/3eb0b1bd6791817ab98ed20142286705-6764f330df6ef176.webp"
+        },
+        {
           "firstName": "Haran",
           "lastName": "Rajkumar",
           "program": "Master of Engineering in Computer Science",
@@ -1298,6 +1453,20 @@ export const peopleData = {
             "Q. What talent would you like to learn someday? Would love to learn to play the saxophone"
           ],
           "portrait": "./images/members/notion/2022/3eb0b1bd679181b39b3bcbbb94710255-8b69f56ea39dd92a.webp"
+        },
+        {
+          "firstName": "Deanna",
+          "lastName": "(Dee) Oliver",
+          "program": "Dual M.S. in Health Tech",
+          "graduationYear": 2024,
+          "role": "M.S. Health Tech Representative",
+          "section": "representatives",
+          "biography": [
+            "Q. What are your hobbies? I’m a movie buff and spend quite a bit of time at the theater. I also enjoy painting, indoor skydiving, cake decorating, and building things.",
+            "Q. What are you currently watching? I’ll watch just about anything, but I love dramas, sci-fi, and documentaries. My current watch list includes Succession, The Morning Show, Schitt’s Creek, Ozark, and Stargate SG-1.",
+            "Q. What is your hidden skill/talent? Public speaking/oration and singing."
+          ],
+          "portrait": "./images/members/notion/2022/3eb0b1bd6791817ab98ed20142286705-6764f330df6ef176.webp"
         },
         {
           "firstName": "Deanna",

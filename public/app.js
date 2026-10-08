@@ -553,7 +553,7 @@ function trackPageView(route, title) {
   async function loadClubs(root) {
     try {
       const [{ renderClubs }, response] = await Promise.all([
-        import("./clubs.js"), fetch("./data/clubs.json"),
+        import("./clubs.js?v=horizontal-rows-1"), fetch("./data/clubs.json"),
       ]);
       if (!response.ok) throw new Error("Clubs snapshot unavailable");
       const data = await response.json();

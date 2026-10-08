@@ -499,25 +499,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "career-management:42c9846facdfe26cf943d78bcaa8d3b79182026_2:02:27_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
-          "start": "2026-10-07T17:00:00.000Z",
-          "end": "2026-10-07T18:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133035",
-          "audienceTags": [
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -549,25 +530,6 @@
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133046",
           "audienceTags": [
             "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "career-management:7a23fd6c6185a525fc56aecdc26e5a6b9292026_2:15:52_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "QuantumBlack, AI by McKinsey - Virtual Info Session",
-          "start": "2026-10-07T17:30:00.000Z",
-          "end": "2026-10-07T18:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133048",
-          "audienceTags": [
-            "Technical Programs"
           ],
           "departmentAcronyms": [
             "CTCAREERS"
@@ -694,16 +656,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-09T06:28:25.298Z",
-        "end": "2027-11-11T06:28:25.298Z"
+        "start": "2026-07-10T06:39:12.183Z",
+        "end": "2027-11-12T06:39:12.183Z"
       },
-      "updatedAt": "2026-10-07T06:28:25.298Z",
+      "updatedAt": "2026-10-08T06:39:12.183Z",
       "coverage": {
         "version": 1,
-        "eventCount": 12,
-        "upcomingCount": 12,
-        "previousUpcomingCount": 11,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "eventCount": 10,
+        "upcomingCount": 10,
+        "previousUpcomingCount": 10,
+        "comparedThrough": "2027-11-11T06:28:25.298Z",
         "warnings": []
       }
     },
@@ -775,37 +737,21 @@
           "departmentAcronyms": [
             "CTDEI"
           ]
-        },
-        {
-          "id": "inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM@campusgroups.com",
-          "source": "inclusion-belonging",
-          "category": "School events",
-          "title": "Connect & Converse",
-          "start": "2026-10-07T14:00:00.000Z",
-          "end": "2026-10-07T16:00:00.000Z",
-          "allDay": false,
-          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet the Senior Director of DEI, Omari Keeles, in the Bloomberg Center cafe!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133057",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133057",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTDEI"
-          ]
         }
       ],
       "fetchedCount": 4,
       "window": {
-        "start": "2026-07-08T06:51:26.911Z",
-        "end": "2027-11-10T06:51:26.911Z"
+        "start": "2026-07-10T06:39:12.183Z",
+        "end": "2027-11-12T06:39:12.183Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-06T06:51:26.911Z",
+      "updatedAt": "2026-10-08T06:39:12.183Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
+        "eventCount": 1,
+        "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": []
       }
     },
@@ -1172,8 +1118,8 @@
           ]
         }
       ],
-      "fetchedCount": 63,
-      "excludedCount": 61,
+      "fetchedCount": 62,
+      "excludedCount": 60,
       "failedCount": 1,
       "warnings": [
         {
@@ -1182,8 +1128,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 63,
-        "excludedCount": 61,
+        "fetchedCount": 62,
+        "excludedCount": 60,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1195,16 +1141,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-09T06:28:25.298Z",
-        "end": "2027-11-11T06:28:25.298Z"
+        "start": "2026-07-10T06:39:12.183Z",
+        "end": "2027-11-12T06:39:12.183Z"
       },
-      "updatedAt": "2026-10-07T06:28:25.298Z",
+      "updatedAt": "2026-10-08T06:39:12.183Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-10T06:51:26.911Z",
+        "comparedThrough": "2027-11-11T06:28:25.298Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1396,6 +1342,29 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:career-management-students:career-management%3A42c9846facdfe26cf943d78bcaa8d3b79182026_2%3A02%3A27_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-08T06:39:12.183Z",
+      "event": {
+        "id": "career-management:42c9846facdfe26cf943d78bcaa8d3b79182026_2:02:27_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+        "start": "2026-10-07T17:00:00.000Z",
+        "end": "2026-10-07T18:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133035",
+        "audienceTags": [
+          "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:career-management-students:career-management%3A744c8c394535b582428c41883ddd18939102026_1%3A53%3A22_PM%40campusgroups.com": {
       "source": "career-management-students",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -1433,6 +1402,29 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132974",
+        "audienceTags": [
+          "Technical Programs"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A7a23fd6c6185a525fc56aecdc26e5a6b9292026_2%3A15%3A52_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-08T06:39:12.183Z",
+      "event": {
+        "id": "career-management:7a23fd6c6185a525fc56aecdc26e5a6b9292026_2:15:52_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "QuantumBlack, AI by McKinsey - Virtual Info Session",
+        "start": "2026-10-07T17:30:00.000Z",
+        "end": "2026-10-07T18:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133048",
         "audienceTags": [
           "Technical Programs"
         ],
@@ -1965,6 +1957,26 @@
         "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132977",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132977",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A7a7f066a1644dfdf6c4582ff205aa9e71052026_10%3A21%3A23_AM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-10-08T06:39:12.183Z",
+      "event": {
+        "id": "inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Connect & Converse",
+        "start": "2026-10-07T14:00:00.000Z",
+        "end": "2026-10-07T16:00:00.000Z",
+        "allDay": false,
+        "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet the Senior Director of DEI, Omari Keeles, in the Bloomberg Center cafe!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133057",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133057",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTDEI"

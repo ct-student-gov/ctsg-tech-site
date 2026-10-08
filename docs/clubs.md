@@ -1,6 +1,6 @@
 # Clubs
 
-The banner reuses the local Club Fair 2025 group photo outside the Bloomberg Center (photo: Nghi T.), also featured in the Blog. It follows the shared page banner dimensions and fade.
+The banner reuses the local Club Fair photo of Music Club members performing, also featured on the homepage. It follows the shared page banner dimensions and fade.
 
 The club directory at `#/clubs` uses [the Clubs database](https://app.notion.com/p/3ea0b1bd679180de868bc396ff9360c7). Check **Publish** on the records that should appear; unchecked, archived and trashed records are excluded. A published club needs a Name.
 

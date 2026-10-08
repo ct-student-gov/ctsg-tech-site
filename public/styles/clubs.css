@@ -1,7 +1,7 @@
 /* Club rows use the shared editorial type, rules, colors and page gutters. */
 .site-content--clubs { padding-block: 0 48px; }
 .clubs-banner { background: light-dark(#e8e8e8, #383838); }
-.clubs-banner img { object-position: center 70%; }
+.clubs-banner img { object-position: center 52%; }
 .clubs-directory { position: relative; max-width: 1200px; margin-inline: auto; padding-top: 62px; padding-bottom: 10px; }
 .clubs-directory > h1 { margin: 0; padding-bottom: 34px; border-bottom: 1px solid var(--color-rule); line-height: 1.04; }
 .club-row {

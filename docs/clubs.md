@@ -1,6 +1,6 @@
 # Clubs
 
-The banner reuses the local Club Fair photo of Music Club members performing, also featured on the homepage. It follows the shared page banner dimensions and fade.
+The banner shows chess and board-game tables at Cornell Tech's 2025 Club Fair. The original `DSC_0534.JPG` is saved locally under `public/images/clubs/2025/` and is used only on Clubs. Photo: Nghi T., from the [Club Fair photo album](https://drive.google.com/drive/u/0/folders/1FbQBVJKetYWDMIRWKMZgBwawKGK6TZ1t). It follows the shared page banner dimensions and fade.
 
 The club directory at `#/clubs` uses [the Clubs database](https://app.notion.com/p/3ea0b1bd679180de868bc396ff9360c7). Check **Publish** on the records that should appear; unchecked, archived and trashed records are excluded. A published club needs a Name.
 

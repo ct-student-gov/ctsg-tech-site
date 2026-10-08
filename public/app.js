@@ -570,6 +570,7 @@ function trackPageView(route, title) {
     const title = pages.get(pageRoute) || "Page not found";
     content.classList.toggle("site-content--home", pageRoute === "/");
     content.classList.toggle("site-content--members", pageRoute === "/members");
+    content.classList.toggle("site-content--clubs", pageRoute === "/clubs");
     content.classList.toggle("site-content--governance", pageRoute === "/by-laws");
     content.classList.toggle("site-content--events", pageRoute === "/events");
     disposeCalendar();

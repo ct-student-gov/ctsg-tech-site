@@ -1,5 +1,7 @@
 # Clubs
 
+The banner reuses the local Club Fair 2025 group photo outside the Bloomberg Center (photo: Nghi T.), also featured in the Blog. It follows the shared page banner dimensions and fade.
+
 The club directory at `#/clubs` uses [the Clubs database](https://app.notion.com/p/3ea0b1bd679180de868bc396ff9360c7). Check **Publish** on the records that should appear; unchecked, archived and trashed records are excluded. A published club needs a Name.
 
 The page displays Name, Description, President, Vice President, Treasurer, Faculty/Staff Advisor, “How will students join your club/receive club communications?” and “If your group already has a group chat or Slack channel, please provide the link here:”. Complete HTTP(S) joining URLs become links. Other registration properties and page bodies are not imported. Clubs sort alphabetically. Each club occupies a horizontal row with its name, description and joining information, and officers. The layout uses the shared site typography, colors and dividing rules, and stacks on small screens. No logos are added.

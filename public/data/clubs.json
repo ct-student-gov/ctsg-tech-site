@@ -1,0 +1,1179 @@
+{
+  "clubs": [
+    {
+      "id": "3ea0b1bd679180b3bdd1ef99ece1e9c5",
+      "name": "AI & Blockchain at Cornell Tech",
+      "description": "AI and Blockchain Club brings together Cornell Tech students exploring the intersection of AI and blockchain, through workshops, speaker events, and networking with industry leaders, building on the Cornell Tech blockchain community's existing work in this space, including hosting the biggest conference on campus for the last three years, held every April",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Rohil Saraf // rs2685@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Oana Gherman // og64@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180e28258e9ca4e540920",
+      "name": "AI Society",
+      "description": "The Cornell Tech AI Society is a student-run community where students from all backgrounds learn, discuss, and build with AI - exploring both: the technical and human sides of artificial intelligence.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Bhawana Wadhwani// bw594@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Manuela Ospina// mo534@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Nicole Czemerinski// nsc62@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Karan Girotra//girotra@cornell.edu"
+        }
+      ],
+      "joining": "Email, WhatsApp and a Membership Form",
+      "links": "N/A"
+    },
+    {
+      "id": "3ea0b1bd67918041b48dd3c587f6f8fa",
+      "name": "ASEAN & Friends Student Association",
+      "description": "ASEAN & Friends’ mission is to celebrate and share Southeast Asian culture, voices, and insights with the Cornell Tech community. We aim to build a vibrant, inclusive space for Southeast Asians and enthusiasts alike—fostering camaraderie, cultural exchange, and deeper understanding.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Diamond Dang // kd562@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Emmanuel Rayendra // er558@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jiacheng Yang // jy2276@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending / TBD"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
+      "links": "https://cornelltech.slack.com/archives/C09FM4MQY3S"
+    },
+    {
+      "id": "3ea0b1bd679180aeb782d9c66fea462c",
+      "name": "Badminton @ Cornell Tech",
+      "description": "The goal of this group is to build an inclusive community for anyone interested about badminton. We bring players of all skill levels together to enjoy organized open play, improve their game, and connect with fellow enthusiasts on and off the court.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Lemuel Sumardy // ls2332@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "tbd"
+        },
+        {
+          "role": "Treasurer",
+          "name": "tbd"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "tbd"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918031afe4c9a5e88f57aa",
+      "name": "Badminton Club",
+      "description": "Our mission is to bring badminton players together to find teammates, organize games, improve their skills, and build a fun and welcoming badminton community. We want to make it easy for everyone, from beginners to experienced players, to connect and enjoy the sport.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Melody Huang // yh2353@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Leafred Ye // zy495@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Dingran Dai // dd699@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "wechat",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180d88169e87c09495341",
+      "name": "Big Red Product Club",
+      "description": "The mission of the Big Red Product Club is to create a selective, highly engaged community for students who are serious about learning Product Management and building real product skills. The club will bring together aspiring PMs, experienced practitioners, and product-minded builders through hands-on workshops, product cases, conversations with PMs from leading tech companies, and AI-enabled “vibe coding” sessions that help students turn ideas and user problems into working prototypes. Our goal is to help members learn by doing, develop strong product judgment, and better understand how modern PMs operate at the intersection of customers, business, technology, and AI.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Prashant Kumar // pk627@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Radhika Sahani // rs2745@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Karan Girotra // girotra@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791802b9c26d6229dafaa73",
+      "name": "Big Red Tech Club",
+      "description": "A tech-focused professional club dedicated to supporting Johnson Cornell Tech MBA candidates in recruiting and beyond.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Emily Inzero // ei85@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Unser Jaffry // uj36@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Taarini Mohan // tm775@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Gautam Ahuja // ga337@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "private to mba class"
+    },
+    {
+      "id": "3ea0b1bd6791802eb098debd9b699008",
+      "name": "Board Game Club",
+      "description": "The Board Game Club brings Cornell Tech students together to play board games, meet new friends, and unwind. We welcome all experience levels and create an inclusive space to learn new games, enjoy friendly competition, and build community.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Divyesh Thirukonda // dt579@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Danny Nguyen // dn375@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pranav Palle // prp68@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Andrew Morgan // asm354@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791802eb616ef2d35edf16c",
+      "name": "Christian Fellowship @ Cornell Tech",
+      "description": "CF@CT is a club at Cornell Tech for Christians and those curious about faith. We have weekly fellowship meetings on Thursdays, where we share a meal, chat, and have a just-show-up book club on faith-related topics. All are welcome!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Sophie Greenwood // sg2387@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Jonathan Segal // jis62@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Nathan Cho // nc437@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/DWxviJlf1YJKkprZJ9sJ0q?s=cl&p=i&mlu=4&ilr=4"
+    },
+    {
+      "id": "3ea0b1bd679180019726dbe05077d937",
+      "name": "Claude Club",
+      "description": "Giving students access to all things Claude to enable them to do anything and everything",
+      "officers": [
+        {
+          "role": "President",
+          "name": "cc3253@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180d8b81bfc3a3a1e4601",
+      "name": "Community Service Club at Cornell Tech",
+      "description": "The purpose of the Community Service Club at Cornell Tech shall be to harness the skills and passion of the Cornell Tech campus community to uplift and support the Roosevelt Island community through volunteer service and meaningful community engagement. We organize Community Service Days with local organizations on Roosevelt Island as well as semesterly digital skill/tech support sessions for the residents of Roosevelt Island.The goals of this organization are to 1) engage the Cornell Tech community in volunteer service on Roosevelt Island, 2) provide meaningful service to local organizations on Roosevelt Island, and 3) foster a culture of service and volunteerism at Cornell Tech.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Daniel Enriquez // de265@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Eden Shaveet // ems486@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Waleed Khan // wk332@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Jane Swanson // jane.swanson.edu"
+        }
+      ],
+      "joining": "Email",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180f7b147c4e79d8ccc2a",
+      "name": "Cooktech",
+      "description": "To cook for each other more often!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Matthias Corkran // mc3223@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Siddhesh Darak // sd2263@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Nina Mantegna // nm739@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "William Leon // wjl88@cornell.edu"
+        }
+      ],
+      "joining": "Psomi",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918049bccee78209aff95a",
+      "name": "Cornell Entrepreneurship Club",
+      "description": "The goal of this group is for entrepreneurial minded students to connect, and to provide a platform for student entrepreneurs to connect with established entrepreneurs in the industry and bring education to students on how to ideate, build a team, raise capital and acquire customers.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "ao478@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "nrn28@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791809d90bdd08fc9e1c6d7",
+      "name": "Cornell Fintech Club",
+      "description": "The FinTech Club at Cornell Tech is where students build in fintech, not just talk about it. We help students launch careers across payments, lending, banking infrastructure, capital markets, and digital assets by giving them three things: real fluency in how fintech businesses make money, hands-on projects they can show recruiters, and direct access to the operators and investors shaping the industry in New York.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Alvaro Gomez de la Torre // ag2764@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Juan Camilo Sepulveda // jcs572@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Varun Kulkarni // vk399@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Lourdes Casanova // lc683@cornell.edu"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
+      "links": "https://join.slack.com/share/enQtMTIxMDk5ODQxNTQwNjctMzFhZGYyZmQ3NzY0NmE3ODkzNTlmM2NjYzhhYjhkNmIyZmUwNDliN2JlOTAxNmY3OTIwNzI4YjA5MzRlZjNkOA"
+    },
+    {
+      "id": "3ea0b1bd679180ab92b6fa64d29ce745",
+      "name": "Cornell ML & Poetry: Russian-Speaking Society",
+      "description": "Our mission is to bring together Cornell students from all backgrounds who are interested in machine learning, poetry, and creative expression, while creating a welcoming space where Russian language and culture can also be celebrated. We aim to connect technology and the arts through discussions, workshops, projects, performances, and cultural events, helping members share ideas, build friendships, and learn from one another.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Amelie Kapanova // ak2765@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending tbd"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending tbd"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending tbd"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180b58493ca0bd7e9dd1c",
+      "name": "Cornell Tech AI Research Society",
+      "description": "The Cornell Tech AI Research Society is focused on the cutting-edge of AI news and research. We will probably meet for around 2 hours a week and discuss research papers, new technologies, and our own ideas. We're open to all different fields within AI, including (but not limited to): AI safety, ethics, AI agents, AI for healthcare, physical AI, AI hardware, AI infrastructure, multimodal AI. We're also open to student-led AI projects if enough people are interested.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Austin Zhao // az392@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Kyra Gan // kyragan@cornell.edu"
+        }
+      ],
+      "joining": "Discord",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791803eab9cf0969e03f0b6",
+      "name": "Cornell Tech Boulder",
+      "description": "Promote boulder and rock climbing",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Han Lin // hl2658@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Hong // hc2343@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Linlin Nie //ln325@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Message",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180138864d6a6e26c0469",
+      "name": "Cornell Tech Builders Club",
+      "description": "Cornell Tech Build Club is a weekly gathering for students actively working on startups, technical projects, research, creative work, or other ideas. Members share what they built that week, demonstrate works in progress, receive practical feedback, find collaborators, and set goals for the following week. The club is open to students from every program and experience level. You do not need a finished product or an existing team to participate.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Noah Dixon // nd486@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Jalil Jabbarli //  jj864@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791809bb283d9f268cc63cd",
+      "name": "Cornell Tech Embodied Agent Club",
+      "description": "We are a PhD student-led initiative at Cornell Tech that hosts seminars and summits to connect industry and academia. We run biweekly student research talks on topics like robotics and embodied agents, and we invite our alumni now working in industry back to campus to share what they're building. Our mission is to bridge academia and industry: to give students first-hand access to the latest developments in robotics and embodied AI, and to bring networking events that are open to the whole campus.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Ruixiang Han rh652@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Promise Ekpo poe6@corenll.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Yuanchen Bai yb299@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Wendy Ju wendyju@cornell.edu"
+        }
+      ],
+      "joining": "Discord",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180b0839fee4b1ca2b58a",
+      "name": "Cornell Tech Matcha Club",
+      "description": "The Cornell Tech Matcha Club aims to bring students together through a shared appreciation for matcha, creating a welcoming community where members can socialize, study, explore New York City, and learn more about the culture and craft behind matcha.Beyond enjoying matcha as a popular beverage, the club hopes to help members understand what matcha actually is: from its origins and production to preparation methods, grades, and flavor profiles. Programming may include matcha tastings, visits to cafés and specialty shops across New York City, conversations with café owners and industry experts, and collaborative events with other clubs and organizations.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Hongzip Kim // hk2228@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Jiaxin (Aurora) Shen // js3996@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jo-Ling Wang // jw2979@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Huseyin Topaloglu // ht88@cornell.edu"
+        }
+      ],
+      "joining": "Discord",
+      "links": "https://discord.gg/tFWv96eBxv"
+    },
+    {
+      "id": "3ea0b1bd679180d6a8c2f8afe628f214",
+      "name": "Cornell Tech Photography Group",
+      "description": "The goal of this group is to be a collaborative and learning space for photographers and videographers at Cornell Tech.  We plan to provide filming services for other clubs on campus as well.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Elliott Kalt // esk226@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Alexa Yang // ay482@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918059b2edf2ec403d5093",
+      "name": "Cornell Tech Pride",
+      "description": "Picking up where Out At Cornell Tech (out.tech.cornell.edu) left off, with their prior Faculty Advisor on board",
+      "officers": [
+        {
+          "role": "President",
+          "name": "We should hold elections among members once constituated, but for now I'm coordinating (Andrew Beyda)"
+        },
+        {
+          "role": "Vice President",
+          "name": "TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Michael Samuelian"
+        }
+      ],
+      "joining": "either WhatsApp or Slack Channel",
+      "links": "https://chat.whatsapp.com/J6cScr8gfbI9zOvs3RiwYp?s=sh&p=i&mlu=0&ilr=4"
+    },
+    {
+      "id": "3ea0b1bd6791806685bed83348e02da3",
+      "name": "Cornell Tech Racquet Club",
+      "description": "Try and organize practices and chill games for a variety of racquet sports such as tennis, pickleball, badminton, and ping pong (open to other suggests as well).",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Steven Wu // sw2226@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Anthony Yuang Zuo // yz3639@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Ghaith Khalil // gk468@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791805db369ca944acdc598",
+      "name": "Cornell Vinothèque Club",
+      "description": "The goal of this group is to master the art of wine. It is for any student interested in learning about wine, inclusive with tastings of both alcoholic and non-alcoholic wines, sommelier events, and to join peers in making lasting friendships and memories. ID verification will be required at all events.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Zachary Zeff // zmz5@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Google form",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791806f84f6f2e17bb0e446",
+      "name": "Fashion Club",
+      "description": "The goal of this group is to gather people that are either working in fashion or have a history of working in fashion or are interested in working in fashion in the future or are simply passionate about fashion. We are here to gather models, photographers, videographers. The mission of the group is going to be to improve fashion literacy and spread awareness about sustainability in fashion. Some events that we plan to do would be fashion documentary movie nights, workshops, day trips to fashion exhibits, sustainability first clothing swaps and many more. So come join us and channel your fashionista <3",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Kanta Garg // kg632@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Usman Ali // ua49@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Imren More // im436@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Mukti Khaire //mvk34@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/BoCw2MqMyYqI706TfiUoTp?s=cl&p=i&mlu=4&ilr=4"
+    },
+    {
+      "id": "3ea0b1bd679180f3bc9bff2e613e9abb",
+      "name": "Football Not Soccer Club",
+      "description": "Football Not Soccer Club is a weekly casual football (soccer) group open to every student at Cornell Tech, whatever your level. We organize regular games so people from different programs and countries can meet outside class, get some exercise, and make friends. Beginners are welcome, and nobody needs to sign up for a season or pay to join.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Elmir Abdullaiev // ea488@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Noor Syed // nas323@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Wayne Yang // yy2458@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/EXjVauNHNy1GMo9ZAlbJtF?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd67918070a2b0e6f6ce16318f",
+      "name": "Girls Into VC",
+      "description": "We're building a Cornell Tech chapter of Girls Into VC, a global organization dedicated to increasing gender diversity in venture capital. In just over a year, GIVC has grown to 4K+ members and 100+ mentors across 60+ countries, and we want to bring this community on Cornell Tech campus. Expect a fellowship program, events with industry speakers, hands-on projects, and a guidebook to launch VC careers, plus collaboration with other NYC-based GIVC chapters.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Aleksandra Veklich // av647@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Duaa Khalid // dk947@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Alina Patel // ap2599@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/FBHtKxoCqEoFRUbeqAQNpd"
+    },
+    {
+      "id": "3ea0b1bd6791807ead9edea6b44dc8ec",
+      "name": "HealthTech Builders",
+      "description": "HealthTech Builders is a new interdisciplinary club at Cornell Tech for anyone curious about health-tech. No healthcare background, technical experience, or existing project required. We will host events like Prototype & Pizza, HealthTech Pitch Roulette, startup visits, design challenges, trivia nights, and conversations with clinicians and founders. We're building our founding team ahead of the CTSG deadline and are looking for a Vice President, Treasurer, and founding members. Fill this out if you want to run for a role or just be part of the founding crew!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Sanskriti Malakar // sm3202@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Piram Singh // ps2297@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/Ht1oaXg4x6tJVDqyqrftxC"
+    },
+    {
+      "id": "3ea0b1bd679180acb446fe66be973b67",
+      "name": "Indonesian Association at Cornell Tech",
+      "description": "Cornell Tech Indonesia connects the Cornell Tech community with Indonesia’s technology, entrepreneurship, business, and innovation ecosystem. We create educational, professional, and community programming that brings together students, alumni, founders, investors, industry leaders, and other stakeholders interested in Indonesia",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Tika Diagnestya // td454@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Syahira Marina // sm2974@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Muhammad farhan pratama // mfp67@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/FH05O3lzfNqFGZCzKRbDtT?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd679180b885a9ec30079ece60",
+      "name": "Jewish Student Organization at Cornell Tech",
+      "description": "The Jewish Student Organization (JSO) at Cornell Tech brings students together to build a welcoming Jewish community, celebrate traditions, and form lasting friendships. Through Shabbat dinners, holiday gatherings, social events, and community service, we create opportunities to connect with peers and the broader Jewish community on Roosevelt Island and beyond.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Pending/TBD (running elections)"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD (running elections)"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD (running elections)"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Jacqueline Klein"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180b79a69f733c1735eb5",
+      "name": "Korean Culture and Student Association (KCSA)",
+      "description": "We focus on sharing culture in a friendly, open way that helps build community at Cornell Tech. The club would host casual events like Korean food tastings, movie nights, and beginner-friendly language exchanges. These activities give all students, regardless of background, a chance to join in and learn something new.Goals:Foster Cultural Exchange – Provide opportunities for Cornell Tech students to experience and learn about Korean culture through food, film, and language.Build Inclusive Community – Create welcoming spaces where students of all backgrounds can participate and connect socially.Encourage Language Learning – Offer beginner-friendly Korean language exchanges that promote cross-cultural communication skills.Support Student Well-Being – Organize casual, stress-relieving events that help students relax and bond outside academics.Promote Diversity on Campus – Contribute to Cornell Tech’s culture of diversity and inclusion by celebrating global perspectives.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Kate Lee // sl3582@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Dongmin Han // dh783@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jake Hyun // jh2978@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/I9p3g36piOwIdgowRw8fCB?s=sh&p=i&mlu=4&ilr=4"
+    },
+    {
+      "id": "3ea0b1bd6791800f8ff4e98d654f11ee",
+      "name": "Latin American & Hispanic Association",
+      "description": "Our goal is to build community among Latin American and Hispanic students at Cornell Tech, celebrate our cultures, and create opportunities to connect with peers, alumni, and leaders across tech and entrepreneurship. Everyone interested in Latin culture is welcome to join.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Gabriela Yaulli // cgy4@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Carolina Ortega Perez // co255@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180c7ad87c1bccca542b0",
+      "name": "Latin American Association Club",
+      "description": "The goal of this group is to bring together Latin American students and anyone interested in Latin American culture at Cornell Tech, creating a welcoming community where members can connect, share their cultures and experiences, and build a sense of belonging. Through cultural events, dinners, celebrations, sports, and social activities, the group aims to celebrate the diversity of Latin America while fostering meaningful connections within Cornell Tech and the broader New York community.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Nicole Czemerinski // nsc62@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180cfaabada675bb352c9",
+      "name": "Music Club at Cornell Tech",
+      "description": "Cornell Tech Music Club is a welcoming community for musicians of all levels to make and share music together. Our vision is to form a collaborative environment where Cornellians can jam out, explore and learn new music, and connect with the greater NYC musical scene.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Nathan Wolf // ntw25@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Tobias Weinberg // tmw88@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Greg Morrisett // gjm19@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791807f8056d870f2a566b7",
+      "name": "Muslim Student Organization At Cornell Tech",
+      "description": "The mission of the Cornell Tech Muslim Students Association (MSA) is to foster a welcoming and inclusive community for Muslim students and anyone interested in learning about Islam. We aim to create opportunities for students to connect through spiritual, social, professional, and service-oriented activities; celebrate Islamic traditions and holidays; support one another in practicing our faith; and build meaningful relationships across the broader Cornell Tech community through dialogue, collaboration, and cultural exchange.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "aa2964@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Mh2679@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Un58@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "oe46@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/J4ABa5qgqre8TVPyOosGgH?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd6791804d820fcb5a12454c6a",
+      "name": "NYC Urban Exploration & Dinner Club",
+      "description": "Our group's mission is to expose Cornell Tech students, many of which are new to NYC, to more of the beautiful city that we all call home. Some ideas that we're planning: neighborhood crawls (especially neighborhoods that are less touristy and well-known), regular lunches or dinners across the city, museum visits, festival participation, nature walks, or anything else NYC-related.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Austin Zhao // az392@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Kyra Gan // kyragan@cornell.edu"
+        }
+      ],
+      "joining": "Discord",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180279b4efd96dff01c17",
+      "name": "Product Design Club",
+      "description": "The mission of this group is to connect designers and design-curious students at Cornell Tech through a shared love of design. We share work and feedback, build friendships across disciplines, and explore design together, visiting art museums, attending events, and finding inspiration in the creative community around us.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Clayton // ql373@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Chi Pham // cqp4@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jennifer Cheng // yc2932@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791805d88e2c6d6cb109279",
+      "name": "Running Club",
+      "description": "Our mission is to provide a space for students and faculty to stay active, meet people, and explore NYC through running as a medium. We are welcoming to runners and walkers of all ability levels.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Arnav Sacheti // as4567@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Jalil Jabbarli // jj864@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pranav Palle // prp68@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Thijs Roumen // tjr92@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918063ad9dc0bf18dc47bd",
+      "name": "South Asian Student Association",
+      "description": "Aims to build community among South Asian students and allies through cultural, social, professional, and educational events!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Maanasi Ganapathy // mg2563@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Aarushi Singh // as4639@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending/TBD"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "Hey guys! A couple of others and I are starting a South Asian Student Association club at Cornell Tech! We’re hoping to create a fun community for South Asian students and anyone interested in the culture, with social, cultural, and professional events throughout the year.  We already have a President and VP, but we’re also looking for people interested in helping out as Treasurer, Events Coordinator, or Marketing Chair!  If you’re interested in joining the club or getting involved with leadership, here’s the link: https://chat.whatsapp.com/EROrm5zqUBGKaQOoZ9A6Ia?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd679180b5be91dea0647a2b81",
+      "name": "Sustainable Cornell Tech",
+      "description": "Our three-part mission is to connect the Cornell Tech community around sustainability, empower individuals with knowledge and resources, and drive meaningful action toward a more sustainable campus.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Nurain Jiwani // nj338@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Bailey Carlson // bmc245@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Geetika Arikatala // ga388@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Greg Morrisett // jgm19@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/Fp7uyYNQfpR10cMgHWoWgu?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd6791800b8942d60d91b036a8",
+      "name": "Taiwanese Student Association at Cornell Tech",
+      "description": "The Taiwanese Student Association at Cornell Tech aims to build a welcoming and supportive community for Taiwanese students and those interested in Taiwanese culture. We bring students together through social events, career sharing, and cultural activities, creating opportunities to connect, exchange experiences, and support one another throughout their time at Cornell Tech.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Timothy Yun Pan // tp435@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Duo-Jie Hsiao // dh779@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Po-Chun Chen // pc763@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Jacqueline Klein // jk886@cornell.edu"
+        }
+      ],
+      "joining": "instagram",
+      "links": "https://www.instagram.com/cornelltechtsa?stkn=MWVhOTVmdGU3NjQ0aw%3D%3D&utm_source=qr"
+    },
+    {
+      "id": "3ea0b1bd6791802f92afeca6fd8ed544",
+      "name": "UrbanX at Cornell Tech",
+      "description": "The goal of this group is for any urban minded student to meet like-minded peers, urban tech founders, host urban tech events, and connect with the urban tech events locally, nationally, and internationally.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Zachary Zeff // zmz5@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Atrianne Dolom || and82@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Lauren Mok || lm685@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Michael Samuelian // ms3637@cornell.edu"
+        }
+      ],
+      "joining": "Google Sheet signup",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd6791800b964ec4aabaf9cf19",
+      "name": "Vibe Lab [Design × Engineering × AI]",
+      "description": "Our mission is to build a cross-disciplinary community at the intersection of design, technology, and AI. We bring together students from different backgrounds to explore emerging technologies through hands-on workshops, hackathons, speaker events, community conversations, and biweekly Vibe Code Hours.Vibe Code Hours are casual, collaborative sessions where students can experiment with AI tools, build projects, work through ideas, and learn alongside one another—no matter their technical background. Whether you’re interested in designing with AI, experimenting with new technologies, conducting research, or simply curious about what’s next, our community is a space to build, share, and critically engage with emerging technologies.We create opportunities for students across design, technology, business, and research to collaborate, showcase their work, exchange perspectives, and meet others who are excited about shaping the future of technology.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Lina Lee <sl3658@cornell.edu>"
+        },
+        {
+          "role": "Vice President",
+          "name": "Dhanushikka Ravichandiran <dr668@cornell.edu>"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jiawen Chen <jc3785@cornell.edu>"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Wendy Ju <wgj23@cornell.edu>"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180b39e38ede7a522fac7",
+      "name": "Volleyball Club",
+      "description": "The goal of this group is to bring Cornell students together to play volleyball (all levels welcome)!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Ethan Wang // ew555@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Leo Cambisaca // lrc87@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Danny Nguyen // dn375@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918065868bf38e0395822b",
+      "name": "Wellbeing, Technology & Community Association",
+      "description": "The goal of the Wellbeing, Technology & Community Association is to help Cornell Tech students support their physical, mental, and social wellbeing while building stronger connections across the community. We plan to bring students together through activities such as climbing, hiking, Pilates, sports, relaxation sessions, and social events, while also exploring how technology such as wearables, wellness apps, and digital tools can support healthier everyday habits. Our aim is to make wellbeing more social, practical, and accessible while creating more opportunities for students across programs to meet and connect.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Yi-Hsuan Chiang // yc2933@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Huiying Zhan // hz764@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Jia Bo // jb2848@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Danielle Gregg // dg748@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/Ea9rZXf6qef7yR0qPtSyvM?mode=gi_t"
+    },
+    {
+      "id": "3ea0b1bd67918002a212ea06f2c1e919",
+      "name": "Women in Technology @Cornell Tech",
+      "description": "Women in Technology at Cornell Tech is a community for identifying students to connect, learn from each other, and explore careers in tech. Everyone at Cornell Tech is welcome to our events! Whether you're an engineer, product manager, designer, or founder, you'll find mentors, peers, and industry connections here. Throughout the year we host panels, company visits, study sessions, Coffee & Code, and community celebrations. Join us!",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Ananya Shrivastava // as4622@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Kanta Garg // kg632@cornell.edu | Sanskriti Malakar // sm3292@cornell.edu | Aarushi Singh // as4639@cornell.edu | Radhika Suhani // rs2745@cornell.edu | Alina Patel // ap2599@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Zoe Krishtul // zrk7@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Danielle Gregg // dg748@cornell.edu"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd67918075abacd391b6947503",
+      "name": "Zen & Mindfulness Society",
+      "description": "The mission of the Zen & Mindfulness Society is to build a community of people interested in Zen practice and mindful living. We want to create a time and space where people can slow down, be present, and connect more deeply with themselves and others. Through this practice, we hope to cultivate greater awareness, openness, and a more thoughtful way of moving through everyday life.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Chloe Liu // yl4443@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Alina Patel // ap2599@cornell.edu"
+        },
+        {
+          "role": "Treasurer",
+          "name": "geetika arikatala // ga388@cornell.edu"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending/TBD"
+        }
+      ],
+      "joining": "Whatsapp Invite Link",
+      "links": "https://chat.whatsapp.com/DflU7FulQWnAajORHraa1q?mode=gi_t"
+    }
+  ]
+}

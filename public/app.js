@@ -63,6 +63,7 @@ function trackPageView(route, title) {
   const pages = new Map([
     ["/", "About CTSG"],
     ["/members", "People"],
+    ["/clubs", "Clubs"],
     ["/events", "Event Calendar"],
     ["/by-laws", "Bylaws"],
   ]);
@@ -549,6 +550,19 @@ function trackPageView(route, title) {
     }
   }
 
+  async function loadClubs(root) {
+    try {
+      const [{ renderClubs }, response] = await Promise.all([
+        import("./clubs.js"), fetch("./data/clubs.json"),
+      ]);
+      if (!response.ok) throw new Error("Clubs snapshot unavailable");
+      const data = await response.json();
+      if (root.isConnected) renderClubs(root, data);
+    } catch {
+      if (root.isConnected) root.textContent = "Clubs could not be loaded. Please reload to try again.";
+    }
+  }
+
   function render(route, focus = false) {
     activePersonDetails?.dismiss();
     content.querySelectorAll(".event-details[open]").forEach(dialog => dialog.close());
@@ -574,6 +588,9 @@ function trackPageView(route, title) {
       status.textContent = "Loading people…";
       content.querySelector(".members-years").append(status);
       void loadPeople(status);
+    } else if (pageRoute === "/clubs") {
+      content.replaceChildren(document.getElementById("clubs-template").content.cloneNode(true));
+      void loadClubs(content.querySelector("#clubs-list"));
     } else if (pageRoute === "/by-laws") {
       content.replaceChildren(document.getElementById("governance-template").content.cloneNode(true));
     } else if (pageRoute === "/events") {

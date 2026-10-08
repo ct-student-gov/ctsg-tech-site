@@ -5,6 +5,7 @@ const cacheTime = 5 * 60 * 1000;
 const snapshots = new Map([
   ["/data/people.js", "text/javascript; charset=utf-8"],
   ["/data/blog.js", "text/javascript; charset=utf-8"],
+  ["/data/clubs.json", "application/json; charset=utf-8"],
   ["/data/calendar.json", "application/json; charset=utf-8"],
   ["/data/calendar.ics", "text/calendar; charset=utf-8"],
 ]);

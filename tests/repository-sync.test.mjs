@@ -17,6 +17,20 @@ const credentials = {
   CAMPUSGROUPS_CAREER_MANAGEMENT_URL: "https://example.org/test-career-secret",
 };
 
+test("Clubs joins full syncs when configured; an established connection cannot silently lose its token", async t => {
+  const state = await fixture(t);
+  state.env.NOTION_CLUBS_TOKEN = "test-clubs-token";
+  state.clubs = async options => { state.calls.push(["clubs", options]); return { clubCount: 2, changed: false }; };
+  await syncRepository(state);
+  assert.deepEqual(state.calls.map(([name]) => name), ["calendar", "people", "clubs"]);
+  state.calls.length = 0;
+  await mkdir(join(state.root, "data-sync"), { recursive: true });
+  await writeFile(join(state.root, "data-sync/clubs.json"), "{}");
+  delete state.env.NOTION_CLUBS_TOKEN;
+  await assert.rejects(syncRepository(state), /NOTION_CLUBS_TOKEN/);
+  assert.equal(state.calls.length, 0);
+});
+
 async function fixture(t, { trigger = "schedule", payload = {} } = {}) {
   const root = await mkdtemp(join(tmpdir(), "ctsg-repository-sync-"));
   t.after(() => rm(root, { recursive: true, force: true }));

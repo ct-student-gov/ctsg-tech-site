@@ -36,6 +36,7 @@ All pages share [public/index.html](public/index.html). Its HTML templates are r
 | --- | --- | --- |
 | About | `#/` | CTSG introduction, student-life and representative highlights, a rolling event calendar, and Blog cards. |
 | People | `#/members` | Academic-year directories with Executive Board and Representatives groups and expandable biographies. |
+| Clubs | `#/clubs` | Plain club directory with descriptions, officers, advisors and joining information, controlled by Notion Publish. See [Clubs setup](docs/clubs.md). |
 | Events | `#/events` | Calendar with month, week, and list views; source filters, event dialogs, and subscription/download actions. |
 | Governance | `#/by-laws` | Bylaws document embedded from its Google Drive preview. |
 

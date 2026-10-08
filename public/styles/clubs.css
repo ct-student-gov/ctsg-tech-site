@@ -1,0 +1,33 @@
+/* Club rows use the shared editorial type, rules, colors and page gutters. */
+.clubs-directory { max-width: 1200px; margin-inline: auto; padding-bottom: 10px; }
+.clubs-directory > h1 { margin: 0; padding-bottom: 34px; border-bottom: 1px solid var(--color-rule); line-height: 1.04; }
+.club-row {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.7fr) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--layout-gap);
+  padding-block: 30px;
+}
+.club-row + .club-row { border-top: 1px solid var(--color-rule); }
+.club-row > * { min-width: 0; }
+.club-name { margin: 0; font-size: clamp(24px, 2.5vw, 28px); line-height: 1.2; letter-spacing: -.5px; }
+.club-overview > p:last-child { margin-bottom: 0; }
+.club-joining { margin-top: 24px; }
+.club-joining .eyebrow { margin-bottom: 8px; }
+.club-joining p { margin: 0; font-size: 15px; }
+.club-joining p + p { margin-top: 6px; }
+.club-joining a { overflow-wrap: anywhere; }
+.club-joining a:hover { text-decoration-color: var(--color-red); }
+.club-joining a:focus-visible { outline: 2px solid var(--color-red); outline-offset: 3px; }
+.club-officers { display: grid; gap: 16px; margin: 0; padding-left: var(--layout-gap); border-left: 1px solid var(--color-rule); }
+.club-officers dt { margin-bottom: 4px; font-size: 11px; line-height: 1.4; letter-spacing: 1px; text-transform: uppercase; }
+.club-officers dd { margin: 0; font-size: 15px; line-height: 1.4; overflow-wrap: anywhere; }
+@media (max-width: 900px) {
+  .club-row { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+  .club-name { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .club-row { grid-template-columns: minmax(0, 1fr); }
+  .club-officers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding: 0; border: 0; }
+  .club-officers > div { min-width: 0; }
+}

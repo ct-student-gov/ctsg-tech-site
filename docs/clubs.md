@@ -1,8 +1,8 @@
 # Clubs
 
-The plain HTML directory at `#/clubs` uses [the Clubs database](https://app.notion.com/p/3ea0b1bd679180de868bc396ff9360c7). Check **Publish** on the records that should appear; unchecked, archived and trashed records are excluded. A published club needs a Name.
+The club directory at `#/clubs` uses [the Clubs database](https://app.notion.com/p/3ea0b1bd679180de868bc396ff9360c7). Check **Publish** on the records that should appear; unchecked, archived and trashed records are excluded. A published club needs a Name.
 
-The page displays Name, Description, President, Vice President, Treasurer, Faculty/Staff Advisor, “How will students join your club/receive club communications?” and “If your group already has a group chat or Slack channel, please provide the link here:”. Complete HTTP(S) joining URLs become links. Other registration properties and page bodies are not imported. Clubs sort alphabetically. No logos or additional styling are added.
+The page displays Name, Description, President, Vice President, Treasurer, Faculty/Staff Advisor, “How will students join your club/receive club communications?” and “If your group already has a group chat or Slack channel, please provide the link here:”. Complete HTTP(S) joining URLs become links. Other registration properties and page bodies are not imported. Clubs sort alphabetically. Each club occupies a horizontal row with its name, description and joining information, and officers. The layout uses the shared site typography, colors and dividing rules, and stacks on small screens. No logos are added.
 
 `npm run clubs:sync` reads `NOTION_CLUBS_TOKEN` from the environment and writes `public/data/clubs.json` and `data-sync/clubs.json`. The database's single data source is resolved through the Notion API; `NOTION_CLUBS_DATA_SOURCE_ID` can override it locally. The importer expects Name as title, Publish as checkbox, the display fields as text, and the group link field as text or URL. Schema changes, incomplete responses and invalid published names fail the sync, preserving saved content. Unchanged content produces no file changes. Withdrawals take effect after a successful complete sync.
 

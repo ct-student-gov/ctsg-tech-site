@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-08T06:39:12.183Z",
+  "generatedAt": "2026-10-09T06:42:30.765Z",
   "window": {
-    "start": "2026-07-10T06:39:12.183Z",
-    "end": "2027-11-12T06:39:12.183Z"
+    "start": "2026-07-11T06:42:30.765Z",
+    "end": "2027-11-13T06:42:30.765Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,11 +12,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 4,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-10T06:51:26.911Z",
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       },
       "state": "current",
@@ -56,11 +56,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -76,8 +76,8 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 62,
-      "excludedCount": 60,
+      "fetchedCount": 59,
+      "excludedCount": 58,
       "failedCount": 1,
       "warnings": [
         {
@@ -86,9 +86,9 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 62,
-        "excludedCount": 60,
-        "importedCount": 1,
+        "fetchedCount": 59,
+        "excludedCount": 58,
+        "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
         "issues": [
@@ -99,16 +99,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-11T06:28:25.298Z",
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -117,18 +117,18 @@
         ]
       },
       "state": "current",
-      "archivedCount": 1
+      "archivedCount": 2
     },
     {
       "id": "clubs",
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -145,11 +145,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -166,11 +166,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -188,11 +188,11 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 35,
@@ -209,11 +209,11 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -232,10 +232,10 @@
       "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -254,20 +254,20 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
-        "previousUpcomingCount": 10,
-        "comparedThrough": "2027-11-11T06:28:25.298Z",
+        "eventCount": 9,
+        "upcomingCount": 9,
+        "previousUpcomingCount": 9,
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 14
+      "archivedCount": 15
     }
   ],
   "events": [
@@ -1350,7 +1350,7 @@
       "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
-      "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+      "title": "Interstride-Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
       "start": "2026-11-16T18:00:00.000Z",
       "end": "2026-11-16T19:00:00.000Z",
       "allDay": false,
@@ -1369,7 +1369,7 @@
       "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
-      "title": "Job Search Strategy for International Students",
+      "title": "Interstride-Job Search Strategy for International Students",
       "start": "2026-11-17T21:00:00.000Z",
       "end": "2026-11-17T22:00:00.000Z",
       "allDay": false,
@@ -1411,7 +1411,7 @@
       "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
-      "title": "Top 10 Mistakes Made by International Students in Their Job and Internship Search",
+      "title": "Interstride-Top 10 Mistakes Made by International Students in Their Job and Internship Search",
       "start": "2026-11-19T19:00:00.000Z",
       "end": "2026-11-19T20:00:00.000Z",
       "allDay": false,
@@ -1465,7 +1465,7 @@
       "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
-      "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+      "title": "Interstride-Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
       "start": "2026-12-02T18:00:00.000Z",
       "end": "2026-12-02T19:00:00.000Z",
       "allDay": false,

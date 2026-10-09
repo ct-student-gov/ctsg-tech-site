@@ -502,7 +502,7 @@
           "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
-          "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+          "title": "Interstride-Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
           "start": "2026-12-02T18:00:00.000Z",
           "end": "2026-12-02T19:00:00.000Z",
           "allDay": false,
@@ -540,7 +540,7 @@
           "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
-          "title": "Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+          "title": "Interstride-Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
           "start": "2026-11-16T18:00:00.000Z",
           "end": "2026-11-16T19:00:00.000Z",
           "allDay": false,
@@ -580,7 +580,7 @@
           "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
-          "title": "Top 10 Mistakes Made by International Students in Their Job and Internship Search",
+          "title": "Interstride-Top 10 Mistakes Made by International Students in Their Job and Internship Search",
           "start": "2026-11-19T19:00:00.000Z",
           "end": "2026-11-19T20:00:00.000Z",
           "allDay": false,
@@ -589,25 +589,6 @@
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133038",
           "audienceTags": [
             "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "career-management:cebf0c6a48a369913fddee1ad7d29a698192026_3:19:52_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Future Forward: A Roche-Genentech Early Career Info Session",
-          "start": "2026-10-08T15:30:00.000Z",
-          "end": "2026-10-08T22:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132971",
-          "audienceTags": [
-            "Technical Programs"
           ],
           "departmentAcronyms": [
             "CTCAREERS"
@@ -637,7 +618,7 @@
           "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
-          "title": "Job Search Strategy for International Students",
+          "title": "Interstride-Job Search Strategy for International Students",
           "start": "2026-11-17T21:00:00.000Z",
           "end": "2026-11-17T22:00:00.000Z",
           "allDay": false,
@@ -656,16 +637,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
-        "previousUpcomingCount": 10,
-        "comparedThrough": "2027-11-11T06:28:25.298Z",
+        "eventCount": 9,
+        "upcomingCount": 9,
+        "previousUpcomingCount": 9,
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       }
     },
@@ -1096,30 +1077,9 @@
       }
     },
     "tech-events": {
-      "events": [
-        {
-          "id": "tech-events:revolutionizing-healthcare-with-ai-powered-devices",
-          "source": "tech-events",
-          "category": "Cornell Tech events",
-          "title": "Revolutionizing Healthcare With AI-Powered Devices",
-          "start": "2026-10-08T16:00:00.000Z",
-          "end": "2026-10-08T18:00:00.000Z",
-          "allDay": false,
-          "description": "You are invited to join the Weill Cornell Medicine community for a showcase of digital health innovations and technologies. This event is part of #AIWeekNY, a community-led festival organized by Pulse NYC that celebrates innovation across the AI ecosystem. The following innovators and their AI-enabled technologies will be featured: EmulatRx An agentic AI platform that uses real-world patient data to support clinical trial design. Presented by Weishen Pan, PhD, Research Associate, Department of Population Health Sciences, Weill Cornell Medicine WAV AI An AI-based tool that analyzes sounds to detect fistula stenosis. Presented by Bobak Mosadegh, PhD, Associate Professor of Biomedical Engineering in Radiology and Director, Dalio Institute of Cardiovascular Imaging, Weill Cornell Medicine Postpartum Depression Risk Prediction An Epic-integrated clinical decision support tool that analyzes electronic health record data to identify pregnant patients at elevated risk for postpartum depression. Presented by Yiye Zhang, PhD, MS, Associate Professor of Population Health Sciences, Weill Cornell Medicine Corneal Confocal Microscopy for Neurodegenerative Disease Detection A noninvasive approach that uses corneal confocal microscopy to detect changes in the cornea’s small nerve fibers. Quantitative imaging and predictive analysis may offer an accessible biomarker for detecting and monitoring neurodegeneration. Presented by Rayaz A. Malik, MBChB, PhD, FRCP, Professor of Medicine, Weill Cornell Medicine–Qatar We look forward to seeing you there!",
-          "location": "1300 York Ave, New York, NY",
-          "url": "https://tech.cornell.edu/events/revolutionizing-healthcare-with-ai-powered-devices/",
-          "audienceTags": [
-            "Alumni",
-            "Faculty",
-            "International Students",
-            "Master's Students",
-            "PhDs",
-            "Postdocs"
-          ]
-        }
-      ],
-      "fetchedCount": 62,
-      "excludedCount": 60,
+      "events": [],
+      "fetchedCount": 59,
+      "excludedCount": 58,
       "failedCount": 1,
       "warnings": [
         {
@@ -1128,9 +1088,9 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 62,
-        "excludedCount": 60,
-        "importedCount": 1,
+        "fetchedCount": 59,
+        "excludedCount": 58,
+        "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
         "issues": [
@@ -1141,16 +1101,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-11T06:42:30.765Z",
+        "end": "2027-11-13T06:42:30.765Z"
       },
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-09T06:42:30.765Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-11T06:28:25.298Z",
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1519,6 +1479,29 @@
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132936",
         "audienceTags": [
           "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3Acebf0c6a48a369913fddee1ad7d29a698192026_3%3A19%3A52_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-09T06:42:30.765Z",
+      "event": {
+        "id": "career-management:cebf0c6a48a369913fddee1ad7d29a698192026_3:19:52_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Future Forward: A Roche-Genentech Early Career Info Session",
+        "start": "2026-10-08T15:30:00.000Z",
+        "end": "2026-10-08T22:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132971",
+        "audienceTags": [
+          "Technical Programs"
         ],
         "departmentAcronyms": [
           "CTCAREERS"
@@ -2415,6 +2398,30 @@
           "Prospective Students",
           "Public",
           "Roosevelt Island Community"
+        ]
+      }
+    },
+    "calendar-archive-v1:tech-events:tech-events%3Arevolutionizing-healthcare-with-ai-powered-devices": {
+      "source": "tech-events",
+      "archivedAt": "2026-10-09T06:42:30.765Z",
+      "event": {
+        "id": "tech-events:revolutionizing-healthcare-with-ai-powered-devices",
+        "source": "tech-events",
+        "category": "Cornell Tech events",
+        "title": "Revolutionizing Healthcare With AI-Powered Devices",
+        "start": "2026-10-08T16:00:00.000Z",
+        "end": "2026-10-08T18:00:00.000Z",
+        "allDay": false,
+        "description": "You are invited to join the Weill Cornell Medicine community for a showcase of digital health innovations and technologies. This event is part of #AIWeekNY, a community-led festival organized by Pulse NYC that celebrates innovation across the AI ecosystem. The following innovators and their AI-enabled technologies will be featured: EmulatRx An agentic AI platform that uses real-world patient data to support clinical trial design. Presented by Weishen Pan, PhD, Research Associate, Department of Population Health Sciences, Weill Cornell Medicine WAV AI An AI-based tool that analyzes sounds to detect fistula stenosis. Presented by Bobak Mosadegh, PhD, Associate Professor of Biomedical Engineering in Radiology and Director, Dalio Institute of Cardiovascular Imaging, Weill Cornell Medicine Postpartum Depression Risk Prediction An Epic-integrated clinical decision support tool that analyzes electronic health record data to identify pregnant patients at elevated risk for postpartum depression. Presented by Yiye Zhang, PhD, MS, Associate Professor of Population Health Sciences, Weill Cornell Medicine Corneal Confocal Microscopy for Neurodegenerative Disease Detection A noninvasive approach that uses corneal confocal microscopy to detect changes in the cornea’s small nerve fibers. Quantitative imaging and predictive analysis may offer an accessible biomarker for detecting and monitoring neurodegeneration. Presented by Rayaz A. Malik, MBChB, PhD, FRCP, Professor of Medicine, Weill Cornell Medicine–Qatar We look forward to seeing you there!",
+        "location": "1300 York Ave, New York, NY",
+        "url": "https://tech.cornell.edu/events/revolutionizing-healthcare-with-ai-powered-devices/",
+        "audienceTags": [
+          "Alumni",
+          "Faculty",
+          "International Students",
+          "Master's Students",
+          "PhDs",
+          "Postdocs"
         ]
       }
     }

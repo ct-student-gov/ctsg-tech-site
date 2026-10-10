@@ -40,18 +40,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 1 session",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: Last day of instruction for classes in 7 week 1 session",
-          "start": "2026-10-09",
-          "end": "2026-10-10",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 2 session",
           "source": "academic",
           "category": "Academic dates",
@@ -426,17 +414,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-12T06:22:56.498Z",
+        "end": "2027-11-14T06:22:56.498Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-10T06:22:56.498Z",
       "coverage": {
         "version": 1,
-        "eventCount": 35,
-        "upcomingCount": 35,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 34,
+        "upcomingCount": 34,
+        "previousUpcomingCount": 34,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     },
@@ -1078,8 +1066,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 59,
-      "excludedCount": 58,
+      "fetchedCount": 60,
+      "excludedCount": 59,
       "failedCount": 1,
       "warnings": [
         {
@@ -1088,8 +1076,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 59,
-        "excludedCount": 58,
+        "fetchedCount": 60,
+        "excludedCount": 59,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1101,16 +1089,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-11T06:42:30.765Z",
-        "end": "2027-11-13T06:42:30.765Z"
+        "start": "2026-07-12T06:22:56.498Z",
+        "end": "2027-11-14T06:22:56.498Z"
       },
-      "updatedAt": "2026-10-09T06:42:30.765Z",
+      "updatedAt": "2026-10-10T06:22:56.498Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-12T06:39:12.183Z",
+        "comparedThrough": "2027-11-13T06:42:30.765Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1147,6 +1135,22 @@
         "title": "Fall 2026: Fall term begins: First-year writing seminar, project session full, regular, and 7 week 1 session instruction begins",
         "start": "2026-08-24",
         "end": "2026-08-25",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Last%20day%20of%20instruction%20for%20classes%20in%207%20week%201%20session": {
+      "source": "academic",
+      "archivedAt": "2026-10-10T06:22:56.498Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in 7 week 1 session",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: Last day of instruction for classes in 7 week 1 session",
+        "start": "2026-10-09",
+        "end": "2026-10-10",
         "allDay": true,
         "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
         "location": "",

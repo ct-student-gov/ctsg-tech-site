@@ -1066,8 +1066,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 60,
-      "excludedCount": 59,
+      "fetchedCount": 66,
+      "excludedCount": 65,
       "failedCount": 1,
       "warnings": [
         {
@@ -1076,8 +1076,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 60,
-        "excludedCount": 59,
+        "fetchedCount": 66,
+        "excludedCount": 65,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1089,16 +1089,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-12T06:22:56.498Z",
-        "end": "2027-11-14T06:22:56.498Z"
+        "start": "2026-07-15T07:06:23.112Z",
+        "end": "2027-11-17T07:06:23.112Z"
       },
-      "updatedAt": "2026-10-10T06:22:56.498Z",
+      "updatedAt": "2026-10-13T07:06:23.112Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-13T06:42:30.765Z",
+        "comparedThrough": "2027-11-14T06:22:56.498Z",
         "warnings": [
           {
             "code": "unverified-events",

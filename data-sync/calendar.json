@@ -112,18 +112,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall Break/No classes",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall Break/No classes",
-          "start": "2026-10-10",
-          "end": "2026-10-14",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:February Break/No classes",
           "source": "academic",
           "category": "Academic dates",
@@ -414,17 +402,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-12T06:22:56.498Z",
-        "end": "2027-11-14T06:22:56.498Z"
+        "start": "2026-07-16T05:23:55.456Z",
+        "end": "2027-11-18T05:23:55.456Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-10T06:22:56.498Z",
+      "updatedAt": "2026-10-14T05:23:55.456Z",
       "coverage": {
         "version": 1,
-        "eventCount": 34,
-        "upcomingCount": 34,
-        "previousUpcomingCount": 34,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "eventCount": 33,
+        "upcomingCount": 33,
+        "previousUpcomingCount": 33,
+        "comparedThrough": "2027-11-14T06:22:56.498Z",
         "warnings": []
       }
     },
@@ -603,6 +591,25 @@
           "detailsRedacted": true
         },
         {
+          "id": "career-management:ef09faf9ade2ec9159378c49f446a77c1062026_3:24:04_PM@campusgroups.com",
+          "source": "career-management",
+          "category": "School events",
+          "title": "Alumna Talk - \"What is Forward Deployed Engineering?\"",
+          "start": "2026-10-27T19:00:00.000Z",
+          "end": "2026-10-27T20:00:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133060",
+          "audienceTags": [
+            "Technical Programs"
+          ],
+          "departmentAcronyms": [
+            "CTCAREERS"
+          ],
+          "detailsRedacted": true
+        },
+        {
           "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -622,19 +629,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 24,
+      "fetchedCount": 25,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-11T06:42:30.765Z",
-        "end": "2027-11-13T06:42:30.765Z"
+        "start": "2026-07-16T05:23:55.456Z",
+        "end": "2027-11-18T05:23:55.456Z"
       },
-      "updatedAt": "2026-10-09T06:42:30.765Z",
+      "updatedAt": "2026-10-14T05:23:55.456Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
+        "eventCount": 10,
+        "upcomingCount": 10,
         "previousUpcomingCount": 9,
-        "comparedThrough": "2027-11-12T06:39:12.183Z",
+        "comparedThrough": "2027-11-13T06:42:30.765Z",
         "warnings": []
       }
     },
@@ -1066,8 +1073,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 66,
-      "excludedCount": 65,
+      "fetchedCount": 63,
+      "excludedCount": 62,
       "failedCount": 1,
       "warnings": [
         {
@@ -1076,8 +1083,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 66,
-        "excludedCount": 65,
+        "fetchedCount": 63,
+        "excludedCount": 62,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1089,16 +1096,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-15T07:06:23.112Z",
-        "end": "2027-11-17T07:06:23.112Z"
+        "start": "2026-07-16T05:23:55.456Z",
+        "end": "2027-11-18T05:23:55.456Z"
       },
-      "updatedAt": "2026-10-13T07:06:23.112Z",
+      "updatedAt": "2026-10-14T05:23:55.456Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-14T06:22:56.498Z",
+        "comparedThrough": "2027-11-17T07:06:23.112Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1215,6 +1222,22 @@
         "title": "Fall 2026: Last day to drop classes in 7 week 1 session",
         "start": "2026-09-21",
         "end": "2026-09-22",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%20Break%2FNo%20classes": {
+      "source": "academic",
+      "archivedAt": "2026-10-14T05:23:55.456Z",
+      "event": {
+        "id": "academic:2026–2027:Fall Break/No classes",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall Break/No classes",
+        "start": "2026-10-10",
+        "end": "2026-10-14",
         "allDay": true,
         "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
         "location": "",

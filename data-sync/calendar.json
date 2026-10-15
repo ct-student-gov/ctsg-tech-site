@@ -1957,6 +1957,26 @@
         }
       }
     },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A32a1b88fa74aa9725951a21c49a4eec69292026_12%3A32%3A21_PM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-10-15T19:46:33.210Z",
+      "event": {
+        "id": "inclusion-belonging:32a1b88fa74aa9725951a21c49a4eec69292026_12:32:21_PM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Send a Post Card!",
+        "start": "2026-10-15T14:00:00.000Z",
+        "end": "2026-10-15T16:00:00.000Z",
+        "allDay": false,
+        "description": "Feeling a little homesick? Experienced something amazing in NYC? Learned something incredible that you want to share? Take a few minutes to write a postcard to a family member or friend!\n\nStudents will have the opportunity to write a postcard to friends and family, either internationally or domestically. \n\nInternational postcards (with stamps) will be limited to 2 per person. Stamps are limited. Please come early!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133047",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133047",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
     "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A6386e582ea61cd9b57300516fb7672f48262026_10%3A12%3A47_AM%40campusgroups.com": {
       "source": "inclusion-belonging",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2174,6 +2194,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-15T19:46:33.210Z",
+      "event": {
+        "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Leader Training (Option 1)",
+        "start": "2026-10-15T13:00:00.000Z",
+        "end": "2026-10-15T14:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3A2a51e853b858a4489be8e1803aa39f006242026_5%3A30%3A01_PM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2373,6 +2414,26 @@
         }
       }
     },
+    "calendar-archive-v1:student-affairs:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-15T19:46:33.210Z",
+      "event": {
+        "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Leader Training (Option 1)",
+        "start": "2026-10-15T13:00:00.000Z",
+        "end": "2026-10-15T14:00:00.000Z",
+        "allDay": false,
+        "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133058",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
     "calendar-archive-v1:tech-academic:tech-academic%3Afall%3A2026%3AMaker%20Day%3A1": {
       "source": "tech-academic",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2459,7 +2520,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-14T17:25:00.000Z",
+      "cursor": "2026-10-15T19:45:00.000Z",
       "versions": {}
     },
     "community": {

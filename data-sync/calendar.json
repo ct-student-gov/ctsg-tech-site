@@ -16,18 +16,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall 2026: 7 week 2 session instruction begins",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: 7 week 2 session instruction begins",
-          "start": "2026-10-14",
-          "end": "2026-10-15",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Final exams",
           "source": "academic",
           "category": "Academic dates",
@@ -402,17 +390,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-16T05:23:55.456Z",
-        "end": "2027-11-18T05:23:55.456Z"
+        "start": "2026-07-17T05:11:58.224Z",
+        "end": "2027-11-19T05:11:58.224Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-14T05:23:55.456Z",
+      "updatedAt": "2026-10-15T05:11:58.224Z",
       "coverage": {
         "version": 1,
-        "eventCount": 33,
-        "upcomingCount": 33,
-        "previousUpcomingCount": 33,
-        "comparedThrough": "2027-11-14T06:22:56.498Z",
+        "eventCount": 32,
+        "upcomingCount": 32,
+        "previousUpcomingCount": 32,
+        "comparedThrough": "2027-11-18T05:23:55.456Z",
         "warnings": []
       }
     },
@@ -1073,8 +1061,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 63,
-      "excludedCount": 62,
+      "fetchedCount": 60,
+      "excludedCount": 59,
       "failedCount": 1,
       "warnings": [
         {
@@ -1083,8 +1071,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 63,
-        "excludedCount": 62,
+        "fetchedCount": 60,
+        "excludedCount": 59,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1096,16 +1084,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-16T05:23:55.456Z",
-        "end": "2027-11-18T05:23:55.456Z"
+        "start": "2026-07-17T05:11:58.224Z",
+        "end": "2027-11-19T05:11:58.224Z"
       },
-      "updatedAt": "2026-10-14T05:23:55.456Z",
+      "updatedAt": "2026-10-15T05:11:58.224Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-17T07:06:23.112Z",
+        "comparedThrough": "2027-11-18T05:23:55.456Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1116,6 +1104,22 @@
     }
   },
   "archive": {
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%207%20week%202%20session%20instruction%20begins": {
+      "source": "academic",
+      "archivedAt": "2026-10-15T05:11:58.224Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: 7 week 2 session instruction begins",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: 7 week 2 session instruction begins",
+        "start": "2026-10-14",
+        "end": "2026-10-15",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
     "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Add%2FDrop%20begins%20for%20Graduate%2FProfessional%2FCornell%20Tech": {
       "source": "academic",
       "archivedAt": "2026-09-30T21:26:04.604Z",

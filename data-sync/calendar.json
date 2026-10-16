@@ -444,25 +444,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "career-management:27c354348b43470b1800325f8e5539669152026_10:11:50_AM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Cornell University STEM Virtual Career Fair - registration opens on Sept 15",
-          "start": "2026-10-15T17:00:00.000Z",
-          "end": "2026-10-15T21:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133010",
-          "audienceTags": [
-            "Technical Programs"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -620,16 +601,16 @@
       "fetchedCount": 25,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-16T05:23:55.456Z",
-        "end": "2027-11-18T05:23:55.456Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
-      "updatedAt": "2026-10-14T05:23:55.456Z",
+      "updatedAt": "2026-10-16T04:59:28.675Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
+        "eventCount": 9,
+        "upcomingCount": 9,
         "previousUpcomingCount": 9,
-        "comparedThrough": "2027-11-13T06:42:30.765Z",
+        "comparedThrough": "2027-11-18T05:23:55.456Z",
         "warnings": []
       }
     },
@@ -685,37 +666,20 @@
       }
     },
     "inclusion-belonging": {
-      "events": [
-        {
-          "id": "inclusion-belonging:32a1b88fa74aa9725951a21c49a4eec69292026_12:32:21_PM@campusgroups.com",
-          "source": "inclusion-belonging",
-          "category": "School events",
-          "title": "Send a Post Card!",
-          "start": "2026-10-15T14:00:00.000Z",
-          "end": "2026-10-15T16:00:00.000Z",
-          "allDay": false,
-          "description": "Feeling a little homesick? Experienced something amazing in NYC? Learned something incredible that you want to share? Take a few minutes to write a postcard to a family member or friend!\n\nStudents will have the opportunity to write a postcard to friends and family, either internationally or domestically. \n\nInternational postcards (with stamps) will be limited to 2 per person. Stamps are limited. Please come early!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133047",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133047",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTDEI"
-          ]
-        }
-      ],
+      "events": [],
       "fetchedCount": 4,
       "window": {
-        "start": "2026-07-10T06:39:12.183Z",
-        "end": "2027-11-12T06:39:12.183Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-08T06:39:12.183Z",
+      "updatedAt": "2026-10-16T04:59:28.675Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-10T06:51:26.911Z",
+        "eventCount": 0,
+        "upcomingCount": 0,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       }
     },
@@ -802,22 +766,6 @@
           ]
         },
         {
-          "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Leader Training (Option 1)",
-          "start": "2026-10-15T13:00:00.000Z",
-          "end": "2026-10-15T14:00:00.000Z",
-          "allDay": false,
-          "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133058",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -834,19 +782,19 @@
           ]
         }
       ],
-      "fetchedCount": 11,
+      "fetchedCount": 10,
       "window": {
-        "start": "2026-07-08T06:51:26.911Z",
-        "end": "2027-11-10T06:51:26.911Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-06T06:51:26.911Z",
+      "updatedAt": "2026-10-16T04:59:28.675Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-05T06:33:02.367Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": []
       }
     },
@@ -955,23 +903,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "student-affairs:ee94e5ff61cbdc0468082d1e750f96621052026_1:42:14_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Leader Training (Option 1)",
-          "start": "2026-10-15T13:00:00.000Z",
-          "end": "2026-10-15T14:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -989,19 +920,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 16,
+      "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-08T06:51:26.911Z",
-        "end": "2027-11-10T06:51:26.911Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
-      "updatedAt": "2026-10-06T06:51:26.911Z",
+      "updatedAt": "2026-10-16T04:59:28.675Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": []
       }
     },
@@ -1061,8 +992,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 60,
-      "excludedCount": 59,
+      "fetchedCount": 66,
+      "excludedCount": 65,
       "failedCount": 1,
       "warnings": [
         {
@@ -1071,8 +1002,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 60,
-        "excludedCount": 59,
+        "fetchedCount": 66,
+        "excludedCount": 65,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -1084,16 +1015,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-17T05:11:58.224Z",
-        "end": "2027-11-19T05:11:58.224Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
-      "updatedAt": "2026-10-15T05:11:58.224Z",
+      "updatedAt": "2026-10-16T04:59:28.675Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-18T05:23:55.456Z",
+        "comparedThrough": "2027-11-19T05:11:58.224Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1324,6 +1255,29 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133004",
+        "audienceTags": [
+          "Technical Programs"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A27c354348b43470b1800325f8e5539669152026_10%3A11%3A50_AM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-16T04:59:28.675Z",
+      "event": {
+        "id": "career-management:27c354348b43470b1800325f8e5539669152026_10:11:50_AM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Cornell University STEM Virtual Career Fair - registration opens on Sept 15",
+        "start": "2026-10-15T17:00:00.000Z",
+        "end": "2026-10-15T21:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133010",
         "audienceTags": [
           "Technical Programs"
         ],

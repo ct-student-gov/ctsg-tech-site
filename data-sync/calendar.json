@@ -463,25 +463,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "career-management:65726f6cf185a7439301f3a584d410a79292026_10:16:31_AM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Climate Advocacy Symposium @ Cornell University -  Fri, Oct 16 - Sat, 17",
-          "start": "2026-10-16T20:30:00.000Z",
-          "end": "2026-10-17T21:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133046",
-          "audienceTags": [
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -601,16 +582,16 @@
       "fetchedCount": 25,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-18T04:59:28.675Z",
-        "end": "2027-11-20T04:59:28.675Z"
+        "start": "2026-07-20T05:08:21.278Z",
+        "end": "2027-11-22T05:08:21.278Z"
       },
-      "updatedAt": "2026-10-16T04:59:28.675Z",
+      "updatedAt": "2026-10-18T05:08:21.278Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
-        "previousUpcomingCount": 9,
-        "comparedThrough": "2027-11-18T05:23:55.456Z",
+        "eventCount": 8,
+        "upcomingCount": 8,
+        "previousUpcomingCount": 8,
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": []
       }
     },
@@ -1289,6 +1270,29 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133035",
+        "audienceTags": [
+          "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A65726f6cf185a7439301f3a584d410a79292026_10%3A16%3A31_AM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-18T05:08:21.278Z",
+      "event": {
+        "id": "career-management:65726f6cf185a7439301f3a584d410a79292026_10:16:31_AM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Climate Advocacy Symposium @ Cornell University -  Fri, Oct 16 - Sat, 17",
+        "start": "2026-10-16T20:30:00.000Z",
+        "end": "2026-10-17T21:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133046",
         "audienceTags": [
           "All Master's Students"
         ],

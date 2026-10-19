@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-18T05:08:21.278Z",
+  "generatedAt": "2026-10-19T20:24:42.640Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-11-22T05:08:21.278Z"
+    "end": "2027-11-23T20:24:42.640Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 10,
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
         "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": []
       },
       "state": "current",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 4,
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -99,16 +99,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -124,15 +124,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-21T20:24:42.640Z",
+        "end": "2027-11-23T20:24:42.640Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
-        "eventCount": 0,
-        "upcomingCount": 0,
+        "eventCount": 1,
+        "upcomingCount": 1,
         "previousUpcomingCount": 0,
         "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
@@ -145,11 +145,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-21T20:24:42.640Z",
+        "end": "2027-11-23T20:24:42.640Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -166,11 +166,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-21T20:24:42.640Z",
+        "end": "2027-11-23T20:24:42.640Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -188,17 +188,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-17T05:11:58.224Z",
+        "end": "2027-11-19T05:11:58.224Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 32,
         "upcomingCount": 32,
         "previousUpcomingCount": 32,
-        "comparedThrough": "2027-11-19T05:11:58.224Z",
+        "comparedThrough": "2027-11-18T05:23:55.456Z",
         "warnings": []
       },
       "state": "current",
@@ -209,17 +209,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -232,16 +232,16 @@
       "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
         "upcomingCount": 7,
         "previousUpcomingCount": 7,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-10T06:51:26.911Z",
         "warnings": []
       },
       "state": "current",
@@ -257,7 +257,7 @@
         "start": "2026-07-20T05:08:21.278Z",
         "end": "2027-11-22T05:08:21.278Z"
       },
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -1328,6 +1328,19 @@
       "sourceCategories": {
         "student-affairs": "School events"
       }
+    },
+    {
+      "id": "notion:3fc0b1bd-6791-8141-9d78-ddbf1d3d0607",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Girls Into VC | Fireside Chat with Sammie Hasen & Aryuna Merdygeeva",
+      "start": "2026-10-28T17:00:00.000Z",
+      "end": "2026-10-28T18:30:00.000Z",
+      "allDay": false,
+      "description": "Join us on October 28 at 1:00 PM for a fireside chat with Sammie Hasen (C2FM, ex-Goldman Sachs, ex-Newlab Ventures) and Aryuna Merdygeeva (Olhon Social Capital), two women who have worked on both sides of the founder-investor table. The event is organized by Cornell Tech Chapter of Girls Into VC, a student-led community empowering women in venture capital and entrepreneurship.",
+      "location": "Cornell Tech campus (TBD)",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",

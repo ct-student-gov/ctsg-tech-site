@@ -596,19 +596,33 @@
       }
     },
     "clubs": {
-      "events": [],
+      "events": [
+        {
+          "id": "notion:3fc0b1bd-6791-8141-9d78-ddbf1d3d0607",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Girls Into VC | Fireside Chat with Sammie Hasen & Aryuna Merdygeeva",
+          "start": "2026-10-28T17:00:00.000Z",
+          "end": "2026-10-28T18:30:00.000Z",
+          "allDay": false,
+          "description": "Join us on October 28 at 1:00 PM for a fireside chat with Sammie Hasen (C2FM, ex-Goldman Sachs, ex-Newlab Ventures) and Aryuna Merdygeeva (Olhon Social Capital), two women who have worked on both sides of the founder-investor table. The event is organized by Cornell Tech Chapter of Girls Into VC, a student-led community empowering women in venture capital and entrepreneurship.",
+          "location": "Cornell Tech campus (TBD)",
+          "organizer": "",
+          "url": ""
+        }
+      ],
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-07-21T20:24:42.640Z",
+        "end": "2027-11-23T20:24:42.640Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-09-30T21:26:04.604Z",
+      "updatedAt": "2026-10-19T20:24:42.640Z",
       "coverage": {
         "version": 1,
-        "eventCount": 0,
-        "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       }
     },
@@ -2482,8 +2496,10 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-17T01:53:00.000Z",
-      "versions": {}
+      "cursor": "2026-10-19T20:23:00.000Z",
+      "versions": {
+        "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z"
+      }
     },
     "community": {
       "cursor": "2026-09-30T21:26:04.604Z",

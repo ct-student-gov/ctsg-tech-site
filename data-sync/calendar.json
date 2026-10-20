@@ -2105,6 +2105,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Aa0bff610fd27983c3118186c9190ae031052026_2%3A08%3A46_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-20T17:14:17.275Z",
+      "event": {
+        "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Leader Training (Option 2)",
+        "start": "2026-10-20T13:00:00.000Z",
+        "end": "2026-10-20T14:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3Aa28e9d0a4af3cefd16688fcb9d3b49997152026_5%3A33%3A20_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2305,6 +2326,26 @@
         "sourceCategories": {
           "student-affairs": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3Aa0bff610fd27983c3118186c9190ae031052026_2%3A08%3A46_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-20T17:14:17.275Z",
+      "event": {
+        "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Leader Training (Option 2)",
+        "start": "2026-10-20T13:00:00.000Z",
+        "end": "2026-10-20T14:00:00.000Z",
+        "allDay": false,
+        "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133059",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3Aa28e9d0a4af3cefd16688fcb9d3b49997152026_5%3A33%3A20_PM%40campusgroups.com": {

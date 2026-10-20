@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T17:14:17.275Z",
+  "generatedAt": "2026-10-20T20:07:36.354Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-11-24T17:14:17.275Z"
+    "end": "2027-11-24T20:07:36.354Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-24T05:17:45.741Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -102,7 +102,7 @@
         "start": "2026-07-22T05:17:45.741Z",
         "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -124,15 +124,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-22T17:14:17.275Z",
-        "end": "2027-11-24T17:14:17.275Z"
+        "start": "2026-07-22T20:07:36.354Z",
+        "end": "2027-11-24T20:07:36.354Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
+        "eventCount": 2,
+        "upcomingCount": 2,
         "previousUpcomingCount": 1,
         "comparedThrough": "2027-11-23T20:24:42.640Z",
         "warnings": []
@@ -145,11 +145,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-22T17:14:17.275Z",
-        "end": "2027-11-24T17:14:17.275Z"
+        "start": "2026-07-22T20:07:36.354Z",
+        "end": "2027-11-24T20:07:36.354Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -166,11 +166,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-22T17:14:17.275Z",
-        "end": "2027-11-24T17:14:17.275Z"
+        "start": "2026-07-22T20:07:36.354Z",
+        "end": "2027-11-24T20:07:36.354Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -192,7 +192,7 @@
         "end": "2027-11-24T05:17:45.741Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 31,
@@ -213,7 +213,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -235,7 +235,7 @@
         "start": "2026-07-22T05:17:45.741Z",
         "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -257,7 +257,7 @@
         "start": "2026-07-22T05:17:45.741Z",
         "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-20T17:14:17.275Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -1343,6 +1343,19 @@
       "allDay": false,
       "description": "Join us on October 28 at 1:00 PM for a fireside chat with Sammie Hasen (C2FM, ex-Goldman Sachs, ex-Newlab Ventures) and Aryuna Merdygeeva (Olhon Social Capital), two women who have worked on both sides of the founder-investor table. The event is organized by Cornell Tech Chapter of Girls Into VC, a student-led community empowering women in venture capital and entrepreneurship.",
       "location": "Cornell Tech campus (TBD)",
+      "organizer": "",
+      "url": ""
+    },
+    {
+      "id": "notion:3ff0b1bd-6791-8154-ab92-e0fe7493abb1",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Portfolio Workshop",
+      "start": "2026-10-29T20:00:00.000Z",
+      "end": "2026-10-29T22:00:00.000Z",
+      "allDay": false,
+      "description": "AI Society’s first workshop is a hands-on session where students turn their resume into a live personal portfolio website using AI tools, with no coding required. We’ll open with a short introduction to AI Society and our plans for the year, then cover how to prompt AI tools effectively. Most of the session is a guided build lab where attendees create, polish and publish their own site with help in the room. We’ll close with a quick demo showcase. Attendees bring a laptop and resume and leave with a shareable link.",
+      "location": "Cornell Tech ",
       "organizer": "",
       "url": ""
     },

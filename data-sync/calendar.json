@@ -578,20 +578,33 @@
           "location": "Cornell Tech campus (TBD)",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:3ff0b1bd-6791-8154-ab92-e0fe7493abb1",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Portfolio Workshop",
+          "start": "2026-10-29T20:00:00.000Z",
+          "end": "2026-10-29T22:00:00.000Z",
+          "allDay": false,
+          "description": "AI Society’s first workshop is a hands-on session where students turn their resume into a live personal portfolio website using AI tools, with no coding required. We’ll open with a short introduction to AI Society and our plans for the year, then cover how to prompt AI tools effectively. Most of the session is a guided build lab where attendees create, polish and publish their own site with help in the room. We’ll close with a quick demo showcase. Attendees bring a laptop and resume and leave with a shareable link.",
+          "location": "Cornell Tech ",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-07-21T20:24:42.640Z",
-        "end": "2027-11-23T20:24:42.640Z"
+        "start": "2026-07-22T20:07:36.354Z",
+        "end": "2027-11-24T20:07:36.354Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-19T20:24:42.640Z",
+      "updatedAt": "2026-10-20T20:07:36.354Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-23T20:24:42.640Z",
         "warnings": []
       }
     },
@@ -2555,9 +2568,10 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-20T19:57:00.000Z",
+      "cursor": "2026-10-20T20:06:00.000Z",
       "versions": {
-        "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z"
+        "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
+        "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z"
       }
     },
     "community": {

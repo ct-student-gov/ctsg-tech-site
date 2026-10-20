@@ -351,31 +351,6 @@
       "links": "https://join.slack.com/share/enQtMTIxMDk5ODQxNTQwNjctMzFhZGYyZmQ3NzY0NmE3ODkzNTlmM2NjYzhhYjhkNmIyZmUwNDliN2JlOTAxNmY3OTIwNzI4YjA5MzRlZjNkOA"
     },
     {
-      "id": "3ea0b1bd679180ab92b6fa64d29ce745",
-      "name": "Cornell ML & Poetry: Russian-Speaking Society",
-      "description": "Our mission is to bring together Cornell students from all backgrounds who are interested in machine learning, poetry, and creative expression, while creating a welcoming space where Russian language and culture can also be celebrated. We aim to connect technology and the arts through discussions, workshops, projects, performances, and cultural events, helping members share ideas, build friendships, and learn from one another.",
-      "officers": [
-        {
-          "role": "President",
-          "name": "Amelie Kapanova // ak2765@cornell.edu"
-        },
-        {
-          "role": "Vice President",
-          "name": "Pending tbd"
-        },
-        {
-          "role": "Treasurer",
-          "name": "Pending tbd"
-        },
-        {
-          "role": "Faculty/Staff Advisor",
-          "name": "Pending tbd"
-        }
-      ],
-      "joining": "Slack Channel in the CT slack",
-      "links": ""
-    },
-    {
       "id": "3ea0b1bd679180b58493ca0bd7e9dd1c",
       "name": "Cornell Tech AI Research Society",
       "description": "The Cornell Tech AI Research Society is focused on the cutting-edge of AI news and research. We will probably meet for around 2 hours a week and discuss research papers, new technologies, and our own ideas. We're open to all different fields within AI, including (but not limited to): AI safety, ethics, AI agents, AI for healthcare, physical AI, AI hardware, AI infrastructure, multimodal AI. We're also open to student-led AI projects if enough people are interested.",
@@ -598,6 +573,31 @@
         }
       ],
       "joining": "Google form",
+      "links": ""
+    },
+    {
+      "id": "3ea0b1bd679180ab92b6fa64d29ce745",
+      "name": "Dom Kultury: ML & Poetry club",
+      "description": "Our mission is to bring together Cornell students from all backgrounds who are interested in machine learning, poetry, and creative expression, while creating a welcoming space where Russian language and culture can also be celebrated. We aim to connect technology and the arts through discussions, workshops, projects, performances, and cultural events, helping members share ideas, build friendships, and learn from one another.",
+      "officers": [
+        {
+          "role": "President",
+          "name": "Amelie Kapanova // ak2765@cornell.edu"
+        },
+        {
+          "role": "Vice President",
+          "name": "Pending tbd"
+        },
+        {
+          "role": "Treasurer",
+          "name": "Pending tbd"
+        },
+        {
+          "role": "Faculty/Staff Advisor",
+          "name": "Pending tbd"
+        }
+      ],
+      "joining": "Slack Channel in the CT slack",
       "links": ""
     },
     {

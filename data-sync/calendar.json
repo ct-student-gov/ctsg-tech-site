@@ -76,18 +76,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
-          "start": "2026-10-19",
-          "end": "2026-10-20",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Study days",
           "source": "academic",
           "category": "Academic dates",
@@ -390,17 +378,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-17T05:11:58.224Z",
-        "end": "2027-11-19T05:11:58.224Z"
+        "start": "2026-07-22T05:17:45.741Z",
+        "end": "2027-11-24T05:17:45.741Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-15T05:11:58.224Z",
+      "updatedAt": "2026-10-20T05:17:45.741Z",
       "coverage": {
         "version": 1,
-        "eventCount": 32,
-        "upcomingCount": 32,
-        "previousUpcomingCount": 32,
-        "comparedThrough": "2027-11-18T05:23:55.456Z",
+        "eventCount": 31,
+        "upcomingCount": 31,
+        "previousUpcomingCount": 31,
+        "comparedThrough": "2027-11-19T05:11:58.224Z",
         "warnings": []
       }
     },
@@ -541,25 +529,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "career-management:ef09faf9ade2ec9159378c49f446a77c1062026_3:24:04_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Alumna Talk - \"What is Forward Deployed Engineering?\"",
-          "start": "2026-10-27T19:00:00.000Z",
-          "end": "2026-10-27T20:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133060",
-          "audienceTags": [
-            "Technical Programs"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -579,19 +548,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 25,
+      "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-20T05:08:21.278Z",
-        "end": "2027-11-22T05:08:21.278Z"
+        "start": "2026-07-22T05:17:45.741Z",
+        "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-18T05:08:21.278Z",
+      "updatedAt": "2026-10-20T05:17:45.741Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 8,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-22T05:08:21.278Z",
         "warnings": []
       }
     },
@@ -680,6 +649,22 @@
     },
     "student-affairs": {
       "events": [
+        {
+          "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Dealing with Procrastination",
+          "start": "2026-10-21T19:00:00.000Z",
+          "end": "2026-10-21T20:00:00.000Z",
+          "allDay": false,
+          "description": "Hosted by Learning Strategies Center\n\nWhat exactly is procrastination?\nWhy does it happen? \nWho is more prone to it? \nHow can you deal with it? \n\nJoin Florencia (Flor) Ardon, PhD, Lecturer and Neurodivergent Support Program Manager at the Learning Strategics Center for a conversation around what is - and what is not - procrastination. \n\nAttendees will be able to clear some misunderstandings, as well as create an action plan that work for them. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133091",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ]
+        },
         {
           "id": "student-affairs:9cd14cf60c89290ea08f96af97ed873b9102026_12:30:25_PM@campusgroups.com",
           "source": "student-affairs",
@@ -777,24 +762,41 @@
           ]
         }
       ],
-      "fetchedCount": 10,
+      "fetchedCount": 11,
       "window": {
-        "start": "2026-07-18T04:59:28.675Z",
-        "end": "2027-11-20T04:59:28.675Z"
+        "start": "2026-07-22T05:17:45.741Z",
+        "end": "2027-11-24T05:17:45.741Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-16T04:59:28.675Z",
+      "updatedAt": "2026-10-20T05:17:45.741Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-10T06:51:26.911Z",
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": []
       }
     },
     "student-affairs-students": {
       "events": [
+        {
+          "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Dealing with Procrastination",
+          "start": "2026-10-21T19:00:00.000Z",
+          "end": "2026-10-21T20:00:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ],
+          "detailsRedacted": true
+        },
         {
           "id": "student-affairs:612104fd39a702e83e5cecdb865b10b99102026_12:29:22_PM@campusgroups.com",
           "source": "student-affairs",
@@ -915,19 +917,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 15,
+      "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-18T04:59:28.675Z",
-        "end": "2027-11-20T04:59:28.675Z"
+        "start": "2026-07-22T05:17:45.741Z",
+        "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-16T04:59:28.675Z",
+      "updatedAt": "2026-10-20T05:17:45.741Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 7,
-        "comparedThrough": "2027-11-10T06:51:26.911Z",
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": []
       }
     },
@@ -975,8 +977,8 @@
     },
     "tech-events": {
       "events": [],
-      "fetchedCount": 64,
-      "excludedCount": 63,
+      "fetchedCount": 63,
+      "excludedCount": 62,
       "failedCount": 1,
       "warnings": [
         {
@@ -985,8 +987,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 64,
-        "excludedCount": 63,
+        "fetchedCount": 63,
+        "excludedCount": 62,
         "importedCount": 0,
         "pagesFetched": 1,
         "failedCount": 1,
@@ -998,16 +1000,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-19T04:59:35.734Z",
-        "end": "2027-11-21T04:59:35.734Z"
+        "start": "2026-07-22T05:17:45.741Z",
+        "end": "2027-11-24T05:17:45.741Z"
       },
-      "updatedAt": "2026-10-17T04:59:35.734Z",
+      "updatedAt": "2026-10-20T05:17:45.741Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-21T04:59:35.734Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1124,6 +1126,22 @@
         "title": "Fall 2026: Last day to add classes and change credits in project session full session",
         "start": "2026-09-25",
         "end": "2026-09-26",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Last%20day%20to%20change%20grading%20basis%20and%20drop%20classes%20in%20first-year%20writing%20seminar%2C%20project%20session%20full%2C%20and%20regular%20session": {
+      "source": "academic",
+      "archivedAt": "2026-10-20T05:17:45.741Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: Last day to change grading basis and drop classes in first-year writing seminar, project session full, and regular session",
+        "start": "2026-10-19",
+        "end": "2026-10-20",
         "allDay": true,
         "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
         "location": "",

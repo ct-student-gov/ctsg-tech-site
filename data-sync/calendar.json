@@ -2029,6 +2029,27 @@
         ]
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-21T20:55:27.122Z",
+      "event": {
+        "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Dealing with Procrastination",
+        "start": "2026-10-21T19:00:00.000Z",
+        "end": "2026-10-21T20:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3A2a51e853b858a4489be8e1803aa39f006242026_5%3A30%3A01_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2226,6 +2247,26 @@
           "CTSAA"
         ],
         "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-21T20:55:27.122Z",
+      "event": {
+        "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Dealing with Procrastination",
+        "start": "2026-10-21T19:00:00.000Z",
+        "end": "2026-10-21T20:00:00.000Z",
+        "allDay": false,
+        "description": "Hosted by Learning Strategies Center\n\nWhat exactly is procrastination?\nWhy does it happen? \nWho is more prone to it? \nHow can you deal with it? \n\nJoin Florencia (Flor) Ardon, PhD, Lecturer and Neurodivergent Support Program Manager at the Learning Strategics Center for a conversation around what is - and what is not - procrastination. \n\nAttendees will be able to clear some misunderstandings, as well as create an action plan that work for them. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133091",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3A2a51e853b858a4489be8e1803aa39f006242026_5%3A30%3A01_PM%40campusgroups.com": {
@@ -2569,7 +2610,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-21T19:24:00.000Z",
+      "cursor": "2026-10-21T20:54:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z"

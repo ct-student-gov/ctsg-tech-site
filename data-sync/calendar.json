@@ -695,22 +695,6 @@
           ]
         },
         {
-          "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Leader Training (Option 2)",
-          "start": "2026-10-20T13:00:00.000Z",
-          "end": "2026-10-20T14:00:00.000Z",
-          "allDay": false,
-          "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133059",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -777,17 +761,17 @@
       ],
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-22T05:17:45.741Z",
-        "end": "2027-11-24T05:17:45.741Z"
+        "start": "2026-07-23T05:19:06.840Z",
+        "end": "2027-11-25T05:19:06.840Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T05:17:45.741Z",
+      "updatedAt": "2026-10-21T05:19:06.840Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-24T05:17:45.741Z",
         "warnings": []
       }
     },
@@ -838,23 +822,6 @@
           "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133001",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:a0bff610fd27983c3118186c9190ae031052026_2:08:46_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Leader Training (Option 2)",
-          "start": "2026-10-20T13:00:00.000Z",
-          "end": "2026-10-20T14:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133059",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -933,16 +900,16 @@
       "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-22T05:17:45.741Z",
-        "end": "2027-11-24T05:17:45.741Z"
+        "start": "2026-07-23T05:19:06.840Z",
+        "end": "2027-11-25T05:19:06.840Z"
       },
-      "updatedAt": "2026-10-20T05:17:45.741Z",
+      "updatedAt": "2026-10-21T05:19:06.840Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 7,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-24T05:17:45.741Z",
         "warnings": []
       }
     },
@@ -989,44 +956,78 @@
       }
     },
     "tech-events": {
-      "events": [],
-      "fetchedCount": 63,
-      "excludedCount": 62,
-      "failedCount": 1,
+      "events": [
+        {
+          "id": "tech-events:island-editions-aap-billie-tsien-cynthia-davidson",
+          "source": "tech-events",
+          "category": "Cornell Tech events",
+          "title": "Island Editions AAP: Billie Tsien + Cynthia Davidson",
+          "start": "2026-12-02",
+          "end": "2026-12-03",
+          "allDay": true,
+          "description": "Island Editions is an extraordinary conversation series that invites leading architects to offer candid reflections on their work, the evolution of their careers, and the broader professional and cultural landscapes that shape their thought and practice. Hosted by Cornell AAP faculty members Peter Eisenman (B.Arch ’55) and Cynthia Davidson, the Fall 2026 season features noted architects Preston Scott Cohen (Oct. 26) and Billie Tsien (Dec. 2). Island Editions was launched in Fall 2025 to mark the NYC program’s move to its new permanent home on the 4th floor of the Tata Innovation Center. Previous guests included Bernard Tschumi, Steven Holl, Nader Tehrani, Elizabeth Diller, Toshiko Mori, and J. Meejin Yoon. The series is open to the public. Registration is required.",
+          "location": "Gensler Family AAP NYC Center Tata Innovation Center, 4th Floor; Cornell Tech",
+          "url": "https://tech.cornell.edu/events/island-editions-aap-billie-tsien-cynthia-davidson/",
+          "audienceTags": []
+        }
+      ],
+      "fetchedCount": 65,
+      "excludedCount": 58,
+      "failedCount": 6,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "1 Cornell Tech event was omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "6 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
-        "fetchedCount": 63,
-        "excludedCount": 62,
-        "importedCount": 0,
+        "fetchedCount": 65,
+        "excludedCount": 58,
+        "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 1,
+        "failedCount": 6,
         "issues": [
+          {
+            "url": "https://tech.cornell.edu/events/the-space-economys-next-chapter/",
+            "message": "Cornell Tech event has no verified full date"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/customer-discovery-in-early-stage-life-sciences/",
+            "message": "Cornell Tech organizer URL is outside supported public sources"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/advancing-trustworthy-clinical-ai-and-llms-for-research-and-practice/",
+            "message": "Cornell Tech organizer URL is outside supported public sources"
+          },
           {
             "url": "https://tech.cornell.edu/events/making-fault-tolerance-easy-so-that-you-dont-have-to-care/",
             "message": "Cornell Tech organizer URL is outside supported public sources"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/island-editions-aap-preston-scott-cohen-peter-eisenman/",
+            "message": "Cornell Tech listing and organizer dates disagree"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
+            "message": "Cornell Tech event has no verified full date"
           }
         ]
       },
       "window": {
-        "start": "2026-07-22T05:17:45.741Z",
-        "end": "2027-11-24T05:17:45.741Z"
+        "start": "2026-07-23T05:19:06.840Z",
+        "end": "2027-11-25T05:19:06.840Z"
       },
-      "updatedAt": "2026-10-20T05:17:45.741Z",
+      "updatedAt": "2026-10-21T05:19:06.840Z",
       "coverage": {
         "version": 1,
-        "eventCount": 0,
-        "upcomingCount": 0,
+        "eventCount": 1,
+        "upcomingCount": 1,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-24T05:17:45.741Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "1 Cornell Tech event was omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "6 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }

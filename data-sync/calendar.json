@@ -2195,6 +2195,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Ad014a4b15888370cc23e721b54169d329152026_9%3A49%3A15_AM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-22T22:01:27.256Z",
+      "event": {
+        "id": "student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Visas After Graduation with Miller Mayer",
+        "start": "2026-10-22T19:00:00.000Z",
+        "end": "2026-10-22T20:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-10-15T19:46:33.210Z",
@@ -2453,6 +2474,26 @@
         "sourceCategories": {
           "student-affairs": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3Ad014a4b15888370cc23e721b54169d329152026_9%3A49%3A15_AM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-22T22:01:27.256Z",
+      "event": {
+        "id": "student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Visas After Graduation with Miller Mayer",
+        "start": "2026-10-22T19:00:00.000Z",
+        "end": "2026-10-22T20:00:00.000Z",
+        "allDay": false,
+        "description": "This presentation for international students provides an overview of possible options for working long-term in the U.S. after graduation including becoming a permanent resident (green card holder), if you desire. Working with the law firm of Miller Mayer, we offer the presentation every fall and spring semester. Check out International Services' Visas After Graduation page: https://international.globallearning.cornell.edu/maintaining-your-status/visas-after-graduation.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133009",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {

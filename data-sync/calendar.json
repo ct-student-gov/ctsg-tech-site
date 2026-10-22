@@ -52,18 +52,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall 2026: Last day to add classes and change credits in 7 week 2 session",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: Last day to add classes and change credits in 7 week 2 session",
-          "start": "2026-10-21",
-          "end": "2026-10-22",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
           "source": "academic",
           "category": "Academic dates",
@@ -378,17 +366,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-22T05:17:45.741Z",
-        "end": "2027-11-24T05:17:45.741Z"
+        "start": "2026-07-24T05:21:47.914Z",
+        "end": "2027-11-26T05:21:47.914Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T05:17:45.741Z",
+      "updatedAt": "2026-10-22T05:21:47.914Z",
       "coverage": {
         "version": 1,
-        "eventCount": 31,
-        "upcomingCount": 31,
-        "previousUpcomingCount": 31,
-        "comparedThrough": "2027-11-19T05:11:58.224Z",
+        "eventCount": 30,
+        "upcomingCount": 30,
+        "previousUpcomingCount": 30,
+        "comparedThrough": "2027-11-24T05:17:45.741Z",
         "warnings": []
       }
     },
@@ -663,22 +651,6 @@
     "student-affairs": {
       "events": [
         {
-          "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Dealing with Procrastination",
-          "start": "2026-10-21T19:00:00.000Z",
-          "end": "2026-10-21T20:00:00.000Z",
-          "allDay": false,
-          "description": "Hosted by Learning Strategies Center\n\nWhat exactly is procrastination?\nWhy does it happen? \nWho is more prone to it? \nHow can you deal with it? \n\nJoin Florencia (Flor) Ardon, PhD, Lecturer and Neurodivergent Support Program Manager at the Learning Strategics Center for a conversation around what is - and what is not - procrastination. \n\nAttendees will be able to clear some misunderstandings, as well as create an action plan that work for them. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133091",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:9cd14cf60c89290ea08f96af97ed873b9102026_12:30:25_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -761,39 +733,22 @@
       ],
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-23T05:19:06.840Z",
-        "end": "2027-11-25T05:19:06.840Z"
+        "start": "2026-07-24T05:21:47.914Z",
+        "end": "2027-11-26T05:21:47.914Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-21T05:19:06.840Z",
+      "updatedAt": "2026-10-22T05:21:47.914Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-24T05:17:45.741Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-11-25T05:19:06.840Z",
         "warnings": []
       }
     },
     "student-affairs-students": {
       "events": [
-        {
-          "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Dealing with Procrastination",
-          "start": "2026-10-21T19:00:00.000Z",
-          "end": "2026-10-21T20:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
         {
           "id": "student-affairs:612104fd39a702e83e5cecdb865b10b99102026_12:29:22_PM@campusgroups.com",
           "source": "student-affairs",
@@ -900,16 +855,16 @@
       "fetchedCount": 16,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-23T05:19:06.840Z",
-        "end": "2027-11-25T05:19:06.840Z"
+        "start": "2026-07-24T05:21:47.914Z",
+        "end": "2027-11-26T05:21:47.914Z"
       },
-      "updatedAt": "2026-10-21T05:19:06.840Z",
+      "updatedAt": "2026-10-22T05:21:47.914Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-11-24T05:17:45.741Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-25T05:19:06.840Z",
         "warnings": []
       }
     },
@@ -971,26 +926,22 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 65,
-      "excludedCount": 58,
-      "failedCount": 6,
+      "fetchedCount": 61,
+      "excludedCount": 55,
+      "failedCount": 5,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "6 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "5 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
-        "fetchedCount": 65,
-        "excludedCount": 58,
+        "fetchedCount": 61,
+        "excludedCount": 55,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 6,
+        "failedCount": 5,
         "issues": [
-          {
-            "url": "https://tech.cornell.edu/events/the-space-economys-next-chapter/",
-            "message": "Cornell Tech event has no verified full date"
-          },
           {
             "url": "https://tech.cornell.edu/events/customer-discovery-in-early-stage-life-sciences/",
             "message": "Cornell Tech organizer URL is outside supported public sources"
@@ -1014,20 +965,20 @@
         ]
       },
       "window": {
-        "start": "2026-07-23T05:19:06.840Z",
-        "end": "2027-11-25T05:19:06.840Z"
+        "start": "2026-07-24T05:21:47.914Z",
+        "end": "2027-11-26T05:21:47.914Z"
       },
-      "updatedAt": "2026-10-21T05:19:06.840Z",
+      "updatedAt": "2026-10-22T05:21:47.914Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-24T05:17:45.741Z",
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-25T05:19:06.840Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "6 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "5 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }
@@ -1108,6 +1059,22 @@
         "title": "Fall 2026: Last day to add classes and change credits in 7 week 1 session",
         "start": "2026-08-31",
         "end": "2026-09-01",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Last%20day%20to%20add%20classes%20and%20change%20credits%20in%207%20week%202%20session": {
+      "source": "academic",
+      "archivedAt": "2026-10-22T05:21:47.914Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: Last day to add classes and change credits in 7 week 2 session",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: Last day to add classes and change credits in 7 week 2 session",
+        "start": "2026-10-21",
+        "end": "2026-10-22",
         "allDay": true,
         "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
         "location": "",

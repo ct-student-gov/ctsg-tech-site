@@ -4,18 +4,6 @@
     "academic": {
       "events": [
         {
-          "id": "academic:2026–2027:Fall 2026: 7 week 1 session final exams",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: 7 week 1 session final exams",
-          "start": "2026-10-15",
-          "end": "2026-10-23",
-          "allDay": true,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Final exams",
           "source": "academic",
           "category": "Academic dates",
@@ -366,17 +354,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-24T05:21:47.914Z",
-        "end": "2027-11-26T05:21:47.914Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-22T05:21:47.914Z",
+      "updatedAt": "2026-10-23T05:22:35.938Z",
       "coverage": {
         "version": 1,
-        "eventCount": 30,
-        "upcomingCount": 30,
-        "previousUpcomingCount": 30,
-        "comparedThrough": "2027-11-24T05:17:45.741Z",
+        "eventCount": 29,
+        "upcomingCount": 29,
+        "previousUpcomingCount": 29,
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       }
     },
@@ -458,27 +446,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "career-management:9d77cab33137398cb33d41c0e6d8fdd69282026_4:12:27_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "BRTC: Urban Innovation: Strategy, Scale & Impact",
-          "start": "2026-10-22T22:30:00.000Z",
-          "end": "2026-10-23T00:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133045",
-          "audienceTags": [
-            "JCTMBA'27",
-            "JCTDual'27",
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -539,16 +506,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-22T05:17:45.741Z",
-        "end": "2027-11-24T05:17:45.741Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
-      "updatedAt": "2026-10-20T05:17:45.741Z",
+      "updatedAt": "2026-10-23T05:22:35.938Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 8,
-        "comparedThrough": "2027-11-22T05:08:21.278Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-24T05:17:45.741Z",
         "warnings": []
       }
     },
@@ -683,22 +650,6 @@
           ]
         },
         {
-          "id": "student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Visas After Graduation with Miller Mayer",
-          "start": "2026-10-22T19:00:00.000Z",
-          "end": "2026-10-22T20:00:00.000Z",
-          "allDay": false,
-          "description": "This presentation for international students provides an overview of possible options for working long-term in the U.S. after graduation including becoming a permanent resident (green card holder), if you desire. Working with the law firm of Miller Mayer, we offer the presentation every fall and spring semester. Check out International Services' Visas After Graduation page: https://international.globallearning.cornell.edu/maintaining-your-status/visas-after-graduation.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133009",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -733,17 +684,17 @@
       ],
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-24T05:21:47.914Z",
-        "end": "2027-11-26T05:21:47.914Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-22T05:21:47.914Z",
+      "updatedAt": "2026-10-23T05:22:35.938Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-25T05:19:06.840Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       }
     },
@@ -801,23 +752,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "student-affairs:d014a4b15888370cc23e721b54169d329152026_9:49:15_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Visas After Graduation with Miller Mayer",
-          "start": "2026-10-22T19:00:00.000Z",
-          "end": "2026-10-22T20:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133009",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -852,19 +786,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 16,
+      "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-24T05:21:47.914Z",
-        "end": "2027-11-26T05:21:47.914Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
-      "updatedAt": "2026-10-22T05:21:47.914Z",
+      "updatedAt": "2026-10-23T05:22:35.938Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-25T05:19:06.840Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       }
     },
@@ -926,34 +860,22 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 61,
-      "excludedCount": 55,
-      "failedCount": 5,
+      "fetchedCount": 56,
+      "excludedCount": 53,
+      "failedCount": 2,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "5 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
-        "fetchedCount": 61,
-        "excludedCount": 55,
+        "fetchedCount": 56,
+        "excludedCount": 53,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 5,
+        "failedCount": 2,
         "issues": [
-          {
-            "url": "https://tech.cornell.edu/events/customer-discovery-in-early-stage-life-sciences/",
-            "message": "Cornell Tech organizer URL is outside supported public sources"
-          },
-          {
-            "url": "https://tech.cornell.edu/events/advancing-trustworthy-clinical-ai-and-llms-for-research-and-practice/",
-            "message": "Cornell Tech organizer URL is outside supported public sources"
-          },
-          {
-            "url": "https://tech.cornell.edu/events/making-fault-tolerance-easy-so-that-you-dont-have-to-care/",
-            "message": "Cornell Tech organizer URL is outside supported public sources"
-          },
           {
             "url": "https://tech.cornell.edu/events/island-editions-aap-preston-scott-cohen-peter-eisenman/",
             "message": "Cornell Tech listing and organizer dates disagree"
@@ -965,26 +887,42 @@
         ]
       },
       "window": {
-        "start": "2026-07-24T05:21:47.914Z",
-        "end": "2027-11-26T05:21:47.914Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
-      "updatedAt": "2026-10-22T05:21:47.914Z",
+      "updatedAt": "2026-10-23T05:22:35.938Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-25T05:19:06.840Z",
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "5 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }
     }
   },
   "archive": {
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%207%20week%201%20session%20final%20exams": {
+      "source": "academic",
+      "archivedAt": "2026-10-23T05:22:35.938Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: 7 week 1 session final exams",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: 7 week 1 session final exams",
+        "start": "2026-10-15",
+        "end": "2026-10-23",
+        "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
     "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%207%20week%202%20session%20instruction%20begins": {
       "source": "academic",
       "archivedAt": "2026-10-15T05:11:58.224Z",
@@ -1400,6 +1338,31 @@
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132978",
         "audienceTags": [
           "Internship - First Year Jacobs Students Eligible"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A9d77cab33137398cb33d41c0e6d8fdd69282026_4%3A12%3A27_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-23T05:22:35.938Z",
+      "event": {
+        "id": "career-management:9d77cab33137398cb33d41c0e6d8fdd69282026_4:12:27_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "BRTC: Urban Innovation: Strategy, Scale & Impact",
+        "start": "2026-10-22T22:30:00.000Z",
+        "end": "2026-10-23T00:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133045",
+        "audienceTags": [
+          "JCTMBA'27",
+          "JCTDual'27",
+          "All Master's Students"
         ],
         "departmentAcronyms": [
           "CTCAREERS"

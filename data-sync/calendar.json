@@ -2179,6 +2179,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Add6273d7675ba36a092ba77bd065c85c9102026_12%3A22%3A18_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-23T22:45:07.785Z",
+      "event": {
+        "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Volunteer Day",
+        "start": "2026-10-23T19:30:00.000Z",
+        "end": "2026-10-23T22:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-10-15T19:46:33.210Z",
@@ -2459,6 +2480,26 @@
         ]
       }
     },
+    "calendar-archive-v1:student-affairs:student-affairs%3Add6273d7675ba36a092ba77bd065c85c9102026_12%3A22%3A18_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-23T22:45:07.785Z",
+      "event": {
+        "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Student Volunteer Day",
+        "start": "2026-10-23T19:30:00.000Z",
+        "end": "2026-10-23T22:00:00.000Z",
+        "allDay": false,
+        "description": "Take a break from your studies and give back to our amazing Roosevelt Island Community. There will be opportunities for students to garden, organize, and support seniors! Click the link to RSVP and view the list of community partners that need your help. Following the event, we will gather again to enjoy pizza together!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132997",
+        "location": "Tata 141, 2 W Loop Rd, New York, New York 10044, United States",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3Aee94e5ff61cbdc0468082d1e750f96621052026_1%3A42%3A14_PM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-10-15T19:46:33.210Z",
@@ -2581,7 +2622,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-23T18:06:00.000Z",
+      "cursor": "2026-10-23T22:43:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z"

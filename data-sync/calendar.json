@@ -650,22 +650,6 @@
           ]
         },
         {
-          "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Volunteer Day",
-          "start": "2026-10-23T19:30:00.000Z",
-          "end": "2026-10-23T22:00:00.000Z",
-          "allDay": false,
-          "description": "Take a break from your studies and give back to our amazing Roosevelt Island Community. There will be opportunities for students to garden, organize, and support seniors! Click the link to RSVP and view the list of community partners that need your help. Following the event, we will gather again to enjoy pizza together!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132997",
-          "location": "Tata 141, 2 W Loop Rd, New York, New York 10044, United States",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -684,17 +668,17 @@
       ],
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-23T05:22:35.938Z",
+      "updatedAt": "2026-10-24T05:01:41.255Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-26T05:21:47.914Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       }
     },
@@ -752,23 +736,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Student Volunteer Day",
-          "start": "2026-10-23T19:30:00.000Z",
-          "end": "2026-10-23T22:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132997",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -789,16 +756,16 @@
       "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-23T05:22:35.938Z",
+      "updatedAt": "2026-10-24T05:01:41.255Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-11-26T05:21:47.914Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       }
     },
@@ -861,24 +828,28 @@
         }
       ],
       "fetchedCount": 56,
-      "excludedCount": 53,
-      "failedCount": 2,
+      "excludedCount": 52,
+      "failedCount": 3,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "3 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
         "fetchedCount": 56,
-        "excludedCount": 53,
+        "excludedCount": 52,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 2,
+        "failedCount": 3,
         "issues": [
           {
             "url": "https://tech.cornell.edu/events/island-editions-aap-preston-scott-cohen-peter-eisenman/",
             "message": "Cornell Tech listing and organizer dates disagree"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
+            "message": "Cornell Tech organizer URL is outside supported public sources"
           },
           {
             "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
@@ -887,20 +858,20 @@
         ]
       },
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-23T05:22:35.938Z",
+      "updatedAt": "2026-10-24T05:01:41.255Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-26T05:21:47.914Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "3 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }

@@ -555,6 +555,19 @@
           "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
         },
         {
+          "id": "notion:4000b1bd-6791-81bf-ae40-e26b30f8aeb0",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Vibe Coding Hours",
+          "start": "2026-11-01T17:00:00.000Z",
+          "end": "2026-11-01T20:00:00.000Z",
+          "allDay": false,
+          "description": "This is for our bi weekly vibe coding hours, where we meet and code together on projects voted on by members of the club!",
+          "location": "Cornell Tech",
+          "organizer": "",
+          "url": ""
+        },
+        {
           "id": "notion:4020b1bd-6791-812d-9092-fe5524544dce",
           "source": "clubs",
           "category": "Club events",
@@ -608,17 +621,17 @@
         }
       ],
       "window": {
-        "start": "2026-07-27T21:44:02.743Z",
-        "end": "2027-11-29T21:44:02.743Z"
+        "start": "2026-07-27T21:47:27.859Z",
+        "end": "2027-11-29T21:47:27.859Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:44:02.743Z",
+      "updatedAt": "2026-10-25T21:47:27.859Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-11-29T21:40:31.776Z",
+        "eventCount": 9,
+        "upcomingCount": 9,
+        "previousUpcomingCount": 8,
+        "comparedThrough": "2027-11-29T21:44:02.743Z",
         "warnings": []
       }
     },
@@ -2675,7 +2688,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-25T21:42:00.000Z",
+      "cursor": "2026-10-25T21:46:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2684,7 +2697,8 @@
         "4020b1bd-6791-812d-9092-fe5524544dce": "2026-10-25T16:38:00.000Z",
         "4020b1bd-6791-8179-9815-e56ed5170565": "2026-10-25T16:38:00.000Z",
         "4020b1bd-6791-81bc-bb31-cc2930ec33ae": "2026-10-25T21:39:00.000Z",
-        "4020b1bd-6791-81db-b4d7-c1add0e8451c": "2026-10-25T21:42:00.000Z"
+        "4020b1bd-6791-81db-b4d7-c1add0e8451c": "2026-10-25T21:42:00.000Z",
+        "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z"
       }
     },
     "community": {

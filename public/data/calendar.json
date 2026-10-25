@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T21:40:31.776Z",
+  "generatedAt": "2026-10-25T21:44:02.743Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-11-29T21:40:31.776Z"
+    "end": "2027-11-29T21:44:02.743Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -110,7 +110,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -132,17 +132,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-27T21:40:31.776Z",
-        "end": "2027-11-29T21:40:31.776Z"
+        "start": "2026-07-27T21:44:02.743Z",
+        "end": "2027-11-29T21:44:02.743Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-29T16:38:23.762Z",
+        "eventCount": 8,
+        "upcomingCount": 8,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-11-29T21:40:31.776Z",
         "warnings": []
       },
       "state": "current",
@@ -153,11 +153,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-27T21:40:31.776Z",
-        "end": "2027-11-29T21:40:31.776Z"
+        "start": "2026-07-27T21:44:02.743Z",
+        "end": "2027-11-29T21:44:02.743Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -174,11 +174,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-27T21:40:31.776Z",
-        "end": "2027-11-29T21:40:31.776Z"
+        "start": "2026-07-27T21:44:02.743Z",
+        "end": "2027-11-29T21:44:02.743Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,7 +200,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -221,7 +221,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -243,7 +243,7 @@
         "start": "2026-07-26T05:01:41.255Z",
         "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -265,7 +265,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T21:40:31.776Z",
+      "updatedAt": "2026-10-25T21:44:02.743Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1418,6 +1418,19 @@
       "location": "River Room, House at the Cornell tech",
       "organizer": "",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
+    },
+    {
+      "id": "notion:4020b1bd-6791-81db-b4d7-c1add0e8451c",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Lonche Latino: Club Mixer",
+      "start": "2026-11-05T23:00:00.000Z",
+      "end": "2026-11-06T01:00:00.000Z",
+      "allDay": false,
+      "description": "Join the Latin American Association for our first event, a casual lonche/merienda mixer! We’ll share snacks from across Latin America, get to know each other through a few light activities, and kick off the club as a community.",
+      "location": "The House Rooftop",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",

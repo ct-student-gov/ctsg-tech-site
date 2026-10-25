@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T05:18:35.041Z",
+  "generatedAt": "2026-10-25T16:37:41.748Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-11-29T05:18:35.041Z"
+    "end": "2027-11-29T16:37:41.748Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
         "upcomingCount": 3,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       },
       "state": "current",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 4,
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-18T04:59:28.675Z",
+        "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
         "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "comparedThrough": "2027-11-12T06:39:12.183Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -110,7 +110,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -132,15 +132,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-27T16:37:41.748Z",
+        "end": "2027-11-29T16:37:41.748Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 2,
         "comparedThrough": "2027-11-24T20:07:36.354Z",
         "warnings": []
@@ -153,11 +153,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-27T16:37:41.748Z",
+        "end": "2027-11-29T16:37:41.748Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -174,11 +174,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-27T16:37:41.748Z",
+        "end": "2027-11-29T16:37:41.748Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -196,17 +196,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
         "upcomingCount": 29,
         "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       },
       "state": "current",
@@ -217,17 +217,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -240,16 +240,16 @@
       "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       },
       "state": "current",
@@ -265,7 +265,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1300,6 +1300,19 @@
       "detailsRedacted": true
     },
     {
+      "id": "notion:4000b1bd-6791-8130-9ad3-c7382a00d0bf",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "MSA Chai & Game Night",
+      "start": "2026-10-26T21:00:00.000Z",
+      "end": "2026-10-26T23:00:00.000Z",
+      "allDay": false,
+      "description": "MSA Chai & Game Night is a social event designed to bring students together in a welcoming and inclusive environment. Attendees will have the opportunity to enjoy chai, participate in various board and group games, and connect with fellow students. The event aims to foster community engagement, encourage new friendships, and provide a relaxing space for students to unwind from academic responsibilities.  As well as our first General Board Meeting",
+      "location": "Preferable One of the basement rooms in Bloomberg",
+      "organizer": "",
+      "url": ""
+    },
+    {
       "id": "career-management:e0529352334ee93fcb19b5759c765dea9152026_1:12:28_PM@campusgroups.com",
       "source": "career-management",
       "category": "School events",
@@ -1366,6 +1379,19 @@
       "location": "Cornell Tech ",
       "organizer": "",
       "url": ""
+    },
+    {
+      "id": "notion:4000b1bd-6791-81ba-b38f-d3fac1adabc1",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Potluck (Chaepitie)",
+      "start": "2026-10-30T22:00:00.000Z",
+      "end": "2026-10-31T00:00:00.000Z",
+      "allDay": false,
+      "description": "Join Dom Kultury: ML & Poetry for a cozy evening of tea, food, and conversation! We'll have dishes and snacks from Eastern European and Central Asian cuisines for everyone to try. Feel free to bring your favorite dish, snack, or dessert to share. Come enjoy good food, meet new friends, and learn about different cultures!",
+      "location": "River Room, House at the Cornell tech",
+      "organizer": "",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",

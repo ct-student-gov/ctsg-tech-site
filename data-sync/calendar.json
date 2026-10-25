@@ -527,20 +527,46 @@
           "location": "Cornell Tech ",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4000b1bd-6791-8130-9ad3-c7382a00d0bf",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "MSA Chai & Game Night",
+          "start": "2026-10-26T21:00:00.000Z",
+          "end": "2026-10-26T23:00:00.000Z",
+          "allDay": false,
+          "description": "MSA Chai & Game Night is a social event designed to bring students together in a welcoming and inclusive environment. Attendees will have the opportunity to enjoy chai, participate in various board and group games, and connect with fellow students. The event aims to foster community engagement, encourage new friendships, and provide a relaxing space for students to unwind from academic responsibilities.  As well as our first General Board Meeting",
+          "location": "Preferable One of the basement rooms in Bloomberg",
+          "organizer": "",
+          "url": ""
+        },
+        {
+          "id": "notion:4000b1bd-6791-81ba-b38f-d3fac1adabc1",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Potluck (Chaepitie)",
+          "start": "2026-10-30T22:00:00.000Z",
+          "end": "2026-10-31T00:00:00.000Z",
+          "allDay": false,
+          "description": "Join Dom Kultury: ML & Poetry for a cozy evening of tea, food, and conversation! We'll have dishes and snacks from Eastern European and Central Asian cuisines for everyone to try. Feel free to bring your favorite dish, snack, or dessert to share. Come enjoy good food, meet new friends, and learn about different cultures!",
+          "location": "River Room, House at the Cornell tech",
+          "organizer": "",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
         }
       ],
       "window": {
-        "start": "2026-07-22T20:07:36.354Z",
-        "end": "2027-11-24T20:07:36.354Z"
+        "start": "2026-07-27T16:37:41.748Z",
+        "end": "2027-11-29T16:37:41.748Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-20T20:07:36.354Z",
+      "updatedAt": "2026-10-25T16:37:41.748Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-23T20:24:42.640Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-11-24T20:07:36.354Z",
         "warnings": []
       }
     },
@@ -2597,10 +2623,12 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-23T22:43:00.000Z",
+      "cursor": "2026-10-25T16:37:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
-        "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z"
+        "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
+        "4000b1bd-6791-81ba-b38f-d3fac1adabc1": "2026-10-25T16:37:00.000Z",
+        "4000b1bd-6791-8130-9ad3-c7382a00d0bf": "2026-10-25T16:36:00.000Z"
       }
     },
     "community": {

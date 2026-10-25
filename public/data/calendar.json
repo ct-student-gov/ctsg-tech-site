@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T16:37:41.748Z",
+  "generatedAt": "2026-10-25T16:38:23.762Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-11-29T16:37:41.748Z"
+    "end": "2027-11-29T16:38:23.762Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -110,7 +110,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -132,17 +132,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-27T16:37:41.748Z",
-        "end": "2027-11-29T16:37:41.748Z"
+        "start": "2026-07-27T16:38:23.762Z",
+        "end": "2027-11-29T16:38:23.762Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-24T20:07:36.354Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-11-29T16:37:41.748Z",
         "warnings": []
       },
       "state": "current",
@@ -153,11 +153,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-27T16:37:41.748Z",
-        "end": "2027-11-29T16:37:41.748Z"
+        "start": "2026-07-27T16:38:23.762Z",
+        "end": "2027-11-29T16:38:23.762Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -174,11 +174,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-27T16:37:41.748Z",
-        "end": "2027-11-29T16:37:41.748Z"
+        "start": "2026-07-27T16:38:23.762Z",
+        "end": "2027-11-29T16:38:23.762Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,7 +200,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -221,7 +221,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -243,7 +243,7 @@
         "start": "2026-07-26T05:01:41.255Z",
         "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -265,7 +265,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-25T16:37:41.748Z",
+      "updatedAt": "2026-10-25T16:38:23.762Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1191,6 +1191,19 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
     },
     {
+      "id": "notion:4020b1bd-6791-8179-9815-e56ed5170565",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Playground",
+      "start": "2026-10-21T17:00:00.000Z",
+      "end": "2026-11-15T00:00:00.000Z",
+      "allDay": false,
+      "description": "Playground × Replit is a hands-on AI building experience bringing Cornell students together to turn ideas into working prototypes. Led by the Replit team, participants will learn how to use AI-powered development tools to build applications, explore creative solutions, and collaborate with fellow students. No prior coding experience is required. The session will feature a Replit walkthrough, an open building session, and informal project demonstrations. Our goal is to make AI-powered product development accessible, encourage entrepreneurship, and help students leave with something tangible they can continue developing.",
+      "location": "Cornell Tech",
+      "organizer": "",
+      "url": ""
+    },
+    {
       "id": "student-affairs:01e3cfbb97b34199e8fbebbda155477810192026_11:47:49_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -1256,6 +1269,19 @@
         "CTCAREERS"
       ],
       "detailsRedacted": true
+    },
+    {
+      "id": "notion:4020b1bd-6791-812d-9092-fe5524544dce",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
+      "start": "2026-10-23T04:00:00.000Z",
+      "end": "2026-11-05T05:00:00.000Z",
+      "allDay": false,
+      "description": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
+      "location": "Cornell Tech",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "student-affairs:dd6273d7675ba36a092ba77bd065c85c9102026_12:22:18_PM@campusgroups.com",

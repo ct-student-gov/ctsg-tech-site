@@ -579,20 +579,33 @@
           "location": "Cornell Tech",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4020b1bd-6791-81bc-bb31-cc2930ec33ae",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Claude Impact Lab at Cornell Tech (Vibe Lab x NYC Claude Community)",
+          "start": "2026-12-05T14:00:00.000Z",
+          "end": "2026-12-05T22:00:00.000Z",
+          "allDay": false,
+          "description": "Vibe Lab is partnering with the NYC Claude Community to host a Claude Impact Lab at Cornell Tech. In this free, full-day build event, teams of Cornell Tech students and external builders will work on a real problem from a nonprofit partner, using Claude to build working prototypes and demoing them at the end of the day. Participants get hands-on experience building with AI, collaborate across disciplines, and connect with NYC’s builder community while creating something with real social impact.",
+          "location": "Cornell Tech campus. Space requested through the Events Team (Lead Form ID 40055); school venue support pending with Student & Academic Affairs",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-07-27T16:38:23.762Z",
-        "end": "2027-11-29T16:38:23.762Z"
+        "start": "2026-07-27T21:40:31.776Z",
+        "end": "2027-11-29T21:40:31.776Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T16:38:23.762Z",
+      "updatedAt": "2026-10-25T21:40:31.776Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-29T16:37:41.748Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-11-29T16:38:23.762Z",
         "warnings": []
       }
     },
@@ -2649,14 +2662,15 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-25T16:38:00.000Z",
+      "cursor": "2026-10-25T21:40:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
         "4000b1bd-6791-81ba-b38f-d3fac1adabc1": "2026-10-25T16:37:00.000Z",
         "4000b1bd-6791-8130-9ad3-c7382a00d0bf": "2026-10-25T16:36:00.000Z",
         "4020b1bd-6791-812d-9092-fe5524544dce": "2026-10-25T16:38:00.000Z",
-        "4020b1bd-6791-8179-9815-e56ed5170565": "2026-10-25T16:38:00.000Z"
+        "4020b1bd-6791-8179-9815-e56ed5170565": "2026-10-25T16:38:00.000Z",
+        "4020b1bd-6791-81bc-bb31-cc2930ec33ae": "2026-10-25T21:39:00.000Z"
       }
     },
     "community": {

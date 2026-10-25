@@ -389,25 +389,6 @@
     "career-management-students": {
       "events": [
         {
-          "id": "career-management:2682831ddbafc61f3035c208e524521b9152026_11:41:12_AM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "XRP LEDGER HACKATHON",
-          "start": "2026-10-24T12:30:00.000Z",
-          "end": "2026-10-25T01:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133011",
-          "audienceTags": [
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "career-management:437ff3d4116d1ba83f06174ed0a46cce9182026_3:51:00_PM@campusgroups.com",
           "source": "career-management",
           "category": "School events",
@@ -506,16 +487,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-07-27T05:18:35.041Z",
+        "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-23T05:22:35.938Z",
+      "updatedAt": "2026-10-25T05:18:35.041Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-11-24T05:17:45.741Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       }
     },
@@ -827,8 +808,8 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 56,
-      "excludedCount": 52,
+      "fetchedCount": 55,
+      "excludedCount": 51,
       "failedCount": 3,
       "warnings": [
         {
@@ -837,8 +818,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 56,
-        "excludedCount": 52,
+        "fetchedCount": 55,
+        "excludedCount": 51,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 3,
@@ -858,16 +839,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-26T05:01:41.255Z",
-        "end": "2027-11-28T05:01:41.255Z"
+        "start": "2026-07-27T05:18:35.041Z",
+        "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-24T05:01:41.255Z",
+      "updatedAt": "2026-10-25T05:18:35.041Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "comparedThrough": "2027-11-28T05:01:41.255Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -1148,6 +1129,29 @@
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133004",
         "audienceTags": [
           "Technical Programs"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A2682831ddbafc61f3035c208e524521b9152026_11%3A41%3A12_AM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-25T05:18:35.041Z",
+      "event": {
+        "id": "career-management:2682831ddbafc61f3035c208e524521b9152026_11:41:12_AM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "XRP LEDGER HACKATHON",
+        "start": "2026-10-24T12:30:00.000Z",
+        "end": "2026-10-25T01:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133011",
+        "audienceTags": [
+          "All Master's Students"
         ],
         "departmentAcronyms": [
           "CTCAREERS"

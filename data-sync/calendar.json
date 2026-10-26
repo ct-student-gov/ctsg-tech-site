@@ -618,20 +618,33 @@
           "location": "The House Rooftop",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4050b1bd-6791-8164-8491-fbb575ec5469",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Cornell Tech AI Research Club Meeting",
+          "start": "2026-10-29T22:00:00.000Z",
+          "end": "2026-10-29T23:00:00.000Z",
+          "allDay": false,
+          "description": "This will be a recurring weekly meeting on Thursdays 6-7 for our club.",
+          "location": "Campus",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-07-27T21:47:27.859Z",
-        "end": "2027-11-29T21:47:27.859Z"
+        "start": "2026-07-28T13:58:53.390Z",
+        "end": "2027-11-30T13:58:53.390Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-25T21:47:27.859Z",
+      "updatedAt": "2026-10-26T13:58:53.390Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
-        "previousUpcomingCount": 8,
-        "comparedThrough": "2027-11-29T21:44:02.743Z",
+        "eventCount": 10,
+        "upcomingCount": 10,
+        "previousUpcomingCount": 9,
+        "comparedThrough": "2027-11-29T21:47:27.859Z",
         "warnings": []
       }
     },
@@ -2688,7 +2701,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-26T02:43:00.000Z",
+      "cursor": "2026-10-26T13:57:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2698,7 +2711,8 @@
         "4020b1bd-6791-8179-9815-e56ed5170565": "2026-10-25T16:38:00.000Z",
         "4020b1bd-6791-81bc-bb31-cc2930ec33ae": "2026-10-25T21:39:00.000Z",
         "4020b1bd-6791-81db-b4d7-c1add0e8451c": "2026-10-25T21:42:00.000Z",
-        "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z"
+        "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z",
+        "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z"
       }
     },
     "community": {

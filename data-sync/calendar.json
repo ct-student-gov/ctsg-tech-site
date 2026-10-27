@@ -1981,6 +1981,23 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4000b1bd-6791-8140-820c-f81b21e04f8f": {
+      "source": "clubs",
+      "archivedAt": "2026-10-27T17:39:55.389Z",
+      "event": {
+        "id": "notion:4000b1bd-6791-8140-820c-f81b21e04f8f",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Football Not Soccer Club: weekly pickup games",
+        "start": "2026-10-22T20:00:00.000Z",
+        "end": "2026-10-22T22:00:00.000Z",
+        "allDay": false,
+        "description": "Weekly casual football for Cornell Tech students of all levels, Thursdays 4–6 PM on Roosevelt Island. Players sign up on the club's RSVP page with a Cornell email, about 22 spots a week plus a waitlist. Free, no attendee fees. Teams are split on the day, and the club provides bibs and balls. Dates: Oct 22, Oct 29, Nov 5, Nov 12.",
+        "location": "Jack McManus Field",
+        "organizer": "",
+        "url": "https://elmir-srv-hermes.swedencentral.cloudapp.azure.com"
+      }
+    },
     "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A32a1b88fa74aa9725951a21c49a4eec69292026_12%3A32%3A21_PM%40campusgroups.com": {
       "source": "inclusion-belonging",
       "archivedAt": "2026-10-15T19:46:33.210Z",
@@ -2724,7 +2741,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-27T16:32:00.000Z",
+      "cursor": "2026-10-27T17:39:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2735,7 +2752,8 @@
         "4020b1bd-6791-81bc-bb31-cc2930ec33ae": "2026-10-25T21:39:00.000Z",
         "4020b1bd-6791-81db-b4d7-c1add0e8451c": "2026-10-25T21:42:00.000Z",
         "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z",
-        "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z"
+        "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z",
+        "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z"
       }
     },
     "community": {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T16:33:27.840Z",
+  "generatedAt": "2026-10-27T17:39:55.389Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-01T16:33:27.840Z"
+    "end": "2027-12-01T17:39:55.389Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -106,7 +106,7 @@
         "start": "2026-07-29T05:36:09.302Z",
         "end": "2027-12-01T05:36:09.302Z"
       },
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -128,11 +128,11 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-29T16:33:27.840Z",
-        "end": "2027-12-01T16:33:27.840Z"
+        "start": "2026-07-29T17:39:55.389Z",
+        "end": "2027-12-01T17:39:55.389Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 9,
@@ -142,18 +142,18 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 1
+      "archivedCount": 2
     },
     {
       "id": "community",
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-29T16:33:27.840Z",
-        "end": "2027-12-01T16:33:27.840Z"
+        "start": "2026-07-29T17:39:55.389Z",
+        "end": "2027-12-01T17:39:55.389Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -170,11 +170,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-29T16:33:27.840Z",
-        "end": "2027-12-01T16:33:27.840Z"
+        "start": "2026-07-29T17:39:55.389Z",
+        "end": "2027-12-01T17:39:55.389Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -196,7 +196,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -217,7 +217,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -239,7 +239,7 @@
         "start": "2026-07-26T05:01:41.255Z",
         "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -261,7 +261,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-27T16:33:27.840Z",
+      "updatedAt": "2026-10-27T17:39:55.389Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1244,6 +1244,19 @@
       "sourceCategories": {
         "student-affairs": "School events"
       }
+    },
+    {
+      "id": "notion:4000b1bd-6791-8140-820c-f81b21e04f8f",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Football Not Soccer Club: weekly pickup games",
+      "start": "2026-10-22T20:00:00.000Z",
+      "end": "2026-10-22T22:00:00.000Z",
+      "allDay": false,
+      "description": "Weekly casual football for Cornell Tech students of all levels, Thursdays 4–6 PM on Roosevelt Island. Players sign up on the club's RSVP page with a Cornell email, about 22 spots a week plus a waitlist. Free, no attendee fees. Teams are split on the day, and the club provides bibs and balls. Dates: Oct 22, Oct 29, Nov 5, Nov 12.",
+      "location": "Jack McManus Field",
+      "organizer": "",
+      "url": "https://elmir-srv-hermes.swedencentral.cloudapp.azure.com"
     },
     {
       "id": "career-management:9d77cab33137398cb33d41c0e6d8fdd69282026_4:12:27_PM@campusgroups.com",

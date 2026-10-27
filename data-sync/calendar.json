@@ -1570,6 +1570,29 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:career-management-students:career-management%3Ae0529352334ee93fcb19b5759c765dea9152026_1%3A12%3A28_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-10-27T16:33:27.840Z",
+      "event": {
+        "id": "career-management:e0529352334ee93fcb19b5759c765dea9152026_1:12:28_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Tesla x Interstride | Supercharging Your Resume",
+        "start": "2026-10-27T15:00:00.000Z",
+        "end": "2026-10-27T16:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133012",
+        "audienceTags": [
+          "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:career-management-students:career-management%3Aefa42722770a1852e790051d3d0fc1849182026_1%3A44%3A58_PM%40campusgroups.com": {
       "source": "career-management-students",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2701,7 +2724,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-26T13:57:00.000Z",
+      "cursor": "2026-10-27T16:32:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

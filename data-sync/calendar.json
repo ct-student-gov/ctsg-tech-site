@@ -529,19 +529,6 @@
           "url": ""
         },
         {
-          "id": "notion:4000b1bd-6791-8130-9ad3-c7382a00d0bf",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "MSA Chai & Game Night",
-          "start": "2026-10-26T21:00:00.000Z",
-          "end": "2026-10-26T23:00:00.000Z",
-          "allDay": false,
-          "description": "MSA Chai & Game Night is a social event designed to bring students together in a welcoming and inclusive environment. Attendees will have the opportunity to enjoy chai, participate in various board and group games, and connect with fellow students. The event aims to foster community engagement, encourage new friendships, and provide a relaxing space for students to unwind from academic responsibilities.  As well as our first General Board Meeting",
-          "location": "Preferable One of the basement rooms in Bloomberg",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4000b1bd-6791-81ba-b38f-d3fac1adabc1",
           "source": "clubs",
           "category": "Club events",
@@ -634,17 +621,17 @@
         }
       ],
       "window": {
-        "start": "2026-07-28T13:58:53.390Z",
-        "end": "2027-11-30T13:58:53.390Z"
+        "start": "2026-07-29T05:36:09.302Z",
+        "end": "2027-12-01T05:36:09.302Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-26T13:58:53.390Z",
+      "updatedAt": "2026-10-27T05:36:09.302Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
+        "eventCount": 9,
+        "upcomingCount": 9,
         "previousUpcomingCount": 9,
-        "comparedThrough": "2027-11-29T21:47:27.859Z",
+        "comparedThrough": "2027-11-30T13:58:53.390Z",
         "warnings": []
       }
     },
@@ -912,26 +899,22 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 55,
-      "excludedCount": 51,
-      "failedCount": 3,
+      "fetchedCount": 50,
+      "excludedCount": 47,
+      "failedCount": 2,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "3 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
-        "fetchedCount": 55,
-        "excludedCount": 51,
+        "fetchedCount": 50,
+        "excludedCount": 47,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 3,
+        "failedCount": 2,
         "issues": [
-          {
-            "url": "https://tech.cornell.edu/events/island-editions-aap-preston-scott-cohen-peter-eisenman/",
-            "message": "Cornell Tech listing and organizer dates disagree"
-          },
           {
             "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
             "message": "Cornell Tech organizer URL is outside supported public sources"
@@ -943,20 +926,20 @@
         ]
       },
       "window": {
-        "start": "2026-07-27T05:18:35.041Z",
-        "end": "2027-11-29T05:18:35.041Z"
+        "start": "2026-07-29T05:36:09.302Z",
+        "end": "2027-12-01T05:36:09.302Z"
       },
-      "updatedAt": "2026-10-25T05:18:35.041Z",
+      "updatedAt": "2026-10-27T05:36:09.302Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-11-29T05:18:35.041Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "3 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }
@@ -1956,6 +1939,23 @@
         "sourceCategories": {
           "career-management": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4000b1bd-6791-8130-9ad3-c7382a00d0bf": {
+      "source": "clubs",
+      "archivedAt": "2026-10-27T05:36:09.302Z",
+      "event": {
+        "id": "notion:4000b1bd-6791-8130-9ad3-c7382a00d0bf",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "MSA Chai & Game Night",
+        "start": "2026-10-26T21:00:00.000Z",
+        "end": "2026-10-26T23:00:00.000Z",
+        "allDay": false,
+        "description": "MSA Chai & Game Night is a social event designed to bring students together in a welcoming and inclusive environment. Attendees will have the opportunity to enjoy chai, participate in various board and group games, and connect with fellow students. The event aims to foster community engagement, encourage new friendships, and provide a relaxing space for students to unwind from academic responsibilities.  As well as our first General Board Meeting",
+        "location": "Preferable One of the basement rooms in Bloomberg",
+        "organizer": "",
+        "url": ""
       }
     },
     "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A32a1b88fa74aa9725951a21c49a4eec69292026_12%3A32%3A21_PM%40campusgroups.com": {

@@ -631,20 +631,33 @@
           "location": "TATA Master's Collaboratory, Bloomberg or TATA classroom (any); flexible on building",
           "organizer": "",
           "url": "https://cglink.me/2hj/r2133105"
+        },
+        {
+          "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Tech Help @ Cornell Tech",
+          "start": "2026-11-08T19:00:00.000Z",
+          "end": "2026-11-08T21:00:00.000Z",
+          "allDay": false,
+          "description": "Every semester, older adult residents of Roosevelt Island visit the Cornell Tech campus with a range of tech support needs (from sending an email to updating their operating system). In response, dedicated students, staff, and faculty (like you!) spend an afternoon providing personalized, one-on-one support. This event not only enhances older adults’ tech skills but also strengthens the relationship between Cornell Tech and the Roosevelt Island community. You can volunteer for as long (or as little) as you want, knowing every bit of help counts. Enjoy complimentary coffee/tea as you work with us! ",
+          "location": "Tata 141",
+          "organizer": "",
+          "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
         }
       ],
       "window": {
-        "start": "2026-07-30T02:40:28.592Z",
-        "end": "2027-12-02T02:40:28.592Z"
+        "start": "2026-07-30T03:19:19.810Z",
+        "end": "2027-12-02T03:19:19.810Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
-        "previousUpcomingCount": 9,
-        "comparedThrough": "2027-12-01T05:36:09.302Z",
+        "eventCount": 11,
+        "upcomingCount": 11,
+        "previousUpcomingCount": 10,
+        "comparedThrough": "2027-12-02T02:40:28.592Z",
         "warnings": []
       }
     },
@@ -2754,7 +2767,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-28T02:39:00.000Z",
+      "cursor": "2026-10-28T03:17:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2767,7 +2780,8 @@
         "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z",
         "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z",
         "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z",
-        "4060b1bd-6791-817a-a473-d696ae264b98": "2026-10-28T02:39:00.000Z"
+        "4060b1bd-6791-817a-a473-d696ae264b98": "2026-10-28T02:39:00.000Z",
+        "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z"
       }
     },
     "community": {

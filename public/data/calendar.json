@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T02:40:28.592Z",
+  "generatedAt": "2026-10-28T03:19:19.810Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-02T02:40:28.592Z"
+    "end": "2027-12-02T03:19:19.810Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -106,7 +106,7 @@
         "start": "2026-07-29T05:36:09.302Z",
         "end": "2027-12-01T05:36:09.302Z"
       },
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -128,17 +128,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-30T02:40:28.592Z",
-        "end": "2027-12-02T02:40:28.592Z"
+        "start": "2026-07-30T03:19:19.810Z",
+        "end": "2027-12-02T03:19:19.810Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
-        "previousUpcomingCount": 9,
-        "comparedThrough": "2027-12-01T05:36:09.302Z",
+        "eventCount": 11,
+        "upcomingCount": 11,
+        "previousUpcomingCount": 10,
+        "comparedThrough": "2027-12-02T02:40:28.592Z",
         "warnings": []
       },
       "state": "current",
@@ -149,11 +149,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-30T02:40:28.592Z",
-        "end": "2027-12-02T02:40:28.592Z"
+        "start": "2026-07-30T03:19:19.810Z",
+        "end": "2027-12-02T03:19:19.810Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -170,11 +170,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-30T02:40:28.592Z",
-        "end": "2027-12-02T02:40:28.592Z"
+        "start": "2026-07-30T03:19:19.810Z",
+        "end": "2027-12-02T03:19:19.810Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -196,7 +196,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -217,7 +217,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -239,7 +239,7 @@
         "start": "2026-07-26T05:01:41.255Z",
         "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -261,7 +261,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-28T02:40:28.592Z",
+      "updatedAt": "2026-10-28T03:19:19.810Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1479,6 +1479,19 @@
       "location": "The House Rooftop",
       "organizer": "",
       "url": ""
+    },
+    {
+      "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Tech Help @ Cornell Tech",
+      "start": "2026-11-08T19:00:00.000Z",
+      "end": "2026-11-08T21:00:00.000Z",
+      "allDay": false,
+      "description": "Every semester, older adult residents of Roosevelt Island visit the Cornell Tech campus with a range of tech support needs (from sending an email to updating their operating system). In response, dedicated students, staff, and faculty (like you!) spend an afternoon providing personalized, one-on-one support. This event not only enhances older adults’ tech skills but also strengthens the relationship between Cornell Tech and the Roosevelt Island community. You can volunteer for as long (or as little) as you want, knowing every bit of help counts. Enjoy complimentary coffee/tea as you work with us! ",
+      "location": "Tata 141",
+      "organizer": "",
+      "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",

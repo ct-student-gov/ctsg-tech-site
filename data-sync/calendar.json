@@ -625,20 +625,33 @@
           "location": "Tata 141",
           "organizer": "",
           "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
+        },
+        {
+          "id": "notion:4070b1bd-6791-8143-8dd0-fb4b86156af6",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Grass Volleyball Net",
+          "start": "2026-11-07T05:00:00.000Z",
+          "end": "2026-11-08T05:00:00.000Z",
+          "allDay": false,
+          "description": "We would like to use our funding to purchase a Grass Volleyball Net in order to play at nearby parks in LIC!",
+          "location": "Queensbridge park",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-07-30T03:19:19.810Z",
-        "end": "2027-12-02T03:19:19.810Z"
+        "start": "2026-07-30T06:29:05.959Z",
+        "end": "2027-12-02T06:29:05.959Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T03:19:19.810Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
-        "eventCount": 11,
-        "upcomingCount": 11,
-        "previousUpcomingCount": 10,
-        "comparedThrough": "2027-12-02T02:40:28.592Z",
+        "eventCount": 12,
+        "upcomingCount": 12,
+        "previousUpcomingCount": 11,
+        "comparedThrough": "2027-12-02T03:19:19.810Z",
         "warnings": []
       }
     },
@@ -2765,7 +2778,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-28T03:45:00.000Z",
+      "cursor": "2026-10-28T06:27:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2779,7 +2792,8 @@
         "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z",
         "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z",
         "4060b1bd-6791-817a-a473-d696ae264b98": "2026-10-28T02:39:00.000Z",
-        "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z"
+        "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z",
+        "4070b1bd-6791-8143-8dd0-fb4b86156af6": "2026-10-28T06:27:00.000Z"
       }
     },
     "community": {

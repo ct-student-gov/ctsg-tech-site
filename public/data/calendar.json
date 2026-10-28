@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T06:17:31.150Z",
+  "generatedAt": "2026-10-28T06:29:05.959Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-02T06:17:31.150Z"
+    "end": "2027-12-02T06:29:05.959Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
         "upcomingCount": 3,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       },
       "state": "current",
@@ -38,7 +38,7 @@
         "end": "2027-12-02T06:17:31.150Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -106,7 +106,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -128,15 +128,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-30T06:29:05.959Z",
+        "end": "2027-12-02T06:29:05.959Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
-        "eventCount": 11,
-        "upcomingCount": 11,
+        "eventCount": 12,
+        "upcomingCount": 12,
         "previousUpcomingCount": 11,
         "comparedThrough": "2027-12-02T03:19:19.810Z",
         "warnings": []
@@ -149,11 +149,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-30T06:29:05.959Z",
+        "end": "2027-12-02T06:29:05.959Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -170,11 +170,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-30T06:29:05.959Z",
+        "end": "2027-12-02T06:29:05.959Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -192,17 +192,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
         "upcomingCount": 29,
         "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       },
       "state": "current",
@@ -213,17 +213,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -233,19 +233,19 @@
       "id": "student-affairs-students",
       "name": "Student Affairs student subscription",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "fetchedCount": 14,
+      "fetchedCount": 15,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-26T05:01:41.255Z",
+        "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       },
       "state": "current",
@@ -261,7 +261,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-28T06:29:05.959Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1477,6 +1477,19 @@
       "allDay": false,
       "description": "Join the Latin American Association for our first event, a casual lonche/merienda mixer! We’ll share snacks from across Latin America, get to know each other through a few light activities, and kick off the club as a community.",
       "location": "The House Rooftop",
+      "organizer": "",
+      "url": ""
+    },
+    {
+      "id": "notion:4070b1bd-6791-8143-8dd0-fb4b86156af6",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Grass Volleyball Net",
+      "start": "2026-11-07T05:00:00.000Z",
+      "end": "2026-11-08T05:00:00.000Z",
+      "allDay": false,
+      "description": "We would like to use our funding to purchase a Grass Volleyball Net in order to play at nearby parks in LIC!",
+      "location": "Queensbridge park",
       "organizer": "",
       "url": ""
     },

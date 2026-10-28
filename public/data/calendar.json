@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T17:39:55.389Z",
+  "generatedAt": "2026-10-28T02:40:28.592Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-01T17:39:55.389Z"
+    "end": "2027-12-02T02:40:28.592Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-11-28T05:01:41.255Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -38,7 +38,7 @@
         "end": "2027-11-20T04:59:28.675Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -106,7 +106,7 @@
         "start": "2026-07-29T05:36:09.302Z",
         "end": "2027-12-01T05:36:09.302Z"
       },
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -128,15 +128,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-29T17:39:55.389Z",
-        "end": "2027-12-01T17:39:55.389Z"
+        "start": "2026-07-30T02:40:28.592Z",
+        "end": "2027-12-02T02:40:28.592Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
+        "eventCount": 10,
+        "upcomingCount": 10,
         "previousUpcomingCount": 9,
         "comparedThrough": "2027-12-01T05:36:09.302Z",
         "warnings": []
@@ -149,11 +149,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-29T17:39:55.389Z",
-        "end": "2027-12-01T17:39:55.389Z"
+        "start": "2026-07-30T02:40:28.592Z",
+        "end": "2027-12-02T02:40:28.592Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -170,11 +170,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-29T17:39:55.389Z",
-        "end": "2027-12-01T17:39:55.389Z"
+        "start": "2026-07-30T02:40:28.592Z",
+        "end": "2027-12-02T02:40:28.592Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -196,7 +196,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -217,7 +217,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -239,7 +239,7 @@
         "start": "2026-07-26T05:01:41.255Z",
         "end": "2027-11-28T05:01:41.255Z"
       },
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -261,7 +261,7 @@
         "start": "2026-07-27T05:18:35.041Z",
         "end": "2027-11-29T05:18:35.041Z"
       },
-      "updatedAt": "2026-10-27T17:39:55.389Z",
+      "updatedAt": "2026-10-28T02:40:28.592Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -1414,6 +1414,19 @@
       "location": "Cornell Tech ",
       "organizer": "",
       "url": ""
+    },
+    {
+      "id": "notion:4060b1bd-6791-817a-a473-d696ae264b98",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "UrbanX Fall Kickoff General Meeting",
+      "start": "2026-10-29T21:00:00.000Z",
+      "end": "2026-10-29T22:00:00.000Z",
+      "allDay": false,
+      "description": "UrbanX’s fall kickoff for students interested in cities, urban tech, and the built environment. We’ll introduce the club, discuss current urban topics, upcoming events, and plan the rest of the semester.",
+      "location": "TATA Master's Collaboratory, Bloomberg or TATA classroom (any); flexible on building",
+      "organizer": "",
+      "url": "https://cglink.me/2hj/r2133105"
     },
     {
       "id": "notion:4050b1bd-6791-8164-8491-fbb575ec5469",

@@ -484,19 +484,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:3fc0b1bd-6791-8141-9d78-ddbf1d3d0607",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Girls Into VC | Fireside Chat with Sammie Hasen & Aryuna Merdygeeva",
-          "start": "2026-10-28T17:00:00.000Z",
-          "end": "2026-10-28T18:30:00.000Z",
-          "allDay": false,
-          "description": "Join us on October 28 at 1:00 PM for a fireside chat with Sammie Hasen (C2FM, ex-Goldman Sachs, ex-Newlab Ventures) and Aryuna Merdygeeva (Olhon Social Capital), two women who have worked on both sides of the founder-investor table. The event is organized by Cornell Tech Chapter of Girls Into VC, a student-led community empowering women in venture capital and entrepreneurship.",
-          "location": "Cornell Tech campus (TBD)",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:3ff0b1bd-6791-8154-ab92-e0fe7493abb1",
           "source": "clubs",
           "category": "Club events",
@@ -641,17 +628,17 @@
         }
       ],
       "window": {
-        "start": "2026-07-30T06:29:05.959Z",
-        "end": "2027-12-02T06:29:05.959Z"
+        "start": "2026-07-30T22:45:26.969Z",
+        "end": "2027-12-02T22:45:26.969Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:29:05.959Z",
+      "updatedAt": "2026-10-28T22:45:26.969Z",
       "coverage": {
         "version": 1,
-        "eventCount": 12,
-        "upcomingCount": 12,
+        "eventCount": 11,
+        "upcomingCount": 11,
         "previousUpcomingCount": 11,
-        "comparedThrough": "2027-12-02T03:19:19.810Z",
+        "comparedThrough": "2027-12-02T06:29:05.959Z",
         "warnings": []
       }
     },
@@ -2001,6 +1988,23 @@
         }
       }
     },
+    "calendar-archive-v1:clubs:notion%3A3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": {
+      "source": "clubs",
+      "archivedAt": "2026-10-28T22:45:26.969Z",
+      "event": {
+        "id": "notion:3fc0b1bd-6791-8141-9d78-ddbf1d3d0607",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Girls Into VC | Fireside Chat with Sammie Hasen & Aryuna Merdygeeva",
+        "start": "2026-10-28T17:00:00.000Z",
+        "end": "2026-10-28T18:30:00.000Z",
+        "allDay": false,
+        "description": "Join us on October 28 at 1:00 PM for a fireside chat with Sammie Hasen (C2FM, ex-Goldman Sachs, ex-Newlab Ventures) and Aryuna Merdygeeva (Olhon Social Capital), two women who have worked on both sides of the founder-investor table. The event is organized by Cornell Tech Chapter of Girls Into VC, a student-led community empowering women in venture capital and entrepreneurship.",
+        "location": "Cornell Tech campus (TBD)",
+        "organizer": "",
+        "url": ""
+      }
+    },
     "calendar-archive-v1:clubs:notion%3A4000b1bd-6791-8130-9ad3-c7382a00d0bf": {
       "source": "clubs",
       "archivedAt": "2026-10-27T05:36:09.302Z",
@@ -2377,6 +2381,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Af791cad92c4d9ec168a1adae84fbcab49102026_12%3A25%3A49_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-10-28T22:45:26.969Z",
+      "event": {
+        "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Pumpkin Decorating Contest!",
+        "start": "2026-10-28T16:00:00.000Z",
+        "end": "2026-10-28T18:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-10-21T20:55:27.122Z",
@@ -2670,6 +2695,26 @@
         "description": "Join the Office of Student & Academic Affairs and Cornell Tech Student Government for Student Leader Training. At this training we will go over leadership skills along with student organization policies and procedures for event planning and other student organization initiatives. \n\nThe president of all student organizations at Cornell Tech are required to attend ONE of the two sessions being offered. Please note that you are not permitted to miss Studio to attend this training, so you must select a session that does not conflict with your Studio class.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133058",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133058",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3Af791cad92c4d9ec168a1adae84fbcab49102026_12%3A25%3A49_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-10-28T22:45:26.969Z",
+      "event": {
+        "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Pumpkin Decorating Contest!",
+        "start": "2026-10-28T16:00:00.000Z",
+        "end": "2026-10-28T18:00:00.000Z",
+        "allDay": false,
+        "description": "Stop by the Bloomberg Masters' Studio for snacks, apple cider, and pumpkin decorating! Submit your pumpkin into a category to be judged by a panel of VIP faculty judges! \n\nAll category winners will receive a spooky prize!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132998",
+        "location": "Bloomberg Masters' Studio, 2 W Loop Rd, New York, New York 10044, United States",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"

@@ -744,37 +744,21 @@
           "departmentAcronyms": [
             "CTSAA"
           ]
-        },
-        {
-          "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Pumpkin Decorating Contest!",
-          "start": "2026-10-28T16:00:00.000Z",
-          "end": "2026-10-28T18:00:00.000Z",
-          "allDay": false,
-          "description": "Stop by the Bloomberg Masters' Studio for snacks, apple cider, and pumpkin decorating! Submit your pumpkin into a category to be judged by a panel of VIP faculty judges! \n\nAll category winners will receive a spooky prize!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132998",
-          "location": "Bloomberg Masters' Studio, 2 W Loop Rd, New York, New York 10044, United States",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
         }
       ],
       "fetchedCount": 11,
       "window": {
-        "start": "2026-07-26T05:01:41.255Z",
-        "end": "2027-11-28T05:01:41.255Z"
+        "start": "2026-07-31T06:27:59.912Z",
+        "end": "2027-12-03T06:27:59.912Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-24T05:01:41.255Z",
+      "updatedAt": "2026-10-29T06:27:59.912Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-11-28T05:01:41.255Z",
         "warnings": []
       }
     },
@@ -830,38 +814,21 @@
             "CTSAA"
           ],
           "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:f791cad92c4d9ec168a1adae84fbcab49102026_12:25:49_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Pumpkin Decorating Contest!",
-          "start": "2026-10-28T16:00:00.000Z",
-          "end": "2026-10-28T18:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132998",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
         }
       ],
-      "fetchedCount": 15,
+      "fetchedCount": 14,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-26T05:01:41.255Z",
-        "end": "2027-11-28T05:01:41.255Z"
+        "start": "2026-07-31T06:27:59.912Z",
+        "end": "2027-12-03T06:27:59.912Z"
       },
-      "updatedAt": "2026-10-24T05:01:41.255Z",
+      "updatedAt": "2026-10-29T06:27:59.912Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-11-28T05:01:41.255Z",
         "warnings": []
       }
     },
@@ -924,24 +891,32 @@
         }
       ],
       "fetchedCount": 51,
-      "excludedCount": 48,
-      "failedCount": 2,
+      "excludedCount": 46,
+      "failedCount": 4,
       "warnings": [
         {
           "code": "unverified-events",
-          "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+          "message": "4 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
         }
       ],
       "diagnostics": {
         "fetchedCount": 51,
-        "excludedCount": 48,
+        "excludedCount": 46,
         "importedCount": 1,
         "pagesFetched": 1,
-        "failedCount": 2,
+        "failedCount": 4,
         "issues": [
+          {
+            "url": "https://tech.cornell.edu/events/community-conversation-with-cornell-tech-eden-shaveet/",
+            "message": "Cornell Tech event has no verified full date"
+          },
           {
             "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
             "message": "Cornell Tech organizer URL is outside supported public sources"
+          },
+          {
+            "url": "https://tech.cornell.edu/events/cornell-tech-open-house/",
+            "message": "Cornell Tech event has no verified full date"
           },
           {
             "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
@@ -950,20 +925,20 @@
         ]
       },
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-07-31T06:27:59.912Z",
+        "end": "2027-12-03T06:27:59.912Z"
       },
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-10-29T06:27:59.912Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-01T05:36:09.302Z",
+        "comparedThrough": "2027-12-02T06:17:31.150Z",
         "warnings": [
           {
             "code": "unverified-events",
-            "message": "2 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
+            "message": "4 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
           }
         ]
       }

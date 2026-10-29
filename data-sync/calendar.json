@@ -588,19 +588,6 @@
           "url": ""
         },
         {
-          "id": "notion:4060b1bd-6791-817a-a473-d696ae264b98",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "UrbanX Fall Kickoff General Meeting",
-          "start": "2026-10-29T21:00:00.000Z",
-          "end": "2026-10-29T22:00:00.000Z",
-          "allDay": false,
-          "description": "UrbanX’s fall kickoff for students interested in cities, urban tech, and the built environment. We’ll introduce the club, discuss current urban topics, upcoming events, and plan the rest of the semester.",
-          "location": "TATA Master's Collaboratory, Bloomberg or TATA classroom (any); flexible on building",
-          "organizer": "",
-          "url": "https://cglink.me/2hj/r2133105"
-        },
-        {
           "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
           "source": "clubs",
           "category": "Club events",
@@ -628,17 +615,17 @@
         }
       ],
       "window": {
-        "start": "2026-07-30T22:45:26.969Z",
-        "end": "2027-12-02T22:45:26.969Z"
+        "start": "2026-07-31T14:26:55.245Z",
+        "end": "2027-12-03T14:26:55.245Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T22:45:26.969Z",
+      "updatedAt": "2026-10-29T14:26:55.245Z",
       "coverage": {
         "version": 1,
-        "eventCount": 11,
-        "upcomingCount": 11,
+        "eventCount": 10,
+        "upcomingCount": 10,
         "previousUpcomingCount": 11,
-        "comparedThrough": "2027-12-02T06:29:05.959Z",
+        "comparedThrough": "2027-12-02T22:45:26.969Z",
         "warnings": []
       }
     },
@@ -2798,7 +2785,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-10-28T06:27:00.000Z",
+      "cursor": "2026-10-29T14:25:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -2811,7 +2798,6 @@
         "4000b1bd-6791-81bf-ae40-e26b30f8aeb0": "2026-10-25T21:46:00.000Z",
         "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z",
         "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z",
-        "4060b1bd-6791-817a-a473-d696ae264b98": "2026-10-28T02:39:00.000Z",
         "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z",
         "4070b1bd-6791-8143-8dd0-fb4b86156af6": "2026-10-28T06:27:00.000Z"
       }

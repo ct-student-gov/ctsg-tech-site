@@ -270,20 +270,6 @@ export const peopleData = {
           "profileId": "3e30b1bd679180b0835dd668fd00b5f0"
         },
         {
-          "firstName": "Alex",
-          "lastName": "Bao",
-          "program": "Master of Engineering in Data Science and Decision Analytics",
-          "graduationYear": 2027,
-          "role": "M.Eng. DSDA Representative",
-          "section": "representatives",
-          "biography": [
-            "I’m Alex Bao, a business graduate from NYU with a strong passion for startups and cross-border trading. My background centers on exploring international trade dynamics, optimizing cross-border logistics, and building scalable business models in emerging markets. Having worked on several global ventures, I’m always eager to exchange ideas, share market insights, and collaborate with like-minded founders and trade professionals.",
-            "Fun Fact: I once applied for a commercial orbital spaceflight and actually made it to the shortlist."
-          ],
-          "portrait": "./images/members/notion/2026/3eb0b1bd6791815097d8e03b4204c66c-bb594610676788e2.webp",
-          "profileId": "3eb0b1bd6791815097d8e03b4204c66c"
-        },
-        {
           "firstName": "Lillian",
           "lastName": "Li",
           "program": "Dual M.S. in Connective Media",

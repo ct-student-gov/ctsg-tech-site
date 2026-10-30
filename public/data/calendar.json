@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-30T06:26:59.175Z",
+  "generatedAt": "2026-10-30T15:39:18.515Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-04T06:26:59.175Z"
+    "end": "2027-12-04T15:39:18.515Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 5,
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-07-30T06:17:31.150Z",
+        "end": "2027-12-02T06:17:31.150Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -114,7 +114,7 @@
         "start": "2026-08-01T06:26:59.175Z",
         "end": "2027-12-04T06:26:59.175Z"
       },
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -136,17 +136,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-01T15:39:18.515Z",
+        "end": "2027-12-04T15:39:18.515Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
+        "eventCount": 9,
+        "upcomingCount": 9,
         "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-03T14:26:55.245Z",
+        "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": []
       },
       "state": "current",
@@ -157,11 +157,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-01T15:39:18.515Z",
+        "end": "2027-12-04T15:39:18.515Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -178,11 +178,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-01T15:39:18.515Z",
+        "end": "2027-12-04T15:39:18.515Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,17 +200,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
         "upcomingCount": 29,
         "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       },
       "state": "current",
@@ -221,17 +221,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -247,7 +247,7 @@
         "start": "2026-08-01T06:26:59.175Z",
         "end": "2027-12-04T06:26:59.175Z"
       },
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -266,16 +266,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-07-30T06:17:31.150Z",
+        "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-30T15:39:18.515Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "comparedThrough": "2027-11-29T05:18:35.041Z",
         "warnings": []
       },
       "state": "current",
@@ -1581,6 +1581,19 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Fireside chat with Big Tech Engineers: Ryan Farr (Meta SWE), Kanta Garg (AWS Solutions Architect)",
+      "start": "2026-11-11T01:30:00.000Z",
+      "end": "2026-11-11T03:30:00.000Z",
+      "allDay": false,
+      "description": "Fireside Chat with Big Tech Engineers\nJoin Dom Kultury: ML & Poetry for an engaging fireside chat with professionals from Meta and Amazon Web Services (AWS)!\nMeet our guest speakers:\n- Ryan Farr — Software Engineer at Meta\n- Kanta Garg — Solutions Architect at AWS\n- Matthew Dalton — Data Scientist at Meta\nOur speakers will share their career journeys, experiences working at leading technology companies, technical challenges, and insights into software engineering, data science, and cloud computing.\nThe event will feature an informal panel discussion followed by an interactive Q&A, where attendees can ask questions about career development, technical interviews, industry trends, and life in Big Tech.\nWhether you're pursuing a career in technology, exploring different engineering paths, or simply interested in learning from industry professionals, everyone is welcome!",
+      "location": "Tata 131",
+      "organizer": "",
+      "url": "https://cglink.me/2hj/r2133121"
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",

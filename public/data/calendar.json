@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-29T14:26:55.245Z",
+  "generatedAt": "2026-10-30T06:26:59.175Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-03T14:26:55.245Z"
+    "end": "2027-12-04T06:26:59.175Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -10,23 +10,23 @@
       "id": "student-affairs",
       "name": "Student Affairs",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "fetchedCount": 11,
+      "fetchedCount": 16,
       "window": {
-        "start": "2026-07-31T06:27:59.912Z",
-        "end": "2027-12-03T06:27:59.912Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-12-03T06:27:59.912Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 13
+      "archivedCount": 14
     },
     {
       "id": "inclusion-belonging",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 5,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-02T06:17:31.150Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -76,8 +76,8 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 51,
-      "excludedCount": 46,
+      "fetchedCount": 56,
+      "excludedCount": 51,
       "failedCount": 4,
       "warnings": [
         {
@@ -86,8 +86,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 51,
-        "excludedCount": 46,
+        "fetchedCount": 56,
+        "excludedCount": 51,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 4,
@@ -111,16 +111,16 @@
         ]
       },
       "window": {
-        "start": "2026-07-31T06:27:59.912Z",
-        "end": "2027-12-03T06:27:59.912Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "comparedThrough": "2027-12-03T06:27:59.912Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -136,32 +136,32 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-07-31T14:26:55.245Z",
-        "end": "2027-12-03T14:26:55.245Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
-        "eventCount": 10,
-        "upcomingCount": 10,
-        "previousUpcomingCount": 11,
-        "comparedThrough": "2027-12-02T22:45:26.969Z",
+        "eventCount": 8,
+        "upcomingCount": 8,
+        "previousUpcomingCount": 8,
+        "comparedThrough": "2027-12-03T14:26:55.245Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 3
+      "archivedCount": 5
     },
     {
       "id": "community",
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-07-31T14:26:55.245Z",
-        "end": "2027-12-03T14:26:55.245Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -178,11 +178,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-07-31T14:26:55.245Z",
-        "end": "2027-12-03T14:26:55.245Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,17 +200,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
         "upcomingCount": 29,
         "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-26T05:21:47.914Z",
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       },
       "state": "current",
@@ -221,17 +221,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-07-19T04:59:35.734Z",
-        "end": "2027-11-21T04:59:35.734Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "comparedThrough": "2027-11-21T04:59:35.734Z",
         "warnings": []
       },
       "state": "current",
@@ -241,23 +241,23 @@
       "id": "student-affairs-students",
       "name": "Student Affairs student subscription",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
-      "fetchedCount": 14,
+      "fetchedCount": 19,
       "excludedCount": 1,
       "window": {
-        "start": "2026-07-31T06:27:59.912Z",
-        "end": "2027-12-03T06:27:59.912Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
+        "eventCount": 7,
+        "upcomingCount": 7,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-11-28T05:01:41.255Z",
+        "comparedThrough": "2027-12-03T06:27:59.912Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 13
+      "archivedCount": 14
     },
     {
       "id": "career-management-students",
@@ -266,16 +266,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-08-01T06:26:59.175Z",
+        "end": "2027-12-04T06:26:59.175Z"
       },
-      "updatedAt": "2026-10-29T14:26:55.245Z",
+      "updatedAt": "2026-10-30T06:26:59.175Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-29T05:18:35.041Z",
+        "comparedThrough": "2027-12-02T06:17:31.150Z",
         "warnings": []
       },
       "state": "current",
@@ -918,6 +918,29 @@
       ]
     },
     {
+      "id": "student-affairs:f6f2fd7baf2b367e335d093db963781810292026_9:59:26_AM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stretch With Wellness - (Virtual)",
+      "start": "2026-10-05T16:00:00.000Z",
+      "end": "2026-10-05T16:30:00.000Z",
+      "allDay": false,
+      "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133112",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133112",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
       "id": "inclusion-belonging:7a7f066a1644dfdf6c4582ff205aa9e71052026_10:21:23_AM@campusgroups.com",
       "source": "inclusion-belonging",
       "category": "School events",
@@ -1463,6 +1486,29 @@
       "url": ""
     },
     {
+      "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stretch With Wellness - (Virtual)",
+      "start": "2026-11-02T17:00:00.000Z",
+      "end": "2026-11-02T17:30:00.000Z",
+      "allDay": false,
+      "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133113",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133113",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
+    },
+    {
       "id": "notion:4020b1bd-6791-81db-b4d7-c1add0e8451c",
       "source": "clubs",
       "category": "Club events",
@@ -1500,6 +1546,29 @@
       "location": "Tata 141",
       "organizer": "",
       "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
+    },
+    {
+      "id": "student-affairs:7bb12528c754820827368e52976e069f10292026_10:15:43_AM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stretch With Wellness - (Virtual)",
+      "start": "2026-11-09T17:00:00.000Z",
+      "end": "2026-11-09T17:30:00.000Z",
+      "allDay": false,
+      "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133114",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133114",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
@@ -1552,6 +1621,29 @@
       "description": "Maker Day",
       "location": "",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+    },
+    {
+      "id": "student-affairs:5351e63517e36b184f4c012d58d77de610292026_10:15:44_AM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stretch With Wellness - (Virtual)",
+      "start": "2026-11-16T17:00:00.000Z",
+      "end": "2026-11-16T17:30:00.000Z",
+      "allDay": false,
+      "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133115",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133115",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
@@ -1632,6 +1724,29 @@
         "CTCAREERS"
       ],
       "detailsRedacted": true
+    },
+    {
+      "id": "student-affairs:04bf4bce666c3e0b1c84a0754a89e08210292026_10:15:45_AM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Stretch With Wellness - (Virtual)",
+      "start": "2026-11-23T17:00:00.000Z",
+      "end": "2026-11-23T17:30:00.000Z",
+      "allDay": false,
+      "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133116",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "academic:2026–2027:Thanksgiving Break/No classes",

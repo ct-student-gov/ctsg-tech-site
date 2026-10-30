@@ -993,20 +993,6 @@ export const peopleData = {
           "profileId": "3eb0b1bd67918185a154ca38dcf9e0a6"
         },
         {
-          "firstName": "Jan",
-          "lastName": "Carbonell",
-          "program": "Dual M.S. in Connective Media",
-          "graduationYear": 2024,
-          "role": "Technical President",
-          "section": "executive-board",
-          "biography": [
-            "Jan is a serial entrepreneur focused on Artificial Intelligence. He founded a nonprofit to increase non-english speaking talent in AI and his latest edtech startup was acquired by another company from YC. During Covid, he was part of the team that built the first low-cost ventilator to get approved for human clinical trials, and in his spare time he enjoys training for triathlons, surfing and traveling.",
-            "Fun Fact: I managed to get a job as a 16y old bartender during the peak of Spain’s economic crisis. Besides carefully drafting my CV, I made sure to print it in a higher weighted paper. When the owner of a beach club reached out, he shared how he “randomly” picked my CV from a stack of submissions. This taught me that it is worth maximizing one’s odds."
-          ],
-          "portrait": "./images/members/notion/2023/3eb0b1bd6791810ea53aebba10b26900-4be0cf60977f9100.webp",
-          "profileId": "3eb0b1bd6791810ea53aebba10b26900"
-        },
-        {
           "firstName": "Jacob",
           "lastName": "Ioffe",
           "program": "Dual M.S. in Health Tech",

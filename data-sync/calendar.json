@@ -484,19 +484,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4000b1bd-6791-81ba-b38f-d3fac1adabc1",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Potluck (Chaepitie)",
-          "start": "2026-10-30T22:00:00.000Z",
-          "end": "2026-10-31T00:00:00.000Z",
-          "allDay": false,
-          "description": "Join Dom Kultury: ML & Poetry for a cozy evening of tea, food, and conversation! We'll have dishes and snacks from Eastern European and Central Asian cuisines for everyone to try. Feel free to bring your favorite dish, snack, or dessert to share. Come enjoy good food, meet new friends, and learn about different cultures!",
-          "location": "River Room, House at the Cornell tech",
-          "organizer": "",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
-        },
-        {
           "id": "notion:4000b1bd-6791-81bf-ae40-e26b30f8aeb0",
           "source": "clubs",
           "category": "Club events",
@@ -602,17 +589,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-01T15:39:18.515Z",
-        "end": "2027-12-04T15:39:18.515Z"
+        "start": "2026-08-02T06:17:42.340Z",
+        "end": "2027-12-05T06:17:42.340Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T15:39:18.515Z",
+      "updatedAt": "2026-10-31T06:17:42.340Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-04T06:26:59.175Z",
+        "comparedThrough": "2027-12-04T15:39:18.515Z",
         "warnings": []
       }
     },
@@ -996,8 +983,8 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 56,
-      "excludedCount": 51,
+      "fetchedCount": 54,
+      "excludedCount": 49,
       "failedCount": 4,
       "warnings": [
         {
@@ -1006,8 +993,8 @@
         }
       ],
       "diagnostics": {
-        "fetchedCount": 56,
-        "excludedCount": 51,
+        "fetchedCount": 54,
+        "excludedCount": 49,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 4,
@@ -1031,16 +1018,16 @@
         ]
       },
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-02T06:17:42.340Z",
+        "end": "2027-12-05T06:17:42.340Z"
       },
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-10-31T06:17:42.340Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-03T06:27:59.912Z",
+        "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": [
           {
             "code": "unverified-events",
@@ -2135,6 +2122,23 @@
         "location": "Jack McManus Field",
         "organizer": "",
         "url": "https://elmir-srv-hermes.swedencentral.cloudapp.azure.com"
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4000b1bd-6791-81ba-b38f-d3fac1adabc1": {
+      "source": "clubs",
+      "archivedAt": "2026-10-31T06:17:42.340Z",
+      "event": {
+        "id": "notion:4000b1bd-6791-81ba-b38f-d3fac1adabc1",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Potluck (Chaepitie)",
+        "start": "2026-10-30T22:00:00.000Z",
+        "end": "2026-10-31T00:00:00.000Z",
+        "allDay": false,
+        "description": "Join Dom Kultury: ML & Poetry for a cozy evening of tea, food, and conversation! We'll have dishes and snacks from Eastern European and Central Asian cuisines for everyone to try. Feel free to bring your favorite dish, snack, or dessert to share. Come enjoy good food, meet new friends, and learn about different cultures!",
+        "location": "River Room, House at the Cornell tech",
+        "organizer": "",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
       }
     },
     "calendar-archive-v1:clubs:notion%3A4050b1bd-6791-8164-8491-fbb575ec5469": {

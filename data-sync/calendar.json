@@ -484,19 +484,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4000b1bd-6791-81bf-ae40-e26b30f8aeb0",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Vibe Coding Hours",
-          "start": "2026-11-01T17:00:00.000Z",
-          "end": "2026-11-01T20:00:00.000Z",
-          "allDay": false,
-          "description": "This is for our bi weekly vibe coding hours, where we meet and code together on projects voted on by members of the club!",
-          "location": "Cornell Tech",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4020b1bd-6791-812d-9092-fe5524544dce",
           "source": "clubs",
           "category": "Club events",
@@ -589,17 +576,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-02T06:17:42.340Z",
-        "end": "2027-12-05T06:17:42.340Z"
+        "start": "2026-08-04T06:49:46.160Z",
+        "end": "2027-12-07T06:49:46.160Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-31T06:17:42.340Z",
+      "updatedAt": "2026-11-02T06:49:46.160Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-04T15:39:18.515Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-05T06:17:42.340Z",
         "warnings": []
       }
     },
@@ -2139,6 +2126,23 @@
         "location": "River Room, House at the Cornell tech",
         "organizer": "",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4000b1bd-6791-81bf-ae40-e26b30f8aeb0": {
+      "source": "clubs",
+      "archivedAt": "2026-11-02T06:49:46.160Z",
+      "event": {
+        "id": "notion:4000b1bd-6791-81bf-ae40-e26b30f8aeb0",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Vibe Coding Hours",
+        "start": "2026-11-01T17:00:00.000Z",
+        "end": "2026-11-01T20:00:00.000Z",
+        "allDay": false,
+        "description": "This is for our bi weekly vibe coding hours, where we meet and code together on projects voted on by members of the club!",
+        "location": "Cornell Tech",
+        "organizer": "",
+        "url": ""
       }
     },
     "calendar-archive-v1:clubs:notion%3A4050b1bd-6791-8164-8491-fbb575ec5469": {

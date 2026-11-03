@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T07:14:39.866Z",
+  "generatedAt": "2026-11-03T16:43:52.634Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-08T07:14:39.866Z"
+    "end": "2027-12-08T16:43:52.634Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 16,
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-04T06:26:59.175Z",
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-08T07:14:39.866Z",
         "warnings": []
       },
       "state": "current",
@@ -34,11 +34,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 5,
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -56,11 +56,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -77,56 +77,29 @@
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
       "fetchedCount": 54,
-      "excludedCount": 49,
-      "failedCount": 4,
-      "warnings": [
-        {
-          "code": "unverified-events",
-          "message": "4 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
-        }
-      ],
+      "excludedCount": 50,
+      "failedCount": 0,
+      "warnings": [],
       "diagnostics": {
         "fetchedCount": 54,
-        "excludedCount": 49,
-        "importedCount": 1,
+        "excludedCount": 50,
+        "importedCount": 4,
         "pagesFetched": 1,
-        "failedCount": 4,
-        "issues": [
-          {
-            "url": "https://tech.cornell.edu/events/fda-healthcare-regulatory-considerations-for-startups/",
-            "message": "Cornell Tech organizer URL is outside supported public sources"
-          },
-          {
-            "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
-            "message": "Cornell Tech organizer URL is outside supported public sources"
-          },
-          {
-            "url": "https://tech.cornell.edu/events/cornell-tech-open-house/",
-            "message": "Cornell Tech event has no verified full date"
-          },
-          {
-            "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
-            "message": "Cornell Tech event has no verified full date"
-          }
-        ]
+        "failedCount": 0,
+        "issues": []
       },
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 1,
         "comparedThrough": "2027-12-05T06:17:42.340Z",
-        "warnings": [
-          {
-            "code": "unverified-events",
-            "message": "4 Cornell Tech events were omitted because full event details or dates could not be verified. See source diagnostics."
-          }
-        ]
+        "warnings": []
       },
       "state": "current",
       "archivedCount": 2
@@ -136,11 +109,11 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -157,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -178,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,11 +173,11 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -221,11 +194,11 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -244,16 +217,16 @@
       "fetchedCount": 19,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-04T06:26:59.175Z",
+        "eventCount": 8,
+        "upcomingCount": 8,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-08T07:14:39.866Z",
         "warnings": []
       },
       "state": "current",
@@ -266,10 +239,10 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-05T07:14:39.866Z",
-        "end": "2027-12-08T07:14:39.866Z"
+        "start": "2026-08-05T16:43:52.634Z",
+        "end": "2027-12-08T16:43:52.634Z"
       },
-      "updatedAt": "2026-11-03T07:14:39.866Z",
+      "updatedAt": "2026-11-03T16:43:52.634Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1606,6 +1579,19 @@
       }
     },
     {
+      "id": "tech-events:fda-healthcare-regulatory-considerations-for-startups",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "FDA & Healthcare Regulatory Considerations for Startups",
+      "start": "2026-11-10T17:00:00.000Z",
+      "end": "2026-11-10T18:00:00.000Z",
+      "allDay": false,
+      "description": "Tuesday, November 10, 12 p.m. ET This virtual Lab to Impact session from the Center for Technology Licensing (CTL) gives an overview of how FDA regulates medical devices, including software and AI-enabled products, and pharmaceuticals, as well as federal healthcare regulatory considerations for certain health tech and digital health business models.",
+      "location": "",
+      "url": "https://tech.cornell.edu/events/fda-healthcare-regulatory-considerations-for-startups/",
+      "audienceTags": []
+    },
+    {
       "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
       "source": "clubs",
       "category": "Club events",
@@ -1617,6 +1603,19 @@
       "location": "Tata 131",
       "organizer": "",
       "url": "https://cglink.me/2hj/r2133121"
+    },
+    {
+      "id": "tech-events:weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "Weill Cornell Medicine Dean’s Symposium on Innovation and Entrepreneurship",
+      "start": "2026-11-11T17:00:00.000Z",
+      "end": "2026-11-11T22:30:00.000Z",
+      "allDay": false,
+      "description": "Join Robert A. Harrington, M.D., the Stephen and Suzanne Weiss Dean of Weill Cornell Medicine, for a fireside chat with John Babich, Ph.D., President and Chief Scientific Officer at Ratio Therapeutics, Inc., and former faculty member of Weill Cornell Medicine. Dr. Babich has over 30 years of experience in radiopharmaceutical sciences and nuclear medicine, spanning academic, clinical, and biotech/pharma settings. Ratio Therapeutics, Inc., a clinical-stage company founded upon Weill Cornell Medicine technology invented by Dr. Babich and colleagues, is developing next-generation radiopharmaceuticals for cancer treatment. It closed a $70 million Series C financing in July 2026, bringing its total capital raised to $240 million. Dean Harrington and Dr. Babich will explore important topics including technology development in academia, balancing the demands of an academic career and launching an innovation, fundraising in the current environment, and spinning out companies. The symposium also features faculty presentations on alternative funding opportunities. Participants will have an opportunity to network with like-minded researchers and innovators at the end.",
+      "location": "",
+      "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
+      "audienceTags": []
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
@@ -1720,6 +1719,19 @@
       "detailsRedacted": true
     },
     {
+      "id": "tech-events:the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "The Evolution of Computer Architecture to Service Machine Learning and Scientific Computing",
+      "start": "2026-11-18T15:00:00.000Z",
+      "end": "2026-11-18T16:00:00.000Z",
+      "allDay": false,
+      "description": "The talk provides a condensed overview of how computer processor chip architectures evolved from the early days of processors for mainframes, workstations, and desktops to graphics-optimized processors (GPUs), and the latest machine-learning-optimized processors like Amazon Trainium. The talk walks through the first principles driving end-to-end optimization across the compute stack: chip design, instruction sets, compilers and profilers, and how to design systems for an era where most code is written by LLMs.",
+      "location": "Cornell Tech, Bloomberg 401",
+      "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
+      "audienceTags": []
+    },
+    {
       "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -1758,6 +1770,23 @@
       ],
       "departmentAcronyms": [
         "CTCAREERS"
+      ],
+      "detailsRedacted": true
+    },
+    {
+      "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Discrimination and Harassment – Your Rights and Responsibilities",
+      "start": "2026-11-19T20:00:00.000Z",
+      "end": "2026-11-19T21:00:00.000Z",
+      "allDay": false,
+      "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133123",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
       ],
       "detailsRedacted": true
     },

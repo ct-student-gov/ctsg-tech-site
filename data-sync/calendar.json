@@ -678,22 +678,6 @@
           ]
         },
         {
-          "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-02T17:00:00.000Z",
-          "end": "2026-11-02T17:30:00.000Z",
-          "allDay": false,
-          "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133113",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133113",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:5351e63517e36b184f4c012d58d77de610292026_10:15:44_AM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -756,21 +740,37 @@
           "departmentAcronyms": [
             "CTSAA"
           ]
+        },
+        {
+          "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Fall Splendor Tree Walk",
+          "start": "2026-11-10T17:00:00.000Z",
+          "end": "2026-11-10T17:45:00.000Z",
+          "allDay": false,
+          "description": "Join the Cornell Tech community for a Fall Splendor Tree Walk!\nTuesday 11/10, 12-12:45 PM, meet near Bloomberg Security Desk\nOpen to all – students, staff and faculty\n\nYou don’t have to leave NYC to see beautiful leaves and colors. Come take a break from the hustle bustle, mindfully tuning into our senses as we learn to identify and appreciate the beautiful trees on and around campus.\n\nOur tour guide, Katherine Patton, is a horticulturist, volunteer at Brooklyn Botanic Garden, urban gardener, NYC tree steward and licensed NYC citizen tree pruner. Katherine also maintains a rain garden (bioswale) right here in the city.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133126",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ]
         }
       ],
       "fetchedCount": 16,
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-03T06:27:59.912Z",
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": []
       }
     },
@@ -787,23 +787,6 @@
           "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-02T17:00:00.000Z",
-          "end": "2026-11-02T17:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133113",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -894,21 +877,38 @@
             "CTSAA"
           ],
           "detailsRedacted": true
+        },
+        {
+          "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
+          "source": "student-affairs",
+          "category": "School events",
+          "title": "Fall Splendor Tree Walk",
+          "start": "2026-11-10T17:00:00.000Z",
+          "end": "2026-11-10T17:45:00.000Z",
+          "allDay": false,
+          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTSAA"
+          ],
+          "detailsRedacted": true
         }
       ],
       "fetchedCount": 19,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-01T06:26:59.175Z",
-        "end": "2027-12-04T06:26:59.175Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
-      "updatedAt": "2026-10-30T06:26:59.175Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
         "upcomingCount": 7,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-03T06:27:59.912Z",
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": []
       }
     },
@@ -2286,6 +2286,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3A318f41318430507050aef59d6c2c3e4510292026_10%3A15%3A42_AM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-03T07:14:39.866Z",
+      "event": {
+        "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-02T17:00:00.000Z",
+        "end": "2026-11-02T17:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133113",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3A3b41e55d9328451b47bfc66eb14aea09922026_3%3A13%3A54_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2593,6 +2614,26 @@
         "sourceCategories": {
           "student-affairs": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3A318f41318430507050aef59d6c2c3e4510292026_10%3A15%3A42_AM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-03T07:14:39.866Z",
+      "event": {
+        "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-02T17:00:00.000Z",
+        "end": "2026-11-02T17:30:00.000Z",
+        "allDay": false,
+        "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133113",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133113",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3A3b41e55d9328451b47bfc66eb14aea09922026_3%3A13%3A54_PM%40campusgroups.com": {

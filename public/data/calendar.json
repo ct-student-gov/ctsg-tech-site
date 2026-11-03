@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02T06:49:46.160Z",
+  "generatedAt": "2026-11-03T07:14:39.866Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-07T06:49:46.160Z"
+    "end": "2027-12-08T07:14:39.866Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,21 +12,21 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 16,
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
-        "previousUpcomingCount": 6,
+        "previousUpcomingCount": 5,
         "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 14
+      "archivedCount": 15
     },
     {
       "id": "inclusion-belonging",
@@ -34,11 +34,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 5,
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -56,11 +56,11 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -93,8 +93,8 @@
         "failedCount": 4,
         "issues": [
           {
-            "url": "https://tech.cornell.edu/events/community-conversation-with-cornell-tech-eden-shaveet/",
-            "message": "Cornell Tech event has no verified full date"
+            "url": "https://tech.cornell.edu/events/fda-healthcare-regulatory-considerations-for-startups/",
+            "message": "Cornell Tech organizer URL is outside supported public sources"
           },
           {
             "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
@@ -111,10 +111,10 @@
         ]
       },
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -136,17 +136,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
         "upcomingCount": 7,
         "previousUpcomingCount": 7,
-        "comparedThrough": "2027-12-05T06:17:42.340Z",
+        "comparedThrough": "2027-12-07T06:49:46.160Z",
         "warnings": []
       },
       "state": "current",
@@ -157,11 +157,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -178,11 +178,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -200,11 +200,11 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -221,11 +221,11 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -244,20 +244,20 @@
       "fetchedCount": 19,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
         "upcomingCount": 7,
-        "previousUpcomingCount": 7,
+        "previousUpcomingCount": 6,
         "comparedThrough": "2027-12-04T06:26:59.175Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 14
+      "archivedCount": 15
     },
     {
       "id": "career-management-students",
@@ -266,10 +266,10 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-05T07:14:39.866Z",
+        "end": "2027-12-08T07:14:39.866Z"
       },
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-03T07:14:39.866Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1581,6 +1581,29 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
+      "source": "student-affairs",
+      "category": "School events",
+      "title": "Fall Splendor Tree Walk",
+      "start": "2026-11-10T17:00:00.000Z",
+      "end": "2026-11-10T17:45:00.000Z",
+      "allDay": false,
+      "description": "Join the Cornell Tech community for a Fall Splendor Tree Walk!\nTuesday 11/10, 12-12:45 PM, meet near Bloomberg Security Desk\nOpen to all – students, staff and faculty\n\nYou don’t have to leave NYC to see beautiful leaves and colors. Come take a break from the hustle bustle, mindfully tuning into our senses as we learn to identify and appreciate the beautiful trees on and around campus.\n\nOur tour guide, Katherine Patton, is a horticulturist, volunteer at Brooklyn Botanic Garden, urban gardener, NYC tree steward and licensed NYC citizen tree pruner. Katherine also maintains a rain garden (bioswale) right here in the city.\n\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133126",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTSAA"
+      ],
+      "detailsRedacted": false,
+      "sourceIds": [
+        "student-affairs"
+      ],
+      "sourceCategories": {
+        "student-affairs": "School events"
+      }
     },
     {
       "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",

@@ -22,7 +22,7 @@ Calendar times use New York time. All-day records preserve exclusive end dates. 
 
 CampusGroups imports exclude cancellations, postponements, private audiences, and clearly prospective-only events. Audience labels describe eligibility; the registration page determines whether a student can attend. Clubs use the explicit Notion approval path. Public and student exports share stable department/UID identities. Matching recognized registration/event URLs and start times merge records across sources; titles alone do not merge events. Merged events remain available under every contributing source filter.
 
-Cornell Tech's paginated listing omits years. Its importer verifies full dates from official Cornell or supported organizer metadata rather than guessing a year. An event with an unverifiable date is withheld with a warning; a broken listing stops that source import. Registrar and Tech HTML changes may require parser maintenance.
+Cornell Tech's paginated listing omits years. Its importer verifies full dates from official Cornell or supported organizer metadata rather than guessing a year. Supported organizer metadata includes Eventbrite Event JSON-LD and Cornell Zoom registration dates with an explicit New York timezone. An exact-URL date confirmed by the site maintainer may be recorded in `CONFIRMED_DATES`, with its confirmation date and evidence retained in `docs/open-work.md`; the live listing must still match. An event with an unverifiable date is withheld with a warning; a broken listing stops that source import. Registrar and Tech HTML changes may require parser maintenance.
 
 ## Notion event editing
 

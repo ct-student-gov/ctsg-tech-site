@@ -6,6 +6,11 @@ const API_URL = "https://tech.cornell.edu/wp-json/crn/filter/events";
 const PAGE_SIZE = 100;
 const MAX_PAGES = 10;
 const MAX_DETAILS = 100;
+// Confirmed by the site maintainer on 2026-11-03; this one event's official
+// page omits its year. Keep the full date, and still check the live listing.
+const CONFIRMED_DATES = new Map([
+  ["https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/", "2026-11-18"],
+]);
 const attr = (node, name) => node.attrs?.find(a => a.name === name)?.value || "";
 const hasClass = (node, name) => attr(node, "class").split(/\s+/).includes(name);
 const text = node => node.nodeName === "#text" ? node.value : (node.childNodes || []).map(text).join(node.tagName === "p" ? " " : "");
@@ -22,7 +27,7 @@ const tags = (root, group) => [...new Set(find(root, node => attr(node, "data-gr
 function officialUrl(value, base = TECH_EVENTS_URL, detail = false) {
   const url = new URL(value, base);
   if (url.protocol !== "https:" || url.username || url.password || url.port
-    || !(url.hostname === "cornell.edu" || url.hostname.endsWith(".cornell.edu") || ["gomry.com", "www.gomry.com"].includes(url.hostname))) {
+    || !(url.hostname === "cornell.edu" || url.hostname.endsWith(".cornell.edu") || ["gomry.com", "www.gomry.com", "cornell.zoom.us", "www.eventbrite.com"].includes(url.hostname))) {
     throw new Error("Cornell Tech organizer URL is outside supported public sources");
   }
   if (detail && (url.origin !== "https://tech.cornell.edu" || !/^\/events\/[^/]+\/$/.test(url.pathname))) throw new Error("Cornell Tech event link changed");
@@ -74,6 +79,10 @@ export function techEventEligible(event) {
   const audiences = event.audienceTags || [];
   const currentStudents = audiences.some(tag => !/prospective|admitted|high school/i.test(tag) && /student|\bphds?\b|doctoral|\bmba\b|\bm\.?eng\b|\bll\.?m\b/i.test(tag));
   if (!currentStudents && (event.eventTypes || []).some(tag => /admissions/i.test(tag))) return false;
+  // Some admissions open houses lack the taxonomy used by the listing filter.
+  if (!currentStudents && /\bopen house\b/i.test(event.title || "")
+    && /admissions staff/i.test(event.description || "")
+    && /master[’']?s programs/i.test(event.description || "")) return false;
   if (audiences.length && !currentStudents && !audiences.some(tag => /^(?:public|everyone|all|cornell tech community|roosevelt island community)$/i.test(tag))) return false;
   return true;
 }
@@ -123,6 +132,19 @@ function sourceDates(html) {
   return starts.length ? { start: starts[0], end: null } : null;
 }
 
+function organizerDates(html, url) {
+  const structured = sourceDates(html);
+  if (structured) return structured;
+  // Zoom publishes registration dates in its page configuration, not JSON-LD.
+  // Only Cornell's account and an explicit New York timezone are supported.
+  if (new URL(url).hostname !== "cornell.zoom.us") return null;
+  const times = [...html.matchAll(/^\s*meetingTime:\s*'([^'\n]+)',?\s*$/gm)];
+  const zones = [...html.matchAll(/^\s*timezoneId:\s*"([^"]+)",?\s*$/gm)];
+  if (times.length !== 1 || zones.length !== 1 || zones[0][1] !== ZONE) return null;
+  const start = displayedDate(times[0][1]);
+  return start && start.length > 10 ? { start, end: null } : null;
+}
+
 const localParts = value => Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: ZONE, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23", weekday: "short" }).formatToParts(new Date(value)).map(part => [part.type, part.value]));
 
 export function parseTechEventDetail(html, listing, organizerHtml = "") {
@@ -142,9 +164,11 @@ export function parseTechEventDetail(html, listing, organizerHtml = "") {
   const sidebar = find(root, node => hasClass(node, "event-details-sidebar__item"));
   const field = name => sidebar.find(node => clean(one(node, "event-details-sidebar__item-title") || { childNodes: [] }) === name);
   const when = field("When");
-  const dates = sourceDates(html) || (when && displayedDate(clean(when)) ? { start: displayedDate(clean(when)), end: null } : null) || (organizerHtml && sourceDates(organizerHtml));
   const links = find(root, node => node.tagName === "a" && hasClass(node, "event-details-sidebar__item-button"));
   const organizerUrl = links.length ? attr(links[0], "href") : "";
+  const dates = sourceDates(html) || (when && displayedDate(clean(when)) ? { start: displayedDate(clean(when)), end: null } : null)
+    || (organizerHtml && organizerDates(organizerHtml, organizerUrl))
+    || (CONFIRMED_DATES.has(listing.url) ? { start: CONFIRMED_DATES.get(listing.url), end: null } : null);
   if (!dates) return { organizerUrl };
   if (dates.cancelled) return { excluded: true };
   let { start, end } = dates;

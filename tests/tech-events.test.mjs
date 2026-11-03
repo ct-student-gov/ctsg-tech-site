@@ -149,3 +149,37 @@ test("keeps date-only events as all-day and does not invent end times", () => {
   assert.equal(allDay.end, "2026-10-09");
   assert.equal(allDay.allDay, true);
 });
+
+test("resolves the November coverage omissions without guessing years or hiding failures", async () => {
+  const slugs = ["fda-healthcare-regulatory-considerations-for-startups", "weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship", "cornell-tech-open-house", "the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing"];
+  const records = slugs.map((slug, i) => ({
+    url: `https://tech.cornell.edu/events/${slug}/`, title: ["FDA", "Dean's Symposium", "Cornell Tech Open House", "Architecture"][i],
+    monthDay: ["11/10", "11/11", "11/13", "11/18"][i], weekday: ["Tue", "Wed", "Fri", "Wed"][i],
+    hours: ["12:00 pm - 1:00 pm", "12:00 pm - 5:30 am", "3:30 pm - 6:00 pm", "10:00 am - 11:00 am"][i], audienceTags: [], eventTypes: [],
+  }));
+  const data = { count: 4, total: 4, totalPages: 1, html: records.map(r => `<div class="event-filter-item"><a class="event-filter-item__title" href="${r.url}">${r.title}</a><span class="event-filter-item__day">${r.weekday}</span><span class="event-filter-item__month">${r.monthDay}</span><span class="event-filter-item__open-close-hour">${r.hours}</span></div>`).join("") };
+  const overrides = new Map(records.map((r, i) => [r.url, fixture(`tech-events-${["fda", "deans", "openhouse", "architecture"][i]}.html`)]));
+  const zoom = "https://cornell.zoom.us/meeting/register/ZeiPYaEHQeax8PxcHDoUyQ";
+  overrides.set(zoom, fixture("tech-events-zoom-date.html"));
+  overrides.set("https://www.eventbrite.com/e/tenth-annual-deans-symposium-on-innovation-and-entrepreneurship-tickets-2002583732853?aff=oddtdtcreator", fixture("tech-events-eventbrite-date.html"));
+  const fetcher = fakeFetch(overrides);
+  const run = () => loadTechEvents((url, opts) => new URL(url).pathname === "/wp-json/crn/filter/events" ? Promise.resolve(new Response(JSON.stringify(data))) : fetcher(url, opts), new Date("2026-11-03T12:00:00Z"));
+  const result = await run();
+  assert.deepEqual(result.diagnostics.issues, []);
+  assert.equal(result.excludedCount, 1);
+  assert.deepEqual(result.events.map(e => [e.start, e.end]), [
+    ["2026-11-10T17:00:00.000Z", "2026-11-10T18:00:00.000Z"],
+    ["2026-11-11T17:00:00.000Z", "2026-11-11T22:30:00.000Z"],
+    ["2026-11-18T15:00:00.000Z", "2026-11-18T16:00:00.000Z"],
+  ]);
+  const architecture = overrides.get(records[3].url);
+  assert.throws(() => parseTechEventDetail(architecture, { ...records[3], monthDay: "11/19" }), /dates disagree/);
+  assert.equal(parseTechEventDetail(architecture, { ...records[3], url: "https://tech.cornell.edu/events/another-colloquium/" }).event, undefined);
+  for (const invalid of [fixture("tech-events-zoom-date.html").replace("America/New_York", "America/Los_Angeles"), fixture("tech-events-zoom-date.html").replaceAll("2026", "2032"), new Response("", { status: 302, headers: { Location: "https://other.zoom.us/meeting/register/example" } })]) {
+    overrides.set(zoom, invalid);
+    const failed = await run();
+    assert.equal(failed.failedCount, 1);
+    assert.equal(failed.warnings[0].code, "unverified-events");
+  }
+  assert.equal(techEventEligible({ title: "Research Open House", description: "Explore our labs and meet current students." }), true);
+});

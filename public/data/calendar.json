@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-05T18:47:44.908Z",
+  "generatedAt": "2026-11-05T18:48:24.433Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-10T18:47:44.908Z"
+    "end": "2027-12-10T18:48:24.433Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-09T06:58:29.533Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -38,7 +38,7 @@
         "end": "2027-12-02T06:17:31.150Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-07T07:24:26.303Z",
         "end": "2027-12-10T07:24:26.303Z"
       },
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-07T18:47:44.908Z",
-        "end": "2027-12-10T18:47:44.908Z"
+        "start": "2026-08-07T18:48:24.433Z",
+        "end": "2027-12-10T18:48:24.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
         "upcomingCount": 8,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-10T07:24:26.303Z",
+        "previousUpcomingCount": 8,
+        "comparedThrough": "2027-12-10T18:47:44.908Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-07T18:47:44.908Z",
-        "end": "2027-12-10T18:47:44.908Z"
+        "start": "2026-08-07T18:48:24.433Z",
+        "end": "2027-12-10T18:48:24.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-07T18:47:44.908Z",
-        "end": "2027-12-10T18:47:44.908Z"
+        "start": "2026-08-07T18:48:24.433Z",
+        "end": "2027-12-10T18:48:24.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -165,7 +165,7 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 0
+      "archivedCount": 1
     },
     {
       "id": "academic",
@@ -177,7 +177,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -198,7 +198,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -220,7 +220,7 @@
         "start": "2026-08-06T06:58:29.533Z",
         "end": "2027-12-09T06:58:29.533Z"
       },
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 9,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-05T18:48:24.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1430,6 +1430,19 @@
       "description": "This will be a recurring weekly meeting on Thursdays 6-7 for our club.",
       "location": "Campus",
       "organizer": "",
+      "url": ""
+    },
+    {
+      "id": "notion:3f40b1bd-6791-804d-bfba-d80ecab5361f",
+      "source": "ctsg",
+      "category": "CTSG events",
+      "title": "Cornelloween",
+      "start": "2026-10-30",
+      "end": "2026-10-31",
+      "allDay": true,
+      "description": "",
+      "location": "",
+      "organizer": "CTSG",
       "url": ""
     },
     {

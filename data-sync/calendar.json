@@ -2253,6 +2253,23 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:ctsg:notion%3A3f40b1bd-6791-804d-bfba-d80ecab5361f": {
+      "source": "ctsg",
+      "archivedAt": "2026-11-05T18:48:24.433Z",
+      "event": {
+        "id": "notion:3f40b1bd-6791-804d-bfba-d80ecab5361f",
+        "source": "ctsg",
+        "category": "CTSG events",
+        "title": "Cornelloween",
+        "start": "2026-10-30",
+        "end": "2026-10-31",
+        "allDay": true,
+        "description": "",
+        "location": "",
+        "organizer": "CTSG",
+        "url": ""
+      }
+    },
     "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A32a1b88fa74aa9725951a21c49a4eec69292026_12%3A32%3A21_PM%40campusgroups.com": {
       "source": "inclusion-belonging",
       "archivedAt": "2026-10-15T19:46:33.210Z",
@@ -3143,8 +3160,10 @@
       "versions": {}
     },
     "ctsg": {
-      "cursor": "2026-10-09T15:14:00.000Z",
-      "versions": {}
+      "cursor": "2026-11-05T18:48:00.000Z",
+      "versions": {
+        "3f40b1bd-6791-804d-bfba-d80ecab5361f": "2026-11-05T18:48:00.000Z"
+      }
     }
   }
 }

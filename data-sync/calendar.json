@@ -560,20 +560,46 @@
           "location": "Tata 131",
           "organizer": "",
           "url": "https://cglink.me/2hj/r2133121"
+        },
+        {
+          "id": "notion:40e0b1bd-6791-8115-af04-d672fce1a742",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "SASA: Bollywood Movie Night",
+          "start": "2026-11-19T23:00:00.000Z",
+          "end": "2026-11-20T04:00:00.000Z",
+          "allDay": false,
+          "description": "Join the South Asian Student Association (SASA) for Bollywood Movie Night on November 19! Take a break from coursework and enjoy *Jab We Met*, a beloved Bollywood romantic comedy, with popcorn, drinks, and fellow Cornell Tech students. Whether you’re a longtime Bollywood fan or watching your first Hindi film, everyone is welcome to relax, meet new people, and celebrate South Asian cinema.",
+          "location": "Tata 131",
+          "organizer": "",
+          "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
+        },
+        {
+          "id": "notion:40e0b1bd-6791-81e7-bd73-e29746981314",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Regular Badminton Match",
+          "start": "2026-11-08T18:00:00.000Z",
+          "end": "2026-11-08T21:00:00.000Z",
+          "allDay": false,
+          "description": "We are planning to purchase rackets and shuttles for the students who don't have it so that we can have more participation. It's a club request as well.",
+          "location": "https://maps.app.goo.gl/kG83HcUKAt3smFDHA?g_st=ac",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-07T07:24:26.303Z",
-        "end": "2027-12-10T07:24:26.303Z"
+        "start": "2026-08-07T18:47:44.908Z",
+        "end": "2027-12-10T18:47:44.908Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T07:24:26.303Z",
+      "updatedAt": "2026-11-05T18:47:44.908Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-07T06:49:46.160Z",
+        "comparedThrough": "2027-12-10T07:24:26.303Z",
         "warnings": []
       }
     },
@@ -3093,7 +3119,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-05T00:25:00.000Z",
+      "cursor": "2026-11-05T18:47:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3107,7 +3133,9 @@
         "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z",
         "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z",
         "4070b1bd-6791-8143-8dd0-fb4b86156af6": "2026-10-28T06:27:00.000Z",
-        "4080b1bd-6791-816a-b26d-fb5d8a0bd528": "2026-10-30T15:37:00.000Z"
+        "4080b1bd-6791-816a-b26d-fb5d8a0bd528": "2026-10-30T15:37:00.000Z",
+        "40e0b1bd-6791-8115-af04-d672fce1a742": "2026-11-05T18:47:00.000Z",
+        "40e0b1bd-6791-81e7-bd73-e29746981314": "2026-11-05T18:47:00.000Z"
       }
     },
     "community": {

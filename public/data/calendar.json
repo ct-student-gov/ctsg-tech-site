@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-04T06:58:29.533Z",
+  "generatedAt": "2026-11-05T00:26:09.350Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-09T06:58:29.533Z"
+    "end": "2027-12-10T00:26:09.350Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-09T06:58:29.533Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 5,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-07-30T06:17:31.150Z",
+        "end": "2027-12-02T06:17:31.150Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-20T04:59:28.675Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -92,7 +92,7 @@
         "start": "2026-08-06T06:58:29.533Z",
         "end": "2027-12-09T06:58:29.533Z"
       },
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -109,11 +109,11 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-07T00:26:09.350Z",
+        "end": "2027-12-10T00:26:09.350Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -123,18 +123,18 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 7
+      "archivedCount": 6
     },
     {
       "id": "community",
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-07T00:26:09.350Z",
+        "end": "2027-12-10T00:26:09.350Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-07T00:26:09.350Z",
+        "end": "2027-12-10T00:26:09.350Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-07-25T05:22:35.938Z",
+        "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
         "upcomingCount": 29,
         "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "comparedThrough": "2027-11-26T05:21:47.914Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-07-19T04:59:35.734Z",
+        "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -220,7 +220,7 @@
         "start": "2026-08-06T06:58:29.533Z",
         "end": "2027-12-09T06:58:29.533Z"
       },
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 9,
@@ -239,16 +239,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-07-30T06:17:31.150Z",
+        "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T00:26:09.350Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "comparedThrough": "2027-11-29T05:18:35.041Z",
         "warnings": []
       },
       "state": "current",
@@ -1444,19 +1444,6 @@
       "location": "River Room, House at the Cornell tech",
       "organizer": "",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
-    },
-    {
-      "id": "notion:4000b1bd-6791-81bf-ae40-e26b30f8aeb0",
-      "source": "clubs",
-      "category": "Club events",
-      "title": "Vibe Coding Hours",
-      "start": "2026-11-01T17:00:00.000Z",
-      "end": "2026-11-01T20:00:00.000Z",
-      "allDay": false,
-      "description": "This is for our bi weekly vibe coding hours, where we meet and code together on projects voted on by members of the club!",
-      "location": "Cornell Tech",
-      "organizer": "",
-      "url": ""
     },
     {
       "id": "student-affairs:318f41318430507050aef59d6c2c3e4510292026_10:15:42_AM@campusgroups.com",

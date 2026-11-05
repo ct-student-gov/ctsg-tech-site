@@ -484,19 +484,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4020b1bd-6791-812d-9092-fe5524544dce",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
-          "start": "2026-10-23T04:00:00.000Z",
-          "end": "2026-11-05T05:00:00.000Z",
-          "allDay": false,
-          "description": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
-          "location": "Cornell Tech",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4020b1bd-6791-8179-9815-e56ed5170565",
           "source": "clubs",
           "category": "Club events",
@@ -576,17 +563,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-04T06:49:46.160Z",
-        "end": "2027-12-07T06:49:46.160Z"
+        "start": "2026-08-07T07:24:26.303Z",
+        "end": "2027-12-10T07:24:26.303Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-02T06:49:46.160Z",
+      "updatedAt": "2026-11-05T07:24:26.303Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-12-05T06:17:42.340Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-07T06:49:46.160Z",
         "warnings": []
       }
     },
@@ -1075,29 +1062,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 53,
-      "excludedCount": 49,
+      "fetchedCount": 54,
+      "excludedCount": 50,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 53,
-        "excludedCount": 49,
+        "fetchedCount": 54,
+        "excludedCount": 50,
         "importedCount": 4,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-07T07:24:26.303Z",
+        "end": "2027-12-10T07:24:26.303Z"
       },
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-05T07:24:26.303Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-08T16:43:52.634Z",
+        "comparedThrough": "2027-12-09T06:58:29.533Z",
         "warnings": []
       }
     }
@@ -2204,6 +2191,23 @@
         "location": "River Room, House at the Cornell tech",
         "organizer": "",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSc4CunXh6bo1m2zNSl8U4RMtcD33L0SPNxJWRkbU9WwCEsWfA/viewform"
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4020b1bd-6791-812d-9092-fe5524544dce": {
+      "source": "clubs",
+      "archivedAt": "2026-11-05T07:24:26.303Z",
+      "event": {
+        "id": "notion:4020b1bd-6791-812d-9092-fe5524544dce",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
+        "start": "2026-10-23T04:00:00.000Z",
+        "end": "2026-11-05T05:00:00.000Z",
+        "allDay": false,
+        "description": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
+        "location": "Cornell Tech",
+        "organizer": "",
+        "url": ""
       }
     },
     "calendar-archive-v1:clubs:notion%3A4050b1bd-6791-8164-8491-fbb575ec5469": {

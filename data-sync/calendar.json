@@ -510,19 +510,6 @@
           "url": ""
         },
         {
-          "id": "notion:4020b1bd-6791-81db-b4d7-c1add0e8451c",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Lonche Latino: Club Mixer",
-          "start": "2026-11-05T23:00:00.000Z",
-          "end": "2026-11-06T01:00:00.000Z",
-          "allDay": false,
-          "description": "Join the Latin American Association for our first event, a casual lonche/merienda mixer! We’ll share snacks from across Latin America, get to know each other through a few light activities, and kick off the club as a community.",
-          "location": "The House Rooftop",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
           "source": "clubs",
           "category": "Club events",
@@ -589,17 +576,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-07T18:47:44.908Z",
-        "end": "2027-12-10T18:47:44.908Z"
+        "start": "2026-08-08T07:24:19.062Z",
+        "end": "2027-12-11T07:24:19.062Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-05T18:47:44.908Z",
+      "updatedAt": "2026-11-06T07:24:19.062Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-10T07:24:26.303Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-10T18:47:44.908Z",
         "warnings": []
       }
     },
@@ -640,6 +627,38 @@
     "inclusion-belonging": {
       "events": [
         {
+          "id": "inclusion-belonging:52b6b8f3abb844c7c10f2908ee1d125c1152026_10:22:04_AM@campusgroups.com",
+          "source": "inclusion-belonging",
+          "category": "School events",
+          "title": "Connect & Converse",
+          "start": "2026-11-09T15:00:00.000Z",
+          "end": "2026-11-09T17:00:00.000Z",
+          "allDay": false,
+          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133134",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133134",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTDEI"
+          ]
+        },
+        {
+          "id": "inclusion-belonging:8e40c87d656b0d651e9942269c1f7b8e1152026_10:34:57_AM@campusgroups.com",
+          "source": "inclusion-belonging",
+          "category": "School events",
+          "title": "Connect & Converse",
+          "start": "2026-11-23T15:00:00.000Z",
+          "end": "2026-11-23T17:00:00.000Z",
+          "allDay": false,
+          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133136",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133136",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTDEI"
+          ]
+        },
+        {
           "id": "inclusion-belonging:d4ab44fa39f746635b92fe0f854b29c310272026_12:29:47_PM@campusgroups.com",
           "source": "inclusion-belonging",
           "category": "School events",
@@ -654,21 +673,37 @@
           "departmentAcronyms": [
             "CTDEI"
           ]
+        },
+        {
+          "id": "inclusion-belonging:db0a46a3544dc9cfba8857f2728d9b451152026_10:33:51_AM@campusgroups.com",
+          "source": "inclusion-belonging",
+          "category": "School events",
+          "title": "Connect & Converse",
+          "start": "2026-11-16T15:00:00.000Z",
+          "end": "2026-11-16T17:00:00.000Z",
+          "allDay": false,
+          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133135",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133135",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTDEI"
+          ]
         }
       ],
-      "fetchedCount": 5,
+      "fetchedCount": 8,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-08-08T07:24:19.062Z",
+        "end": "2027-12-11T07:24:19.062Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-28T06:17:31.150Z",
+      "updatedAt": "2026-11-06T07:24:19.062Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-20T04:59:28.675Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-02T06:17:31.150Z",
         "warnings": []
       }
     },
@@ -1088,29 +1123,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 54,
-      "excludedCount": 50,
+      "fetchedCount": 52,
+      "excludedCount": 48,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 54,
-        "excludedCount": 50,
+        "fetchedCount": 52,
+        "excludedCount": 48,
         "importedCount": 4,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-07T07:24:26.303Z",
-        "end": "2027-12-10T07:24:26.303Z"
+        "start": "2026-08-08T07:24:19.062Z",
+        "end": "2027-12-11T07:24:19.062Z"
       },
-      "updatedAt": "2026-11-05T07:24:26.303Z",
+      "updatedAt": "2026-11-06T07:24:19.062Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-09T06:58:29.533Z",
+        "comparedThrough": "2027-12-10T07:24:26.303Z",
         "warnings": []
       }
     }
@@ -2236,6 +2271,23 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4020b1bd-6791-81db-b4d7-c1add0e8451c": {
+      "source": "clubs",
+      "archivedAt": "2026-11-06T07:24:19.062Z",
+      "event": {
+        "id": "notion:4020b1bd-6791-81db-b4d7-c1add0e8451c",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Lonche Latino: Club Mixer",
+        "start": "2026-11-05T23:00:00.000Z",
+        "end": "2026-11-06T01:00:00.000Z",
+        "allDay": false,
+        "description": "Join the Latin American Association for our first event, a casual lonche/merienda mixer! We’ll share snacks from across Latin America, get to know each other through a few light activities, and kick off the club as a community.",
+        "location": "The House Rooftop",
+        "organizer": "",
+        "url": ""
+      }
+    },
     "calendar-archive-v1:clubs:notion%3A4050b1bd-6791-8164-8491-fbb575ec5469": {
       "source": "clubs",
       "archivedAt": "2026-10-30T06:26:59.175Z",
@@ -3136,7 +3188,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-05T18:47:00.000Z",
+      "cursor": "2026-11-05T19:40:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3151,7 +3203,7 @@
         "4060b1bd-6791-8181-b79f-ee4278b496b5": "2026-10-28T03:17:00.000Z",
         "4070b1bd-6791-8143-8dd0-fb4b86156af6": "2026-10-28T06:27:00.000Z",
         "4080b1bd-6791-816a-b26d-fb5d8a0bd528": "2026-10-30T15:37:00.000Z",
-        "40e0b1bd-6791-8115-af04-d672fce1a742": "2026-11-05T18:47:00.000Z",
+        "40e0b1bd-6791-8115-af04-d672fce1a742": "2026-11-05T19:40:00.000Z",
         "40e0b1bd-6791-81e7-bd73-e29746981314": "2026-11-05T18:47:00.000Z"
       }
     },

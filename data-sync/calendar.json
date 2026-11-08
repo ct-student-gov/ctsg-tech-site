@@ -523,19 +523,6 @@
           "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
         },
         {
-          "id": "notion:4070b1bd-6791-8143-8dd0-fb4b86156af6",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Grass Volleyball Net",
-          "start": "2026-11-07T05:00:00.000Z",
-          "end": "2026-11-08T05:00:00.000Z",
-          "allDay": false,
-          "description": "We would like to use our funding to purchase a Grass Volleyball Net in order to play at nearby parks in LIC!",
-          "location": "Queensbridge park",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
           "source": "clubs",
           "category": "Club events",
@@ -576,17 +563,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-08T07:24:19.062Z",
-        "end": "2027-12-11T07:24:19.062Z"
+        "start": "2026-08-10T06:42:19.734Z",
+        "end": "2027-12-13T06:42:19.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-06T07:24:19.062Z",
+      "updatedAt": "2026-11-08T06:42:19.734Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-12-10T18:47:44.908Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-11T07:24:19.062Z",
         "warnings": []
       }
     },
@@ -2301,6 +2288,23 @@
         "allDay": false,
         "description": "This will be a recurring weekly meeting on Thursdays 6-7 for our club.",
         "location": "Campus",
+        "organizer": "",
+        "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4070b1bd-6791-8143-8dd0-fb4b86156af6": {
+      "source": "clubs",
+      "archivedAt": "2026-11-08T06:42:19.734Z",
+      "event": {
+        "id": "notion:4070b1bd-6791-8143-8dd0-fb4b86156af6",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Grass Volleyball Net",
+        "start": "2026-11-07T05:00:00.000Z",
+        "end": "2026-11-08T05:00:00.000Z",
+        "allDay": false,
+        "description": "We would like to use our funding to purchase a Grass Volleyball Net in order to play at nearby parks in LIC!",
+        "location": "Queensbridge park",
         "organizer": "",
         "url": ""
       }

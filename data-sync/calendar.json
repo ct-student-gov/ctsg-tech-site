@@ -510,19 +510,6 @@
           "url": ""
         },
         {
-          "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Tech Help @ Cornell Tech",
-          "start": "2026-11-08T19:00:00.000Z",
-          "end": "2026-11-08T21:00:00.000Z",
-          "allDay": false,
-          "description": "Every semester, older adult residents of Roosevelt Island visit the Cornell Tech campus with a range of tech support needs (from sending an email to updating their operating system). In response, dedicated students, staff, and faculty (like you!) spend an afternoon providing personalized, one-on-one support. This event not only enhances older adults’ tech skills but also strengthens the relationship between Cornell Tech and the Roosevelt Island community. You can volunteer for as long (or as little) as you want, knowing every bit of help counts. Enjoy complimentary coffee/tea as you work with us! ",
-          "location": "Tata 141",
-          "organizer": "",
-          "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
-        },
-        {
           "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
           "source": "clubs",
           "category": "Club events",
@@ -547,33 +534,20 @@
           "location": "Tata 131",
           "organizer": "",
           "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
-        },
-        {
-          "id": "notion:40e0b1bd-6791-81e7-bd73-e29746981314",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Regular Badminton Match",
-          "start": "2026-11-08T18:00:00.000Z",
-          "end": "2026-11-08T21:00:00.000Z",
-          "allDay": false,
-          "description": "We are planning to purchase rackets and shuttles for the students who don't have it so that we can have more participation. It's a club request as well.",
-          "location": "https://maps.app.goo.gl/kG83HcUKAt3smFDHA?g_st=ac",
-          "organizer": "",
-          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-10T06:42:19.734Z",
-        "end": "2027-12-13T06:42:19.734Z"
+        "start": "2026-08-10T22:11:04.016Z",
+        "end": "2027-12-13T22:11:04.016Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-08T06:42:19.734Z",
+      "updatedAt": "2026-11-08T22:11:04.016Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-11T07:24:19.062Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-13T06:42:19.734Z",
         "warnings": []
       }
     },
@@ -2292,6 +2266,23 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4060b1bd-6791-8181-b79f-ee4278b496b5": {
+      "source": "clubs",
+      "archivedAt": "2026-11-08T22:11:04.016Z",
+      "event": {
+        "id": "notion:4060b1bd-6791-8181-b79f-ee4278b496b5",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Tech Help @ Cornell Tech",
+        "start": "2026-11-08T19:00:00.000Z",
+        "end": "2026-11-08T21:00:00.000Z",
+        "allDay": false,
+        "description": "Every semester, older adult residents of Roosevelt Island visit the Cornell Tech campus with a range of tech support needs (from sending an email to updating their operating system). In response, dedicated students, staff, and faculty (like you!) spend an afternoon providing personalized, one-on-one support. This event not only enhances older adults’ tech skills but also strengthens the relationship between Cornell Tech and the Roosevelt Island community. You can volunteer for as long (or as little) as you want, knowing every bit of help counts. Enjoy complimentary coffee/tea as you work with us! ",
+        "location": "Tata 141",
+        "organizer": "",
+        "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
+      }
+    },
     "calendar-archive-v1:clubs:notion%3A4070b1bd-6791-8143-8dd0-fb4b86156af6": {
       "source": "clubs",
       "archivedAt": "2026-11-08T06:42:19.734Z",
@@ -2305,6 +2296,23 @@
         "allDay": false,
         "description": "We would like to use our funding to purchase a Grass Volleyball Net in order to play at nearby parks in LIC!",
         "location": "Queensbridge park",
+        "organizer": "",
+        "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A40e0b1bd-6791-81e7-bd73-e29746981314": {
+      "source": "clubs",
+      "archivedAt": "2026-11-08T22:11:04.016Z",
+      "event": {
+        "id": "notion:40e0b1bd-6791-81e7-bd73-e29746981314",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Regular Badminton Match",
+        "start": "2026-11-08T18:00:00.000Z",
+        "end": "2026-11-08T21:00:00.000Z",
+        "allDay": false,
+        "description": "We are planning to purchase rackets and shuttles for the students who don't have it so that we can have more participation. It's a club request as well.",
+        "location": "https://maps.app.goo.gl/kG83HcUKAt3smFDHA?g_st=ac",
         "organizer": "",
         "url": ""
       }
@@ -3192,7 +3200,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-05T19:40:00.000Z",
+      "cursor": "2026-11-08T22:09:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

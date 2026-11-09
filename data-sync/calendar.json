@@ -2354,6 +2354,26 @@
         ]
       }
     },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A52b6b8f3abb844c7c10f2908ee1d125c1152026_10%3A22%3A04_AM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-11-09T17:46:34.428Z",
+      "event": {
+        "id": "inclusion-belonging:52b6b8f3abb844c7c10f2908ee1d125c1152026_10:22:04_AM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Connect & Converse",
+        "start": "2026-11-09T15:00:00.000Z",
+        "end": "2026-11-09T17:00:00.000Z",
+        "allDay": false,
+        "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133134",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133134",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
     "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3A6386e582ea61cd9b57300516fb7672f48262026_10%3A12%3A47_AM%40campusgroups.com": {
       "source": "inclusion-belonging",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -2517,6 +2537,27 @@
         "audienceTags": [
           "JCTMBA'27"
         ],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3A7bb12528c754820827368e52976e069f10292026_10%3A15%3A43_AM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-09T17:46:34.428Z",
+      "event": {
+        "id": "student-affairs:7bb12528c754820827368e52976e069f10292026_10:15:43_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-09T17:00:00.000Z",
+        "end": "2026-11-09T17:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133114",
+        "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"
         ],
@@ -2862,6 +2903,26 @@
         "sourceCategories": {
           "student-affairs": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3A7bb12528c754820827368e52976e069f10292026_10%3A15%3A43_AM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-09T17:46:34.428Z",
+      "event": {
+        "id": "student-affairs:7bb12528c754820827368e52976e069f10292026_10:15:43_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-09T17:00:00.000Z",
+        "end": "2026-11-09T17:30:00.000Z",
+        "allDay": false,
+        "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133114",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133114",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3A816cc9aed162b7486f102563476f8099782026_7%3A26%3A40_PM%40campusgroups.com": {

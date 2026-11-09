@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-09T17:46:34.428Z",
+  "generatedAt": "2026-11-09T22:40:09.432Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-14T17:46:34.428Z"
+    "end": "2027-12-14T22:40:09.432Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-09T06:58:29.533Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 8,
@@ -38,7 +38,7 @@
         "end": "2027-12-11T07:24:19.062Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-08T07:24:19.062Z",
         "end": "2027-12-11T07:24:19.062Z"
       },
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -109,32 +109,32 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-11T17:46:34.428Z",
-        "end": "2027-12-14T17:46:34.428Z"
+        "start": "2026-08-11T22:40:09.432Z",
+        "end": "2027-12-14T22:40:09.432Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 4,
         "comparedThrough": "2027-12-13T22:11:04.016Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 11
+      "archivedCount": 12
     },
     {
       "id": "community",
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-11T17:46:34.428Z",
-        "end": "2027-12-14T17:46:34.428Z"
+        "start": "2026-08-11T22:40:09.432Z",
+        "end": "2027-12-14T22:40:09.432Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-11T17:46:34.428Z",
-        "end": "2027-12-14T17:46:34.428Z"
+        "start": "2026-08-11T22:40:09.432Z",
+        "end": "2027-12-14T22:40:09.432Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -198,7 +198,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -220,7 +220,7 @@
         "start": "2026-08-06T06:58:29.533Z",
         "end": "2027-12-09T06:58:29.533Z"
       },
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 9,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-09T17:46:34.428Z",
+      "updatedAt": "2026-11-09T22:40:09.432Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1534,6 +1534,19 @@
       "url": "https://forms.gle/DrRZJoaBfp9CHaSeA"
     },
     {
+      "id": "notion:4130b1bd-6791-8145-b0ff-f11a548dbd4f",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Board Game Club inventory",
+      "start": "2026-11-09T05:00:00.000Z",
+      "end": "2026-11-09T05:00:00.000Z",
+      "allDay": false,
+      "description": "We would like to purchase board games to support the club, which we will also lend out to partner clubs for highly-anticipated board game nights.",
+      "location": "The House @ Cornell Tech",
+      "organizer": "",
+      "url": ""
+    },
+    {
       "id": "inclusion-belonging:52b6b8f3abb844c7c10f2908ee1d125c1152026_10:22:04_AM@campusgroups.com",
       "source": "inclusion-belonging",
       "category": "School events",
@@ -1876,6 +1889,19 @@
       "location": "Tata 131",
       "organizer": "",
       "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
+    },
+    {
+      "id": "notion:4120b1bd-6791-813c-879a-e022b9123aad",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Indonesian Movie Screening and Q&A with Film Makers in NYC",
+      "start": "2026-11-22T18:00:00.000Z",
+      "end": "2026-11-22T21:00:00.000Z",
+      "allDay": false,
+      "description": "Join IACT, NYU ISA, PERMIAS NYC, and Indonesian Film Forum NYC for an afternoon of Indonesian cinema at Anthology Film Archives. We’ll screen the short film Anak Macan and the feature Empat Musim Pertiwi back to back, followed by a live Q&A with acclaimed Indonesian filmmakers Kamila Andini and Ifa Isfansyah. Open to the public, with discounted tickets for Cornell students. Come explore Indonesian stories and cultural perspectives, and meet the creative minds behind them.",
+      "location": "Anthology Film Archives, 32 Second Avenue, New York, NY 10003 (off campus)",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "inclusion-belonging:8e40c87d656b0d651e9942269c1f7b8e1152026_10:34:57_AM@campusgroups.com",

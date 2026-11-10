@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-10T00:30:55.160Z",
+  "generatedAt": "2026-11-10T22:38:13.322Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-15T00:30:55.160Z"
+    "end": "2027-12-15T22:38:13.322Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,21 +12,21 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-08T07:14:39.866Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-09T06:58:29.533Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 16
+      "archivedCount": 17
     },
     {
       "id": "inclusion-belonging",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 8,
       "window": {
-        "start": "2026-08-08T07:24:19.062Z",
-        "end": "2027-12-11T07:24:19.062Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-11T07:24:19.062Z",
         "warnings": []
       },
       "state": "current",
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -76,50 +76,50 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 52,
-      "excludedCount": 48,
+      "fetchedCount": 51,
+      "excludedCount": 47,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 52,
-        "excludedCount": 48,
+        "fetchedCount": 51,
+        "excludedCount": 47,
         "importedCount": 4,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-08T07:24:19.062Z",
-        "end": "2027-12-11T07:24:19.062Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-10T07:24:26.303Z",
+        "comparedThrough": "2027-12-11T07:24:19.062Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 2
+      "archivedCount": 3
     },
     {
       "id": "clubs",
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-12T00:30:55.160Z",
-        "end": "2027-12-15T00:30:55.160Z"
+        "start": "2026-08-12T22:38:13.322Z",
+        "end": "2027-12-15T22:38:13.322Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
         "upcomingCount": 6,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-14T22:40:09.432Z",
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-15T00:30:55.160Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-12T00:30:55.160Z",
-        "end": "2027-12-15T00:30:55.160Z"
+        "start": "2026-08-12T22:38:13.322Z",
+        "end": "2027-12-15T22:38:13.322Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-12T00:30:55.160Z",
-        "end": "2027-12-15T00:30:55.160Z"
+        "start": "2026-08-12T22:38:13.322Z",
+        "end": "2027-12-15T22:38:13.322Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -198,7 +198,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -217,20 +217,20 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-08T16:43:52.634Z",
+        "comparedThrough": "2027-12-09T06:58:29.533Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 16
+      "archivedCount": 17
     },
     {
       "id": "career-management-students",
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-10T22:38:13.322Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,

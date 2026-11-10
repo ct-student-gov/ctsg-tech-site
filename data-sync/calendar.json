@@ -2774,6 +2774,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Af9d8d7139e3a9df2975392f066ee8e931122026_2%3A32%3A44_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-10T22:38:13.322Z",
+      "event": {
+        "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Fall Splendor Tree Walk",
+        "start": "2026-11-10T17:00:00.000Z",
+        "end": "2026-11-10T17:45:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-10-21T20:55:27.122Z",
@@ -3153,6 +3174,26 @@
         ]
       }
     },
+    "calendar-archive-v1:student-affairs:student-affairs%3Af9d8d7139e3a9df2975392f066ee8e931122026_2%3A32%3A44_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-10T22:38:13.322Z",
+      "event": {
+        "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Fall Splendor Tree Walk",
+        "start": "2026-11-10T17:00:00.000Z",
+        "end": "2026-11-10T17:45:00.000Z",
+        "allDay": false,
+        "description": "Nature RX - Cornell Tech presents…\n\nFall Splendor Tree Walk!\nTuesday 11/10, 12-12:45 PM, meet near Bloomberg Security Desk\nOpen to all – students, staff and faculty\n\nYou don’t have to leave NYC to see beautiful leaves and colors. Come take a break from the hustle bustle, mindfully tuning into our senses as we learn to identify and appreciate the beautiful trees on and around campus.\n\nOur tour guide, Katherine Patton, is a horticulturist, volunteer at Brooklyn Botanic Garden, urban gardener, NYC tree steward and licensed NYC citizen tree pruner. Katherine also maintains a rain garden (bioswale) right here in the city.\n\nCosponsored by Cornell Tech Student and Academic Affairs and Cornell Tech Staff Engagement and Belonging Committee\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133126",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
     "calendar-archive-v1:tech-academic:tech-academic%3Afall%3A2026%3AMaker%20Day%3A1": {
       "source": "tech-academic",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -3199,6 +3240,23 @@
         "description": "Pre-enrollment for new admits (opens at 9:00am on 7/22 and closes at 4:00pm on 7/23)",
         "location": "",
         "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+      }
+    },
+    "calendar-archive-v1:tech-events:tech-events%3Afda-healthcare-regulatory-considerations-for-startups": {
+      "source": "tech-events",
+      "archivedAt": "2026-11-10T22:38:13.322Z",
+      "event": {
+        "id": "tech-events:fda-healthcare-regulatory-considerations-for-startups",
+        "source": "tech-events",
+        "category": "Cornell Tech events",
+        "title": "FDA & Healthcare Regulatory Considerations for Startups",
+        "start": "2026-11-10T17:00:00.000Z",
+        "end": "2026-11-10T18:00:00.000Z",
+        "allDay": false,
+        "description": "Tuesday, November 10, 12 p.m. ET This virtual Lab to Impact session from the Center for Technology Licensing (CTL) gives an overview of how FDA regulates medical devices, including software and AI-enabled products, and pharmaceuticals, as well as federal healthcare regulatory considerations for certain health tech and digital health business models.",
+        "location": "",
+        "url": "https://tech.cornell.edu/events/fda-healthcare-regulatory-considerations-for-startups/",
+        "audienceTags": []
       }
     },
     "calendar-archive-v1:tech-events:tech-events%3Afield-conditions-incubating-media-arts-in-nyc": {
@@ -3255,7 +3313,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-10T00:34:00.000Z",
+      "cursor": "2026-11-10T22:36:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

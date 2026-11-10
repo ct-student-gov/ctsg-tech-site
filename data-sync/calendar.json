@@ -547,20 +547,33 @@
           "location": "Anthology Film Archives, 32 Second Avenue, New York, NY 10003 (off campus)",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4130b1bd-6791-8131-a8be-f505c94e6320",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Cornell Fintech Club Meeting & Speaker",
+          "start": "2026-11-12T00:00:00.000Z",
+          "end": "2026-11-12T01:00:00.000Z",
+          "allDay": false,
+          "description": "A conversation with Cyrus Ghazanfar, Cornell Tech alumnus, entrepreneur, and Co-Founder & CTO of Beagle, a fintech startup helping millions of Americans reconnect with their retirement savings.\n\nDuring his time at Cornell Tech, Cyrus co-founded Pilota, an award-winning Startup Studio venture that used AI to predict flight disruptions and was later acquired.\n\nCyrus will share his journey from Cornell Tech to building and scaling startups, his experience in the fintech industry, and advice for students interested in entrepreneurship and technology.\n",
+          "location": "Bloomberg Classroom",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-11T22:40:09.432Z",
-        "end": "2027-12-14T22:40:09.432Z"
+        "start": "2026-08-12T00:30:55.160Z",
+        "end": "2027-12-15T00:30:55.160Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-09T22:40:09.432Z",
+      "updatedAt": "2026-11-10T00:30:55.160Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-13T22:11:04.016Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-14T22:40:09.432Z",
         "warnings": []
       }
     },
@@ -3291,7 +3304,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-09T23:54:00.000Z",
+      "cursor": "2026-11-10T00:30:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3309,7 +3322,8 @@
         "40e0b1bd-6791-8115-af04-d672fce1a742": "2026-11-05T19:40:00.000Z",
         "40e0b1bd-6791-81e7-bd73-e29746981314": "2026-11-05T18:47:00.000Z",
         "4130b1bd-6791-8145-b0ff-f11a548dbd4f": "2026-11-09T22:38:00.000Z",
-        "4120b1bd-6791-813c-879a-e022b9123aad": "2026-11-09T22:39:00.000Z"
+        "4120b1bd-6791-813c-879a-e022b9123aad": "2026-11-09T22:39:00.000Z",
+        "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:30:00.000Z"
       }
     },
     "community": {

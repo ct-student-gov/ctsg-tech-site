@@ -614,22 +614,6 @@
     "inclusion-belonging": {
       "events": [
         {
-          "id": "inclusion-belonging:52b6b8f3abb844c7c10f2908ee1d125c1152026_10:22:04_AM@campusgroups.com",
-          "source": "inclusion-belonging",
-          "category": "School events",
-          "title": "Connect & Converse",
-          "start": "2026-11-09T15:00:00.000Z",
-          "end": "2026-11-09T17:00:00.000Z",
-          "allDay": false,
-          "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133134",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133134",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTDEI"
-          ]
-        },
-        {
           "id": "inclusion-belonging:8e40c87d656b0d651e9942269c1f7b8e1152026_10:34:57_AM@campusgroups.com",
           "source": "inclusion-belonging",
           "category": "School events",
@@ -680,17 +664,17 @@
       ],
       "fetchedCount": 8,
       "window": {
-        "start": "2026-08-08T07:24:19.062Z",
-        "end": "2027-12-11T07:24:19.062Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-06T07:24:19.062Z",
+      "updatedAt": "2026-11-10T07:44:29.961Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-11T07:24:19.062Z",
         "warnings": []
       }
     },
@@ -739,22 +723,6 @@
           "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133115",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133115",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
-          "id": "student-affairs:7bb12528c754820827368e52976e069f10292026_10:15:43_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-09T17:00:00.000Z",
-          "end": "2026-11-09T17:30:00.000Z",
-          "allDay": false,
-          "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133114",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133114",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -827,17 +795,17 @@
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-10T07:44:29.961Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-08T07:14:39.866Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-09T06:58:29.533Z",
         "warnings": []
       }
     },
@@ -905,23 +873,6 @@
           "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133000",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:7bb12528c754820827368e52976e069f10292026_10:15:43_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-09T17:00:00.000Z",
-          "end": "2026-11-09T17:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133114",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -1000,16 +951,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-06T06:58:29.533Z",
-        "end": "2027-12-09T06:58:29.533Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
-      "updatedAt": "2026-11-04T06:58:29.533Z",
+      "updatedAt": "2026-11-10T07:44:29.961Z",
       "coverage": {
         "version": 1,
-        "eventCount": 9,
-        "upcomingCount": 9,
+        "eventCount": 8,
+        "upcomingCount": 8,
         "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-08T16:43:52.634Z",
+        "comparedThrough": "2027-12-09T06:58:29.533Z",
         "warnings": []
       }
     },
@@ -1110,29 +1061,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 52,
-      "excludedCount": 48,
+      "fetchedCount": 51,
+      "excludedCount": 47,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 52,
-        "excludedCount": 48,
+        "fetchedCount": 51,
+        "excludedCount": 47,
         "importedCount": 4,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-08T07:24:19.062Z",
-        "end": "2027-12-11T07:24:19.062Z"
+        "start": "2026-08-12T07:44:29.961Z",
+        "end": "2027-12-15T07:44:29.961Z"
       },
-      "updatedAt": "2026-11-06T07:24:19.062Z",
+      "updatedAt": "2026-11-10T07:44:29.961Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
         "upcomingCount": 4,
         "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-10T07:24:26.303Z",
+        "comparedThrough": "2027-12-11T07:24:19.062Z",
         "warnings": []
       }
     }

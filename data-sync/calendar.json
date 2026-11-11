@@ -547,20 +547,33 @@
           "location": "Bloomberg Classroom",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4140b1bd-6791-8192-a173-cdbe3616540a",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "vibe coding hours",
+          "start": "2026-11-15T17:00:00.000Z",
+          "end": "2026-11-15T20:00:00.000Z",
+          "allDay": false,
+          "description": "Our bi weekly vibe coding hours for room 161",
+          "location": "blm 161",
+          "organizer": "",
+          "url": "https://luma.com/2tqkmiri"
         }
       ],
       "window": {
-        "start": "2026-08-13T07:08:23.127Z",
-        "end": "2027-12-16T07:08:23.127Z"
+        "start": "2026-08-13T14:57:05.145Z",
+        "end": "2027-12-16T14:57:05.145Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T07:08:23.127Z",
+      "updatedAt": "2026-11-11T14:57:05.145Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-15T00:30:55.160Z",
+        "comparedThrough": "2027-12-16T07:08:23.127Z",
         "warnings": []
       }
     },
@@ -3287,7 +3300,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-10T22:36:00.000Z",
+      "cursor": "2026-11-11T14:55:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3306,7 +3319,8 @@
         "40e0b1bd-6791-81e7-bd73-e29746981314": "2026-11-05T18:47:00.000Z",
         "4130b1bd-6791-8145-b0ff-f11a548dbd4f": "2026-11-09T22:38:00.000Z",
         "4120b1bd-6791-813c-879a-e022b9123aad": "2026-11-09T22:39:00.000Z",
-        "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:34:00.000Z"
+        "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:34:00.000Z",
+        "4140b1bd-6791-8192-a173-cdbe3616540a": "2026-11-11T14:55:00.000Z"
       }
     },
     "community": {

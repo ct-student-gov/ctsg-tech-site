@@ -510,19 +510,6 @@
           "url": ""
         },
         {
-          "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Fireside chat with Big Tech Engineers: Ryan Farr (Meta SWE), Kanta Garg (AWS Solutions Architect)",
-          "start": "2026-11-11T01:30:00.000Z",
-          "end": "2026-11-11T03:30:00.000Z",
-          "allDay": false,
-          "description": "Fireside Chat with Big Tech Engineers\nJoin Dom Kultury: ML & Poetry for an engaging fireside chat with professionals from Meta and Amazon Web Services (AWS)!\nMeet our guest speakers:\n- Ryan Farr — Software Engineer at Meta\n- Kanta Garg — Solutions Architect at AWS\n- Matthew Dalton — Data Scientist at Meta\nOur speakers will share their career journeys, experiences working at leading technology companies, technical challenges, and insights into software engineering, data science, and cloud computing.\nThe event will feature an informal panel discussion followed by an interactive Q&A, where attendees can ask questions about career development, technical interviews, industry trends, and life in Big Tech.\nWhether you're pursuing a career in technology, exploring different engineering paths, or simply interested in learning from industry professionals, everyone is welcome!",
-          "location": "Tata 131",
-          "organizer": "",
-          "url": "https://cglink.me/2hj/r2133121"
-        },
-        {
           "id": "notion:40e0b1bd-6791-8115-af04-d672fce1a742",
           "source": "clubs",
           "category": "Club events",
@@ -563,17 +550,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-12T00:30:55.160Z",
-        "end": "2027-12-15T00:30:55.160Z"
+        "start": "2026-08-13T07:08:23.127Z",
+        "end": "2027-12-16T07:08:23.127Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T00:30:55.160Z",
+      "updatedAt": "2026-11-11T07:08:23.127Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-14T22:40:09.432Z",
+        "comparedThrough": "2027-12-15T00:30:55.160Z",
         "warnings": []
       }
     },
@@ -630,6 +617,22 @@
           ]
         },
         {
+          "id": "inclusion-belonging:c40758b866774a5d953223aa0d0a524f11102026_3:22:08_PM@campusgroups.com",
+          "source": "inclusion-belonging",
+          "category": "School events",
+          "title": "Affinity & Allies Social",
+          "start": "2026-11-17T23:00:00.000Z",
+          "end": "2026-11-18T01:00:00.000Z",
+          "allDay": false,
+          "description": "This event allows affinity student club leads and their allies to meet, get together, learn about club offerings, and how to create an inclusive environment where every student feels welcome. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133139",
+          "location": "See event page for location",
+          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133139",
+          "audienceTags": [],
+          "departmentAcronyms": [
+            "CTDEI"
+          ]
+        },
+        {
           "id": "inclusion-belonging:d4ab44fa39f746635b92fe0f854b29c310272026_12:29:47_PM@campusgroups.com",
           "source": "inclusion-belonging",
           "category": "School events",
@@ -662,19 +665,19 @@
           ]
         }
       ],
-      "fetchedCount": 8,
+      "fetchedCount": 9,
       "window": {
-        "start": "2026-08-12T07:44:29.961Z",
-        "end": "2027-12-15T07:44:29.961Z"
+        "start": "2026-08-13T07:08:23.127Z",
+        "end": "2027-12-16T07:08:23.127Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T07:44:29.961Z",
+      "updatedAt": "2026-11-11T07:08:23.127Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-11T07:24:19.062Z",
+        "comparedThrough": "2027-12-15T07:44:29.961Z",
         "warnings": []
       }
     },
@@ -775,37 +778,21 @@
           "departmentAcronyms": [
             "CTSAA"
           ]
-        },
-        {
-          "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Fall Splendor Tree Walk",
-          "start": "2026-11-10T17:00:00.000Z",
-          "end": "2026-11-10T17:45:00.000Z",
-          "allDay": false,
-          "description": "Nature RX - Cornell Tech presents…\n\nFall Splendor Tree Walk!\nTuesday 11/10, 12-12:45 PM, meet near Bloomberg Security Desk\nOpen to all – students, staff and faculty\n\nYou don’t have to leave NYC to see beautiful leaves and colors. Come take a break from the hustle bustle, mindfully tuning into our senses as we learn to identify and appreciate the beautiful trees on and around campus.\n\nOur tour guide, Katherine Patton, is a horticulturist, volunteer at Brooklyn Botanic Garden, urban gardener, NYC tree steward and licensed NYC citizen tree pruner. Katherine also maintains a rain garden (bioswale) right here in the city.\n\nCosponsored by Cornell Tech Student and Academic Affairs and Cornell Tech Staff Engagement and Belonging Committee\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133126",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
         }
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-12T07:44:29.961Z",
-        "end": "2027-12-15T07:44:29.961Z"
+        "start": "2026-08-13T07:08:23.127Z",
+        "end": "2027-12-16T07:08:23.127Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-10T07:44:29.961Z",
+      "updatedAt": "2026-11-11T07:08:23.127Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-12-09T06:58:29.533Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-15T07:44:29.961Z",
         "warnings": []
       }
     },
@@ -929,38 +916,21 @@
             "CTSAA"
           ],
           "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:f9d8d7139e3a9df2975392f066ee8e931122026_2:32:44_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Fall Splendor Tree Walk",
-          "start": "2026-11-10T17:00:00.000Z",
-          "end": "2026-11-10T17:45:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133126",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
         }
       ],
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-12T07:44:29.961Z",
-        "end": "2027-12-15T07:44:29.961Z"
+        "start": "2026-08-13T07:08:23.127Z",
+        "end": "2027-12-16T07:08:23.127Z"
       },
-      "updatedAt": "2026-11-10T07:44:29.961Z",
+      "updatedAt": "2026-11-11T07:08:23.127Z",
       "coverage": {
         "version": 1,
-        "eventCount": 8,
-        "upcomingCount": 8,
-        "previousUpcomingCount": 8,
-        "comparedThrough": "2027-12-09T06:58:29.533Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-15T07:44:29.961Z",
         "warnings": []
       }
     },
@@ -1009,19 +979,6 @@
     "tech-events": {
       "events": [
         {
-          "id": "tech-events:fda-healthcare-regulatory-considerations-for-startups",
-          "source": "tech-events",
-          "category": "Cornell Tech events",
-          "title": "FDA & Healthcare Regulatory Considerations for Startups",
-          "start": "2026-11-10T17:00:00.000Z",
-          "end": "2026-11-10T18:00:00.000Z",
-          "allDay": false,
-          "description": "Tuesday, November 10, 12 p.m. ET This virtual Lab to Impact session from the Center for Technology Licensing (CTL) gives an overview of how FDA regulates medical devices, including software and AI-enabled products, and pharmaceuticals, as well as federal healthcare regulatory considerations for certain health tech and digital health business models.",
-          "location": "",
-          "url": "https://tech.cornell.edu/events/fda-healthcare-regulatory-considerations-for-startups/",
-          "audienceTags": []
-        },
-        {
           "id": "tech-events:island-editions-aap-billie-tsien-cynthia-davidson",
           "source": "tech-events",
           "category": "Cornell Tech events",
@@ -1061,29 +1018,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 51,
-      "excludedCount": 47,
+      "fetchedCount": 47,
+      "excludedCount": 44,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 51,
-        "excludedCount": 47,
-        "importedCount": 4,
+        "fetchedCount": 47,
+        "excludedCount": 44,
+        "importedCount": 3,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-12T07:44:29.961Z",
-        "end": "2027-12-15T07:44:29.961Z"
+        "start": "2026-08-13T07:08:23.127Z",
+        "end": "2027-12-16T07:08:23.127Z"
       },
-      "updatedAt": "2026-11-10T07:44:29.961Z",
+      "updatedAt": "2026-11-11T07:08:23.127Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-11T07:24:19.062Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-15T07:44:29.961Z",
         "warnings": []
       }
     }
@@ -2275,6 +2232,23 @@
         "location": "Queensbridge park",
         "organizer": "",
         "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4080b1bd-6791-816a-b26d-fb5d8a0bd528": {
+      "source": "clubs",
+      "archivedAt": "2026-11-11T07:08:23.127Z",
+      "event": {
+        "id": "notion:4080b1bd-6791-816a-b26d-fb5d8a0bd528",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Fireside chat with Big Tech Engineers: Ryan Farr (Meta SWE), Kanta Garg (AWS Solutions Architect)",
+        "start": "2026-11-11T01:30:00.000Z",
+        "end": "2026-11-11T03:30:00.000Z",
+        "allDay": false,
+        "description": "Fireside Chat with Big Tech Engineers\nJoin Dom Kultury: ML & Poetry for an engaging fireside chat with professionals from Meta and Amazon Web Services (AWS)!\nMeet our guest speakers:\n- Ryan Farr — Software Engineer at Meta\n- Kanta Garg — Solutions Architect at AWS\n- Matthew Dalton — Data Scientist at Meta\nOur speakers will share their career journeys, experiences working at leading technology companies, technical challenges, and insights into software engineering, data science, and cloud computing.\nThe event will feature an informal panel discussion followed by an interactive Q&A, where attendees can ask questions about career development, technical interviews, industry trends, and life in Big Tech.\nWhether you're pursuing a career in technology, exploring different engineering paths, or simply interested in learning from industry professionals, everyone is welcome!",
+        "location": "Tata 131",
+        "organizer": "",
+        "url": "https://cglink.me/2hj/r2133121"
       }
     },
     "calendar-archive-v1:clubs:notion%3A40e0b1bd-6791-81e7-bd73-e29746981314": {

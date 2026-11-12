@@ -2440,6 +2440,26 @@
         ]
       }
     },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3Ad4ab44fa39f746635b92fe0f854b29c310272026_12%3A29%3A47_PM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-11-12T18:37:19.034Z",
+      "event": {
+        "id": "inclusion-belonging:d4ab44fa39f746635b92fe0f854b29c310272026_12:29:47_PM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Bagels and Belonging",
+        "start": "2026-11-12T14:30:00.000Z",
+        "end": "2026-11-12T15:30:00.000Z",
+        "allDay": false,
+        "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n\nOpen to master's and PhD students.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133106",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133106",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-10-21T20:55:27.122Z",
@@ -3342,7 +3362,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-12T03:23:00.000Z",
+      "cursor": "2026-11-12T18:37:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

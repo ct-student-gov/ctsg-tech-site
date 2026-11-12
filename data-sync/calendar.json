@@ -547,20 +547,33 @@
           "location": "blm 161",
           "organizer": "",
           "url": "https://luma.com/2tqkmiri"
+        },
+        {
+          "id": "notion:4150b1bd-6791-81ab-91d7-e96bdcc6647e",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "UrbanX November Meetup: Summit Debrief, Field Trip Vote + Games",
+          "start": "2026-11-12T20:30:00.000Z",
+          "end": "2026-11-12T22:00:00.000Z",
+          "allDay": false,
+          "description": "UrbanX's November meetup. We'll debrief the Urban Tech Summit and share takeaways, draft follow-ups to industry contacts, suggest and vote on our next NYC field trip, cover club resources and volunteer roles, and finish with fun games and prizes. Open to all Cornell Tech programs; pizza provided.",
+          "location": "Shared space, Cornell Tech campus, Roosevelt Island (no room reservation needed)",
+          "organizer": "",
+          "url": "https://cglink.me/2hj/r2133140"
         }
       ],
       "window": {
-        "start": "2026-08-14T02:55:12.657Z",
-        "end": "2027-12-17T02:55:12.657Z"
+        "start": "2026-08-14T03:23:49.157Z",
+        "end": "2027-12-17T03:23:49.157Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-12T02:55:12.657Z",
+      "updatedAt": "2026-11-12T03:23:49.157Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-16T14:57:05.145Z",
+        "comparedThrough": "2027-12-17T02:55:12.657Z",
         "warnings": []
       }
     },
@@ -3338,7 +3351,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-12T02:54:00.000Z",
+      "cursor": "2026-11-12T03:23:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3359,7 +3372,8 @@
         "4120b1bd-6791-813c-879a-e022b9123aad": "2026-11-09T22:39:00.000Z",
         "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:34:00.000Z",
         "4140b1bd-6791-8192-a173-cdbe3616540a": "2026-11-11T14:55:00.000Z",
-        "4150b1bd-6791-81a3-aaa7-ea4efa399b2d": "2026-11-12T02:54:00.000Z"
+        "4150b1bd-6791-81a3-aaa7-ea4efa399b2d": "2026-11-12T02:54:00.000Z",
+        "4150b1bd-6791-81ab-91d7-e96bdcc6647e": "2026-11-12T03:23:00.000Z"
       }
     },
     "community": {

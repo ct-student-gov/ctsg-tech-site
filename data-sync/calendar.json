@@ -40,18 +40,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
-          "start": "2026-11-12T04:59:00.000Z",
-          "end": "2026-11-12T04:59:00.000Z",
-          "allDay": false,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Fall 2026: Study days",
           "source": "academic",
           "category": "Academic dates",
@@ -354,17 +342,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-07-25T05:22:35.938Z",
-        "end": "2027-11-27T05:22:35.938Z"
+        "start": "2026-08-14T07:43:16.799Z",
+        "end": "2027-12-17T07:43:16.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-23T05:22:35.938Z",
+      "updatedAt": "2026-11-12T07:43:16.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 29,
-        "upcomingCount": 29,
-        "previousUpcomingCount": 29,
-        "comparedThrough": "2027-11-26T05:21:47.914Z",
+        "eventCount": 28,
+        "upcomingCount": 28,
+        "previousUpcomingCount": 28,
+        "comparedThrough": "2027-11-27T05:22:35.938Z",
         "warnings": []
       }
     },
@@ -1016,44 +1004,31 @@
           "location": "Cornell Tech, Bloomberg 401",
           "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
           "audienceTags": []
-        },
-        {
-          "id": "tech-events:weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship",
-          "source": "tech-events",
-          "category": "Cornell Tech events",
-          "title": "Weill Cornell Medicine Dean’s Symposium on Innovation and Entrepreneurship",
-          "start": "2026-11-11T17:00:00.000Z",
-          "end": "2026-11-11T22:30:00.000Z",
-          "allDay": false,
-          "description": "Join Robert A. Harrington, M.D., the Stephen and Suzanne Weiss Dean of Weill Cornell Medicine, for a fireside chat with John Babich, Ph.D., President and Chief Scientific Officer at Ratio Therapeutics, Inc., and former faculty member of Weill Cornell Medicine. Dr. Babich has over 30 years of experience in radiopharmaceutical sciences and nuclear medicine, spanning academic, clinical, and biotech/pharma settings. Ratio Therapeutics, Inc., a clinical-stage company founded upon Weill Cornell Medicine technology invented by Dr. Babich and colleagues, is developing next-generation radiopharmaceuticals for cancer treatment. It closed a $70 million Series C financing in July 2026, bringing its total capital raised to $240 million. Dean Harrington and Dr. Babich will explore important topics including technology development in academia, balancing the demands of an academic career and launching an innovation, fundraising in the current environment, and spinning out companies. The symposium also features faculty presentations on alternative funding opportunities. Participants will have an opportunity to network with like-minded researchers and innovators at the end.",
-          "location": "",
-          "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
-          "audienceTags": []
         }
       ],
-      "fetchedCount": 47,
-      "excludedCount": 44,
+      "fetchedCount": 44,
+      "excludedCount": 42,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 47,
-        "excludedCount": 44,
-        "importedCount": 3,
+        "fetchedCount": 44,
+        "excludedCount": 42,
+        "importedCount": 2,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-13T07:08:23.127Z",
-        "end": "2027-12-16T07:08:23.127Z"
+        "start": "2026-08-14T07:43:16.799Z",
+        "end": "2027-12-17T07:43:16.799Z"
       },
-      "updatedAt": "2026-11-11T07:08:23.127Z",
+      "updatedAt": "2026-11-12T07:43:16.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-15T07:44:29.961Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-16T07:08:23.127Z",
         "warnings": []
       }
     }

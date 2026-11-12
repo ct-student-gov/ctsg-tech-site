@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-11T14:57:05.145Z",
+  "generatedAt": "2026-11-12T02:55:12.657Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-16T14:57:05.145Z"
+    "end": "2027-12-17T02:55:12.657Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-16T07:08:23.127Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -38,7 +38,7 @@
         "end": "2027-12-16T07:08:23.127Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-13T07:08:23.127Z",
         "end": "2027-12-16T07:08:23.127Z"
       },
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -102,39 +102,39 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 3
+      "archivedCount": 4
     },
     {
       "id": "clubs",
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-13T14:57:05.145Z",
-        "end": "2027-12-16T14:57:05.145Z"
+        "start": "2026-08-14T02:55:12.657Z",
+        "end": "2027-12-17T02:55:12.657Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "comparedThrough": "2027-12-16T14:57:05.145Z",
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 13
+      "archivedCount": 15
     },
     {
       "id": "community",
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-13T14:57:05.145Z",
-        "end": "2027-12-16T14:57:05.145Z"
+        "start": "2026-08-14T02:55:12.657Z",
+        "end": "2027-12-17T02:55:12.657Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-13T14:57:05.145Z",
-        "end": "2027-12-16T14:57:05.145Z"
+        "start": "2026-08-14T02:55:12.657Z",
+        "end": "2027-12-17T02:55:12.657Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-11-27T05:22:35.938Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 29,
@@ -198,7 +198,7 @@
         "end": "2027-11-21T04:59:35.734Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -220,7 +220,7 @@
         "start": "2026-08-13T07:08:23.127Z",
         "end": "2027-12-16T07:08:23.127Z"
       },
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1418,6 +1418,19 @@
       "location": "Cornell Tech ",
       "organizer": "",
       "url": ""
+    },
+    {
+      "id": "notion:4150b1bd-6791-81a3-aaa7-ea4efa399b2d",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "UrbanX Kickoff Meeting",
+      "start": "2026-10-29T21:00:00.000Z",
+      "end": "2026-10-29T22:00:00.000Z",
+      "allDay": false,
+      "description": "Meet the club, hear about our hackathon and big event plans, and help shape this year's events. Open to all Cornell Tech programs, drop-ins welcome! Pizza was provided for attendees.",
+      "location": "Shared space, Cornell Tech campus, Roosevelt Island (no room reservation needed)",
+      "organizer": "",
+      "url": "https://cglink.me/2hj/r2133105"
     },
     {
       "id": "notion:4050b1bd-6791-8164-8491-fbb575ec5469",

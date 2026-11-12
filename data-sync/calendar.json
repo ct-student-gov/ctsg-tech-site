@@ -536,19 +536,6 @@
           "url": ""
         },
         {
-          "id": "notion:4130b1bd-6791-8131-a8be-f505c94e6320",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Cornell Fintech Club Meeting & Speaker",
-          "start": "2026-11-12T00:00:00.000Z",
-          "end": "2026-11-12T01:00:00.000Z",
-          "allDay": false,
-          "description": "A conversation with Cyrus Ghazanfar, Cornell Tech alumnus, entrepreneur, and Co-Founder & CTO of Beagle, a fintech startup helping millions of Americans reconnect with their retirement savings.\n\nDuring his time at Cornell Tech, Cyrus co-founded Pilota, an award-winning Startup Studio venture that used AI to predict flight disruptions and was later acquired.\n\nCyrus will share his journey from Cornell Tech to building and scaling startups, his experience in the fintech industry, and advice for students interested in entrepreneurship and technology.\n",
-          "location": "Bloomberg Classroom",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4140b1bd-6791-8192-a173-cdbe3616540a",
           "source": "clubs",
           "category": "Club events",
@@ -563,17 +550,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-13T14:57:05.145Z",
-        "end": "2027-12-16T14:57:05.145Z"
+        "start": "2026-08-14T02:55:12.657Z",
+        "end": "2027-12-17T02:55:12.657Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T14:57:05.145Z",
+      "updatedAt": "2026-11-12T02:55:12.657Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "comparedThrough": "2027-12-16T14:57:05.145Z",
         "warnings": []
       }
     },
@@ -2281,6 +2268,23 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4130b1bd-6791-8131-a8be-f505c94e6320": {
+      "source": "clubs",
+      "archivedAt": "2026-11-12T02:55:12.657Z",
+      "event": {
+        "id": "notion:4130b1bd-6791-8131-a8be-f505c94e6320",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Cornell Fintech Club Meeting & Speaker",
+        "start": "2026-11-12T00:00:00.000Z",
+        "end": "2026-11-12T01:00:00.000Z",
+        "allDay": false,
+        "description": "A conversation with Cyrus Ghazanfar, Cornell Tech alumnus, entrepreneur, and Co-Founder & CTO of Beagle, a fintech startup helping millions of Americans reconnect with their retirement savings.\n\nDuring his time at Cornell Tech, Cyrus co-founded Pilota, an award-winning Startup Studio venture that used AI to predict flight disruptions and was later acquired.\n\nCyrus will share his journey from Cornell Tech to building and scaling startups, his experience in the fintech industry, and advice for students interested in entrepreneurship and technology.\n",
+        "location": "Bloomberg Classroom",
+        "organizer": "",
+        "url": ""
+      }
+    },
     "calendar-archive-v1:clubs:notion%3A4130b1bd-6791-8145-b0ff-f11a548dbd4f": {
       "source": "clubs",
       "archivedAt": "2026-11-09T22:40:09.432Z",
@@ -2296,6 +2300,23 @@
         "location": "The House @ Cornell Tech",
         "organizer": "",
         "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4150b1bd-6791-81a3-aaa7-ea4efa399b2d": {
+      "source": "clubs",
+      "archivedAt": "2026-11-12T02:55:12.657Z",
+      "event": {
+        "id": "notion:4150b1bd-6791-81a3-aaa7-ea4efa399b2d",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "UrbanX Kickoff Meeting",
+        "start": "2026-10-29T21:00:00.000Z",
+        "end": "2026-10-29T22:00:00.000Z",
+        "allDay": false,
+        "description": "Meet the club, hear about our hackathon and big event plans, and help shape this year's events. Open to all Cornell Tech programs, drop-ins welcome! Pizza was provided for attendees.",
+        "location": "Shared space, Cornell Tech campus, Roosevelt Island (no room reservation needed)",
+        "organizer": "",
+        "url": "https://cglink.me/2hj/r2133105"
       }
     },
     "calendar-archive-v1:ctsg:notion%3A3f40b1bd-6791-804d-bfba-d80ecab5361f": {
@@ -3296,11 +3317,28 @@
           "Postdocs"
         ]
       }
+    },
+    "calendar-archive-v1:tech-events:tech-events%3Aweill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship": {
+      "source": "tech-events",
+      "archivedAt": "2026-11-12T02:55:12.657Z",
+      "event": {
+        "id": "tech-events:weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship",
+        "source": "tech-events",
+        "category": "Cornell Tech events",
+        "title": "Weill Cornell Medicine Dean’s Symposium on Innovation and Entrepreneurship",
+        "start": "2026-11-11T17:00:00.000Z",
+        "end": "2026-11-11T22:30:00.000Z",
+        "allDay": false,
+        "description": "Join Robert A. Harrington, M.D., the Stephen and Suzanne Weiss Dean of Weill Cornell Medicine, for a fireside chat with John Babich, Ph.D., President and Chief Scientific Officer at Ratio Therapeutics, Inc., and former faculty member of Weill Cornell Medicine. Dr. Babich has over 30 years of experience in radiopharmaceutical sciences and nuclear medicine, spanning academic, clinical, and biotech/pharma settings. Ratio Therapeutics, Inc., a clinical-stage company founded upon Weill Cornell Medicine technology invented by Dr. Babich and colleagues, is developing next-generation radiopharmaceuticals for cancer treatment. It closed a $70 million Series C financing in July 2026, bringing its total capital raised to $240 million. Dean Harrington and Dr. Babich will explore important topics including technology development in academia, balancing the demands of an academic career and launching an innovation, fundraising in the current environment, and spinning out companies. The symposium also features faculty presentations on alternative funding opportunities. Participants will have an opportunity to network with like-minded researchers and innovators at the end.",
+        "location": "",
+        "url": "https://tech.cornell.edu/events/weill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship/",
+        "audienceTags": []
+      }
     }
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-11T22:17:00.000Z",
+      "cursor": "2026-11-12T02:54:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3320,7 +3358,8 @@
         "4130b1bd-6791-8145-b0ff-f11a548dbd4f": "2026-11-09T22:38:00.000Z",
         "4120b1bd-6791-813c-879a-e022b9123aad": "2026-11-09T22:39:00.000Z",
         "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:34:00.000Z",
-        "4140b1bd-6791-8192-a173-cdbe3616540a": "2026-11-11T14:55:00.000Z"
+        "4140b1bd-6791-8192-a173-cdbe3616540a": "2026-11-11T14:55:00.000Z",
+        "4150b1bd-6791-81a3-aaa7-ea4efa399b2d": "2026-11-12T02:54:00.000Z"
       }
     },
     "community": {

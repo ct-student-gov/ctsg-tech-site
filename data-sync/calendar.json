@@ -1203,6 +1203,22 @@
         "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
       }
     },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Last%20day%20to%20change%20grading%20basis%20and%20drop%20classes%20in%207%20week%202%20session": {
+      "source": "academic",
+      "archivedAt": "2026-11-12T05:37:58.472Z",
+      "event": {
+        "id": "academic:2026–2027:Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Fall 2026: Last day to change grading basis and drop classes in 7 week 2 session",
+        "start": "2026-11-12T04:59:00.000Z",
+        "end": "2026-11-12T04:59:00.000Z",
+        "allDay": false,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
     "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3AFall%202026%3A%20Last%20day%20to%20change%20grading%20basis%20and%20drop%20classes%20in%20first-year%20writing%20seminar%2C%20project%20session%20full%2C%20and%20regular%20session": {
       "source": "academic",
       "archivedAt": "2026-10-20T05:17:45.741Z",

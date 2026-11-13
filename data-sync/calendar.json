@@ -160,18 +160,6 @@
           "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
         },
         {
-          "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
-          "source": "academic",
-          "category": "Academic dates",
-          "title": "Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
-          "start": "2026-11-10T12:30:00.000Z",
-          "end": "2026-11-13T04:59:00.000Z",
-          "allDay": false,
-          "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
-          "location": "",
-          "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-        },
-        {
           "id": "academic:2026–2027:Spring 2027: Final exams",
           "source": "academic",
           "category": "Academic dates",
@@ -342,17 +330,17 @@
       ],
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-14T07:43:16.799Z",
-        "end": "2027-12-17T07:43:16.799Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-12T07:43:16.799Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
-        "eventCount": 28,
-        "upcomingCount": 28,
-        "previousUpcomingCount": 28,
-        "comparedThrough": "2027-11-27T05:22:35.938Z",
+        "eventCount": 27,
+        "upcomingCount": 27,
+        "previousUpcomingCount": 27,
+        "comparedThrough": "2027-12-17T07:43:16.799Z",
         "warnings": []
       }
     },
@@ -535,33 +523,20 @@
           "location": "blm 161",
           "organizer": "",
           "url": "https://luma.com/2tqkmiri"
-        },
-        {
-          "id": "notion:4150b1bd-6791-81ab-91d7-e96bdcc6647e",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "UrbanX November Meetup: Summit Debrief, Field Trip Vote + Games",
-          "start": "2026-11-12T20:30:00.000Z",
-          "end": "2026-11-12T22:00:00.000Z",
-          "allDay": false,
-          "description": "UrbanX's November meetup. We'll debrief the Urban Tech Summit and share takeaways, draft follow-ups to industry contacts, suggest and vote on our next NYC field trip, cover club resources and volunteer roles, and finish with fun games and prizes. Open to all Cornell Tech programs; pizza provided.",
-          "location": "Shared space, Cornell Tech campus, Roosevelt Island (no room reservation needed)",
-          "organizer": "",
-          "url": "https://cglink.me/2hj/r2133140"
         }
       ],
       "window": {
-        "start": "2026-08-14T03:23:49.157Z",
-        "end": "2027-12-17T03:23:49.157Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-12T03:23:49.157Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-17T02:55:12.657Z",
+        "comparedThrough": "2027-12-17T03:23:49.157Z",
         "warnings": []
       }
     },
@@ -634,22 +609,6 @@
           ]
         },
         {
-          "id": "inclusion-belonging:d4ab44fa39f746635b92fe0f854b29c310272026_12:29:47_PM@campusgroups.com",
-          "source": "inclusion-belonging",
-          "category": "School events",
-          "title": "Bagels and Belonging",
-          "start": "2026-11-12T14:30:00.000Z",
-          "end": "2026-11-12T15:30:00.000Z",
-          "allDay": false,
-          "description": "Stop by the Masters Studio in the Bloomberg Center and meet the Inclusion and Belonging team! Join us in some activities to get back into the swing of the semester.\n\nOpen to master's and PhD students.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133106",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133106",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTDEI"
-          ]
-        },
-        {
           "id": "inclusion-belonging:db0a46a3544dc9cfba8857f2728d9b451152026_10:33:51_AM@campusgroups.com",
           "source": "inclusion-belonging",
           "category": "School events",
@@ -668,17 +627,17 @@
       ],
       "fetchedCount": 9,
       "window": {
-        "start": "2026-08-13T07:08:23.127Z",
-        "end": "2027-12-16T07:08:23.127Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T07:08:23.127Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
+        "eventCount": 3,
+        "upcomingCount": 3,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-15T07:44:29.961Z",
+        "comparedThrough": "2027-12-16T07:08:23.127Z",
         "warnings": []
       }
     },
@@ -695,22 +654,6 @@
           "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133116",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
-          "id": "student-affairs:1c52f622e22be4f949973ab96ccd01fe1132026_2:36:13_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Wellness Coffee Hour: Meet Sayyam",
-          "start": "2026-11-12T18:00:00.000Z",
-          "end": "2026-11-12T19:00:00.000Z",
-          "allDay": false,
-          "description": "Meet the new Student Life & Wellness Specialist Stop by the Masters’ Studio anytime between 1:00 PM and 2:00 PM to grab a coffee, ask questions, or simply connect with fellow community members.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133129",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133129",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -783,17 +726,17 @@
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-13T07:08:23.127Z",
-        "end": "2027-12-16T07:08:23.127Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-11T07:08:23.127Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-15T07:44:29.961Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-16T07:08:23.127Z",
         "warnings": []
       }
     },
@@ -810,23 +753,6 @@
           "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
           "location": "See event page for location",
           "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:1c52f622e22be4f949973ab96ccd01fe1132026_2:36:13_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Wellness Coffee Hour: Meet Sayyam",
-          "start": "2026-11-12T18:00:00.000Z",
-          "end": "2026-11-12T19:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133129",
           "audienceTags": [],
           "departmentAcronyms": [
             "CTSAA"
@@ -922,16 +848,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-13T07:08:23.127Z",
-        "end": "2027-12-16T07:08:23.127Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
-      "updatedAt": "2026-11-11T07:08:23.127Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
-        "previousUpcomingCount": 7,
-        "comparedThrough": "2027-12-15T07:44:29.961Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-16T07:08:23.127Z",
         "warnings": []
       }
     },
@@ -1006,29 +932,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 44,
-      "excludedCount": 42,
+      "fetchedCount": 40,
+      "excludedCount": 38,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 44,
-        "excludedCount": 42,
+        "fetchedCount": 40,
+        "excludedCount": 38,
         "importedCount": 2,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-14T07:43:16.799Z",
-        "end": "2027-12-17T07:43:16.799Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
-      "updatedAt": "2026-11-12T07:43:16.799Z",
+      "updatedAt": "2026-11-13T07:17:45.861Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "comparedThrough": "2027-12-17T07:43:16.799Z",
         "warnings": []
       }
     }
@@ -1253,6 +1179,22 @@
         "start": "2026-09-07",
         "end": "2026-09-08",
         "allDay": true,
+        "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
+        "location": "",
+        "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+      }
+    },
+    "calendar-archive-v1:academic:academic%3A2026%E2%80%932027%3ASpring%202027%3A%20Enrollment%20begins%20for%20Graduate%2FProfessional%2FCornell%20Tech": {
+      "source": "academic",
+      "archivedAt": "2026-11-13T07:17:45.861Z",
+      "event": {
+        "id": "academic:2026–2027:Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
+        "source": "academic",
+        "category": "Academic dates",
+        "title": "Spring 2027: Enrollment begins for Graduate/Professional/Cornell Tech",
+        "start": "2026-11-10T12:30:00.000Z",
+        "end": "2026-11-13T04:59:00.000Z",
+        "allDay": false,
         "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
         "location": "",
         "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
@@ -2323,6 +2265,23 @@
         "url": "https://cglink.me/2hj/r2133105"
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4150b1bd-6791-81ab-91d7-e96bdcc6647e": {
+      "source": "clubs",
+      "archivedAt": "2026-11-13T07:17:45.861Z",
+      "event": {
+        "id": "notion:4150b1bd-6791-81ab-91d7-e96bdcc6647e",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "UrbanX November Meetup: Summit Debrief, Field Trip Vote + Games",
+        "start": "2026-11-12T20:30:00.000Z",
+        "end": "2026-11-12T22:00:00.000Z",
+        "allDay": false,
+        "description": "UrbanX's November meetup. We'll debrief the Urban Tech Summit and share takeaways, draft follow-ups to industry contacts, suggest and vote on our next NYC field trip, cover club resources and volunteer roles, and finish with fun games and prizes. Open to all Cornell Tech programs; pizza provided.",
+        "location": "Shared space, Cornell Tech campus, Roosevelt Island (no room reservation needed)",
+        "organizer": "",
+        "url": "https://cglink.me/2hj/r2133140"
+      }
+    },
     "calendar-archive-v1:ctsg:notion%3A3f40b1bd-6791-804d-bfba-d80ecab5361f": {
       "source": "ctsg",
       "archivedAt": "2026-11-05T18:48:24.433Z",
@@ -2474,6 +2433,27 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3A1c52f622e22be4f949973ab96ccd01fe1132026_2%3A36%3A13_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-13T07:17:45.861Z",
+      "event": {
+        "id": "student-affairs:1c52f622e22be4f949973ab96ccd01fe1132026_2:36:13_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Wellness Coffee Hour: Meet Sayyam",
+        "start": "2026-11-12T18:00:00.000Z",
+        "end": "2026-11-12T19:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133129",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"
@@ -2841,6 +2821,26 @@
         "description": "Hosted by Learning Strategies Center\n\nWhat exactly is procrastination?\nWhy does it happen? \nWho is more prone to it? \nHow can you deal with it? \n\nJoin Florencia (Flor) Ardon, PhD, Lecturer and Neurodivergent Support Program Manager at the Learning Strategics Center for a conversation around what is - and what is not - procrastination. \n\nAttendees will be able to clear some misunderstandings, as well as create an action plan that work for them. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133091",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133091",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3A1c52f622e22be4f949973ab96ccd01fe1132026_2%3A36%3A13_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-13T07:17:45.861Z",
+      "event": {
+        "id": "student-affairs:1c52f622e22be4f949973ab96ccd01fe1132026_2:36:13_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Wellness Coffee Hour: Meet Sayyam",
+        "start": "2026-11-12T18:00:00.000Z",
+        "end": "2026-11-12T19:00:00.000Z",
+        "allDay": false,
+        "description": "Meet the new Student Life & Wellness Specialist Stop by the Masters’ Studio anytime between 1:00 PM and 2:00 PM to grab a coffee, ask questions, or simply connect with fellow community members.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133129",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133129",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"

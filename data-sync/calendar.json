@@ -864,18 +864,6 @@
     "tech-academic": {
       "events": [
         {
-          "id": "tech-academic:fall:2026:Maker Day:3",
-          "source": "tech-academic",
-          "category": "Academic dates",
-          "title": "Cornell Tech: Maker Day",
-          "start": "2026-11-13",
-          "end": "2026-11-14",
-          "allDay": true,
-          "description": "Maker Day",
-          "location": "",
-          "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
-        },
-        {
           "id": "tech-academic:fall:2026:Maker Day:4",
           "source": "tech-academic",
           "category": "Academic dates",
@@ -889,17 +877,17 @@
         }
       ],
       "window": {
-        "start": "2026-07-19T04:59:35.734Z",
-        "end": "2027-11-21T04:59:35.734Z"
+        "start": "2026-08-16T07:01:21.039Z",
+        "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-10-17T04:59:35.734Z",
+      "updatedAt": "2026-11-14T07:01:21.039Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-11-21T04:59:35.734Z",
         "warnings": []
       }
     },
@@ -932,29 +920,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 40,
-      "excludedCount": 38,
+      "fetchedCount": 37,
+      "excludedCount": 35,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 40,
-        "excludedCount": 38,
+        "fetchedCount": 37,
+        "excludedCount": 35,
         "importedCount": 2,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-16T07:01:21.039Z",
+        "end": "2027-12-19T07:01:21.039Z"
       },
-      "updatedAt": "2026-11-13T07:17:45.861Z",
+      "updatedAt": "2026-11-14T07:01:21.039Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-17T07:43:16.799Z",
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       }
     }
@@ -3252,6 +3240,22 @@
         "title": "Cornell Tech: Maker Day",
         "start": "2026-10-16",
         "end": "2026-10-17",
+        "allDay": true,
+        "description": "Maker Day",
+        "location": "",
+        "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/"
+      }
+    },
+    "calendar-archive-v1:tech-academic:tech-academic%3Afall%3A2026%3AMaker%20Day%3A3": {
+      "source": "tech-academic",
+      "archivedAt": "2026-11-14T07:01:21.039Z",
+      "event": {
+        "id": "tech-academic:fall:2026:Maker Day:3",
+        "source": "tech-academic",
+        "category": "Academic dates",
+        "title": "Cornell Tech: Maker Day",
+        "start": "2026-11-13",
+        "end": "2026-11-14",
         "allDay": true,
         "description": "Maker Day",
         "location": "",

@@ -460,19 +460,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4020b1bd-6791-8179-9815-e56ed5170565",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Playground",
-          "start": "2026-10-21T17:00:00.000Z",
-          "end": "2026-11-15T00:00:00.000Z",
-          "allDay": false,
-          "description": "Playground × Replit is a hands-on AI building experience bringing Cornell students together to turn ideas into working prototypes. Led by the Replit team, participants will learn how to use AI-powered development tools to build applications, explore creative solutions, and collaborate with fellow students. No prior coding experience is required. The session will feature a Replit walkthrough, an open building session, and informal project demonstrations. Our goal is to make AI-powered product development accessible, encourage entrepreneurship, and help students leave with something tangible they can continue developing.",
-          "location": "Cornell Tech",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4020b1bd-6791-81bc-bb31-cc2930ec33ae",
           "source": "clubs",
           "category": "Club events",
@@ -526,17 +513,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-17T07:11:49.656Z",
+        "end": "2027-12-20T07:11:49.656Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-13T07:17:45.861Z",
+      "updatedAt": "2026-11-15T07:11:49.656Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-17T03:23:49.157Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       }
     },
@@ -2095,6 +2082,23 @@
         "end": "2026-11-05T05:00:00.000Z",
         "allDay": false,
         "description": "Bootstrapped to a $60M Exit: Fireside Chat with Shaan Arora and Zander Arnold",
+        "location": "Cornell Tech",
+        "organizer": "",
+        "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4020b1bd-6791-8179-9815-e56ed5170565": {
+      "source": "clubs",
+      "archivedAt": "2026-11-15T07:11:49.656Z",
+      "event": {
+        "id": "notion:4020b1bd-6791-8179-9815-e56ed5170565",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Playground",
+        "start": "2026-10-21T17:00:00.000Z",
+        "end": "2026-11-15T00:00:00.000Z",
+        "allDay": false,
+        "description": "Playground × Replit is a hands-on AI building experience bringing Cornell students together to turn ideas into working prototypes. Led by the Replit team, participants will learn how to use AI-powered development tools to build applications, explore creative solutions, and collaborate with fellow students. No prior coding experience is required. The session will feature a Replit walkthrough, an open building session, and informal project demonstrations. Our goal is to make AI-powered product development accessible, encourage entrepreneurship, and help students leave with something tangible they can continue developing.",
         "location": "Cornell Tech",
         "organizer": "",
         "url": ""

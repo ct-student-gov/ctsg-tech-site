@@ -460,19 +460,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4020b1bd-6791-81bc-bb31-cc2930ec33ae",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Claude Impact Lab at Cornell Tech (Vibe Lab x NYC Claude Community)",
-          "start": "2026-12-05T14:00:00.000Z",
-          "end": "2026-12-05T22:00:00.000Z",
-          "allDay": false,
-          "description": "Vibe Lab is partnering with the NYC Claude Community to host a Claude Impact Lab at Cornell Tech. In this free, full-day build event, teams of Cornell Tech students and external builders will work on a real problem from a nonprofit partner, using Claude to build working prototypes and demoing them at the end of the day. Participants get hands-on experience building with AI, collaborate across disciplines, and connect with NYC’s builder community while creating something with real social impact.",
-          "location": "Cornell Tech campus. Space requested through the Events Team (Lead Form ID 40055); school venue support pending with Student & Academic Affairs",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:40e0b1bd-6791-8115-af04-d672fce1a742",
           "source": "clubs",
           "category": "Club events",
@@ -526,17 +513,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-18T18:14:45.987Z",
-        "end": "2027-12-21T18:14:45.987Z"
+        "start": "2026-08-18T18:18:09.256Z",
+        "end": "2027-12-21T18:18:09.256Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-21T14:55:36.212Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-21T18:14:45.987Z",
         "warnings": []
       }
     },
@@ -3461,7 +3448,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T18:14:00.000Z",
+      "cursor": "2026-11-16T18:17:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3469,7 +3456,6 @@
         "4000b1bd-6791-8130-9ad3-c7382a00d0bf": "2026-10-25T16:36:00.000Z",
         "4020b1bd-6791-812d-9092-fe5524544dce": "2026-10-25T16:38:00.000Z",
         "4020b1bd-6791-8179-9815-e56ed5170565": "2026-10-25T16:38:00.000Z",
-        "4020b1bd-6791-81bc-bb31-cc2930ec33ae": "2026-10-25T21:39:00.000Z",
         "4020b1bd-6791-81db-b4d7-c1add0e8451c": "2026-10-25T21:42:00.000Z",
         "4050b1bd-6791-8164-8491-fbb575ec5469": "2026-10-26T13:57:00.000Z",
         "4000b1bd-6791-8140-820c-f81b21e04f8f": "2026-10-27T17:39:00.000Z",

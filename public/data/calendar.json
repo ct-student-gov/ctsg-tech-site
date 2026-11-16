@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T18:14:45.987Z",
+  "generatedAt": "2026-11-16T18:18:09.256Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-21T18:14:45.987Z"
+    "end": "2027-12-21T18:18:09.256Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -38,7 +38,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-16T07:01:21.039Z",
         "end": "2027-12-19T07:01:21.039Z"
       },
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-18T18:14:45.987Z",
-        "end": "2027-12-21T18:14:45.987Z"
+        "start": "2026-08-18T18:18:09.256Z",
+        "end": "2027-12-21T18:18:09.256Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-21T14:55:36.212Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-21T18:14:45.987Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-18T18:14:45.987Z",
-        "end": "2027-12-21T18:14:45.987Z"
+        "start": "2026-08-18T18:18:09.256Z",
+        "end": "2027-12-21T18:18:09.256Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-18T18:14:45.987Z",
-        "end": "2027-12-21T18:14:45.987Z"
+        "start": "2026-08-18T18:18:09.256Z",
+        "end": "2027-12-21T18:18:09.256Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
@@ -198,7 +198,7 @@
         "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -220,7 +220,7 @@
         "start": "2026-08-15T07:17:45.861Z",
         "end": "2027-12-18T07:17:45.861Z"
       },
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-16T18:14:45.987Z",
+      "updatedAt": "2026-11-16T18:18:09.256Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -2126,19 +2126,6 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
-    },
-    {
-      "id": "notion:4020b1bd-6791-81bc-bb31-cc2930ec33ae",
-      "source": "clubs",
-      "category": "Club events",
-      "title": "Claude Impact Lab at Cornell Tech (Vibe Lab x NYC Claude Community)",
-      "start": "2026-12-05T14:00:00.000Z",
-      "end": "2026-12-05T22:00:00.000Z",
-      "allDay": false,
-      "description": "Vibe Lab is partnering with the NYC Claude Community to host a Claude Impact Lab at Cornell Tech. In this free, full-day build event, teams of Cornell Tech students and external builders will work on a real problem from a nonprofit partner, using Claude to build working prototypes and demoing them at the end of the day. Participants get hands-on experience building with AI, collaborate across disciplines, and connect with NYC’s builder community while creating something with real social impact.",
-      "location": "Cornell Tech campus. Space requested through the Events Team (Lead Form ID 40055); school venue support pending with Student & Academic Affairs",
-      "organizer": "",
-      "url": ""
     },
     {
       "id": "academic:2026–2027:Fall 2026: Last day of instruction for classes in first-year writing seminar, project session full, and regular session",

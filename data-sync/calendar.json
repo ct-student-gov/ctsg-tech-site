@@ -2428,6 +2428,26 @@
         ]
       }
     },
+    "calendar-archive-v1:inclusion-belonging:inclusion-belonging%3Adb0a46a3544dc9cfba8857f2728d9b451152026_10%3A33%3A51_AM%40campusgroups.com": {
+      "source": "inclusion-belonging",
+      "archivedAt": "2026-11-16T17:44:00.654Z",
+      "event": {
+        "id": "inclusion-belonging:db0a46a3544dc9cfba8857f2728d9b451152026_10:33:51_AM@campusgroups.com",
+        "source": "inclusion-belonging",
+        "category": "School events",
+        "title": "Connect & Converse",
+        "start": "2026-11-16T15:00:00.000Z",
+        "end": "2026-11-16T17:00:00.000Z",
+        "allDay": false,
+        "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133135",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133135",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTDEI"
+        ]
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3A01e3cfbb97b34199e8fbebbda155477810192026_11%3A47%3A49_PM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-10-21T20:55:27.122Z",
@@ -2528,6 +2548,27 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2132988",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3A5351e63517e36b184f4c012d58d77de610292026_10%3A15%3A44_AM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-16T17:44:00.654Z",
+      "event": {
+        "id": "student-affairs:5351e63517e36b184f4c012d58d77de610292026_10:15:44_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-16T17:00:00.000Z",
+        "end": "2026-11-16T17:30:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133115",
         "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"
@@ -2930,6 +2971,26 @@
         "sourceCategories": {
           "student-affairs": "School events"
         }
+      }
+    },
+    "calendar-archive-v1:student-affairs:student-affairs%3A5351e63517e36b184f4c012d58d77de610292026_10%3A15%3A44_AM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-16T17:44:00.654Z",
+      "event": {
+        "id": "student-affairs:5351e63517e36b184f4c012d58d77de610292026_10:15:44_AM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Stretch With Wellness - (Virtual)",
+        "start": "2026-11-16T17:00:00.000Z",
+        "end": "2026-11-16T17:30:00.000Z",
+        "allDay": false,
+        "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133115",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133115",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
       }
     },
     "calendar-archive-v1:student-affairs:student-affairs%3A54bf62e612acd786ab9b7b7d38f0d427782026_7%3A32%3A48_PM%40campusgroups.com": {
@@ -3387,7 +3448,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T14:55:00.000Z",
+      "cursor": "2026-11-16T17:43:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

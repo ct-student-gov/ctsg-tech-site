@@ -497,20 +497,33 @@
           "location": "Anthology Film Archives, 32 Second Avenue, New York, NY 10003 (off campus)",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4160b1bd-6791-81aa-a4ca-e4c5496838c2",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Beyond the Transaction - Cornell Fintech Club",
+          "start": "2026-11-19T00:00:00.000Z",
+          "end": "2026-11-19T01:30:00.000Z",
+          "allDay": false,
+          "description": "A panel with three Cornell alumni working across fintech, each sharing the view from their corner of the industry: cybersecurity, digital assets, and startups. Short talks, then Q&A and informal networking over pizza.\n",
+          "location": "Bloomberg",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-18T07:17:03.933Z",
-        "end": "2027-12-21T07:17:03.933Z"
+        "start": "2026-08-18T14:55:36.212Z",
+        "end": "2027-12-21T14:55:36.212Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T07:17:03.933Z",
+      "updatedAt": "2026-11-16T14:55:36.212Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-20T07:11:49.656Z",
+        "comparedThrough": "2027-12-21T07:17:03.933Z",
         "warnings": []
       }
     },
@@ -3374,7 +3387,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T14:53:00.000Z",
+      "cursor": "2026-11-16T14:55:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3396,7 +3409,8 @@
         "4130b1bd-6791-8131-a8be-f505c94e6320": "2026-11-10T00:34:00.000Z",
         "4140b1bd-6791-8192-a173-cdbe3616540a": "2026-11-11T14:55:00.000Z",
         "4150b1bd-6791-81a3-aaa7-ea4efa399b2d": "2026-11-12T02:54:00.000Z",
-        "4150b1bd-6791-81ab-91d7-e96bdcc6647e": "2026-11-12T03:23:00.000Z"
+        "4150b1bd-6791-81ab-91d7-e96bdcc6647e": "2026-11-12T03:23:00.000Z",
+        "4160b1bd-6791-81aa-a4ca-e4c5496838c2": "2026-11-16T14:55:00.000Z"
       }
     },
     "community": {

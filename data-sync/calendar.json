@@ -499,6 +499,19 @@
           "url": ""
         },
         {
+          "id": "notion:4190b1bd-6791-8146-a8a1-c0652fde88c5",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Football Not Soccer Club — Weekly Pickup Games",
+          "start": "2026-11-19T21:00:00.000Z",
+          "end": "2026-11-19T23:00:00.000Z",
+          "allDay": false,
+          "description": "We run weekly pickup football games for Cornell Tech students with 16 to 30 players each week. We split into four teams on two half fields, so four goalkeepers play at once without gloves, which leads to hand and finger injuries. The cold packs are for first aid since we have had knocks on feet with nothing cold on hand. The bib washing covers cleaning our pinnies after each game for the rest of the semester. All items stay with the club and are reused every week.",
+          "location": "McManus Field, Roosevelt Island",
+          "organizer": "",
+          "url": ""
+        },
+        {
           "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",
           "source": "clubs",
           "category": "Club events",
@@ -526,17 +539,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-18T18:22:38.603Z",
-        "end": "2027-12-21T18:22:38.603Z"
+        "start": "2026-08-18T21:39:00.103Z",
+        "end": "2027-12-21T21:39:00.103Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:22:38.603Z",
+      "updatedAt": "2026-11-16T21:39:00.103Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-21T18:18:09.256Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-21T18:22:38.603Z",
         "warnings": []
       }
     },
@@ -1411,6 +1424,29 @@
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133048",
         "audienceTags": [
           "Technical Programs"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3A9260fe355f7b6e0eede8fc67c5df977c9182026_3%3A43%3A57_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-11-16T21:39:00.103Z",
+      "event": {
+        "id": "career-management:9260fe355f7b6e0eede8fc67c5df977c9182026_3:43:57_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Interstride-Monthly Training: How to Navigate Interstride to Maximize Your Job & Internship Search",
+        "start": "2026-11-16T18:00:00.000Z",
+        "end": "2026-11-16T19:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133036",
+        "audienceTags": [
+          "All Master's Students"
         ],
         "departmentAcronyms": [
           "CTCAREERS"
@@ -3461,7 +3497,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T18:37:00.000Z",
+      "cursor": "2026-11-16T21:38:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3485,7 +3521,8 @@
         "4150b1bd-6791-81ab-91d7-e96bdcc6647e": "2026-11-12T03:23:00.000Z",
         "4160b1bd-6791-81aa-a4ca-e4c5496838c2": "2026-11-16T14:55:00.000Z",
         "41a0b1bd-6791-81d9-88b4-c7ea2ca161ef": "2026-11-16T18:14:00.000Z",
-        "4190b1bd-6791-81a7-a012-f8283782360d": "2026-11-16T18:22:00.000Z"
+        "4190b1bd-6791-81a7-a012-f8283782360d": "2026-11-16T18:22:00.000Z",
+        "4190b1bd-6791-8146-a8a1-c0652fde88c5": "2026-11-16T21:38:00.000Z"
       }
     },
     "community": {

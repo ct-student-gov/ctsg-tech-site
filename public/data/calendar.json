@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T17:44:00.654Z",
+  "generatedAt": "2026-11-16T18:14:45.987Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-21T17:44:00.654Z"
+    "end": "2027-12-21T18:14:45.987Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -38,7 +38,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-16T07:01:21.039Z",
         "end": "2027-12-19T07:01:21.039Z"
       },
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -109,15 +109,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-18T17:44:00.654Z",
-        "end": "2027-12-21T17:44:00.654Z"
+        "start": "2026-08-18T18:14:45.987Z",
+        "end": "2027-12-21T18:14:45.987Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
+        "eventCount": 5,
+        "upcomingCount": 5,
         "previousUpcomingCount": 4,
         "comparedThrough": "2027-12-21T14:55:36.212Z",
         "warnings": []
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-18T17:44:00.654Z",
-        "end": "2027-12-21T17:44:00.654Z"
+        "start": "2026-08-18T18:14:45.987Z",
+        "end": "2027-12-21T18:14:45.987Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-18T17:44:00.654Z",
-        "end": "2027-12-21T17:44:00.654Z"
+        "start": "2026-08-18T18:14:45.987Z",
+        "end": "2027-12-21T18:14:45.987Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
@@ -198,7 +198,7 @@
         "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -220,7 +220,7 @@
         "start": "2026-08-15T07:17:45.861Z",
         "end": "2027-12-18T07:17:45.861Z"
       },
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-16T17:44:00.654Z",
+      "updatedAt": "2026-11-16T18:14:45.987Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -1970,6 +1970,19 @@
       "location": "Tata 131",
       "organizer": "",
       "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
+    },
+    {
+      "id": "notion:41a0b1bd-6791-81d9-88b4-c7ea2ca161ef",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Sound Bath & Mindful Connection",
+      "start": "2026-11-19T23:00:00.000Z",
+      "end": "2026-11-20T00:00:00.000Z",
+      "allDay": false,
+      "description": "WTCA will host a Sound Bath & Meditation session, featuring singing bowls and live instrumental music. The event offers Cornell Tech students an opportunity to unwind, reduce everyday stress, and practice mindfulness in a calming, supportive environment. Participants may sit or lie down comfortably and are welcome to bring their own yoga mats, blankets, or cushions. No prior meditation experience is required. The session aims to promote student wellbeing, relaxation, and a sense of community during the busy academic semester.",
+      "location": "The House",
+      "organizer": "",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdpukIh1bEIUCbXAJU2TO_9LmPUZJnvc6jpdX8W5nMd7RROOA/viewform?usp=dialog"
     },
     {
       "id": "notion:4120b1bd-6791-813c-879a-e022b9123aad",

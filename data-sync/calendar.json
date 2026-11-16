@@ -499,6 +499,19 @@
           "url": ""
         },
         {
+          "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Vibe coding hours",
+          "start": "2026-12-01T23:30:00.000Z",
+          "end": "2026-12-02T02:30:00.000Z",
+          "allDay": false,
+          "description": "Vibe coding hours for our club members last one in our season. We want to come together and build new products!",
+          "location": "Cornell Tech",
+          "organizer": "",
+          "url": ""
+        },
+        {
           "id": "notion:41a0b1bd-6791-81d9-88b4-c7ea2ca161ef",
           "source": "clubs",
           "category": "Club events",
@@ -513,17 +526,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-18T18:18:09.256Z",
-        "end": "2027-12-21T18:18:09.256Z"
+        "start": "2026-08-18T18:22:38.603Z",
+        "end": "2027-12-21T18:22:38.603Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T18:18:09.256Z",
+      "updatedAt": "2026-11-16T18:22:38.603Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-21T18:14:45.987Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-21T18:18:09.256Z",
         "warnings": []
       }
     },
@@ -3448,7 +3461,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T18:17:00.000Z",
+      "cursor": "2026-11-16T18:22:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3471,7 +3484,8 @@
         "4150b1bd-6791-81a3-aaa7-ea4efa399b2d": "2026-11-12T02:54:00.000Z",
         "4150b1bd-6791-81ab-91d7-e96bdcc6647e": "2026-11-12T03:23:00.000Z",
         "4160b1bd-6791-81aa-a4ca-e4c5496838c2": "2026-11-16T14:55:00.000Z",
-        "41a0b1bd-6791-81d9-88b4-c7ea2ca161ef": "2026-11-16T18:14:00.000Z"
+        "41a0b1bd-6791-81d9-88b4-c7ea2ca161ef": "2026-11-16T18:14:00.000Z",
+        "4190b1bd-6791-81a7-a012-f8283782360d": "2026-11-16T18:22:00.000Z"
       }
     },
     "community": {

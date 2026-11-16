@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T21:39:00.103Z",
+  "generatedAt": "2026-11-16T21:43:43.433Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-21T21:39:00.103Z"
+    "end": "2027-12-21T21:43:43.433Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
@@ -38,7 +38,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-16T07:01:21.039Z",
         "end": "2027-12-19T07:01:21.039Z"
       },
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:39:00.103Z",
-        "end": "2027-12-21T21:39:00.103Z"
+        "start": "2026-08-18T21:43:43.433Z",
+        "end": "2027-12-21T21:43:43.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-21T18:22:38.603Z",
+        "eventCount": 7,
+        "upcomingCount": 7,
+        "previousUpcomingCount": 6,
+        "comparedThrough": "2027-12-21T21:39:00.103Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:39:00.103Z",
-        "end": "2027-12-21T21:39:00.103Z"
+        "start": "2026-08-18T21:43:43.433Z",
+        "end": "2027-12-21T21:43:43.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:39:00.103Z",
-        "end": "2027-12-21T21:39:00.103Z"
+        "start": "2026-08-18T21:43:43.433Z",
+        "end": "2027-12-21T21:43:43.433Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
@@ -198,7 +198,7 @@
         "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -220,7 +220,7 @@
         "start": "2026-08-15T07:17:45.861Z",
         "end": "2027-12-18T07:17:45.861Z"
       },
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -242,7 +242,7 @@
         "start": "2026-07-30T06:17:31.150Z",
         "end": "2027-12-02T06:17:31.150Z"
       },
-      "updatedAt": "2026-11-16T21:39:00.103Z",
+      "updatedAt": "2026-11-16T21:43:43.433Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -2083,6 +2083,19 @@
       "sourceCategories": {
         "student-affairs": "School events"
       }
+    },
+    {
+      "id": "notion:41a0b1bd-6791-8199-931f-dd53fc3320aa",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Post-Thanksgiving Dinner: Indonesian & Southeast Asian Night",
+      "start": "2026-11-29T00:00:00.000Z",
+      "end": "2026-11-29T02:00:00.000Z",
+      "allDay": false,
+      "description": "Thanksgiving isn’t over yet! Join IACT and ASEAN & Friends for a cozy post-Thanksgiving dinner celebrating food and friendship from Indonesia and Southeast Asia. Enjoy a selection of Indonesian dishes, share your own favorite dish, and stay for a fun game with a small prize for the winner. Whether you’re from the region or just curious about its flavors, everyone is welcome. Come hungry and bring a friend!",
+      "location": "26th Floor, The House @ Cornell Tech",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",

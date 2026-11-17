@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T21:43:43.433Z",
+  "generatedAt": "2026-11-17T08:29:14.799Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-21T21:43:43.433Z"
+    "end": "2027-12-22T08:29:14.799Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -32,19 +32,19 @@
       "id": "inclusion-belonging",
       "name": "Inclusion & Belonging",
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
-      "fetchedCount": 9,
+      "fetchedCount": 8,
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -76,29 +76,29 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 37,
-      "excludedCount": 35,
+      "fetchedCount": 32,
+      "excludedCount": 30,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 37,
-        "excludedCount": 35,
+        "fetchedCount": 32,
+        "excludedCount": 30,
         "importedCount": 2,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-16T07:01:21.039Z",
-        "end": "2027-12-19T07:01:21.039Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "comparedThrough": "2027-12-19T07:01:21.039Z",
         "warnings": []
       },
       "state": "current",
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:43:43.433Z",
-        "end": "2027-12-21T21:43:43.433Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 7,
         "upcomingCount": 7,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-21T21:39:00.103Z",
+        "previousUpcomingCount": 7,
+        "comparedThrough": "2027-12-21T21:43:43.433Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:43:43.433Z",
-        "end": "2027-12-21T21:43:43.433Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-18T21:43:43.433Z",
-        "end": "2027-12-21T21:43:43.433Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
         "upcomingCount": 27,
         "previousUpcomingCount": 27,
-        "comparedThrough": "2027-12-17T07:43:16.799Z",
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-16T07:01:21.039Z",
-        "end": "2027-12-19T07:01:21.039Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-12-19T07:01:21.039Z",
         "warnings": []
       },
       "state": "current",
@@ -217,16 +217,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-16T07:08:23.127Z",
+        "eventCount": 5,
+        "upcomingCount": 5,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -239,16 +239,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-07-30T06:17:31.150Z",
-        "end": "2027-12-02T06:17:31.150Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-17T08:29:14.799Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-11-29T05:18:35.041Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-02T06:17:31.150Z",
         "warnings": []
       },
       "state": "current",
@@ -1852,22 +1852,6 @@
       "detailsRedacted": true
     },
     {
-      "id": "inclusion-belonging:c40758b866774a5d953223aa0d0a524f11102026_3:22:08_PM@campusgroups.com",
-      "source": "inclusion-belonging",
-      "category": "School events",
-      "title": "Affinity & Allies Social",
-      "start": "2026-11-17T23:00:00.000Z",
-      "end": "2026-11-18T01:00:00.000Z",
-      "allDay": false,
-      "description": "This event allows affinity student club leads and their allies to meet, get together, learn about club offerings, and how to create an inclusive environment where every student feels welcome. \n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133139",
-      "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133139",
-      "audienceTags": [],
-      "departmentAcronyms": [
-        "CTDEI"
-      ]
-    },
-    {
       "id": "tech-events:the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing",
       "source": "tech-events",
       "category": "Cornell Tech events",
@@ -2011,22 +1995,6 @@
       "url": ""
     },
     {
-      "id": "inclusion-belonging:8e40c87d656b0d651e9942269c1f7b8e1152026_10:34:57_AM@campusgroups.com",
-      "source": "inclusion-belonging",
-      "category": "School events",
-      "title": "Connect & Converse",
-      "start": "2026-11-23T15:00:00.000Z",
-      "end": "2026-11-23T17:00:00.000Z",
-      "allDay": false,
-      "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Tata Innovation Center. Find her on the staircase landing by the long benches!\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133136",
-      "location": "See event page for location",
-      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133136",
-      "audienceTags": [],
-      "departmentAcronyms": [
-        "CTDEI"
-      ]
-    },
-    {
       "id": "student-affairs:04bf4bce666c3e0b1c84a0754a89e08210292026_10:15:45_AM@campusgroups.com",
       "source": "student-affairs",
       "category": "School events",
@@ -2096,6 +2064,22 @@
       "location": "26th Floor, The House @ Cornell Tech",
       "organizer": "",
       "url": ""
+    },
+    {
+      "id": "inclusion-belonging:8e40c87d656b0d651e9942269c1f7b8e1152026_10:34:57_AM@campusgroups.com",
+      "source": "inclusion-belonging",
+      "category": "School events",
+      "title": "Connect & Converse",
+      "start": "2026-11-30T15:00:00.000Z",
+      "end": "2026-11-30T17:00:00.000Z",
+      "allDay": false,
+      "description": "Every Monday and Wednesday, students can stop by to connect with a member of the Inclusion and Belonging team.\n\nMeet with Program Coordinator Angeline Gomez in the Bloomberg Elevator Lobby.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133136",
+      "location": "See event page for location",
+      "url": "https://cornelltech.campusgroups.com/rsvp?id=2133136",
+      "audienceTags": [],
+      "departmentAcronyms": [
+        "CTDEI"
+      ]
     },
     {
       "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",

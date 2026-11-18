@@ -401,40 +401,21 @@
             "CTCAREERS"
           ],
           "detailsRedacted": true
-        },
-        {
-          "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Interstride-Job Search Strategy for International Students",
-          "start": "2026-11-17T21:00:00.000Z",
-          "end": "2026-11-17T22:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133037",
-          "audienceTags": [
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
         }
       ],
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-19T08:29:14.799Z",
-        "end": "2027-12-22T08:29:14.799Z"
+        "start": "2026-08-20T07:56:23.064Z",
+        "end": "2027-12-23T07:56:23.064Z"
       },
-      "updatedAt": "2026-11-17T08:29:14.799Z",
+      "updatedAt": "2026-11-18T07:56:23.064Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-02T06:17:31.150Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-22T08:29:14.799Z",
         "warnings": []
       }
     },
@@ -862,29 +843,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 32,
-      "excludedCount": 30,
+      "fetchedCount": 31,
+      "excludedCount": 29,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 32,
-        "excludedCount": 30,
+        "fetchedCount": 31,
+        "excludedCount": 29,
         "importedCount": 2,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-19T08:29:14.799Z",
-        "end": "2027-12-22T08:29:14.799Z"
+        "start": "2026-08-20T07:56:23.064Z",
+        "end": "2027-12-23T07:56:23.064Z"
       },
-      "updatedAt": "2026-11-17T08:29:14.799Z",
+      "updatedAt": "2026-11-18T07:56:23.064Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-19T07:01:21.039Z",
+        "comparedThrough": "2027-12-22T08:29:14.799Z",
         "warnings": []
       }
     }
@@ -1606,6 +1587,29 @@
         "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
         "location": "See event page for location",
         "url": "https://cornelltech.campusgroups.com/rsvp?id=2133033",
+        "audienceTags": [
+          "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:career-management-students:career-management%3Af734f981cea02529f88af4f989070e479182026_3%3A48%3A24_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-11-18T07:56:23.064Z",
+      "event": {
+        "id": "career-management:f734f981cea02529f88af4f989070e479182026_3:48:24_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Interstride-Job Search Strategy for International Students",
+        "start": "2026-11-17T21:00:00.000Z",
+        "end": "2026-11-17T22:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133037",
         "audienceTags": [
           "All Master's Students"
         ],

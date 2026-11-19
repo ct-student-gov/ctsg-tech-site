@@ -1422,6 +1422,29 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:career-management-students:career-management%3Ac31003d49c1c2802dd22251747de5e389182026_3%3A49%3A25_PM%40campusgroups.com": {
+      "source": "career-management-students",
+      "archivedAt": "2026-11-19T20:41:37.528Z",
+      "event": {
+        "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
+        "source": "career-management",
+        "category": "School events",
+        "title": "Interstride-Top 10 Mistakes Made by International Students in Their Job and Internship Search",
+        "start": "2026-11-19T19:00:00.000Z",
+        "end": "2026-11-19T20:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133038",
+        "audienceTags": [
+          "All Master's Students"
+        ],
+        "departmentAcronyms": [
+          "CTCAREERS"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:career-management-students:career-management%3Acebf0c6a48a369913fddee1ad7d29a698192026_3%3A19%3A52_PM%40campusgroups.com": {
       "source": "career-management-students",
       "archivedAt": "2026-10-09T06:42:30.765Z",
@@ -3446,7 +3469,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-16T21:43:00.000Z",
+      "cursor": "2026-11-19T20:41:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

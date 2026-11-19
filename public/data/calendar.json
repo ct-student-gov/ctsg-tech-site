@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T20:41:37.528Z",
+  "generatedAt": "2026-11-19T22:36:42.910Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-24T20:41:37.528Z"
+    "end": "2027-12-24T22:36:42.910Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-24T07:56:14.436Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -26,7 +26,7 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 20
+      "archivedCount": 21
     },
     {
       "id": "inclusion-belonging",
@@ -38,7 +38,7 @@
         "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -60,7 +60,7 @@
         "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -92,7 +92,7 @@
         "start": "2026-08-21T07:56:14.436Z",
         "end": "2027-12-24T07:56:14.436Z"
       },
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -109,11 +109,11 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-21T20:41:37.528Z",
-        "end": "2027-12-24T20:41:37.528Z"
+        "start": "2026-08-21T22:36:42.910Z",
+        "end": "2027-12-24T22:36:42.910Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 6,
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-21T20:41:37.528Z",
-        "end": "2027-12-24T20:41:37.528Z"
+        "start": "2026-08-21T22:36:42.910Z",
+        "end": "2027-12-24T22:36:42.910Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-21T20:41:37.528Z",
-        "end": "2027-12-24T20:41:37.528Z"
+        "start": "2026-08-21T22:36:42.910Z",
+        "end": "2027-12-24T22:36:42.910Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -177,7 +177,7 @@
         "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
@@ -198,7 +198,7 @@
         "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -220,7 +220,7 @@
         "start": "2026-08-21T07:56:14.436Z",
         "end": "2027-12-24T07:56:14.436Z"
       },
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 4,
@@ -230,7 +230,7 @@
         "warnings": []
       },
       "state": "current",
-      "archivedCount": 20
+      "archivedCount": 21
     },
     {
       "id": "career-management-students",
@@ -242,7 +242,7 @@
         "start": "2026-08-20T07:56:23.064Z",
         "end": "2027-12-23T07:56:23.064Z"
       },
-      "updatedAt": "2026-11-19T20:41:37.528Z",
+      "updatedAt": "2026-11-19T22:36:42.910Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,

@@ -2715,6 +2715,27 @@
         "detailsRedacted": true
       }
     },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Ac13a3ba6b3593d86240d6b563d86f5be10302026_1%3A05%3A35_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-19T22:36:42.910Z",
+      "event": {
+        "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Discrimination and Harassment – Your Rights and Responsibilities",
+        "start": "2026-11-19T20:00:00.000Z",
+        "end": "2026-11-19T21:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133123",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
     "calendar-archive-v1:student-affairs-students:student-affairs%3Ad014a4b15888370cc23e721b54169d329152026_9%3A49%3A15_AM%40campusgroups.com": {
       "source": "student-affairs-students",
       "archivedAt": "2026-10-22T22:01:27.256Z",
@@ -3180,6 +3201,26 @@
         }
       }
     },
+    "calendar-archive-v1:student-affairs:student-affairs%3Ac13a3ba6b3593d86240d6b563d86f5be10302026_1%3A05%3A35_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-19T22:36:42.910Z",
+      "event": {
+        "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Discrimination and Harassment – Your Rights and Responsibilities",
+        "start": "2026-11-19T20:00:00.000Z",
+        "end": "2026-11-19T21:00:00.000Z",
+        "allDay": false,
+        "description": "Meet with staff from the Cornell Office of Civil Rights to learn more about your options for reporting discrimination and harassment.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133123",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2133123",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3Ad014a4b15888370cc23e721b54169d329152026_9%3A49%3A15_AM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-10-22T22:01:27.256Z",
@@ -3469,7 +3510,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-19T20:41:00.000Z",
+      "cursor": "2026-11-19T22:36:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

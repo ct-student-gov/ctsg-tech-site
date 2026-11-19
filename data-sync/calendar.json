@@ -448,19 +448,6 @@
           "url": ""
         },
         {
-          "id": "notion:4160b1bd-6791-81aa-a4ca-e4c5496838c2",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Beyond the Transaction - Cornell Fintech Club",
-          "start": "2026-11-19T00:00:00.000Z",
-          "end": "2026-11-19T01:30:00.000Z",
-          "allDay": false,
-          "description": "A panel with three Cornell alumni working across fintech, each sharing the view from their corner of the industry: cybersecurity, digital assets, and startups. Short talks, then Q&A and informal networking over pizza.\n",
-          "location": "Bloomberg",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4190b1bd-6791-8146-a8a1-c0652fde88c5",
           "source": "clubs",
           "category": "Club events",
@@ -514,17 +501,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-18T21:43:43.433Z",
-        "end": "2027-12-21T21:43:43.433Z"
+        "start": "2026-08-21T07:56:14.436Z",
+        "end": "2027-12-24T07:56:14.436Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-16T21:43:43.433Z",
+      "updatedAt": "2026-11-19T07:56:14.436Z",
       "coverage": {
         "version": 1,
-        "eventCount": 7,
-        "upcomingCount": 7,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-21T21:39:00.103Z",
+        "comparedThrough": "2027-12-21T21:43:43.433Z",
         "warnings": []
       }
     },
@@ -632,22 +619,6 @@
           ]
         },
         {
-          "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Gratitude Day",
-          "start": "2026-11-18T16:00:00.000Z",
-          "end": "2026-11-18T19:00:00.000Z",
-          "allDay": false,
-          "description": " 🍂Gratitude Tree: hang a leaf representing something you’re grateful for\n 🧘Self-care Station: treat your mind and take a break\n 🫖Communi-Tea Lounge: get cozy with a cup of autumnal tea\n 💌Appreciation Cards: express gratitude to a member of the Cornell Tech community\n🍴 Meal Kit Prep: join CulinArt to put together Thanksgiving meal kits that will be donated for the holidays\n🦃 Friendsgiving: make a festive craft and take part in a PIE GIVEAWAY (first come first serve) at 1:00 PM\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132999",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -666,17 +637,17 @@
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-19T08:29:14.799Z",
-        "end": "2027-12-22T08:29:14.799Z"
+        "start": "2026-08-21T07:56:14.436Z",
+        "end": "2027-12-24T07:56:14.436Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-17T08:29:14.799Z",
+      "updatedAt": "2026-11-19T07:56:14.436Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-22T08:29:14.799Z",
         "warnings": []
       }
     },
@@ -734,23 +705,6 @@
           "detailsRedacted": true
         },
         {
-          "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Gratitude Day",
-          "start": "2026-11-18T16:00:00.000Z",
-          "end": "2026-11-18T19:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
-        {
           "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -771,16 +725,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-19T08:29:14.799Z",
-        "end": "2027-12-22T08:29:14.799Z"
+        "start": "2026-08-21T07:56:14.436Z",
+        "end": "2027-12-24T07:56:14.436Z"
       },
-      "updatedAt": "2026-11-17T08:29:14.799Z",
+      "updatedAt": "2026-11-19T07:56:14.436Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 5,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-22T08:29:14.799Z",
         "warnings": []
       }
     },
@@ -828,44 +782,31 @@
           "location": "Gensler Family AAP NYC Center Tata Innovation Center, 4th Floor; Cornell Tech",
           "url": "https://tech.cornell.edu/events/island-editions-aap-billie-tsien-cynthia-davidson/",
           "audienceTags": []
-        },
-        {
-          "id": "tech-events:the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing",
-          "source": "tech-events",
-          "category": "Cornell Tech events",
-          "title": "The Evolution of Computer Architecture to Service Machine Learning and Scientific Computing",
-          "start": "2026-11-18T15:00:00.000Z",
-          "end": "2026-11-18T16:00:00.000Z",
-          "allDay": false,
-          "description": "The talk provides a condensed overview of how computer processor chip architectures evolved from the early days of processors for mainframes, workstations, and desktops to graphics-optimized processors (GPUs), and the latest machine-learning-optimized processors like Amazon Trainium. The talk walks through the first principles driving end-to-end optimization across the compute stack: chip design, instruction sets, compilers and profilers, and how to design systems for an era where most code is written by LLMs.",
-          "location": "Cornell Tech, Bloomberg 401",
-          "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
-          "audienceTags": []
         }
       ],
-      "fetchedCount": 31,
-      "excludedCount": 29,
+      "fetchedCount": 26,
+      "excludedCount": 25,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 31,
-        "excludedCount": 29,
-        "importedCount": 2,
+        "fetchedCount": 26,
+        "excludedCount": 25,
+        "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-20T07:56:23.064Z",
-        "end": "2027-12-23T07:56:23.064Z"
+        "start": "2026-08-21T07:56:14.436Z",
+        "end": "2027-12-24T07:56:14.436Z"
       },
-      "updatedAt": "2026-11-18T07:56:23.064Z",
+      "updatedAt": "2026-11-19T07:56:14.436Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-23T07:56:23.064Z",
         "warnings": []
       }
     }
@@ -2273,6 +2214,23 @@
         "url": "https://cglink.me/2hj/r2133140"
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4160b1bd-6791-81aa-a4ca-e4c5496838c2": {
+      "source": "clubs",
+      "archivedAt": "2026-11-19T07:56:14.436Z",
+      "event": {
+        "id": "notion:4160b1bd-6791-81aa-a4ca-e4c5496838c2",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Beyond the Transaction - Cornell Fintech Club",
+        "start": "2026-11-19T00:00:00.000Z",
+        "end": "2026-11-19T01:30:00.000Z",
+        "allDay": false,
+        "description": "A panel with three Cornell alumni working across fintech, each sharing the view from their corner of the industry: cybersecurity, digital assets, and startups. Short talks, then Q&A and informal networking over pizza.\n",
+        "location": "Bloomberg",
+        "organizer": "",
+        "url": ""
+      }
+    },
     "calendar-archive-v1:ctsg:notion%3A3f40b1bd-6791-804d-bfba-d80ecab5361f": {
       "source": "ctsg",
       "archivedAt": "2026-11-05T18:48:24.433Z",
@@ -2686,6 +2644,27 @@
         "audienceTags": [
           "JCTMBA'27"
         ],
+        "departmentAcronyms": [
+          "CTSAA"
+        ],
+        "detailsRedacted": true
+      }
+    },
+    "calendar-archive-v1:student-affairs-students:student-affairs%3Abc215b7e173ca044c78f5ed216ae1ff79102026_12%3A27%3A24_PM%40campusgroups.com": {
+      "source": "student-affairs-students",
+      "archivedAt": "2026-11-19T07:56:14.436Z",
+      "event": {
+        "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Gratitude Day",
+        "start": "2026-11-18T16:00:00.000Z",
+        "end": "2026-11-18T19:00:00.000Z",
+        "allDay": false,
+        "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999",
+        "audienceTags": [],
         "departmentAcronyms": [
           "CTSAA"
         ],
@@ -3131,6 +3110,26 @@
         }
       }
     },
+    "calendar-archive-v1:student-affairs:student-affairs%3Abc215b7e173ca044c78f5ed216ae1ff79102026_12%3A27%3A24_PM%40campusgroups.com": {
+      "source": "student-affairs",
+      "archivedAt": "2026-11-19T07:56:14.436Z",
+      "event": {
+        "id": "student-affairs:bc215b7e173ca044c78f5ed216ae1ff79102026_12:27:24_PM@campusgroups.com",
+        "source": "student-affairs",
+        "category": "School events",
+        "title": "Gratitude Day",
+        "start": "2026-11-18T16:00:00.000Z",
+        "end": "2026-11-18T19:00:00.000Z",
+        "allDay": false,
+        "description": " 🍂Gratitude Tree: hang a leaf representing something you’re grateful for\n 🧘Self-care Station: treat your mind and take a break\n 🫖Communi-Tea Lounge: get cozy with a cup of autumnal tea\n 💌Appreciation Cards: express gratitude to a member of the Cornell Tech community\n🍴 Meal Kit Prep: join CulinArt to put together Thanksgiving meal kits that will be donated for the holidays\n🦃 Friendsgiving: make a festive craft and take part in a PIE GIVEAWAY (first come first serve) at 1:00 PM\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2132999",
+        "location": "See event page for location",
+        "url": "https://cornelltech.campusgroups.com/rsvp?id=2132999",
+        "audienceTags": [],
+        "departmentAcronyms": [
+          "CTSAA"
+        ]
+      }
+    },
     "calendar-archive-v1:student-affairs:student-affairs%3Abcc2ab7bdd6fd40afbdba17c2b8ad1f1982026_9%3A50%3A26_PM%40campusgroups.com": {
       "source": "student-affairs",
       "archivedAt": "2026-09-30T21:26:04.604Z",
@@ -3408,6 +3407,23 @@
           "PhDs",
           "Postdocs"
         ]
+      }
+    },
+    "calendar-archive-v1:tech-events:tech-events%3Athe-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing": {
+      "source": "tech-events",
+      "archivedAt": "2026-11-19T07:56:14.436Z",
+      "event": {
+        "id": "tech-events:the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing",
+        "source": "tech-events",
+        "category": "Cornell Tech events",
+        "title": "The Evolution of Computer Architecture to Service Machine Learning and Scientific Computing",
+        "start": "2026-11-18T15:00:00.000Z",
+        "end": "2026-11-18T16:00:00.000Z",
+        "allDay": false,
+        "description": "The talk provides a condensed overview of how computer processor chip architectures evolved from the early days of processors for mainframes, workstations, and desktops to graphics-optimized processors (GPUs), and the latest machine-learning-optimized processors like Amazon Trainium. The talk walks through the first principles driving end-to-end optimization across the compute stack: chip design, instruction sets, compilers and profilers, and how to design systems for an era where most code is written by LLMs.",
+        "location": "Cornell Tech, Bloomberg 401",
+        "url": "https://tech.cornell.edu/events/the-evolution-of-computer-architecture-to-service-machine-learning-and-scientific-computing/",
+        "audienceTags": []
       }
     },
     "calendar-archive-v1:tech-events:tech-events%3Aweill-cornell-medicine-deans-symposium-on-innovation-and-entrepreneurship": {

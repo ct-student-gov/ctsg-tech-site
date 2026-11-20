@@ -440,20 +440,33 @@
           "location": "26th Floor, The House @ Cornell Tech",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:41a0b1bd-6791-81b6-a65c-e2df6aba689c",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Think Like a PM, Then Build — Workshop with Alman Shibli",
+          "start": "2026-11-23T23:00:00.000Z",
+          "end": "2026-11-24T00:30:00.000Z",
+          "allDay": false,
+          "description": "Join Alman Shibli for a hands-on product management workshop exploring how he makes product decisions at Google. Through a real-world example and live walkthrough, students will learn to frame user problems, evaluate alternatives, prioritize, and make trade-offs before building. Mixed teams of technical and non-technical students will apply his framework, prototype one complete user journey, run a peer test, and revise their solution. Each team leaves with a decision sheet, a tested prototype, and a record of what changed through testing.",
+          "location": "Cornell Tech campus — room TBD",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-22T17:41:08.110Z",
+        "end": "2027-12-25T17:41:08.110Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-25T01:38:30.216Z",
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       }
     },
@@ -3470,7 +3483,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-20T01:38:00.000Z",
+      "cursor": "2026-11-20T17:40:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3496,7 +3509,8 @@
         "41a0b1bd-6791-81d9-88b4-c7ea2ca161ef": "2026-11-16T18:14:00.000Z",
         "4190b1bd-6791-81a7-a012-f8283782360d": "2026-11-16T18:22:00.000Z",
         "4190b1bd-6791-8146-a8a1-c0652fde88c5": "2026-11-16T21:38:00.000Z",
-        "41a0b1bd-6791-8199-931f-dd53fc3320aa": "2026-11-16T21:43:00.000Z"
+        "41a0b1bd-6791-8199-931f-dd53fc3320aa": "2026-11-16T21:43:00.000Z",
+        "41a0b1bd-6791-81b6-a65c-e2df6aba689c": "2026-11-20T17:40:00.000Z"
       }
     },
     "community": {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-20T07:45:20.875Z",
+  "generatedAt": "2026-11-20T17:41:08.110Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-25T07:45:20.875Z"
+    "end": "2027-12-25T17:41:08.110Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-25T07:45:20.875Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 8,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -92,7 +92,7 @@
         "start": "2026-08-22T07:45:20.875Z",
         "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-22T17:41:08.110Z",
+        "end": "2027-12-25T17:41:08.110Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
+        "eventCount": 4,
+        "upcomingCount": 4,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-25T01:38:30.216Z",
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-22T17:41:08.110Z",
+        "end": "2027-12-25T17:41:08.110Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-22T17:41:08.110Z",
+        "end": "2027-12-25T17:41:08.110Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
         "upcomingCount": 27,
         "previousUpcomingCount": 27,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "comparedThrough": "2027-12-17T07:43:16.799Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-16T07:01:21.039Z",
+        "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-19T07:01:21.039Z",
+        "comparedThrough": "2027-11-21T04:59:35.734Z",
         "warnings": []
       },
       "state": "current",
@@ -220,7 +220,7 @@
         "start": "2026-08-22T07:45:20.875Z",
         "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
@@ -242,7 +242,7 @@
         "start": "2026-08-22T07:45:20.875Z",
         "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-20T17:41:08.110Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -2016,6 +2016,19 @@
       "sourceCategories": {
         "student-affairs": "School events"
       }
+    },
+    {
+      "id": "notion:41a0b1bd-6791-81b6-a65c-e2df6aba689c",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Think Like a PM, Then Build — Workshop with Alman Shibli",
+      "start": "2026-11-23T23:00:00.000Z",
+      "end": "2026-11-24T00:30:00.000Z",
+      "allDay": false,
+      "description": "Join Alman Shibli for a hands-on product management workshop exploring how he makes product decisions at Google. Through a real-world example and live walkthrough, students will learn to frame user problems, evaluate alternatives, prioritize, and make trade-offs before building. Mixed teams of technical and non-technical students will apply his framework, prototype one complete user journey, run a peer test, and revise their solution. Each team leaves with a decision sheet, a tested prototype, and a record of what changed through testing.",
+      "location": "Cornell Tech campus — room TBD",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "academic:2026–2027:Thanksgiving Break/No classes",

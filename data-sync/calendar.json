@@ -382,58 +382,26 @@
             "CTCAREERS"
           ],
           "detailsRedacted": true
-        },
-        {
-          "id": "career-management:c31003d49c1c2802dd22251747de5e389182026_3:49:25_PM@campusgroups.com",
-          "source": "career-management",
-          "category": "School events",
-          "title": "Interstride-Top 10 Mistakes Made by International Students in Their Job and Internship Search",
-          "start": "2026-11-19T19:00:00.000Z",
-          "end": "2026-11-19T20:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133038",
-          "audienceTags": [
-            "All Master's Students"
-          ],
-          "departmentAcronyms": [
-            "CTCAREERS"
-          ],
-          "detailsRedacted": true
         }
       ],
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-20T07:56:23.064Z",
-        "end": "2027-12-23T07:56:23.064Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-18T07:56:23.064Z",
+      "updatedAt": "2026-11-20T07:45:20.875Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-23T07:56:23.064Z",
         "warnings": []
       }
     },
     "clubs": {
       "events": [
-        {
-          "id": "notion:40e0b1bd-6791-8115-af04-d672fce1a742",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "SASA: Bollywood Movie Night",
-          "start": "2026-11-19T23:00:00.000Z",
-          "end": "2026-11-20T04:00:00.000Z",
-          "allDay": false,
-          "description": "Join the South Asian Student Association (SASA) for Bollywood Movie Night on November 19! Take a break from coursework and enjoy *Jab We Met*, a beloved Bollywood romantic comedy, with popcorn, drinks, and fellow Cornell Tech students. Whether you’re a longtime Bollywood fan or watching your first Hindi film, everyone is welcome to relax, meet new people, and celebrate South Asian cinema.",
-          "location": "Tata 131",
-          "organizer": "",
-          "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
-        },
         {
           "id": "notion:4120b1bd-6791-813c-879a-e022b9123aad",
           "source": "clubs",
@@ -475,17 +443,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-22T01:38:30.216Z",
-        "end": "2027-12-25T01:38:30.216Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T01:38:30.216Z",
+      "updatedAt": "2026-11-20T07:45:20.875Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-24T07:56:14.436Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-25T01:38:30.216Z",
         "warnings": []
       }
     },
@@ -591,37 +559,21 @@
           "departmentAcronyms": [
             "CTSAA"
           ]
-        },
-        {
-          "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Discrimination and Harassment – Your Rights and Responsibilities",
-          "start": "2026-11-19T20:00:00.000Z",
-          "end": "2026-11-19T21:00:00.000Z",
-          "allDay": false,
-          "description": "Meet with staff from the Cornell Office of Civil Rights to learn more about your options for reporting discrimination and harassment.\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133123",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133123",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
         }
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-21T07:56:14.436Z",
-        "end": "2027-12-24T07:56:14.436Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T07:56:14.436Z",
+      "updatedAt": "2026-11-20T07:45:20.875Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-24T07:56:14.436Z",
         "warnings": []
       }
     },
@@ -677,38 +629,21 @@
             "CTSAA"
           ],
           "detailsRedacted": true
-        },
-        {
-          "id": "student-affairs:c13a3ba6b3593d86240d6b563d86f5be10302026_1:05:35_PM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Discrimination and Harassment – Your Rights and Responsibilities",
-          "start": "2026-11-19T20:00:00.000Z",
-          "end": "2026-11-19T21:00:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133123",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
         }
       ],
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-21T07:56:14.436Z",
-        "end": "2027-12-24T07:56:14.436Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-19T07:56:14.436Z",
+      "updatedAt": "2026-11-20T07:45:20.875Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
-        "previousUpcomingCount": 4,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "eventCount": 3,
+        "upcomingCount": 3,
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-24T07:56:14.436Z",
         "warnings": []
       }
     },
@@ -758,29 +693,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 26,
-      "excludedCount": 25,
+      "fetchedCount": 25,
+      "excludedCount": 24,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 26,
-        "excludedCount": 25,
+        "fetchedCount": 25,
+        "excludedCount": 24,
         "importedCount": 1,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-21T07:56:14.436Z",
-        "end": "2027-12-24T07:56:14.436Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-19T07:56:14.436Z",
+      "updatedAt": "2026-11-20T07:45:20.875Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-23T07:56:23.064Z",
+        "comparedThrough": "2027-12-24T07:56:14.436Z",
         "warnings": []
       }
     }
@@ -2107,6 +2042,23 @@
         "location": "Tata 131",
         "organizer": "",
         "url": "https://cglink.me/2hj/r2133121"
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A40e0b1bd-6791-8115-af04-d672fce1a742": {
+      "source": "clubs",
+      "archivedAt": "2026-11-20T07:45:20.875Z",
+      "event": {
+        "id": "notion:40e0b1bd-6791-8115-af04-d672fce1a742",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "SASA: Bollywood Movie Night",
+        "start": "2026-11-19T23:00:00.000Z",
+        "end": "2026-11-20T04:00:00.000Z",
+        "allDay": false,
+        "description": "Join the South Asian Student Association (SASA) for Bollywood Movie Night on November 19! Take a break from coursework and enjoy *Jab We Met*, a beloved Bollywood romantic comedy, with popcorn, drinks, and fellow Cornell Tech students. Whether you’re a longtime Bollywood fan or watching your first Hindi film, everyone is welcome to relax, meet new people, and celebrate South Asian cinema.",
+        "location": "Tata 131",
+        "organizer": "",
+        "url": "https://partiful.com/e/Jr50U8BJs9pvFuv1SgzY?c=LUHG78QG"
       }
     },
     "calendar-archive-v1:clubs:notion%3A40e0b1bd-6791-81e7-bd73-e29746981314": {

@@ -448,19 +448,6 @@
           "url": ""
         },
         {
-          "id": "notion:4190b1bd-6791-8146-a8a1-c0652fde88c5",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Football Not Soccer Club — Weekly Pickup Games",
-          "start": "2026-11-19T21:00:00.000Z",
-          "end": "2026-11-19T23:00:00.000Z",
-          "allDay": false,
-          "description": "We run weekly pickup football games for Cornell Tech students with 16 to 30 players each week. We split into four teams on two half fields, so four goalkeepers play at once without gloves, which leads to hand and finger injuries. The cold packs are for first aid since we have had knocks on feet with nothing cold on hand. The bib washing covers cleaning our pinnies after each game for the rest of the semester. All items stay with the club and are reused every week.",
-          "location": "McManus Field, Roosevelt Island",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",
           "source": "clubs",
           "category": "Club events",
@@ -485,33 +472,20 @@
           "location": "26th Floor, The House @ Cornell Tech",
           "organizer": "",
           "url": ""
-        },
-        {
-          "id": "notion:41a0b1bd-6791-81d9-88b4-c7ea2ca161ef",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Sound Bath & Mindful Connection",
-          "start": "2026-11-19T23:00:00.000Z",
-          "end": "2026-11-20T00:00:00.000Z",
-          "allDay": false,
-          "description": "WTCA will host a Sound Bath & Meditation session, featuring singing bowls and live instrumental music. The event offers Cornell Tech students an opportunity to unwind, reduce everyday stress, and practice mindfulness in a calming, supportive environment. Participants may sit or lie down comfortably and are welcome to bring their own yoga mats, blankets, or cushions. No prior meditation experience is required. The session aims to promote student wellbeing, relaxation, and a sense of community during the busy academic semester.",
-          "location": "The House",
-          "organizer": "",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdpukIh1bEIUCbXAJU2TO_9LmPUZJnvc6jpdX8W5nMd7RROOA/viewform?usp=dialog"
         }
       ],
       "window": {
-        "start": "2026-08-21T07:56:14.436Z",
-        "end": "2027-12-24T07:56:14.436Z"
+        "start": "2026-08-22T01:38:30.216Z",
+        "end": "2027-12-25T01:38:30.216Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-19T07:56:14.436Z",
+      "updatedAt": "2026-11-20T01:38:30.216Z",
       "coverage": {
         "version": 1,
-        "eventCount": 6,
-        "upcomingCount": 6,
-        "previousUpcomingCount": 6,
-        "comparedThrough": "2027-12-21T21:43:43.433Z",
+        "eventCount": 4,
+        "upcomingCount": 4,
+        "previousUpcomingCount": 4,
+        "comparedThrough": "2027-12-24T07:56:14.436Z",
         "warnings": []
       }
     },
@@ -2254,6 +2228,40 @@
         "url": ""
       }
     },
+    "calendar-archive-v1:clubs:notion%3A4190b1bd-6791-8146-a8a1-c0652fde88c5": {
+      "source": "clubs",
+      "archivedAt": "2026-11-20T01:38:30.216Z",
+      "event": {
+        "id": "notion:4190b1bd-6791-8146-a8a1-c0652fde88c5",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Football Not Soccer Club — Weekly Pickup Games",
+        "start": "2026-11-19T21:00:00.000Z",
+        "end": "2026-11-19T23:00:00.000Z",
+        "allDay": false,
+        "description": "We run weekly pickup football games for Cornell Tech students with 16 to 30 players each week. We split into four teams on two half fields, so four goalkeepers play at once without gloves, which leads to hand and finger injuries. The cold packs are for first aid since we have had knocks on feet with nothing cold on hand. The bib washing covers cleaning our pinnies after each game for the rest of the semester. All items stay with the club and are reused every week.",
+        "location": "McManus Field, Roosevelt Island",
+        "organizer": "",
+        "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A41a0b1bd-6791-81d9-88b4-c7ea2ca161ef": {
+      "source": "clubs",
+      "archivedAt": "2026-11-20T01:38:30.216Z",
+      "event": {
+        "id": "notion:41a0b1bd-6791-81d9-88b4-c7ea2ca161ef",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Sound Bath & Mindful Connection",
+        "start": "2026-11-19T23:00:00.000Z",
+        "end": "2026-11-20T00:00:00.000Z",
+        "allDay": false,
+        "description": "WTCA will host a Sound Bath & Meditation session, featuring singing bowls and live instrumental music. The event offers Cornell Tech students an opportunity to unwind, reduce everyday stress, and practice mindfulness in a calming, supportive environment. Participants may sit or lie down comfortably and are welcome to bring their own yoga mats, blankets, or cushions. No prior meditation experience is required. The session aims to promote student wellbeing, relaxation, and a sense of community during the busy academic semester.",
+        "location": "The House",
+        "organizer": "",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdpukIh1bEIUCbXAJU2TO_9LmPUZJnvc6jpdX8W5nMd7RROOA/viewform?usp=dialog"
+      }
+    },
     "calendar-archive-v1:ctsg:notion%3A3f40b1bd-6791-804d-bfba-d80ecab5361f": {
       "source": "ctsg",
       "archivedAt": "2026-11-05T18:48:24.433Z",
@@ -3510,7 +3518,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-19T22:36:00.000Z",
+      "cursor": "2026-11-20T01:38:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",

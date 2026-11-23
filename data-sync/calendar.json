@@ -403,19 +403,6 @@
     "clubs": {
       "events": [
         {
-          "id": "notion:4120b1bd-6791-813c-879a-e022b9123aad",
-          "source": "clubs",
-          "category": "Club events",
-          "title": "Indonesian Movie Screening and Q&A with Film Makers in NYC",
-          "start": "2026-11-22T18:00:00.000Z",
-          "end": "2026-11-22T21:00:00.000Z",
-          "allDay": false,
-          "description": "Join IACT, NYU ISA, PERMIAS NYC, and Indonesian Film Forum NYC for an afternoon of Indonesian cinema at Anthology Film Archives. We’ll screen the short film Anak Macan and the feature Empat Musim Pertiwi back to back, followed by a live Q&A with acclaimed Indonesian filmmakers Kamila Andini and Ifa Isfansyah. Open to the public, with discounted tickets for Cornell students. Come explore Indonesian stories and cultural perspectives, and meet the creative minds behind them.",
-          "location": "Anthology Film Archives, 32 Second Avenue, New York, NY 10003 (off campus)",
-          "organizer": "",
-          "url": ""
-        },
-        {
           "id": "notion:4190b1bd-6791-81a7-a012-f8283782360d",
           "source": "clubs",
           "category": "Club events",
@@ -456,17 +443,17 @@
         }
       ],
       "window": {
-        "start": "2026-08-22T17:41:08.110Z",
-        "end": "2027-12-25T17:41:08.110Z"
+        "start": "2026-08-25T08:14:16.976Z",
+        "end": "2027-12-28T08:14:16.976Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T17:41:08.110Z",
+      "updatedAt": "2026-11-23T08:14:16.976Z",
       "coverage": {
         "version": 1,
-        "eventCount": 4,
-        "upcomingCount": 4,
+        "eventCount": 3,
+        "upcomingCount": 3,
         "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-25T07:45:20.875Z",
+        "comparedThrough": "2027-12-25T17:41:08.110Z",
         "warnings": []
       }
     },
@@ -2087,6 +2074,23 @@
         "allDay": false,
         "description": "We are planning to purchase rackets and shuttles for the students who don't have it so that we can have more participation. It's a club request as well.",
         "location": "https://maps.app.goo.gl/kG83HcUKAt3smFDHA?g_st=ac",
+        "organizer": "",
+        "url": ""
+      }
+    },
+    "calendar-archive-v1:clubs:notion%3A4120b1bd-6791-813c-879a-e022b9123aad": {
+      "source": "clubs",
+      "archivedAt": "2026-11-23T08:14:16.976Z",
+      "event": {
+        "id": "notion:4120b1bd-6791-813c-879a-e022b9123aad",
+        "source": "clubs",
+        "category": "Club events",
+        "title": "Indonesian Movie Screening and Q&A with Film Makers in NYC",
+        "start": "2026-11-22T18:00:00.000Z",
+        "end": "2026-11-22T21:00:00.000Z",
+        "allDay": false,
+        "description": "Join IACT, NYU ISA, PERMIAS NYC, and Indonesian Film Forum NYC for an afternoon of Indonesian cinema at Anthology Film Archives. We’ll screen the short film Anak Macan and the feature Empat Musim Pertiwi back to back, followed by a live Q&A with acclaimed Indonesian filmmakers Kamila Andini and Ifa Isfansyah. Open to the public, with discounted tickets for Cornell students. Come explore Indonesian stories and cultural perspectives, and meet the creative minds behind them.",
+        "location": "Anthology Film Archives, 32 Second Avenue, New York, NY 10003 (off campus)",
         "organizer": "",
         "url": ""
       }

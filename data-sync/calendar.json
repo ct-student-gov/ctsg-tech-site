@@ -555,22 +555,6 @@
     "student-affairs": {
       "events": [
         {
-          "id": "student-affairs:04bf4bce666c3e0b1c84a0754a89e08210292026_10:15:45_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-23T17:00:00.000Z",
-          "end": "2026-11-23T17:30:00.000Z",
-          "allDay": false,
-          "description": "Stretch with Wellness continues this Fall. Each session includes a combination of active, energizing stretches and soothing, relaxing stretches. Whether you are looking for movements to boost your energy in the afternoon or stretches to help ease tension, there is something for you. You can attend one or more of these drop-in sessions from anywhere, and you need not attend previous sessions to join later in the series. No equipment is necessary, though some of the stretches will be from a chair. \n\nQuestions? Contact session facilitator C Lucas.\n\nOpen to the entire Cornell community; no Wellness membership needed\n---\nEvent Details: https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ]
-        },
-        {
           "id": "student-affairs:9cd14cf60c89290ea08f96af97ed873b9102026_12:30:25_PM@campusgroups.com",
           "source": "student-affairs",
           "category": "School events",
@@ -589,39 +573,22 @@
       ],
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-24T07:56:14.436Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       }
     },
     "student-affairs-students": {
       "events": [
-        {
-          "id": "student-affairs:04bf4bce666c3e0b1c84a0754a89e08210292026_10:15:45_AM@campusgroups.com",
-          "source": "student-affairs",
-          "category": "School events",
-          "title": "Stretch With Wellness - (Virtual)",
-          "start": "2026-11-23T17:00:00.000Z",
-          "end": "2026-11-23T17:30:00.000Z",
-          "allDay": false,
-          "description": "See the official event page for details, eligibility, and registration. Cornell sign-in may be required.",
-          "location": "See event page for location",
-          "url": "https://cornelltech.campusgroups.com/rsvp?id=2133116",
-          "audienceTags": [],
-          "departmentAcronyms": [
-            "CTSAA"
-          ],
-          "detailsRedacted": true
-        },
         {
           "id": "student-affairs:612104fd39a702e83e5cecdb865b10b99102026_12:29:22_PM@campusgroups.com",
           "source": "student-affairs",
@@ -660,16 +627,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-20T07:45:20.875Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-24T07:56:14.436Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       }
     },
@@ -706,6 +673,32 @@
     "tech-events": {
       "events": [
         {
+          "id": "tech-events:accelerating-bioventure-innovation-final-pitch-event",
+          "source": "tech-events",
+          "category": "Cornell Tech events",
+          "title": "Accelerating BioVenture Innovation Final Pitch Event",
+          "start": "2026-12-10T22:30:00.000Z",
+          "end": "2026-12-11T01:00:00.000Z",
+          "allDay": false,
+          "description": "Accelerating BioVenture Innovation (ABI) is a 15-week course in entrepreneurship training that builds teams around patented technologies from Weill Cornell Medicine, Memorial Sloan Kettering, Rockefeller University, Cornell Tech and Cornell University. The program educates participants on all aspects of launching a company. Teams create pitch decks after weeks of instruction and mentorship from industry experts, and then finalist teams are selected to pitch to a panel of investor judges. The pitches will take place in the Uris Auditorium, 1300 York Ave, New York, NY. Then a networking reception will follow with hors d’oeuvres and beverages at Griffis Faculty Lounge, at the same location.",
+          "location": "Weill Cornell Medicine Uris Auditorium, 1300 York Ave, New York, NY 10065",
+          "url": "https://tech.cornell.edu/events/accelerating-bioventure-innovation-final-pitch-event/",
+          "audienceTags": []
+        },
+        {
+          "id": "tech-events:breakthroughs-in-cardiovascular-medicine-a-chat-with-barry-s-coller-md",
+          "source": "tech-events",
+          "category": "Cornell Tech events",
+          "title": "Breakthroughs in Cardiovascular Medicine: A Chat with Barry S. Coller, MD",
+          "start": "2026-12-03T19:00:00.000Z",
+          "end": "2026-12-03T20:30:00.000Z",
+          "allDay": false,
+          "description": "What does it take to transform a scientific discovery into a lifesaving therapeutic? Join us on Thursday, December 3, from 2:00–3:30 p.m. ET, for a special fireside chat with Barry S. Coller, MD, a pioneer in cardiovascular medicine whose groundbreaking research in antiplatelet therapies has helped shape clinical practice and contributed to the formation of several biotechnology companies, including Accumetrics and CeleCor. Dr. Coller will share insights from his remarkable journey spanning scientific discovery, drug development, and entrepreneurship, including the challenges and opportunities of translating academic innovations into therapies that benefit patients. The conversation will be moderated by Daniel Bloomfield, MD, Partner at Ascenta Capital, former Merck SVP Clinical Development, and biotech CEO and CMO.",
+          "location": "",
+          "url": "https://tech.cornell.edu/events/breakthroughs-in-cardiovascular-medicine-a-chat-with-barry-s-coller-md/",
+          "audienceTags": []
+        },
+        {
           "id": "tech-events:island-editions-aap-billie-tsien-cynthia-davidson",
           "source": "tech-events",
           "category": "Cornell Tech events",
@@ -719,29 +712,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 22,
+      "fetchedCount": 24,
       "excludedCount": 21,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 22,
+        "fetchedCount": 24,
         "excludedCount": 21,
-        "importedCount": 1,
+        "importedCount": 3,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-23T07:42:03.038Z",
-        "end": "2027-12-26T07:42:03.038Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-21T07:42:03.038Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
+        "eventCount": 3,
+        "upcomingCount": 3,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-25T07:45:20.875Z",
+        "comparedThrough": "2027-12-26T07:42:03.038Z",
         "warnings": []
       }
     }

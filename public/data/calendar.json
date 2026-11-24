@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T01:04:20.214Z",
+  "generatedAt": "2026-11-24T10:25:25.342Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-29T01:04:20.214Z"
+    "end": "2027-12-29T10:25:25.342Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -12,17 +12,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_37005.ics",
       "fetchedCount": 18,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 2,
-        "upcomingCount": 2,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-24T07:56:14.436Z",
+        "eventCount": 1,
+        "upcomingCount": 1,
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       },
       "state": "current",
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 8,
       "window": {
-        "start": "2026-08-19T08:29:14.799Z",
-        "end": "2027-12-22T08:29:14.799Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "previousUpcomingCount": 1,
+        "comparedThrough": "2027-12-22T08:29:14.799Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-07-02T21:26:04.604Z",
-        "end": "2027-11-04T21:26:04.604Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": null,
-        "comparedThrough": null,
+        "previousUpcomingCount": 0,
+        "comparedThrough": "2027-11-04T21:26:04.604Z",
         "warnings": []
       },
       "state": "current",
@@ -76,29 +76,29 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 22,
+      "fetchedCount": 24,
       "excludedCount": 21,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 22,
+        "fetchedCount": 24,
         "excludedCount": 21,
-        "importedCount": 1,
+        "importedCount": 3,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-23T07:42:03.038Z",
-        "end": "2027-12-26T07:42:03.038Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 1,
-        "upcomingCount": 1,
+        "eventCount": 3,
+        "upcomingCount": 3,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-25T07:45:20.875Z",
+        "comparedThrough": "2027-12-26T07:42:03.038Z",
         "warnings": []
       },
       "state": "current",
@@ -109,17 +109,17 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-26T01:04:20.214Z",
-        "end": "2027-12-29T01:04:20.214Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 5,
         "upcomingCount": 5,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-28T08:14:16.976Z",
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-29T01:04:20.214Z",
         "warnings": []
       },
       "state": "current",
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-26T01:04:20.214Z",
-        "end": "2027-12-29T01:04:20.214Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-26T01:04:20.214Z",
-        "end": "2027-12-29T01:04:20.214Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-15T07:17:45.861Z",
-        "end": "2027-12-18T07:17:45.861Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
         "upcomingCount": 27,
         "previousUpcomingCount": 27,
-        "comparedThrough": "2027-12-17T07:43:16.799Z",
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-16T07:01:21.039Z",
-        "end": "2027-12-19T07:01:21.039Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-11-21T04:59:35.734Z",
+        "comparedThrough": "2027-12-19T07:01:21.039Z",
         "warnings": []
       },
       "state": "current",
@@ -217,16 +217,16 @@
       "fetchedCount": 20,
       "excludedCount": 1,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
-        "eventCount": 3,
-        "upcomingCount": 3,
-        "previousUpcomingCount": 3,
-        "comparedThrough": "2027-12-24T07:56:14.436Z",
+        "eventCount": 2,
+        "upcomingCount": 2,
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       },
       "state": "current",
@@ -239,16 +239,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-22T07:45:20.875Z",
-        "end": "2027-12-25T07:45:20.875Z"
+        "start": "2026-08-26T10:25:25.342Z",
+        "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-24T10:25:25.342Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-23T07:56:23.064Z",
+        "comparedThrough": "2027-12-25T07:45:20.875Z",
         "warnings": []
       },
       "state": "current",
@@ -2166,6 +2166,19 @@
       "detailsRedacted": true
     },
     {
+      "id": "tech-events:breakthroughs-in-cardiovascular-medicine-a-chat-with-barry-s-coller-md",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "Breakthroughs in Cardiovascular Medicine: A Chat with Barry S. Coller, MD",
+      "start": "2026-12-03T19:00:00.000Z",
+      "end": "2026-12-03T20:30:00.000Z",
+      "allDay": false,
+      "description": "What does it take to transform a scientific discovery into a lifesaving therapeutic? Join us on Thursday, December 3, from 2:00–3:30 p.m. ET, for a special fireside chat with Barry S. Coller, MD, a pioneer in cardiovascular medicine whose groundbreaking research in antiplatelet therapies has helped shape clinical practice and contributed to the formation of several biotechnology companies, including Accumetrics and CeleCor. Dr. Coller will share insights from his remarkable journey spanning scientific discovery, drug development, and entrepreneurship, including the challenges and opportunities of translating academic innovations into therapies that benefit patients. The conversation will be moderated by Daniel Bloomfield, MD, Partner at Ascenta Capital, former Merck SVP Clinical Development, and biotech CEO and CMO.",
+      "location": "",
+      "url": "https://tech.cornell.edu/events/breakthroughs-in-cardiovascular-medicine-a-chat-with-barry-s-coller-md/",
+      "audienceTags": []
+    },
+    {
       "id": "notion:41d0b1bd-6791-8171-9f78-eaa8b852e735",
       "source": "clubs",
       "category": "Club events",
@@ -2242,6 +2255,19 @@
       "description": "Cornell University Registrar academic calendar. Enrollment opening windows are filtered to Graduate/Professional/Cornell Tech. Course-session and program-specific dates may differ; exam periods are not individual course exam appointments.",
       "location": "",
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar"
+    },
+    {
+      "id": "tech-events:accelerating-bioventure-innovation-final-pitch-event",
+      "source": "tech-events",
+      "category": "Cornell Tech events",
+      "title": "Accelerating BioVenture Innovation Final Pitch Event",
+      "start": "2026-12-10T22:30:00.000Z",
+      "end": "2026-12-11T01:00:00.000Z",
+      "allDay": false,
+      "description": "Accelerating BioVenture Innovation (ABI) is a 15-week course in entrepreneurship training that builds teams around patented technologies from Weill Cornell Medicine, Memorial Sloan Kettering, Rockefeller University, Cornell Tech and Cornell University. The program educates participants on all aspects of launching a company. Teams create pitch decks after weeks of instruction and mentorship from industry experts, and then finalist teams are selected to pitch to a panel of investor judges. The pitches will take place in the Uris Auditorium, 1300 York Ave, New York, NY. Then a networking reception will follow with hors d’oeuvres and beverages at Griffis Faculty Lounge, at the same location.",
+      "location": "Weill Cornell Medicine Uris Auditorium, 1300 York Ave, New York, NY 10065",
+      "url": "https://tech.cornell.edu/events/accelerating-bioventure-innovation-final-pitch-event/",
+      "audienceTags": []
     },
     {
       "id": "academic:2026–2027:Fall 2026: Final exams",

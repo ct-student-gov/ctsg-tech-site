@@ -712,29 +712,29 @@
           "audienceTags": []
         }
       ],
-      "fetchedCount": 24,
-      "excludedCount": 21,
+      "fetchedCount": 25,
+      "excludedCount": 22,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 24,
-        "excludedCount": 21,
+        "fetchedCount": 25,
+        "excludedCount": 22,
         "importedCount": 3,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-27T09:09:13.670Z",
+        "end": "2027-12-30T09:09:13.670Z"
       },
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T09:09:13.670Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
         "upcomingCount": 3,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-26T07:42:03.038Z",
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-29T10:25:25.342Z",
         "warnings": []
       }
     }

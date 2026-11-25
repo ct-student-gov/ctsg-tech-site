@@ -466,20 +466,33 @@
           "location": "26th Floor, The House @ Cornell Tech",
           "organizer": "",
           "url": ""
+        },
+        {
+          "id": "notion:4230b1bd-6791-816b-844c-f0a24d92d2c4",
+          "source": "clubs",
+          "category": "Club events",
+          "title": "Project Making Workshop with GradBuddy",
+          "start": "2026-12-02T21:00:00.000Z",
+          "end": "2026-12-02T23:00:00.000Z",
+          "allDay": false,
+          "description": "A hands-on 90-minute workshop where students pick and start one portfolio project chosen for the job they actually want. Using GradBuddy, a tool built by a Cornell Tech student that maps live job postings to the skills each role asks for, attendees compare their résumé against their target role, get projects matched to the gap, pick one they can finish in two weeks, scope it with AI, and build the first deliverable in the room. Everyone leaves with a started project live on the portfolio site they built in our October workshop. Open to all Cornell Tech students, no coding required.",
+          "location": "TBD ",
+          "organizer": "",
+          "url": ""
         }
       ],
       "window": {
-        "start": "2026-08-26T01:04:20.214Z",
-        "end": "2027-12-29T01:04:20.214Z"
+        "start": "2026-08-27T17:00:28.279Z",
+        "end": "2027-12-30T17:00:28.279Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T01:04:20.214Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
-        "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-28T08:14:16.976Z",
+        "eventCount": 6,
+        "upcomingCount": 6,
+        "previousUpcomingCount": 5,
+        "comparedThrough": "2027-12-29T01:04:20.214Z",
         "warnings": []
       }
     },
@@ -3564,7 +3577,7 @@
   },
   "notion": {
     "clubs": {
-      "cursor": "2026-11-25T03:32:00.000Z",
+      "cursor": "2026-11-25T17:00:00.000Z",
       "versions": {
         "3fc0b1bd-6791-8141-9d78-ddbf1d3d0607": "2026-10-19T20:23:00.000Z",
         "3ff0b1bd-6791-8154-ab92-e0fe7493abb1": "2026-10-20T20:06:00.000Z",
@@ -3594,7 +3607,8 @@
         "41a0b1bd-6791-81b6-a65c-e2df6aba689c": "2026-11-20T17:40:00.000Z",
         "41f0b1bd-6791-81ad-a1b3-ee3b6832d6d7": "2026-11-24T01:03:00.000Z",
         "41e0b1bd-6791-8180-855d-c3fb2b21c496": "2026-11-24T01:04:00.000Z",
-        "41d0b1bd-6791-8171-9f78-eaa8b852e735": "2026-11-24T01:04:00.000Z"
+        "41d0b1bd-6791-8171-9f78-eaa8b852e735": "2026-11-24T01:04:00.000Z",
+        "4230b1bd-6791-816b-844c-f0a24d92d2c4": "2026-11-25T17:00:00.000Z"
       }
     },
     "community": {

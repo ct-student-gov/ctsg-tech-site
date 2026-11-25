@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T10:25:25.342Z",
+  "generatedAt": "2026-11-25T17:00:28.279Z",
   "window": {
     "start": "2026-07-17T16:00:00.000Z",
-    "end": "2027-12-29T10:25:25.342Z"
+    "end": "2027-12-30T17:00:28.279Z"
   },
   "timeZone": "America/New_York",
   "sources": [
@@ -16,7 +16,7 @@
         "end": "2027-12-29T10:25:25.342Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
@@ -34,17 +34,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_73165.ics",
       "fetchedCount": 8,
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-19T08:29:14.799Z",
+        "end": "2027-12-22T08:29:14.799Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-22T08:29:14.799Z",
+        "previousUpcomingCount": 2,
+        "comparedThrough": "2027-12-18T07:17:45.861Z",
         "warnings": []
       },
       "state": "current",
@@ -56,17 +56,17 @@
       "url": "https://cornelltech.campusgroups.com/ical/cornelltech/ical_club_20032.ics",
       "fetchedCount": 0,
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-07-02T21:26:04.604Z",
+        "end": "2027-11-04T21:26:04.604Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
         "upcomingCount": 0,
-        "previousUpcomingCount": 0,
-        "comparedThrough": "2027-11-04T21:26:04.604Z",
+        "previousUpcomingCount": null,
+        "comparedThrough": null,
         "warnings": []
       },
       "state": "current",
@@ -76,29 +76,29 @@
       "id": "tech-events",
       "name": "Cornell Tech events",
       "url": "https://tech.cornell.edu/events/",
-      "fetchedCount": 24,
-      "excludedCount": 21,
+      "fetchedCount": 25,
+      "excludedCount": 22,
       "failedCount": 0,
       "warnings": [],
       "diagnostics": {
-        "fetchedCount": 24,
-        "excludedCount": 21,
+        "fetchedCount": 25,
+        "excludedCount": 22,
         "importedCount": 3,
         "pagesFetched": 1,
         "failedCount": 0,
         "issues": []
       },
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-27T09:09:13.670Z",
+        "end": "2027-12-30T09:09:13.670Z"
       },
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 3,
         "upcomingCount": 3,
-        "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-26T07:42:03.038Z",
+        "previousUpcomingCount": 3,
+        "comparedThrough": "2027-12-29T10:25:25.342Z",
         "warnings": []
       },
       "state": "current",
@@ -109,15 +109,15 @@
       "name": "Club events",
       "url": "",
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-27T17:00:28.279Z",
+        "end": "2027-12-30T17:00:28.279Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
-        "eventCount": 5,
-        "upcomingCount": 5,
+        "eventCount": 6,
+        "upcomingCount": 6,
         "previousUpcomingCount": 5,
         "comparedThrough": "2027-12-29T01:04:20.214Z",
         "warnings": []
@@ -130,11 +130,11 @@
       "name": "Community events",
       "url": "",
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-27T17:00:28.279Z",
+        "end": "2027-12-30T17:00:28.279Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -151,11 +151,11 @@
       "name": "CTSG events",
       "url": "",
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-27T17:00:28.279Z",
+        "end": "2027-12-30T17:00:28.279Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 0,
@@ -173,17 +173,17 @@
       "url": "https://registrar.cornell.edu/calendars-exams/academic-calendar",
       "academicYear": "2026–2027",
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-15T07:17:45.861Z",
+        "end": "2027-12-18T07:17:45.861Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 27,
         "upcomingCount": 27,
         "previousUpcomingCount": 27,
-        "comparedThrough": "2027-12-18T07:17:45.861Z",
+        "comparedThrough": "2027-12-17T07:43:16.799Z",
         "warnings": []
       },
       "state": "current",
@@ -194,17 +194,17 @@
       "name": "Cornell Tech academic dates",
       "url": "https://studentaffairs.tech.cornell.edu/academics/academic-calendar/",
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-16T07:01:21.039Z",
+        "end": "2027-12-19T07:01:21.039Z"
       },
       "excludedCount": 0,
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-19T07:01:21.039Z",
+        "comparedThrough": "2027-11-21T04:59:35.734Z",
         "warnings": []
       },
       "state": "current",
@@ -220,7 +220,7 @@
         "start": "2026-08-26T10:25:25.342Z",
         "end": "2027-12-29T10:25:25.342Z"
       },
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
@@ -239,16 +239,16 @@
       "fetchedCount": 24,
       "excludedCount": 0,
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-22T07:45:20.875Z",
+        "end": "2027-12-25T07:45:20.875Z"
       },
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-25T17:00:28.279Z",
       "coverage": {
         "version": 1,
         "eventCount": 1,
         "upcomingCount": 1,
         "previousUpcomingCount": 1,
-        "comparedThrough": "2027-12-25T07:45:20.875Z",
+        "comparedThrough": "2027-12-23T07:56:23.064Z",
         "warnings": []
       },
       "state": "current",
@@ -2164,6 +2164,19 @@
         "CTCAREERS"
       ],
       "detailsRedacted": true
+    },
+    {
+      "id": "notion:4230b1bd-6791-816b-844c-f0a24d92d2c4",
+      "source": "clubs",
+      "category": "Club events",
+      "title": "Project Making Workshop with GradBuddy",
+      "start": "2026-12-02T21:00:00.000Z",
+      "end": "2026-12-02T23:00:00.000Z",
+      "allDay": false,
+      "description": "A hands-on 90-minute workshop where students pick and start one portfolio project chosen for the job they actually want. Using GradBuddy, a tool built by a Cornell Tech student that maps live job postings to the skills each role asks for, attendees compare their résumé against their target role, get projects matched to the gap, pick one they can finish in two weeks, scope it with AI, and build the first deliverable in the room. Everyone leaves with a started project live on the portfolio site they built in our October workshop. Open to all Cornell Tech students, no coding required.",
+      "location": "TBD ",
+      "organizer": "",
+      "url": ""
     },
     {
       "id": "tech-events:breakthroughs-in-cardiovascular-medicine-a-chat-with-barry-s-coller-md",

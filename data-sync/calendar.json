@@ -637,19 +637,19 @@
           "detailsRedacted": true
         }
       ],
-      "fetchedCount": 20,
-      "excludedCount": 1,
+      "fetchedCount": 19,
+      "excludedCount": 0,
       "window": {
-        "start": "2026-08-26T10:25:25.342Z",
-        "end": "2027-12-29T10:25:25.342Z"
+        "start": "2026-08-28T08:53:46.054Z",
+        "end": "2027-12-31T08:53:46.054Z"
       },
-      "updatedAt": "2026-11-24T10:25:25.342Z",
+      "updatedAt": "2026-11-26T08:53:46.054Z",
       "coverage": {
         "version": 1,
         "eventCount": 2,
         "upcomingCount": 2,
         "previousUpcomingCount": 2,
-        "comparedThrough": "2027-12-25T07:45:20.875Z",
+        "comparedThrough": "2027-12-29T10:25:25.342Z",
         "warnings": []
       }
     },
